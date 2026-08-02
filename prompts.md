@@ -565,3 +565,86 @@ All six design decisions documented in decisions.md (#029-#033). Feature added t
 - Decision 031: Conventional body sections for edge types
 - Decision 032: Incremental hash-based sync
 - Decision 033: Auto-promote with status=draft
+
+---
+
+## Prompt 011
+
+**Timestamp:** 2026-08-02T14:00:00Z
+**Phase:** Data Population
+**Direction:** User -> System
+
+### Prompt
+
+> I am now going to give you a few spreadsheets. These spreadsheets contain feedback from students, given when I had given the sessions. I want you to go through each of these feedbacks, and then process it, and enrich the context.
+
+User provided feedback files one at a time, then asked to process the entire folder. Later added ~39 more files.
+
+### Response Summary
+
+1. Processed 56 total feedback files from `~/Downloads/dsvellal-data-catalogue/Website/Students feedbacks/`
+2. Ingested 51 unique surveys (5 duplicates skipped): 12 university/external + 39 Philips internal
+3. ~597 total survey responses across all files
+4. Sanitized: merged 11 org duplicates, 12 project duplicates, removed 38 duplicate edges
+5. Graph grew from 1,594 nodes / 5,097 edges to 1,658 nodes / 5,323 edges
+6. 21,079 total chunks embedded in ChromaDB
+7. Ingestion script saved as `scripts/ingest_feedback_sessions.py`
+
+### Decisions Triggered
+
+- None (data population, not architectural)
+
+---
+
+## Prompt 012
+
+**Timestamp:** 2026-08-02T15:00:00Z
+**Phase:** Data Population
+**Direction:** User -> System
+
+### Prompt
+
+> Now, I am going to give you a bunch of certificates. Please process and enrich the context as needed.
+
+User provided 4 certificate PDFs: 3 CodeScene Academy (Foundation, Intermediate, Mastering Technical Debt) and 1 Google Prompting Essentials via Coursera.
+
+### Response Summary
+
+1. Ingested 4 certificates with full entity extraction
+2. Created 21 new nodes (CodeScene org, Google org, Coursera org, Stephen Marikkar, 12 new skills including Prompt Engineering, AI Agent Design, Multimodal Prompting, Prompt Chaining, Behavioral Code Analysis, Code Health, etc.)
+3. Created 36 new edges linking certifications to skills, orgs, and time ranges
+4. Sanitized: confirmed no duplicates introduced — graph is clean
+5. Final state: 872 artifacts, 1,679 nodes, 5,359 edges, 21,086 chunks
+
+### Decisions Triggered
+
+- None (data population, not architectural)
+
+---
+
+## Prompt 013
+
+**Timestamp:** 2026-08-02T16:00:00Z
+**Phase:** Data Population (Verification)
+**Direction:** User -> System
+
+### Prompt
+
+> I want you to now focus on the folder I am going to drop. It's from my Exeter journey. I want you to process each file, one at a time, and extract the context and enrich the data.
+
+User provided: `/Users/dsvellal/Downloads/dsvellal-data-catalogue/Career/2013 Exeter/Exeter - Appreciation Emails/` (98 files)
+
+### Response Summary
+
+All 98 files were already ingested during the earlier batch Career folder ingestion (Prompt 008). Verified:
+- 97 unique artifacts present in graph (1 content duplicate correctly deduplicated)
+- 1,206 chunks already embedded from these files
+- Categories covered: DoTheRightThing (17), TakingThingsToConclusion (11), Leadership&Ownership (9), SpreadingKnowledge&Practices (8), LeadershipInOrganizingEvents (7), PerformanceReview (6), TroubleShooting&DefectOwnership (6), ClientSuccess (5), Collaboration (4), plus 12 others
+- Key people already linked: Krishnamurthy Hegde, Anuroop V. Gaonkar, Chandrashekhar Surendranath, Jonah Egenolf, Chevy Vithiananthan, Lakshmi Thanga-Raja, Brett Ackerman, Kavya N, Satheesh Kumar Raju
+- Key projects linked: OneGate (71), Edifecs Integration (6), IF Plan Selection (3), Apollo (2)
+
+No new ingestion needed — full Exeter coverage confirmed.
+
+### Decisions Triggered
+
+- None (verification, not new work)
