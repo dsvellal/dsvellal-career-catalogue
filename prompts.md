@@ -648,3 +648,36 @@ No new ingestion needed — full Exeter coverage confirmed.
 ### Decisions Triggered
 
 - None (verification, not new work)
+
+---
+
+## Prompt 014
+
+**Timestamp:** 2026-08-02T17:00:00Z
+**Phase:** Data Population (Amazon)
+**Direction:** User -> System
+
+### Prompt
+
+> Now, I am going to paste my Amazon profile page, annual reviews, and appreciation emails. Process them. In this, dattatrv is my email id/key.
+
+User provided:
+1. `Dattas_Amazon_Profile.pdf` — comprehensive contribution doc (2016-2018)
+2. `2016-17 Annual Review Datta.pdf` + `201703_ForteReview.pdf` (same content, Year 1)
+3. `2017-18 Annual Review Datta.pdf` + `201803_ForteReview.pdf` (same content, Year 2)
+4. 48 files from `Amazon - Appreciation Emails/` folder
+
+### Response Summary
+
+1. Ingested Amazon profile: 28 new nodes, 360 edges — 13 projects, key metrics (570 code changes, $35K savings, 46 interviews)
+2. Ingested 2 annual reviews (contribution highlights only, ignoring growth areas per user instruction):
+   - Forte 2017: Manager called "process methodological" superpower "never seen anyone better"
+   - Forte 2018: Ownership LP scored 16/16 unanimous. Peer recommended TPM/Manager path.
+3. Processed 48 appreciation emails: 47 unique artifacts enriched with 193 new nodes, 915 new edges
+4. Discovered 37 people including Dale Vaz (VP), Harsha Nagesh (Sr Mgr)
+5. Sanitized: merged 2 AmazonPay orgs, 8 project duplicates, removed 54 duplicate edges
+6. Final state: 875 artifacts, 1,902 nodes, 6,638 edges, 21,118 chunks
+
+### Decisions Triggered
+
+- None (data population, not architectural)

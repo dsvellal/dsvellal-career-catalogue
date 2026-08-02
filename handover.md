@@ -1,17 +1,17 @@
 # Handover
 
 **Last Updated:** 2026-08-02
-**Session:** Feedback (56) + Certificates (4) + Exeter Verification (98) + Sanitization
+**Session:** Amazon Data Ingestion (Profile + Reviews + 48 Appreciation Emails) + Sanitization
 
 ---
 
 ## Last Completed Action
 
-- Processed 56 feedback files (51 unique ingested, 5 duplicates skipped)
-- Ingested 4 certificates (3 CodeScene Academy, 1 Google Prompting Essentials)
-- Verified 98 Exeter appreciation emails — all already ingested from prior Career batch
-- Sanitized graph: merged 11 org duplicates, 12 project duplicates, removed 38 duplicate edges
-- Initial commit pushed to `git@github.com:dsvellal/dsvellal-career-catalogue.git`
+- Ingested Amazon career profile (comprehensive contribution doc, 2016-2018)
+- Ingested 2 Amazon annual reviews (Forte 2017 + Forte 2018) — contribution highlights only
+- Ingested 48 Amazon appreciation emails (47 unique, 1 duplicate)
+- Sanitized: merged 2 AmazonPay orgs into Amazon, 8 project duplicates, removed 54 duplicate edges
+- Previous session: 56 feedback files, 4 certificates, Exeter verification
 
 ## Current State
 
@@ -19,19 +19,41 @@
 |--------|--------|
 | Phase | 7 — Cloud Deployment (only remaining) |
 | Tests | 227 passing, 2 skipped |
-| Knowledge Graph | 872 artifacts, 1,679 nodes, 5,359 edges |
-| Embeddings | 21,086 chunks in ChromaDB |
+| Knowledge Graph | 875 artifacts, 1,902 nodes, 6,638 edges |
+| Embeddings | 21,118 chunks in ChromaDB |
 | Git Remote | `git@github.com:dsvellal/dsvellal-career-catalogue.git` (main) |
 
 ### Node Breakdown
 | Type | Count |
 |------|-------|
-| skill | 590 |
-| time_range | 361 |
-| achievement | 330 |
-| project | 195 |
-| person | 140 |
-| organization | 63 |
+| skill | 654 |
+| time_range | 386 |
+| achievement | 380 |
+| project | 241 |
+| person | 173 |
+| organization | 68 |
+
+## Amazon Ingestion Summary
+
+### Profile (1 file)
+- 570 code changes, 182,992 lines added, 75 packages, 86 tickets
+- Key projects: AmazonPay India Launch, RiPE, Madeira XML Parser, TRMS Platform
+- Awards: Zeus Team Award, Spot Award, Hackathon Winner, Highest Scoring Trainer
+- Cost savings: $35K+/year, CPU optimization 23%→2%
+
+### Annual Reviews (2 files)
+- Forte 2017: "Process Oriented and Methodological is Datta's super power — I have not seen anyone do it better"
+- Forte 2018: Ownership LP scored 16/16 (unanimous). Peer recommended TPM/Manager path.
+
+### Appreciation Emails (48 files)
+- 37 people discovered (Dale Vaz VP, Harsha Nagesh Sr Mgr, Aditya Kapoor Mgr, + 34 engineers)
+- Key recognitions: Highest Scoring Scrum Trainer (Amazon-wide), IP Trade Secret, India Tech Conf poster
+- Spanned Feb 2016 - Aug 2018
+
+### Sanitization
+- 2 org merges (AmazonPay, AmazonPay India → Amazon)
+- 8 project merges (RiPE variants, AmazonPay variants, SVA Pay2Load, TRMS SHOWTIME)
+- 54 duplicate edges removed
 
 ## In-Progress Work
 
@@ -39,8 +61,8 @@ None.
 
 ## Next Steps
 
-1. **Wishlist feature #1: OKF Conversion** — when user requests, interview on open questions, implement
-2. **Skill deduplication** — 590 skill nodes likely have semantic duplicates
+1. **Wishlist feature #1: OKF Conversion** — when user requests
+2. **Skill deduplication** — 654 skill nodes likely have semantic near-duplicates
 3. **Phase 7: Cloud Deployment**
 
 ## Blockers
@@ -50,11 +72,8 @@ None.
 ## Key Context
 
 - Claude is sole AI (Decision 028)
-- Graph is sanitized — no duplicate orgs, skills, or edges
-- Initial commit pushed; data/ is gitignored (DuckDB + ChromaDB are local only)
-- Exeter journey (2013-2015): 97 artifacts, 71 linked to OneGate, 17 DoTheRightThing, 11 TakingThingsToConclusion
-- Philips internal sessions span 2019-2025 (software excellence competency lead role)
-- University talks span 2013-2020 across 8+ colleges
-- 2025 certifications: CodeScene (3x) + Google Prompting Essentials
+- `dattatrv` = Datta's Amazon email/login
+- Amazon tenure: Feb 2016 - Aug 2018, SDE-2 in TRMS, Manager: Aditya Kapoor
+- Graph is clean — no duplicate orgs, exact-match skills, or duplicate edges
+- data/ is gitignored (DuckDB + ChromaDB local only)
 - Wishlist: `wishlist-feature.md` with OKF Conversion as top priority
-- Ingestion scripts: `scripts/ingest_career.py`, `scripts/ingest_feedback_sessions.py`
