@@ -1,17 +1,17 @@
 # Handover
 
 **Last Updated:** 2026-08-02
-**Session:** Philips Feedback + Evaluations (360, HeartStyles, Anytime 2020-2025, 18 PPMs)
+**Session:** Maintenance — resolver race condition fix + enrich_nodes script + commit/push
 
 ---
 
 ## Last Completed Action
 
-- Ingested Philips 360 Leadership Feedback (DDI, Dec 2020) — 14 raters, all competencies above company avg
-- Ingested HeartStyles 360 (Dec 2025) — Encouraging 93%, 4 respondents, Ergos Mind program
-- Ingested Philips Anytime Feedback 2020-2025 (6 files, 177 total entries)
-- Processed 18 career evaluation/PPM files (2013-2025) — 17 already ingested, 1 new (2025)
-- Previous: Amazon profile + reviews + 48 appreciation emails
+- Fixed race condition in `_resolve_node` (resolver.py): wrapped INSERT in try/except so partial-run re-runs and concurrent ingestion don't abort with unhandled exceptions
+- Added `scripts/enrich_nodes.py`: utility to bulk-merge properties into existing nodes from a JSON manifest
+- Updated all markdown files (prompts, decisions, plan, handover)
+- Committed and pushed to remote
+- Previous session: Philips 360 / HeartStyles / Anytime Feedback 2020-2025 / 18 PPMs ingested
 
 ## Current State
 
@@ -55,14 +55,13 @@
 
 ## In-Progress Work
 
-None.
+None. All changes committed and pushed.
 
 ## Next Steps
 
-1. **Commit & push** — done
-2. **More Philips data** — if user provides more files
-3. **Wishlist feature #1: OKF Conversion** — when user requests
-4. **Skill deduplication** — 685 skills likely have semantic duplicates
+1. **More data** — if user provides additional files
+2. **Wishlist feature #1: OKF Conversion** — when user requests
+3. **Skill deduplication** — 685 skills likely have semantic duplicates
 
 ## Blockers
 

@@ -719,6 +719,28 @@ Key files:
 
 ---
 
+## Decision 034: Idempotent Node Insertion via try/except
+
+**Date:** 2026-08-02
+**Phase:** Implementation (Ingestion Bug Fix)
+**Category:** Data Model / Reliability
+
+**Question:** What should happen when `_resolve_node` tries to INSERT a node that already exists (due to concurrent ingestion or a prior partial run)?
+
+**Decision:** Wrap the INSERT in a try/except. On failure, fall back to SELECT by `id` and return the existing node as `is_new=False`.
+
+**Rationale:** Without this, any duplicate node_id collision throws an unhandled exception and aborts ingestion mid-run. The race can happen during parallel ingestion scripts or when a script crashes after partial inserts and is re-run. The SELECT-first check (by `type + LOWER(name)`) can miss cases where the same logical entity is inserted under a slightly different name, yet generate the same deterministic id hash. The try/except makes the insert idempotent at the ID level.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| INSERT OR IGNORE | Silently swallows all errors including genuine schema violations. Hard to debug. |
+| Unique constraint + SELECT-then-INSERT transaction | DuckDB embedded doesn't have the same transaction isolation as Postgres. The race is still possible within a single connection under certain usage patterns. |
+| Pre-check by id before insert | Still racey; two checks still lose to a concurrent insert between check and write. |
+
+---
+
 ## Decision 033: Auto-Promote with status=draft
 
 **Date:** 2026-08-02

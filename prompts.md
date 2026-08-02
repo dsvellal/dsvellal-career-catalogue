@@ -684,6 +684,28 @@ User provided:
 
 ---
 
+## Prompt 016
+
+**Timestamp:** 2026-08-02T19:00:00Z
+**Phase:** Maintenance / Operations
+**Direction:** User -> System
+
+### Prompt
+
+> Make sure that you update all markdown files, commit and push.
+
+### Response Summary
+
+1. Reviewed all unstaged changes: `resolver.py` (concurrent insert race condition fix) and new `scripts/enrich_nodes.py`
+2. Updated `prompts.md`, `decisions.md`, `handover.md`, `plan.md` to reflect both changes
+3. Committed and pushed all changes to remote
+
+### Decisions Triggered
+
+- Decision 034: Idempotent node insertion via try/except (see decisions.md)
+
+---
+
 ## Prompt 015
 
 **Timestamp:** 2026-08-02T18:00:00Z

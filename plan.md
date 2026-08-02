@@ -1,7 +1,7 @@
 # Execution Plan
 
 **Project:** dsvellal-personal-knowledge-context
-**Last Updated:** 2026-07-27
+**Last Updated:** 2026-08-02
 **Current Phase:** 7 (Cloud Deployment)
 
 ---
@@ -30,7 +30,7 @@
 | 1.3 | CLI framework (Typer) | Done | `twin init`, `twin status` wired to real DB |
 | 1.4 | Format extractors (PDF, DOCX, email, markdown, JSON) | Done | src/twin/ingestion/extractors.py |
 | 1.5 | Gemini classification integration | Done | google-genai SDK, src/twin/ingestion/classifier.py |
-| 1.6 | Entity resolution logic | Done | src/twin/ingestion/resolver.py |
+| 1.6 | Entity resolution logic | Done | src/twin/ingestion/resolver.py — idempotent insert (try/except) |
 | 1.7 | Graph edge creation | Done | src/twin/ingestion/edges.py |
 | 1.8 | `twin ingest <file>` command | Done | Full pipeline: extract→dedup→classify→resolve→link→log |
 | 1.9 | `twin status` command | Done | Node type breakdown + last ingestion time |

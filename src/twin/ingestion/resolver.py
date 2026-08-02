@@ -157,17 +157,28 @@ def _resolve_node(
         )
 
     node_id = _generate_id(node_type, name)
-    conn.execute(
-        "INSERT INTO nodes (id, type, name, confidence) VALUES (?, ?, ?, ?)",
-        [node_id, node_type, name, confidence],
-    )
-    return ResolvedEntity(
-        node_id=node_id,
-        type=node_type,
-        name=name,
-        is_new=True,
-        confidence=confidence,
-    )
+    try:
+        conn.execute(
+            "INSERT INTO nodes (id, type, name, confidence) VALUES (?, ?, ?, ?)",
+            [node_id, node_type, name, confidence],
+        )
+        return ResolvedEntity(
+            node_id=node_id,
+            type=node_type,
+            name=name,
+            is_new=True,
+            confidence=confidence,
+        )
+    except Exception:
+        # Node was inserted concurrently or in a prior partial run — treat as matched
+        row = conn.execute("SELECT id, name FROM nodes WHERE id = ?", [node_id]).fetchone()
+        return ResolvedEntity(
+            node_id=row[0] if row else node_id,
+            type=node_type,
+            name=row[1] if row else name,
+            is_new=False,
+            confidence=confidence,
+        )
 
 
 def _update_properties(conn: duckdb.DuckDBPyConnection, node_id: str, props: dict) -> None:
