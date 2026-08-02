@@ -1,0 +1,54 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# uv
+uv.lock
+
+# Node
+node_modules/
+.next/
+out/
+
+# Data (local only, never committed)
+data/
+*.db
+*.db-journal
+
+# Credentials
+credentials.json
+token.json
+*.key
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Output artifacts
+output/
+
+# Source material (too large / private for git)
+source-data/
+inbox/

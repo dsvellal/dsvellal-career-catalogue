@@ -1,0 +1,12 @@
+[default.extend-words]
+# Allow these "words" that typos would otherwise flag
+iat = "iat"  # JWT claim
+nid = "nid"
+
+[files]
+extend-exclude = [
+    "*.lock",
+    "data/",
+    ".venv/",
+    "__pycache__/",
+]

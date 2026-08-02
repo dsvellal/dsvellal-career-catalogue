@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #0a0a0f;
+  color: #e0e0e0;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 18px;
+  color: #808090;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  padding: 20px 32px;
+  border-bottom: 1px solid #1e1e2e;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  background: #0a0a0f;
+  z-index: 10;
+}
+
+.header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.stats-bar {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #808090;
+}
+
+/* Timeline */
+.timeline {
+  flex: 1;
+  padding: 32px 32px 32px 64px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 88px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #2a2a3a 0%, #6366f1 20%, #6366f1 80%, #2a2a3a 100%);
+}
+
+/* Year Section */
+.year-section {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.year-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  position: relative;
+}
+
+.year-header:hover {
+  background: rgba(99, 102, 241, 0.06);
+}
+
+.year-section.expanded .year-header {
+  background: rgba(99, 102, 241, 0.08);
+  border-radius: 10px 10px 0 0;
+}
+
+.year-ring-container {
+  flex-shrink: 0;
+}
+
+.year-info {
+  min-width: 100px;
+}
+
+.year-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.year-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.year-org {
+  font-size: 12px;
+  color: #a5b4fc;
+  font-weight: 500;
+}
+
+.year-role {
+  font-size: 11px;
+  color: #606070;
+}
+
+.year-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1;
+}
+
+.type-pill {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  color: #a0a0b0;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.expand-icon {
+  font-size: 20px;
+  color: #606070;
+  width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Year Cards */
+.year-cards {
+  padding: 12px 16px 16px 82px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card */
+.card {
+  background: #14141f;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  padding: 12px;
+  transition: border-color 0.2s, transform 0.15s;
+}
+
+.card:hover {
+  border-color: #4a4a5a;
+  transform: translateY(-1px);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.type-badge {
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.card-date {
+  font-size: 11px;
+  color: #606070;
+}
+
+.card-org {
+  font-size: 11px;
+  color: #808090;
+  margin-left: auto;
+}
+
+.card-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #d0d0e0;
+  margin-bottom: 6px;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.card-claims {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+.card-claims li {
+  font-size: 12px;
+  color: #a0a0b0;
+  padding: 2px 0;
+  padding-left: 12px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.card-claims li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #6366f1;
+}
+
+.card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.skill-tag {
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  background: rgba(99, 102, 241, 0.12);
+  color: #a5b4fc;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+.card-snippet {
+  font-size: 11px;
+  color: #606070;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* Legend */
+.legend-bar {
+  padding: 12px 32px;
+  border-top: 1px solid #1e1e2e;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  position: sticky;
+  bottom: 0;
+  background: #0a0a0f;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #808090;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}

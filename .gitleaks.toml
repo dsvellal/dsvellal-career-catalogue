@@ -1,0 +1,6 @@
+[allowlist]
+paths = [
+    '''data/''',
+    '''.venv/''',
+    '''\.venv/''',
+]
