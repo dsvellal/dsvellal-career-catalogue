@@ -932,3 +932,33 @@ New component architecture:
 - "Independent" era added as a 5th stream to capture community, talks, and yoga
 - Years with pinned curated milestones auto-expand; others default collapsed
 - Detail card appears inline below the clicked row (not a modal) for context continuity
+
+---
+
+## Prompt 034
+
+**Timestamp:** 2026-08-03T04:15:00Z
+
+**Prompt:**
+> What's the purpose of "Key Year"? This is misleading. Can you remove this in the UI?
+
+### Response Summary
+
+Removed two misleading labels from the Timeline view:
+- "Key year" star badge from year headers
+- "Key moment" badge from individual milestone rows
+
+The underlying auto-expand logic (years with curated milestones open by default) was kept silently — the behavior is still useful, just no longer labelled in a way that confuses viewers.
+
+---
+
+## Prompt 035
+
+**Timestamp:** 2026-08-03T04:20:00Z
+
+**Prompt:**
+> Update all documents, commit and push.
+
+### Response Summary
+
+Updated `handover.md` with full current state: all 8 tabs, Hero identity block, Timeline data summary, KPI tile routing, key context. Committed and pushed.
