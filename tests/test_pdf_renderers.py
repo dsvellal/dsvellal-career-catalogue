@@ -1,5 +1,7 @@
 """Tests for PDF renderers (WeasyPrint ATS + Typst designed). Skipped if system deps missing."""
 
+import shutil
+
 import pytest
 
 try:
@@ -8,6 +10,8 @@ try:
     WEASYPRINT_AVAILABLE = True
 except (ImportError, OSError):
     WEASYPRINT_AVAILABLE = False
+
+TYPST_AVAILABLE = shutil.which("typst") is not None
 
 
 @pytest.mark.skipif(not WEASYPRINT_AVAILABLE, reason="WeasyPrint system deps not available")
@@ -41,6 +45,7 @@ class TestTypstPdf:
         assert "== Section" in typst
         assert "- *Bold* item" in typst
 
+    @pytest.mark.skipif(not TYPST_AVAILABLE, reason="typst binary not available")
     def test_renders_pdf(self, tmp_path):
         from twin.generators.pdf_typst import render_typst_pdf
 
