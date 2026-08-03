@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.env
+# Un-ignore viz/src/data — these are static build assets, not sensitive source data
+!src/data/

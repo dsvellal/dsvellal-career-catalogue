@@ -59,6 +59,44 @@ Always verify your work. Demonstrate verification through:
 - Examples
 - Screenshots (where applicable)
 
+## Browser Automation
+
+Use `agent-browser` for all web automation tasks. It is installed globally (`agent-browser --version` to confirm). Chrome is pre-downloaded at `~/.agent-browser/browsers/`.
+
+**Before running any `agent-browser` command, load the live skill content:**
+
+```bash
+agent-browser skills get core        # workflows, patterns, troubleshooting
+agent-browser skills get core --full # full command reference + templates
+```
+
+**Core workflow:**
+
+1. `agent-browser open <url>` — navigate to page
+2. `agent-browser snapshot -i` — get interactive elements with refs (`@e1`, `@e2`, …)
+3. `agent-browser click @e1` / `agent-browser fill @e2 "text"` — interact via refs
+4. Re-snapshot after page changes
+
+**Specialized skills** (load as needed):
+
+```bash
+agent-browser skills get electron     # Electron desktop apps (VS Code, Slack, Figma …)
+agent-browser skills get slack        # Slack workspace automation
+agent-browser skills get dogfood      # Exploratory testing / QA / bug hunts
+```
+
+**MCP server** (for use as a Claude Code MCP tool):
+
+```json
+{
+  "mcpServers": {
+    "agent-browser": { "command": "agent-browser", "args": ["mcp"] }
+  }
+}
+```
+
+Prefer `agent-browser` over any built-in browser automation or web-fetch tools for any task that requires navigating, interacting with, or screenshotting a real webpage.
+
 ## Model and Style
 
 Use Claude Opus 5 for everything. If you are Claude Opus 5, start every response with a dad joke and end with a dad joke.

@@ -733,3 +733,105 @@ User provided:
 ### Decisions Triggered
 
 - None (data population, not architectural)
+
+---
+
+## Prompt 027
+
+**Timestamp:** 2026-08-02T22:35:26Z
+
+> Analyze this data set and the repository, in-memory and otherwise. Before writing code, outline the purpose, ideal tone, constraints, and differentiation. Then suggest 3 different approaches to visualizing this data. [Follow-up] There's a UI. Revamp it. I want you to help me build the best version of both Approach 2 (first) and then Approach 1. Use the necessary skills.
+
+### Response Summary
+
+Full revamp of `viz/` frontend. Replaced the old accordion timeline with two production-quality visualization views:
+
+1. **Professional Identity (Approach 2)** — D3 force-layout constellation of BeTalent-assessed skills (12 core nodes with rank badges, 24 orbit skills), clustered into 4 BeTalent quadrants (How I Interact / Deliver / Lead / Think). Node size = frequency. Click any node → rich detail panel with BeTalent description, LDC strength, growth edge, overuse risk, and evidence samples.
+
+2. **Career Arc (Approach 1)** — Stacked bar chart (recognition / certification / recommendation) across 20 years (2007–2026), era-banded by employer (IBM/Exeter/OneGate/Amazon/Philips). Plus a second stacked bar showing skill acquisition per year by category. Click any bar → year detail panel with new skills + top skills applied that year.
+
+Both views include KPI stat tiles, full table-view toggle (accessibility), validated dark-palette (8-slot categorical, palette.js passes all 6 checks), hover tooltips, and era/legend filters.
+
+Data exported from DuckDB → `viz/src/data/constellation.json` + `viz/src/data/career_arc.json`.
+
+### Decisions Triggered
+
+- Used D3 force simulation (client-side, 300 ticks pre-settled) rather than a pre-computed layout file — keeps layout responsive to container size without a backend step
+- Used dark categorical palette slots 1–5 for era colors (validated adjacent); orbit skills use category color (7 categories, all from validated palette)
+- Tooltip on SVG using React state (position fixed) rather than a D3 tooltip div — keeps React in control of rendering
+- `fontVariantNumeric` removed from SVG `<text>` elements (not valid as a JSX prop there; CSS handles tabular-nums in the CSS layer)
+
+---
+
+## Prompt 028
+
+**Timestamp:** 2026-08-02T00:00:00Z
+
+> Build two React/TypeScript components for a personal career portfolio viz app at viz/src/. Dark theme, CSS variables in styles.css. Write clean TSX — no unnecessary type annotations.
+> Component 1: Voices.tsx — quote wall with auto-rotation + manual navigation, filter pills, featured card, grid.
+> Component 2: TalksGivebacks.tsx — split view (three columns: tech talks, social givebacks, yoga), timeline bar chart, expandable items.
+
+### Response Summary
+
+Built two production-quality React/TypeScript components and wired them into the nav:
+
+1. **Voices.tsx** — Quote wall with 60-entry voices.json data. Featured card (animated fade-in on change, 19px italic). Auto-rotation every 5s (pauses on hover/interaction, resumes after 3s idle). Filter pills (All / Recognition / Recommendation — certification omitted as no entries exist in data). 4-column grid of small cards with per-type color tinting. Era colors per company (Philips/#d95926, Amazon/#199e70, IBM/#3987e5). Click any card promotes it to featured.
+
+2. **TalksGivebacks.tsx** — Three-column layout (40% tech talks + givebacks, 30% social, 30% yoga). Each column is a scrollable card with count badge. Items show year badge (category-colored) + title (truncated 90 chars) + era chip (era-colored) + expand/collapse for detail. Bottom: SVG timeline bar chart spanning 2007–2026, responsive via ResizeObserver, bars colored by dominant category per year. Tagline "Not just an engineer — a teacher, a yogi, a community builder." in section title.
+
+Both tabs added to App.tsx nav. Build clean (vite build ✓, no TS errors in new files; pre-existing TS errors in CareerArc/Constellation unchanged).
+
+### Decisions Triggered
+
+- `certification` filter pill rendered only if entries exist in data (none currently, so hidden — future-proofs it)
+- `giveback` category defined in color map but no entries in current data; `talk` column handles both `talk` and `giveback` categories
+- Timeline bar uses `ResizeObserver` for responsive width rather than a fixed pixel width
+- `fontVariantNumeric` in SVG text handled via `style={{}}` prop (linter-caught, fixed automatically)
+
+---
+
+## Prompt 029
+
+**Timestamp:** 2026-08-02T23:30:00Z
+
+**Prompt:**
+> So I have so much data about myself... use the right skills... interview me, and start projecting my data in an interactive manner. I want recruiters, leaders, peers to know the work I have done in an interactive way.
+> Before proceeding, also make sure you are including the new tabs as well: Home/Hero, Timeline, Impact Wall, Talks & Givebacks, Voices.
+
+### Intent Clarification (interview)
+- **Audience:** All three (recruiter / leader / peer) — progressive disclosure
+- **Core story:** Tech-first, with an angle of "full human"
+- **Format:** Extend existing viz app (React + D3)
+- **New sections:** Impact Wall, Talks & Community, Recommendations & Recognition, Skills Over Time, Feedbacks, Timeline, AI pioneer angle, full human projection
+- **Knowledge graph:** Ego-graph, org subgraph, skill co-occurrence heatmap, timeline radial, force-directed with LOD — all five
+- **Visual tone:** Warm human — approachable, energetic, personal
+
+### Response Summary
+
+Full interactive portfolio built by extending the existing viz app. Three parallel agents built all components simultaneously.
+
+**Data pipeline:** Exported 5 structured datasets from DuckDB (2,169 nodes, 13,514 edges):
+- `graph.json` (1MB) — force graph (148 nodes/1619 edges), org subgraphs, 20×20 skill heatmap, radial project timeline, ego index
+- `voices.json` — 60 recognition/recommendation quotes
+- `talks.json` — 43 talks, givebacks, yoga entries
+- `impact.json` — 8 quantified career wins
+- `timeline.json` — 4 career eras with 23 milestones
+
+**8 tabs now in app:**
+1. **Overview (Hero)** — animated entrance, count-up KPI tiles ($3M+, 20yrs, 7000+, 99.999%), bio, era chips, scroll prompt
+2. **Professional Identity** — existing BeTalent constellation
+3. **Career Arc** — existing stacked bar chart
+4. **Impact** — 2-column card grid, large colored stats, expandable detail
+5. **Timeline** — horizontally scrollable 20-year era layout, milestone dots with icons, click-to-expand
+6. **Voices** — featured rotating quote, 60-entry grid, filter by type, auto-rotate every 5s
+7. **Talks & Givebacks** — 3-column layout (tech talks / social / yoga), SVG activity bar chart 2007–2026
+8. **Knowledge Graph** — 5 sub-views: Force Graph (D3, zoom/pan/click), Org Subgraph (bipartite), Skill Heatmap (20×20 co-occurrence), Timeline Radial (polar, 913 artifacts · 20 years), Ego Explorer (search + click-to-traverse)
+
+**Build:** `vite build ✓`, 1,336 KB JS (graph.json dominates), zero TS errors in new files.
+
+### Decisions Triggered
+
+- graph.json imported statically (not lazy) — acceptable for dev/self-hosted use; can be dynamic-imported later for production
+- Radial timeline: 28 projects with dated entries from DuckDB (others lack precise dates)
+- Ego index capped at 148 nodes (top by degree) — full 2,169-node ego index would be 10MB+
+- `fontVariantNumeric` SVG issue fixed in TalksGivebacks.tsx (style prop)

@@ -1,0 +1,402 @@
+{
+  "betalent_skills": [
+    {
+      "id": "skill_3fa11af3-82c3-55d1-9185-bfea3e6ccba3",
+      "name": "Communication",
+      "betalent_rank": 1,
+      "cluster": "How I Interact",
+      "label": "Articulate",
+      "description": "Energised by explaining things clearly; expresses self easily, clearly and succinctly; articulates concepts logically; adapts communication style to audience; inspires and engages",
+      "ldc_strength": "Highly articulate \u2014 effectively breaks down complexity for others; creates safe and open space for conversations",
+      "ldc_development": "Risk of overusing articulateness under pressure \u2014 can appear overconfident or repetitive; allow others space to bring in their perspective",
+      "category": "soft_skill",
+      "overuse_risk": "Can appear overconfident; may over-simplify; under pressure seen as superior by colleagues",
+      "used_skill_count": 42,
+      "recognized_for_count": 25,
+      "sample_achievements": [
+        "Toastmasters International - Won Best Speaker award at Toastmasters International club meetings",
+        "Toastmasters International - Won Best Table Topic Speaker award at Toastmasters International club meetings",
+        "IBM - Completed IBM Foundational Competency: Presentation Skills"
+      ]
+    },
+    {
+      "id": "skill_a37c7c72-a98e-5009-8c5d-4f42e4e79756",
+      "name": "Attention to Detail",
+      "betalent_rank": 2,
+      "cluster": "How I Deliver",
+      "label": "Meticulous",
+      "description": "Energised by accuracy; delivers to highest standard; rigorously proofs own work and others'; gives detailed instructions; avoids shortcuts; consistently produces high quality comprehensive work",
+      "ldc_strength": null,
+      "ldc_development": null,
+      "category": null,
+      "overuse_risk": "Can become perfectionist; produces work slower in time-critical periods; benefit from prioritising pace on task-by-task basis",
+      "used_skill_count": 2,
+      "recognized_for_count": 1,
+      "sample_achievements": [
+        "Philips - Natural leader who inspires and motivates people across all levels regardless of reporting lines, seniority, or team boundaries"
+      ]
+    },
+    {
+      "id": "skill_c4e11541-df3b-5dbe-b479-f924911c5acb",
+      "name": "Analytical Thinking",
+      "betalent_rank": 3,
+      "cluster": "How I Deliver",
+      "label": "Evaluative",
+      "description": "Solution-focused; energised by identifying problems and their causes; rigorous and objective; gathers information from multiple sources; justifies decisions with objective facts and evidence",
+      "ldc_strength": null,
+      "ldc_development": null,
+      "category": null,
+      "overuse_risk": "May struggle with intuitive/impulsive thinking; requires support when faced with urgent problems; uncomfortable cutting corners",
+      "used_skill_count": 1,
+      "recognized_for_count": 0,
+      "sample_achievements": []
+    },
+    {
+      "id": "skill_057f8377-c4a9-5993-b3f4-9aea99bfae34",
+      "name": "Values-based Leadership",
+      "betalent_rank": 4,
+      "cluster": "How I Lead",
+      "label": "Genuine",
+      "description": "Driven by principles; demonstrates loyalty and commitment; gains mutual trust; recognises value of honest communication environments",
+      "ldc_strength": null,
+      "ldc_development": null,
+      "category": null,
+      "overuse_risk": null,
+      "used_skill_count": 3,
+      "recognized_for_count": 2,
+      "sample_achievements": [
+        "Philips - Strong technical skills",
+        "Karnataka State Brahmin Development Board (KSBDB) - Kept teachers spell bound by simple, straight and lucid language for entire sixty minutes"
+      ]
+    },
+    {
+      "id": "skill_46ce27f6-6034-5dba-9aaa-139b4cb0af4a",
+      "name": "Authenticity",
+      "betalent_rank": 4,
+      "cluster": "How I Lead",
+      "label": "Genuine",
+      "description": "Energised by maintaining values and beliefs; communicates openly and honestly; earns mutual trust; openly shares limitations; demonstrates core values at all times",
+      "ldc_strength": null,
+      "ldc_development": null,
+      "category": null,
+      "overuse_risk": "Can become rigid in beliefs; may share too much information leading to loss of business deals or sharing worrying information without reassuring colleagues",
+      "used_skill_count": 1,
+      "recognized_for_count": 0,
+      "sample_achievements": []
+    },
+    {
+      "id": "skill_720bbe53-211f-5e53-aaf8-27b2c2ca076e",
+      "name": "Goal Orientation",
+      "betalent_rank": 5,
+      "cluster": "How I Lead",
+      "label": "Achiever",
+      "description": "Energised by accomplishment; sets stretching goals for self and others; future-focused and determined; inspires others to perform at highest level; driven towards excellence",
+      "ldc_strength": null,
+      "ldc_development": null,
+      "category": null,
+      "overuse_risk": "Potential to become overstretched; setting increasingly difficult targets can lead to stress and burnout; puts unnecessary pressure on self and others",
+      "used_skill_count": 7,
+      "recognized_for_count": 0,
+      "sample_achievements": []
+    },
+    {
+      "id": "skill_f2b1c668-fb75-56ce-a861-e02a12a26925",
+      "name": "Network Building",
+      "betalent_rank": 6,
+      "cluster": "How I Interact",
+      "label": "Networker",
+      "description": "Energised by building relationships; builds strong relationships with key internal/external stakeholders; acts strategically when networking; understands political landscape; new relationships mutually beneficial",
+      "ldc_strength": null,
+      "ldc_development": null,
+      "category": null,
+      "overuse_risk": "Desire to push self forward when building professional friendships can appear forceful and unnatural",
+      "used_skill_count": 5,
+      "recognized_for_count": 0,
+      "sample_achievements": []
+    },
+    {
+      "id": "skill_cbbce221-d342-5ed7-813f-68ad8dd61be3",
+      "name": "Self-Awareness",
+      "betalent_rank": 7,
+      "cluster": "How I Deliver",
+      "label": "Self-Aware",
+      "description": "Energised by being in touch with inner self; clear awareness of own emotions and impact on others; actively seeks development feedback; reflective and intuitive; maintains high professionalism in emotional situations",
+      "ldc_strength": null,
+      "ldc_development": null,
+      "category": null,
+      "overuse_risk": "Tendency to over-interpret situations; can ruminate; over-attribute reasons for situations to self rather than other influences",
+      "used_skill_count": 1,
+      "recognized_for_count": 0,
+      "sample_achievements": []
+    },
+    {
+      "id": "skill_39c5dabc-1261-51a6-9933-5ede82c1bb17",
+      "name": "Innovation",
+      "betalent_rank": 8,
+      "cluster": "How I Think",
+      "label": "Innovative",
+      "description": "Rank 8 \u2014 energised by suggesting improvements to working practices; generates novel ways of working; creative and conceptual thinker; does not automatically accept the status quo",
+      "ldc_strength": null,
+      "ldc_development": null,
+      "category": "soft_skill",
+      "overuse_risk": null,
+      "used_skill_count": 29,
+      "recognized_for_count": 18,
+      "sample_achievements": [
+        "IBM - Received IBM Bravo Award (The Best of IBM) for innovation and event organizing",
+        "IBM - Won 1st place (best implementation project) in Pune at IBM India Hackday 8",
+        "Amazon - Won ACSCS 2016 Hackday"
+      ]
+    },
+    {
+      "id": "skill_388ff56c-f166-53fd-b583-d71da84f29ac",
+      "name": "Positive Thinking",
+      "betalent_rank": 9,
+      "cluster": "How I Deliver",
+      "label": "Positive",
+      "description": "Rank 9 \u2014 energised by remaining optimistic and upbeat in adversity; confident in ability to control events; focuses on achievements and positive outcomes",
+      "ldc_strength": null,
+      "ldc_development": null,
+      "category": null,
+      "overuse_risk": null,
+      "used_skill_count": 3,
+      "recognized_for_count": 2,
+      "sample_achievements": [
+        "Philips - Great learning experience working with Datta",
+        "Amazon - Hardworking and enthusiastic professional"
+      ]
+    },
+    {
+      "id": "skill_44359a11-02bf-536a-a94e-8e93f1c950f2",
+      "name": "Flexibility",
+      "betalent_rank": 11,
+      "cluster": "How I Think",
+      "label": "Flexible",
+      "description": "Rank 11 \u2014 energised by taking an open and adaptable approach; action-oriented; works positively when faced with change or ambiguity",
+      "ldc_strength": null,
+      "ldc_development": null,
+      "category": null,
+      "overuse_risk": null,
+      "used_skill_count": 1,
+      "recognized_for_count": 0,
+      "sample_achievements": []
+    },
+    {
+      "id": "skill_a0706b04-7124-56bc-b990-8caa5ea8a749",
+      "name": "Strategic Thinking",
+      "betalent_rank": 14,
+      "cluster": "How I Think",
+      "label": "Future-Focused",
+      "description": "Rank 14 \u2014 energised by thinking strategically and articulating a clear direction for the future; goal-oriented and visionary; makes confident decisions towards a better future",
+      "ldc_strength": "Ability to draw trends from data and make conclusions; focused on competitive disruption",
+      "ldc_development": "Explicitly link plans to organizational strategy; connect big picture with granular actions",
+      "category": "leadership",
+      "overuse_risk": null,
+      "used_skill_count": 18,
+      "recognized_for_count": 1,
+      "sample_achievements": [
+        "Philips - Results-driven and strategically-minded professional"
+      ]
+    }
+  ],
+  "orbit_skills": [
+    {
+      "id": "skill_2d5da182-de4a-5adc-becd-79e99003def6",
+      "name": "Mentoring",
+      "used_skill_count": 144,
+      "category": "leadership",
+      "first_seen": "2009-01-01",
+      "recognized_for_count": 47
+    },
+    {
+      "id": "skill_66105d2a-8888-55b0-b438-7a9b48a1a341",
+      "name": "Agile",
+      "used_skill_count": 97,
+      "category": "agile_methodology",
+      "first_seen": "2009-01-01",
+      "recognized_for_count": 14
+    },
+    {
+      "id": "skill_d9eaf93b-fb25-597d-93d4-cd44f441abef",
+      "name": "Java",
+      "used_skill_count": 89,
+      "category": "programming_language",
+      "first_seen": "2007-07-01",
+      "recognized_for_count": 27
+    },
+    {
+      "id": "skill_a865e2c4-6c26-566f-b083-7a0a2f4e7351",
+      "name": "Microservices",
+      "used_skill_count": 82,
+      "category": "architecture_pattern",
+      "first_seen": "2016-02-01",
+      "recognized_for_count": 2
+    },
+    {
+      "id": "skill_fdeb6287-803b-5d76-b575-3a756cf90e5a",
+      "name": "Knowledge Sharing",
+      "used_skill_count": 78,
+      "category": null,
+      "first_seen": null,
+      "recognized_for_count": 13
+    },
+    {
+      "id": "skill_8597ee02-502a-5db0-bbb0-326716e8afaf",
+      "name": "Technical Leadership",
+      "used_skill_count": 76,
+      "category": null,
+      "first_seen": null,
+      "recognized_for_count": 22
+    },
+    {
+      "id": "skill_f938e017-edc7-5fdb-8014-7a634e1d439e",
+      "name": "Workshop Facilitation",
+      "used_skill_count": 73,
+      "category": "soft_skill",
+      "first_seen": "2009-01-01",
+      "recognized_for_count": 29
+    },
+    {
+      "id": "skill_280a3ee5-cfbd-57fd-9920-5079b38c756a",
+      "name": "Public Speaking",
+      "used_skill_count": 71,
+      "category": "soft_skill",
+      "first_seen": "2009-01-01",
+      "recognized_for_count": 11
+    },
+    {
+      "id": "skill_3ec89f7b-3b9e-53e5-8a29-de53799c2760",
+      "name": "DevOps",
+      "used_skill_count": 70,
+      "category": "devops",
+      "first_seen": "2018-09-01",
+      "recognized_for_count": 4
+    },
+    {
+      "id": "skill_36e79a3d-2570-530f-aee1-352cb737e110",
+      "name": "Teaching",
+      "used_skill_count": 68,
+      "category": "soft_skill",
+      "first_seen": "2009-01-01",
+      "recognized_for_count": 17
+    },
+    {
+      "id": "skill_adfc566a-f276-5317-9b7a-9fd27ca20d41",
+      "name": "Scrum",
+      "used_skill_count": 63,
+      "category": "agile_methodology",
+      "first_seen": "2009-01-01",
+      "recognized_for_count": 7
+    },
+    {
+      "id": "skill_6da2a53c-c7c1-5379-bbcd-208d7abfb657",
+      "name": "Hiring",
+      "used_skill_count": 62,
+      "category": "hiring",
+      "first_seen": "2013-04-01",
+      "recognized_for_count": 13
+    },
+    {
+      "id": "skill_c788575f-4a8c-5dfe-b768-ea73b4db36a7",
+      "name": "University Relations",
+      "used_skill_count": 59,
+      "category": null,
+      "first_seen": null,
+      "recognized_for_count": 57
+    },
+    {
+      "id": "skill_5b5dc464-8209-5277-a0a1-86a78575301e",
+      "name": "Stakeholder Management",
+      "used_skill_count": 53,
+      "category": "leadership",
+      "first_seen": "2018-09-01",
+      "recognized_for_count": 0
+    },
+    {
+      "id": "skill_12dbda4b-db1d-5916-83ac-691a37c368a5",
+      "name": "Web Services",
+      "used_skill_count": 49,
+      "category": "framework",
+      "first_seen": "2007-07-01",
+      "recognized_for_count": 0
+    },
+    {
+      "id": "skill_2b60914f-6244-5056-b872-ff045258a482",
+      "name": "SOLID Principles",
+      "used_skill_count": 46,
+      "category": null,
+      "first_seen": null,
+      "recognized_for_count": 2
+    },
+    {
+      "id": "skill_4f0872e0-05bf-56d9-b65d-bd92d75593a0",
+      "name": "Storytelling",
+      "used_skill_count": 45,
+      "category": "soft_skill",
+      "first_seen": "2009-01-01",
+      "recognized_for_count": 1
+    },
+    {
+      "id": "skill_f24c2dd0-fd1c-535c-8ebe-61ab4bbc7948",
+      "name": "Performance Profiling",
+      "used_skill_count": 45,
+      "category": "engineering_practice",
+      "first_seen": "2017-01-01",
+      "recognized_for_count": 1
+    },
+    {
+      "id": "skill_4d94cd7c-3e35-5b11-a747-8254833e043e",
+      "name": "Design Patterns",
+      "used_skill_count": 44,
+      "category": "engineering_practice",
+      "first_seen": "2008-10-01",
+      "recognized_for_count": 7
+    },
+    {
+      "id": "skill_386ef164-5bd0-5fca-824e-1e8b2d51da17",
+      "name": "J2ee",
+      "used_skill_count": 42,
+      "category": "framework",
+      "first_seen": "2007-07-01",
+      "recognized_for_count": 8
+    },
+    {
+      "id": "skill_ddaaa246-f716-5688-a4cb-9a813ffb2ab4",
+      "name": "Scrum Facilitation",
+      "used_skill_count": 42,
+      "category": "agile_methodology",
+      "first_seen": "2016-02-01",
+      "recognized_for_count": 0
+    },
+    {
+      "id": "skill_cc137b6c-36ca-5222-8654-d651b30d97e1",
+      "name": "Bar Raising",
+      "used_skill_count": 41,
+      "category": "hiring",
+      "first_seen": "2019-01-01",
+      "recognized_for_count": 2
+    },
+    {
+      "id": "skill_62ed7419-4ade-5f67-aa8e-54ab9a6a0a55",
+      "name": "Hackathon Facilitation",
+      "used_skill_count": 41,
+      "category": "innovation",
+      "first_seen": "2008-01-01",
+      "recognized_for_count": 6
+    },
+    {
+      "id": "skill_2ac5ce0c-ae56-5981-8bd3-816f28f6de8b",
+      "name": "Technical Speaking",
+      "used_skill_count": 41,
+      "category": null,
+      "first_seen": null,
+      "recognized_for_count": 53
+    }
+  ],
+  "clusters": [
+    "How I Interact",
+    "How I Deliver",
+    "How I Lead",
+    "How I Think"
+  ]
+}

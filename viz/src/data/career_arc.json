@@ -1,0 +1,1525 @@
+{
+  "years": [
+    {
+      "year": 2008,
+      "recognition": 0,
+      "certification": 5,
+      "recommendation": 0,
+      "total": 5,
+      "top_issuer": "IBM",
+      "issuers": {
+        "IBM": 5
+      },
+      "new_skills": [
+        {
+          "name": "cross_functional_collaboration",
+          "category": "leadership",
+          "id": "skill_0e49ff2c-e321-5e5c-824e-9a78cd801984"
+        },
+        {
+          "name": "Cross-Functional Collaboration",
+          "category": "leadership",
+          "id": "skill_72225676-e5b5-57e9-bbc9-7def05c32d99"
+        },
+        {
+          "name": "Test Driven Development",
+          "category": "engineering_practice",
+          "id": "skill_215a40b3-e1d9-5e6e-bb58-3a6553fd02fa"
+        },
+        {
+          "name": "Eclipse RCP",
+          "category": "framework",
+          "id": "skill_5ef0f6ce-3e43-5539-923a-abbc82527e86"
+        },
+        {
+          "name": "event_coordination",
+          "category": "leadership",
+          "id": "skill_9b49f0c5-545b-5f1d-a3fa-ecc21d6d0068"
+        },
+        {
+          "name": "Hackathon Facilitation",
+          "category": "innovation",
+          "id": "skill_62ed7419-4ade-5f67-aa8e-54ab9a6a0a55"
+        },
+        {
+          "name": "component_ownership",
+          "category": "engineering_practice",
+          "id": "skill_522a8fcb-2dc7-5832-9a9c-3d3b180fab5e"
+        },
+        {
+          "name": "requirement_analysis",
+          "category": "engineering_practice",
+          "id": "skill_1fdfbe86-e109-5ba9-afdb-b6f2532a75bd"
+        },
+        {
+          "name": "Innovation",
+          "category": "soft_skill",
+          "id": "skill_39c5dabc-1261-51a6-9933-5ede82c1bb17"
+        },
+        {
+          "name": "Process Improvement",
+          "category": "engineering_practice",
+          "id": "skill_64c6907f-2487-5c11-83c7-2a73246f01ff"
+        },
+        {
+          "name": "TDD",
+          "category": "engineering_practice",
+          "id": "skill_af8db879-15c8-5bd6-b3ff-c1e68ba81c58"
+        },
+        {
+          "name": "Accessibility Testing",
+          "category": "testing",
+          "id": "skill_4de1850c-b1b2-5351-9468-524da66d4166"
+        },
+        {
+          "name": "Design Patterns",
+          "category": "engineering_practice",
+          "id": "skill_4d94cd7c-3e35-5b11-a747-8254833e043e"
+        },
+        {
+          "name": "Expeditor Toolkit",
+          "category": "ibm_product",
+          "id": "skill_526a8b14-73f5-5518-b765-4a73e9c9d08d"
+        },
+        {
+          "name": "Hackathon",
+          "category": "innovation",
+          "id": "skill_59bf2d35-a0cf-5b53-8278-45fddb982349"
+        },
+        {
+          "name": "Leadership",
+          "category": "soft_skill",
+          "id": "skill_b194f7ef-7649-507c-aeea-e902624885d6"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Mentoring",
+          "count": 21
+        },
+        {
+          "name": "Web Services",
+          "count": 20
+        },
+        {
+          "name": "Java",
+          "count": 20
+        },
+        {
+          "name": "Agile",
+          "count": 19
+        },
+        {
+          "name": "Scrum",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "recognition": 0,
+      "certification": 4,
+      "recommendation": 0,
+      "total": 4,
+      "top_issuer": "IBM",
+      "issuers": {
+        "SVYASA": 1,
+        "IBM": 3
+      },
+      "new_skills": [
+        {
+          "name": "Agile",
+          "category": "agile_methodology",
+          "id": "skill_66105d2a-8888-55b0-b438-7a9b48a1a341"
+        },
+        {
+          "name": "Yoga Philosophy",
+          "category": "personal_domain",
+          "id": "skill_1f5ae55f-18a2-5706-8145-0266092639e1"
+        },
+        {
+          "name": "Scrum",
+          "category": "agile_methodology",
+          "id": "skill_adfc566a-f276-5317-9b7a-9fd27ca20d41"
+        },
+        {
+          "name": "Pranayama (Breathing Exercises)",
+          "category": "personal_domain",
+          "id": "skill_4fccf3bd-434b-5d89-9eb5-c7e76b51a0af"
+        },
+        {
+          "name": "Anatomy & Physiology of Yoga",
+          "category": "personal_domain",
+          "id": "skill_5562a2de-46de-5348-b44a-4059eb401292"
+        },
+        {
+          "name": "Mentorship",
+          "category": "leadership",
+          "id": "skill_c196df03-361c-5ec4-981a-aa9a8a571f7d"
+        },
+        {
+          "name": "Storytelling",
+          "category": "soft_skill",
+          "id": "skill_4f0872e0-05bf-56d9-b65d-bd92d75593a0"
+        },
+        {
+          "name": "Teaching",
+          "category": "soft_skill",
+          "id": "skill_36e79a3d-2570-530f-aee1-352cb737e110"
+        },
+        {
+          "name": "Scrum Master",
+          "category": "agile_role",
+          "id": "skill_6fc8ac30-50d2-5ebc-bd85-367ffb1b9808"
+        },
+        {
+          "name": "Mentoring",
+          "category": "leadership",
+          "id": "skill_2d5da182-de4a-5adc-becd-79e99003def6"
+        },
+        {
+          "name": "Workshop Facilitation",
+          "category": "soft_skill",
+          "id": "skill_f938e017-edc7-5fdb-8014-7a634e1d439e"
+        },
+        {
+          "name": "Public Speaking",
+          "category": "soft_skill",
+          "id": "skill_280a3ee5-cfbd-57fd-9920-5079b38c756a"
+        },
+        {
+          "name": "Technical Writing",
+          "category": "soft_skill",
+          "id": "skill_9fb95576-f577-5906-92dc-812239d73385"
+        },
+        {
+          "name": "Yoga",
+          "category": "personal_domain",
+          "id": "skill_42c418b2-5c1c-50c0-bf46-5dd0ee3af842"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Agile",
+          "count": 79
+        },
+        {
+          "name": "Web Services",
+          "count": 78
+        },
+        {
+          "name": "Public Speaking",
+          "count": 78
+        },
+        {
+          "name": "Teaching",
+          "count": 75
+        },
+        {
+          "name": "Workshop Facilitation",
+          "count": 75
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "recognition": 0,
+      "certification": 7,
+      "recommendation": 0,
+      "total": 7,
+      "top_issuer": "IBM",
+      "issuers": {
+        "IBM": 3,
+        "SVYASA": 2,
+        "R V College of Engineering": 1,
+        "Annamalai University": 1
+      },
+      "new_skills": [
+        {
+          "name": "yoga_instruction",
+          "category": "personal_domain",
+          "id": "skill_21f57017-8822-538e-a311-ebcf4cee4b3d"
+        },
+        {
+          "name": "Yoga Instruction",
+          "category": "personal_domain",
+          "id": "skill_064fdf59-d2c8-5ade-ad66-804cee36b2f6"
+        },
+        {
+          "name": "Volunteering",
+          "category": "social_giveback",
+          "id": "skill_5f1c0ce1-ff45-56a7-9b5f-a53e04f567e5"
+        },
+        {
+          "name": "patent_filing",
+          "category": "intellectual_property",
+          "id": "skill_06ce18f9-eeed-5f67-81f1-503fe89c2649"
+        },
+        {
+          "name": "Toastmasters",
+          "category": "professional_body",
+          "id": "skill_a3960204-2def-59f6-8958-31a8278e3174"
+        },
+        {
+          "name": "technical_leadership",
+          "category": "leadership",
+          "id": "skill_1dd67ce0-605c-5d06-8315-950e0d58573a"
+        },
+        {
+          "name": "Intellectual Property Awareness",
+          "category": "intellectual_property",
+          "id": "skill_eb1f2027-7a94-5ef7-935b-719ac44caa70"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Public Speaking",
+          "count": 110
+        },
+        {
+          "name": "Agile",
+          "count": 108
+        },
+        {
+          "name": "Workshop Facilitation",
+          "count": 108
+        },
+        {
+          "name": "Web Services",
+          "count": 106
+        },
+        {
+          "name": "Storytelling",
+          "count": 88
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "recognition": 2,
+      "certification": 7,
+      "recommendation": 0,
+      "total": 9,
+      "top_issuer": "IBM",
+      "issuers": {
+        "IBM": 4,
+        "Toastmasters International": 3,
+        "New Horizon College of Engineering": 1,
+        "New Horizon College of Engineering (NHCE)": 1
+      },
+      "new_skills": [
+        {
+          "name": "Data Structures Instruction",
+          "category": "teaching",
+          "id": "skill_16b8d4d0-ac97-5569-b591-e6dd149422a6"
+        },
+        {
+          "name": "Yoga Therapy",
+          "category": "personal_domain",
+          "id": "skill_55eff4c1-c22d-5c6a-839f-92eb65a4e91a"
+        },
+        {
+          "name": "community_management",
+          "category": "leadership",
+          "id": "skill_102edce7-609a-5db7-b1d8-6db8726c64de"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Public Speaking",
+          "count": 68
+        },
+        {
+          "name": "Workshop Facilitation",
+          "count": 66
+        },
+        {
+          "name": "Agile",
+          "count": 63
+        },
+        {
+          "name": "Web Services",
+          "count": 60
+        },
+        {
+          "name": "Mentoring",
+          "count": 54
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "recognition": 6,
+      "certification": 1,
+      "recommendation": 3,
+      "total": 10,
+      "top_issuer": "IBM",
+      "issuers": {
+        "Toastmasters International": 1,
+        "GM Institute of Technology (GMIT)": 1,
+        "Sir M Visvesvaraya Institute of Technology (Sir MVIT)": 1,
+        "GM Institute of Technology": 1,
+        "CMR Institute of Management Studies": 1,
+        "CMR Institute of Management Studies (CMRIMS)": 1,
+        "Sir MVIT": 1,
+        "IBM": 3
+      },
+      "new_skills": [],
+      "top_skills": [
+        {
+          "name": "Agile",
+          "count": 100
+        },
+        {
+          "name": "Web Services",
+          "count": 99
+        },
+        {
+          "name": "Workshop Facilitation",
+          "count": 99
+        },
+        {
+          "name": "Public Speaking",
+          "count": 99
+        },
+        {
+          "name": "Storytelling",
+          "count": 87
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "recognition": 22,
+      "certification": 1,
+      "recommendation": 2,
+      "total": 25,
+      "top_issuer": "Exeter",
+      "issuers": {
+        "Toastmasters International": 1,
+        "BMS Institute of Technology": 1,
+        "MVJ College of Engineering (MVJCE)": 1,
+        "BMS Institute of Technology (BMSIT)": 1,
+        "R N S Institute of Technology": 1,
+        "GM Institute of Technology": 1,
+        "Exeter": 11,
+        "MVJ College of Engineering": 2,
+        "Dr. Ambedkar Institute of Technology": 2,
+        "Marwadi Education Foundation": 2,
+        "IBM": 2
+      },
+      "new_skills": [
+        {
+          "name": "Weblogic",
+          "category": "application_server",
+          "id": "skill_3ba8ad92-7bc4-5b7b-a39f-aa7be7ef6ca3"
+        },
+        {
+          "name": "Architecture",
+          "category": "engineering_practice",
+          "id": "skill_e22ec339-e328-5134-bc3f-85590c5cf759"
+        },
+        {
+          "name": "Team Management",
+          "category": "leadership",
+          "id": "skill_49374d79-5882-5c3c-8d6f-0a5b5c1ef5c8"
+        },
+        {
+          "name": "People Management",
+          "category": "leadership",
+          "id": "skill_91d73205-4c30-5abb-9bd0-57658595886b"
+        },
+        {
+          "name": "C#",
+          "category": "programming_language",
+          "id": "skill_67b2907e-7a71-5efc-83ac-7610325a01a6"
+        },
+        {
+          "name": "Release Management",
+          "category": "engineering_practice",
+          "id": "skill_a4e352a6-c53b-5748-9ec6-ec8e88df5338"
+        },
+        {
+          "name": "Hiring",
+          "category": "hiring",
+          "id": "skill_6da2a53c-c7c1-5379-bbcd-208d7abfb657"
+        },
+        {
+          "name": "Struts",
+          "category": "framework",
+          "id": "skill_a72ba0ad-79cf-5c3d-848e-f01ab32e534f"
+        },
+        {
+          "name": "JavaScript",
+          "category": "programming_language",
+          "id": "skill_ddb21e75-edfa-5ed5-af1f-ed7f9dd642e9"
+        },
+        {
+          "name": "Hibernate",
+          "category": "framework",
+          "id": "skill_7da0308f-62a6-5064-9919-511252906ef3"
+        },
+        {
+          "name": "Android Development",
+          "category": "mobile_development",
+          "id": "skill_7ccaa436-01d0-5537-885e-768573751eae"
+        },
+        {
+          "name": "C Sharp",
+          "category": "programming_language",
+          "id": "skill_7b96b7ee-57f5-556d-a807-4cfd511152a4"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Microservices",
+          "count": 348
+        },
+        {
+          "name": "Agile",
+          "count": 344
+        },
+        {
+          "name": "Workshop Facilitation",
+          "count": 339
+        },
+        {
+          "name": "Public Speaking",
+          "count": 338
+        },
+        {
+          "name": "Teaching",
+          "count": 330
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "recognition": 40,
+      "certification": 5,
+      "recommendation": 2,
+      "total": 47,
+      "top_issuer": "Exeter",
+      "issuers": {
+        "Exeter Group": 1,
+        "Exeter": 34,
+        "Vidya Vikas Institute of Engineering & Technology (VVIET)": 1,
+        "Unknown": 1,
+        "Vidya Vikas Institute of Engineering & Technology": 1,
+        "MVJ College of Engineering (MVJCE)": 1,
+        "Exeter Software India Pvt Ltd": 2,
+        "BMS Institute of Technology": 1,
+        "MVJ College of Engineering": 1,
+        "Vemana Institute of Technology": 2,
+        "IBM": 1,
+        "Sir MVIT": 1
+      },
+      "new_skills": [],
+      "top_skills": [
+        {
+          "name": "Workshop Facilitation",
+          "count": 207
+        },
+        {
+          "name": "Agile",
+          "count": 203
+        },
+        {
+          "name": "Design Patterns",
+          "count": 203
+        },
+        {
+          "name": "Storytelling",
+          "count": 200
+        },
+        {
+          "name": "Public Speaking",
+          "count": 200
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "recognition": 27,
+      "certification": 2,
+      "recommendation": 4,
+      "total": 33,
+      "top_issuer": "Exeter",
+      "issuers": {
+        "Computer Society of India (CSI)": 1,
+        "Exeter Software India Pvt Ltd": 1,
+        "Computer Society of India": 2,
+        "BMS Institute of Technology": 1,
+        "Exeter": 28
+      },
+      "new_skills": [],
+      "top_skills": [
+        {
+          "name": "Agile",
+          "count": 153
+        },
+        {
+          "name": "Public Speaking",
+          "count": 145
+        },
+        {
+          "name": "Workshop Facilitation",
+          "count": 144
+        },
+        {
+          "name": "Microservices",
+          "count": 140
+        },
+        {
+          "name": "Design Patterns",
+          "count": 137
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "recognition": 19,
+      "certification": 0,
+      "recommendation": 0,
+      "total": 19,
+      "top_issuer": "Amazon",
+      "issuers": {
+        "Amazon": 19
+      },
+      "new_skills": [
+        {
+          "name": "Quick Decision Making",
+          "category": "leadership",
+          "id": "skill_d2a7e0f1-36bd-5a94-b126-75b5aa6f8c58"
+        },
+        {
+          "name": "Business Acumen",
+          "category": "leadership",
+          "id": "skill_e984a00c-e281-50ff-ba4c-78358c6a75ca"
+        },
+        {
+          "name": "Distributed Systems",
+          "category": "architecture_pattern",
+          "id": "skill_92953277-7410-5dd8-98fb-b2180b989b35"
+        },
+        {
+          "name": "XML/JSON Parsing",
+          "category": "engineering_practice",
+          "id": "skill_428af18b-b562-5761-ba6d-001f94dbfce7"
+        },
+        {
+          "name": "Microservices",
+          "category": "architecture_pattern",
+          "id": "skill_a865e2c4-6c26-566f-b083-7a0a2f4e7351"
+        },
+        {
+          "name": "Microservices Architecture",
+          "category": "architecture_pattern",
+          "id": "skill_aafee801-1694-5b3d-b4e0-34cb05b80c83"
+        },
+        {
+          "name": "Scrum Facilitation",
+          "category": "agile_methodology",
+          "id": "skill_ddaaa246-f716-5688-a4cb-9a813ffb2ab4"
+        },
+        {
+          "name": "AWS",
+          "category": "cloud_platform",
+          "id": "skill_8993327a-8aa4-5fe1-beba-ae215d06d369"
+        },
+        {
+          "name": "API Development",
+          "category": "engineering_practice",
+          "id": "skill_3423210c-e7a2-54c6-a970-c3756726c9bf"
+        },
+        {
+          "name": "Agile Product Ownership",
+          "category": "agile_methodology",
+          "id": "skill_43809c1b-1d9b-5ac4-9e4d-6457ef2b4a0b"
+        },
+        {
+          "name": "Onboarding",
+          "category": "leadership",
+          "id": "skill_13a3158a-f148-5569-b4d7-28d5232ec8cf"
+        },
+        {
+          "name": "XML Parsing",
+          "category": "engineering_practice",
+          "id": "skill_68813d41-a13f-5daf-805d-90ca326b6d05"
+        },
+        {
+          "name": "Fraud Detection",
+          "category": "domain_expertise",
+          "id": "skill_e324e86d-6321-5c69-95e9-7313aa8f1632"
+        },
+        {
+          "name": "Incident Resolution",
+          "category": "engineering_practice",
+          "id": "skill_4305cf6b-63ec-5f4e-adde-77cce9ddf1e5"
+        },
+        {
+          "name": "Root Cause Analysis",
+          "category": "engineering_practice",
+          "id": "skill_0c517d26-cd66-500a-88a8-47c2aec956f2"
+        },
+        {
+          "name": "Knowledge Management",
+          "category": "leadership",
+          "id": "skill_734a7dc0-7977-5186-8c87-4d0f8572db05"
+        },
+        {
+          "name": "Scalability",
+          "category": "engineering_practice",
+          "id": "skill_0e6f52a8-d7d3-58be-8a15-c441a3ca7594"
+        },
+        {
+          "name": "Agile Coaching",
+          "category": "agile_methodology",
+          "id": "skill_d1e553a6-5175-584b-b48c-f57f3302b7f8"
+        },
+        {
+          "name": "Interviewing",
+          "category": "hiring",
+          "id": "skill_d090187b-2711-5565-8f41-a566c9ed5c59"
+        },
+        {
+          "name": "Performance Optimization",
+          "category": "engineering_practice",
+          "id": "skill_ad916395-2e15-5725-ba74-7e09100878a7"
+        },
+        {
+          "name": "Cost Optimization",
+          "category": "engineering_practice",
+          "id": "skill_3a480ab7-6a91-57d8-b49f-11b7d497d8af"
+        },
+        {
+          "name": "Data-driven Decision Making",
+          "category": "leadership",
+          "id": "skill_1e309c61-b991-5dab-9fd2-369b6be89048"
+        },
+        {
+          "name": "Oncall Management",
+          "category": "engineering_practice",
+          "id": "skill_58f14fa5-c282-5b99-90ef-eede6368f88a"
+        },
+        {
+          "name": "API Design",
+          "category": "engineering_practice",
+          "id": "skill_d558f184-a0d8-53a0-a2c5-9dd6da8f719c"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Microservices",
+          "count": 85
+        },
+        {
+          "name": "Mentoring",
+          "count": 84
+        },
+        {
+          "name": "Java",
+          "count": 82
+        },
+        {
+          "name": "Hiring",
+          "count": 81
+        },
+        {
+          "name": "Stakeholder Management",
+          "count": 78
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "recognition": 47,
+      "certification": 0,
+      "recommendation": 1,
+      "total": 48,
+      "top_issuer": "Amazon",
+      "issuers": {
+        "R.V. College of Engineering": 1,
+        "National Institute of Engineering (NIE)": 1,
+        "Amazon": 43,
+        "The National Institute of Engineering Mysore": 1,
+        "Vemana Institute of Technology": 1,
+        "R.V. College of Engineering (RVCE)": 1
+      },
+      "new_skills": [
+        {
+          "name": "Garbage Collection",
+          "category": "engineering_practice",
+          "id": "skill_019d58a4-89dc-534f-9625-b6c38e1496c5"
+        },
+        {
+          "name": "Performance Profiling",
+          "category": "engineering_practice",
+          "id": "skill_f24c2dd0-fd1c-535c-8ebe-61ab4bbc7948"
+        },
+        {
+          "name": "JVM Tuning",
+          "category": "engineering_practice",
+          "id": "skill_d40fe380-147e-572d-9f5a-1ddf2a8689db"
+        },
+        {
+          "name": "JVM",
+          "category": "platform",
+          "id": "skill_c978fbaf-aac4-57c2-9be2-5a58b15ae20a"
+        },
+        {
+          "name": "Interview Preparation Coaching",
+          "category": "teaching",
+          "id": "skill_77e2c5c3-f6ea-588c-888f-d0cb02e3be08"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Agile",
+          "count": 186
+        },
+        {
+          "name": "Microservices",
+          "count": 180
+        },
+        {
+          "name": "Mentoring",
+          "count": 165
+        },
+        {
+          "name": "Java",
+          "count": 161
+        },
+        {
+          "name": "Scrum",
+          "count": 155
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "recognition": 26,
+      "certification": 2,
+      "recommendation": 0,
+      "total": 28,
+      "top_issuer": "Amazon",
+      "issuers": {
+        "Amazon": 22,
+        "Philips": 1,
+        "BMS Institute of Technology": 2,
+        "R.V. College of Engineering": 1,
+        "BMS Institute of Technology (BMSIT)": 2
+      },
+      "new_skills": [
+        {
+          "name": "Continuous Improvement",
+          "category": "leadership",
+          "id": "skill_3d498676-6155-5547-8496-0adaee0cecb9"
+        },
+        {
+          "name": "CI/CD",
+          "category": "devops",
+          "id": "skill_7dc51b1a-bb7d-54aa-973e-3d08f55ca26d"
+        },
+        {
+          "name": "Influence-based Leadership",
+          "category": "leadership",
+          "id": "skill_9427bcc1-c7f5-5b10-b699-2c99dfb667c4"
+        },
+        {
+          "name": "Strategy Roadmapping",
+          "category": "leadership",
+          "id": "skill_85448afd-28fb-5ad3-980e-8587f46b1807"
+        },
+        {
+          "name": "ISO 14971",
+          "category": "compliance_standard",
+          "id": "skill_2824ef89-cc81-5b83-811e-3ee46f51a512"
+        },
+        {
+          "name": "ISO 13485",
+          "category": "compliance_standard",
+          "id": "skill_72a64e2b-3755-58de-976e-d094bdee637e"
+        },
+        {
+          "name": "Calmness",
+          "category": "soft_skill",
+          "id": "skill_ed0a3e03-9d7a-50c9-b059-4dffde430d95"
+        },
+        {
+          "name": "IEC 62304",
+          "category": "compliance_standard",
+          "id": "skill_87986483-c283-5ada-8f07-7540ef00a0d0"
+        },
+        {
+          "name": "Culture Building",
+          "category": "leadership",
+          "id": "skill_86c35dec-7123-5697-8102-9733b164f631"
+        },
+        {
+          "name": "Logging & Observability",
+          "category": "engineering_practice",
+          "id": "skill_ea3a8de1-3687-5f56-be07-2bf30b5fb065"
+        },
+        {
+          "name": "Medical Device Compliance",
+          "category": "domain_expertise",
+          "id": "skill_90a85a00-a8c7-5996-813d-e57130732aae"
+        },
+        {
+          "name": "Technical Debt",
+          "category": "engineering_practice",
+          "id": "skill_b1466842-47e0-5db3-8f7f-2b3ac4354610"
+        },
+        {
+          "name": "Code Quality",
+          "category": "engineering_practice",
+          "id": "skill_363e134b-c110-547f-a525-15f961b010a1"
+        },
+        {
+          "name": "Static Code Analysis",
+          "category": "engineering_practice",
+          "id": "skill_9cd62779-d076-562d-88af-977e62a7ff80"
+        },
+        {
+          "name": "Digital Transformation",
+          "category": "domain_expertise",
+          "id": "skill_2cf67161-c84a-5cb4-a5f4-f1697f0c0596"
+        },
+        {
+          "name": "Static Analysis",
+          "category": "engineering_practice",
+          "id": "skill_c84f36af-acdf-57f9-888a-9f0ccedaf148"
+        },
+        {
+          "name": "Strategic Thinking",
+          "category": "leadership",
+          "id": "skill_a0706b04-7124-56bc-b990-8caa5ea8a749"
+        },
+        {
+          "name": "Competency Building",
+          "category": "leadership",
+          "id": "skill_eb7134b0-1164-5afa-a408-484cbb4ff60d"
+        },
+        {
+          "name": "Thought Leadership",
+          "category": "leadership",
+          "id": "skill_559cbcc8-6da9-55b5-8c0a-938088f92631"
+        },
+        {
+          "name": "Stakeholder Management",
+          "category": "leadership",
+          "id": "skill_5b5dc464-8209-5277-a0a1-86a78575301e"
+        },
+        {
+          "name": "Quality & Integrity",
+          "category": "leadership",
+          "id": "skill_57ef7694-cc1e-50df-8f6b-12a801bfa932"
+        },
+        {
+          "name": "Customer Centricity",
+          "category": "leadership",
+          "id": "skill_258b390c-58ad-58ff-8c60-87213da4a659"
+        },
+        {
+          "name": "Cross-functional Leadership",
+          "category": "leadership",
+          "id": "skill_79caa922-f934-5ee9-a4ad-41364891bc48"
+        },
+        {
+          "name": "Code Quality Analysis",
+          "category": "engineering_practice",
+          "id": "skill_9d4ef171-18a4-530b-867e-2839996ec357"
+        },
+        {
+          "name": "Technical Debt Management",
+          "category": "engineering_practice",
+          "id": "skill_81fd16ef-fd80-53f8-81b4-0c977cb31e55"
+        },
+        {
+          "name": "Reverse Mentoring",
+          "category": "leadership",
+          "id": "skill_31340afd-7b7c-58a2-a617-bb03121b54dc"
+        },
+        {
+          "name": "Technical Debt Elimination",
+          "category": "engineering_practice",
+          "id": "skill_a8416dec-efae-5af3-bdf4-f9c1002f8f05"
+        },
+        {
+          "name": "DevOps",
+          "category": "devops",
+          "id": "skill_3ec89f7b-3b9e-53e5-8a29-de53799c2760"
+        },
+        {
+          "name": "Medical Device Software",
+          "category": "domain_expertise",
+          "id": "skill_d76c7419-3d9d-5442-a980-e276a613edee"
+        },
+        {
+          "name": "DevSecOps",
+          "category": "devops",
+          "id": "skill_75493388-e019-56e7-8ad1-fade186ec28b"
+        },
+        {
+          "name": "Telemetry",
+          "category": "engineering_practice",
+          "id": "skill_df9d0cf5-1ec2-5932-9ac9-5d3da13f17d3"
+        },
+        {
+          "name": "Coaching",
+          "category": "leadership",
+          "id": "skill_7a0bffbd-b402-5853-8866-22f6991f97ae"
+        },
+        {
+          "name": "Software Craftsmanship",
+          "category": "engineering_practice",
+          "id": "skill_6cfcf991-9d30-58c9-b673-205807071cbd"
+        },
+        {
+          "name": "Program Management",
+          "category": "leadership",
+          "id": "skill_b6c133d3-0beb-5736-abd5-cc116726c12e"
+        },
+        {
+          "name": "Organizational Leadership",
+          "category": "leadership",
+          "id": "skill_a5f21cc6-87a5-589b-9029-8ac5bb85151b"
+        },
+        {
+          "name": "Software Excellence",
+          "category": "engineering_practice",
+          "id": "skill_69645844-765f-58b0-809a-019c0cd49e4e"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "category": "compliance",
+          "id": "skill_780dedcc-8f89-50be-98a8-fdc2ad1643ed"
+        },
+        {
+          "name": "Cloud Migration",
+          "category": "engineering_practice",
+          "id": "skill_2d214966-3ef5-54ed-b19b-78ca558cba81"
+        },
+        {
+          "name": "Software Excellence Leadership",
+          "category": "leadership",
+          "id": "skill_e764feb8-9b9c-5cb2-8443-66bba463e3b7"
+        },
+        {
+          "name": "CI/CD Pipeline",
+          "category": "devops",
+          "id": "skill_723272da-390f-5cd8-9ebe-2fe349691ca0"
+        },
+        {
+          "name": "Technical Coaching",
+          "category": "leadership",
+          "id": "skill_1fd406a9-6a17-530d-bfb2-590bda2908bf"
+        },
+        {
+          "name": "Emotional & Social Intelligence",
+          "category": "soft_skill",
+          "id": "skill_bd86961c-ce92-5508-8748-65b2f68741aa"
+        },
+        {
+          "name": "Building Partnerships",
+          "category": "leadership",
+          "id": "skill_094b4c85-2fbb-5253-9af2-0675c70c0c06"
+        },
+        {
+          "name": "Driving Innovation",
+          "category": "leadership",
+          "id": "skill_2a71c064-ab03-5234-86aa-1f8be0e2a447"
+        },
+        {
+          "name": "Software Craftsmanship Assessment",
+          "category": "engineering_practice",
+          "id": "skill_9e9c84ab-9e04-5fd2-b570-f25192f571ca"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Microservices",
+          "count": 219
+        },
+        {
+          "name": "Agile",
+          "count": 201
+        },
+        {
+          "name": "Mentoring",
+          "count": 189
+        },
+        {
+          "name": "Java",
+          "count": 170
+        },
+        {
+          "name": "Hiring",
+          "count": 157
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "recognition": 15,
+      "certification": 0,
+      "recommendation": 2,
+      "total": 17,
+      "top_issuer": "Philips",
+      "issuers": {
+        "Siddaganga Institute of Technology": 3,
+        "Philips India": 2,
+        "Siddaganga Institute of Technology (SIT Tumkur)": 2,
+        "Philips": 10
+      },
+      "new_skills": [
+        {
+          "name": "Coding Dojo",
+          "category": "engineering_practice",
+          "id": "skill_63d9f8e2-e9a0-5983-83de-aac0bbe89e20"
+        },
+        {
+          "name": "Bar Raising",
+          "category": "hiring",
+          "id": "skill_cc137b6c-36ca-5222-8654-d651b30d97e1"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Knowledge Sharing",
+          "count": 93
+        },
+        {
+          "name": "Microservices",
+          "count": 91
+        },
+        {
+          "name": "Teaching",
+          "count": 89
+        },
+        {
+          "name": "Workshop Facilitation",
+          "count": 88
+        },
+        {
+          "name": "Mentoring",
+          "count": 85
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "recognition": 33,
+      "certification": 0,
+      "recommendation": 1,
+      "total": 34,
+      "top_issuer": "Philips",
+      "issuers": {
+        "Siddaganga Institute of Technology": 1,
+        "Philips": 27,
+        "Karnataka State Brahmin Development Board (KSBDB)": 2,
+        "Dr. Ambedkar Institute of Technology": 2,
+        "Philips India": 2
+      },
+      "new_skills": [
+        {
+          "name": "Vendor Selection",
+          "category": "leadership",
+          "id": "skill_d2fc1d3b-a28a-5b57-8520-033811d70f30"
+        },
+        {
+          "name": "Vendor Evaluation",
+          "category": "leadership",
+          "id": "skill_34550538-7da3-5a87-b9e0-88da4b3ec1ec"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Mentoring",
+          "count": 112
+        },
+        {
+          "name": "Microservices",
+          "count": 102
+        },
+        {
+          "name": "Teaching",
+          "count": 96
+        },
+        {
+          "name": "Knowledge Sharing",
+          "count": 95
+        },
+        {
+          "name": "Public Speaking",
+          "count": 90
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "recognition": 24,
+      "certification": 4,
+      "recommendation": 0,
+      "total": 28,
+      "top_issuer": "Philips",
+      "issuers": {
+        "TDC (The Developers Conference)": 1,
+        "Philips": 26,
+        "Siddaganga Institute of Technology": 1
+      },
+      "new_skills": [
+        {
+          "name": "GitHub",
+          "category": "tool",
+          "id": "skill_862dc4ff-df7a-5a25-b5a8-70ea20ac1d1d"
+        },
+        {
+          "name": "Azure",
+          "category": "cloud_platform",
+          "id": "skill_9a6dc023-d9e5-5940-90d3-af15b1bc85f7"
+        },
+        {
+          "name": "Serverless",
+          "category": "cloud_platform",
+          "id": "skill_616d46b2-e1c7-57e5-bbc6-1c7fda5a727e"
+        },
+        {
+          "name": "Software Metrics",
+          "category": "engineering_practice",
+          "id": "skill_6be7792b-7540-5aff-b0ed-2cc8bc896142"
+        },
+        {
+          "name": "Cloud Architecture",
+          "category": "cloud_platform",
+          "id": "skill_647cc1f3-0103-504e-9b04-692a9a02e7c6"
+        },
+        {
+          "name": "SAFe",
+          "category": "agile_methodology",
+          "id": "skill_475366bb-cda4-5459-bfbe-e6aad637d745"
+        },
+        {
+          "name": "Zero-Trust Security",
+          "category": "security",
+          "id": "skill_a343992e-abb9-5899-8b96-a5c9a7021ebf"
+        },
+        {
+          "name": "Executive Communication",
+          "category": "leadership",
+          "id": "skill_a73cc717-82c8-5339-911a-3187fcfc4572"
+        },
+        {
+          "name": "Python",
+          "category": "programming_language",
+          "id": "skill_db11d0a2-4b4a-5851-a562-0bbb2dc8037d"
+        },
+        {
+          "name": "Developer Experience",
+          "category": "engineering_practice",
+          "id": "skill_a2d731af-f63a-5066-9012-6e64f51eae39"
+        },
+        {
+          "name": "Executive Presence",
+          "category": "leadership",
+          "id": "skill_6471d898-fe16-5d55-91f2-82ea526be1e5"
+        },
+        {
+          "name": "DORA Metrics",
+          "category": "engineering_practice",
+          "id": "skill_e9317389-dddd-5b36-928d-c56783b8a729"
+        },
+        {
+          "name": "bar raiser",
+          "category": "hiring",
+          "id": "skill_62226372-0500-589b-8380-1949658de402"
+        },
+        {
+          "name": "GitHub Actions",
+          "category": "devops",
+          "id": "skill_1f1af1db-6c63-5623-8a96-ca6fbe722562"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Microservices",
+          "count": 111
+        },
+        {
+          "name": "Mentoring",
+          "count": 105
+        },
+        {
+          "name": "Teaching",
+          "count": 88
+        },
+        {
+          "name": "Hiring",
+          "count": 86
+        },
+        {
+          "name": "Agile",
+          "count": 86
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "recognition": 1,
+      "certification": 0,
+      "recommendation": 0,
+      "total": 1,
+      "top_issuer": "Philips",
+      "issuers": {
+        "Philips": 1
+      },
+      "new_skills": [
+        {
+          "name": "Inner Source",
+          "category": "engineering_practice",
+          "id": "skill_75c0b7b6-8c17-54d2-96ae-cc46d9d5dd54"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "DevOps",
+          "count": 27
+        },
+        {
+          "name": "Mentoring",
+          "count": 27
+        },
+        {
+          "name": "Inner Source",
+          "count": 23
+        },
+        {
+          "name": "Technical Debt Elimination",
+          "count": 22
+        },
+        {
+          "name": "Software Excellence Leadership",
+          "count": 21
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "recognition": 2,
+      "certification": 0,
+      "recommendation": 1,
+      "total": 3,
+      "top_issuer": "Philips",
+      "issuers": {
+        "Philips": 3
+      },
+      "new_skills": [
+        {
+          "name": "Machine Learning",
+          "category": "ai_technology",
+          "id": "skill_f69fb88f-abda-52cf-8672-a8581235a51a"
+        },
+        {
+          "name": "Generative AI",
+          "category": "ai_technology",
+          "id": "skill_3f0513ae-83c6-5ef8-8059-94a986b05884"
+        },
+        {
+          "name": "GitHub Copilot",
+          "category": "ai_tool",
+          "id": "skill_839f5945-d4cd-54bc-aad7-7d0881d35abf"
+        },
+        {
+          "name": "Prompt Engineering",
+          "category": "ai_technology",
+          "id": "skill_2f1e7c65-1103-54d3-8b6b-10c6318e982a"
+        },
+        {
+          "name": "AI/LLM Integration",
+          "category": "ai_technology",
+          "id": "skill_8891321d-6f40-5cf0-86b8-5f3680d3f6ce"
+        },
+        {
+          "name": "AI",
+          "category": "domain_expertise",
+          "id": "skill_ef1fe68a-0368-568b-943c-f3dbfb200559"
+        },
+        {
+          "name": "LLM",
+          "category": "ai_technology",
+          "id": "skill_8c1f0863-c44f-55be-94aa-3b11e61fc125"
+        },
+        {
+          "name": "GenAI",
+          "category": "ai_technology",
+          "id": "skill_b3b61a14-5676-5dee-9ce4-5cd2273e3460"
+        }
+      ],
+      "top_skills": [
+        {
+          "name": "Mentoring",
+          "count": 29
+        },
+        {
+          "name": "Executive Communication",
+          "count": 27
+        },
+        {
+          "name": "Coaching",
+          "count": 27
+        },
+        {
+          "name": "Program Management",
+          "count": 27
+        },
+        {
+          "name": "Hiring",
+          "count": 27
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "recognition": 18,
+      "certification": 0,
+      "recommendation": 1,
+      "total": 19,
+      "top_issuer": "Philips",
+      "issuers": {
+        "Philips": 19
+      },
+      "new_skills": [],
+      "top_skills": [
+        {
+          "name": "DevOps",
+          "count": 40
+        },
+        {
+          "name": "Developer Experience",
+          "count": 38
+        },
+        {
+          "name": "Mentoring",
+          "count": 36
+        },
+        {
+          "name": "Cloud Migration",
+          "count": 31
+        },
+        {
+          "name": "Program Management",
+          "count": 31
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "recognition": 1,
+      "certification": 4,
+      "recommendation": 3,
+      "total": 8,
+      "top_issuer": "Philips",
+      "issuers": {
+        "CodeScene": 3,
+        "Google": 1,
+        "Philips": 4
+      },
+      "new_skills": [],
+      "top_skills": [
+        {
+          "name": "Prompt Engineering",
+          "count": 43
+        },
+        {
+          "name": "Mentoring",
+          "count": 43
+        },
+        {
+          "name": "GitHub Copilot",
+          "count": 42
+        },
+        {
+          "name": "DevOps",
+          "count": 38
+        },
+        {
+          "name": "GitHub",
+          "count": 35
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "recognition": 3,
+      "certification": 0,
+      "recommendation": 0,
+      "total": 3,
+      "top_issuer": "Philips",
+      "issuers": {
+        "Philips": 2,
+        "Local Elementary School (Michigan)": 1
+      },
+      "new_skills": [],
+      "top_skills": [
+        {
+          "name": "AI",
+          "count": 25
+        },
+        {
+          "name": "Medical Device Compliance",
+          "count": 19
+        },
+        {
+          "name": "Prompt Engineering",
+          "count": 19
+        },
+        {
+          "name": "Mentoring",
+          "count": 18
+        },
+        {
+          "name": "Code Quality",
+          "count": 17
+        }
+      ]
+    }
+  ],
+  "eras": [
+    {
+      "org": "IBM India Pvt. Ltd.",
+      "short": "IBM",
+      "start": 2007,
+      "end": 2012,
+      "color_slot": 1
+    },
+    {
+      "org": "Exeter Software India Pvt. Ltd.",
+      "short": "Exeter",
+      "start": 2012,
+      "end": 2016,
+      "color_slot": 2
+    },
+    {
+      "org": "Exeter Group / OneGate",
+      "short": "OneGate",
+      "start": 2016,
+      "end": 2018,
+      "color_slot": 3
+    },
+    {
+      "org": "Amazon / TRMS",
+      "short": "Amazon",
+      "start": 2018,
+      "end": 2020,
+      "color_slot": 4
+    },
+    {
+      "org": "Philips",
+      "short": "Philips",
+      "start": 2020,
+      "end": 2026,
+      "color_slot": 5
+    }
+  ]
+}
