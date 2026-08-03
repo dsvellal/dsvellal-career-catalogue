@@ -16,7 +16,9 @@ export default function App() {
   return (
     <div className="app">
       <nav className="nav">
-        <span className="nav-brand">Datta <span>Vellal</span></span>
+        <span className="nav-brand">
+          <img src="/logo.jpg" alt="दत्ta011ya" className="nav-logo" />
+        </span>
         <div className="nav-tabs">
           <button className={`nav-tab ${tab === 'hero' ? 'active' : ''}`} onClick={() => setTab('hero')}>
             Overview
@@ -44,7 +46,7 @@ export default function App() {
           </button>
         </div>
         <div className="nav-right">
-          <span>20-year career · 2,169 knowledge nodes</span>
+          <span className="nav-right-tagline">Digital Transformation Leader · Medical Device Software</span>
         </div>
       </nav>
 

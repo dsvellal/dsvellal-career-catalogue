@@ -1,13 +1,18 @@
 # Handover
 
-**Last Updated:** 2026-08-02T23:50:00Z
-**Session:** Full interactive portfolio — 8 tabs, Knowledge Graph, quality fixes
+**Last Updated:** 2026-08-03T03:20:00Z
+**Session:** Hero polish — photo, logo, title rebrand, scroll fix
 
 ---
 
 ## Last Completed Action
 
-Built and polished the full interactive career portfolio. Fixed Hero counter (7,000+ was showing 7+) and rebuilt voices.json with 220 clean, human-readable quotes (previously 60, many raw filenames). Committed and pushed all changes.
+Polished the Hero/Overview tab with five changes:
+1. **Photo** — profile photo placed in right column of two-column hero layout (loaded from Google Sites URL; add `viz/public/photo.jpg` if offline access needed)
+2. **Logo** — "दत्ta011ya" logotype placed in nav, replacing plain text brand; stored at `viz/public/logo.jpg`
+3. **Title rebrand** — removed all "principal engineer" references; now reads "Global Digital Transformation Leader leveraging data, AI & Software Craftsmanship principles to transform medical device software"
+4. **Stats** — replaced "Service uptime / 99.999%" with "Knowledge artifacts / 913" (service uptime was context-less to an outsider)
+5. **Scroll arrow** — wired as a `<button>` that `scrollIntoView` to the Career Highlights below-fold section
 
 ---
 
@@ -17,49 +22,29 @@ Built and polished the full interactive career portfolio. Fixed Hero counter (7,
 |--------|--------|
 | Phase | 7 — Cloud Deployment (only remaining) |
 | Viz tabs | **8 live** at `http://localhost:5173` |
-| Build | Clean (`npm run build ✓`, no TS errors in new files) |
-| Data files | `graph.json` (1MB) + `voices.json` (220 quotes) + `talks.json` + `impact.json` + `timeline.json` |
-| DB | 913 artifacts, 2,169 nodes, 13,514 edges |
+| Build | Clean (`npm run build ✓`) |
 | Git | Committed and pushed to main |
 
-### Tab inventory
+### Hero layout
 
-| Tab | Component | Data source |
-|-----|-----------|-------------|
-| Overview | `Hero.tsx` | Static KPIs (animated count-up) |
-| Professional Identity | `Constellation.tsx` | `constellation.json` |
-| Career Arc | `CareerArc.tsx` | `career_arc.json` |
-| Impact | `ImpactWall.tsx` | `impact.json` (8 cards) |
-| Timeline | `Timeline.tsx` | `timeline.json` (4 eras, 23 milestones) |
-| Voices | `Voices.tsx` | `voices.json` (220 quotes) |
-| Talks & Givebacks | `TalksGivebacks.tsx` | `talks.json` (43 entries) |
-| Knowledge Graph | `KnowledgeGraph.tsx` | `graph.json` (5 sub-views) |
+- Two-column: text + KPI tiles left, photo right
+- Below-fold section (revealed by ↓ scroll button): 4 career highlight cards — Medical Device / AI Pioneer / Org Transformer / Full Human
+- Photo: loaded from Google Sites URL; falls back to "DV" initials placeholder if URL fails
+- Logo: `viz/public/logo.jpg` — inverted white on dark nav
 
-### Knowledge Graph sub-views
+### Photo note
 
-| Sub-view | What it shows |
-|----------|---------------|
-| Force Graph | D3 force-directed, 148 nodes / 1,619 edges, zoom/pan/click |
-| Org Subgraph | Bipartite project→skill per company (IBM/Exeter/Amazon/Philips) |
-| Skill Heatmap | 20×20 co-occurrence matrix, hover tooltips |
-| Timeline Radial | Polar chart, 913 artifacts · 20 years arc bands |
-| Ego Explorer | Search any node, traverse 1-hop graph, breadcrumb trail |
-
----
-
-## In-Progress Work
-
-None.
+The Google Sites image URL is session-authenticated — it will work when the browser is logged in to Google, but may show the initials placeholder in a cold browser session. To guarantee it always shows:
+1. Save your photo as `viz/public/photo.jpg`
+2. Change `PHOTO_URL` in `Hero.tsx` to `'/photo.jpg'`
 
 ---
 
 ## Next Steps
 
-1. **Phase 7: Cloud Deployment** — deploy FastAPI backend + viz frontend; see `plan.md`
-2. **Optional viz improvements:**
-   - graph.json is 1MB static import — consider `React.lazy` + `import()` for production bundle splitting
-   - Org Subgraph bipartite layout could use stronger x-force pins to separate columns more clearly
-   - Timeline Radial project dots cluster together at same year — add orbit radius variation
+1. **Phase 7: Cloud Deployment** — deploy FastAPI backend + viz frontend
+2. **Photo permanence** — add `viz/public/photo.jpg` and update `PHOTO_URL` in `Hero.tsx`
+3. **Optional** — graph.json is 1MB static import; consider `React.lazy` + `import()` for production
 
 ---
 
@@ -73,6 +58,5 @@ None.
 
 - Dev server: `cd viz && npm run dev` → `http://localhost:5173`
 - All data is static JSON in `viz/src/data/` — no API server needed
-- Pre-existing TS errors in `CareerArc.tsx` and `Constellation.tsx` are pre-existing, not new
-- voices.json is regenerated from DuckDB with quality filter (strips filename-style entries, requires ≥35 chars, no date slugs)
-- Era colors (consistent across all components): IBM=#3987e5 / Exeter=#d95926 / Amazon=#199e70 / Philips=#c98500
+- Era colors: IBM=#3987e5 / Exeter=#d95926 / Amazon=#199e70 / Philips=#c98500
+- Logo is a JPEG with black background — `filter: invert(1)` applied in CSS makes it white on dark nav
