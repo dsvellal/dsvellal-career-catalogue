@@ -898,3 +898,37 @@ CSS comments with dashes left intact (not user-visible). Pre-existing files (Kno
 - "→" arrows in tagline kept as HTML entity `&rarr;` (visually correct, not a Unicode dash)
 - Year ranges written as "2007 to 2014" rather than "2007-2014" for natural speech rhythm
 - "86–89%" stat kept as "86-89%" (ASCII hyphen range) since it is a precise numeric range, not prose punctuation
+
+---
+
+## Prompt 033
+
+**Timestamp:** 2026-08-03T04:00:00Z
+
+**Prompt:**
+> Timeline is a beautiful concept. However, the page has a lot of overlap and very little data. Enrich this and make it fit in one page without horizontal scroll. Vertical scroll is ok. Enrich with as many interesting data points as possible. Each data point should expand into a detailed tile.
+
+### Response Summary
+
+Complete Timeline rewrite from horizontal scroll to vertical accordion:
+
+- Exported 343 deduplicated dated achievements from DuckDB, grouped by era/year/month
+- Added "Independent" era (51 entries: community talks, volunteering, yoga across 14 years)
+- Merged curated milestones as "Highlights" pinned group at the top of each year
+- New data file: `timeline_full.json` (72KB, 343 entries across 5 eras)
+
+New component architecture:
+- Era stat tiles (IBM 27 / Exeter 84 / Amazon 82 / Philips 99 / Independent 51), clickable to filter
+- Type filters: All / Recognition / Award / Certification / Achievement / Promotion / Publication / Talk / Giveback
+- Era sections (collapsible) > Year groups (collapsible, "Key year" highlighted) > Month groups (collapsible) > Milestone rows
+- Key years auto-expanded; Highlights month always open by default
+- Each milestone row: type icon, title, "Key moment" badge for pinned items
+- Click any milestone > inline DetailCard with type badge, era label, date, full context text
+- Entirely vertical, no horizontal scroll
+- All new CSS uses `.tl-*` prefix; old horizontal timeline CSS removed
+
+### Decisions
+
+- "Independent" era added as a 5th stream to capture community, talks, and yoga
+- Years with pinned curated milestones auto-expand; others default collapsed
+- Detail card appears inline below the clicked row (not a modal) for context continuity
