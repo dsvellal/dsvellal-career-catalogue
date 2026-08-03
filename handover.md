@@ -1,18 +1,16 @@
 # Handover
 
-**Last Updated:** 2026-08-03T03:20:00Z
-**Session:** Hero polish — photo, logo, title rebrand, scroll fix
+**Last Updated:** 2026-08-03T03:35:00Z
+**Session:** Hero — professional headshot, full name, snazzy tagline, shining clickable tiles
 
 ---
 
 ## Last Completed Action
 
-Polished the Hero/Overview tab with five changes:
-1. **Photo** — profile photo placed in right column of two-column hero layout (loaded from Google Sites URL; add `viz/public/photo.jpg` if offline access needed)
-2. **Logo** — "दत्ta011ya" logotype placed in nav, replacing plain text brand; stored at `viz/public/logo.jpg`
-3. **Title rebrand** — removed all "principal engineer" references; now reads "Global Digital Transformation Leader leveraging data, AI & Software Craftsmanship principles to transform medical device software"
-4. **Stats** — replaced "Service uptime / 99.999%" with "Knowledge artifacts / 913" (service uptime was context-less to an outsider)
-5. **Scroll arrow** — wired as a `<button>` that `scrollIntoView` to the Career Highlights below-fold section
+Final hero polish committed and pushed:
+- Replaced casual kitchen photo with professional headshot (navy blazer, grey background)
+- Photo stored at `viz/public/photo.jpg` — local file, always available offline
+- All other hero changes from previous session retained (full name, tagline, shining tiles, bio)
 
 ---
 
@@ -23,28 +21,48 @@ Polished the Hero/Overview tab with five changes:
 | Phase | 7 — Cloud Deployment (only remaining) |
 | Viz tabs | **8 live** at `http://localhost:5173` |
 | Build | Clean (`npm run build ✓`) |
-| Git | Committed and pushed to main |
+| Git | Committed and pushed to `main` |
 
-### Hero layout
+### Hero overview (Overview tab)
 
-- Two-column: text + KPI tiles left, photo right
-- Below-fold section (revealed by ↓ scroll button): 4 career highlight cards — Medical Device / AI Pioneer / Org Transformer / Full Human
-- Photo: loaded from Google Sites URL; falls back to "DV" initials placeholder if URL fails
-- Logo: `viz/public/logo.jpg` — inverted white on dark nav
+| Element | Value |
+|---------|-------|
+| Full name | DATTATREYA SUBRAMANYA VELLAL (small caps above display name) |
+| Display name | Datta Vellal |
+| Tagline | *"Turning regulated complexity into engineering excellence — one org, one standard, one team at a time."* |
+| Sub-tagline | GLOBAL DIGITAL TRANSFORMATION LEADER · IBM → EXETER → AMAZON → PHILIPS |
+| Bio | Global Digital Transformation Leader... IEC 62304, ISO 13485, ISO 14971, FDA guidances, INCOSE/EARS... $3M+ savings... 7,000+ engineers |
+| Photo | `viz/public/photo.jpg` — professional headshot, navy blazer |
+| Logo | `viz/public/logo.jpg` — दत्ta011ya logotype, CSS-inverted white on dark nav |
 
-### Photo note
+### KPI tiles (clickable, shining on hover)
 
-The Google Sites image URL is session-authenticated — it will work when the browser is logged in to Google, but may show the initials placeholder in a cold browser session. To guarantee it always shows:
-1. Save your photo as `viz/public/photo.jpg`
-2. Change `PHOTO_URL` in `Hero.tsx` to `'/photo.jpg'`
+| Tile | Value | Navigates to |
+|------|-------|-------------|
+| Career savings delivered | $3M+ | Impact tab |
+| Industry depth | 20 yrs | Timeline tab |
+| Engineers reached | 7,000+ | Voices tab |
+| Recognitions & quotes | 220+ | Knowledge Graph tab |
+
+### All 8 tabs
+
+| Tab | Component | Data source |
+|-----|-----------|-------------|
+| Overview | `Hero.tsx` | Static + `impact.json` |
+| Professional Identity | `Constellation.tsx` | `constellation.json` |
+| Career Arc | `CareerArc.tsx` | `career_arc.json` |
+| Impact | `ImpactWall.tsx` | `impact.json` (8 cards) |
+| Timeline | `Timeline.tsx` | `timeline.json` (4 eras, 23 milestones) |
+| Voices | `Voices.tsx` | `voices.json` (220 quotes) |
+| Talks & Givebacks | `TalksGivebacks.tsx` | `talks.json` (43 entries) |
+| Knowledge Graph | `KnowledgeGraph.tsx` | `graph.json` (5 sub-views) |
 
 ---
 
 ## Next Steps
 
-1. **Phase 7: Cloud Deployment** — deploy FastAPI backend + viz frontend
-2. **Photo permanence** — add `viz/public/photo.jpg` and update `PHOTO_URL` in `Hero.tsx`
-3. **Optional** — graph.json is 1MB static import; consider `React.lazy` + `import()` for production
+1. **Phase 7: Cloud Deployment** — deploy FastAPI backend + viz frontend; see `plan.md`
+2. **Optional** — `graph.json` is 1MB static import; `React.lazy` + dynamic `import()` would improve initial bundle size
 
 ---
 
@@ -58,5 +76,6 @@ None.
 
 - Dev server: `cd viz && npm run dev` → `http://localhost:5173`
 - All data is static JSON in `viz/src/data/` — no API server needed
-- Era colors: IBM=#3987e5 / Exeter=#d95926 / Amazon=#199e70 / Philips=#c98500
-- Logo is a JPEG with black background — `filter: invert(1)` applied in CSS makes it white on dark nav
+- Pre-existing TS errors in `CareerArc.tsx` and `Constellation.tsx` are untouched
+- Era colors (consistent across all components): IBM=#3987e5 / Exeter=#d95926 / Amazon=#199e70 / Philips=#c98500
+- `photo.jpg` and `logo.jpg` are both in `viz/public/` and served as static assets by Vite

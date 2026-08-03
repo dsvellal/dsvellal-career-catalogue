@@ -835,3 +835,38 @@ Full interactive portfolio built by extending the existing viz app. Three parall
 - Radial timeline: 28 projects with dated entries from DuckDB (others lack precise dates)
 - Ego index capped at 148 nodes (top by degree) — full 2,169-node ego index would be 10MB+
 - `fontVariantNumeric` SVG issue fixed in TalksGivebacks.tsx (style prop)
+
+---
+
+## Prompt 030
+
+**Timestamp:** 2026-08-03T03:25:00Z
+
+**Prompt:**
+> Use image (kitchen casual photo) as profile picture. Change title to "Global Digital Transformation Leader..." with IEC 62304, ISO 13485, ISO 14971, FDA, INCOSE/EARS. Remove "Tech First, Full Human". Give snazzy 1-line description. Full name Dattatreya Subramanya Vellal, use "Datta" as call-name. Tiles should shine on hover and be clickable leading to relevant data.
+
+### Response Summary
+
+- Full name "DATTATREYA SUBRAMANYA VELLAL" shown above display name "Datta Vellal"
+- Casual kitchen photo set as profile picture (later replaced with professional headshot in Prompt 031)
+- "Tech-first. Full human." removed; replaced with: *"Turning regulated complexity into engineering excellence — one org, one standard, one team at a time."*
+- Bio updated to include IEC 62304, ISO 13485, ISO 14971, FDA guidances, INCOSE/EARS systems engineering
+- KPI tiles converted to shining clickable buttons: $3M+ → Impact, 20yrs → Timeline, 7000+ → Voices, 220+ → Knowledge Graph
+- Shine sweep animation (@keyframes hero-shine) + glow box-shadow on hover
+- "Service uptime" replaced with "Recognitions & quotes / 220+"
+- `onNavigate` prop plumbed from App.tsx → HeroView for tab routing
+
+---
+
+## Prompt 031
+
+**Timestamp:** 2026-08-03T03:32:00Z
+
+**Prompt:**
+> Use this as my profile image (professional headshot, navy blazer). Update all documents, markdown files, commit and push.
+
+### Response Summary
+
+- Replaced casual kitchen photo with professional headshot (`viz/public/photo.jpg`)
+- Updated `handover.md` with full current state of Hero tab, all 8 tabs, KPI tile routing
+- Committed and pushed to main (all 6 pre-commit checks passed)
