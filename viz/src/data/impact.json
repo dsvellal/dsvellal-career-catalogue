@@ -1,50 +1,142 @@
 [
   {
     "stat": "$3M+",
-    "label": "Total career savings",
-    "detail": "Over 2.1M euros from the three-year digital transformation roadmap, 300K through automation savings, 100K annually from the quality-at-desk program, plus contributions at IBM and Amazon.",
-    "era": "All"
+    "label": "Total career savings delivered",
+    "detail": "Over 2.1M euros from a three-year digital transformation roadmap at Philips, $300K through automation savings, $100K annually from the quality-at-desk program, plus quantified contributions at IBM and Amazon.",
+    "era": "All",
+    "category": "professional"
   },
   {
     "stat": "60%",
     "label": "Delivery time reduction",
-    "detail": "Drove a continuous value delivery strategy at Philips that cut product delivery time by 60 percent across multiple product lines.",
-    "era": "Philips"
+    "detail": "Drove a continuous value delivery strategy at Philips that cut product delivery time by 60 percent across multiple medical device product lines, directly improving time-to-market for patient-impacting software.",
+    "era": "Philips",
+    "category": "professional"
   },
   {
     "stat": "99.999%",
-    "label": "Service uptime",
-    "detail": "The Service-Ops automation platform Datta built serves more than 7,000 Philips engineers and has maintained five-nines availability since launch.",
-    "era": "Philips"
+    "label": "Service uptime (five-nines)",
+    "detail": "The Service-Ops automation platform Datta built serves more than 7,000 Philips engineers globally and has maintained five-nines availability since launch — critical for medical device software delivery continuity.",
+    "era": "Philips",
+    "category": "professional"
+  },
+  {
+    "stat": "86–89%",
+    "label": "Fraud latency reduction",
+    "detail": "At Amazon TRMS (Transaction Risk Management Services), redesigned the fraud check pipeline reducing latency by 86–89% while handling 2B+ ASINs daily. Investigated high-impact fraud rule anomalies during Prime Day 2018.",
+    "era": "Amazon",
+    "category": "professional"
   },
   {
     "stat": "50+",
     "label": "Engineers Bar-Raised",
-    "detail": "Led the Bar Raiser program at Philips, trained more than 50 engineers, and reduced senior hiring time by 50 percent while raising the overall engineering bar.",
-    "era": "Philips"
+    "detail": "Led the Bar Raiser program at Philips — trained more than 50 engineers in structured interviewing, reduced senior hiring time by 50%, and raised the engineering quality bar organization-wide. Featured in a Philips intranet article as the model Bar Raiser.",
+    "era": "Philips",
+    "category": "professional"
   },
   {
-    "stat": "86-89%",
-    "label": "Fraud latency reduction",
-    "detail": "At Amazon TRMS (Fraud), redesigned fraud check pipeline reducing latency by 86 to 89% while handling 2B+ ASINs daily",
-    "era": "Amazon"
+    "stat": "7,000+",
+    "label": "Engineers impacted daily",
+    "detail": "The five-nines Service-Ops platform, combined with training programs, DevOps tooling, and knowledge-sharing talks, directly serves more than 7,000 engineers across Philips globally every day.",
+    "era": "Philips",
+    "category": "professional"
+  },
+  {
+    "stat": "Youngest",
+    "label": "Principal Engineer at Philips India",
+    "detail": "Promoted to Principal in 2021 — the youngest to hold that title at Philips India. Recognized for technical depth, cross-organizational influence, and the ability to bridge strategy with hands-on engineering.",
+    "era": "Philips",
+    "category": "professional"
+  },
+  {
+    "stat": "IEC 62304",
+    "label": "Medical device compliance lead",
+    "detail": "Led IEC 62304 audit compliance for medical device software at Philips. Authorized complex architectures for safety-critical systems, ensuring regulatory compliance while enabling engineering velocity.",
+    "era": "Philips",
+    "category": "professional"
+  },
+  {
+    "stat": "39-page",
+    "label": "DevOps whitepaper authored",
+    "detail": "Authored the organization-wide 'End-to-End Software Development & Operations' whitepaper (CAO_2021_42) — covering DevOps, CI/CD pipelines, platforms, hosting, and BizDevOps. Became the reference standard for Philips engineering practices.",
+    "era": "Philips",
+    "category": "professional"
+  },
+  {
+    "stat": "IEEE",
+    "label": "Published researcher",
+    "detail": "Published at the IEEE National Conference on Computing, Communication & Technology (CCT-2010) at RVCE. Combined academic rigor with industry application from the start of career.",
+    "era": "IBM",
+    "category": "professional"
+  },
+  {
+    "stat": "HackDay",
+    "label": "IBM World Championship winner",
+    "detail": "Won the IBM internal HackDay World Championship in 2009 — a global competition across IBM's worldwide engineering workforce. Also received the IBM Bravo Award (Best of IBM) for leading an internship project on a Visual Composition Editor.",
+    "era": "IBM",
+    "category": "professional"
   },
   {
     "stat": "25+",
     "label": "Programming languages",
-    "detail": "Proficient across more than 25 languages over 20 years including Java, Python, TypeScript, Go, Kotlin, Swift, Rust, Scala, C++, and more.",
-    "era": "All"
-  },
-  {
-    "stat": "7,000+",
-    "label": "Engineers impacted",
-    "detail": "The 99.999 percent uptime Service-Ops platform, combined with training programs and knowledge-sharing talks, reached more than 7,000 engineers across Philips globally.",
-    "era": "Philips"
+    "detail": "Proficient across more than 25 languages over 20 years — Java, Python, TypeScript, Go, Kotlin, Swift, Rust, Scala, C++, Ruby, and more. A polyglot who picks the right tool for the job.",
+    "era": "All",
+    "category": "professional"
   },
   {
     "stat": "20 yrs",
     "label": "Career depth",
-    "detail": "IBM (2007 to 2014), Exeter Group (2014 to 2018), Amazon (2018), and Philips (2018 to present). From individual contributor to Principal. From writing code to transforming organizations.",
-    "era": "All"
+    "detail": "IBM (2007–2014), Exeter Group (2014–2018), Amazon (2018), Philips (2018–present). From individual contributor to Principal. From writing code to transforming organizations. Every role left a measurable mark.",
+    "era": "All",
+    "category": "professional"
+  },
+  {
+    "stat": "10,000+",
+    "label": "Children reached through volunteering",
+    "detail": "Led book distribution sessions since 2012, reaching 10,000+ children in rural areas around Mysore by 2018. A six-year sustained program distributing books, stationery, and educational materials to underserved communities.",
+    "era": "Independent",
+    "category": "social"
+  },
+  {
+    "stat": "15+ yrs",
+    "label": "Continuous community volunteering",
+    "detail": "Active volunteer since 2007 across multiple organizations: SuDhee (underprivileged children's education), Bala Samskara Shibira (values camps), Hindu Seva Pratishtana (Yogashree), Mentor Together, and rural school programs. Never stopped giving back.",
+    "era": "Independent",
+    "category": "social"
+  },
+  {
+    "stat": "30+",
+    "label": "Talks at colleges and schools",
+    "detail": "Delivered 30+ guest lectures and workshops at engineering colleges and schools across India — covering design patterns, SOLID principles, microservices, career guidance, and personality development. Audiences from 30 to 100+ students per session.",
+    "era": "All",
+    "category": "social"
+  },
+  {
+    "stat": "Certified",
+    "label": "Yoga instructor (SVYASA)",
+    "detail": "Certified Yoga trainer from SVYASA (Swami Vivekananda Yoga Anusandhana Samsthana). Conducts corporate and community wellness sessions. Taught yoga to children at community halls, combining physical wellness with values education.",
+    "era": "Independent",
+    "category": "social"
+  },
+  {
+    "stat": "3rd graders",
+    "label": "Teaching AI to young minds",
+    "detail": "In 2026, volunteered to teach 3rd graders about AI integration — interviewing fictional characters like Dr. Seuss and Dogman using AI models. Making cutting-edge technology accessible and fun for the youngest learners.",
+    "era": "Philips",
+    "category": "social"
+  },
+  {
+    "stat": "Uniforms",
+    "label": "School uniform program since 2016",
+    "detail": "Contributing to and participating in a uniform distribution program for underprivileged children since 2016 — ensuring kids can attend school with dignity. Part of a broader commitment to removing barriers to education.",
+    "era": "Independent",
+    "category": "social"
+  },
+  {
+    "stat": "Epics",
+    "label": "Storytelling for character building",
+    "detail": "Conducts regular storytelling and personality development sessions drawing from Indian epics (Ramayana & Mahabharata) at community centers, rural schools, and children's camps. Using ancient wisdom to build modern character.",
+    "era": "Independent",
+    "category": "social"
   }
 ]

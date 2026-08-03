@@ -1,13 +1,13 @@
 # Handover
 
-**Last Updated:** 2026-08-03T04:20:00Z
-**Session:** Portfolio polish — Timeline reverse chronology, label cleanup, dash humanization, photo/logo/rebrand
+**Last Updated:** 2026-08-03T12:00:00Z
+**Session:** Impact page expansion — detailed professional + social impact cards with filtering
 
 ---
 
 ## Last Completed Action
 
-Removed "Key year" and "Key moment" labels from the Timeline view. Both were confusing with no clear meaning to viewers. Auto-expand behavior for milestone years is retained silently.
+Expanded the Impact page from 8 cards to 20 cards (13 professional + 7 social). Added category filter buttons (All/Professional/Social Impact) and dual badge system (category + era) on each card. New professional cards cover: Youngest Principal, IEC 62304 compliance, DevOps whitepaper, IEEE publication, HackDay championship. New social cards cover: 10,000+ children reached, 15+ years volunteering, 30+ college talks, yoga instructor certification, teaching AI to 3rd graders, uniform program, storytelling from epics.
 
 ---
 
@@ -27,7 +27,7 @@ Removed "Key year" and "Key moment" labels from the Timeline view. Both were con
 | Overview | `Hero.tsx` | Static KPIs | Two-column, photo, shining clickable tiles |
 | Professional Identity | `Constellation.tsx` | `constellation.json` | BeTalent force graph |
 | Career Arc | `CareerArc.tsx` | `career_arc.json` | Stacked bar by year |
-| Impact | `ImpactWall.tsx` | `impact.json` | 8 expandable cards |
+| Impact | `ImpactWall.tsx` | `impact.json` | 20 expandable cards (13 pro + 7 social), filter bar |
 | Timeline | `Timeline.tsx` | `timeline_full.json` | Vertical accordion, reverse chronological |
 | Voices | `Voices.tsx` | `voices.json` | 220 quotes, rotating featured card |
 | Talks & Givebacks | `TalksGivebacks.tsx` | `talks.json` | 3-column + activity bar |

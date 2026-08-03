@@ -962,3 +962,27 @@ The underlying auto-expand logic (years with curated milestones open by default)
 ### Response Summary
 
 Updated `handover.md` with full current state: all 8 tabs, Hero identity block, Timeline data summary, KPI tile routing, key context. Committed and pushed.
+
+---
+
+## Prompt 036
+
+**Timestamp:** 2026-08-03T12:00:00Z
+**Phase:** Feature enhancement
+**Direction:** User -> System
+
+### Prompt
+
+> Let's focus on "Impact" page. I want this impact to be detailed, and also include some social impacts as well.
+
+### Response Summary
+
+Expanded Impact page from 8 to 20 cards. Added 5 new professional impact cards (Youngest Principal, IEC 62304, DevOps whitepaper, IEEE publication, HackDay). Added 7 social impact cards (10K children reached, 15+ years volunteering, 30+ college talks, yoga certification, AI teaching, uniform program, storytelling). Added category filter buttons and dual-badge system (Professional/Social + era). Used mixed approach for social (aggregate headlines + standout items) per user's choice.
+
+### Decisions Made
+
+- **Layout:** Unified grid with category tags (not separate sections)
+- **Social approach:** Mixed — aggregate headline stats plus standout individual items
+- **Professional depth:** Expanded significantly with 5 new cards
+- **New era color:** Independent era uses purple (#7c5cbf)
+- **Removed duplicate CSS:** Consolidated to single authoritative impact CSS block
