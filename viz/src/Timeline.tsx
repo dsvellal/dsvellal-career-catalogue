@@ -124,7 +124,6 @@ function MilestoneRow({
         >
           <span className="tl-milestone-icon">{TYPE_ICONS[item.type] ?? '•'}</span>
           <span className="tl-milestone-title">{item.title}</span>
-          {item.pinned && <span className="tl-milestone-highlight-tag">Key moment</span>}
           <span className="tl-milestone-date">{item.date?.slice(0, 7)}</span>
         </button>
         {isActive && (
@@ -157,14 +156,12 @@ function YearGroup({
   return (
     <div className="tl-year-group">
       <button
-        className={`tl-year-header${hasHighlight ? ' tl-year-has-highlight' : ''}`}
+        className="tl-year-header"
         onClick={() => setOpen(o => !o)}
-        style={hasHighlight ? { borderLeftColor: color } : {}}
       >
         <span className="tl-year-arrow">{open ? '▾' : '▸'}</span>
-        <span className="tl-year-label" style={hasHighlight ? { color } : {}}>{yr.year}</span>
+        <span className="tl-year-label">{yr.year}</span>
         <span className="tl-year-count">{items.length} entries</span>
-        {hasHighlight && <span className="tl-year-star" style={{ color }}>★ Key year</span>}
       </button>
 
       {open && (
