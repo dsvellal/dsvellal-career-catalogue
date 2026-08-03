@@ -17,10 +17,10 @@ interface StatConfig {
 }
 
 const STATS: StatConfig[] = [
-  { value: '$3M+',   label: 'Career savings delivered', sublabel: 'See impact →', tab: 'impact',   color: '#199e70' },
-  { value: '20 yrs', label: 'Industry depth',            sublabel: 'See timeline →', tab: 'timeline', color: '#3987e5' },
-  { value: '7,000+', label: 'Engineers reached',         sublabel: 'Read voices →',  tab: 'voices',   color: '#c98500' },
-  { value: '220+',   label: 'Recognitions & quotes',     sublabel: 'Explore graph →', tab: 'graph',   color: '#d55181' },
+  { value: '$3M+',   label: 'Career savings delivered', sublabel: 'See impact',    tab: 'impact',   color: '#199e70' },
+  { value: '20 yrs', label: 'Industry depth',            sublabel: 'See timeline',  tab: 'timeline', color: '#3987e5' },
+  { value: '7,000+', label: 'Engineers reached',         sublabel: 'Read voices',   tab: 'voices',   color: '#c98500' },
+  { value: '220+',   label: 'Recognitions and quotes',   sublabel: 'Explore graph', tab: 'graph',    color: '#d55181' },
 ]
 
 function useCountUp(target: number, duration = 1400, start = false) {
@@ -66,11 +66,11 @@ function StatTile({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={() => onNavigate(stat.tab)}
-      aria-label={`${stat.label} — ${stat.sublabel}`}
+      aria-label={`${stat.label}: ${stat.sublabel}`}
     >
       <div className="hero-stat-value">{display}</div>
       <div className="hero-stat-label">{stat.label}</div>
-      <div className="hero-stat-sub">{stat.sublabel}</div>
+      <div className="hero-stat-sub">{stat.sublabel} &rarr;</div>
       <div className="hero-stat-shine" />
     </button>
   )
@@ -90,17 +90,16 @@ export function HeroView({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
   return (
     <div className="hero-root">
       <div className="hero-cols">
-        {/* ── Left column ── */}
         <div className="hero-left">
 
           <div className={`hero-text-block${visible ? ' hero-fade-in' : ''}`}>
             <p className="hero-fullname">Dattatreya Subramanya Vellal</p>
             <h1 className="hero-name">Datta Vellal</h1>
             <p className="hero-snazzy">
-              Turning regulated complexity into engineering excellence — one org, one standard, one team at a time.
+              Turning regulated complexity into engineering excellence, one org, one standard, one team at a time.
             </p>
             <p className="hero-tagline">
-              Global Digital Transformation Leader · IBM → Exeter → Amazon → Philips
+              Global Digital Transformation Leader &nbsp;·&nbsp; IBM &rarr; Exeter &rarr; Amazon &rarr; Philips
             </p>
           </div>
 
@@ -111,10 +110,11 @@ export function HeroView({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
           </div>
 
           <p className={`hero-bio${visible ? ' hero-fade-in hero-fade-delay-2' : ''}`}>
-            Global Digital Transformation Leader leveraging data, AI &amp; Software Craftsmanship
-            principles to transform highly regulated medical device software — spanning IEC&nbsp;62304,
-            ISO&nbsp;13485, ISO&nbsp;14971, FDA guidances, and INCOSE/EARS systems engineering.
-            Drove $3M+ in savings across IBM, Amazon, and Philips, coaching 7,000+ engineers from code to craft.
+            Global Digital Transformation Leader who harnesses data, AI, and Software Craftsmanship
+            to modernize highly regulated medical device software. Works across IEC 62304,
+            ISO 13485, ISO 14971, FDA guidances, and INCOSE/EARS systems engineering standards.
+            Drove over $3M in savings across IBM, Amazon, and Philips while coaching more than
+            7,000 engineers from writing code to mastering craft.
           </p>
 
           <div className={`hero-era-chips${visible ? ' hero-fade-in hero-fade-delay-3' : ''}`}>
@@ -126,39 +126,37 @@ export function HeroView({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
           </div>
 
           <button className="hero-scroll-prompt" onClick={scrollDown} aria-label="Scroll to highlights">
-            <span className="hero-scroll-text">↓ explore the data</span>
+            <span className="hero-scroll-text">&#8595; explore the data</span>
           </button>
         </div>
 
-        {/* ── Right column: photo ── */}
         <div className={`hero-right${visible ? ' hero-fade-in hero-fade-delay-1' : ''}`}>
           <img
             src="/photo.jpg"
-            alt="Dattatreya Subramanya Vellal — Datta"
+            alt="Dattatreya Subramanya Vellal, known as Datta"
             className="hero-photo"
           />
         </div>
       </div>
 
-      {/* ── Below-fold career highlights ── */}
       <div ref={belowRef} className="hero-below-fold">
         <div className="hero-below-label">Career Highlights</div>
         <div className="hero-below-grid">
           <button className="hero-below-card" onClick={() => onNavigate('constellation')}>
             <div className="hero-below-stat" style={{ color: '#c98500' }}>Medical Device</div>
-            <div className="hero-below-desc">IEC&nbsp;62304 · ISO&nbsp;13485 · ISO&nbsp;14971 · FDA guidances — software audit authority at Philips</div>
+            <div className="hero-below-desc">IEC 62304, ISO 13485, ISO 14971, and FDA guidances. Software audit authority at Philips.</div>
           </button>
           <button className="hero-below-card" onClick={() => onNavigate('talks')}>
             <div className="hero-below-stat" style={{ color: '#199e70' }}>AI Pioneer</div>
-            <div className="hero-below-desc">Authoring AI-native craftsmanship frameworks; teaching AI integration to engineers and school children</div>
+            <div className="hero-below-desc">Authoring AI-native craftsmanship frameworks and teaching AI integration to engineers and school children alike.</div>
           </button>
           <button className="hero-below-card" onClick={() => onNavigate('impact')}>
             <div className="hero-below-stat" style={{ color: '#3987e5' }}>Org Transformer</div>
-            <div className="hero-below-desc">Built Software Excellence programs from scratch at Philips — 60% delivery reduction, €2.1M roadmap</div>
+            <div className="hero-below-desc">Built Software Excellence programs from the ground up at Philips. Delivered a 60% reduction in delivery time and a 2.1M euro transformation roadmap.</div>
           </button>
           <button className="hero-below-card" onClick={() => onNavigate('talks')}>
             <div className="hero-below-stat" style={{ color: '#d95926' }}>Full Human</div>
-            <div className="hero-below-desc">Certified yoga instructor · CSI speaker · social volunteer · community builder across 20+ institutions</div>
+            <div className="hero-below-desc">Certified yoga instructor, CSI speaker, social volunteer, and community builder across more than 20 institutions.</div>
           </button>
         </div>
       </div>

@@ -186,9 +186,9 @@ export function TalksGivebacksView() {
       {/* Section header */}
       <div className="section-header">
         <div className="section-label">Talks &amp; Givebacks</div>
-        <h2 className="section-title">Not just an engineer — a teacher, a yogi, a community builder.</h2>
+        <h2 className="section-title">Not just an engineer. A teacher, a yogi, a community builder.</h2>
         <p className="section-subtitle">
-          {talks.length} engagements across {MAX_YEAR - MIN_YEAR + 1} years — talks, social givebacks, and yoga.
+          {talks.length} engagements across {MAX_YEAR - MIN_YEAR + 1} years: talks, social givebacks, and yoga.
         </p>
       </div>
 
@@ -204,7 +204,7 @@ export function TalksGivebacksView() {
       {/* Timeline bar */}
       <div className="talks-timeline-section">
         <div className="talks-timeline-header">
-          <span className="talks-timeline-label">Activity by year · 2007 – 2026</span>
+          <span className="talks-timeline-label">Activity by year, 2007 to 2026</span>
           <div className="talks-legend">
             {(['talk', 'social', 'yoga', 'giveback'] as const).filter(c => talks.some(t => t.category === c)).map(c => (
               <span key={c} className="talks-legend-item">

@@ -111,7 +111,7 @@ export function VoicesView() {
         <div className="section-label">Voices</div>
         <h2 className="section-title">What others say</h2>
         <p className="section-subtitle">
-          Recognition, recommendations and certifications across a 20-year career — {voices.length} voices.
+          Recognition, recommendations, and certifications across a 20-year career. {voices.length} voices.
         </p>
       </div>
 

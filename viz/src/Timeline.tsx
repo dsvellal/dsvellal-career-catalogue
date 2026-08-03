@@ -55,7 +55,7 @@ export function TimelineView() {
                 <div className="timeline-era-bar" style={{ background: color + '22', borderColor: color }}>
                   <span className="timeline-era-name" style={{ color }}>{era.org}</span>
                   <span className="timeline-era-role">{era.role}</span>
-                  <span className="timeline-era-dates">{era.start} – {era.end}</span>
+                  <span className="timeline-era-dates">{era.start} to {era.end}</span>
                 </div>
 
                 <div className="timeline-track">

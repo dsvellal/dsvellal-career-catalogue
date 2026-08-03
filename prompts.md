@@ -870,3 +870,31 @@ Full interactive portfolio built by extending the existing viz app. Three parall
 - Replaced casual kitchen photo with professional headshot (`viz/public/photo.jpg`)
 - Updated `handover.md` with full current state of Hero tab, all 8 tabs, KPI tile routing
 - Committed and pushed to main (all 6 pre-commit checks passed)
+
+---
+
+## Prompt 032
+
+**Timestamp:** 2026-08-03T03:40:00Z
+
+**Prompt:**
+> Remove em-dashes, en-dashes, and humanize all content.
+
+### Response Summary
+
+Removed all em-dashes (—) and en-dashes (–) across every authored component and data file:
+
+- `Hero.tsx` — replaced "—" with commas or restructured sentences; replaced "—" in aria-label; rewrote bio as flowing plain prose
+- `Voices.tsx` — "20-year career — N voices" rewritten as two sentences
+- `TalksGivebacks.tsx` — section title "Not just an engineer — a teacher..." rewritten as "Not just an engineer. A teacher..."; subtitle "years — talks" rewritten with colon
+- `Timeline.tsx` — "2007 – 2014" date ranges rewritten as "2007 to 2014"
+- `impact.json` — all detail fields rewritten as plain conversational prose; "86–89%" stat field en-dash replaced with hyphen
+- `timeline.json` — roles ("Developer → Technical Lead") rewritten as "Developer to Technical Lead"; milestone details cleaned
+
+CSS comments with dashes left intact (not user-visible). Pre-existing files (KnowledgeGraph, CareerArc, Constellation) not modified.
+
+### Decisions
+
+- "→" arrows in tagline kept as HTML entity `&rarr;` (visually correct, not a Unicode dash)
+- Year ranges written as "2007 to 2014" rather than "2007-2014" for natural speech rhythm
+- "86–89%" stat kept as "86-89%" (ASCII hyphen range) since it is a precise numeric range, not prose punctuation

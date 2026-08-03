@@ -1,1 +1,50 @@
-[{"stat":"$3M+","label":"Total career savings","detail":"\u20ac2.1M (3-year digital transformation roadmap) + $300K (automation) + $100K annual (quality-at-desk program) + more across IBM, Exeter, Amazon","era":"All"},{"stat":"60%","label":"Delivery time reduction","detail":"Drove continuous value delivery strategy at Philips \u2014 cut product delivery time by 60% across multiple product lines","era":"Philips"},{"stat":"99.999%","label":"Service uptime","detail":"Service-Ops automation platform serving 7,000+ Philips engineers achieved five-nines availability","era":"Philips"},{"stat":"50+","label":"Engineers Bar-Raised","detail":"Led Bar Raiser program training at Philips \u2014 reduced senior hiring time by 50% and raised engineering hiring bar organization-wide","era":"Philips"},{"stat":"86\u201389%","label":"Fraud latency reduction","detail":"At Amazon TRMS (Fraud) \u2014 redesigned fraud check pipeline reducing latency by 86\u201389% while handling 2B+ ASINs daily","era":"Amazon"},{"stat":"25+","label":"Programming languages","detail":"Proficient across 25+ languages over 20 years: Java, Python, TypeScript, Go, Kotlin, Swift, Rust, Scala, C++, and more","era":"All"},{"stat":"7,000+","label":"Engineers impacted","detail":"99.999%-uptime Service-Ops platform + training programs + knowledge-sharing talks reached 7,000+ engineers across Philips globally","era":"Philips"},{"stat":"20 yrs","label":"Career depth","detail":"IBM (2007\u20132014) \u2192 Exeter Group (2014\u20132018) \u2192 Amazon (2018) \u2192 Philips (2018\u2013present). From IC to Principal. From code to organizational transformation.","era":"All"}]
+[
+  {
+    "stat": "$3M+",
+    "label": "Total career savings",
+    "detail": "Over 2.1M euros from the three-year digital transformation roadmap, 300K through automation savings, 100K annually from the quality-at-desk program, plus contributions at IBM and Amazon.",
+    "era": "All"
+  },
+  {
+    "stat": "60%",
+    "label": "Delivery time reduction",
+    "detail": "Drove a continuous value delivery strategy at Philips that cut product delivery time by 60 percent across multiple product lines.",
+    "era": "Philips"
+  },
+  {
+    "stat": "99.999%",
+    "label": "Service uptime",
+    "detail": "The Service-Ops automation platform Datta built serves more than 7,000 Philips engineers and has maintained five-nines availability since launch.",
+    "era": "Philips"
+  },
+  {
+    "stat": "50+",
+    "label": "Engineers Bar-Raised",
+    "detail": "Led the Bar Raiser program at Philips, trained more than 50 engineers, and reduced senior hiring time by 50 percent while raising the overall engineering bar.",
+    "era": "Philips"
+  },
+  {
+    "stat": "86-89%",
+    "label": "Fraud latency reduction",
+    "detail": "At Amazon TRMS (Fraud), redesigned fraud check pipeline reducing latency by 86 to 89% while handling 2B+ ASINs daily",
+    "era": "Amazon"
+  },
+  {
+    "stat": "25+",
+    "label": "Programming languages",
+    "detail": "Proficient across more than 25 languages over 20 years including Java, Python, TypeScript, Go, Kotlin, Swift, Rust, Scala, C++, and more.",
+    "era": "All"
+  },
+  {
+    "stat": "7,000+",
+    "label": "Engineers impacted",
+    "detail": "The 99.999 percent uptime Service-Ops platform, combined with training programs and knowledge-sharing talks, reached more than 7,000 engineers across Philips globally.",
+    "era": "Philips"
+  },
+  {
+    "stat": "20 yrs",
+    "label": "Career depth",
+    "detail": "IBM (2007 to 2014), Exeter Group (2014 to 2018), Amazon (2018), and Philips (2018 to present). From individual contributor to Principal. From writing code to transforming organizations.",
+    "era": "All"
+  }
+]

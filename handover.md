@@ -1,16 +1,20 @@
 # Handover
 
-**Last Updated:** 2026-08-03T03:35:00Z
-**Session:** Hero — professional headshot, full name, snazzy tagline, shining clickable tiles
+**Last Updated:** 2026-08-03T03:45:00Z
+**Session:** Remove em/en-dashes, humanize all content across components and data files
 
 ---
 
 ## Last Completed Action
 
-Final hero polish committed and pushed:
-- Replaced casual kitchen photo with professional headshot (navy blazer, grey background)
-- Photo stored at `viz/public/photo.jpg` — local file, always available offline
-- All other hero changes from previous session retained (full name, tagline, shining tiles, bio)
+Removed all em-dashes and en-dashes from every authored component and data file. Rewrote affected copy as natural, flowing prose:
+
+- `Hero.tsx` — bio rewritten as plain prose; snazzy tagline uses a comma instead of an em-dash; aria-labels cleaned
+- `Voices.tsx`, `TalksGivebacks.tsx`, `Timeline.tsx` — section subtitles and date ranges humanized
+- `impact.json` — all detail fields rewritten as conversational sentences; "86–89%" stat fixed
+- `timeline.json` — roles and milestone details cleaned ("to" replaces arrows and dashes in prose)
+
+CSS comments with dashes intentionally left (not user-visible). Pre-existing files not touched.
 
 ---
 
