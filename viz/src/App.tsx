@@ -8,7 +8,7 @@ import { VoicesView } from './Voices'
 import { TalksGivebacksView } from './TalksGivebacks'
 import { KnowledgeGraphView } from './KnowledgeGraph'
 
-type Tab = 'hero' | 'constellation' | 'arc' | 'impact' | 'timeline' | 'voices' | 'talks' | 'graph'
+export type Tab = 'hero' | 'constellation' | 'arc' | 'impact' | 'timeline' | 'voices' | 'talks' | 'graph'
 
 export default function App() {
   const [tab, setTab] = useState<Tab>('hero')
@@ -51,7 +51,7 @@ export default function App() {
       </nav>
 
       <div className="view">
-        {tab === 'hero' && <HeroView />}
+        {tab === 'hero' && <HeroView onNavigate={setTab} />}
         {tab === 'constellation' && <ConstellationView />}
         {tab === 'arc' && <CareerArcView />}
         {tab === 'impact' && <ImpactWallView />}
