@@ -2,6 +2,18 @@
 
 Detailed, traceable evidence extracted from ingested sources. Each entry links to individual evidence files with full context, participants, contributions, and raw content for UI presentation.
 
+## Cross-Cutting: .connect Program (2019-2021) — Raw Tracking & Feedback Data
+
+**Source:** `DsvellalDotConnects/` — 102 files (62 XLSX, 37 PNG, 2 PDF, 1 ZIP)
+
+| Year | Monthly Logs | Feedback Surveys | Chat Screenshots | Artifacts | Evidence Files |
+|------|-------------|-----------------|-----------------|-----------|---------------|
+| 2019 | — | 15 surveys (236 people, 29 sessions) | — | 4 data files | 19 files (164–182) |
+| 2020 | 12 months (2,731 interactions, 778 people) | 11 surveys (156 respondents, NPS 92.9 peak) | 32 screenshots + 1 PDF | 3 artifacts | 64 files (078–141) |
+| 2021 | 12 months (575 connects, 2,975 touchpoints) | 5 surveys (40 respondents) | — | 1 template | 19 files (007–025) |
+
+**Key metrics:** 3,547 total interactions • 1,250+ unique people • 26 cities • 74 departments • IWillCode NPS 92.9 (zero detractors) • Interview feedback NPS 100 • Shanghai NPS 9.75/10
+
 ## Cross-Cutting: Session Feedback (2018-2026)
 
 **[SESSION-EVIDENCE.md](sessions/SESSION-EVIDENCE.md)** — 90 sessions, 1,183 responses, 4.3/5 avg rating, 8 years
@@ -48,7 +60,7 @@ data/evidence/
 
 **Thematic summaries:** [code-quality-guidelines](2018/code-quality-guidelines.md) | [feedback-request](2018/feedback-request-2018.md) | [netflix-cicd](2018/netflix-cicd-knowledge-sharing.md)
 
-## 2019 — 155 emails ingested
+## 2019 — 155 emails + 19 .connect artifacts ingested
 
 **Full individual index:** [2019/individual/_INDEX.md](2019/individual/_INDEX.md)
 
@@ -86,7 +98,7 @@ data/evidence/
 | 8 | [Technical Debt / SIG / BEQR](2019/technical-debt-sig-partnership.md) | 9 emails | External partnership, judging |
 | 9 | [Cross-BU Influence](2019/cross-bu-engagement-influence.md) | 14 emails | Organizational connector role |
 
-## 2020 — 67 emails ingested
+## 2020 — 67 emails + 64 .connect artifacts ingested
 
 **Full individual index:** [2020/individual/_INDEX.md](2020/individual/_INDEX.md)
 
@@ -119,7 +131,7 @@ data/evidence/
 
 **Image:** [pic-annual-awards-2020-organisational-capabilities.jpg](images/2020/pic-annual-awards-2020-organisational-capabilities.jpg)
 
-## 2021 — 3 artifacts ingested (2 images + 1 PDF)
+## 2021 — 3 prior artifacts + 19 .connect artifacts ingested
 
 **Full individual index:** [2021/individual/](2021/individual/)
 

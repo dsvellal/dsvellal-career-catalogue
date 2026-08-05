@@ -1,25 +1,24 @@
 # Handover
 
-**Last Updated:** 2026-08-05T17:30:00Z
-**Session:** Massive evidence ingestion — emails, images, LinkedIn, GitHub, Viva Engage, sessions, PDFs
+**Last Updated:** 2026-08-05T21:00:00Z
+**Session:** .connect program raw data ingestion (DsvellalDotConnects folder)
 
 ---
 
 ## Last Completed Action
 
-Ingested 500+ evidence artifacts across the full career span (2018-2026), including:
-- 404 emails (.eml/.msg) with knowledge graph enrichment
-- 92 session feedback spreadsheets (1,183 responses)
-- 35+ images (awards, Viva Engage screenshots, certificates)
-- 7 LinkedIn articles + multiple LinkedIn posts
-- 7 GitHub repositories documented
-- Multiple PDFs (Quality@Desk, .grow competition, Bar Raiser docs, Innovation Impact Week)
-- Internal Viva Engage posts with up to 4,170 views
-- XITE/Sutra impact: 18,000 hours / EUR 3.5M / 90% traceability / 80% AI code
+Ingested the full `DsvellalDotConnects/` folder (102 source files) — raw .connect program tracking data and feedback surveys spanning 2019-2021. Created **102 new evidence files** via 6 parallel agents:
 
-Updated CLAUDE.md with Evidence Generation Protocol (mandatory) and URL Handling Protocol.
-Removed Gemini dependency — Claude IS the classifier.
-Chunker integrated into pipeline. All tests pass (227/227).
+| Batch | Content | Files Created |
+|-------|---------|---------------|
+| 2019 feedback surveys | 15 session surveys + annual summary | 19 files (164–182) |
+| 2020 monthly connects | 12 monthly logs + annual consolidated | 12 files (078–089) |
+| 2020 feedback surveys | 11 program feedback surveys | 11 files (090–100, 140–141) |
+| 2020 chat screenshots | 32 Teams screenshots + 1 PDF | 38 files (102–139) |
+| 2020 artifacts | PDF mindmap, QAD feedback, IWillCode stats | 3 files (099–101) |
+| 2021 all data | 12 monthly + annual + 5 surveys + template | 19 files (007–025) |
+
+Prior sessions had ingested 500+ artifacts (emails, images, LinkedIn, GitHub, sessions, PDFs). Total evidence corpus now exceeds 600 files.
 
 ---
 
@@ -29,7 +28,7 @@ Chunker integrated into pipeline. All tests pass (227/227).
 |--------|--------|
 | Phase | Evidence ingestion (ongoing) + Phase 7 Cloud Deployment (pending) |
 | Knowledge graph | 3,200+ nodes, 16,000+ edges, 26,000+ chunks |
-| Evidence files | 500+ markdown files in data/evidence/ |
+| Evidence files | 600+ markdown files in data/evidence/ |
 | Evidence images | 30+ optimized JPEGs in data/evidence/images/ |
 | Evidence snapshots | Internal HTML snapshots in data/evidence/snapshots/ |
 | Session data | 92 spreadsheets processed, JSON in data/evidence/sessions/ |
@@ -46,9 +45,9 @@ data/evidence/
   snapshots/                  — internal URL HTML captures (will die after leaving Philips)
   images/                     — optimized JPEGs (awards, screenshots, certificates)
   2018/individual/            — 3 files
-  2019/individual/            — 163 files
-  2020/individual/            — 77 files
-  2021/individual/            — 6 files
+  2019/individual/            — 182 files
+  2020/individual/            — 141 files
+  2021/individual/            — 25 files
   2022/individual/            — 9 files
   2023/individual/            — 17 files
   2024/individual/            — 10 files
@@ -60,6 +59,14 @@ data/evidence/
 
 | Metric | Value | Source |
 |--------|-------|--------|
+| .connect interactions (2020) | 2,731 (778 people, 26 cities, 74 depts) | Monthly tracking XLSX |
+| .connect interactions (2021) | 575 connects, 2,975 touchpoints, 448 hrs | Monthly tracking XLSX |
+| .connect interactions (2019) | 341 (236 people, 29 sessions) | Annual summary XLSX |
+| IWillCode NPS | 92.9 (85 respondents, zero detractors) | Feedback survey XLSX |
+| Interview candidate NPS | 100 (5/5 scored 10/10) | Feedback survey XLSX |
+| Shanghai visit NPS | 9.75/10 (100% want return) | Feedback survey XLSX |
+| IWillCode commits | 269 (28 participants, Datta #1 at 26%) | GitStats ZIP report |
+| Quality@Desk engagement | 8.0/10, 83% extend to other projects | QAD feedback XLSX |
 | Viva Engage max views | 4,170 | May 2025 session lineup |
 | LinkedIn max reactions | 202 | "From Amazon to Philips" post |
 | Session satisfaction | 4.3/5 avg (1,183 responses) | 92 feedback spreadsheets |

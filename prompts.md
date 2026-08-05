@@ -1014,3 +1014,32 @@ Expanded Impact page from 8 to 20 cards. Added 5 new professional impact cards (
 - One evidence file per artifact (detailed) + thematic summaries (narrative)
 - Claude performs all classification locally (no external API needed)
 - Images compressed to 1024x768 for display quality
+
+---
+
+## Prompt 038
+
+**Timestamp:** 2026-08-05T21:00:00Z
+**Intent:** Ingest DsvellalDotConnects folder — raw .connect program tracking data and feedback surveys
+
+**Prompt:** "Let's analyze the contents of DsvellalDotConnects folder. Before processing, give me a plan..."
+**Follow-up:** "Many of the XLSX workbook contains more than one worksheet. Make sure to process them properly! No context has to be lost. Proceed with multiple agents!"
+
+**Response Summary:**
+- Explored folder: 102 files (62 XLSX, 37 PNG, 2 PDF, 1 ZIP) spanning 2019-2021
+- Proposed plan with 3 clarifying questions (granularity, screenshots, monthly data) — user chose maximum detail for all
+- Deployed 6 parallel agents to process batches simultaneously
+- All worksheets in every workbook fully extracted (no data loss)
+
+**Outcome:** 102 new evidence files created across 2019/2020/2021. INDEX.md and handover.md updated.
+
+**Key findings:**
+- 2019: 236 people, 341 interactions, 29 sessions, avg 8.5-10/10 ratings
+- 2020: 2,731 interactions, 778 people, 26 cities, 74 departments; IWillCode NPS 92.9
+- 2021: 575 connects, 2,975 touchpoints, 448 hours invested
+- Total .connect program reach: 3,547 interactions, 1,250+ unique people
+
+**Decisions:**
+- One evidence file per feedback survey (maximum granularity)
+- Individual evidence per chat screenshot (maximum traceability)
+- Full monthly extraction (longitudinal engagement proof)
