@@ -2,10 +2,10 @@ import { useState, useEffect, useRef } from 'react'
 import type { Tab } from './App'
 
 const ERA_COLORS: Record<string, string> = {
-  IBM: '#3987e5',
-  Exeter: '#d95926',
-  Amazon: '#199e70',
-  Philips: '#c98500',
+  IBM: '#2563a8',
+  Exeter: '#9a6b00',
+  Amazon: '#0d7a52',
+  Philips: '#b84c1a',
 }
 
 interface StatConfig {
@@ -17,10 +17,10 @@ interface StatConfig {
 }
 
 const STATS: StatConfig[] = [
-  { value: '$3M+',   label: 'Career savings delivered', sublabel: 'See impact',    tab: 'impact',   color: '#199e70' },
-  { value: '20 yrs', label: 'Industry depth',            sublabel: 'See timeline',  tab: 'timeline', color: '#3987e5' },
-  { value: '7,000+', label: 'Engineers reached',         sublabel: 'Read voices',   tab: 'voices',   color: '#c98500' },
-  { value: '220+',   label: 'Recognitions and quotes',   sublabel: 'Explore graph', tab: 'graph',    color: '#d55181' },
+  { value: '$3M+',   label: 'Career savings delivered', sublabel: 'See impact',    tab: 'impact',   color: '#0d7a52' },
+  { value: '20 yrs', label: 'Industry depth',            sublabel: 'See timeline',  tab: 'timeline', color: '#2563a8' },
+  { value: '7,000+', label: 'Engineers reached',         sublabel: 'Read voices',   tab: 'voices',   color: '#9a6b00' },
+  { value: '220+',   label: 'Recognitions and quotes',   sublabel: 'Explore graph', tab: 'graph',    color: '#b83d6b' },
 ]
 
 function useCountUp(target: number, duration = 1400, start = false) {
@@ -143,19 +143,19 @@ export function HeroView({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
         <div className="hero-below-label">Career Highlights</div>
         <div className="hero-below-grid">
           <button className="hero-below-card" onClick={() => onNavigate('constellation')}>
-            <div className="hero-below-stat" style={{ color: '#c98500' }}>Medical Device</div>
+            <div className="hero-below-stat" style={{ color: '#b84c1a' }}>Medical Device</div>
             <div className="hero-below-desc">IEC 62304, ISO 13485, ISO 14971, and FDA guidances. Software audit authority at Philips.</div>
           </button>
           <button className="hero-below-card" onClick={() => onNavigate('talks')}>
-            <div className="hero-below-stat" style={{ color: '#199e70' }}>AI Pioneer</div>
+            <div className="hero-below-stat" style={{ color: '#0d7a52' }}>AI Pioneer</div>
             <div className="hero-below-desc">Authoring AI-native craftsmanship frameworks and teaching AI integration to engineers and school children alike.</div>
           </button>
           <button className="hero-below-card" onClick={() => onNavigate('impact')}>
-            <div className="hero-below-stat" style={{ color: '#3987e5' }}>Org Transformer</div>
+            <div className="hero-below-stat" style={{ color: '#2563a8' }}>Org Transformer</div>
             <div className="hero-below-desc">Built Software Excellence programs from the ground up at Philips. Delivered a 60% reduction in delivery time and a 2.1M euro transformation roadmap.</div>
           </button>
           <button className="hero-below-card" onClick={() => onNavigate('talks')}>
-            <div className="hero-below-stat" style={{ color: '#d95926' }}>Full Human</div>
+            <div className="hero-below-stat" style={{ color: '#6b46b0' }}>Full Human</div>
             <div className="hero-below-desc">Certified yoga instructor, CSI speaker, social volunteer, and community builder across more than 20 institutions.</div>
           </button>
         </div>

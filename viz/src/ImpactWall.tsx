@@ -2,12 +2,12 @@ import { useState, useRef, useEffect } from 'react'
 import impactData from './data/impact.json'
 
 const ERA_COLORS: Record<string, string> = {
-  All: '#3987e5',
-  IBM: '#3987e5',
-  Amazon: '#199e70',
-  Philips: '#d95926',
-  Exeter: '#c98500',
-  Independent: '#7c5cbf',
+  All: '#1a2233',
+  IBM: '#2563a8',
+  Amazon: '#0d7a52',
+  Philips: '#b84c1a',
+  Exeter: '#9a6b00',
+  Independent: '#6b46b0',
 }
 
 const CATEGORY_LABELS: Record<string, string> = {
