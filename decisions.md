@@ -760,3 +760,59 @@ Key files:
 | Immediate write-through (always stable) | LLM-classified entities go straight to stable. Bundle fills with unreviewed noise. |
 | Staging + explicit `twin promote` | Extra step. Knowledge isn't in OKF until promoted — loses immediate visibility. |
 | Confidence-gated auto-promote | Threshold is arbitrary. Important knowledge may be low-confidence initially. |
+
+---
+
+## Decision 020: Evidence Generation Protocol
+
+**Timestamp:** 2026-08-04
+**Context:** Need traceable evidence for every ingested artifact, ready for UI demonstration.
+
+**Decision:** Made evidence generation MANDATORY in CLAUDE.md. Every artifact produces: (a) individual evidence markdown, (b) knowledge graph enrichment (nodes, edges, chunks).
+
+**Alternatives:**
+1. Store raw text only in DB — rejected (not UI-ready, not traceable)
+2. Generate evidence on-demand when UI requests — rejected (too slow, context lost)
+3. **Generate at ingestion time and commit to git** — chosen (persistent, traceable, UI-ready)
+
+---
+
+## Decision 021: Remove Gemini Dependency
+
+**Timestamp:** 2026-08-04
+**Context:** Classifier required GEMINI_API_KEY which was never set, resulting in empty classifications.
+
+**Decision:** Claude IS the LLM. Local rule-based classifier extracts entities from structured email metadata. No external API needed.
+
+**Alternatives:**
+1. Set up Gemini API key — rejected (unnecessary dependency)
+2. Use OpenAI — rejected (same problem, external dependency)
+3. **Local classifier + Claude enrichment** — chosen (zero dependencies, always works)
+
+---
+
+## Decision 022: URL Handling Protocol
+
+**Timestamp:** 2026-08-05
+**Context:** Internal Philips URLs will die when employee leaves. Need to preserve content.
+
+**Decision:** Internal URLs get HTML snapshots saved to data/evidence/snapshots/. External URLs referenced only.
+
+**Alternatives:**
+1. Snapshot everything — rejected (external URLs are persistent, wastes space)
+2. Reference everything — rejected (internal content will be lost forever)
+3. **Internal=snapshot, External=reference** — chosen (preserves what will die, references what won't)
+
+---
+
+## Decision 023: Image Storage for Evidence
+
+**Timestamp:** 2026-08-05
+**Context:** Awards, certificates, Viva Engage screenshots need to be stored and demonstrated in UI.
+
+**Decision:** Compress to fit 1024x768 display, save as JPEG (quality 85), store in data/evidence/images/<year>/. Committed to git.
+
+**Alternatives:**
+1. Store full resolution — rejected (too large for git, unnecessary)
+2. Store only references — rejected (screenshots of internal content will disappear)
+3. **Compressed JPEG at display quality** — chosen (good quality, reasonable size, git-friendly)

@@ -986,3 +986,31 @@ Expanded Impact page from 8 to 20 cards. Added 5 new professional impact cards (
 - **Professional depth:** Expanded significantly with 5 new cards
 - **New era color:** Independent era uses purple (#7c5cbf)
 - **Removed duplicate CSS:** Consolidated to single authoritative impact CSS block
+
+---
+
+## Prompt 020
+
+**Timestamp:** 2026-08-04/05
+**Intent:** Ingest Philips appreciation emails, awards, LinkedIn articles, GitHub repos, Viva Engage posts, session feedback, and other career artifacts to build comprehensive traceable evidence system.
+
+**Key actions:**
+- Created EML/MSG parser with thread parsing, attachment extraction, rich metadata
+- Processed 404 emails (2018-2026) through ingestion pipeline
+- Generated 500+ individual evidence markdown files
+- Processed 92 session feedback spreadsheets (1,183 responses)
+- Ingested 35+ images (awards, Viva Engage screenshots, certificates)
+- Indexed 7 LinkedIn articles, multiple posts, 7 GitHub repositories
+- Created Evidence Generation Protocol (mandatory) in CLAUDE.md
+- Created URL Handling Protocol for internal/external link preservation
+- Removed Gemini dependency — Claude IS the classifier
+- Integrated chunker into pipeline
+- Knowledge graph: 3,200+ nodes, 16,000+ edges, 26,000+ chunks
+
+**Decisions:**
+- Evidence files committed to git (not gitignored)
+- Internal Philips URLs get HTML snapshots (will die after leaving)
+- External URLs referenced only (persistent)
+- One evidence file per artifact (detailed) + thematic summaries (narrative)
+- Claude performs all classification locally (no external API needed)
+- Images compressed to 1024x768 for display quality

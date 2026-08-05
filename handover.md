@@ -1,13 +1,25 @@
 # Handover
 
-**Last Updated:** 2026-08-03T12:00:00Z
-**Session:** Impact page expansion — detailed professional + social impact cards with filtering
+**Last Updated:** 2026-08-05T17:30:00Z
+**Session:** Massive evidence ingestion — emails, images, LinkedIn, GitHub, Viva Engage, sessions, PDFs
 
 ---
 
 ## Last Completed Action
 
-Expanded the Impact page from 8 cards to 20 cards (13 professional + 7 social). Added category filter buttons (All/Professional/Social Impact) and dual badge system (category + era) on each card. New professional cards cover: Youngest Principal, IEC 62304 compliance, DevOps whitepaper, IEEE publication, HackDay championship. New social cards cover: 10,000+ children reached, 15+ years volunteering, 30+ college talks, yoga instructor certification, teaching AI to 3rd graders, uniform program, storytelling from epics.
+Ingested 500+ evidence artifacts across the full career span (2018-2026), including:
+- 404 emails (.eml/.msg) with knowledge graph enrichment
+- 92 session feedback spreadsheets (1,183 responses)
+- 35+ images (awards, Viva Engage screenshots, certificates)
+- 7 LinkedIn articles + multiple LinkedIn posts
+- 7 GitHub repositories documented
+- Multiple PDFs (Quality@Desk, .grow competition, Bar Raiser docs, Innovation Impact Week)
+- Internal Viva Engage posts with up to 4,170 views
+- XITE/Sutra impact: 18,000 hours / EUR 3.5M / 90% traceability / 80% AI code
+
+Updated CLAUDE.md with Evidence Generation Protocol (mandatory) and URL Handling Protocol.
+Removed Gemini dependency — Claude IS the classifier.
+Chunker integrated into pipeline. All tests pass (227/227).
 
 ---
 
@@ -15,58 +27,67 @@ Expanded the Impact page from 8 cards to 20 cards (13 professional + 7 social). 
 
 | Aspect | Status |
 |--------|--------|
-| Phase | 7 — Cloud Deployment (only remaining) |
-| Viz tabs | **8 live** at `http://localhost:5173` |
-| Build | Clean (`npm run build ✓`) |
-| Git | All changes committed and pushed to `main` |
+| Phase | Evidence ingestion (ongoing) + Phase 7 Cloud Deployment (pending) |
+| Knowledge graph | 3,200+ nodes, 16,000+ edges, 26,000+ chunks |
+| Evidence files | 500+ markdown files in data/evidence/ |
+| Evidence images | 30+ optimized JPEGs in data/evidence/images/ |
+| Evidence snapshots | Internal HTML snapshots in data/evidence/snapshots/ |
+| Session data | 92 spreadsheets processed, JSON in data/evidence/sessions/ |
+| Viz tabs | 8 live at http://localhost:5173 |
+| Build | Clean |
+| Git | All committed and pushed to main |
 
-### Full tab inventory
+### Evidence System Structure
 
-| Tab | Component | Data source | Notes |
-|-----|-----------|-------------|-------|
-| Overview | `Hero.tsx` | Static KPIs | Two-column, photo, shining clickable tiles |
-| Professional Identity | `Constellation.tsx` | `constellation.json` | BeTalent force graph |
-| Career Arc | `CareerArc.tsx` | `career_arc.json` | Stacked bar by year |
-| Impact | `ImpactWall.tsx` | `impact.json` | 20 expandable cards (13 pro + 7 social), filter bar |
-| Timeline | `Timeline.tsx` | `timeline_full.json` | Vertical accordion, reverse chronological |
-| Voices | `Voices.tsx` | `voices.json` | 220 quotes, rotating featured card |
-| Talks & Givebacks | `TalksGivebacks.tsx` | `talks.json` | 3-column + activity bar |
-| Knowledge Graph | `KnowledgeGraph.tsx` | `graph.json` | 5 sub-views |
+```
+data/evidence/
+  INDEX.md                    — master index
+  sessions/                   — 92 spreadsheets processed (all_sessions_data.json, summary_stats.json)
+  snapshots/                  — internal URL HTML captures (will die after leaving Philips)
+  images/                     — optimized JPEGs (awards, screenshots, certificates)
+  2018/individual/            — 3 files
+  2019/individual/            — 163 files
+  2020/individual/            — 77 files
+  2021/individual/            — 6 files
+  2022/individual/            — 9 files
+  2023/individual/            — 17 files
+  2024/individual/            — 10 files
+  2025/individual/            — 69 files
+  2026/individual/            — 111 files
+```
 
-### Hero identity
+### Key Metrics Documented
 
-| Element | Value |
-|---------|-------|
-| Full name | Dattatreya Subramanya Vellal |
-| Display name | Datta Vellal |
-| Title | Global Digital Transformation Leader leveraging data, AI and Software Craftsmanship to transform highly regulated medical device software |
-| Tagline | Turning regulated complexity into engineering excellence, one org, one standard, one team at a time. |
-| Photo | `viz/public/photo.jpg` (professional headshot, navy blazer) |
-| Logo | `viz/public/logo.jpg` (logotype, CSS-inverted white on dark nav) |
+| Metric | Value | Source |
+|--------|-------|--------|
+| Viva Engage max views | 4,170 | May 2025 session lineup |
+| LinkedIn max reactions | 202 | "From Amazon to Philips" post |
+| Session satisfaction | 4.3/5 avg (1,183 responses) | 92 feedback spreadsheets |
+| Sessions delivered | 90+ unique | Feedback data |
+| XITE/Sutra savings | EUR 3.5M annually | XITE Special Edition |
+| Productivity hours saved | 18,000 annually | XITE Special Edition |
+| Code duplication removed | 18,688 lines (2019) | Impact documentation |
+| Bar Raiser coached | 41 globally | Impact documentation |
+| Developer Days NPS | +79 (260 participants) | 2024 wrap-up |
+| Quality@Desk hours saved | 317 in 4 months | Virtual Learning Summit 2020 |
+| Sutra AI code | 80% AI-generated, 3X faster | Viva Engage comment |
 
-### Timeline (most recent work)
+---
 
-- **Data**: 343 deduplicated achievements from DuckDB across 5 eras
-- **Order**: Philips, Amazon, Exeter, IBM, Independent (newest first); years and entries within each era also newest first
-- **Layout**: vertical accordion, no horizontal scroll, colored spine with dot per entry
-- **Filters**: by type (recognition, award, certification, achievement, promotion, publication, talk, giveback)
-- **No labels**: "Key year" and "Key moment" labels removed
+## In-Progress Work
 
-### KPI tiles (Hero — clickable)
-
-| Tile | Value | Navigates to |
-|------|-------|-------------|
-| Career savings delivered | $3M+ | Impact |
-| Industry depth | 20 yrs | Timeline |
-| Engineers reached | 7,000+ | Voices |
-| Recognitions and quotes | 220+ | Knowledge Graph |
+- Still pending detailed evidence for: ReqSpec Before/After demo (332 views), GROW 3.0 PDF
+- Patient Safety Kairos/CAPA thread (image saved, evidence file pending)
+- Multiple Viva Engage screenshots saved but evidence files pending
 
 ---
 
 ## Next Steps
 
-1. **Phase 7: Cloud Deployment** — deploy FastAPI backend + viz frontend; see `plan.md`
-2. **Optional** — `graph.json` is 1MB static import; `React.lazy` + dynamic `import()` for production bundle split
+1. Process remaining pending evidence artifacts
+2. Update data/evidence/INDEX.md with all new entries from today
+3. Phase 7: Cloud Deployment (viz frontend + FastAPI backend)
+4. Consider: Generate a unified "portfolio narrative" document from all evidence
 
 ---
 
@@ -78,9 +99,12 @@ None.
 
 ## Key Context
 
-- Dev server: `cd viz && npm run dev` → `http://localhost:5173`
-- All data is static JSON in `viz/src/data/` — no API server needed
-- Pre-existing TS errors in `CareerArc.tsx` and `Constellation.tsx` are untouched
-- Era colors: IBM=#3987e5 / Exeter=#d95926 / Amazon=#199e70 / Philips=#c98500 / Independent=#9085e9
-- `photo.jpg` and `logo.jpg` in `viz/public/` — served as static assets by Vite
-- No em-dashes or en-dashes anywhere in authored files (CSS comments excepted)
+- CLAUDE.md now mandates Evidence Generation Protocol for every ingestion
+- URL Handling Protocol: internal links get HTML snapshots, external links get references
+- Claude IS the LLM for classification (no Gemini dependency)
+- scripts/enrich_emails.py — batch enrichment tool
+- scripts/generate_evidence_2019.py — evidence generation template
+- data/evidence/ is NOT gitignored (committed to git)
+- data/ (everything else) IS gitignored
+- Dev server: cd viz && npm run dev
+- Tests: uv run python3 -m pytest tests/ (227 pass)
