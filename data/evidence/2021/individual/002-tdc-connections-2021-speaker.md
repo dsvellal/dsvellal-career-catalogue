@@ -15,6 +15,12 @@
 - **Status:** Available externally (no snapshot needed — public URL)
 - **Content:** Event page confirming Datta's talk "Less work, more value: Learn why everyone's shifting left (EN)" at 10:30 AM Day 1, co-presented with Ian Watson and David Terol
 
+- **URL:** https://www.linkedin.com/feed/update/urn:li:activity:6807886552488927232/
+- **Type:** External (LinkedIn post by Datta)
+- **Accessed:** 2026-08-05
+- **Status:** Available externally
+- **Content:** Datta's LinkedIn post announcing his co-presentation at TDC Online Brazil. 25 reactions, 805 followers. Reshared Darlan De Marco's post about the event. Hashtags: #thedevconf, #philips. Confirms Tuesday 10:30 BRT slot with Ian Watson and David Terol.
+
 ## Image Metadata
 - **Original dimensions:** 2794x1972
 - **Stored dimensions:** 1024x723
