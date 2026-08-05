@@ -13,6 +13,7 @@ from twin.ingestion.edges import create_edges
 from twin.ingestion.extractors import ExtractionResult, extract
 from twin.ingestion.resolver import resolve
 from twin.media import store_media
+from twin.retrieval.chunker import chunk_text, store_chunks
 
 
 @dataclass
@@ -94,6 +95,9 @@ def ingest_file(
             media_url or None,
         ],
     )
+
+    chunks = chunk_text(extraction.text, artifact_id)
+    store_chunks(chunks, conn)
 
     _log_action(
         conn,
@@ -213,17 +217,47 @@ def ingest_pre_classified(
 
 
 def _classify_safe(extraction: ExtractionResult, api_key: str | None) -> ClassificationResult:
-    """Attempt classification; return empty result if no API key or on failure."""
+    """Classify using Gemini if available, otherwise use local rule-based extraction."""
     if not api_key:
         import os
 
         api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        return ClassificationResult()
-    try:
-        return classify(extraction.text, extraction.file_type, api_key=api_key)
-    except Exception:
-        return ClassificationResult()
+    if api_key:
+        try:
+            return classify(extraction.text, extraction.file_type, api_key=api_key)
+        except Exception:
+            pass
+
+    return _classify_local(extraction)
+
+
+def _classify_local(extraction: ExtractionResult) -> ClassificationResult:
+    """Rule-based classification using structured metadata and content patterns."""
+    from scripts.enrich_emails import (
+        classify_email_type,
+        extract_claims,
+        extract_dates,
+        extract_people_from_email,
+        extract_projects_from_text,
+        extract_skills_from_text,
+    )
+
+    metadata = extraction.metadata
+    subject = metadata.get("subject", "")
+    text = extraction.text
+
+    return ClassificationResult(
+        type=classify_email_type(subject, text, metadata),
+        dates=extract_dates(metadata),
+        projects=extract_projects_from_text(text),
+        skills=extract_skills_from_text(text),
+        people=extract_people_from_email(metadata, text),
+        organizations=[{"name": "Philips", "role": "employer"}]
+        if "philips" in text.lower()
+        else [],
+        claims=extract_claims(text, subject, metadata),
+        confidence=0.85,
+    )
 
 
 def _classification_to_dict(c: ClassificationResult) -> dict:

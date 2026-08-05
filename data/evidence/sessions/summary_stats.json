@@ -1,0 +1,417 @@
+{
+  "total_files": 92,
+  "total_sessions_excluding_duplicates_and_surveys": 90,
+  "total_responses": 1183,
+  "sessions_by_year": {
+    "2025": 28,
+    "2019": 20,
+    "2018": 1,
+    "2020": 16,
+    "2026": 12,
+    "2024": 3,
+    "2021": 6,
+    "2023": 3,
+    "2022": 1
+  },
+  "sessions_by_category": {
+    "ai-genai": 24,
+    "dora": 12,
+    "code-quality": 18,
+    "tech-debt": 5,
+    "feedback-about-datta": 9,
+    "connects": 2,
+    "interview": 9,
+    "other": 9,
+    "before-after": 2
+  },
+  "overall_ratings": {
+    "grand_average_normalized_5_scale": 4.3,
+    "total_rating_data_points": 223,
+    "min_normalized": 1.8,
+    "max_normalized": 5.0,
+    "grand_average_raw": 6.84
+  },
+  "top_quotes": [
+    {
+      "session": "25th and .clean code initiatives feedback form",
+      "date": "2019-09-26",
+      "question": "[Optional] Do you want to pass any points of improvements or positive feedbacks to the facilitator?",
+      "response": "It could be better if you can give examples related to the technology which we are working on. Like i work on project that run on c#. but most of the examples are on java and python code.so it was bit difficult to understand the concept. Rather than this it was a very informative session."
+    },
+    {
+      "session": "New Hire Mentoring - Feedback to your mentor_ Dattatreya S Vellal (dsvellal@philips.com)",
+      "date": "2019-07-26",
+      "question": "As a mentor, do you have any points of improvements to Datta and/or would you want to appreciate any behavior of Datta?",
+      "response": "I would like to appreciate the fact that I was given the room to think in my own space. It helped me to fork my ideas and explore more paths to generate better code. At a single time, a lot of new ideas creates a slight chaos and sometimes prevents us from reaching mandatory goals."
+    },
+    {
+      "session": "Dec-18",
+      "date": "2024-12-18",
+      "question": "Please tell me in detail what your three key takeaways are from the sessions you attended.",
+      "response": "Setting up IDE with copilot and how to interface with agent there as well as triggering agents on github.com\nHow to write better prompts to get the results I want \nUnderstanding the importance of setting up guide rails through things like copilot-instructions to get quality output"
+    },
+    {
+      "session": "2019 .connects of Datta",
+      "date": "2019",
+      "question": "Outcome?",
+      "response": "Created a list of tools that can be used for gating at IDE, of which static code analysis is just one. Others explored include: auto-code formatter, auto file header addition, copy-paste detector, testing & mocking framework, codescene, bracket pair colorizer, code-spell checker"
+    },
+    {
+      "session": "2020 - Datta's Connects",
+      "date": "2020",
+      "question": "What was the value add?",
+      "response": "I was able to change the direction of content delivery from a topic specific training to a journey specific training, starting with defining the behavior of the use-case, then applying TDD, then mutation testing, then duplication detection, then static code analysis, then CICD."
+    },
+    {
+      "session": "Changing the hiring culture",
+      "date": "2020-10-09",
+      "question": "Via the many bar-raisers interviews you have taken, and the debriefs you have facilitated, what have you personally learnt about yourself?",
+      "response": "Person's resume could bring you to the interview but one needs to check how would this person succeed in the role that Philips is hiring for. Look beyond the resume. Create role plays. Put person in unchartered territories to bring person's core personality into the discussion."
+    },
+    {
+      "session": "2019 .connects of Datta",
+      "date": "2019",
+      "question": "Outcome?",
+      "response": "We had close to 19 participants participate & commit to some awesome code changes. Specifically - 3700+ lines of code was removed by Karthika. This was awesome: https://docs.philips.com/:b:/g/personal/dsvellal_philips_com/ESck9-uNcCJHrWC_tx5b0P4B6SDfcrg2ZSpvmVIcoat0NQ?e=LX4iS0"
+    },
+    {
+      "session": "2019 .connects of Datta",
+      "date": "2019",
+      "question": "Outcome?",
+      "response": "Suggested Legal compliance about the data that Philips which will get. \n\nThe repo link:\nhttps://tfsemea1.ta.philips.com/tfs/TPC_Region27/CDI_InnerSource/_git/cdi-swcoe-deadcode_IS \n\nInnersource link:\nhttps://caoapps.htce.nl.philips.com/innersource/#/repository/view_details/125"
+    },
+    {
+      "session": "Feedback about today's conversation",
+      "date": "2021-03-19",
+      "question": "[Optional] Are there other topics that you'd like SWCoE to follow-up on?",
+      "response": "1. I would like to see good examples from other Philips teams regarding unit tests, TDD or other aspects of software development process like pair programming or extreme programming.\n\n2. Take a concrete example from Ultrasound code base and make improvements while analyzing."
+    },
+    {
+      "session": "NAM Analytics Community Call",
+      "date": "2026-06-25",
+      "question": "How can the session facilitator further improve this session?",
+      "response": "Would like to see what the responses by AI would be if asked to identify the potential project variables, i.e. loss of team members.  Then compare to what the human identified.   Would like to have hands-on sessions (multiple), on building agents and optimal use of them."
+    },
+    {
+      "session": "Changing the hiring culture",
+      "date": "2020-10-09",
+      "question": "For someone who is aspiring to improve their interviewing skills and is looking up to you, what technique(s) would you suggest to them, that you found very useful for yourself by being part of thi...",
+      "response": "Present a scenario to the candidate and understand how they will react. It could be a source-code, or could be a daily team routine and understand from the candidate:\nHow they will feel.\nHow they will conduct it.\nAnd how you can accommodate these behaviors in your team."
+    },
+    {
+      "session": "Feedback about the SWCoE training",
+      "date": "2019-11-11",
+      "question": "What went well in this session?",
+      "response": "The session helped gain knowledge on Sonarlint tool for both C# and Java.\nThe tactics said in the session  for formatting ,spacing etc. are really useful.\nSimple brainstorming of tools available in the market  for each category  and also tools inside Philips was good"
+    },
+    {
+      "session": "Tech Debt - What does that mean",
+      "date": "2019-08-08",
+      "question": "From the content discussed in this session, what three things can you apply to improve your day-to-day work quality?",
+      "response": "1. Improving code quality by have complete knowledge of acceptance criteria and the technology i am working on\n\n2. Following best practices .. using static code analysis ever before commiting the code.\n\n3. No last minute changes .. cause it degrades the code quality"
+    },
+    {
+      "session": "Coding with GitHub CoPilot",
+      "date": "2026-01-28",
+      "question": "What went well in today's session?",
+      "response": "The session provided useful insights into how GitHub Copilot can help with test automation, script development, code reviews, documentation, and improving productivity. The practical prompting examples and discussions on responsible AI usage were especially helpful."
+    },
+    {
+      "session": "Conducting interviews - knowledge sharing session",
+      "date": "2019-04-15",
+      "question": "What are your three main take-aways from this session?",
+      "response": "1. Interview should now be more than 45 min and Max 1 Hour\n2. We have to be prepared with the appropriate problems/questions before taking interview\n3. With in first 20 min we will have the decision and rest of the discussion is just making sure about the decision"
+    },
+    {
+      "session": "202001 - Initiative_ I will code!",
+      "date": "2020",
+      "question": "How can we improve the session, for better engagement and participation?",
+      "response": "I suggest that a discussion on metrics used by TICS like compiler warnings and cyclomatic complexity in our code examples can be done. If TICS (or similar tool) can be demonstrated even on simple programs, the meaning of the metrics may be clearer to the audience."
+    },
+    {
+      "session": "2020 - Software CoE - Interaction experience",
+      "date": "2020",
+      "question": "What was the context of the conversation?",
+      "response": "Gated solutions for Develops local build using jacoco maven plugings.\n\nGated Build with POM \nCodecoverage LOC & BRANCH gated\nMethold Level Cyclomatic Complexity\nDEPENDENCY ANALYSIS CHECK \nDuplication gated \nPMD Checks- \nMutation Testing\nCompiler warning gated -"
+    },
+    {
+      "session": "Feedback about today's conversation",
+      "date": "2021-03-19",
+      "question": "[Optional] From today's conversation, what suggestions do you have to improve sessions of this sort?",
+      "response": "It was little intimidating to see and evaluate code in real time. Preparation before the meeting could have helped by coming with clear agenda and code snippet discussion among internal colleagues before start. (NOTE: It ended really well and learned a lot)."
+    },
+    {
+      "session": "2020 - Software CoE - Interaction experience",
+      "date": "2020",
+      "question": "What was the impact/value of this discussion/session?",
+      "response": "The discussion was informative. The various topics covered on formatting , auto save will be definitely useful to improve developers efficiency. \nWe can have some more discussions on sonarLint and discuss some more rules that can be handy while development."
+    },
+    {
+      "session": "Dec-18",
+      "date": "2024-12-18",
+      "question": "As a feedback to me (Datta), as a session's co-ordinator, what should I improve?",
+      "response": "The information on the direction industry is going with AI and what recent developments have been were really interesting. If there was more of it in a future session I think it would help show how fast things are advancing and why it is important to adapt."
+    },
+    {
+      "session": "DORA for Software Leaders",
+      "date": "2025-08-21",
+      "question": "[Optional] What could I have improved in today's session to make this more valuable to you?",
+      "response": "Could have a slide on mapping how each of the tools could help with the various DORA metrics and talk about potentially how the tools could also help with the \"known\" problems we experience (e.g. QMS overhead, tech debt reduction, scope creep, etc...)"
+    },
+    {
+      "session": "25th and .clean code initiatives feedback form",
+      "date": "2019-09-26",
+      "question": "How can we improve this workshop?",
+      "response": "Have an interactive hands-on workshop where various people can be taught how scenarios can be written for varied behavior set. Also mention the pitfalls, of BDD and what circumstances are more suitable for BDD and places where BDD can be an overkill."
+    },
+    {
+      "session": "Feedback about today's conversation",
+      "date": "2021-03-19",
+      "question": "[Optional] Are there other topics that you'd like SWCoE to follow-up on?",
+      "response": "Improving TICS historic trending on Rhythm.  Merging best features from TICS and CodeScene.  Deep dive into unit test behavior versus structure.  Have a walk through of Dependency Injection tools to help manage test seam management at a macro level."
+    },
+    {
+      "session": "Feedback on Microservices & associated reliability_design-thinking",
+      "date": "2020-07-16",
+      "question": "What went well in this session?",
+      "response": "I liked the way the way session was conducted. \nI was able to learn some of the factors to consider while designing the system \nI would request you to continue this session further and cover other design aspects as well.\nThank you very much Datta."
+    },
+    {
+      "session": "DORA for Software Leaders",
+      "date": "2025-07-24",
+      "question": "[Optional] What could I have improved in today's session to make this more valuable to you?",
+      "response": "1. making it shorter\n2. keeping it solution focused, since DORA is just a signaling tool, so e.g. asking, perhaps even in advance, cases that hamper software development in general and check with the audience how e.g. DORA can play a role there"
+    },
+    {
+      "session": "Dec-18",
+      "date": "2024-12-18",
+      "question": "Please tell me in detail what your three key takeaways are from the sessions you attended.",
+      "response": "- copilot-instructions is an extremely important document, meaningful and relevant version of it will be one of my first priorities next year;\n- laconically does not mean better when it to comes to prompts;\n- meta AI prompts is a powerful tool."
+    },
+    {
+      "session": "2020 - Software CoE - Interaction experience",
+      "date": "2020",
+      "question": "What was the impact/value of this discussion/session?",
+      "response": "This is a great session to overcome current development code quality issues in local machine instead of depend on CI/CD pipeline.\n\nIt;s practical session, we have covered all plugin-in implementations which are required for any Java projects."
+    },
+    {
+      "session": "Feedback about the _Bar_Skill raiser training_ session",
+      "date": "2020-08-13",
+      "question": "What could we have improved in this session?",
+      "response": "The session seems repetitive to the earlier session that HR did with some of us. So, not sure if it was intended but could be avoided based on the audience and it didn't add many new elements particularly around the STAR model of assessment."
+    },
+    {
+      "session": "Code duplication elimination workshop",
+      "date": "2019-09-09",
+      "question": "How could we have improved this workshop?",
+      "response": "Guide more on how to do customize the Tool like \n- how to ignore certain file types\n- Currently Tool does not ignore Copy right information & using statements across the files, shows as duplicate code. This has to be excluded from the Tool."
+    },
+    {
+      "session": "Changing the hiring culture",
+      "date": "2020-10-09",
+      "question": "Have you learnt any new skills (technical or soft-skills), professional/personally that you have learnt via being part of this program, that you would want to share?",
+      "response": "Learnt a lot from Datta - primarily how to document the outcome of an interview and notes from meetings. Also, learnt many new things by interviewing such a diverse set of people - from an operations manager to a senior research scientist."
+    },
+    {
+      "session": "End of _I Will Code_ Survey",
+      "date": "2020-10-16",
+      "question": "What were your 3 biggest take-aways points about the \"I Will Code\" program? \nEg: \n- Without any coding background, having learnt to write code, test it and execute it, it felt good. \n- Coding usin...",
+      "response": "I write my first code here and that was a wow movement\nI may not be able to write a entire complex  program on my own but I know how to read it now( will help me with adding value to team)\nI liked the Cerberus and the pull request process."
+    },
+    {
+      "session": "Dec-16-Workshop_ GitHub Copilot & Requirements Analysis",
+      "date": "2024-12-16",
+      "question": "What should I improve?",
+      "response": "The time spent in refining requirements was confusing to me, largely because I don't have a med-device background and the docs referred to are only vaguely familiar to me (e.g. 62304).  I was unsure the entire time what I should be doing."
+    },
+    {
+      "session": "Dec-16-Workshop_ GitHub Copilot & Requirements Analysis",
+      "date": "2024-12-16",
+      "question": "What should I improve?",
+      "response": "- invest less time in items no one asks questions during the overview and short demo\n- try to find how could WE use the tool and not just explain why the tool is good - all tools are good - we're looking for those which are relevant to us"
+    },
+    {
+      "session": "Project Elevate_ Building Practical Agents",
+      "date": "2026-08-05",
+      "question": "How can we further improve this session?",
+      "response": "The session could be improved by involving participants more, first ensuring everyone is comfortable with Skills, what they are, and the key considerations, then assigning a hands-on task to build a Skill before moving on to agents."
+    },
+    {
+      "session": "202001 - Initiative_ I will code!",
+      "date": "2020",
+      "question": "How can we improve the session, for better engagement and participation?",
+      "response": "There were new concepts and ideas discussed while all assignments were presented, but the time taken for completion was more. To enable completion of topics, discussion on assignment could be restricted to 30 minutes or 45 minutes."
+    },
+    {
+      "session": "25th and .clean code initiatives feedback form",
+      "date": "2019-09-26",
+      "question": "How can we improve this workshop?",
+      "response": "The time was a little constrained as there are other sessions happening in parallel, that we are interested to attend. Maybe if we had more time, it would have been more helpful to actually work on removing the duplicates and check"
+    },
+    {
+      "session": "Feedback for Datta",
+      "date": "2021-04-05",
+      "question": "To support my development, please describe the area of improvement that, if met, would have the greatest impact on performance?",
+      "response": "Articulate the end-goal (like the 'press release' - I guess that's from amazon?)\nTake on abstract stuff (like PEPF, finance,...) head-on\nDo and show - lead a piece of real-world refactoring. This is to avoid getting Philipsified :)"
+    },
+    {
+      "session": "Code duplication elimination workshop",
+      "date": "2019-09-09",
+      "question": "What are your three key learnings about your code-base and duplicates from this workshop?",
+      "response": "1. Identification of code duplication can be integrated easily.\n2. With a little time and effort, it can be efficiently eliminated and avoided.\n3. Judicious decision making in the trade-off between code complexity and duplication."
+    },
+    {
+      "session": "Code duplication elimination workshop",
+      "date": "2019-09-09",
+      "question": "How could we have improved this workshop?",
+      "response": "Very Effective . On the basis of audience and if it makes sense then we can do some of the activities like a prerequisite for the workshop like downloading and running (if runs fine) so that we have more and more time to interact."
+    },
+    {
+      "session": "Leading Continuous Value Delivery",
+      "date": "2025-04-29",
+      "question": "[Optional] In today's session, what improvements would you want to see?",
+      "response": "Today's session was good and insightful. Would be interested to know how continuous value delivery can standardise the process and workflows across Philips, along with the guidance on overcoming common implementation challenges."
+    },
+    {
+      "session": "2020 - Datta's Connects",
+      "date": "2020",
+      "question": "What was the value add?",
+      "response": "We were able to identify some of the data-points that Philips' research team looks at, for which they can leverage Cerberus, and continue towards making Cerberus an open-source code-base where folks can continue to contribute."
+    },
+    {
+      "session": "End of _I Will Code_ Survey",
+      "date": "2020-10-16",
+      "question": "What were your 3 biggest take-aways points about the \"I Will Code\" program? \nEg: \n- Without any coding background, having learnt to write code, test it and execute it, it felt good. \n- Coding usin...",
+      "response": "My 3 biggest take-away points are:\n1.) Concepts like inheritance and encapsulation were explained in simple manner. 2.) I learnt usage of Github and pull requests. 3.) With Srinivas, I was able to practice paired programming."
+    },
+    {
+      "session": "End of _I Will Code_ Survey",
+      "date": "2020-10-16",
+      "question": "What can Datta improve as a facilitator of such long running programs?",
+      "response": "Datta can explain how certain concepts or ideas work in real life projects. For example, if Java Scanners are not closed, it may result in memory leakages, which over time, could result in performance of the system degrading."
+    },
+    {
+      "session": "Feedback to Dattaterya S Vellal (dsvellal@philips.com)",
+      "date": "2019-10-04",
+      "question": "What is the context of interaction and how was I helping/interacting in the context?",
+      "response": "Our interaction was with IDM Test automation. You helped me in properties utility file. This became the heart of my automation framework for fetching the test data. You also helped me in configuring Maven compiler plugin"
+    },
+    {
+      "session": "Unit Testing Workshop",
+      "date": "2019-07-04",
+      "question": "Would you like to pass on any suggestions to Datta and/or appreciate him?",
+      "response": "very good session, looking forward for few more sessions on other topics too.  just a small workshop on how to build a simple spring boot application without any code smells and adhering to all correct coding standards"
+    },
+    {
+      "session": "Behavior-driven development & clean-code practices",
+      "date": "2019-08-01",
+      "question": "Among the strategies, tools & topics presented, what caught your attention?",
+      "response": "The best practices discussed on the session along the lines of clean coding, developing error free code right from our local machine as well as the behaviour driven approach to problem solving were really informative"
+    },
+    {
+      "session": "Java Best Practices - Philips - 20190201",
+      "date": "2019-02-01",
+      "question": "What other topics would you like to be covered in a session like this, in future?",
+      "response": "1. Some topics about Java best practices of how to best use hardware resources. \n2. AOP (Aspect Oriented Programming)\n3. A beginners class for microservices architecture. Do's and Dont's for building a microservice."
+    },
+    {
+      "session": "62304 Standard, why is it essential to you",
+      "date": "2025-05-21",
+      "question": "How can we further improve this session?",
+      "response": "Expectations check before the meeting.\nThis meeting was about the protocol itself.\nMy expectations, as the developer, were deeply discussions about unit tests - when they should be implemented and when should not."
+    },
+    {
+      "session": "Coding with GitHub CoPilot",
+      "date": "2026-01-28",
+      "question": "How can we further improve this session?",
+      "response": "The session was very useful and practical. More hands-on demos, real project examples, and additional guidance on effective prompting would make it even better. A follow-up advanced session would also be valuable."
+    },
+    {
+      "session": "New Hire Mentoring - Feedback to your mentor_ Dattatreya S Vellal (dsvellal@philips.com)",
+      "date": "2019-07-26",
+      "question": "As a mentor, do you have any points of improvements to Datta and/or would you want to appreciate any behavior of Datta?",
+      "response": "Liked how he introduces many different approach with pros and cons and still make us think and choose the approach instead of straight away telling the best possible solution and refraining us to think other ways"
+    }
+  ],
+  "before_after_comparison": {
+    "before": {
+      "filename": "JSCPD Before Elimination(1-16).xlsx",
+      "response_count": 16,
+      "ratings": {},
+      "text_feedback_sample": [
+        {
+          "question": "Name",
+          "response": "Shwetha Naranapura Chandrashekaraswamy"
+        },
+        {
+          "question": "Name",
+          "response": "Madhusmita Mishra"
+        },
+        {
+          "question": "Name",
+          "response": "Vishravars Ramasubramanian"
+        },
+        {
+          "question": "Name",
+          "response": "Sunil Kumar Gawaday"
+        },
+        {
+          "question": "Name",
+          "response": "Kalmesh Sambrani"
+        }
+      ]
+    },
+    "after": {
+      "filename": "JSCPD After Elimination(1-6).xlsx",
+      "response_count": 6,
+      "ratings": {
+        "On a scale of 1 (least effective) to 10 (very effective), how would you rate the effectiveness of the session?": {
+          "avg": 8.33,
+          "min": 6.0,
+          "max": 10.0,
+          "count": 6,
+          "scale": 10
+        },
+        "(Optional) How likely are you to recommend Datta to a friend or colleague, to run a similar exercise?": {
+          "avg": 8.5,
+          "min": 7.0,
+          "max": 10.0,
+          "count": 6,
+          "scale": 10
+        }
+      },
+      "text_feedback_sample": [
+        {
+          "question": "Name",
+          "response": "Vishravars Ramasubramanian"
+        },
+        {
+          "question": "Name",
+          "response": "Madhusmita Mishra"
+        },
+        {
+          "question": "Name",
+          "response": "Shwetha Naranapura Chandrashekaraswamy"
+        },
+        {
+          "question": "Name",
+          "response": "Anil Khandelwal"
+        },
+        {
+          "question": "Name",
+          "response": "Ajay Mummadisetti"
+        }
+      ]
+    },
+    "interpretation": "JSCPD code duplication - feedback collected before elimination (baseline metrics) and after elimination (effectiveness ratings). The 'before' file captures baseline duplication data while 'after' captures session effectiveness ratings."
+  },
+  "sessions_with_errors": [],
+  "pre_session_surveys": [
+    "21st August 2025 - DORA for Software Leaders - Understanding the audience(1-1).xlsx",
+    "28th Aug 2025 - GROW 3.0 - Unlocking the future with AI - Understanding our audience.(1-132).xlsx"
+  ],
+  "duplicates": [
+    "13th Sept 2019 - Code dojo session with Simao(1-2) (1).xlsx",
+    "20190415 - Conducting interviews - knowledge sharing session(1-8) (1).xlsx"
+  ]
+}

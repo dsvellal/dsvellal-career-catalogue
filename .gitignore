@@ -27,7 +27,8 @@ node_modules/
 out/
 
 # Data (local only, never committed)
-data/
+data/*
+!data/evidence/
 *.db
 *.db-journal
 

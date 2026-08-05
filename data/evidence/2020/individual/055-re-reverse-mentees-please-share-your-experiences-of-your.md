@@ -1,0 +1,54 @@
+# Evidence: Re: Reverse mentees, please share your experiences of your...
+
+## Source
+- **File:** `Re  Reverse mentees  please share your experiences of your   .msg`
+- **Date:** 2020-06-26
+- **Ingested:** 2026-08-04
+- **Channel:** email_archive
+- **Category:** General / Other
+
+## Email Metadata
+- **From:** "Jaschke, Lena on Yammer" <notifications+eq6i15ce@eu.yammer.com>
+- **To:** "Vellal; Dattatreya" <dsvellal@philips.com>
+- **Date:** 2020-06-26T04:57:25-04:00
+- **Thread depth:** 1
+- **Is reply:** False
+
+## Datta's Involvement
+- **Role at time:** Competency Specialist – Software Excellence, Software Center of Excellence
+- **Involvement type:** Direct recipient — explicitly mentioned/praised
+
+## Key Quotes
+> To: "Vellal; Dattatreya" <dsvellal@philips.com>
+
+> Sounds like a great start in the program.
+
+> Last Friday, I had a very nice talk with Dattatreya Vellal…
+
+## Full Email Content
+
+```
+Subject: Re: Reverse mentees, please share your experiences of your...
+From: "Jaschke, Lena on Yammer" <notifications+eq6i15ce@eu.yammer.com>
+To: "Vellal; Dattatreya" <dsvellal@philips.com>
+Date: 2020-06-26T04:57:25-04:00
+
+Jaschke, Lena mentioned you in the .grow Reverse Mentoring Program community on the Philips Yammer network 
+ <https://www.yammer.com/philips.onmicrosoft.com/home?trk_event=com_network_click&allow_app_redirect=1>  	
+ <https://www.yammer.com/philips.onmicrosoft.com/threads/717114722369537?trk_event=com_thread_click&allow_app_redirect=1>  	Jaschke, Lena mentioned you in .grow Reverse Mentoring Program 	
+Sounds like a great start in the program. 
+
+The goal of reverse mentoring is of course that both: Mentors and Mentees benefit from the program…
+
+In Reply to:
+Wiericx, Ronald: 
+
+Last Friday, I had a very nice talk with Dattatreya Vellal…
+
+View Conversation <https://www.yammer.com/philips.onmicrosoft.com/threads/717114722369537?trk_event=com_thread_click&allow_app_redirect=1> 	
+With Wiericx, Ronald, Brahmavar, Vivek, Williams, Simao, and 9 others. Posted by Jaschke, Lena (lena·jaschke[at]philips·com).  View 11 other messages in the conversation. <https://www.yammer.com/philips.onmicrosoft.com/threads/717114722369537?trk_event=com_thread_click&allow_app_redirect=1>  	
+af969246ee1263ab72c29277f1e4730101cba489#1593161846
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzZW5kZXIiOiJub3RpZmljYXRpb25zK2VxNmkxNWNlQGV1LnlhbW1lci5jb20iLCJvcmlnaW5hdG9yIjoiNmQ0ZjU4ZWItZGNkZC00ZmU1LWI1NTQtODJkOTMwNWNlN2VlIiwicmVjaXBpZW50c1NlcmlhbGl6ZWQiOiJbXCJkc3ZlbGxhbEBwaGlsaXBzLmNvbVwiXSIsImFkYXB0aXZlQ2FyZFNlcmlhbGl6ZWQiOiJ7XCIkc2NoZW1hXCI6XCJodHRwOi8vYWRhcHRpdmVjYXJkcy5pby9zY2hlbWFzL2FkYXB0aXZlLWNhcmQuanNvblwiLFwidHlwZVwiOlwiQWRhcHRpdmVDYXJkXCIsXCJvcmlnaW5hdG9yXCI6XCI2ZDRmNThlYi1kY2RkLTRmZTUtYjU1NC04MmQ5MzA1Y2U3ZWVcIixcInZlcnNpb25cIjpcIjEuMFwiLFwiaGlkZU9yaWdpbmFsQm9keVwiOnRydWUsXCJlbmFibGVCb2R5VG9nZ2xpbmdcIjp0cnVlLFwidGhlbWVcIjpcInlhbW1lclwiLFwicGFkZGluZ1wiOntcInRvcFwiOlwiU21hbGxcIixcImJvdHRvbVwiOlwiRGVmYXVsdFwiLFwibGVmdFwiOlwiRGVmYXVsdFwiLFwicmlnaHRcIjpcIkRlZmF1bHRcIn0sXCJib2R5XCI6W3tcIml0ZW1zXCI6W3tcImNvbHVtbnNcIjpbe1wid2lkdGhcIjpcInN0cmV0Y2hcIixcIml0ZW1zXCI6W3tcImlzU3VidGxlXCI6ZmFsc2UsXCJtYXhMaW5lc1wiOjAsXCJzaXplXCI6XCJsYXJnZVwiLFwidGV4dFwiOlwiWWFtbWVyXCIsXCJ3ZWlnaHRcIjpcImJvbGRlclwiLFwid3JhcFwiOnRydWUsXCJzcGFjaW5nXCI6XCJkZWZhdWx0XCIsXCJzZXBhcmF0b3JcIjpmYWxzZSxcImlzVmlzaWJsZVwiOnRydWUsXCJ0eXBlXCI6XCJUZXh0QmxvY2tcIixcIml0YWxpY1wiOmZhbHNlLFwic3RyaWtldGhyb3VnaFwiOmZhbHNlLFwibWF4V2lkdGhcIjowfV0sXCJ2ZXJ0aWNhbENvbnRlbnRBbGlnbm1lbnRcIjpcImNlbnRlclwiLFwic3BhY2luZ1wiOlwiZGVmYXVsdFwiLFwic2VwYXJhdG9yXCI6ZmFsc2UsXCJpc1Zpc2libGVcIjp0cnVlLFwidHlwZVwiOlwiQ29sdW1uXCIsXCJibGVlZFwiOmZhbHNlLFwicGl4ZWxNaW5IZWlnaHRcIjowfSx7XCJ3aWR0aFwiOlwiMjRweFwiLFwicGl4ZWxXaWR0aFwiOjI0LFwiaXRlbXNcIjpbe1wiYWx0VGV4dFwiOlwiWWFtbWVyIExvZ29cIixcInNpemVcIjpcInNtYWxsXCIsXCJwaXhlbFdpZHRoXCI6MCxcInBpeGVsSGVpZ2h0XCI6MCxcIndpZHRoXCI6XCIwcHhcIixcImhlaWdodFwiOlwiMHB4XCIsXCJzdHlsZVwiOlwiZGVmYXVsdFwiLFwidXJsXCI6XCJodHRwczovL293Mi5yZXMub2ZmaWNlMzY1LmNvbS95YW1tZXIvMjAyMDAyMTIwMDYvZmF2aWNvbi5pY29cIixcInNwYWNpbmdcIjpcImRlZmF1bHRcIixcInNlcGFyYXRvclwiOmZhbHNlLFwiaXNWaXNpYmxlXCI6dHJ1ZSxcInR5cGVcIjpcIkltYWdlXCJ9XSxcInZlcnRpY2FsQ29udGVudEFsaWdubWVudFwiOlwiY2VudGVyXCIsXCJzcGFjaW5nXCI6XCJkZWZhdWx0XCIsXCJzZXBhcmF0b3JcIjpmYWxzZSxcImlzVmlzaWJsZVwiOnRydWUsXCJ0eXBlXCI6XCJDb2x1bW5cIixcImJsZWVkXCI6ZmFsc2UsXCJwaXhlbE1pbkhlaWdodFwiOjB9XSxcInNwYWNpbmdcIjpcImRlZmF1bHRcIixcInNlcGFyYXRvclwiOnRydWUsXCJpc1Zpc2libGVcIjp0cnVlLFwidHlwZVwiOlwiQ29sdW1uU2V0XCIsXCJibGVlZFwiOmZhbHNlLFwicGl4ZWxNaW5IZWlnaHRcIjowfV0sXCJzcGFjaW5nXCI6XCJub25lXCIsXCJzZXBhcmF0b3JcIjp0cnVlLFwiaXNWaXNpYmxlXCI6dHJ1ZSxcInR5cGVcIjpcIkNvbnRhaW5lclwiLFwiYmxlZWRcIjpmYWxzZSxcInBpeGVsTWluSGVpZ2h0XCI6MH0se1wiaXRlbXNcIjpbe1wiY29sdW1uc1wiOlt7XCJpdGVtc1wiOlt7XCJwaXhlbFdpZHRoXCI6MCxcInBpeGVsSGVpZ2h0XCI6MCxcIndpZHRoXCI6XCIwcHhcIixcImhlaWdodFwiOlwiMTRweFwiLFwidXJsXCI6XCJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQURBQUFBQXlDQVlBQUFBYXlsaU1BQUFBQVhOU1IwSUFyczRjNlFBQUFBUm5RVTFCQUFDeGp3djhZUVVBQUFBSmNFaFpjd0FBRHNNQUFBN0RBY2R2cUdRQUFBVHNTVVJCVkdoRDdaaGZhRnRWSE1mdnVVbldzTGxxWUc2d1BVelFSeEdzbTFOQlpWamNRTEQ0c0JlaDFld1BJV215Slptd3B6MzU1TUFrVzlLR01sMXBLKzVoRDZPQzRNUWlLcTdUNmdaTzJQTVVoYmxCcVhZanRjazlmbi8zL0pMY3BFMXkvOFQxSlI5b3p2bjk3dS8zTy9kM3pqMy9xdlhvMGFOSGp4NDlldlRvc1dFSUx0ZHc5bXcrYkJoaUNOVzlTcU10U0tsZFRxZmpVeXovTHpodGQwMEN4V0p4ZTZsVW5vSFQ2NnhxUUFoeEpSajBqVVNqMGI5WTFSWGN0cXR6V2FOVXFreTNDa0pJS1ErUURZdGR3MjI3RFFsa01vVjN5RkJKOGw4aDlGTkNiTnFwL3ZSVHBET2Z3SVpzVGJNdTRLVmRQNWNtUW1odm9SZTQ3anVkU28yZVVaTEptV3gyREVHTUQwZ2dXeFJkbVE5ZTJtMytoS29UQi9obnVHS2hRV2V4OVl6cmRoc1NRQytzbVJPdGtTMVhNS2Q0YWJmWjhUcVhvRHpNRlF0MW5aVGlCbGU3Z2V0Mkc3S2hOYmhTMFM0b2lTYVQ3M1I5K01yRFVsYmVoOHNta253KzdmQ0pFNGxKODVGSHZMVGJrQUJtdWNobUMxK2orcXJTdE9TYlZDcStIMnN6VDcwNnVWeGhIejZKbzRpRmIxVThRVHBNdk5zb2Z2VDU5SStQSDQ5ZEk1MFZMKzAySkpEUDUzZXVyb3BMQ1BrU3Exb2c1clp0Nng4YUdSbTV6d3B0Y25JeXVMaDQvMVA0MGlyUkJuRTVGTnJ5ZGpnY0xyRkNtNTZlM25MdjN0K3o4SDJOVlMwUVZ3TUJlU2lSU1B6Smlub0M2SUV
+
+[... truncated, full content in database ...]
+```
