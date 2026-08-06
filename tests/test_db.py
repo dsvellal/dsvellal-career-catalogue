@@ -11,6 +11,7 @@ EXPECTED_TABLES = [
     "artifacts",
     "chunks",
     "edges",
+    "evidence_index",
     "gdrive_sync",
     "ingestion_log",
     "nodes",

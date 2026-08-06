@@ -1,7 +1,7 @@
 # Execution Plan
 
 **Project:** dsvellal-personal-knowledge-context
-**Last Updated:** 2026-08-02
+**Last Updated:** 2026-08-05
 **Current Phase:** 7 (Cloud Deployment)
 
 ---
@@ -104,11 +104,30 @@
 
 ---
 
+## Phase 5b: Data Representation Architecture (Complete)
+
+| # | Task | Status | Notes |
+|---|------|--------|-------|
+| 5b.1 | Split Philips timeline into India/USA eras | Done | 2021-12-05 split date, 6 eras total |
+| 5b.2 | Three-level drill-down (Timeline) | Done | Summary → Rich Summary → Full Artifact |
+| 5b.3 | Three-level drill-down (Impact Wall) | Done | Same pattern as Timeline |
+| 5b.4 | Three-level drill-down (Voices) | Done | Same pattern as Timeline |
+| 5b.5 | Evidence index in DuckDB | Done | 562 files indexed, src/twin/ingestion/evidence_index.py |
+| 5b.6 | `twin publish --viz-only` command | Done | Generates split, evidence-enriched JSON |
+| 5b.7 | `twin index-evidence` CLI command | Done | Rebuilds evidence_index table |
+| 5b.8 | Evidence file serving (symlink) | Done | viz/public/data/evidence → data/evidence |
+| 5b.9 | Reverse chronological order everywhere | Done | Philips USA → India → Amazon → Exeter → IBM |
+| 5b.10 | Evidence matching in publish | Done | 43/353 items linked (12%), DuckDB-backed |
+
+---
+
 ## Phase 7: Cloud Deployment
 
 | # | Task | Status | Notes |
 |---|------|--------|-------|
 | 7.1 | Deployment target selection | Pending | |
-| 7.2 | Published snapshot format | Pending | |
-| 7.3 | Cloud API (read-only) | Pending | |
+| 7.2 | Published snapshot format | Done | `twin publish --viz-only` generates static JSON |
+| 7.3 | Cloud API (read-only) | Pending | View-specific endpoints planned |
 | 7.4 | Domain configuration | Pending | |
+| 7.5 | Split graph JSON per sub-view | Pending | 5 files instead of monolithic graph.json |
+| 7.6 | LLM query planner for /api/ask | Pending | Multi-mode retrieval orchestration |

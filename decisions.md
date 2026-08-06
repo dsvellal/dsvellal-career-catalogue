@@ -816,3 +816,94 @@ Key files:
 1. Store full resolution — rejected (too large for git, unnecessary)
 2. Store only references — rejected (screenshots of internal content will disappear)
 3. **Compressed JPEG at display quality** — chosen (good quality, reasonable size, git-friendly)
+
+---
+
+## Decision 024: Philips Timeline Split
+
+**Date:** 2026-08-05
+**Phase:** Design (Data Architecture)
+**Category:** Data Model / Timeline
+
+**Context:** Philips era covers 2018-present but spans two geographies — India (2018-09-18 to 2021-12-04) and USA (2021-12-06 to present). These represent different roles, teams, and contexts.
+
+**Decision:** Split the single "Philips" era into "Philips India" and "Philips USA" as two separate timeline sections.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Keep single Philips era with location subheading | Loses the significance of the geography change and the role evolution |
+| Add location as a filter within Philips | Doesn't communicate the narrative of the move |
+
+**Impact:** Timeline data, era colors, ERA_ORDER constant, timeline_full.json structure.
+
+---
+
+## Decision 025: Data Representation Architecture
+
+**Date:** 2026-08-05
+**Phase:** Design (Data Architecture)
+**Category:** Architecture / Data Layer
+
+**Context:** Three pain points identified — stale static JSON, no unified query interface, flat evidence files not queryable.
+
+**Decision:**
+1. Live FastAPI as single source of truth for all consumers
+2. View-specific endpoints (one per viz tab, pre-shaped responses)
+3. Evidence indexed into DuckDB (`evidence_index` table), markdown stays authoritative
+4. Static viz via `twin publish` (pre-built JSON from DuckDB)
+5. LLM-powered query planner for unified search
+6. Curated highlights + drill-down for viz presentation
+7. Graph data split by sub-view (5 JSON files)
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| GraphQL unified layer | Overkill for single developer |
+| Runtime fetch for viz | Requires server for public portfolio |
+| Generic graph query + client transforms | Pushes complexity to frontend |
+| Fixed fusion pipeline for retrieval | Can't adapt strategy per question type |
+
+---
+
+## Decision 026: Evidence Drill-Down UX — Three-Level Depth
+
+**Date:** 2026-08-05
+**Phase:** Design (UX)
+**Category:** UX / Information Architecture
+
+**Context:** When a user clicks expand/details on any item (impact card, timeline entry, voice quote), they need progressive disclosure.
+
+**Decision:** Three levels:
+1. **Summary view** — the card/row as currently rendered (title, stat, era badge)
+2. **Rich summary** — expanded panel with better narrative, granular details, key quotes, related evidence links
+3. **Full artifact** — complete evidence markdown rendered as HTML with image embeddings, triggered by "Explore the full story" button
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Two levels only (summary to full) | Full markdown is too much for casual browsers |
+| Modal overlay for full detail | Breaks scroll position, feels disconnected |
+| Separate page/route | SPA model, no routing infrastructure |
+
+---
+
+## Decision 027: Reverse Chronological Era Order
+
+**Date:** 2026-08-05
+**Phase:** Design (UX)
+**Category:** UX / Presentation
+
+**Context:** The timeline and all views should show most recent first.
+
+**Decision:** Era order everywhere: Philips USA, Philips India, Amazon, Exeter, IBM. Independent stays at the end (cross-era). Within each era, years are newest-first, items within years are newest-first.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Chronological (oldest first) | Users care most about recent work |
+| User-toggleable | Adds UI complexity for no clear benefit |

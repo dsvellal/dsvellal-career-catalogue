@@ -16,21 +16,21 @@
   {
     "stat": "99.999%",
     "label": "Service uptime (five-nines)",
-    "detail": "The Service-Ops automation platform Datta built serves more than 7,000 Philips engineers globally and has maintained five-nines availability since launch — critical for medical device software delivery continuity.",
+    "detail": "The Service-Ops automation platform Datta built serves more than 7,000 Philips engineers globally and has maintained five-nines availability since launch \u2014 critical for medical device software delivery continuity.",
     "era": "Philips",
     "category": "professional"
   },
   {
-    "stat": "86–89%",
+    "stat": "86\u201389%",
     "label": "Fraud latency reduction",
-    "detail": "At Amazon TRMS (Transaction Risk Management Services), redesigned the fraud check pipeline reducing latency by 86–89% while handling 2B+ ASINs daily. Investigated high-impact fraud rule anomalies during Prime Day 2018.",
+    "detail": "At Amazon TRMS (Transaction Risk Management Services), redesigned the fraud check pipeline reducing latency by 86\u201389% while handling 2B+ ASINs daily. Investigated high-impact fraud rule anomalies during Prime Day 2018.",
     "era": "Amazon",
     "category": "professional"
   },
   {
     "stat": "50+",
     "label": "Engineers Bar-Raised",
-    "detail": "Led the Bar Raiser program at Philips — trained more than 50 engineers in structured interviewing, reduced senior hiring time by 50%, and raised the engineering quality bar organization-wide. Featured in a Philips intranet article as the model Bar Raiser.",
+    "detail": "Led the Bar Raiser program at Philips \u2014 trained more than 50 engineers in structured interviewing, reduced senior hiring time by 50%, and raised the engineering quality bar organization-wide. Featured in a Philips intranet article as the model Bar Raiser.",
     "era": "Philips",
     "category": "professional"
   },
@@ -44,7 +44,7 @@
   {
     "stat": "Youngest",
     "label": "Principal Engineer at Philips India",
-    "detail": "Promoted to Principal in 2021 — the youngest to hold that title at Philips India. Recognized for technical depth, cross-organizational influence, and the ability to bridge strategy with hands-on engineering.",
+    "detail": "Promoted to Principal in 2021 \u2014 the youngest to hold that title at Philips India. Recognized for technical depth, cross-organizational influence, and the ability to bridge strategy with hands-on engineering.",
     "era": "Philips",
     "category": "professional"
   },
@@ -58,7 +58,7 @@
   {
     "stat": "39-page",
     "label": "DevOps whitepaper authored",
-    "detail": "Authored the organization-wide 'End-to-End Software Development & Operations' whitepaper (CAO_2021_42) — covering DevOps, CI/CD pipelines, platforms, hosting, and BizDevOps. Became the reference standard for Philips engineering practices.",
+    "detail": "Authored the organization-wide 'End-to-End Software Development & Operations' whitepaper (CAO_2021_42) \u2014 covering DevOps, CI/CD pipelines, platforms, hosting, and BizDevOps. Became the reference standard for Philips engineering practices.",
     "era": "Philips",
     "category": "professional"
   },
@@ -72,21 +72,21 @@
   {
     "stat": "HackDay",
     "label": "IBM World Championship winner",
-    "detail": "Won the IBM internal HackDay World Championship in 2009 — a global competition across IBM's worldwide engineering workforce. Also received the IBM Bravo Award (Best of IBM) for leading an internship project on a Visual Composition Editor.",
+    "detail": "Won the IBM internal HackDay World Championship in 2009 \u2014 a global competition across IBM's worldwide engineering workforce. Also received the IBM Bravo Award (Best of IBM) for leading an internship project on a Visual Composition Editor.",
     "era": "IBM",
     "category": "professional"
   },
   {
     "stat": "25+",
     "label": "Programming languages",
-    "detail": "Proficient across more than 25 languages over 20 years — Java, Python, TypeScript, Go, Kotlin, Swift, Rust, Scala, C++, Ruby, and more. A polyglot who picks the right tool for the job.",
+    "detail": "Proficient across more than 25 languages over 20 years \u2014 Java, Python, TypeScript, Go, Kotlin, Swift, Rust, Scala, C++, Ruby, and more. A polyglot who picks the right tool for the job.",
     "era": "All",
     "category": "professional"
   },
   {
     "stat": "20 yrs",
     "label": "Career depth",
-    "detail": "IBM (2007–2014), Exeter Group (2014–2018), Amazon (2018), Philips (2018–present). From individual contributor to Principal. From writing code to transforming organizations. Every role left a measurable mark.",
+    "detail": "IBM (2007\u20132014), Exeter Group (2014\u20132018), Amazon (2018), Philips (2018\u2013present). From individual contributor to Principal. From writing code to transforming organizations. Every role left a measurable mark.",
     "era": "All",
     "category": "professional"
   },
@@ -107,7 +107,7 @@
   {
     "stat": "30+",
     "label": "Talks at colleges and schools",
-    "detail": "Delivered 30+ guest lectures and workshops at engineering colleges and schools across India — covering design patterns, SOLID principles, microservices, career guidance, and personality development. Audiences from 30 to 100+ students per session.",
+    "detail": "Delivered 30+ guest lectures and workshops at engineering colleges and schools across India \u2014 covering design patterns, SOLID principles, microservices, career guidance, and personality development. Audiences from 30 to 100+ students per session.",
     "era": "All",
     "category": "social"
   },
@@ -121,14 +121,14 @@
   {
     "stat": "3rd graders",
     "label": "Teaching AI to young minds",
-    "detail": "In 2026, volunteered to teach 3rd graders about AI integration — interviewing fictional characters like Dr. Seuss and Dogman using AI models. Making cutting-edge technology accessible and fun for the youngest learners.",
+    "detail": "In 2026, volunteered to teach 3rd graders about AI integration \u2014 interviewing fictional characters like Dr. Seuss and Dogman using AI models. Making cutting-edge technology accessible and fun for the youngest learners.",
     "era": "Philips",
     "category": "social"
   },
   {
     "stat": "Uniforms",
     "label": "School uniform program since 2016",
-    "detail": "Contributing to and participating in a uniform distribution program for underprivileged children since 2016 — ensuring kids can attend school with dignity. Part of a broader commitment to removing barriers to education.",
+    "detail": "Contributing to and participating in a uniform distribution program for underprivileged children since 2016 \u2014 ensuring kids can attend school with dignity. Part of a broader commitment to removing barriers to education.",
     "era": "Independent",
     "category": "social"
   },

@@ -5,7 +5,8 @@ const ERA_COLORS: Record<string, string> = {
   IBM: '#2563a8',
   Exeter: '#9a6b00',
   Amazon: '#0d7a52',
-  Philips: '#b84c1a',
+  'Philips India': '#e6a817',
+  'Philips USA': '#c98500',
 }
 
 interface StatConfig {
@@ -99,7 +100,7 @@ export function HeroView({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
               Turning regulated complexity into engineering excellence, one org, one standard, one team at a time.
             </p>
             <p className="hero-tagline">
-              Global Digital Transformation Leader &nbsp;·&nbsp; IBM &rarr; Exeter &rarr; Amazon &rarr; Philips
+              Global Digital Transformation Leader &nbsp;·&nbsp; IBM &rarr; Exeter &rarr; Amazon &rarr; Philips India &rarr; Philips USA
             </p>
           </div>
 

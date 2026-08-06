@@ -1,8 +1,8 @@
 # Architecture
 
 **Project:** dsvellal-personal-knowledge-context
-**Version:** 0.1.0
-**Status:** Draft
+**Version:** 0.2.0
+**Status:** Active
 
 ---
 
@@ -124,7 +124,9 @@ A personal knowledge system that ingests all professional artifacts (documents, 
 | Graph | NetworkX (in-memory from DuckDB) | Fast traversal, no infra dependency. Rebuild from edges table at startup. |
 | LLM (primary) | Google Gemini API (2.5-pro / 2.5-flash) | User's existing subscription, strong synthesis |
 | LLM (fallback) | Ollama (gemma4, BGE-m3) | Offline capability, free |
-| Frontend | TBD (Next.js / SvelteKit / Astro) | Decided at Phase 4/5 |
+| Frontend | React + TypeScript + Vite + D3 | SPA with tab navigation, static JSON data |
+| Viz Data | `twin publish` static JSON generation | Pre-shaped per view, evidence-enriched |
+| Evidence Index | DuckDB evidence_index table | 562 files parsed and queryable |
 | CLI | Python (Typer) | Consistent with backend, rich terminal output, modern Click alternative |
 | Drive Sync | Google Drive API v3 | Official API, change tracking with page tokens |
 | Deployment (cloud) | Domain-agnostic, configurable | Vercel/Cloud Run or equivalent. Decided at Phase 7. |

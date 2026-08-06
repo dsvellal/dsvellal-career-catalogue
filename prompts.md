@@ -1043,3 +1043,36 @@ Expanded Impact page from 8 to 20 cards. Added 5 new professional impact cards (
 - One evidence file per feedback survey (maximum granularity)
 - Individual evidence per chat screenshot (maximum traceability)
 - Full monthly extraction (longitudinal engagement proof)
+
+---
+
+## Prompt 039
+
+**Timestamp:** 2026-08-05T21:30:00Z
+**Phase:** Design (Data Architecture)
+**Direction:** User -> System (Interview)
+
+### Prompt
+
+> I want you to start the servers, read the in-memory contents, read the repository content. Brainstorm with me, what is the best way to represent the data that I have. Interview me, one question at a time.
+
+### Response Summary
+
+Multi-turn interview resulting in data architecture decisions:
+- Live API + static publish hybrid
+- View-specific endpoints
+- Evidence indexed in DuckDB
+- LLM query planner for retrieval
+- Curated highlights with drill-down
+- Split graph JSON per sub-view
+- ASCII screen mockups for all 8 tabs
+- Philips split into India (2018-2021) and USA (2021-present)
+- Three-level drill-down: summary, rich summary, full artifact ("Explore the full story")
+- Reverse chronological everywhere
+
+### Decisions Triggered
+
+- Decision 024: Philips Timeline Split (India vs USA as separate eras)
+- Decision 025: Data Representation Architecture (Live API + static publish hybrid, view-specific endpoints, DuckDB evidence index, LLM query planner, curated highlights, split graph JSON)
+- Decision 026: Evidence Drill-Down UX — Three-Level Depth (summary, rich summary, full artifact)
+- Decision 027: Reverse Chronological Era Order (newest first everywhere)

@@ -141,10 +141,13 @@ def get_connection(db_path: Path = DEFAULT_DB_PATH) -> duckdb.DuckDBPyConnection
 
 def init_schema(db_path: Path = DEFAULT_DB_PATH) -> Path:
     """Create all tables and indexes. Returns the database path."""
+    from twin.ingestion.evidence_index import create_evidence_index_table
+
     conn = get_connection(db_path)
     try:
         conn.execute(SCHEMA_SQL)
         conn.execute(INDEX_SQL)
+        create_evidence_index_table(conn)
     finally:
         conn.close()
     return db_path

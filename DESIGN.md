@@ -1,197 +1,961 @@
----
-name: Datta Vellal Portfolio
-description: Professional identity portfolio rendered as architectural technical drawings
-colors:
-  vellum: "#f7f4ed"
-  vellum-warm: "#f0ece3"
-  ink-primary: "#1a2233"
-  ink-secondary: "#3d4a5c"
-  ink-muted: "#6b7280"
-  construction-blue: "#a8c4d4"
-  accent-vermillion: "#c44125"
-  era-ibm: "#2563a8"
-  era-amazon: "#0d7a52"
-  era-philips: "#b84c1a"
-  era-exeter: "#9a6b00"
-  era-independent: "#6b46b0"
-  border: "#d4cfc4"
-  border-strong: "#b8b2a5"
-typography:
-  display:
-    fontFamily: "'Barlow Condensed', sans-serif"
-    fontSize: "clamp(32px, 6vw, 80px)"
-    fontWeight: 700
-    lineHeight: 0.9
-    letterSpacing: "-0.04em"
-  body:
-    fontFamily: "'Barlow', sans-serif"
-    fontSize: "16px"
-    fontWeight: 400
-    lineHeight: 1.5
-  annotation:
-    fontFamily: "'JetBrains Mono', monospace"
-    fontSize: "10px"
-    fontWeight: 500
-    letterSpacing: "0.06em"
-rounded:
-  none: "0"
-spacing:
-  sm: "8px"
-  md: "16px"
-  lg: "32px"
-  xl: "48px"
-components:
-  nav-tab:
-    textColor: "{colors.ink-muted}"
-    typography: "{typography.display}"
-    padding: "0 16px"
-  nav-tab-active:
-    textColor: "{colors.ink-primary}"
-  filter-button:
-    backgroundColor: "{colors.vellum}"
-    textColor: "{colors.ink-secondary}"
-    padding: "6px 14px"
-  filter-button-active:
-    backgroundColor: "{colors.ink-primary}"
-    textColor: "{colors.vellum}"
-  impact-card:
-    backgroundColor: "#ffffff"
-    padding: "28px 24px"
-  badge:
-    textColor: "{colors.ink-muted}"
-    padding: "2px 6px"
+# UI Screen Design — Data Representation Architecture
+
+## Design Principles
+
+1. **Curated highlights + drill-down (progressive disclosure)** — Show the most impressive numbers first, then let users explore deeper
+2. **Three-level depth: Summary -> Rich Summary -> Full Artifact ("Explore the full story")** — Every data point can be expanded twice
+3. **Reverse chronological everywhere** — Philips USA -> Philips India -> Amazon -> Exeter -> IBM, Independent last
+4. **Evidence traceability** — Every data point traces to a source markdown file in `data/evidence/`
+5. **Static pre-built JSON via `twin publish`** — No runtime server dependency for portfolio; all data baked at build time
+6. **Rich data: maximize information density without overwhelming** — Dense but scannable
+
+## Era Definitions
+
+| Era | Organization | Location | Dates | Color |
+|-----|-------------|----------|-------|-------|
+| Philips USA | Philips North America | Cambridge, MA | 2021-12-06 - present | `#c98500` |
+| Philips India | Philips India | Bangalore | 2018-09-18 - 2021-12-04 | `#e6a817` |
+| Amazon | Amazon / TRMS | Bangalore | 2017 - 2018 | `#199e70` |
+| Exeter | Exeter Group / OneGate | Bangalore | 2014 - 2017 | `#d95926` |
+| IBM | IBM India Pvt. Ltd. | Bangalore/Pune | 2007 - 2014 | `#3987e5` |
+| Independent | Community & Volunteering | -- | 2007 - present | `#9085e9` |
+
+Era colors are used consistently across all screens: timeline headers, badge backgrounds, chart segments, stat card accents, and graph nodes.
+
 ---
 
-# Design System: Datta Vellal Portfolio
+## Screen Mockups
 
-## Overview
+### 1. Overview / Hero
 
-**Creative North Star: "The Blueprint Specification"**
+The landing screen. Establishes identity and surfaces the strongest proof points immediately. Invites exploration.
 
-This portfolio is rendered as an architectural drawing sheet set — the visual language engineers use to specify designed systems. Every element inherits the precision, economy, and authority of technical documentation: thin ruled lines carry hierarchy, monospace annotations provide measurement context, and warm vellum ground establishes the physical substrate of drafting paper.
+```
++==============================================================================+
+|  NAV: [Overview] [Identity] [Career] [Impact] [Timeline] [Voices] [Talks] [Graph]  |
++==============================================================================+
 
-The design rejects the dark-theme SaaS portfolio default, the card-grid template, rounded corners, and decorative glass/blur. It replaces them with orthogonal composition, explicit line weights as a hierarchy system, and typography that reads as engineered signage rather than marketing.
++------------------------------------------------------------------------------+
+|                                                                              |
+|  +--------+   DATTA SVSS VELLAL                                              |
+|  |        |   Principal Engineer, Medical Device Software                    |
+|  | PHOTO  |   Philips | Cambridge, MA                                       |
+|  |        |                                                                  |
+|  | 200x   |   "Engineering leader who builds systems AND the people          |
+|  | 200    |    who build them."                                              |
+|  |        |                                                                  |
+|  +--------+                                                                  |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-The surface operates in **Experience** mode: the work itself leads from the first viewport. The interface recedes; the evidence system is the experience.
++------STAT TILES (clickable -> navigate to relevant tab)----------------------+
+|                                                                              |
+|  +----------------+  +----------------+  +----------------+  +-------------+ |
+|  | 220            |  | 18,688         |  | NPS 84.5       |  | 17+         | |
+|  | VOICES OF      |  | LINES CODE     |  | AVG PROGRAM    |  | YEARS       | |
+|  | RECOGNITION    |  | REMOVED        |  | SATISFACTION   |  | EXPERIENCE  | |
+|  | -> Voices tab  |  | -> Impact tab  |  | -> Talks tab   |  | -> Timeline | |
+|  +----------------+  +----------------+  +----------------+  +-------------+ |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-**Key Characteristics:**
-- Warm light theme derived from physical drafting paper
-- Zero border-radius throughout — all corners are right angles
-- Three-tier line weight system (0.5px construction, 1px standard, 2px section)
-- Monospace annotations for metadata, dates, and labels
-- Condensed industrial grotesque for display headings
-- Era-coded color system preserved from the data model
++------LATEST EVIDENCE (3 most recent items)-----------------------------------+
+|                                                                              |
+|  +--[Philips USA]--[Recognition]--2026-05-12----+                            |
+|  | "Exemplary leadership on FDA submission..."   |                           |
+|  | -- Chad Malone, VP Engineering                |                           |
+|  +-----------------------------------------------+                           |
+|                                                                              |
+|  +--[Philips USA]--[Achievement]--2026-03-01----+                            |
+|  | IEC 62304 Compliance Gate Passed - Zero NCRs  |                           |
+|  +-----------------------------------------------+                           |
+|                                                                              |
+|  +--[Independent]--[Talk]--2026-02-20-----------+                            |
+|  | "Building Engineering Cultures" - NPS 91     |                            |
+|  +-----------------------------------------------+                           |
+|                                                                              |
++------------------------------------------------------------------------------+
+```
 
-## Colors
+**Interactions:**
+- Stat tiles are clickable; each navigates to the corresponding tab
+- Latest Evidence items expand on click (Level 2: Rich Summary)
+- Era badges show era color as left-border accent
 
-A restrained palette of architectural ink on vellum, with vermillion for revision marks and active states.
+---
 
-### Primary
-- **Blueprint Ink** (#1a2233): All primary text, display headings, and section borders. Deep blue-black that reads as technical pen ink on paper.
-- **Vermillion** (#c44125): Active states, accent indicators, revision marks. The engineer's red correction pen.
+### 2. Professional Identity (Constellation)
 
-### Secondary
-- **Construction Blue** (#a8c4d4): Section labels, guideline annotations, ghost elements. The non-reproducing blue pencil of architectural drafting.
+BeTalent-derived force graph showing skill clusters orbiting the center. Communicates breadth and depth of expertise at a glance.
 
-### Neutral
-- **Vellum** (#f7f4ed): Page ground. Warm off-white that reads as drafting paper.
-- **Vellum Warm** (#f0ece3): Secondary surfaces and hover states.
-- **Border** (#d4cfc4): Standard rule lines.
-- **Border Strong** (#b8b2a5): Emphasized rules and hover states.
+```
++==============================================================================+
+|  PROFESSIONAL IDENTITY — Skill Constellation                                 |
++==============================================================================+
 
-### Categorical (Era Colors)
-- **IBM Blue** (#2563a8): IBM era indicators
-- **Amazon Green** (#0d7a52): Amazon era indicators
-- **Philips Orange** (#b84c1a): Philips era indicators
-- **Exeter Gold** (#9a6b00): Exeter era indicators
-- **Independent Purple** (#6b46b0): Community/volunteer era indicators
++------CONSTELLATION GRAPH (D3 force layout)-----------------------------------+
+|                                                                              |
+|                        [Architecture]                                         |
+|                       /              \                                        |
+|              [System Design]    [API Design]                                  |
+|                    |                  |                                       |
+|           [Microservices]     [Domain Modeling]                               |
+|                    \                /                                         |
+|                     \              /                                          |
+|                                                                              |
+|         [Mentoring]---+          +---[DevOps]                                |
+|        /               \        /              \                              |
+|  [Coaching]      +============+          [CI/CD]                             |
+|  [Training]      |   DATTA    |          [Docker]                            |
+|  [Community]     +============+          [Cloud]                             |
+|        \               /        \              /                              |
+|         [Leadership]--+          +---[Quality]                               |
+|                                                                              |
+|                     /              \                                          |
+|           [Agile Coaching]    [Static Analysis]                               |
+|                    |                  |                                       |
+|              [Scrum]          [Code Review]                                   |
+|                       \              /                                        |
+|                        [Process]                                              |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-## Typography
++------CLUSTER LEGEND------+
+|                          |
+|  [*] Technical Mastery   |  Architecture, Systems, Languages
+|  [*] People & Culture    |  Mentoring, Training, Community Building
+|  [*] Process & Quality   |  DevOps, Agile, Testing, Standards
+|  [*] Domain Expertise    |  Medical Devices, Regulatory, Healthcare
+|                          |
++--------------------------+
 
-Three faces, each earned by its role:
++------SKILL DETAIL (on node hover/click)--------------------------------------+
+|                                                                              |
+|  MENTORING                                                                   |
+|  Strength: 9.2/10 | Evidence count: 34 | Eras: Philips India, Philips USA   |
+|  Top quotes:                                                                 |
+|    "Datta's mentoring transformed our team culture" -- Pooja S.              |
+|    "Best technical mentor I've worked with" -- Anonymous NPS                 |
+|                                                                              |
++------------------------------------------------------------------------------+
+```
 
-### Display — Barlow Condensed
-Industrial grotesque inspired by California highway signage. Used for all headings, stat values, and navigation labels. Weights 600–800. Always uppercase in navigation, mixed case in content headings.
+**Interactions:**
+- Nodes are draggable (D3 force simulation)
+- Hover shows skill strength + evidence count tooltip
+- Click opens skill detail panel with quotes and era breakdown
+- Cluster colors match a 4-color categorical palette
+- Node size = evidence count; link thickness = co-occurrence frequency
 
-### Body — Barlow
-Proportional companion to the display face. All paragraph text, descriptions, and interactive content. Weights 300–600.
+---
 
-### Annotation — JetBrains Mono
-Monospaced face used exclusively for measurements, dates, metadata labels, badge text, and dimension annotations. This is NOT decorative monospace — it is earned by its function (code, data, measurement). Weight 400–500, always uppercase with wide letter-spacing (0.04–0.1em).
+### 3. Career Arc
 
-## Layout
+Stacked bar chart showing activity volume by year, colored by evidence type. Communicates career trajectory and intensity over time.
 
-### Grid and Composition
-- Max content width: 1400px, centered
-- Page padding: 48px horizontal (16px on mobile)
-- No rounded containers — all panels are orthogonal
-- Grid gaps use 0px with borders separating cells (drawing-sheet style)
-- Two-column layouts use thin vertical rules as dividers
+```
++==============================================================================+
+|  CAREER ARC — Evidence by Year                                               |
++==============================================================================+
 
-### Spacing Rhythm
-- More space above headings than below (architectural convention)
-- Tight groups within components, generous separation between them
-- Section headers carry a bottom border acting as a section break line
++------STACKED BAR CHART------------------------------------------------------+
+|                                                                              |
+|  Count                                                                       |
+|   80 |                                                                       |
+|   70 |                                              +-+                      |
+|   60 |                                         +-+  |R|  +-+                 |
+|   50 |                                    +-+  |R|  |C|  |R|                 |
+|   40 |                               +-+  |C|  |C|  |T|  |C|                 |
+|   30 |          +-+             +-+  |T|  |T|  |T|  |A|  |T|                 |
+|   20 |     +-+  |C|  +-+  +-+  |C|  |A|  |A|  |A|  |P|  |A|                 |
+|   10 | +-+ |T|  |T|  |T|  |T|  |T|  |P|  |P|  |P|  | |  |P|                 |
+|    0 +-+---+----+----+----+----+----+----+----+----+----+----+--> Year       |
+|      2007  09   11   13   15   17   18   19   20   21   22  24  26           |
+|      |----IBM----|----EX---|  AM  |---Ph India---|  |--Ph USA--|              |
+|                                                                              |
++------LEGEND------------------------------------------------------------------+
+|  [R] Recognition  [C] Certification  [T] Talk/Training                       |
+|  [A] Achievement  [P] Project                                                |
++------------------------------------------------------------------------------+
 
-### Responsive
-- Single breakpoint at 900px
-- Columns collapse to single-column with horizontal borders becoming vertical stacking
-- Navigation becomes horizontally scrollable
-- Photo moves above text on mobile
++------ERA SUMMARY ROW---------------------------------------------------------+
+|                                                                              |
+|  IBM (7 yrs)        Exeter (3 yrs)   Amazon (1 yr)   Ph India (3 yrs)       |
+|  42 items           28 items          8 items         156 items              |
+|                                                                              |
+|  Ph USA (4+ yrs)   Independent                                              |
+|  89 items           47 items                                                 |
+|                                                                              |
++------------------------------------------------------------------------------+
+```
 
-## Elevation & Depth
+**Interactions:**
+- Hover on bar segment shows count + type breakdown for that year
+- Click on bar navigates to Timeline filtered to that year
+- Era labels below X-axis use era colors
+- Toggle between: All types | Recognition only | Certifications only | Talks only
 
-Flat. No ambient shadows. The single elevation device is the **offset shadow** on the hero photo: `8px 8px 0 rgba(168, 196, 212, 0.3)` — a construction-blue offset that reads as a blueprint elevation indicator. This shadow appears nowhere else.
+---
 
-Tooltips use the same offset: `4px 4px 0 rgba(168, 196, 212, 0.3)`.
+### 4. Impact Wall
 
-Depth is communicated through line weight and fill, never through blur or ambient shadow.
+The "proof wall." 20 stat cards arranged in a dense grid. Each card is a quantified achievement with source traceability. Progressive disclosure: click to expand.
 
-## Shapes
+```
++==============================================================================+
+|  IMPACT WALL — Quantified Achievements                                       |
++==============================================================================+
 
-**Zero border-radius.** This is the world's defining geometric constraint. Every container, button, badge, input, card, and panel uses sharp right-angle corners. This is non-negotiable — any border-radius would break the technical drawing commitment.
++------FILTERS-----------------------------------------------------------------+
+|  [All] [Professional] [Social Impact] | Era: [All] [Ph USA] [Ph India] ...  |
++-----------------------------------------------------------------------------|
 
-Shapes are defined by their borders:
-- Section boundaries: 2px solid ink-primary
-- Standard containers: 1px solid border
-- Construction/ghost elements: 0.5px solid construction-blue or dashed
++------STAT CARD GRID (4 columns)----------------------------------------------+
+|                                                                              |
+| +--[Ph India][Prof]--+ +--[Ph India][Prof]--+ +--[Ph USA][Prof]---+ +--[Ind][Social]----+ |
+| | 18,688             | | NPS 84.5           | | Zero NCRs         | | 1,250+           | |
+| | LINES REMOVED      | | AVG SATISFACTION   | | FDA SUBMISSION    | | PEOPLE REACHED   | |
+| | via static         | | across 12 programs | | IEC 62304 gate    | | via .connect     | |
+| | analysis gates     | |                    | |                   | |                  | |
+| +--------------------+ +--------------------+ +-------------------+ +------------------+ |
+|                                                                              |
+| +--[Ph India][Prof]--+ +--[Ph India][Social]+ +--[Ph India][Prof]-+ +--[IBM][Prof]-----+ |
+| | 235                | | 92.9               | | 3,547             | | 14               | |
+| | ENGINEERS ENABLED  | | IWillCode NPS      | | INTERACTIONS      | | PATENTS FILED    | |
+| | SWCoE competency   | | highest-rated      | | .connect program  | | IBM India labs   | |
+| | framework          | | program 2020       | | mentorship        | |                  | |
+| +--------------------+ +--------------------+ +-------------------+ +------------------+ |
+|                                                                              |
+| +--[Ph India][Prof]--+ +--[Ph USA][Prof]----+ +--[Exeter][Prof]---+ +--[Ph India][Prof]+ |
+| | 102                | | 4                  | | 3                 | | 12               | |
+| | FILES PROCESSED    | | TEAMS TRANSFORMED  | | PRODUCTS SHIPPED  | | PROGRAMS CREATED | |
+| | .connect data      | | engineering        | | OneGate platform  | | from scratch     | |
+| | pipeline           | | culture change     | |                   | |                  | |
+| +--------------------+ +--------------------+ +-------------------+ +------------------+ |
+|                                                                              |
+| ... (20 cards total, scrollable)                                             |
++------------------------------------------------------------------------------+
 
-## Components
++======RICH SUMMARY PANEL (on card click, slides in from right)================+
+|                                                                              |
+|  X CLOSE                                                                     |
+|                                                                              |
+|  18,688 LINES REMOVED                                                        |
+|  Era: Philips India | Category: Professional | 2018-2020                     |
+|                                                                              |
+|  NARRATIVE:                                                                  |
+|  Led the implementation of static analysis quality gates across the          |
+|  Philips India software organization. Identified 18,688 lines of dead        |
+|  code, duplicated logic, and unreachable branches. Removal reduced           |
+|  cognitive load and improved build times by 12%.                             |
+|                                                                              |
+|  METRICS:                                                                    |
+|  +------------------+------------------+------------------+                  |
+|  | 18,688 lines     | 235 engineers    | 12% build time   |                 |
+|  | removed          | impacted         | improvement      |                 |
+|  +------------------+------------------+------------------+                  |
+|                                                                              |
+|  KEY QUOTES:                                                                 |
+|  > "The quality gate initiative fundamentally changed how we ship code"      |
+|  > -- Engineering Director, Philips India                                    |
+|                                                                              |
+|  > "Datta's static analysis framework caught issues that would have          |
+|  >  cost us weeks in the field"                                              |
+|  > -- Tech Lead, Image Guided Therapy                                        |
+|                                                                              |
+|  RELATED EVIDENCE:                                                           |
+|  [091-static-analysis-results.md] [028-swcoe-program-summary.md]             |
+|  [045-build-metrics-dashboard.md]                                            |
+|                                                                              |
+|  SKILLS: [static-analysis] [quality-engineering] [tooling] [leadership]      |
+|                                                                              |
+|  +----------------------------------------------------------+               |
+|  | [>>>  Explore the full story  >>>]                        |               |
+|  +----------------------------------------------------------+               |
+|                                                                              |
++==============================================================================+
 
-### Navigation
-Title-block strip at top. 2px bottom border (section weight). Tabs use font-display uppercase with vermillion underline on active. No background change on active — only the border indicator.
++======FULL ARTIFACT VIEW (Level 3, replaces panel or full-screen modal)=======+
+|                                                                              |
+|  <- Back to Impact Wall                                                      |
+|                                                                              |
+|  # Evidence: Static Analysis Quality Gates — 18,688 Lines Removed            |
+|                                                                              |
+|  ## Source                                                                    |
+|  - File: static-analysis-summary.xlsx                                        |
+|  - Date: 2020-06-15                                                          |
+|  - Category: Achievement                                                     |
+|                                                                              |
+|  ## Metadata                                                                 |
+|  ... (full rendered markdown from evidence file) ...                         |
+|                                                                              |
+|  ## Key Quotes                                                               |
+|  > ...                                                                       |
+|                                                                              |
+|  ## Full Content                                                             |
+|  ... (complete artifact content, images rendered inline) ...                 |
+|                                                                              |
++==============================================================================+
+```
 
-### Section Header
-Functions as a drawing title block. Monospace section label in construction-blue, followed by display heading, followed by body subtitle. Bottom border separates from content.
+**Interactions:**
+- Cards have era-colored left border (4px solid)
+- Category badges: "Professional" = ink color, "Social Impact" = purple accent
+- Click card -> Rich Summary panel slides in from right (Level 2)
+- "Explore the full story" button -> Full Artifact view (Level 3)
+- Full Artifact renders the evidence markdown with proper formatting, images, and code blocks
+- Filter buttons narrow the grid by category and era
 
-### Filter Buttons
-Rectangular (no radius). Monospace text. Active state inverts: ink-primary background with vellum text. No pill shape.
+---
 
-### Badges/Tags
-Thin 1px border, monospace text, no background fill on default state. Category badges use border-color to indicate their category.
+### 5. Timeline (THE KEY SCREEN)
 
-### Grid Cells
-Items within a grid share borders (no gaps). Cells separated by 1px rules. Hover state changes background to vellum-warm. This replaces the card-grid pattern.
+The most detailed screen. Organizes all evidence chronologically within era sections. Each era is collapsible. Default state: Philips USA expanded, all others collapsed.
 
-### Expandable Details
-Triggered by click. Content animates in via max-height transition. Toggle text uses vermillion accent. No chevron icons — text indicators only ("→ read more" / "↑ collapse").
+```
++==============================================================================+
+|  TIMELINE — Complete Evidence Record                                         |
++==============================================================================+
 
-## Do's and Don'ts
++------FILTERS-----------------------------------------------------------------+
+|  Type: [All] [Recognition] [Achievement] [Certification] [Talk] [Project]    |
+|  Search: [____________________________]                                      |
++------------------------------------------------------------------------------+
 
-### Do
-- Use line weight to communicate hierarchy (2px > 1px > 0.5px)
-- Keep all corners sharp (0 border-radius)
-- Use monospace exclusively for measurements, dates, and metadata
-- Let the grid lines do the visual work — fewer fills, more structure
-- Use vermillion sparingly as the single accent color for active/revision states
-- Write labels in uppercase monospace with wide letter-spacing
++------ERA SECTIONS (reverse chronological)------------------------------------+
+|                                                                              |
+| [V] PHILIPS USA (Dec 2021 - present) -- Principal Engineer, Medical Device SW|
+| =====[#c98500 accent bar]================================================== |
+|                                                                              |
+|   2026 -------------------------------------------------------------------- |
+|                                                                              |
+|     +--[Recognition]--2026-05-12-----------------------------------------+  |
+|     | * "Exemplary leadership on FDA submission process"                  |  |
+|     |   From: Chad Malone, VP Engineering                                |  |
+|     +--------------------------------------------------------------------+  |
+|                                                                              |
+|     +--[Achievement]--2026-03-01-----------------------------------------+  |
+|     | * IEC 62304 Compliance Gate -- Zero Non-Conformance Reports         |  |
+|     +--------------------------------------------------------------------+  |
+|                                                                              |
+|     +--[Talk]--2026-02-20------------------------------------------------+  |
+|     | * "Building Engineering Cultures That Scale" -- NPS 91              |  |
+|     +--------------------------------------------------------------------+  |
+|                                                                              |
+|   2025 -------------------------------------------------------------------- |
+|                                                                              |
+|     +--[Achievement]--2025-11-15-----------------------------------------+  |
+|     | * SOUP Qualification Framework -- adopted by 3 BUs                  |  |
+|     +--------------------------------------------------------------------+  |
+|                                                                              |
+|     +--[Recognition]--2025-09-22-----------------------------------------+  |
+|     | * Peer nomination: "Technical North Star for the team"              |  |
+|     +--------------------------------------------------------------------+  |
+|                                                                              |
+|     +--[Certification]--2025-06-10---------------------------------------+  |
+|     | * IEC 62304 Medical Device Software -- Certified Practitioner       |  |
+|     +--------------------------------------------------------------------+  |
+|                                                                              |
+|     ... (more 2025 items)                                                    |
+|                                                                              |
+|   2024 -------------------------------------------------------------------- |
+|     ... (items)                                                              |
+|   2023 -------------------------------------------------------------------- |
+|     ... (items)                                                              |
+|   2022 -------------------------------------------------------------------- |
+|     ... (items)                                                              |
+|                                                                              |
+| [V] PHILIPS INDIA (Sep 2018 - Dec 2021) -- Software Competency Lead         |
+| =====[#e6a817 accent bar]================================================== |
+|                                                                              |
+|   2021 -------------------------------------------------------------------- |
+|                                                                              |
+|     +--[Recognition]--2021-11-20-----------------------------------------+  |
+|     | * "Train-the-trainer multiplier proven" -- Chad Malone praise       |  |
+|     +--------------------------------------------------------------------+  |
+|                                                                              |
+|     +--[Achievement]--2021-10-05-----------------------------------------+  |
+|     | * SWCoE Framework v3.0 -- 235 engineers enabled                     |  |
+|     +--------------------------------------------------------------------+  |
+|                                                                              |
+|   2020 -------------------------------------------------------------------- |
+|                                                                              |
+|     +--[Achievement]--2020-06-15-----------------------------------------+  |
+|     | * Static Analysis Gates -- 18,688 lines removed                     |  |
+|     +--------------------------------------------------------------------+  |
+|                                                                              |
+|     +--[Talk]--2020-03-15------------------------------------------------+  |
+|     | * IWillCode Program -- NPS 92.9, 85 respondents                     |  |
+|     +--------------------------------------------------------------------+  |
+|                                                                              |
+|     +--[Project]--2020-01-10---------------------------------------------+  |
+|     | * .connect Mentorship Program -- 102 files, 3,547 interactions      |  |
+|     +--------------------------------------------------------------------+  |
+|                                                                              |
+|   2019 -------------------------------------------------------------------- |
+|     ... (items)                                                              |
+|   2018 -------------------------------------------------------------------- |
+|     ... (items)                                                              |
+|                                                                              |
+| [>] AMAZON (2017 - 2018) -- SDE II                                          |
+| =====[#199e70 accent bar]================================================== |
+|     (collapsed -- click to expand)                                           |
+|                                                                              |
+| [>] EXETER (2014 - 2017) -- Senior Lead                                     |
+| =====[#d95926 accent bar]================================================== |
+|     (collapsed -- click to expand)                                           |
+|                                                                              |
+| [>] IBM (2007 - 2014) -- Software Developer to Technical Lead               |
+| =====[#3987e5 accent bar]================================================== |
+|     (collapsed -- click to expand)                                           |
+|                                                                              |
+| [>] INDEPENDENT (cross-era) -- Community & Volunteering                     |
+| =====[#9085e9 accent bar]================================================== |
+|     (collapsed -- click to expand)                                           |
+|                                                                              |
++------------------------------------------------------------------------------+
+```
 
-### Don't
-- Add border-radius to any element
-- Use colored backgrounds for badges (use border-color instead)
-- Add ambient shadows or blur effects
-- Use gradient text or decorative glass effects
-- Add kickers or eyebrows above headings
-- Use rounded pill shapes for buttons or filters
-- Use emoji or unicode glyphs as icons
-- Apply the hero-metric template (big number + small label as the page pattern)
+#### Three-Level Drill-Down (Timeline Detail)
+
+```
++------LEVEL 1: Timeline Row (default state)-----------------------------------+
+|                                                                              |
+|  [Achievement icon]  IWillCode Program NPS 92.9       [2020-03-15] [Talk]    |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+         | click |
+         v
+
++------LEVEL 2: Rich Summary Card (expanded inline)----------------------------+
+|                                                                              |
+|  [Achievement icon]  IWillCode Program NPS 92.9       [2020-03-15] [Talk]    |
+|  -----------------------------------------------------------------------     |
+|                                                                              |
+|  NARRATIVE:                                                                  |
+|  Designed and delivered the IWillCode technical upskilling program for        |
+|  Philips India engineering teams. Achieved the highest NPS score (92.9)       |
+|  of any internal training program in 2020. Program covered modern             |
+|  development practices, clean code, and testing strategies across             |
+|  12 weekly sessions with 85 regular participants.                            |
+|                                                                              |
+|  METRICS:                                                                    |
+|  +-----------+-----------+-----------+-----------+                           |
+|  | 92.9 NPS  | 85 attend | 12 weeks  | 4 teams   |                          |
+|  +-----------+-----------+-----------+-----------+                           |
+|                                                                              |
+|  KEY QUOTES:                                                                 |
+|  > "This program changed how I think about code quality"                     |
+|  > -- Anonymous participant feedback                                         |
+|                                                                              |
+|  > "Best internal training initiative we've ever run"                        |
+|  > -- Engineering Manager, IGT                                               |
+|                                                                              |
+|  EVIDENCE: [091-iwillcode-feedback.md] [028-iwillcode-gitstats.md]           |
+|  SKILLS: [community-building] [mentoring] [training-design] [clean-code]     |
+|                                                                              |
+|  +----------------------------------------------------------+               |
+|  | [>>>  Explore the full story  >>>]                        |               |
+|  +----------------------------------------------------------+               |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+         | "Explore the full story" click |
+         v
+
++------LEVEL 3: Full Artifact (full-screen overlay)----------------------------+
+|                                                                              |
+|  <- Back to Timeline                                                         |
+|                                                                              |
+|  # Evidence: IWillCode Program — NPS 92.9                                    |
+|                                                                              |
+|  ## Source                                                                    |
+|  - **File:** iwillcode-nps-survey-results.xlsx                               |
+|  - **Date:** 2020-03-15                                                      |
+|  - **Ingested:** 2026-07-20                                                  |
+|  - **Channel:** Internal survey platform                                     |
+|  - **Category:** Talk/Training                                               |
+|                                                                              |
+|  ## Metadata                                                                 |
+|  - Respondents: 85                                                           |
+|  - NPS Score: 92.9                                                           |
+|  - Duration: 12 weeks                                                        |
+|  - Format: Weekly 90-min sessions                                            |
+|                                                                              |
+|  ## Datta's Involvement                                                      |
+|  - **Role at time:** Software Competency Lead                                |
+|  - **Involvement type:** Author / Program Creator & Facilitator              |
+|                                                                              |
+|  ## Key Quotes                                                               |
+|  > "This program changed how I think about code quality"                     |
+|  > "Best internal training initiative we've ever run"                        |
+|  > "Datta makes complex concepts accessible and practical"                   |
+|                                                                              |
+|  ## Full Content                                                             |
+|  (complete survey data, session breakdowns, participant feedback,            |
+|   charts rendered inline, images displayed)                                  |
+|                                                                              |
++==============================================================================+
+```
+
+**Interactions:**
+- Era headers are collapsible (click toggles [V]/[>])
+- Default: most recent era expanded, others collapsed
+- Year dividers are sticky-positioned within scrolling era sections
+- Type filter narrows visible items across all eras
+- Search filters by title text, quotes, skills
+- Each timeline row: click expands inline to Rich Summary (Level 2)
+- "Explore the full story" opens full-screen overlay with rendered evidence markdown (Level 3)
+- Back button returns to timeline scroll position (preserved)
+
+---
+
+### 6. Voices
+
+Showcases the 220+ testimonials, recognition emails, and peer feedback. Weighted carousel + filterable list.
+
+```
++==============================================================================+
+|  VOICES — 220 Testimonials & Recognition                                     |
++==============================================================================+
+
++------FEATURED QUOTE CAROUSEL (weighted by author seniority + specificity)----+
+|                                                                              |
+|  +========================================================================+  |
+|  |                                                                        |  |
+|  |  "Datta's architectural vision transformed our entire platform         |  |
+|  |   strategy. He doesn't just solve problems — he eliminates the         |  |
+|  |   conditions that create them."                                        |  |
+|  |                                                                        |  |
+|  |   -- Chad Malone, VP Engineering, Philips                             |  |
+|  |   [Philips USA] [2025] [Direct Manager]                               |  |
+|  |                                                                        |  |
+|  +========================================================================+  |
+|                                                                              |
+|         [ o ]  [ o ]  [ * ]  [ o ]  [ o ]    <- carousel dots               |
+|                                                                              |
++------------------------------------------------------------------------------+
+
++------BY THE NUMBERS---------------------------------------------------------+
+|                                                                              |
+|  +------------+  +------------+  +------------+  +------------+              |
+|  | 220        |  | 47         |  | 12         |  | 5          |              |
+|  | Total      |  | From       |  | From VPs   |  | Companies  |              |
+|  | Voices     |  | Managers   |  | & Directors |  | Spanned    |              |
+|  +------------+  +------------+  +------------+  +------------+              |
+|                                                                              |
++------------------------------------------------------------------------------+
+
++------FILTERS-----------------------------------------------------------------+
+|  Company: [All] [Philips] [Amazon] [Exeter] [IBM] [External]                 |
+|  Type:    [All] [Recognition] [Recommendation] [Peer Feedback] [NPS]         |
+|  Author:  [All] [VP+] [Director] [Manager] [Peer] [Report]                  |
++------------------------------------------------------------------------------+
+
++------VOICE CARDS (scrollable list)-------------------------------------------+
+|                                                                              |
+|  +--[Philips India]--[Recognition]--[Manager]--2021-11-20------------------+ |
+|  | "Train-the-trainer multiplier proven — Pooja's team praised by Chad"    | |
+|  | -- Chad Malone, VP Engineering                                          | |
+|  | Evidence: 045-train-trainer-praise.md                                   | |
+|  +-------------------------------------------------------------------------+ |
+|                                                                              |
+|  +--[Philips India]--[Peer Feedback]--[Peer]--2020-08-15-------------------+ |
+|  | "The best technical mentor I've worked with in my career. Datta         | |
+|  |  doesn't just teach — he builds your confidence to tackle hard          | |
+|  |  problems independently."                                               | |
+|  | -- Anonymous, IWillCode participant                                     | |
+|  | Evidence: 091-iwillcode-feedback.md                                     | |
+|  +-------------------------------------------------------------------------+ |
+|                                                                              |
+|  +--[Amazon]--[Recommendation]--[Manager]--2018-06-01----------------------+ |
+|  | "Datta consistently delivered complex distributed systems work ahead    | |
+|  |  of schedule while mentoring 3 junior engineers simultaneously."        | |
+|  | -- Hiring Manager, Amazon TRMS                                         | |
+|  | Evidence: 012-amazon-perf-review.md                                    | |
+|  +-------------------------------------------------------------------------+ |
+|                                                                              |
+|  ... (paginated, 20 per page)                                                |
+|                                                                              |
+|  +--[See all 220 voices ->]--+                                               |
+|                                                                              |
++------------------------------------------------------------------------------+
+```
+
+**Interactions:**
+- Carousel auto-rotates every 8 seconds, pauses on hover
+- Carousel weighting: VP+ quotes with specific claims ranked highest
+- Filter buttons narrow the voice list (AND logic between filter groups)
+- Each voice card is clickable -> expands to show full quote + evidence file link
+- "See all 220 voices" shows unpaginated scrollable list
+- Era-colored left border on each card
+
+---
+
+### 7. Talks & Givebacks
+
+Programs created, sessions delivered, satisfaction metrics. Communicates the teaching/multiplier dimension.
+
+```
++==============================================================================+
+|  TALKS & GIVEBACKS — Programs, Sessions, Impact                              |
++==============================================================================+
+
++------ACTIVITY BAR CHART (by year)--------------------------------------------+
+|                                                                              |
+|  Sessions                                                                    |
+|   20 |                                                                       |
+|   18 |                         +-+                                           |
+|   16 |                    +-+  | |  +-+                                      |
+|   14 |               +-+  | |  | |  | |                                      |
+|   12 |          +-+  | |  | |  | |  | |  +-+                                 |
+|   10 |     +-+  | |  | |  | |  | |  | |  | |                                 |
+|    8 |     | |  | |  | |  | |  | |  | |  | |  +-+                            |
+|    6 | +-+ | |  | |  | |  | |  | |  | |  | |  | |                            |
+|    4 | | | | |  | |  | |  | |  | |  | |  | |  | |                            |
+|    2 | | | | |  | |  | |  | |  | |  | |  | |  | |                            |
+|    0 +-+---+----+----+----+----+----+----+----+----+---> Year                |
+|      2014  15   16   17   18   19   20   21   22  24  26                     |
+|                                                                              |
++------------------------------------------------------------------------------+
+
++------3 STAT COLUMNS----------------------------------------------------------+
+|                                                                              |
+|  +--------------------+  +--------------------+  +--------------------+      |
+|  | 12                 |  | 87                 |  | 84.5               |      |
+|  | PROGRAMS CREATED   |  | SESSIONS LED       |  | AVG NPS            |      |
+|  |                    |  |                    |  |                    |      |
+|  | From-scratch       |  | Across all         |  | Across all         |      |
+|  | curricula designed |  | programs & events  |  | measured programs  |      |
+|  | and launched       |  |                    |  |                    |      |
+|  +--------------------+  +--------------------+  +--------------------+      |
+|                                                                              |
++------------------------------------------------------------------------------+
+
++------TOP SESSIONS TABLE (sorted by NPS)--------------------------------------+
+|                                                                              |
+|  # | Program             | NPS   | Audience | Era          | Evidence        |
+|  --|---------------------|-------|----------|--------------|-----------------|
+|  1 | IWillCode 2020      | 92.9  | 85       | Philips Ind  | [091-*.md]      |
+|  2 | Engineering Culture  | 91.0  | 120      | Philips USA  | [112-*.md]      |
+|  3 | Clean Code Workshop  | 89.5  | 45       | Philips Ind  | [067-*.md]      |
+|  4 | .connect Mentoring   | 88.2  | 32       | Philips Ind  | [034-*.md]      |
+|  5 | DevOps Bootcamp      | 87.1  | 60       | Philips Ind  | [055-*.md]      |
+|  6 | Architecture Forum   | 86.3  | 40       | Philips USA  | [098-*.md]      |
+|  7 | Code Review Mastery  | 85.0  | 55       | Philips Ind  | [072-*.md]      |
+|  8 | Testing Strategies   | 84.2  | 38       | Exeter       | [019-*.md]      |
+|  9 | Agile Engineering    | 83.8  | 50       | IBM          | [008-*.md]      |
+| 10 | Open Source Workshop  | 82.5  | 25       | Philips Ind  | [081-*.md]      |
+|  --|---------------------|-------|----------|--------------|-----------------|
+|                                                                              |
++------------------------------------------------------------------------------+
+
++------PROGRAM CARDS (expandable)----------------------------------------------+
+|                                                                              |
+|  +--[Philips India]--IWillCode--2019-2021--------------------------------+   |
+|  | Technical upskilling program. 12-week curriculum. NPS 92.9.           |   |
+|  | 85 regular participants across 4 teams.                               |   |
+|  | Evidence: [091-*.md] [092-*.md] [093-*.md]                            |   |
+|  +-----------------------------------------------------------------------+   |
+|                                                                              |
+|  +--[Philips India]--.connect Mentorship--2019-2021----------------------+   |
+|  | 1-on-1 mentorship program. 102 data files. 3,547 interactions.        |   |
+|  | 1,250+ people connected.                                              |   |
+|  | Evidence: [034-*.md] [035-*.md]                                       |   |
+|  +-----------------------------------------------------------------------+   |
+|                                                                              |
++------------------------------------------------------------------------------+
+```
+
+**Interactions:**
+- Bar chart hover shows session count + programs for that year
+- Click bar -> filter table to that year
+- Table rows clickable -> expand to Rich Summary
+- Evidence column links open the evidence markdown viewer (Level 3)
+- Program cards expand on click to show full details + all sessions
+
+---
+
+### 8. Knowledge Graph (5 Sub-Views)
+
+Deep exploration of the relationship network. Five views for different analytical lenses.
+
+```
++==============================================================================+
+|  KNOWLEDGE GRAPH                                                             |
++==============================================================================+
+
++------SUB-VIEW TABS-----------------------------------------------------------+
+|  [Force] [Org Subgraphs] [Heatmap] [Radial] [Ego]                           |
++------------------------------------------------------------------------------+
+
++=====SUB-VIEW 1: Force (full D3 force layout)=================================+
+|                                                                              |
+|  +------------------------------------------------------------------------+  |
+|  |                                                                        |  |
+|  |     [Philips USA]            [Architecture]                            |  |
+|  |        |    \                  /       \                               |  |
+|  |        |     \           [System]   [API Design]                       |  |
+|  |        |      \            /                                           |  |
+|  |     [FDA]    [IEC 62304]                                               |  |
+|  |        \        |      \                                               |  |
+|  |         \       |    [Quality]---[Static Analysis]                     |  |
+|  |          \      |       /                                              |  |
+|  |        +==========+    /                                               |  |
+|  |        |  DATTA   |---+                                                |  |
+|  |        +==========+                                                    |  |
+|  |          /      \       \                                              |  |
+|  |         /        \    [Mentoring]---[IWillCode]                        |  |
+|  |        /          \       |                                            |  |
+|  |     [Amazon]   [Philips India]                                         |  |
+|  |        |           |      \                                            |  |
+|  |     [TRMS]    [SWCoE]  [.connect]                                     |  |
+|  |                                                                        |  |
+|  +------------------------------------------------------------------------+  |
+|                                                                              |
+|  Node color: era | Node size: evidence count | Link thickness: co-occurrence |
+|  Drag nodes | Zoom | Click node for details                                 |
+|                                                                              |
++==============================================================================+
+
++=====SUB-VIEW 2: Org Subgraphs (per-org filtered)=============================+
+|                                                                              |
+|  Select org: [Philips USA *] [Philips India] [Amazon] [Exeter] [IBM]         |
+|                                                                              |
+|  +------------------------------------------------------------------------+  |
+|  |                                                                        |  |
+|  |  PHILIPS USA SUBGRAPH                                                  |  |
+|  |                                                                        |  |
+|  |  [FDA Submission]---[IEC 62304]---[SOUP Framework]                     |  |
+|  |        |                  |              |                             |  |
+|  |        +--------+---------+              |                             |  |
+|  |                 |                        |                             |  |
+|  |          [Medical Device SW]       [Architecture]                      |  |
+|  |                 |                        |                             |  |
+|  |          [Team Leadership]         [Code Review]                       |  |
+|  |                 |                                                      |  |
+|  |          [Culture Change]                                              |  |
+|  |                                                                        |  |
+|  +------------------------------------------------------------------------+  |
+|                                                                              |
++==============================================================================+
+
++=====SUB-VIEW 3: Heatmap (skill x era intensity matrix)=======================+
+|                                                                              |
+|  Skill \ Era        | IBM  | Exeter | Amazon | Ph India | Ph USA |           |
+|  -------------------|------|--------|--------|----------|--------|           |
+|  Architecture       | ##   | ###    | ##     | ####     | #####  |           |
+|  Mentoring          | #    | ##     | #      | #####    | ####   |           |
+|  DevOps/CI          | ##   | ###    | ####   | ###      | ##     |           |
+|  Quality Eng        | ##   | ##     | #      | #####    | ####   |           |
+|  Leadership         | #    | ##     | ##     | #####    | #####  |           |
+|  Medical Device     | -    | -      | -      | ##       | #####  |           |
+|  Community          | #    | #      | -      | #####    | ###    |           |
+|  Distributed Sys    | ##   | ###    | #####  | ##       | ##     |           |
+|  -------------------|------|--------|--------|----------|--------|           |
+|                                                                              |
+|  Intensity: - (0) | # (1-5) | ## (6-10) | ### (11-20) | #### (21-40) | ##### (40+)|
+|  Color: cell background uses era color at proportional opacity               |
+|                                                                              |
++==============================================================================+
+
++=====SUB-VIEW 4: Radial (hierarchical skill taxonomy)=========================+
+|                                                                              |
+|  +------------------------------------------------------------------------+  |
+|  |                                                                        |  |
+|  |                          [DATTA]                                        |  |
+|  |                         /   |   \                                      |  |
+|  |                        /    |    \                                     |  |
+|  |              [Technical] [People] [Process]                            |  |
+|  |              /    |   \     |  \      |   \                            |  |
+|  |            /      |    \    |   \     |    \                           |  |
+|  |     [Arch] [Code] [Med]  [Ment][Lead] [Agile][Quality]                |  |
+|  |      /  \    |      |      |  \   |     |      |   \                  |  |
+|  |   [Sys][API][Java][IEC]  [IWC][.con][TL][Scrum][SA][CR]               |  |
+|  |                                                                        |  |
+|  +------------------------------------------------------------------------+  |
+|                                                                              |
+|  Radial layout: inner ring = categories, outer rings = specific skills       |
+|  Arc width = evidence count | Click to filter timeline                       |
+|                                                                              |
++==============================================================================+
+
++=====SUB-VIEW 5: Ego (search node, see 2-hop neighborhood)====================+
+|                                                                              |
+|  Search: [IWillCode_________________] [Go]                                   |
+|                                                                              |
+|  +------------------------------------------------------------------------+  |
+|  |                                                                        |  |
+|  |  2-HOP NEIGHBORHOOD OF: IWillCode                                      |  |
+|  |                                                                        |  |
+|  |                    [NPS 92.9]                                           |  |
+|  |                       |                                                |  |
+|  |  [Community]---[IWillCode]---[Mentoring]                               |  |
+|  |       |            |    \         |                                    |  |
+|  |  [.connect]   [Philips Ind]  [Clean Code]                              |  |
+|  |       |            |              |                                    |  |
+|  |  [1250 people] [SWCoE]      [Code Quality]                            |  |
+|  |                    |                                                   |  |
+|  |              [235 engineers]                                            |  |
+|  |                                                                        |  |
+|  +------------------------------------------------------------------------+  |
+|                                                                              |
+|  Ego mode: enter any node name, see all nodes within 2 hops                  |
+|  Click any node to re-center the ego graph on it                             |
+|                                                                              |
++==============================================================================+
+```
+
+**Interactions:**
+- Sub-view tabs switch between the 5 graph visualizations
+- Force view: drag nodes, zoom, click for detail panel
+- Org view: radio buttons filter to single organization's subgraph
+- Heatmap: hover cell shows exact count; click filters timeline to that skill+era
+- Radial: click arc segment to see all evidence for that skill
+- Ego: search box with autocomplete; re-center on any clicked node
+
+---
+
+## Data Files Generated by `twin publish`
+
+All data is pre-built as static JSON. The portfolio loads these files directly without any runtime server.
+
+| File | Source | Contents |
+|------|--------|----------|
+| `viz/public/data/impact.json` | DuckDB evidence_index + nodes | Top 20 stat cards, ranked by magnitude. Each includes title, stat, type, era, date, summary, rich_summary, evidence_file |
+| `viz/public/data/timeline_full.json` | DuckDB nodes (achievements) + edges | All timeline items grouped by era -> year -> month, with evidence_file references and rich_summary data |
+| `viz/public/data/voices.json` | DuckDB chunks (type=testimonial) | 220 quotes with author, company, type, date, evidence_file, author_level (VP/Director/Manager/Peer/Report) |
+| `viz/public/data/talks.json` | DuckDB nodes (type=project, category=talk) | Talks inventory with NPS, audience_size, duration, era, evidence_file |
+| `viz/public/data/constellation.json` | DuckDB nodes (skills) + BeTalent data | Skill clusters for force graph: nodes with strength, evidence_count, cluster_id; links with co-occurrence weight |
+| `viz/public/data/career_arc.json` | DuckDB nodes (achievements) grouped by year + type | Stacked bar data: [{year, recognition, certification, talk, achievement, project, era}] |
+| `viz/public/data/graph_force.json` | NetworkX full graph | D3 force layout: {nodes: [{id, label, type, era, evidence_count}], links: [{source, target, weight, type}]} |
+| `viz/public/data/graph_org.json` | NetworkX filtered by org | Per-org subgraphs: {philips_usa: {nodes, links}, philips_india: {nodes, links}, ...} |
+| `viz/public/data/graph_heatmap.json` | DuckDB edges (USED_SKILL) x era | Skill x era intensity matrix: {skills: [...], eras: [...], matrix: [[counts]]} |
+| `viz/public/data/graph_radial.json` | DuckDB skill taxonomy | Hierarchical for radial layout: {name: "root", children: [{name: "Technical", children: [...]}]} |
+| `viz/public/data/graph_ego.json` | NetworkX ego graphs | Pre-computed ego neighborhoods for top 50 nodes: {node_id: {nodes: [...], links: [...]}} |
+| `viz/public/data/overview.json` | Aggregated from all above | Hero stats, latest 3 evidence items, era summary counts |
+
+---
+
+## Three-Level Drill-Down Data Contract
+
+Every item in timeline, impact, and voices carries this structure. The UI renders progressively based on which level the user has drilled into.
+
+```json
+{
+  "id": "091-iwillcode-feedback",
+  "title": "IWillCode NPS 92.9",
+  "stat": "92.9",
+  "stat_label": "NPS Score",
+  "type": "talk",
+  "category": "Social Impact",
+  "era": "Philips India",
+  "era_color": "#e6a817",
+  "date": "2020-03-15",
+  "date_display": "Mar 2020",
+  "summary": "Highest-rated internal training program — 92.9 NPS across 85 respondents",
+  "rich_summary": {
+    "narrative": "Designed and delivered the IWillCode technical upskilling program for Philips India engineering teams. Achieved the highest NPS score (92.9) of any internal training program in 2020. Program covered modern development practices, clean code, and testing strategies across 12 weekly sessions with 85 regular participants.",
+    "metrics": [
+      {"label": "NPS Score", "value": "92.9"},
+      {"label": "Respondents", "value": "85"},
+      {"label": "Duration", "value": "12 weeks"},
+      {"label": "Teams Reached", "value": "4"}
+    ],
+    "key_quotes": [
+      "This program changed how I think about code quality",
+      "Best internal training initiative we've ever run",
+      "Datta makes complex concepts accessible and practical"
+    ],
+    "related_evidence": [
+      "data/evidence/2020/individual/091-iwillcode-feedback.md",
+      "data/evidence/2020/individual/028-iwillcode-gitstats.md",
+      "data/evidence/2020/individual/092-iwillcode-curriculum.md"
+    ],
+    "skills": ["community-building", "mentoring", "training-design", "clean-code"],
+    "people": ["Pooja S.", "Engineering Manager IGT"],
+    "organizations": ["Philips India", "SWCoE"]
+  },
+  "evidence_file": "data/evidence/2020/individual/091-iwillcode-feedback.md"
+}
+```
+
+### Level Rendering Rules
+
+| Level | Trigger | Data Used | UI Treatment |
+|-------|---------|-----------|--------------|
+| **Level 1: Summary** | Default display | `title`, `stat`, `type`, `era`, `date`, `summary` | Single row/card. Icon + title + date badge + type badge + era color accent |
+| **Level 2: Rich Summary** | Click on Level 1 item | `rich_summary.*` | Expanded inline panel or slide-in panel. Narrative paragraph, metrics grid, quote blocks, evidence file links, skill tags |
+| **Level 3: Full Artifact** | "Explore the full story" button in Level 2 | Fetch + render `evidence_file` path | Full-screen overlay or dedicated page. Complete evidence markdown rendered with headings, images, code blocks, tables. Back button returns to previous state |
+
+### Evidence File Fetching (Level 3)
+
+Level 3 fetches the evidence markdown file and renders it directly:
+
+```
+GET /data/evidence/2020/individual/091-iwillcode-feedback.md
+```
+
+The portfolio build step (`twin publish`) copies all evidence markdown files to `viz/public/data/evidence/` preserving the directory structure. The UI uses a markdown renderer (e.g., react-markdown) to display the full artifact with:
+- Proper heading hierarchy
+- Block quotes styled as testimonials
+- Code blocks with syntax highlighting
+- Images rendered inline (relative paths resolved)
+- Tables rendered as HTML tables
+- Links preserved and clickable
+
+---
+
+## Component Architecture Summary
+
+```
++--App Shell-------------------------------------------------------------+
+|  NavBar (8 tabs)                                                       |
+|  +--Router-----------------------------------------------------------+ |
+|  |  /overview    -> OverviewScreen                                   | |
+|  |  /identity    -> ConstellationScreen                              | |
+|  |  /career      -> CareerArcScreen                                  | |
+|  |  /impact      -> ImpactWallScreen                                 | |
+|  |  /timeline    -> TimelineScreen                                   | |
+|  |  /voices      -> VoicesScreen                                     | |
+|  |  /talks       -> TalksScreen                                      | |
+|  |  /graph       -> GraphScreen (5 sub-views)                        | |
+|  +-------------------------------------------------------------------+ |
+|                                                                        |
+|  +--Shared Components------------------------------------------------+ |
+|  |  EraBadge (color-coded pill)                                      | |
+|  |  TypeIcon (recognition/achievement/cert/talk/project)             | |
+|  |  StatTile (number + label + click target)                         | |
+|  |  RichSummaryPanel (expandable detail)                             | |
+|  |  FullArtifactModal (markdown renderer overlay)                    | |
+|  |  FilterBar (multi-select toggles)                                 | |
+|  |  QuoteCard (styled testimonial block)                             | |
+|  |  MetricsGrid (2x2 or 4x1 metrics display)                        | |
+|  |  EvidenceLink (clickable path -> Level 3)                         | |
+|  +-------------------------------------------------------------------+ |
++------------------------------------------------------------------------+
+```
+
+---
+
+## Responsive Behavior
+
+| Breakpoint | Layout Changes |
+|-----------|----------------|
+| > 1200px | Full 4-column grid, side panels, full graph views |
+| 900-1200px | 3-column grid, panels overlay instead of side-by-side |
+| 600-900px | 2-column grid, timeline single-column, graph views simplified |
+| < 600px | Single column, carousel becomes swipeable cards, graph views become list representations, Rich Summary becomes full-width bottom sheet |
+
+---
+
+## Accessibility
+
+- All era colors pass WCAG AA contrast on white/light backgrounds
+- Graph views include screen-reader-friendly data tables as fallback
+- Carousel pauses on focus, navigable by keyboard
+- All interactive elements have focus indicators
+- Rich Summary panels trap focus when open
+- Full Artifact modal has proper ARIA roles and escape-to-close
+- Filter states announced via aria-live regions
