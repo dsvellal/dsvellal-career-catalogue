@@ -36,7 +36,9 @@ July 17, 2026
 Current AI agent frameworks are flawed. Agent quality depends not on executing sequences of steps, but on:
 > **"its ability to make progress safely, detect regressions, and stop for the right reasons."**
 
-The "try, crash, retry" approach is inadequate. AI agents must be architected as **"rigorous, production-grade control systems."**
+The article contrasts fragile agents (try → crash → retry) with production-ready ones that observe state, attempt controlled fixes, measure results, and only accept improvements that don't break existing functionality.
+
+AI agents must be architected as **"rigorous, production-grade control systems."**
 
 ### Key Principles
 
@@ -54,6 +56,12 @@ Small, attributable changes enable clear diagnosis of what succeeded or failed.
 
 #### 5. Evidence Requirements
 Tests should fail against old code and pass against fixed code, with full suite validation.
+
+#### 6. Explicit Failure Protocols
+Define specific recovery strategies for compilation errors, performance drops, and crashes, with hard limits on iterations.
+
+#### 7. Orchestrated Parallelization
+Use multiple agents for grunt work, but maintain single authority for accepting changes.
 
 ### The 9-Step Playbook
 

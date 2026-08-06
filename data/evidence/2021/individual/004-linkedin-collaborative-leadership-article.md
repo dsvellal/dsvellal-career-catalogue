@@ -35,9 +35,11 @@ March 15, 2021 on LinkedIn Pulse
 ### Key Definition
 Collaborative leadership is a style where leaders maintain **active involvement in task execution alongside their teams**, fostering two-way communication between leadership and execution teams while keeping customer perspective central.
 
+> "A leader has their skin in the game as much as the people involved in executing the tasks."
+
 ### Primary Benefits
-1. **Transparency** — Ground-level teams communicate key problems to management
-2. **Bidirectional communication** — All organizational levels contribute meaningful input
+1. **Transparency** — Ground-level employees understand key problems and communicate them to management
+2. **Bidirectional communication** — Organizations can weave insights from execution teams into strategic goals; all levels contribute
 3. **Trust building** — Increases productivity and improves employee retention
 
 ### Practical Recommendations

@@ -51,17 +51,20 @@ The article argues leaders should transcend basic evolutionary behaviors (recipr
 - Practice active listening and emotional intelligence
 
 #### 2. Clear Communication
+- Articulate vision in accessible terms
 - Master your message so thoroughly you could explain it to a kindergartner
-- Use compelling storytelling
+- Use compelling storytelling to inspire action
 
 #### 3. Building Relationships
 - Add genuine value beyond transactional exchanges
 - Establish trust through integrity and mentorship
 
 #### 4. Empowerment
-- Delegate meaningfully
-- Provide and seek regular feedback
+- Delegate tasks to build ownership
+- Provide constructive feedback while remaining open to receiving it
 - Use tools like 360-degree feedback for self-awareness
+
+The article concludes by inviting readers to share additional strategies for exercising influence without positional power.
 
 ## Key Context
 - **Third published LinkedIn article** (after "From Amazon to Philips" 2020 and "Collaborative Leadership" 2021)

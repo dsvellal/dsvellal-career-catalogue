@@ -42,9 +42,11 @@ Datta created an innovative **Mystery Reader** presentation for **elementary sch
 Rather than correcting AI image generation errors (like "a bag of lemons randomly morphed into potatoes"), he **intentionally preserved them as interactive puzzles**. The presentation became a **15-minute game** where students competed to spot inconsistencies in AI-generated images.
 
 ### The Result
-- Students competed to find AI hallucinations (mismatched objects, logical contradictions)
-- The teacher subsequently requested a discussion about **narrative control** and how to direct AI output away from generating "random AI slop"
+- Students competed to find AI hallucinations (missing blenders, changed objects, logical contradictions)
+- This sparked deeper classroom discussion about **AI control and narrative**
+- The teacher subsequently requested an explanation of **how to direct AI outputs effectively**
 - Turned into an impromptu lesson on **AI literacy** for children
+- Demonstrated that educators have a responsibility to demystify AI for younger generations
 
 ### Key Takeaway
 > **"A child's boundless, relentless curiosity paired with artificial intelligence is the catalyst for a phenomenal future."**

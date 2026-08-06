@@ -1,6 +1,6 @@
 # 2025 Individual Evidence Files
 
-**Total:** 56 evidence files
+**Total:** 75 evidence files
 
 | # | Date | Subject | Datta's Role | Evidence File |
 |---|------|---------|--------------|---------------|
@@ -60,3 +60,9 @@
 | | Wed, 25 Ju | Chourey, Pooja mentioned you in a post on their storyline | Direct recipient — explicitly  | [001-chourey-pooja-mentioned-you-in-a-post-on-their-storyline.md](001-chourey-pooja-mentioned-you-in-a-post-on-their-storyline.md) |
 | | Wed, 25 Ju | 🚀 Continuing Engineering Efficiency & Accelerating... | Direct recipient — explicitly  | [051-continuing-engineering-efficiency-accelerating.md](051-continuing-engineering-efficiency-accelerating.md) |
 | | Wed, 25 Ju | 🚀 Continuing Engineering Efficiency & Accelerating... | Direct recipient — explicitly  | [052-continuing-engineering-efficiency-accelerating.md](052-continuing-engineering-efficiency-accelerating.md) |
+| | 2025-02-20 | LinkedIn Recommendation — Rob Nicholson (Manager) | Direct recipient — recommended | [072-linkedin-recommendation-rob-nicholson.md](072-linkedin-recommendation-rob-nicholson.md) |
+| | 2025-02-25 | LinkedIn Recommendation — Ian Watson | Direct recipient — recommended | [071-linkedin-recommendation-ian-watson.md](071-linkedin-recommendation-ian-watson.md) |
+| | 2025-05-28 | LinkedIn Recommendation — Fernando José Vieira | Direct recipient — recommended | [070-linkedin-recommendation-fernando-vieira.md](070-linkedin-recommendation-fernando-vieira.md) |
+| | 2020-2025 | Professional Giving Back — 74-slide photo album (IBM→Exeter→Philips→Community) | Author — photographic evidence | [073-professional-giving-back-presentation.md](073-professional-giving-back-presentation.md) |
+| | 2007-2015 | Social Giving Back — 39-slide photo album (govt schools, yoga, rural villages) | Author — photographic evidence | [074-social-giving-back-presentation.md](074-social-giving-back-presentation.md) |
+| | 2014-2026 | Book Distribution Program — 10 years, Rs. 19.7 lakh raised, 219 contributors | Founder & organizer | [075-social-giveback-book-distribution-program.md](075-social-giveback-book-distribution-program.md) |

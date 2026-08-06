@@ -57,6 +57,10 @@ Datta chronicles his journey from Amazon to Philips, explaining why he chose to 
 ### Leadership Philosophy
 > The approach involves "empowering teams by presenting options and allowing them to make informed decisions, contrasting this with authority-based command structures."
 
+> "I empower my team, give the control back to them and see what happens."
+
+Vellal advocates collaborative leadership — empowerment over command, options over directives.
+
 ## Key Context
 - **Published on LinkedIn** — public, professional audience, permanently accessible
 - **Self-authored narrative** of 2+ years at Philips (joined Sept 2018, article Dec 2020)

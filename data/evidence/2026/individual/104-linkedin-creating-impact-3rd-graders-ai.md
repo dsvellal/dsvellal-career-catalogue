@@ -50,7 +50,7 @@ Datta, an AI professional at Philips, visited **Brewster Elementary** to introdu
 Students interviewed "DogMan" and encountered "Queen Victoria" — experiencing AI voice capabilities firsthand.
 
 #### 2. 20 Questions Game
-Students competed against AI, successfully choosing objects creative enough to stump the model within the question limit. (Demonstrates human intuition beats AI on creative thinking.)
+Students competed against AI, winning by selecting objects so creative that the AI couldn't identify them within the question limit. Demonstrates that "human intuition and creativity still have the edge."
 
 #### 3. AI Limitations Exploration
 Children identified AI errors, such as an illustration containing a **monkey with five legs**. Turned AI failures into critical thinking exercises.

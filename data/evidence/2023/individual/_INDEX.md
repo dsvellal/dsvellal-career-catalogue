@@ -1,6 +1,6 @@
 # 2023 Individual Evidence Files
 
-**Total:** 15 evidence files
+**Total:** 18 evidence files
 
 | # | Date | Subject | Datta's Role | Evidence File |
 |---|------|---------|--------------|---------------|
@@ -19,3 +19,4 @@
 | | Tue, 31 Oct 2023 | Re: Software excellence chat with DS team Cambridge | Direct recipient — explicitly  | [013-re-software-excellence-chat-with-ds-team-cambridge.md](013-re-software-excellence-chat-with-ds-team-cambridge.md) |
 | | Fri, 04 Aug 2023 | Re: [philips-internal/swcoe-main] Engagement with IGT System | CC'd — explicitly mentioned | [014-re-philips-internalswcoe-main-engagement-with-igt-systems-issue-88.md](014-re-philips-internalswcoe-main-engagement-with-igt-systems-issue-88.md) |
 | | Tue, 19 Sep 2023 | Your Service Milestone with Philips North America | Direct recipient — explicitly  | [015-your-service-milestone-with-philips-north-america.md](015-your-service-milestone-with-philips-north-america.md) |
+| | 2023-02-03 | LinkedIn Recommendation — NaveenKumar VR | Direct recipient — recommended | [018-linkedin-recommendation-naveenkumar-vr.md](018-linkedin-recommendation-naveenkumar-vr.md) |

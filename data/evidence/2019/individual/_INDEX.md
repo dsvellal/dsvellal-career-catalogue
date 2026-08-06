@@ -232,3 +232,10 @@
 | | 2019-09-26 | Western session | CC'd — explicitly mentioned | [148-western-session.md](148-western-session.md) |
 | | 2019-09-27 | Software Center of Excellence - Technical sharing session -  | CC'd — explicitly mentioned | [134-software-center-of-excellence-technical-sharing-session-sep19-summary.md](134-software-center-of-excellence-technical-sharing-session-sep19-summary.md) |
 | | 2019-10-13 | RE: Please share the samples you showed in the workshop yest | Direct recipient — explicitly  | [099-re-please-share-the-samples-you-showed-in-the-workshop-yesterday.md](099-re-please-share-the-samples-you-showed-in-the-workshop-yesterday.md) |
+
+## LinkedIn Recommendations
+
+| # | Date | Subject | Datta's Role | Evidence File |
+|---|------|---------|--------------|---------------|
+| | 2019-08-14 | LinkedIn Recommendation — Rajesh Manghani | Direct recipient — recommended | [184-linkedin-recommendation-rajesh-manghani.md](184-linkedin-recommendation-rajesh-manghani.md) |
+| | 2019-08-21 | LinkedIn Recommendation — Rajesh Kumar | Direct recipient — recommended | [183-linkedin-recommendation-rajesh-kumar.md](183-linkedin-recommendation-rajesh-kumar.md) |

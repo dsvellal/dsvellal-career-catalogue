@@ -26,11 +26,61 @@ Detailed, traceable evidence extracted from ingested sources. Each entry links t
 | Peak audience | 132 (GROW 3.0) |
 | Data files | [all_sessions_data.json](sessions/all_sessions_data.json) &#124; [summary_stats.json](sessions/summary_stats.json) |
 
+## Cross-Cutting: Academic Credentials (2001-2011)
+
+**[ACADEMIC-CREDENTIALS-EVIDENCE.md](certificates/academic/ACADEMIC-CREDENTIALS-EVIDENCE.md)** — 6 qualifications, ALL at Distinction, dual B.E. + M.Sc. track
+
+| Qualification | Year | Institution | Result |
+|---|---|---|---|
+| SSLC (10th) | 2001 | Vijaya High School, Bangalore | 94.08% Distinction |
+| 2nd PUC (12th) | 2003 | National PU College, Bangalore | 90.67% Distinction |
+| B.E. Computer Science | 2007 | RVCE, VTU Belgaum | First Class with Distinction |
+| YIC (Yoga Instructor) | 2009 | S-VYASA, Bangalore | Certified |
+| PGDY (PG Diploma Yoga) | 2010 | Annamalai University | First with Distinction |
+| M.Sc. Yoga | 2011 | Annamalai University | First Class with Distinction |
+
+## Cross-Cutting: Talks Portfolio (2007-2020)
+
+**[TALKS-MASTER-INDEX.md](sessions/talks/TALKS-MASTER-INDEX.md)** — 57 unique talks, 14 topics, 18 venues, 13 years
+
+| Metric | Value |
+|--------|-------|
+| Unique talks | 57 |
+| Date span | 2007 — 2020 |
+| Technical talks | ~35 (Design Patterns, CI/CD, Java, Web, SOLID, Microservices) |
+| Non-technical talks | ~22 (Interviews, Presentations, Yoga, Stress, Attitude, Uncertainty) |
+| Notable | US Patent (US20120150789A1), IEEE Paper (Beijing 2009), TExeter Thursday series (5 editions) |
+| Venues | 12 colleges, 6 professional orgs (IBM, Exeter, CSI, Philips, IEEE, HackDay) |
+
+## Cross-Cutting: Student Feedback — Community Sessions (2013-2020)
+
+**[STUDENT-FEEDBACK-EVIDENCE.md](sessions/student-feedback/STUDENT-FEEDBACK-EVIDENCE.md)** — 13 sessions, 494 responses, 7 colleges, 7 years
+
+| Metric | Value |
+|--------|-------|
+| Sessions | 13 (voluntary community teaching) |
+| Total responses | 494 |
+| Colleges | 7 (RVCE, NIE, VemanaIT, BMSIT, SIT, AIT, Exeter) |
+| Presenter rating | 4.5+/5, 9.1/10 |
+| Topics | Interview prep, SOLID, Presentations, Yoga, Microservices, Attitude, Uncertainty |
+| Date span | Nov 2013 — Aug 2020 |
+| Data files | [all_sessions_raw.json](sessions/student-feedback/all_sessions_raw.json) &#124; 13 source files |
+
 ## Structure
 
 ```
 data/evidence/
 ├── INDEX.md                          (this file)
+├── 2012/
+│   └── individual/                   (2 files — IBM era)
+├── 2013/
+│   └── individual/                   (2 files — IBM era)
+├── 2014/
+│   └── individual/                   (2 files — IBM era)
+├── 2015/
+│   └── individual/                   (4 files — Exeter era)
+├── 2017/
+│   └── individual/                   (1 file — Amazon era)
 ├── 2018/
 │   ├── individual/                   (1 file per email — 3 files)
 │   ├── code-quality-guidelines.md    (thematic summary)
@@ -49,6 +99,46 @@ data/evidence/
 │   ├── technical-debt-sig-partnership.md                (thematic summary)
 │   └── cross-bu-engagement-influence.md                 (thematic summary)
 ```
+
+## 2012 — 2 artifacts ingested
+
+**Full individual index:** [2012/individual/_INDEX.md](2012/individual/_INDEX.md)
+
+| Category | Count | Key Evidence |
+|----------|-------|--------------|
+| LinkedIn Recommendations | 3 | Mahesh Paradkar (Master Inventor) — HackDay with universities; Brijesh Krishnan (mgr, now VP) — mentoring interns early; Praveen Kumar — "go to man for any situation" |
+
+## 2013 — 2 artifacts ingested
+
+**Full individual index:** [2013/individual/_INDEX.md](2013/individual/_INDEX.md)
+
+| Category | Count | Key Evidence |
+|----------|-------|--------------|
+| LinkedIn Recommendations | 2 | Lohith Ravi Naidu (co-inventor, now CTO/investor) — captcha published disclosure, innovation hunger; Gaurav Gupta (4yr) — HackDay/RTE co-organizer, patience |
+
+## 2014 — 2 artifacts ingested
+
+**Full individual index:** [2014/individual/_INDEX.md](2014/individual/_INDEX.md)
+
+| Category | Count | Key Evidence |
+|----------|-------|--------------|
+| LinkedIn Recommendations | 2 | Rajaraman Hariharan (IBM manager) — patents/IP, "never let down"; Dr. Arun Kumar (Prof/HOD) — 2012 Java seminar at Sir MVIT, community contribution |
+
+## 2015 — 4 artifacts ingested
+
+**Full individual index:** [2015/individual/_INDEX.md](2015/individual/_INDEX.md)
+
+| Category | Count | Key Evidence |
+|----------|-------|--------------|
+| LinkedIn Recommendations | 4 | Srisankaraswaminathan JV — 30+ devs, org-wide initiatives; Robert Parks (US) — onshore-offshore bridge; Manohar (3yr) — composed, big teams; Vinay SV (2.5yr) — calmness in chaos |
+
+## 2017 — 1 artifact ingested
+
+**Full individual index:** [2017/individual/_INDEX.md](2017/individual/_INDEX.md)
+
+| Category | Count | Key Evidence |
+|----------|-------|--------------|
+| LinkedIn Recommendations | 1 | M Jeffin Manuel (Amazon peer) — passion, can-do attitude, peer learning |
 
 ## 2018 — 3 emails ingested
 
@@ -83,6 +173,7 @@ data/evidence/
 | HR / Administrative | 3 | Workday digests |
 | Project Tracking (TFS) | 3 | Story assignments |
 | General / Other | 48 | Various operational emails |
+| LinkedIn Recommendations | 2 | Rajesh Kumar — project architect, multiple solutions; Rajesh Manghani — system design, code quality for whole team |
 
 ### Thematic Summaries (cross-reference multiple individual files)
 
@@ -113,6 +204,7 @@ data/evidence/
 | CI/CD & DevOps | 5 | Pair programming, microservices, Cerberus |
 | Interview Process & Hiring | 5 | Bar Raiser global rollout (India/Brazil/EU/NA) |
 | Feedback & Culture | 4 | Culture workshops, waste removal, anytime feedback |
+| LinkedIn Recommendations | 1 | Sannihith Reddy (intern) — "teach a man to fish", Socratic mentoring, skills with values |
 | Code Duplication / JSCPD | 3 | Continued JSCPD adoption |
 | Project Tracking (TFS) | 2 | Crack-the-code Brazil, .craft assessments |
 | BEQR & Best Practices | 1 | Monthly reporting |
@@ -175,6 +267,7 @@ data/evidence/
 | Developer Engagement & Mentoring | 5 | Back2Basics (50 attendees), ad-hoc Coverity pairing, DS team Cambridge |
 | Interview Framework | 1 | Resources shared, session requested |
 | Recognition & Milestones | 2 | SW Excellence Awards, 5-year service milestone |
+| LinkedIn Recommendations | 1 | NaveenKumar VR — calmness, purpose-first delegation, "changed me as a person" |
 
 ### Thematic Summaries
 
@@ -195,6 +288,7 @@ data/evidence/
 | Enterprise Tooling (CodeScene/SonarQube) | 3 | Director-level adoption, reusable workflows, CI integration |
 | Team Engagement & Motivation | 1 | IGT Hospital Workflow team — "motivating them, seeds with fruits" |
 | Project Milestone | 1 | EPS-AD PI Gate passed — "thank each one of you" |
+| LinkedIn Recommendations | 1 | Rafael Vaz (GDP trainee) — informal mentoring, "natural and inspiring leader", phenomenal technical prowess |
 
 ### Thematic Summary
 
@@ -202,7 +296,7 @@ data/evidence/
 |---|-------|-----------------|---------|
 | 1 | [Enterprise Tooling, SonarQube & PI Gate](2024/enterprise-tooling-pi-gate.md) | 5 emails | CodeScene "impressive", SonarQube reusable workflows, EPS-AD PI gate passed, organizing Developer Days |
 
-## 2025 — 56 emails ingested
+## 2025 — 74 artifacts ingested
 
 **Full individual index:** [2025/individual/_INDEX.md](2025/individual/_INDEX.md)
 
@@ -216,6 +310,10 @@ data/evidence/
 | Ultrasound / AST / Virtualization | ~5 | Simulator virtualization, AST triaging automation |
 | Engineering Workshops (IGT, etc.) | ~5 | Proposals accepted, travel budgets allocated |
 | Viva Engage Recognition | ~4 | IEN leadership praise, GenAI posts, team mentions |
+| LinkedIn Recommendations | 3 | Rob Nicholson (manager) — natural leader, DORA metrics, 7K engineers; Ian Watson — influence-led transformation; Fernando Vieira — C-level sponsorship |
+| Professional Giving Back | 1 | 74-slide photo album — 15+ venues, 1000+ students, 10yr span (IBM→Exeter→Philips→community), 73 images preserved |
+| Social Giving Back | 1 | 39-slide photo album — govt schools, yoga with children (from 2007!), rural villages, Ekal Vidyalaya, book donations, 38 images |
+| Book Distribution Program | 1 | 10 years (2014-2026), Rs. 19.7 lakh raised ($24K), 219 contributors, Sevabharathi Trust, organized from India then USA |
 
 ### Thematic Summaries
 

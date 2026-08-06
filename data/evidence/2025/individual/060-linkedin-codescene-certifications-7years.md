@@ -21,11 +21,20 @@
 
 ## Post Content
 
-### Certifications Earned
-Three **CodeScene Academy** certifications completed:
-1. **Introduction** (CodeScene fundamentals)
-2. **Foundation** (core practices)
-3. **Intermediate** (advanced analysis)
+### Certifications Earned (verified from PDF certificates)
+Three **CodeScene Academy** certifications completed, all issued **01/05/2025** (valid until 01/05/2027):
+1. **Mastering Technical Debt: An Introduction by CodeScene** — fundamentals of tech debt prioritization
+2. **CodeScene Developer Course: Foundation** — core behavioral code analysis practices
+3. **CodeScene Developer Course: Intermediate** — advanced analysis techniques
+
+- **Full name on certificates:** Dattatreya Subramanya Vellal
+- **Organization:** Codescene
+- **Signed by:** Stephen Marikkar, Head of Customer Success
+- **Certificate PDFs:**
+  - `Certificates/CodeScene-Academy-Consolidated-Certificates-Dattatreya.pdf` (all 3)
+  - `Certificates/Certificate-Dattatreya-CodeScene-Developer-Course-Intermediate.pdf`
+  - `Certificates/Certificate-Dattatreya-CodeScene-Developer-Course-Foundation.pdf`
+  - `Certificates/Certificate-Dattatreya-Mastering-Technical-Debt-An-Introduction-by-CodeScene.pdf`
 
 ### Professional Reflection — 7 Years at Philips
 Reflected on 7 years at Philips focused on **software transformation in healthcare**.

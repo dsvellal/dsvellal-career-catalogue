@@ -124,3 +124,15 @@
 | | 2020-08-27 | [Heads-up] .waste removal program - upcoming sessions | Part of distribution list | [068-heads-up-waste-removal-program-upcoming-sessions.md](068-heads-up-waste-removal-program-upcoming-sessions.md) |
 | | 2020-08-30 | RE: Culture workshop | Direct recipient — explicitly  | [033-re-culture-workshop.md](033-re-culture-workshop.md) |
 | | 2020-09-01 | FYI: Informal feedback given during culture behaviour worksh | Author | [015-fyi-informal-feedback-given-during-culture-behaviour-workshop.md](015-fyi-informal-feedback-given-during-culture-behaviour-workshop.md) |
+
+## LinkedIn Recommendations
+
+| # | Date | Subject | Datta's Role | Evidence File |
+|---|------|---------|--------------|---------------|
+| | 2020-04-29 | LinkedIn Recommendation — Sannihith Reddy P | Direct recipient — recommended | [142-linkedin-recommendation-sannihith-reddy.md](142-linkedin-recommendation-sannihith-reddy.md) |
+
+## Technical Artifacts
+
+| # | Date | Subject | Datta's Role | Evidence File |
+|---|------|---------|--------------|---------------|
+| | 2020-11 | DevOps Whitepaper (CAO) + Bar Raiser Intranet + Reference Pipelines | Co-author, Founding Bar Raiser | [143-tech-artifacts-devops-whitepaper-bar-raiser-pipelines.md](143-tech-artifacts-devops-whitepaper-bar-raiser-pipelines.md) |

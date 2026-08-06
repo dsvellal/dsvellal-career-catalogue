@@ -20,11 +20,17 @@
 
 ## Post Content
 
-### Certification
+### Certification (verified from PDF certificate)
 - **Course:** Google Prompting Essentials
 - **Platform:** Coursera
-- **Badge:** Credly digital badge (displayed in post)
-- **Issuer:** Google
+- **Badge:** Credly digital badge (verified)
+- **Issuer:** Google via Coursera
+- **Date issued:** March 21, 2025
+- **Status:** Verified
+- **Modules:** 4 modules completed
+- **Passing criteria:** 80% or higher
+- **Skills validated:** AI agent design, Multimodal prompting, Prompt chaining, Prompt Design, Prompt evaluation and iteration, Responsible AI
+- **Certificate PDF:** `Certificates/Certificate-Dattatreya-Google-Prompt-Engineering-Essentials.pdf`
 
 ### Five Key Takeaways Shared
 1. **Use AI to create prompts** rather than learning prompt engineering (meta-learning)
