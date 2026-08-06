@@ -1,0 +1,17 @@
+[
+  {"type": "organization", "name": "National College Jayanagar", "properties": {"type": "education", "location": "Bangalore, India", "degree": "Pre-University Board (PCM)", "year": "2003", "grade": "94%"}},
+  {"type": "organization", "name": "Vijaya High School", "properties": {"type": "education", "location": "Bangalore, India", "degree": "SSLC — Karnataka State Board", "year": "2001", "grade": "94.08%"}},
+  {"type": "organization", "name": "Mentor Together", "properties": {"type": "community", "description": "Active member mentoring engineering graduates globally; mentored final year CSE graduate from NIE Mysore"}},
+  {"type": "project", "name": "Mentor Together Program", "properties": {"start_date": "2017-01-01", "description": "Mentored final year CSE graduate from NIE Mysore via Mentor Together program"}},
+  {"type": "project", "name": "CSI Bangalore Chapter Workshop", "properties": {"start_date": "2015-04-19", "description": "1-day hands-on session on Design Patterns at CSI Bangalore Chapter, 19 April 2015; CSI BC Board Committee Member conducting workshops across Karnataka"}},
+  {"type": "project", "name": "Ekal Vidyalaya", "properties": {"start_date": "2015-01-01", "description": "Adopted a school from Ekal Vidyalaya with intent of spreading science & culture to tribal and underprivileged kids"}},
+  {"type": "project", "name": "SuDhee Volunteering", "properties": {"start_date": "2013-01-01", "description": "Volunteering with Sudhee to spend time with lesser privileged kids and introduce them to modern art, science and creative ways of thinking"}},
+  {"type": "project", "name": "Yogashree Volunteering", "properties": {"start_date": "2010-01-01", "description": "Volunteering with Yogashree to spread the knowledge of the principles of yoga and adopting them in day-to-day life"}},
+  {"type": "project", "name": "Determining and Conveying User Availability", "properties": {"start_date": "2010-12-10", "end_date": "2013-10-15", "description": "USPTO Patent: Determining and Conveying User Availability. Filed Dec 2010, published Oct 15 2013. 27 patent citations, 8 non-patent citations."}},
+  {"type": "project", "name": "Managing Key Performance Indicators", "properties": {"start_date": "2011-01-01", "end_date": "2015-04-02", "description": "USPTO Patent: Managing Key Performance Indicators. Published April 2 2015. 2 patent citations."}},
+  {"type": "skill", "name": "OOP", "properties": {"category": "engineering_practice", "first_seen": "2007-07-01"}},
+  {"type": "skill", "name": "Source Code Management", "properties": {"category": "engineering_practice", "first_seen": "2007-07-01"}},
+  {"type": "skill", "name": "Process Improvement", "properties": {"category": "engineering_practice", "first_seen": "2008-01-01"}},
+  {"type": "skill", "name": "Data Structures Instruction", "properties": {"category": "teaching", "first_seen": "2011-01-01"}},
+  {"type": "skill", "name": "Volunteering", "properties": {"category": "social_giveback", "first_seen": "2010-01-01"}}
+]

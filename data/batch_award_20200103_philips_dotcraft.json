@@ -1,0 +1,44 @@
+[
+  {
+    "file_name": "20200103_TeamUpToWin_DotCraftSuccess_Sundar.pdf",
+    "file_type": "pdf",
+    "media_url": "",
+    "context": "Philips Manager Recognition Award — 2000 Recognition points for Philips behavior 'Team up to win'. Awarded by Sundaresan Jagadeesan on 3 January 2020. Reason: collaboration and teamwork in making the .craft program evaluation a great success in 2019. Highest-value award from Sundaresan — escalation from 750 points in July 2019 reflecting programme-level impact.",
+    "raw_text": "Congratulations! Dattatreya Vellal. You have been awarded 2000 Recognition points for demonstrating the Philips behavior Team up to win. Thankyou for your collaboration and team work in making the .craft program evaluation a great success in 2019! Thanks for your great contribution. Keep up the good work. Sundaresan Jagadeesan.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [
+        {"date": "2020-01-03", "context": "Philips Recognition Award — Team up to win, 2000 points, awarded by Sundaresan Jagadeesan for .craft program evaluation success in 2019"}
+      ],
+      "projects": [
+        ".craft Program",
+        "Software Center of Excellence",
+        "Cerberus Code Quality Tool"
+      ],
+      "skills": [
+        "Software Craftsmanship Assessment",
+        "Software Excellence Leadership",
+        "Collaboration",
+        "Team Work",
+        "Program Management",
+        "Culture Building",
+        "Cross-BU Collaboration"
+      ],
+      "people": [
+        {"name": "Sundaresan Jagadeesan", "role": "award giver — Philips India leader"},
+        {"name": "Dattatreya S Vellal", "role": "award recipient"}
+      ],
+      "organizations": [
+        {"name": "Philips India", "role": "employer"}
+      ],
+      "claims": [
+        "Philips Recognition Award — 2000 Recognition points, 3 January 2020",
+        "Philips behavior recognized: Team up to win",
+        "Awarded by Sundaresan Jagadeesan",
+        ".craft program evaluation a great success in 2019 — recognized for collaboration and teamwork",
+        "Second award from Sundaresan Jagadeesan — escalation from 750 (July 2019) to 2000 points reflecting programme-level impact"
+      ],
+      "confidence": 0.99
+    }
+  }
+]

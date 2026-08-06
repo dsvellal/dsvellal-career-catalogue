@@ -1,0 +1,22 @@
+[
+  {"type": "organization", "name": "Philips North America", "properties": {"type": "employer", "full_name": "Philips North America LLC", "location": "Rochester Hills, Michigan, USA", "tenure_start": "2021-11-01", "role": "Principal (Software Competency Lead)", "total_career_savings": "$3M+"}},
+  {"type": "organization", "name": "Philips India", "properties": {"type": "former_employer", "full_name": "Philips India Limited", "location": "Bangalore, India", "tenure_start": "2018-09-01", "tenure_end": "2021-11-01", "savings_delivered": "$2.3M", "future_opportunity": "$3.8M", "ci_cd_release_cycle_reduction": "30%", "team_size_ci_cd": "8"}},
+  {"type": "organization", "name": "Amazon", "properties": {"type": "former_employer", "full_name": "Amazon India Private Limited", "location": "Bangalore, India", "tenure_start": "2016-02-01", "tenure_end": "2018-08-31", "role": "Software Development Engineer", "team_scaled": "team of 5 engineers, 6 microservices, 8M daily transactions", "annual_savings": "$34K", "release_time_reduction": "18%"}},
+
+  {"type": "project", "name": "Digital Transformation", "properties": {"employer": "Philips North America LLC", "start_date": "2021-11-01", "description": "Directed digital transformation and automation initiatives. Led U.S. teams to achieve $300K in infrastructure savings. Orchestrated continuous value delivery reducing product delivery time by 60%. Service-Ops automation boosting productivity for 7000+ Philips engineers with 99.999% uptime."}},
+  {"type": "project", "name": "State of Craftsmanship Report", "properties": {"employer": "Philips North America LLC", "start_date": "2024-01-01", "description": "Synthesized complex global software development metrics to author the 2024 State of Craftsmanship report. Surfaced critical patterns delivering high-impact insights to elevate software delivery speed and quality."}},
+  {"type": "project", "name": "Service-Ops Automation", "properties": {"employer": "Philips North America LLC", "start_date": "2022-01-01", "description": "Pioneered adoption of digital platforms and Service-Ops automation, boosting productivity for 7000+ Philips engineers worldwide with 99.999% uptime."}},
+  {"type": "project", "name": "CI/CD Pipeline", "properties": {"employer": "Philips India Limited", "start_date": "2019-01-01", "end_date": "2021-11-01", "description": "Assembled and led team of 8 to deploy CI/CD pipeline, slashing release cycles by 30% and elevating software quality."}},
+  {"type": "project", "name": "Math Pentathlon LLM Coaching", "properties": {"start_date": "2023-01-01", "description": "Deployed Language Model to reduce cognitive load of coaches in Math Pentathlon. Personal AI initiative."}},
+  {"type": "project", "name": "Smart Home Automation", "properties": {"start_date": "2022-01-01", "description": "Personal smart home automation enthusiast project."}},
+
+  {"type": "skill", "name": "Cloud Architecture", "properties": {"category": "cloud_platform", "first_seen": "2021-11-01"}},
+  {"type": "skill", "name": "Zero-Trust Security", "properties": {"category": "security", "first_seen": "2021-11-01"}},
+  {"type": "skill", "name": "Cloud Migration", "properties": {"category": "engineering_practice", "first_seen": "2018-09-01"}},
+  {"type": "skill", "name": "Machine Learning", "properties": {"category": "ai_technology", "first_seen": "2023-01-01"}},
+  {"type": "skill", "name": "AI/LLM Integration", "properties": {"category": "ai_technology", "first_seen": "2023-01-01"}},
+  {"type": "skill", "name": "Serverless", "properties": {"category": "cloud_platform", "first_seen": "2021-11-01"}},
+  {"type": "skill", "name": "Executive Presence", "properties": {"category": "leadership", "first_seen": "2021-11-01"}},
+  {"type": "skill", "name": "Technical Debt Elimination", "properties": {"category": "engineering_practice", "first_seen": "2018-09-01", "proficiency": "expert"}},
+  {"type": "skill", "name": "Medical Device Software", "properties": {"category": "domain_expertise", "first_seen": "2018-09-01", "standards": "IEC 62304, ISO 13485, ISO 14971"}}
+]

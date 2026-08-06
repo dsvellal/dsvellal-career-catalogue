@@ -1,0 +1,96 @@
+[
+  {
+    "file_name": "2018 Dattatreya S Vellal Resume.pdf",
+    "file_type": "pdf",
+    "media_url": "",
+    "context": "Resume circa 2018 — first snapshot with Philips India as current role (Competency Specialist II – Software Excellence, Sept 2018 – Present). Marks transition out of Amazon (Aug 2018). Bangalore address. 13+ years experience. Introduces Philips SWCoE programs (.craft, .tune, .grow, .connect), proprietary code-quality analyzer, DevOps policies, ISO 13485/62304 compliance work. Amazon (2016–2018) and Exeter (2013–2015) and IBM (2007–2013) shown as prior roles.",
+    "raw_text": "Dattatreya S Vellal (Datta)\nNo 47, 4st Main, 1st Phase, Girinagar, Bangalore – 560085\n+91-997-231-2693 | dsvellal@gmail.com | www.dsvellal.com | LinkedIn: dattatreyavellal\n\nDatta has over 13 years of experience in strategy & execution, software quality & craftsmanship, people leadership & culture, technical engagement & collaboration, software design & execution. Known for technical expertise, human relation skills, problem solving, creating impact to individuals & organizations, trainings & knowledge development. Brings expertise to influence and solve complex challenges & create sustainable solutions & processes. A result-driven individual, who is proactive in driving functional and technical engagements, handling uncertainties & mitigating concerns.\n\n=== SKILLS ===\n- Software architecture, design, development\n- Teaching, learning, influencing\n- Communication, passion, tact\n- Handling business, technical and human concerns\n- Expertise in programming languages, operating systems, infrastructure & technology stacks\n\n=== EXPERIENCE ===\n\nCompetency Specialist II – Software Excellence | Philips India Limited | 2018 – Present\nResponsible for building a network of influence and become an assessor, thought leader and trusted advisor in a wide range of software excellence initiatives by the Philips Software Center of Excellence (SWCoE). Teaching cross-competency teams on software topics, interviewing techniques, agile concepts. Establishing org-wide policies on BizDevOps practices, hiring. Empowering technology and cultural transformation for the organization.\n- Provided directions on policies of usage of health-suite-platform solutions & migration of proprietary legacy systems on to Philips cloud platform\n- Chosen by Philips India head to work with cross-functional teams (with minimal supervision) and establish new interview policies, goals & procedure globally. Pushed the bar higher by interviewing candidates for senior roles and influencing hiring decisions\n- Successfully & independently led programs of SWCoE. Strategized & built proprietary code-quality analyzer for Philips, imbibing software excellence craftsmanship elements. Adopted by many businesses for quality management of daily-software-churn of ~400 software engineers, and growing\n- Reverse mentoring directors and enabling them to make right policy decisions in DevOps\n- Influencing the Philips global reference architecture for DevOps by providing SME inputs\n- Implementing the current SWCoE excellence programs: .craft, .tune, .grow, .connect etc.\n- Responsible for software planning, design & development, review, managing verification & validation cycles, control of design & development changes, production service provisioning, issue handling, monitoring & measurement of process/product (ISO 13485, 62304). For radiology informatics, supervised a team that analyzed risks, estimation & implementation of proactive risk control measures (ISO14971), participated in architectural failure mode effective analysis\n\nSoftware Development Engineer II | Amazon Development Center | 2016 – 2018\nAccountable & responsible for building microservices, APIs, tools & platforms for retail and risk management systems. Disambiguating complex problems, designing use-cases for scalability, performance & usability, implementing software, deploying in production & monitoring for defects.\n- Implemented microservices handling scale of more than 1K transactions per second\n- Facilitated many scrum & agile product ownership workshops for over 150 participants\n- Optimized software by running performance benchmarking tools and saving ~34k$ in costs\n- Rolled out agile-practices & daily management policies leading to 18% yield increase\n- Authored knowledge sharing docs including troubleshooting, on-call & on-boarding guides\n\nSenior Lead – Software Development | Exeter Software India Private Limited | 2013 – 2015\nResponsible for critical functional & technical engagements of the Patient Protection and Affordable Care Act (Obamacare) implementation for the states of Hawaii & Vermont.\n- Responsible for many release-scoping cutting across legal, functional, development and test teams\n- Directly responsible for execution of the projects, artifacts & config management\n- Managed a team of 20 engineers, responsible for performance reviews, mentoring, and career planning and year-end appraisals\n- Successfully resolving many critical customer situations leading to faster adoption of releases\n\nSoftware Engineer | IBM India Software Labs (ISL) Bangalore | 2007 – 2013\nWorked on web services, developed multiple eclipse-based plugins for IBM products. Wrote many solutions integrating IBM products to support Natural Resources Industry scenarios.\n\n=== CONVERSATION STARTERS ===\n- 2 USPTO Patents, several publications online\n- Subject matter expert & invited speaker in universities across India, with over 40 motivational & technological talks & workshops, addressing over 2500 participants across 22 different academic institutions\n- Toastmasters international certified competent communicator, competent leader, and leadership advisor\n- At Philips, in 2020, connected with over 2500 developers across 24 geographical locations, 43 job roles, and 72 departments and influenced strategy, culture, practices to handle business, technology and human concerns. Received multiple recognitions & awards\n- Mentored leaders, subordinates, peers, interns and students in technology, learning and leadership skills\n- Active member and resource person for Computer Society of India, Bangalore\n- Volunteered with organizations to support teaching, promoting healthy living, distributing books and uniforms to the not so privileged\n\n=== EDUCATION ===\n- 2010-11, Annamalai University, Chidambaram, TN — Master of Science, Yoga\n- 2009-10, Annamalai University, Chidambaram, TN — Postgraduate diploma, Yoga\n- 2003-2007, RVCE, Bangalore, Karnataka — Bachelor of Engineering, Computer Science\n- 2001-2003, NCJ, Bangalore, Karnataka — Pre-university, Physics, Chemistry, Mathematics, Biology\n- 2001, Vijaya High School, Bangalore, Karnataka — Karnataka state board, 10th Grade",
+    "classification": {
+      "type": "other",
+      "dates": [
+        {"date": "2018-09-01", "context": "joined Philips India Limited as Competency Specialist II – Software Excellence"},
+        {"date": "2018-08-31", "context": "concluded Amazon role"},
+        {"date": "2018-01-01", "context": "resume snapshot — Philips India current role, first Philips resume"},
+        {"date": "2016-02-01", "context": "started Amazon Development Center India as SDE II"},
+        {"date": "2013-04-01", "context": "started Exeter Software India as Senior Lead"},
+        {"date": "2007-07-01", "context": "started IBM India Software Labs"}
+      ],
+      "projects": [
+        "Software Center of Excellence",
+        "Cerberus Code Quality Tool",
+        "BizDevOps Initiative",
+        ".craft Program",
+        "dotTune",
+        "DevOps Architecture Strategy",
+        "Bar Raiser Program",
+        "TRMS",
+        "SVA",
+        "Scrum Workshop Facilitation (Amazon)",
+        "OneGate",
+        "Advanced Condition Monitoring for High Value Assets (NR CoE)",
+        "Lotus Expeditor Toolkit",
+        "Lotus Expeditor Webcontainer"
+      ],
+      "skills": [
+        "Software Excellence Leadership",
+        "Software Craftsmanship Assessment",
+        "DevOps",
+        "BizDevOps Initiative",
+        "IEC 62304",
+        "ISO 13485",
+        "ISO 14971",
+        "Medical Device Compliance",
+        "Technical Coaching",
+        "Thought Leadership",
+        "Reverse Mentoring",
+        "Software Architecture",
+        "Code Quality Analysis",
+        "Static Code Analysis",
+        "Hiring",
+        "Bar Raising",
+        "Digital Transformation",
+        "Teaching",
+        "Cross-Functional Collaboration",
+        "Stakeholder Management",
+        "Microservices",
+        "Performance Profiling",
+        "Agile Coaching",
+        "Scrum Facilitation",
+        "Java",
+        "Yoga",
+        "Public Speaking",
+        "Workshop Facilitation",
+        "Mentoring"
+      ],
+      "people": [
+        {"name": "Dattatreya S Vellal", "role": "author / subject"}
+      ],
+      "organizations": [
+        {"name": "Philips India", "role": "employer"},
+        {"name": "Amazon", "role": "former_employer"},
+        {"name": "Exeter Software India Pvt. Ltd.", "role": "former_employer"},
+        {"name": "IBM India Pvt. Ltd.", "role": "former_employer"},
+        {"name": "R. V. College of Engineering", "role": "education"},
+        {"name": "Annamalai University", "role": "education"},
+        {"name": "Toastmasters International", "role": "professional_body"},
+        {"name": "Computer Society of India", "role": "professional_body"},
+        {"name": "SVYASA", "role": "certification_issuer"}
+      ],
+      "claims": [
+        "Competency Specialist II – Software Excellence at Philips India Limited (Sept 2018 – present at time of resume)",
+        "13+ years of experience at time of resume",
+        "Built proprietary code-quality analyzer for Philips — adopted by businesses managing ~400 software engineers daily",
+        "Chosen by Philips India head to establish new interview policies and procedures globally",
+        "Reverse mentoring directors on DevOps policy decisions",
+        "Implementing SWCoE programs: .craft, .tune, .grow, .connect",
+        "Responsible for ISO 13485, IEC 62304, ISO 14971 compliance work including radiology informatics risk analysis",
+        "Influencing Philips global reference architecture for DevOps",
+        "40+ motivational & technological talks & workshops, addressing over 2500 participants across 22 academic institutions",
+        "Amazon SDE II (2016–2018): microservices at 1K+ TPS, $34K cost savings, 18% yield increase via agile practices",
+        "Exeter (2013–2015): managed team of 20, 15+ critical customer situations resolved",
+        "IBM (2007–2013): 2 USPTO patents, web services, eclipse-based plugins"
+      ],
+      "confidence": 0.97
+    }
+  }
+]

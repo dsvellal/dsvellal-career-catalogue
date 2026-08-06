@@ -1,0 +1,40 @@
+[
+  {
+    "file_name": "20190515_EagerToImproveAndInspire_Interview_Viswa.pdf",
+    "file_type": "pdf",
+    "media_url": "",
+    "context": "Philips Manager Recognition Award — 500 Recognition points for Philips behavior 'Eager to improve & inspire'. Awarded by Viswanath Somasekhar on 15 May 2019. Reason: proactively pitching in and presenting interview tips for DXR team members.",
+    "raw_text": "Congratulations! Dattatreya Vellal. You have been awarded 500 Recognition points for demonstrating the Philips behavior Eager to improve & inspire. For proactively pitching in and presenting the interview tips for DXR team members. Thanks for your great contribution. Keep up the good work. Viswanath Somasekhar.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [
+        {"date": "2019-05-15", "context": "Philips Recognition Award — Eager to improve & inspire, awarded by Viswanath Somasekhar"}
+      ],
+      "projects": [
+        "DXR",
+        "Interview Process"
+      ],
+      "skills": [
+        "Interviewing",
+        "Interview Process Design",
+        "Teaching",
+        "Mentoring",
+        "Proactive Initiative"
+      ],
+      "people": [
+        {"name": "Viswanath Somasekhar", "role": "award giver — Philips colleague"},
+        {"name": "Dattatreya S Vellal", "role": "award recipient"}
+      ],
+      "organizations": [
+        {"name": "Philips India", "role": "employer"}
+      ],
+      "claims": [
+        "Philips Recognition Award — 500 Recognition points, 15 May 2019",
+        "Philips behavior recognized: Eager to improve & inspire",
+        "Awarded by Viswanath Somasekhar",
+        "Proactively pitched in and presented interview tips for DXR team members"
+      ],
+      "confidence": 0.99
+    }
+  }
+]

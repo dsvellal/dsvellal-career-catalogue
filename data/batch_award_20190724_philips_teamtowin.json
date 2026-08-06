@@ -1,0 +1,43 @@
+[
+  {
+    "file_name": "20190724_TeampToWin_MovingTheNeedleOnCodeQuality_Sundar.pdf",
+    "file_type": "pdf",
+    "media_url": "",
+    "context": "Philips Manager Recognition Award — 750 Recognition points for Philips behavior 'Team up to win'. Awarded by Sundaresan Jagadeesan on 24 July 2019. Reason: contributions in 'Moving the needle' on Code Quality, resulting in cultural changes across the businesses in PIC (Philips India Connected).",
+    "raw_text": "Congratulations! Dattatreya Vellal. You have been awarded 750 Recognition points for demonstrating the Philips behavior Team up to win. Thank you for your good contributions in Moving the needle on Code Quality, resulting in cultural changes across the businesses in PIC. Thanks for your great contribution. Keep up the good work. Sundaresan Jagadeesan.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [
+        {"date": "2019-07-24", "context": "Philips Recognition Award — Team up to win, 750 points, awarded by Sundaresan Jagadeesan"}
+      ],
+      "projects": [
+        "PIC Code Quality Initiative",
+        "Software Center of Excellence",
+        "Cerberus Code Quality Tool"
+      ],
+      "skills": [
+        "Code Quality",
+        "Software Craftsmanship",
+        "Culture Building",
+        "Cross-BU Collaboration",
+        "Technical Coaching",
+        "Influence-based Leadership"
+      ],
+      "people": [
+        {"name": "Sundaresan Jagadeesan", "role": "award giver — Philips leader"},
+        {"name": "Dattatreya S Vellal", "role": "award recipient"}
+      ],
+      "organizations": [
+        {"name": "Philips India", "role": "employer"}
+      ],
+      "claims": [
+        "Philips Recognition Award — 750 Recognition points, 24 July 2019",
+        "Philips behavior recognized: Team up to win",
+        "Awarded by Sundaresan Jagadeesan",
+        "Contributions in Moving the needle on Code Quality resulting in cultural changes across businesses in PIC",
+        "750 points — higher value than previous award (500), reflecting broader cross-business impact"
+      ],
+      "confidence": 0.99
+    }
+  }
+]

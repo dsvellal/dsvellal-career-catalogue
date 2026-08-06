@@ -1,0 +1,15 @@
+[
+  {"type": "organization", "name": "Philips North America", "properties": {"type": "employer", "full_name": "Philips North America LLC", "location": "Rochester, Michigan, USA", "phone": "+1-248-933-2032", "tenure_start": "2021-11-01", "role": "Software Competency Lead", "website": "https://www.dsvellal.com"}},
+
+  {"type": "project", "name": "Software Center of Excellence", "properties": {"employer": "Philips", "start_date": "2018-09-01", "description": "Philips Software CoE — craftsmanship assessment program. Improved average assessment score from 67 to 78 globally. Reduced customer defects from 37 to 0.11 per 100 exams. Improved app store ratings from 2.3 to 4.5. Influenced 4500+ GitHub philips-internal users. Reduced release time by 60%. Realized 2.1M EUR savings in 2021 with 3.45M EUR future opportunity."}},
+  {"type": "project", "name": "Inner Source", "properties": {"employer": "Philips North America LLC", "start_date": "2022-01-01", "description": "Collaborating with business leaders to strategize, mediate & rollout the inner-source program at Philips globally."}},
+  {"type": "project", "name": "Developer Experience", "properties": {"employer": "Philips North America LLC", "start_date": "2021-11-01", "description": "Creating developer experience policies & guidelines on GitHub influencing 4500+ philips-internal users globally in software security, reliability & quality."}},
+
+  {"type": "skill", "name": "Inner Source", "properties": {"category": "engineering_practice", "first_seen": "2022-01-01"}},
+  {"type": "skill", "name": "Developer Experience", "properties": {"category": "engineering_practice", "first_seen": "2021-11-01"}},
+  {"type": "skill", "name": "Strategy Roadmapping", "properties": {"category": "leadership", "first_seen": "2018-09-01"}},
+  {"type": "skill", "name": "Organizational Leadership", "properties": {"category": "leadership", "first_seen": "2018-09-01"}},
+  {"type": "skill", "name": "Influence-based Leadership", "properties": {"category": "leadership", "first_seen": "2018-09-01"}},
+  {"type": "skill", "name": "Software Excellence", "properties": {"category": "engineering_practice", "first_seen": "2018-09-01", "proficiency": "expert"}},
+  {"type": "skill", "name": "Data-driven Decision Making", "properties": {"category": "leadership", "first_seen": "2016-02-01"}}
+]

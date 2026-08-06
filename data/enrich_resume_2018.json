@@ -1,0 +1,21 @@
+[
+  {"type": "organization", "name": "Philips India", "properties": {"type": "employer", "full_name": "Philips India Limited", "location": "Bangalore, India", "tenure_start": "2018-09-01", "tenure_end": "2021-11-01", "role": "Competency Specialist II – Software Excellence / Software Competency Lead / Principal"}},
+
+  {"type": "project", "name": "Software Center of Excellence", "properties": {"employer": "Philips India Limited", "start_date": "2018-09-01", "end_date": "2021-11-01", "description": "Philips Software Center of Excellence (SWCoE) — built network of influence as assessor, thought leader and trusted advisor. Ran programs: .craft, .tune, .grow, .connect. Implemented BizDevOps policies. Connected with 2500+ developers across 24 locations, 43 job roles, 72 departments in 2020."}},
+  {"type": "project", "name": "Cerberus Code Quality Tool", "properties": {"employer": "Philips India Limited", "start_date": "2018-09-01", "end_date": "2021-11-01", "description": "Strategized & built proprietary code-quality analyzer for Philips imbibing software excellence craftsmanship elements. Adopted by multiple businesses for quality management of ~400 software engineers daily. Led to identification and reduction of 18,000 lines of duplicate code."}},
+  {"type": "project", "name": "BizDevOps Initiative", "properties": {"employer": "Philips India Limited", "start_date": "2018-09-01", "description": "Established org-wide BizDevOps policies and practices. Reverse mentored directors. Influenced Philips global reference architecture for DevOps."}},
+  {"type": "project", "name": ".craft Program", "properties": {"employer": "Philips India Limited", "start_date": "2018-09-01", "description": "Philips SWCoE .craft program — software craftsmanship assessment and improvement program"}},
+  {"type": "project", "name": "dotTune", "properties": {"employer": "Philips India Limited", "start_date": "2018-09-01", "description": "Philips SWCoE .tune program — performance and tooling optimization program"}},
+  {"type": "project", "name": "DevOps Architecture Strategy", "properties": {"employer": "Philips India Limited", "start_date": "2018-09-01", "description": "Influencing Philips global reference architecture for DevOps. Establishing global DevOps policies and practices for secure software development and delivery."}},
+  {"type": "project", "name": "Bar Raiser Program", "properties": {"employer": "Philips India Limited", "start_date": "2019-01-01", "description": "Chosen by Philips India head to establish new interview policies, goals & procedures globally. Bar-raiser hiring program — improved candidate NPS by 18%, manager NPS by 15%."}},
+
+  {"type": "skill", "name": "Software Excellence Leadership", "properties": {"category": "leadership", "first_seen": "2018-09-01"}},
+  {"type": "skill", "name": "Software Craftsmanship Assessment", "properties": {"category": "engineering_practice", "first_seen": "2018-09-01"}},
+  {"type": "skill", "name": "Thought Leadership", "properties": {"category": "leadership", "first_seen": "2018-09-01"}},
+  {"type": "skill", "name": "Reverse Mentoring", "properties": {"category": "leadership", "first_seen": "2018-09-01"}},
+  {"type": "skill", "name": "Technical Coaching", "properties": {"category": "leadership", "first_seen": "2018-09-01"}},
+  {"type": "skill", "name": "Software Architecture", "properties": {"category": "engineering_practice", "first_seen": "2007-07-01"}},
+  {"type": "skill", "name": "Teaching", "properties": {"category": "soft_skill", "first_seen": "2009-01-01"}},
+  {"type": "skill", "name": "Cross-Functional Collaboration", "properties": {"category": "leadership", "first_seen": "2008-01-01"}},
+  {"type": "skill", "name": "Cross-functional Leadership", "properties": {"category": "leadership", "first_seen": "2018-09-01"}}
+]

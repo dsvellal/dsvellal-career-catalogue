@@ -1,0 +1,43 @@
+[
+  {
+    "file_name": "Dattatreya_Vellal,_Swift_Executive_Aptitude_&amp.pdf",
+    "file_type": "pdf",
+    "media_url": "",
+    "context": "Swift Executive Aptitude-Rx Assessment Report for Dattatreya Vellal, generated 27 October 2020. Administered by Saville Assessment (Willis Towers Watson). Online cognitive ability test measuring verbal analysis, numerical analysis and abstract reasoning. Completed 27/10/2020 06:40–07:12 GMT (32 minutes). Compared against international norm group of 590 Senior Managers & Executives (INT, IA, 2015). Scores presented on 1–10 Sten scale. No administrator resets or candidate aborts.",
+    "raw_text": "Swift Executive Aptitude-Rx Assessment Report — Dattatreya Vellal\nGenerated: 27 October 2020\nComparison group: Senior Managers & Executives (INT, IA, 2015) — 590 people\n\n=== TOTAL SCORE ===\nTotal Score: Average — 62nd percentile\nPerformed better than 62 percent of the comparison group (Senior Managers & Executives).\nSten scale position: between 6 and 7 (Sten 6 = higher than ~60%; Sten 7 = higher than ~75%)\n\n=== APTITUDE AREA SUB-SCORES ===\n\nVerbal Aptitude: Sten 6 — Average (62nd percentile)\n- Likely to find working with verbal information as easy as other people.\n- Aptitude 6, Pace 6 — worked at an average pace\n- Assesses ability to understand, interpret and evaluate written information\n\nNumerical Aptitude: Sten 6 — Average (58th percentile)\n- Likely to find working with numerical information as easy as other people.\n- Aptitude 6, Pace 5 — worked at an average pace (slightly slower on numerical)\n- Assesses ability to understand, interpret and evaluate numerical data\n\nAbstract Aptitude: Sten 6 — Average (58th percentile)\n- Likely to find working with abstract information as easy as other people.\n- Aptitude 6, Pace 6 — worked at an average pace\n- Assesses ability to understand sequences of patterns and relationships\n\n=== TEST COMPLETION DETAILS ===\nInitial Access: 27/10/2020 06:40 GMT\nResponses Saved: 27/10/2020 07:12 GMT\nDuration: approximately 32 minutes\nLanguage: English (United Kingdom)\nAdministrator Resets: 0\nCandidate Aborts: 0\nTime Adjustment: None\n\n=== KEY INTERPRETIVE NOTES ===\n- All three aptitude dimensions score at Sten 6 — consistent average profile with no significant peaks or valleys across verbal, numerical, or abstract reasoning\n- 62nd percentile overall vs international senior manager/executive norm — solidly in the average range for that peer group\n- Slightly slower pace on numerical (Pace 5 vs Pace 6 for verbal and abstract) — consistent with BeTalent Strengths finding of Meticulous (#2) and Evaluative (#3) — takes more care with data\n- Consistent pace across verbal and abstract (both Pace 6) — steady, measured approach\n- The strong career outcomes and leadership impact in Datta's profile are driven by character, work ethic, and leadership qualities rather than unusually high cognitive aptitude — this is an important calibration point for the digital twin",
+    "classification": {
+      "type": "other",
+      "dates": [
+        {"date": "2020-10-27", "context": "Swift Executive Aptitude-Rx cognitive ability test completed — 62nd percentile vs international senior managers & executives norm group"}
+      ],
+      "projects": [
+        "Philips Leadership Development Program"
+      ],
+      "skills": [
+        "Analytical Thinking",
+        "Quantitative Analysis",
+        "Abstract Thinking",
+        "Verbal Reasoning"
+      ],
+      "people": [
+        {"name": "Dattatreya S Vellal", "role": "assessment subject"}
+      ],
+      "organizations": [
+        {"name": "Philips India", "role": "employer"},
+        {"name": "DDI (Development Dimensions International)", "role": "assessment partner"}
+      ],
+      "claims": [
+        "Swift Executive Aptitude-Rx completed 27 October 2020 — 32 minutes, no resets or aborts",
+        "Comparison group: Senior Managers & Executives (INT, IA, 2015) — 590 people",
+        "Total Score: Sten 6, 62nd percentile — Average vs international senior manager/executive norm",
+        "Verbal Aptitude: Sten 6, 62nd percentile — Average; Pace 6 (average)",
+        "Numerical Aptitude: Sten 6, 58th percentile — Average; Pace 5 (slightly slower than average)",
+        "Abstract Aptitude: Sten 6, 58th percentile — Average; Pace 6 (average)",
+        "Completely consistent profile — all three aptitude dimensions at Sten 6, no peaks or valleys",
+        "Slightly slower pace on numerical (5 vs 6) — consistent with Meticulous/Evaluative BeTalent strengths — takes care with data",
+        "CALIBRATION POINT: Strong career impact driven by character, leadership and work ethic rather than unusually high cognitive aptitude scores — average aptitude, exceptional outcomes"
+      ],
+      "confidence": 0.99
+    }
+  }
+]

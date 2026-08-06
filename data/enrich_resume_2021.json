@@ -1,0 +1,20 @@
+[
+  {"type": "organization", "name": "Philips North America", "properties": {"type": "employer", "full_name": "Philips North America LLC", "location": "Rochester Hills, Michigan, USA", "tenure_start": "2021-11-01", "role": "Software CoE Competency Lead / Software Competency Lead"}},
+  {"type": "organization", "name": "Philips India", "properties": {"type": "former_employer", "full_name": "Philips India Limited", "location": "Bangalore, India", "tenure_start": "2018-09-01", "tenure_end": "2021-11-01", "role": "Competency Specialist II – Software Excellence / Software Competency Lead / Principal (youngest in Philips India)"}},
+
+  {"type": "project", "name": "Digital Transformation", "properties": {"employer": "Philips North America LLC", "start_date": "2021-11-01", "description": "Accountable for Digital Transformation programs across USA, LATAM, Europe & Mexico. Pioneered global programs, set KPIs and Objectives. Reduced customer defects from 37 to 0.11 per 100 exams; improved app store ratings from 2.3 to 4.5."}},
+  {"type": "project", "name": "Graduate Development Program", "properties": {"employer": "Philips India Limited", "start_date": "2019-01-01", "end_date": "2021-11-01", "description": "Philips Graduate Development Program stream lead for software, data, and analytics stream. Mentored several graduates across Netherlands, Brazil, India and Germany."}},
+  {"type": "project", "name": "Test ODC Vendor Selection", "properties": {"employer": "Philips India Limited", "start_date": "2020-01-01", "end_date": "2021-06-01", "description": "Set up outsource development center of 450 engineers — prepared proposals, evaluated 5 different contractors, negotiated SOWs, and recommended contracts to be awarded."}},
+  {"type": "project", "name": "Quality & Regulatory Compliance Upskilling", "properties": {"employer": "Philips India Limited", "start_date": "2019-01-01", "end_date": "2021-11-01", "description": "Improved competency of 30 Quality & Regulatory officers in Philips by mentoring them on developmental practices, leading to 40% improvement in competence. Won Philips CTO Outstanding Technical Achievement Award 2021 for this work."}},
+  {"type": "project", "name": "PIC", "properties": {"employer": "Philips India Limited", "start_date": "2020-01-01", "description": "Philips PIC Annual Awards 2020 — recognized for building organization capabilities."}},
+
+  {"type": "skill", "name": "Vendor Evaluation", "properties": {"category": "leadership", "first_seen": "2020-01-01"}},
+  {"type": "skill", "name": "Vendor Selection", "properties": {"category": "leadership", "first_seen": "2020-01-01"}},
+  {"type": "skill", "name": "DORA Metrics", "properties": {"category": "engineering_practice", "first_seen": "2021-11-01"}},
+  {"type": "skill", "name": "Developer Experience", "properties": {"category": "engineering_practice", "first_seen": "2021-11-01"}},
+  {"type": "skill", "name": "Inner Source", "properties": {"category": "engineering_practice", "first_seen": "2021-11-01"}},
+  {"type": "skill", "name": "Software Metrics", "properties": {"category": "engineering_practice", "first_seen": "2021-11-01"}},
+  {"type": "skill", "name": "Competency Building", "properties": {"category": "leadership", "first_seen": "2018-09-01"}},
+  {"type": "skill", "name": "Executive Communication", "properties": {"category": "leadership", "first_seen": "2021-11-01"}},
+  {"type": "skill", "name": "Executive Presence", "properties": {"category": "leadership", "first_seen": "2021-11-01"}}
+]

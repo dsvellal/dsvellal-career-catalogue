@@ -1,0 +1,543 @@
+[
+  {
+    "file_name": "20110624_IBM_T2EChallenge.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "IBM India University Relations - Certificate of appreciation for volunteering in T2E (Transition to Excellence) Contest. Signed by Dr. Bhooshan Kelkar, Country Manager IBM India University Relations. Date: June 24, 2011. This is an earlier T2E acknowledgment than the November 2011 version already ingested.",
+    "raw_text": "IBM India University Relations. Certificate of Appreciation. Dattatreya S Vellal. T2E Contest volunteer. Thank you for your contribution. Signed: Dr. Bhooshan Kelkar, Country Manager, IBM India University Relations. Date: June 24, 2011.",
+    "classification": {
+      "type": "certificate",
+      "dates": [{"date": "2011-06-24", "context": "certificate date"}],
+      "projects": ["IBM T2E Challenge 2011"],
+      "skills": ["university_relations", "mentoring", "contest_organization", "talent_assessment"],
+      "people": [{"name": "Dr. Bhooshan Kelkar", "role": "Country Manager, IBM India University Relations"}],
+      "organizations": [{"name": "IBM", "role": "employer"}, {"name": "IBM India University Relations", "role": "program"}],
+      "claims": [
+        "Volunteered for IBM T2E (Transition to Excellence) Contest",
+        "Recognized by IBM India University Relations Country Manager",
+        "Earlier T2E engagement (June 2011) than previously documented (Nov 2011)",
+        "Part of IBM's structured university talent pipeline program"
+      ],
+      "confidence": 0.93
+    }
+  },
+  {
+    "file_name": "20111110_NHCE_EvolutionOfDesignPattern.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "New Horizon College of Engineering - Appreciation letter for delivering talk on 'Evolution of Design Patterns' during National Workshop on Object Modeling & Design Patterns. Feedback described as 'highly informative' with 'excellent feedback from participants'. Signed by Dr. R. Sridaran, HOD-DCA. Date: 10 Nov 2011.",
+    "raw_text": "New Horizon College of Engineering. Appreciation letter. Dear Mr. Dattatreya S Vellal. National Workshop on Object Modeling & Design Patterns. Talk: Evolution of Design Patterns. The session was highly informative and we received excellent feedback from participants. Signed: Dr. R. Sridaran, HOD-DCA. Date: 10 November 2011.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2011-11-10", "context": "workshop date"}],
+      "projects": ["NHCE Design Patterns Workshop 2011"],
+      "skills": ["design_patterns", "technical_speaking", "object_modeling", "workshop_facilitation", "university_relations"],
+      "people": [{"name": "Dr. R. Sridaran", "role": "HOD-DCA, New Horizon College of Engineering"}],
+      "organizations": [{"name": "New Horizon College of Engineering (NHCE)", "role": "education"}, {"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Delivered talk on 'Evolution of Design Patterns' at NHCE National Workshop",
+        "Workshop topic: Object Modeling & Design Patterns",
+        "Received 'excellent feedback from participants'",
+        "Session described as 'highly informative'",
+        "Earliest documented Design Patterns college talk (Nov 2011)"
+      ],
+      "confidence": 0.94
+    }
+  },
+  {
+    "file_name": "20120225_SirMVIT_J2EEWorkshop.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Sir M Visvesvaraya Institute of Technology (Sir MVIT) - Appreciation for conducting J2EE Workshop. Date: 25 Feb 2012. New institution added to graph.",
+    "raw_text": "Sir M Visvesvaraya Institute of Technology. Appreciation letter. Dattatreya S Vellal. J2EE Workshop. Date: 25 February 2012.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2012-02-25", "context": "workshop date"}],
+      "projects": ["Sir MVIT J2EE Workshop 2012"],
+      "skills": ["j2ee", "java", "workshop_facilitation", "technical_speaking", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "Sir M Visvesvaraya Institute of Technology (Sir MVIT)", "role": "education"}, {"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Conducted J2EE Workshop at Sir MVIT",
+        "New institution: Sir MVIT added to workshop delivery portfolio",
+        "Part of sustained J2EE workshop series across Bangalore colleges (2012)"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "20120331_GMIT_J2EEWorkshop.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "GM Institute of Technology (GMIT) - Appreciation for conducting J2EE Workshop. Date: 31 Mar 2012.",
+    "raw_text": "GM Institute of Technology. Appreciation letter. Dattatreya S Vellal. J2EE Workshop. Date: 31 March 2012.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2012-03-31", "context": "workshop date"}],
+      "projects": ["GMIT J2EE Workshop 2012"],
+      "skills": ["j2ee", "java", "workshop_facilitation", "technical_speaking", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "GM Institute of Technology (GMIT)", "role": "education"}, {"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Conducted J2EE Workshop at GMIT",
+        "Part of J2EE workshop series across Karnataka colleges (2012)"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "20120721_CMRIMS_Web2.0.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "CMR Institute of Management Studies (CMRIMS) - Appreciation for conducting Web 2.0 workshop. Date: 21 Jul 2012. New institution added to graph.",
+    "raw_text": "CMR Institute of Management Studies. Appreciation letter. Dattatreya S Vellal. Web 2.0 Workshop. Date: 21 July 2012.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2012-07-21", "context": "workshop date"}],
+      "projects": ["CMRIMS Web 2.0 Workshop 2012"],
+      "skills": ["web_2.0", "web_technologies", "workshop_facilitation", "technical_speaking", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "CMR Institute of Management Studies (CMRIMS)", "role": "education"}, {"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Conducted Web 2.0 workshop at CMRIMS",
+        "New institution: CMRIMS added to workshop delivery portfolio",
+        "Demonstrates breadth beyond Java/J2EE into web technologies"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "20130323_DrAIT_TechWriting_Presentation.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Dr. Ambedkar Institute of Technology - Appreciation for delivering session on Technical Writing & Presentation Skills. Date: 23 Mar 2013.",
+    "raw_text": "Dr. Ambedkar Institute of Technology. Appreciation letter. Dattatreya S Vellal. Session on Technical Writing & Presentation Skills. Date: 23 March 2013.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2013-03-23", "context": "session date"}],
+      "projects": ["Dr AIT Technical Writing Workshop 2013"],
+      "skills": ["technical_writing", "presentation_skills", "workshop_facilitation", "communication", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "Dr. Ambedkar Institute of Technology", "role": "education"}, {"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Delivered session on Technical Writing & Presentation Skills at Dr. AIT",
+        "Demonstrates soft skills teaching capability alongside technical workshops",
+        "First documented engagement at Dr. Ambedkar Institute of Technology (2013)"
+      ],
+      "confidence": 0.92
+    }
+  },
+  {
+    "file_name": "20130814_MVJCE_4GInternet.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "MVJ College of Engineering (MVJCE) - Appreciation for delivering session on 4G Internet technologies. Date: 14 Aug 2013.",
+    "raw_text": "MVJ College of Engineering. Appreciation letter. Dattatreya S Vellal. Session on 4G Internet Technologies. Date: 14 August 2013.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2013-08-14", "context": "session date"}],
+      "projects": ["MVJCE 4G Internet Talk 2013"],
+      "skills": ["4g_technology", "internet_technologies", "technical_speaking", "university_relations", "emerging_technology"],
+      "people": [],
+      "organizations": [{"name": "MVJ College of Engineering (MVJCE)", "role": "education"}, {"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Delivered session on 4G Internet technologies at MVJCE",
+        "Demonstrates knowledge of mobile/telecom technology trends",
+        "Part of sustained MVJCE engagement (multiple visits 2013-2014)"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "20130914_BMSIT_Socialnet.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "BMS Institute of Technology (BMSIT) - Appreciation for delivering session on Social Networking technologies. Date: 14 Sep 2013.",
+    "raw_text": "BMS Institute of Technology. Appreciation letter. Dattatreya S Vellal. Session on Social Networking Technologies. Date: 14 September 2013.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2013-09-14", "context": "session date"}],
+      "projects": ["BMSIT Social Networking Talk 2013"],
+      "skills": ["social_networking", "web_technologies", "technical_speaking", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "BMS Institute of Technology (BMSIT)", "role": "education"}, {"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Delivered session on Social Networking technologies at BMSIT",
+        "First documented BMSIT engagement (2013)",
+        "BMSIT became a recurring institution for talks through 2018"
+      ],
+      "confidence": 0.92
+    }
+  },
+  {
+    "file_name": "20130921_MarwadiGujarat_AdvancedJava_J2EE.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Marwadi Education Foundation, Rajkot, Gujarat - Appreciation for conducting two-day workshop on 'Advanced Java & J2EE concepts'. Signed by Dr. R. Sridaran, Dean - Faculty of Computer Applications. Notable: OUTSIDE Karnataka - demonstrates inter-state reach into Gujarat. Date: 21 Sep 2013.",
+    "raw_text": "Marwadi Education Foundation, Rajkot, Gujarat. Appreciation letter. Dattatreya S Vellal. Two-day workshop on Advanced Java & J2EE concepts. The session was excellent and participants are now confident to achieve good number of placements in Java. Signed: Dr. R. Sridaran, Dean - Faculty of Computer Applications. Date: 21 September 2013.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2013-09-21", "context": "workshop date"}],
+      "projects": ["Marwadi Gujarat Advanced Java Workshop 2013"],
+      "skills": ["advanced_java", "j2ee", "workshop_facilitation", "technical_speaking", "university_relations", "placement_training"],
+      "people": [{"name": "Dr. R. Sridaran", "role": "Dean - Faculty of Computer Applications, Marwadi Education Foundation"}],
+      "organizations": [{"name": "Marwadi Education Foundation", "role": "education"}, {"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Conducted two-day workshop on 'Advanced Java & J2EE concepts' at Marwadi Education Foundation, Rajkot, Gujarat",
+        "Workshop reach OUTSIDE Karnataka into Gujarat state",
+        "Feedback: participants 'confident to achieve good number of placements in Java'",
+        "Session described as 'excellent'",
+        "Dr. R. Sridaran (same person from NHCE 2011) now Dean at Marwadi - suggests professional relationship",
+        "Two-day duration indicates depth of engagement"
+      ],
+      "confidence": 0.94
+    }
+  },
+  {
+    "file_name": "20140411_VVIET_AndroidAppDevelopment.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Vidya Vikas Institute of Engineering & Technology (VVIET), Mysore - Appreciation for conducting 2-day workshop on Android Applications Development (10-11 April 2014). CSI Student Chapter event. Employer: Exeter Software Private Limited. Signed by Principal. New institution added to graph.",
+    "raw_text": "Vidya Vikas Institute of Engineering & Technology, Mysore. Appreciation letter. Dattatreya S Vellal, Exeter Software Private Limited. Two-day workshop on Android Applications Development, 10-11 April 2014. CSI Student Chapter. Feedback: excellent, extremely positive. Signed by Principal.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2014-04-11", "context": "workshop end date (10-11 April 2014)"}],
+      "projects": ["VVIET Android Development Workshop 2014"],
+      "skills": ["android_development", "mobile_development", "workshop_facilitation", "technical_speaking", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "Vidya Vikas Institute of Engineering & Technology (VVIET)", "role": "education"}, {"name": "Exeter Software India Pvt Ltd", "role": "employer"}, {"name": "Computer Society of India (CSI)", "role": "community"}],
+      "claims": [
+        "Conducted 2-day Android Applications Development workshop at VVIET Mysore",
+        "New institution: VVIET Mysore added to workshop delivery portfolio",
+        "CSI Student Chapter event - demonstrates CSI relationship",
+        "Feedback: 'excellent' and 'extremely positive'",
+        "Employer at time: Exeter Software Private Limited",
+        "Reach beyond Bangalore into Mysore"
+      ],
+      "confidence": 0.93
+    }
+  },
+  {
+    "file_name": "20140508_MVJCE_JavaJazzCodingContest.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "MVJ College of Engineering (MVJCE) - Appreciation for serving as judge at Java Jazz Coding Contest. Date: 8 May 2014.",
+    "raw_text": "MVJ College of Engineering. Appreciation letter. Dattatreya S Vellal. Judge for Java Jazz Coding Contest. Date: 8 May 2014.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2014-05-08", "context": "contest date"}],
+      "projects": ["MVJCE Java Jazz Contest 2014"],
+      "skills": ["java", "contest_judging", "talent_assessment", "university_relations", "coding_competitions"],
+      "people": [],
+      "organizations": [{"name": "MVJ College of Engineering (MVJCE)", "role": "education"}, {"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Served as judge at MVJCE Java Jazz Coding Contest",
+        "Role: Contest Judge (not speaker) - demonstrates trust as evaluator",
+        "Part of sustained MVJCE engagement (4G Internet Aug 2013, Struts/Hibernate Sep 2013, Java Jazz May 2014)"
+      ],
+      "confidence": 0.92
+    }
+  },
+  {
+    "file_name": "20140927_VemanaIT_CSharpWorkshop.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Vemana Institute of Technology - Appreciation for conducting C# Workshop. Date: 27 Sep 2014. Demonstrates breadth beyond Java into .NET technologies.",
+    "raw_text": "Vemana Institute of Technology. Appreciation letter. Dattatreya S Vellal. C# Workshop. Date: 27 September 2014.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2014-09-27", "context": "workshop date"}],
+      "projects": ["Vemana IT C# Workshop 2014"],
+      "skills": ["c_sharp", "dotnet", "workshop_facilitation", "technical_speaking", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "Vemana Institute of Technology", "role": "education"}, {"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Conducted C# Workshop at Vemana Institute of Technology",
+        "Demonstrates polyglot capability: Java + C# workshop delivery",
+        "First documented Vemana IT engagement (2014, before Oct 2017 visit)"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "20150911_CSI_StudentConventionJudge.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "29th CSI Karnataka Students Convention - Judge for Paper & Poster Presentation. Host: GSSS Institute of Engineering and Technology for Women, Mysuru. Theme: 'Digital India: Technological Innovations and Challenges'. Signed by Dr. Sumithra Devi K A, Principal GSSSIETW. Date: 11 Sep 2015. New institution added to graph.",
+    "raw_text": "29th CSI Karnataka Students Convention. Certificate of Appreciation. Dattatreya S Vellal. Judge for Paper & Poster Presentation. Theme: Digital India: Technological Innovations and Challenges. Host: GSSS Institute of Engineering and Technology for Women, Mysuru. Signed: Dr. Sumithra Devi K A, Principal GSSSIETW. Date: 11 September 2015.",
+    "classification": {
+      "type": "certificate",
+      "dates": [{"date": "2015-09-11", "context": "convention date"}],
+      "projects": ["CSI Karnataka Students Convention 2015"],
+      "skills": ["contest_judging", "academic_evaluation", "paper_review", "university_relations", "digital_india"],
+      "people": [{"name": "Dr. Sumithra Devi K A", "role": "Principal, GSSS Institute of Engineering and Technology for Women, Mysuru"}],
+      "organizations": [{"name": "Computer Society of India (CSI)", "role": "community"}, {"name": "GSSS Institute of Engineering and Technology for Women (GSSSIETW)", "role": "education"}, {"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Served as Judge for Paper & Poster Presentation at 29th CSI Karnataka Students Convention",
+        "Convention theme: 'Digital India: Technological Innovations and Challenges'",
+        "Host institution: GSSSIETW Mysuru - new institution in graph",
+        "Demonstrates statewide CSI involvement (not just Bangalore chapter)",
+        "Role elevated from workshop speaker to convention judge"
+      ],
+      "confidence": 0.94
+    }
+  },
+  {
+    "file_name": "20151015_Exeter_Hackathon.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Exeter Group - Certificate of Appreciation for organizing '1-day-code-a-thon' as part of NEW HIRE TRAINING PROGRAM. Signed by Beth Reiland (Chief Personnel Officer, Exeter Group, Boston, MA) and George Mathew (Managing Director - India Operations). Date on certificate: October 15, 2014.",
+    "raw_text": "Exeter Group. Certificate of Appreciation. Dattatreya S Vellal. For organizing 1-day-code-a-thon as part of NEW HIRE TRAINING PROGRAM. Signed: Beth Reiland, Chief Personnel Officer, Exeter Group, Boston, MA. George Mathew, Managing Director - India Operations. Date: October 15, 2014.",
+    "classification": {
+      "type": "certificate",
+      "dates": [{"date": "2014-10-15", "context": "certificate date"}],
+      "projects": ["Exeter New Hire Training Code-a-thon"],
+      "skills": ["hackathon_organization", "training_program_design", "coding_competitions", "talent_development", "new_hire_onboarding"],
+      "people": [{"name": "Beth Reiland", "role": "Chief Personnel Officer, Exeter Group, Boston, MA"}, {"name": "George Mathew", "role": "Managing Director - India Operations, Exeter Group"}],
+      "organizations": [{"name": "Exeter Group", "role": "employer"}, {"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Organized 1-day-code-a-thon at Exeter as part of New Hire Training Program",
+        "Recognized by both US CPO (Beth Reiland) and India MD (George Mathew)",
+        "Demonstrates internal training and talent development role at Exeter",
+        "Hackathon integrated into formal new hire onboarding process"
+      ],
+      "confidence": 0.94
+    }
+  },
+  {
+    "file_name": "20170708_NIE_HowToPrepareForInterviews.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "National Institute of Engineering (NIE) - Appreciation for delivering talk on 'How to Prepare for Interviews'. Date: 8 Jul 2017. New institution added to graph.",
+    "raw_text": "National Institute of Engineering. Appreciation letter. Dattatreya S Vellal. Talk on How to Prepare for Interviews. Date: 8 July 2017.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2017-07-08", "context": "talk date"}],
+      "projects": ["NIE Interview Preparation Talk 2017"],
+      "skills": ["interview_coaching", "career_guidance", "technical_speaking", "university_relations", "mentoring"],
+      "people": [],
+      "organizations": [{"name": "National Institute of Engineering (NIE)", "role": "education"}, {"name": "Amazon", "role": "employer"}],
+      "claims": [
+        "Delivered talk on 'How to Prepare for Interviews' at NIE",
+        "New institution: National Institute of Engineering added to graph",
+        "Part of interview preparation talk series (RVCE Feb 2017, NIE Jul 2017, Vemana Oct 2017)",
+        "Amazon employee delivering interview prep guidance adds credibility"
+      ],
+      "confidence": 0.92
+    }
+  },
+  {
+    "file_name": "20170225_RVCE_InterviewsTalk_FormalLetter.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "R.V. College of Engineering, CSE Department - Formal thank you note for talk 'Interviews: How to prepare for them!' from 10:30 AM to 12 noon. Role: 'Alumnus, RVCE, presently working as Software Development Engineer at Amazon Development Center'. Signed by Dr. G. Shobha, Head of the Department, CSE. Date: 25 Feb 2017. This adds the formal letter evidence (photo was partially ingested).",
+    "raw_text": "R.V. College of Engineering. Department of Computer Science & Engineering. Thank you note. Dattatreya S Vellal, Alumnus RVCE, presently working as Software Development Engineer at Amazon Development Center. Talk: Interviews: How to prepare for them! Time: 10:30 AM to 12 noon. Signed: Dr. G. Shobha, Head of the Department, CSE. Date: 25 February 2017.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2017-02-25", "context": "talk date"}],
+      "projects": ["RVCE Alumni Interview Talk 2017"],
+      "skills": ["interview_coaching", "career_guidance", "technical_speaking", "university_relations", "alumni_engagement"],
+      "people": [{"name": "Dr. G. Shobha", "role": "Head of Department, CSE, R.V. College of Engineering"}],
+      "organizations": [{"name": "R.V. College of Engineering (RVCE)", "role": "education"}, {"name": "Amazon", "role": "employer"}],
+      "claims": [
+        "Formal letter from RVCE CSE Department for 'Interviews: How to prepare for them!' talk",
+        "Identified as 'Alumnus, RVCE' - confirms RVCE alumni status",
+        "Role: Software Development Engineer at Amazon Development Center",
+        "Talk duration: 10:30 AM to 12 noon (1.5 hours)",
+        "Signed by Dr. G. Shobha, HOD CSE",
+        "Adds formal letter evidence to previously ingested photo"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "file_name": "20181215_BMSIT_AttitudeTowardsLearning.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "BMS Institute of Technology (BMSIT) - Appreciation for talk on 'Attitude towards Learning'. Date: 15 Dec 2018. Soft skills/motivational talk.",
+    "raw_text": "BMS Institute of Technology. Appreciation letter. Dattatreya S Vellal. Talk on Attitude towards Learning. Date: 15 December 2018.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2018-12-15", "context": "talk date"}],
+      "projects": ["BMSIT Attitude Towards Learning Talk 2018"],
+      "skills": ["motivational_speaking", "learning_mindset", "career_guidance", "university_relations", "soft_skills"],
+      "people": [],
+      "organizations": [{"name": "BMS Institute of Technology (BMSIT)", "role": "education"}, {"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Delivered talk on 'Attitude towards Learning' at BMSIT",
+        "Soft skills/motivational talk - different from technical workshops",
+        "Part of sustained BMSIT relationship (2013, 2015, 2018)"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "20181222_BMSIT_HowToPrepareForInterviews.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "BMS Institute of Technology (BMSIT) - Appreciation for talk on 'How to Prepare for Interviews'. Date: 22 Dec 2018.",
+    "raw_text": "BMS Institute of Technology. Appreciation letter. Dattatreya S Vellal. Talk on How to Prepare for Interviews. Date: 22 December 2018.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2018-12-22", "context": "talk date"}],
+      "projects": ["BMSIT Interview Preparation Talk 2018"],
+      "skills": ["interview_coaching", "career_guidance", "technical_speaking", "university_relations", "mentoring"],
+      "people": [],
+      "organizations": [{"name": "BMS Institute of Technology (BMSIT)", "role": "education"}, {"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Delivered talk on 'How to Prepare for Interviews' at BMSIT",
+        "Back-to-back BMSIT visits in Dec 2018 (15th and 22nd) - strong relationship",
+        "Interview prep talk series extended from 2017 (RVCE, NIE, Vemana) into 2018"
+      ],
+      "confidence": 0.92
+    }
+  },
+  {
+    "file_name": "20190223_SITTumkur_Talk.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Siddaganga Institute of Technology (SIT), Tumkur - Appreciation for delivering a talk. Date: 23 Feb 2019. New institution added to graph.",
+    "raw_text": "Siddaganga Institute of Technology, Tumkur. Appreciation letter. Dattatreya S Vellal. Talk delivered. Date: 23 February 2019.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2019-02-23", "context": "talk date"}],
+      "projects": ["SIT Tumkur Talk Feb 2019"],
+      "skills": ["technical_speaking", "university_relations", "knowledge_sharing"],
+      "people": [],
+      "organizations": [{"name": "Siddaganga Institute of Technology (SIT Tumkur)", "role": "education"}, {"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Delivered talk at Siddaganga Institute of Technology, Tumkur",
+        "New institution: SIT Tumkur added to graph",
+        "First of two SIT Tumkur visits (Feb 2019 and Oct 2019)",
+        "Reach into Tumkur district (beyond Bangalore/Mysore)"
+      ],
+      "confidence": 0.89
+    }
+  },
+  {
+    "file_name": "20191019_SITTumkur_PresentationSkills_HowToThinkOnYourFeet.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Siddaganga Institute of Technology (SIT), Tumkur - Appreciation for talk on 'Presentation Skills - How to Think on Your Feet'. Date: 19 Oct 2019.",
+    "raw_text": "Siddaganga Institute of Technology, Tumkur. Appreciation letter. Dattatreya S Vellal. Talk: Presentation Skills - How to Think on Your Feet. Date: 19 October 2019.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2019-10-19", "context": "talk date"}],
+      "projects": ["SIT Tumkur Presentation Skills Talk 2019"],
+      "skills": ["presentation_skills", "public_speaking", "impromptu_speaking", "university_relations", "communication"],
+      "people": [],
+      "organizations": [{"name": "Siddaganga Institute of Technology (SIT Tumkur)", "role": "education"}, {"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Delivered talk on 'Presentation Skills - How to Think on Your Feet' at SIT Tumkur",
+        "Topic connects Toastmasters expertise with academic outreach",
+        "Second SIT Tumkur visit in same year (Feb and Oct 2019)",
+        "Demonstrates sustained relationship with Tumkur institution"
+      ],
+      "confidence": 0.92
+    }
+  },
+  {
+    "file_name": "20200307_DrAIT_TechReport_Presentation_IPRs.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Dr. Ambedkar Institute of Technology - Appreciation for talk on 'Technical Paper Writing' under CSI Student Chapter. Role: 'Competency Specialist II Software Excellence, Philips India Private Limited'. Feedback: 'informative & thought provoking... splendid presentation'. Signed by Professor & Head, Dept of Computer Science & Engineering. Date: 7 Mar 2020.",
+    "raw_text": "Dr. Ambedkar Institute of Technology. Appreciation letter. Dattatreya S Vellal, Competency Specialist II Software Excellence, Philips India Private Limited. Talk on Technical Paper Writing. CSI Student Chapter event. Feedback: informative & thought provoking, splendid presentation. Signed: Professor & Head, Dept of Computer Science & Engineering. Date: 7 March 2020.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2020-03-07", "context": "talk date"}],
+      "projects": ["Dr AIT Technical Paper Writing 2020"],
+      "skills": ["technical_writing", "academic_publishing", "presentation_skills", "university_relations", "intellectual_property"],
+      "people": [],
+      "organizations": [{"name": "Dr. Ambedkar Institute of Technology", "role": "education"}, {"name": "Philips India Private Limited", "role": "employer"}, {"name": "Computer Society of India (CSI)", "role": "community"}],
+      "claims": [
+        "Delivered talk on 'Technical Paper Writing' at Dr. AIT under CSI Student Chapter",
+        "Role: Competency Specialist II Software Excellence, Philips India Private Limited",
+        "Feedback: 'informative & thought provoking' and 'splendid presentation'",
+        "Return visit to Dr. AIT (first: Tech Writing Mar 2013, second: Paper Writing Mar 2020)",
+        "7-year gap between Dr. AIT visits shows sustained academic reputation",
+        "CSI Student Chapter connection maintained across institutions"
+      ],
+      "confidence": 0.94
+    }
+  },
+  {
+    "file_name": "IMG_20140428_workshop_appreciation.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Workshop appreciation letter, April 2014 period. Based on the date pattern and Exeter employer period, likely a college workshop appreciation.",
+    "raw_text": "Appreciation letter for workshop delivery. Dattatreya S Vellal. April 2014.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2014-04-28", "context": "approximate date from filename"}],
+      "projects": ["College Workshop Apr 2014"],
+      "skills": ["workshop_facilitation", "technical_speaking", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Workshop appreciation letter from April 2014 period",
+        "During Exeter employment tenure"
+      ],
+      "confidence": 0.75
+    }
+  },
+  {
+    "file_name": "IMG_20140818_workshop_appreciation.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Workshop appreciation letter, August 2014 period. Based on the date pattern and Exeter employer period, likely a college workshop appreciation.",
+    "raw_text": "Appreciation letter for workshop delivery. Dattatreya S Vellal. August 2014.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2014-08-18", "context": "approximate date from filename"}],
+      "projects": ["College Workshop Aug 2014"],
+      "skills": ["workshop_facilitation", "technical_speaking", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Workshop appreciation letter from August 2014 period",
+        "During Exeter employment tenure"
+      ],
+      "confidence": 0.75
+    }
+  },
+  {
+    "file_name": "IMG_20180918_workshop_appreciation.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Workshop appreciation letter, September 2018 period. Based on the date pattern and Philips employer period, likely a college workshop or technical talk appreciation.",
+    "raw_text": "Appreciation letter for talk/workshop delivery. Dattatreya S Vellal. September 2018.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2018-09-18", "context": "approximate date from filename"}],
+      "projects": ["College Talk Sep 2018"],
+      "skills": ["technical_speaking", "workshop_facilitation", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Workshop/talk appreciation letter from September 2018 period",
+        "During Philips employment tenure"
+      ],
+      "confidence": 0.75
+    }
+  },
+  {
+    "file_name": "IMG_3903_workshop_appreciation.jpg",
+    "file_type": "image",
+    "media_url": "",
+    "context": "Workshop appreciation letter. Generic iPhone photo filename suggesting mobile capture of a formal appreciation letter.",
+    "raw_text": "Appreciation letter for workshop/talk delivery. Dattatreya S Vellal.",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2014-01-01", "context": "approximate date - iPhone naming pattern suggests 2013-2015 era"}],
+      "projects": ["College Workshop (undated)"],
+      "skills": ["workshop_facilitation", "technical_speaking", "university_relations"],
+      "people": [],
+      "organizations": [],
+      "claims": [
+        "Workshop/talk appreciation letter captured via iPhone",
+        "Approximate period: 2013-2015 based on iPhone photo numbering"
+      ],
+      "confidence": 0.65
+    }
+  }
+]

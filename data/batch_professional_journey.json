@@ -1,0 +1,138 @@
+[
+  {
+    "file_name": "career-philips-role-2018-present.txt",
+    "file_type": "txt",
+    "media_url": "https://www.dsvellal.com/professional-journey",
+    "context": "Philips role: Software Competency Lead, Software Excellence, Innovation Engineering. Sept 2018 - Present. Philips North America LLC & Philips India Private Limited.",
+    "raw_text": "Software Competency Lead, Software Excellence, Innovation Engineering at Philips (Sept 2018 - Present). Driving digital transformation and fostering software excellence globally. Coaching and mentoring across diverse teams. Leading technical debt reduction initiatives. Implementing CI/CD adoption strategies. Influencing stakeholders across the organization. Skills: 25+ programming languages, software design/architecture, quality/craftsmanship/reliability, static code analysis (Fortify, Coverity, BlackDuck, CodeScene, GitHub Actions), lean/agile methods, secure/resilient development.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2018-09-18", "context": "role start date"}, {"date": "2026-07-28", "context": "present/ongoing"}],
+      "projects": ["Philips Software Excellence Program"],
+      "skills": ["software_architecture", "digital_transformation", "technical_debt_reduction", "cicd", "static_code_analysis", "secure_development", "cross_functional_leadership", "coaching", "organizational_leadership"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Title: Software Competency Lead, Software Excellence, Innovation Engineering",
+        "Driving digital transformation and fostering software excellence globally",
+        "Proficient in 25+ programming languages",
+        "Leading technical debt reduction and CI/CD adoption strategies",
+        "Influencing stakeholders across the organization",
+        "Tools expertise: Fortify, Coverity, BlackDuck, CodeScene, GitHub Actions",
+        "Promoted to Principal (youngest at Philips India)"
+      ],
+      "confidence": 0.97
+    }
+  },
+  {
+    "file_name": "career-philips-metrics-achievements.txt",
+    "file_type": "txt",
+    "media_url": "https://www.dsvellal.com/professional-journey",
+    "context": "Philips quantifiable achievements: $300K infrastructure savings, 60% delivery time reduction, 99.999% uptime, €2.1M savings, $100K annual savings, 30% release cycle reduction.",
+    "raw_text": "Philips quantifiable achievements: (1) $300K in infrastructure savings through automation initiatives. (2) 60% product delivery time reduction via continuous value delivery strategy. (3) Led Bar Raiser program training 50+ engineers, reducing senior hiring time by 50%. (4) 99.999% uptime for Service-Ops automation benefiting 7,000+ engineers. (5) €2.1M in savings through 3-year digital transformation roadmap with €3.5M in future opportunities. (6) $100K annual savings via quality-at-desk program. (7) 30% release cycle reduction with CI/CD pipeline deployment. (8) 18% candidate NPS and 15% manager NPS gains from hiring strategy improvements. (9) Authored 2024 State of Craftsmanship report.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2018-09-18", "context": "role start"}, {"date": "2024-01-01", "context": "craftsmanship report"}],
+      "projects": ["Philips Software Excellence Program", "Bar Raisers Initiative", "PIC"],
+      "skills": ["automation", "digital_transformation", "cicd", "cost_optimization", "program_management", "hiring_bar_raising", "service_reliability"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "$300K in infrastructure savings through automation",
+        "60% product delivery time reduction via continuous value delivery",
+        "Trained 50+ engineers in Bar Raiser program, reducing senior hiring time by 50%",
+        "99.999% uptime for Service-Ops automation benefiting 7,000+ engineers",
+        "€2.1M in savings through 3-year digital transformation roadmap",
+        "€3.5M in future opportunities identified in roadmap",
+        "$100K annual savings via quality-at-desk program",
+        "30% release cycle reduction with CI/CD pipeline deployment",
+        "18% candidate NPS and 15% manager NPS gains",
+        "Promoted to Principal (youngest at Philips India)",
+        "Authored 2024 State of Craftsmanship report"
+      ],
+      "confidence": 0.98
+    }
+  },
+  {
+    "file_name": "career-amazon-role-2015-2018.txt",
+    "file_type": "txt",
+    "media_url": "https://www.dsvellal.com/professional-journey",
+    "context": "Amazon role: Software Development Engineer II. Feb 2015 - Aug 2018. Amazon Development Center India Private Limited. TRMS team.",
+    "raw_text": "Software Development Engineer II at Amazon Development Center India (Feb 2015 - Aug 2018). Enhancing infrastructure and fraud prevention systems. Key achievements: Migrated 57 hosts across 22 environments. Developed fraud detection APIs for Amazon Pay. Automated daily ingestion of over 2 billion ASINs for analytics. Reduced fraud check latency by 86-89%. Investigated high-impact fraud rule anomalies during Prime Day 2018. Developed tools saving ML scientists and engineers 60% effort. Created bulk action tools resolving thousands of SLA-missed tasks. Designed fraud risk scoring API (TRMS ZEUS Team Award). Enabled secure document uploads replacing legacy fax system.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2015-02-15", "context": "role start"}, {"date": "2018-08-31", "context": "role end"}],
+      "projects": ["TRMS", "Amazon Pay Fraud Detection", "ASIN Analytics Ingestion"],
+      "skills": ["fraud_detection", "api_development", "system_migration", "performance_optimization", "data_ingestion", "aws", "java", "microservices", "automation"],
+      "people": [],
+      "organizations": [{"name": "Amazon", "role": "employer"}],
+      "claims": [
+        "Title: Software Development Engineer II at Amazon",
+        "Migrated 57 hosts across 22 environments (earned commendation)",
+        "Automated daily ingestion of over 2 billion ASINs for analytics",
+        "Reduced fraud check latency by 86-89%",
+        "Developed fraud detection APIs for Amazon Pay",
+        "Investigated high-impact fraud rule anomalies during Prime Day 2018",
+        "Designed fraud risk scoring API (TRMS ZEUS Team Award recipient)",
+        "Tools saved ML scientists and engineers 60% effort in variable comparison",
+        "Created bulk action tools resolving thousands of SLA-missed tasks",
+        "Enabled secure document uploads replacing legacy fax system"
+      ],
+      "confidence": 0.97
+    }
+  },
+  {
+    "file_name": "career-exeter-role-2013-2015.txt",
+    "file_type": "txt",
+    "media_url": "https://www.dsvellal.com/professional-journey",
+    "context": "Exeter Software India role: Senior Lead - Software Development. April 2013 - Nov 2015. Wholly owned subsidiary of Exeter Group.",
+    "raw_text": "Senior Lead - Software Development at Exeter Software India (ESI) Private Limited (April 2013 - Nov 2015). Wholly owned subsidiary of Exeter Group. Key projects: OneGate portal stack, Apollo architecture, Manual Override Tool, Edifecs Integration POC. Technologies: Java/J2EE, LifeRay, Oracle Policy Automator, Oracle Siebel, Oracle SOA Suite, Oracle WebLogic. Recognized as TExeter Thought Leader. Led and mentored development teams. Participated in Emergency Response Team (ERT). Cross-functional collaboration with international teams.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2013-04-01", "context": "role start"}, {"date": "2015-11-30", "context": "role end"}],
+      "projects": ["Texeter", "OneGate", "Apollo Architecture"],
+      "skills": ["java", "j2ee", "software_architecture", "oracle_soa", "liferay", "agile_practices", "team_leadership", "solution_design", "root_cause_analysis"],
+      "people": [],
+      "organizations": [{"name": "Exeter Software India Pvt Ltd", "role": "employer"}, {"name": "Exeter Group", "role": "employer"}],
+      "claims": [
+        "Title: Senior Lead - Software Development at Exeter",
+        "Spearheaded Edifecs Integration POC success for OneGate",
+        "Provided architectural direction for Apollo architecture",
+        "Recognized as TExeter Thought Leader",
+        "Led and mentored development teams",
+        "Participated in Emergency Response Team (ERT)",
+        "Cross-functional collaboration with international teams",
+        "Technologies: LifeRay, Oracle Policy Automator, Oracle Siebel, Oracle SOA Suite, Oracle WebLogic"
+      ],
+      "confidence": 0.96
+    }
+  },
+  {
+    "file_name": "career-ibm-role-2007-2013.txt",
+    "file_type": "txt",
+    "media_url": "https://www.dsvellal.com/professional-journey",
+    "context": "IBM India Software Labs role: Software Engineer. July 2007 - March 2013. Lotus Expeditor, middleware development, web services.",
+    "raw_text": "Software Engineer at IBM India Software Labs (July 2007 - March 2013). Key work: Led full-lifecycle development for Lotus Expeditor Webcontainer. Developed Lotus Expeditor Toolkit components (v6.2.1, v6.2.2, v6.2.3). Engineered LWI support for JAX-WS web services. Implemented JAX-WS specification features. Developed middleware services for condition monitoring. Served as Scrum Master. Co-authored three DeveloperWorks articles on LotusLive. Best Implementation award for Micro-Insurance at India Hackday 2010. Hackday Advisory Council member. Contributed to Face Detection and Recognition project at R.V. College of Engineering.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2007-07-01", "context": "role start"}, {"date": "2013-03-31", "context": "role end"}],
+      "projects": ["Lotus Expeditor", "LotusLive", "Micro-Insurance Hackday Project"],
+      "skills": ["java", "j2ee", "jax_ws", "web_services", "middleware", "scrum_master", "eclipse_ide", "accessibility_testing", "junit"],
+      "people": [],
+      "organizations": [{"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Title: Software Engineer at IBM India Software Labs (July 2007 - March 2013)",
+        "Led full-lifecycle development for Lotus Expeditor Webcontainer",
+        "Developed Lotus Expeditor Toolkit components (v6.2.1, v6.2.2, v6.2.3)",
+        "Engineered LWI support for JAX-WS web services",
+        "Co-authored three DeveloperWorks articles on LotusLive",
+        "Best Implementation award for Micro-Insurance at India Hackday 2010",
+        "Hackday Advisory Council member",
+        "Served as Scrum Master",
+        "Contributed to Face Detection and Recognition project at RVCE (college project)",
+        "Ensured WebSphere Application Server (WAS) interoperability"
+      ],
+      "confidence": 0.97
+    }
+  }
+]

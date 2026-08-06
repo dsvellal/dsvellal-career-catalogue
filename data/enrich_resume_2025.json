@@ -1,0 +1,15 @@
+[
+  {"type": "project", "name": "Bar Raiser Program", "properties": {"employer": "Philips North America LLC", "start_date": "2022-01-01", "description": "Launched and led global 'Bar Raiser' program with 15 cross-functional team members. Trained 50+ engineers. Cut senior hiring time by 50%. Also ran at Philips India (2019–2021): improved candidate NPS by 18%, manager NPS by 15%."}},
+  {"type": "project", "name": "State of Craftsmanship Report", "properties": {"employer": "Philips North America LLC", "start_date": "2024-01-01", "description": "Synthesized complex global software development metrics to author the 2024 State of Craftsmanship report. Surfaced critical patterns to elevate software delivery speed and quality across Philips globally."}},
+  {"type": "project", "name": "Service-Ops Automation", "properties": {"employer": "Philips North America LLC", "start_date": "2022-01-01", "description": "Pioneered adoption of digital platforms and Service-Ops automation. Boosted productivity for 7000+ Philips engineers worldwide with 99.999% uptime."}},
+
+  {"type": "skill", "name": "GitHub Copilot", "properties": {"category": "ai_tool", "first_seen": "2023-01-01", "proficiency": "proficient"}},
+  {"type": "skill", "name": "Prompt Engineering", "properties": {"category": "ai_technology", "first_seen": "2023-01-01", "proficiency": "proficient"}},
+  {"type": "skill", "name": "SAFe", "properties": {"category": "agile_methodology", "first_seen": "2021-11-01", "proficiency": "proficient"}},
+  {"type": "skill", "name": "Python", "properties": {"category": "programming_language", "first_seen": "2021-11-01", "proficiency": "proficient"}},
+  {"type": "skill", "name": "AWS", "properties": {"category": "cloud_platform", "first_seen": "2016-02-01", "proficiency": "proficient"}},
+  {"type": "skill", "name": "Azure", "properties": {"category": "cloud_platform", "first_seen": "2021-11-01", "proficiency": "proficient"}},
+  {"type": "skill", "name": "GitHub", "properties": {"category": "tool", "first_seen": "2021-11-01", "proficiency": "expert"}},
+  {"type": "skill", "name": "Java", "properties": {"category": "programming_language", "first_seen": "2007-07-01", "proficiency": "expert"}},
+  {"type": "skill", "name": "Bar Raising", "properties": {"category": "hiring", "first_seen": "2019-01-01", "proficiency": "expert", "scale": "global, 15 members, 50+ engineers trained, 50% senior hiring time reduction"}}
+]

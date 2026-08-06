@@ -1,0 +1,305 @@
+[
+  {
+    "file_name": "prof-design-patterns-college-of-engineering-2011.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Design Patterns and their Evolution - talk at a College of Engineering, November 2011. Role: Lead Developer, Industry Solutions, IBM ISL.",
+    "raw_text": "Design Patterns and their Evolution from Christopher Alexander to The Gang of Four!! By Dattatreya S Vellal, Lead developer, Industry Solutions - IBM ISL. http://in.linkedin.com/in/dattatreya.vellal. November 4th, 2011. College of Engineering auditorium.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2011-11-04", "context": "talk date"}],
+      "projects": ["Design Patterns Evolution Talk 2011"],
+      "skills": ["design_patterns", "technical_speaking", "university_relations", "knowledge_sharing", "software_architecture"],
+      "people": [],
+      "organizations": [{"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Delivered talk on 'Design Patterns and their Evolution from Christopher Alexander to The Gang of Four'",
+        "Role at time: Lead Developer, Industry Solutions, IBM ISL",
+        "Presented at a College of Engineering auditorium",
+        "Earliest documented college technical talk (2011, before RNSIT 2013)"
+      ],
+      "confidence": 0.93
+    }
+  },
+  {
+    "file_name": "prof-eclipse-day-ibm-2010.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Eclipse Day 2010 at IBM. Tech evangelism booth: 'I KNOW EDITORS! QUIZ ME' - engaging colleagues on Eclipse IDE knowledge.",
+    "raw_text": "Eclipse Day 2010. I KNOW EDITORS! QUIZ ME. Dattatreya Vellal at tech evangelism booth at IBM, quizzing colleagues on Eclipse IDE knowledge. Stickers/prizes for correct answers.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2010-01-01", "context": "event year (2010)"}],
+      "projects": ["Eclipse Day 2010"],
+      "skills": ["tech_evangelism", "eclipse_ide", "knowledge_sharing", "community_building", "innovation"],
+      "people": [],
+      "organizations": [{"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Ran tech evangelism booth at IBM Eclipse Day 2010",
+        "Quizzed colleagues on Eclipse IDE expertise",
+        "Demonstrated internal knowledge sharing and tech community engagement",
+        "Part of IBM's developer tools advocacy culture"
+      ],
+      "confidence": 0.89
+    }
+  },
+  {
+    "file_name": "prof-greenwood-high-speech-preparation.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Greenwood High International School - Session on 'How to Prepare for a Good Speech'. Interactive circle discussion with high school students.",
+    "raw_text": "Session at Greenwood High International School on How to Prepare for a Good Speech. Interactive circle format discussion with students. Multiple Toastmasters volunteers present as panellists.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2013-01-01", "context": "approximate date"}],
+      "projects": ["Greenwood High Speech Workshop"],
+      "skills": ["public_speaking", "mentoring", "workshop_facilitation", "communication", "teaching"],
+      "people": [],
+      "organizations": [{"name": "Greenwood High International School", "role": "education"}, {"name": "Toastmasters International", "role": "community"}],
+      "claims": [
+        "Conducted session on speech preparation at Greenwood High International School",
+        "Interactive circle discussion format with high school students",
+        "Connected Toastmasters expertise with school outreach",
+        "Teaching public speaking skills to school-age students"
+      ],
+      "confidence": 0.88
+    }
+  },
+  {
+    "file_name": "prof-csi-bangalore-workshop-2015.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "CSI (Computer Society of India) Bangalore Chapter workshop, April 2015. Technical workshop for professionals and students.",
+    "raw_text": "CSI Bangalore Chapter. Technical workshop conducted by Dattatreya S Vellal. Group photo with participants at CSI Bangalore Chapter facility. Date: 19 April 2015.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2015-04-19", "context": "workshop date"}],
+      "projects": ["CSI Bangalore Chapter Workshop"],
+      "skills": ["workshop_facilitation", "technical_speaking", "knowledge_sharing", "community_building"],
+      "people": [],
+      "organizations": [{"name": "Computer Society of India (CSI)", "role": "community"}, {"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Conducted technical workshop at CSI Bangalore Chapter",
+        "Engaged with professional body (CSI) as workshop facilitator",
+        "Workshop for mix of professionals and students"
+      ],
+      "confidence": 0.89
+    }
+  },
+  {
+    "file_name": "prof-large-auditorium-tech-talk-2016.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Technical talk at college auditorium with 100+ students, November 2016. Large-venue presentation with microphone, walking among audience.",
+    "raw_text": "Technical talk at engineering college auditorium. 100+ students seated in tiered auditorium seating. Speaker (Dattatreya Vellal) walking among audience with microphone engaging interactively. Slide projected showing code examples. November 2016.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2016-11-05", "context": "talk date"}],
+      "projects": ["College Technical Talk 2016"],
+      "skills": ["technical_speaking", "audience_engagement", "knowledge_sharing", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Delivered technical presentation to 100+ students in auditorium setting",
+        "Interactive style - walking among audience rather than staying at podium",
+        "Demonstrated ability to engage large audiences"
+      ],
+      "confidence": 0.87
+    }
+  },
+  {
+    "file_name": "prof-solid-principles-college-2018.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "SOLID Principles technical talk at engineering college, September 2018. Slide shows code example with IReportFetcher/IReportPrinter interfaces. Footer: 'by Dattatreya S Vellal. Do not distribute without permission.'",
+    "raw_text": "Technical talk on SOLID Principles at engineering college. Slide: 'Let's look at an example!' showing Report class with IReportFetcher, IReportPrinter, IReportFormatter interfaces. Blackboard shows 'Technique... Solid P...' Footer: 'by Dattatreya S Vellal. Do not distribute without permission.' September 2018.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2018-09-18", "context": "talk date"}],
+      "projects": ["SOLID Principles College Talk 2018"],
+      "skills": ["solid_principles", "object_oriented_design", "technical_speaking", "university_relations", "knowledge_sharing"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Delivered SOLID Principles talk with live code examples at engineering college",
+        "Created original presentation materials (copyright notice on slides)",
+        "Continued SOLID principles teaching from NHCE 2016 into 2018",
+        "Demonstrated deep expertise with interface-based design examples"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "prof-philips-test-pyramid-2019.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Philips internal session on 'Test Pyramid & what it means', July 2019. Corporate training room with 15+ Philips colleagues.",
+    "raw_text": "Philips internal technical session. Slide: 'Test pyramid & what it means'. Presenting to 15+ colleagues in modern corporate conference room. Source reference to Martin Fowler's practical test pyramid. Explaining unit tests, integration tests, E2E tests hierarchy. July 2019.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2019-07-04", "context": "session date"}],
+      "projects": ["Philips Internal Technical Training"],
+      "skills": ["testing_strategy", "code_quality", "knowledge_sharing", "workshop_facilitation", "test_automation"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Conducted internal session on Test Pyramid at Philips",
+        "Teaching testing strategy (unit/integration/E2E hierarchy) to colleagues",
+        "Part of broader code quality and engineering excellence advocacy at Philips",
+        "Connects to Software Excellence Conference (Sep 2019) and .craft program"
+      ],
+      "confidence": 0.92
+    }
+  },
+  {
+    "file_name": "prof-philips-internal-session-sep2019.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Philips internal technical session, September 2019. 30+ colleagues attending in modern Philips office conference room.",
+    "raw_text": "Philips internal technical session. 30+ colleagues attending in modern conference room. Whiteboard with session agenda visible. Laptops open for hands-on participation. September 2019.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2019-09-23", "context": "session date"}],
+      "projects": ["Philips Internal Technical Training"],
+      "skills": ["knowledge_sharing", "technical_speaking", "engineering_culture", "workshop_facilitation"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Conducted technical session for 30+ Philips colleagues",
+        "Hands-on format with laptops (not just presentation)",
+        "Part of sustained internal knowledge sharing at Philips"
+      ],
+      "confidence": 0.89
+    }
+  },
+  {
+    "file_name": "prof-social-media-microservices-2019.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Talk on 'Social Media and the world of Microservices' at a college, May 2019. Distributing books (Design of Algorithms) as prizes.",
+    "raw_text": "Social Media and the world of Microservices. Dattatreya S Vellal, dsvellal@gmail.com. Talk at engineering college. Distributing books (Anany Levitin's Design & Analysis of Algorithms) to students as prizes. May 2019.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2019-05-18", "context": "talk date"}],
+      "projects": ["Microservices College Talk 2019"],
+      "skills": ["microservices", "social_media_technology", "technical_speaking", "university_relations", "knowledge_sharing"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Delivered talk on 'Social Media and the world of Microservices'",
+        "Distributed algorithm textbooks to students as prizes",
+        "Demonstrated microservices architecture expertise",
+        "Continued academic engagement while at Philips"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "prof-college-talk-oct2019.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Guest lecture at college, October 2019. Addressing students in informal hall setting with co-speaker.",
+    "raw_text": "Guest lecture at engineering college. Addressing group of 30+ students in informal seminar hall setting. Interactive Q&A format. October 2019.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2019-10-19", "context": "talk date"}],
+      "projects": ["College Guest Lecture Oct 2019"],
+      "skills": ["technical_speaking", "career_mentoring", "university_relations", "knowledge_sharing"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Delivered guest lecture at engineering college",
+        "Interactive format with students",
+        "Continued academic engagement at multiple institutions"
+      ],
+      "confidence": 0.86
+    }
+  },
+  {
+    "file_name": "prof-dr-ambedkar-institute-csi-2020.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Dr. Ambedkar Institute of Technology, CSI Student Branch, March 2020. Ruby Jubilee 1980-2020. Dept of Computer Science & Engineering guest lecture.",
+    "raw_text": "Dr. Ambedkar Institute of Technology. Ruby Jubilee 1980-2020. Department of Computer Science & Engineering. Computer Society of India Student Branch. Institutional Membership No. M103... Group photo with 40+ students and faculty. March 2020.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2020-03-07", "context": "talk date"}],
+      "projects": ["Dr. Ambedkar IT Guest Lecture"],
+      "skills": ["technical_speaking", "university_relations", "knowledge_sharing", "community_building"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}, {"name": "Dr. Ambedkar Institute of Technology", "role": "education"}, {"name": "Computer Society of India (CSI)", "role": "community"}],
+      "claims": [
+        "Delivered guest lecture at Dr. Ambedkar Institute of Technology, CSI Student Branch",
+        "Part of institution's Ruby Jubilee (40th anniversary) celebration",
+        "Ninth academic institution engaged for professional givebacks",
+        "Continued CSI chapter engagement (previously NHCE CSI in 2016)"
+      ],
+      "confidence": 0.92
+    }
+  },
+  {
+    "file_name": "prof-gmit-mca-event-2009.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "GM Institute of Technology MCA department event, ~2009. Speaking at computer lab with event banner projected.",
+    "raw_text": "GM Institute of Technology. MCA department technical event. Speaking in computer lab with event banner projected showing schedule of talks. Faculty seated alongside. Circa 2009.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2009-01-01", "context": "approximate year"}],
+      "projects": ["GMIT MCA Technical Event"],
+      "skills": ["technical_speaking", "university_relations", "knowledge_sharing"],
+      "people": [],
+      "organizations": [{"name": "IBM", "role": "employer"}, {"name": "GM Institute of Technology", "role": "education"}],
+      "claims": [
+        "Early technical talk at GM Institute of Technology MCA department",
+        "Engaged with GMIT even during IBM tenure (before 2013 J2EE workshop)",
+        "Speaking at computer lab setting with faculty present"
+      ],
+      "confidence": 0.85
+    }
+  },
+  {
+    "file_name": "prof-college-hall-talk-2020.jpg",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Guest lecture at college hall addressing 50+ students with microphone and projector, July 2020.",
+    "raw_text": "Guest lecture at college hall. Addressing 50+ students with microphone. Projector presentation visible. Large seminar hall setting. July 2020.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2020-07-28", "context": "talk date"}],
+      "projects": ["College Guest Lecture Jul 2020"],
+      "skills": ["technical_speaking", "university_relations", "knowledge_sharing", "career_mentoring"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Delivered guest lecture to 50+ students",
+        "Continued academic engagement even into 2020 (pre-pandemic or early pandemic period)"
+      ],
+      "confidence": 0.85
+    }
+  },
+  {
+    "file_name": "prof-ai-for-3rd-graders-2026.png",
+    "file_type": "image",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Teaching 3rd graders about AI integration into curriculum, January 2026. Appreciation email from teacher Gina Clark: 'The students absolutely loved it and were especially eager to try out some of the tools and ideas you shared.'",
+    "raw_text": "Email thread. Datta V to Adam: 'We will interview Dr. Seuss and Dogman! We can change characters as well there is no preparation required for training the AI model for the characters we choose.' Clark, Gina to Megan, me, Adam: 'Hi Mr. Vellal, Thank you so much for taking the time out of your day to visit our 3rd graders and share the exciting possibilities of integrating AI into the curriculum. The students absolutely loved it and were especially eager to try out some of the tools and ideas you shared. We really appreciate you making the experience engaging and fun for them. It definitely sparked a lot of curiosity and enthusiasm! Thanks again for such a great visit. Gina'",
+    "classification": {
+      "type": "email_appreciation",
+      "dates": [{"date": "2026-01-27", "context": "visit date (approx)"}],
+      "projects": ["AI for Elementary Students"],
+      "skills": ["artificial_intelligence", "teaching", "ai_application", "child_development", "knowledge_sharing", "creative_education"],
+      "people": [{"name": "Gina Clark", "role": "3rd grade teacher"}],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Taught 3rd graders about integrating AI into curriculum",
+        "Used creative approach: interviewing fictional characters (Dr. Seuss, Dogman) via AI",
+        "Teacher feedback: students 'absolutely loved it' and were 'eager to try out tools'",
+        "Sparked 'curiosity and enthusiasm' in young learners about AI",
+        "Made AI accessible and fun for elementary school children",
+        "Most recent professional giveback (January 2026)"
+      ],
+      "confidence": 0.96
+    }
+  }
+]

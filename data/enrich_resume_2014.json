@@ -1,0 +1,21 @@
+[
+  {"type": "organization", "name": "Exeter Software India Pvt. Ltd.", "properties": {"type": "employer", "location": "Bangalore, India", "tenure_start": "2013-04-01", "tenure_end": "2015-11-30", "role": "Senior Technical Lead / Senior Lead Software Development", "parent": "Exeter Group"}},
+  {"type": "skill", "name": "Weblogic", "properties": {"category": "application_server", "first_seen": "2013-04-01"}},
+  {"type": "skill", "name": "Architecture", "properties": {"category": "engineering_practice", "first_seen": "2013-04-01"}},
+  {"type": "skill", "name": "Struts", "properties": {"category": "framework", "first_seen": "2013-04-01"}},
+  {"type": "skill", "name": "Hibernate", "properties": {"category": "framework", "first_seen": "2013-04-01"}},
+  {"type": "skill", "name": "Android Development", "properties": {"category": "mobile_development", "first_seen": "2013-04-01"}},
+  {"type": "project", "name": "OneGate", "properties": {"employer": "Exeter Software India Pvt. Ltd.", "start_date": "2013-04-01", "end_date": "2015-11-30", "description": "Affordable Care Act (Obamacare) Health Insurance Exchange implementation for Hawaii and Vermont. Architecture and Prototyping group member — youngest and only India representative."}},
+  {"type": "project", "name": "TExeter", "properties": {"employer": "Exeter Software India Pvt. Ltd.", "start_date": "2013-01-01", "end_date": "2015-11-30", "description": "Year-long internal Tech/Fun sessions at Exeter to improve engagement and cross-team collaboration; recognized by Exeter for technology evangelism, 28 Jan 2015"}},
+  {"type": "project", "name": "Exeter Internal Training", "properties": {"employer": "Exeter Software India Pvt. Ltd.", "start_date": "2014-07-11", "description": "Internal talks on Design Patterns and Agile-like adoptions at Exeter"}},
+  {"type": "project", "name": "VVIET Android Development Workshop 2014", "properties": {"start_date": "2013-04-10", "end_date": "2013-04-11", "description": "Two-day Android Applications Development workshop at VVIET Mysore"}},
+  {"type": "project", "name": "Marwadi Gujarat Advanced Java Workshop 2013", "properties": {"start_date": "2013-09-21", "description": "Two-day Advanced Java and J2EE workshop at Marwadi Education Foundation, Gujarat"}},
+  {"type": "project", "name": "MVJCE Java Jazz Contest 2014", "properties": {"start_date": "2014-05-03", "description": "Java Programming Contest at MVJ College of Engineering"}},
+  {"type": "project", "name": "Design Patterns Talk at RNSIT", "properties": {"start_date": "2013-03-16", "description": "Technical seminar on Design Patterns at R N S Institute of Technology"}},
+  {"type": "project", "name": "BMSIT Social Networking Talk 2013", "properties": {"start_date": "2013-09-14", "description": "Technical seminar on Behind the scene technologies of the Social-net at BMSIT"}},
+  {"type": "project", "name": "MVJCE 4G Internet Talk 2013", "properties": {"start_date": "2013-08-14", "description": "Opening talk on Internet and its evolution at National Workshop on 4G Internet & Associated Technologies, MVJCE"}},
+  {"type": "project", "name": "MVJCE Guest Lecture - Struts and Hibernate", "properties": {"start_date": "2013-09-28", "description": "Technical seminar on Struts and Hibernate at MVJCE"}},
+  {"type": "project", "name": "GMIT Java & J2EE Workshop", "properties": {"start_date": "2013-11-09", "description": "One-day J2EE and Advanced Java workshop at GMIT Davanagere"}},
+  {"type": "project", "name": "Exeter New Hire Training Code-a-thon", "properties": {"employer": "Exeter Software India Pvt. Ltd.", "start_date": "2014-10-15", "description": "1-day code-a-thon challenge at Exeter Software India Pvt. Ltd."}},
+  {"type": "project", "name": "Capturing Key Performance Indicators", "properties": {"start_date": "2014-04-02", "description": "Patent: Managing Key Performance Indicators — granted, publication pending as of 2014 resume"}}
+]

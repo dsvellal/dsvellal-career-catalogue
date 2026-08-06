@@ -1,0 +1,162 @@
+[
+  {
+    "file_name": "social-program-yogashree-volunteer.txt",
+    "file_type": "txt",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Ongoing volunteering with Yogashree (Hindu Seva Pratishtana) to spread yoga principles and their adoption in daily life. Connected to: Yogashree website launch, PES College yoga talk (2010), Exeter yoga sessions (2013), yoga teaching to children (2014).",
+    "raw_text": "Volunteer with Yogashree to spread the knowledge of the principles of yoga & adopting them in day-day life. Sustained involvement including building the Yogashree website, conducting sessions at PES College (200 students, 2010), corporate yoga at Exeter (2013), and yoga for children at Bala Samskara Shibira (2014). Certified Yoga trainer from SVYASA.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2008-01-01", "context": "involvement start (approx)"}, {"date": "2021-01-01", "context": "ongoing"}],
+      "projects": ["Yogashree Volunteering"],
+      "skills": ["yoga_instruction", "volunteering", "community_building", "health_wellness", "pro_bono_technical_work"],
+      "people": [],
+      "organizations": [{"name": "Hindu Seva Pratishtana", "role": "community"}, {"name": "SVYASA", "role": "education"}],
+      "claims": [
+        "Long-term volunteer with Yogashree spreading yoga principles",
+        "Certified Yoga trainer from SVYASA (Swami Vivekananda Yoga Anusandhana Samsthana)",
+        "Conducts corporate and social awareness sessions about Yoga and its applications",
+        "Built Yogashree website pro bono (tech skills applied to community)",
+        "Sustained involvement spanning 2008-2021+"
+      ],
+      "confidence": 0.93
+    }
+  },
+  {
+    "file_name": "social-program-sudhee-volunteer.txt",
+    "file_type": "txt",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Ongoing volunteering with SuDhee to spend time with lesser privileged kids, introducing them to modern art, science, and creative thinking. Connected to: essay writing (2010), science experiments (2011), Raksha Bandhan (2011), personality development games (2011).",
+    "raw_text": "Volunteer with SuDhee to spend time with lesser privileged kids & introduce them to modern art, science & creative ways of thinking. Activities documented: essay writing sessions (Nov 2010), science experiments with balloons and Newton's laws (Aug 2011), Raksha Bandhan cultural celebrations at Motherland English School (Aug 2011), personality development games outdoors (Dec 2011).",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2010-01-01", "context": "involvement start"}, {"date": "2012-01-01", "context": "documented period end"}],
+      "projects": ["SuDhee Volunteering"],
+      "skills": ["volunteering", "teaching", "child_development", "creative_education", "science_education", "community_building"],
+      "people": [],
+      "organizations": [{"name": "SuDhee", "role": "community"}],
+      "claims": [
+        "Sustained volunteering with SuDhee program for underprivileged children",
+        "Introduced children to modern art, science, and creative thinking",
+        "Multiple documented sessions across 2010-2011 (4+ events)",
+        "Activities ranged from essay writing to science experiments to cultural celebrations",
+        "Demonstrated ability to make learning engaging for young underprivileged children"
+      ],
+      "confidence": 0.93
+    }
+  },
+  {
+    "file_name": "social-program-mentor-together-nie.txt",
+    "file_type": "txt",
+    "media_url": "",
+    "context": "Mentored a final year CSE graduate from NIE Mysore via the Mentor Together program. Formal mentoring engagement through structured program.",
+    "raw_text": "Mentored a final year CSE graduate from NIE (National Institute of Engineering) Mysore, via the Mentor Together program. Structured mentoring engagement providing career guidance, technical mentoring, and professional development support to an engineering student.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2015-01-01", "context": "approximate mentoring period"}],
+      "projects": ["Mentor Together Program"],
+      "skills": ["mentoring", "career_mentoring", "coaching", "university_relations"],
+      "people": [],
+      "organizations": [{"name": "Mentor Together", "role": "community"}, {"name": "National Institute of Engineering Mysore", "role": "education"}],
+      "claims": [
+        "Formal mentor to final year CSE student from NIE Mysore",
+        "Participated in Mentor Together structured mentoring program",
+        "Provided career guidance and technical mentoring to engineering graduate",
+        "Extended mentoring beyond classroom talks to sustained 1:1 engagement"
+      ],
+      "confidence": 0.90
+    }
+  },
+  {
+    "file_name": "social-program-svyasa-yoga-certification.txt",
+    "file_type": "txt",
+    "media_url": "",
+    "context": "Certified Yoga trainer from SVYASA (Swami Vivekananda Yoga Anusandhana Samsthana). Regularly conducts corporate and social awareness sessions about Yoga and its applications.",
+    "raw_text": "Certified Yoga trainer from SVYASA (Swami Vivekananda Yoga Anusandhana Samsthana). Regularly involved in conducting corporate & social awareness sessions about Yoga & its applications. This certification provides formal authority to teach yoga in professional and community settings.",
+    "classification": {
+      "type": "certificate",
+      "dates": [{"date": "2010-01-01", "context": "approximate certification period"}],
+      "projects": ["Yoga Teaching Practice"],
+      "skills": ["yoga_instruction", "health_wellness", "teaching", "certification", "mind_body_wellness"],
+      "people": [],
+      "organizations": [{"name": "SVYASA", "role": "education"}],
+      "claims": [
+        "Certified Yoga trainer from SVYASA",
+        "SVYASA is a deemed university for yoga (Swami Vivekananda Yoga Anusandhana Samsthana)",
+        "Regularly conducts corporate and social yoga sessions",
+        "Formal certification backing the yoga teaching seen across 2010-2014 photos",
+        "Bridges technical career with wellness instruction"
+      ],
+      "confidence": 0.92
+    }
+  },
+  {
+    "file_name": "social-program-storytelling-epics.txt",
+    "file_type": "txt",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Conducts regular storytelling and personality development sessions deriving examples from Indian epics (Ramayana & Mahabharata). Connected to: Story telling photo, Quizzing tyros photo, Bala Samskara Shibira sessions.",
+    "raw_text": "Conduct regular storytelling & personality development sessions deriving examples from Indian epics like Ramayana & Mahabharata. Sessions held at community centers, rural schools, and Bala Samskara Shibira camps. Uses epic narratives to teach values, leadership, decision-making, and moral reasoning to children.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2008-01-01", "context": "involvement start"}, {"date": "2017-01-01", "context": "documented through"}],
+      "projects": ["Bala Samskara Shibira", "Community Education Events"],
+      "skills": ["storytelling", "teaching", "child_development", "cultural_engagement", "personality_development", "values_education"],
+      "people": [],
+      "organizations": [{"name": "Hindu Seva Pratishtana", "role": "community"}],
+      "claims": [
+        "Conducts regular storytelling sessions using Indian epics (Ramayana, Mahabharata)",
+        "Uses epic narratives for personality development and values education",
+        "Sessions at community centers, rural schools, and Bala Samskara Shibira",
+        "Teaches leadership, decision-making, and moral reasoning through stories",
+        "Photo evidence: 'Story telling' and 'Quizzing tyros' images in social givebacks album"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "social-program-book-distribution-2012-2018.txt",
+    "file_type": "txt",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Led book distribution sessions since 2012, reaching 10,000 kids in rural areas of Mysore by 2018. Connected to: stationery distribution photos (2017), rural children outreach photos, Shatashrunga hostel visit (2017).",
+    "raw_text": "Lead the book distribution sessions since 2012. Reaching out to 10,000 kids in rural areas of Mysore in 2018. Sustained 6-year program distributing books, stationery, and educational materials to rural and underprivileged children across villages near Mysore.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2012-01-01", "context": "program start"}, {"date": "2018-01-01", "context": "10,000 kids milestone"}],
+      "projects": ["Rural Children Outreach", "Book Distribution Program"],
+      "skills": ["philanthropy", "community_building", "rural_engagement", "program_management", "child_development", "logistics"],
+      "people": [],
+      "organizations": [{"name": "Hindu Seva Pratishtana", "role": "community"}],
+      "claims": [
+        "Led book distribution program since 2012",
+        "Reached 10,000 children in rural areas of Mysore by 2018",
+        "6-year sustained program (2012-2018+)",
+        "Leadership role: 'Led' not just participated",
+        "Quantifiable social impact: 10,000 kids reached",
+        "Distribution of books and educational materials to underprivileged rural children"
+      ],
+      "confidence": 0.94
+    }
+  },
+  {
+    "file_name": "social-program-uniform-distribution-2016.txt",
+    "file_type": "txt",
+    "media_url": "https://photos.app.goo.gl/udUbi5XXUQsYpTK56",
+    "context": "Voluntarily contribute and participate in uniform distribution program for kids since 2016. Connected to: rural school visits, community outreach photos.",
+    "raw_text": "Voluntarily contribute and participate in uniform distribution program for kids, since 2016. Ongoing program providing school uniforms to underprivileged children to ensure they can attend school with dignity and without financial barrier.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2016-01-01", "context": "program start"}, {"date": "2021-01-01", "context": "ongoing"}],
+      "projects": ["Uniform Distribution Program"],
+      "skills": ["philanthropy", "community_building", "rural_engagement", "child_development"],
+      "people": [],
+      "organizations": [{"name": "Hindu Seva Pratishtana", "role": "community"}],
+      "claims": [
+        "Contributes to uniform distribution program for underprivileged kids since 2016",
+        "Ongoing sustained contribution (5+ years)",
+        "Ensures children can attend school without financial barrier",
+        "Part of broader rural education support ecosystem"
+      ],
+      "confidence": 0.91
+    }
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "file_name": "2013 Dattatreya S Vellal Resume.pdf",
+    "file_type": "pdf",
+    "media_url": "",
+    "context": "Resume circa 2013 — snapshot during IBM India career (still Staff Software Engineer, NR CoE). Very similar to 2012 but with IBM corporate email, J2EE added to skills, and role ordering adjusted. No Exeter role yet — Exeter started April 2013 so this was likely authored before or at transition.",
+    "raw_text": "Dattatreya S Vellal\nEmail: davellal@in.ibm.com | Mobile: +91-99723-12693\n\n=== SUMMARY / ROLES ===\n\nMarch 2011 – Present (Staff Software Engineer): Developer for Natural Resources Center of Excellence. Writes middleware services in Java for the condition monitoring solution at Industry Solutions, India Software Labs, IBM India Pvt. Ltd.\n\nDecember 2010 – March 2011 (Software Engineer): Lead and Worldwide contact for Lotus Expeditor Webcontainer. Identified for technical and leadership skills; worldwide contact and lead of Lotus Expeditor Webcontainer and Portlet container.\n\nOctober 2008 – December 2010 (Associate Software Engineer): Developer and component owner for Lotus Expeditor Toolkit. Responsible for successful delivery of Lotus Expeditor Toolkit v6.2.1, v6.2.2, and leading activities for v6.2.3.\n\nJuly 2007 – September 2008 (Associate Software Engineer): Developer for JAX-WS layer enablement on Lotus Expeditor and Light Weight Infrastructure.\n\n=== SKILLS ===\nLanguages: Java\nWeb: J2EE, Web Services, SOAP, XML\nDatabases: DB2\nTools/Products: RAD, RSA, WID, Eclipse, IID, SOAPUI, Lotus Expeditor & Toolkit, Lotus Notes, Lotus Sametime, IBM Smart Cloud for Social Business, WPS, WAS\n\n=== PROJECTS ===\n\nNatural Resource Center of Excellence – Advanced Condition Monitoring for High Value Assets (March 2011 – Present)\nRoles: Developer – Integration Services, User Interface Development Lead, Source Code Administrator, RTC/Community Maintainer, VM owner/maintainer, Scrum Master, Collaterals owner/creator.\nKey contributions:\n- Responsible for middleware services components; writes integration services and information management services\n- Owns India Software Labs Natural Resources CoE community\n- Creator/owner of team area managing tasks, stories, epics for agile delivery\n- Collaborates with Natural Resources teams in Australia and Ireland\n- Collaborated with Integrated Information Core team to reuse architectures\n- Collaborated with Eclipse team in India on RTC setup/usage\n- Collaborated with India Software Labs Tech-support team for VM setup\n- Led IP mining sessions: 3 patent disclosures, 5 internal conference abstracts, 2 internship ideas\n- Trained external resources; delivered sessions on IIC\n- Co-authored poster on Condition Monitoring for Regional Technical Exchange 2011\n\nLotus Expeditor Webcontainer Development/Test (December 2010 – March 2011)\nRole: Worldwide lead\nKey contributions:\n- Led team as worldwide lead; complete product ownership\n- Solved 2 critical Sev 1 customer issues; brought defect count to virtual zero\n- Lead developer for Lotus Expeditor Toolkit; Scrum Master for several iterations\n- Led Webcontainer feature discussion with Lotus Domino Server team\n- Responsible for promoting adoption into Lotus Domino Server and XPages\n- Trained L3 resource; conducted training sessions on LotusLive and Lotus Connections\n\nLotus Expeditor Toolkit and Runtime development (October 2008 – December 2010)\nRoles: Lead developer for Lotus Expeditor Toolkit; Developer for Lotus Expeditor Webcontainer\nKey contributions:\n- Requirement analysis, planning, sizing, execution; implemented new features; fixed SPRs\n- Wrote JUnit tests; Accessibility Verification Testing for Toolkit\n- Successful delivery of v6.2.1 and v6.2.2 Toolkit\n- Co-authored 3 DeveloperWorks articles: Introducing IBM LotusLive, LotusLive Engage, IBM Smart Cloud Meetings\n\nJAXWS Layer for LWI 8.1.x (July 2007 – September 2008)\nRole: Developer\nKey contributions: Enabled JAX-WS features on LWI; wrote JUnit tests; LWI–WAS interoperability; wrote programming guide; handled FVT defects.\n\n=== GIVEBACKS ===\nPublications:\n- Patent published at USPTO: determining and conveying availability (filed 10 Dec 2010)\n- Patent pending: Method for KPI Confidence Determination and Optimization\n- Disclosure: Gesture based human identification protocol published in IP.COM on 29 Oct 2012\n- Introducing IBM LotusLive, DeveloperWorks Article, 2009\n- Introducing IBM LotusLive Engage, DeveloperWorks Article, 2009\n- Introducing IBM SmartCloud Meetings, DeveloperWorks Article, 2009\n- Visual Component Dependency Management, National Conference CCT-2010, 2010\n\nConferences/talks: Regional Technical Leadership Exchange 2010; Regional Technical Exchange poster 2011 and 2012; IBM University Relations IDE talk; Quality Software Engineering 2009 poster; Design Patterns talk NHCE Nov 2011; J2EE workshops at Sir MVIT Feb 2012 and GMIT March 2012; Web 2.0 seminar CMR-IMS June 2012; IDE webinar via IBM University Relations Oct 2012.\n\nEvents organized: Hackday 6 (2008), Hackday 7 (2009), Lotus Knows 2009, IBM AoT AGM 2009, India RTLE 2010, Hackday 8 (2010), India RTE 2011, Hackday 9 (2011), Hackday 10, IBM University Relations Think-Explore-Evolve Challenge 2011.\n\nOthers: Leading internship project 'Visual Project Dependency Management' 2008; CSI member; LotusLive Meetings demo April 2011; Career Development Session AIX team Sept 2011; Scrum Master NR CoE 1H and 2H 2011; Blue Expression Toastmasters blog/newsletter; Excellence in Leadership District 82 Sri Lanka May 2012; Yoga certification SVYASA and Annamalai University.\n\n=== AWARDS AND RECOGNITIONS ===\n- IBM Eminence and Excellence Award, Sept 30 2011\n- IBM Regional GMs monthly report mention, July 2011\n- IBM University Relations newsletter mention, July 2011\n- VP India Software Labs recognition, 22 March 2011\n- IBM Inventor Award (July 2010) — 'Determining and Conveying Availability'\n- Most influential Technical Experts Council Member of India, RTLE 2010\n- Best Implementation award, Micro-Insurance, India Hackday 2010 Pune\n- Bravo Award, October 2009\n- Bravo Award 2009 (Hackday6, Hackday7, etc.)\n- Bravo Award, June 2008 (internship project)\n- Multiple IBM Thanks Awards\n- Toastmasters Competent Communicator and Competent Leader\n\n=== EDUCATION ===\n- R. V. College of Engineering, Bangalore — B.E. Computer Science (79.2%), 2007\n- Annamalai University — Post Graduate Diploma in Yoga (76%), 2010\n- Annamalai University — Master of Science in Yoga (76.6%), 2011\n\n=== TRAININGS ===\nAssertive Skills, Presentation Skills, Communication Skills, Time Management Skills, Emerging Technical Leadership Lab",
+    "classification": {
+      "type": "other",
+      "dates": [
+        {"date": "2007-07-01", "context": "joined IBM as Associate Software Engineer"},
+        {"date": "2008-10-01", "context": "promoted to component owner, Lotus Expeditor Toolkit"},
+        {"date": "2010-12-01", "context": "became Lotus Expeditor Webcontainer worldwide lead"},
+        {"date": "2011-03-01", "context": "promoted to Staff Software Engineer; joined NR CoE"},
+        {"date": "2013-01-01", "context": "resume snapshot date — still Staff Software Engineer at IBM, pre-Exeter transition"}
+      ],
+      "projects": [
+        "Advanced Condition Monitoring for High Value Assets (NR CoE)",
+        "Lotus Expeditor Webcontainer",
+        "Lotus Expeditor Toolkit",
+        "JAX-WS Layer for LWI 8.1.x"
+      ],
+      "skills": [
+        "Java",
+        "J2EE",
+        "Web Services",
+        "SOAP",
+        "XML",
+        "DB2",
+        "Eclipse",
+        "JAX-WS",
+        "JUnit",
+        "Scrum",
+        "agile",
+        "middleware_development",
+        "technical_leadership",
+        "community_management"
+      ],
+      "people": [
+        {"name": "Dattatreya S Vellal", "role": "author / subject"}
+      ],
+      "organizations": [
+        {"name": "IBM India Pvt. Ltd.", "role": "employer"},
+        {"name": "India Software Labs", "role": "employer"},
+        {"name": "R. V. College of Engineering", "role": "education"},
+        {"name": "Annamalai University", "role": "education"},
+        {"name": "Toastmasters International", "role": "professional_body"}
+      ],
+      "claims": [
+        "Staff Software Engineer at IBM India (March 2011 – 2013)",
+        "Worldwide lead for Lotus Expeditor Webcontainer (Dec 2010 – March 2011)",
+        "Lead developer for Lotus Expeditor Toolkit (Oct 2008 – March 2011)",
+        "Developer for JAX-WS layer on LWI (July 2007 – Sept 2008)",
+        "IBM corporate email davellal@in.ibm.com active at time of resume",
+        "J2EE added as explicit skill (vs 2012 resume which listed Servlets separately)",
+        "USPTO patent published: Determining and Conveying Availability",
+        "IBM Eminence and Excellence Award Sept 2011",
+        "IBM Inventor Award July 2010",
+        "Most influential Technical Experts Council Member of India, RTLE 2010",
+        "Toastmasters Competent Communicator and Competent Leader",
+        "B.E. Computer Science, R.V. College of Engineering, 79.2%, 2007",
+        "M.Sc. Yoga, Annamalai University, 76.6%, 2011"
+      ],
+      "confidence": 0.97
+    }
+  }
+]

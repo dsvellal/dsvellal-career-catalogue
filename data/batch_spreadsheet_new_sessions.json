@@ -1,0 +1,198 @@
+[
+  {
+    "file_name": "spreadsheet-row1-yoga-pes-2010.txt",
+    "file_type": "txt",
+    "media_url": "https://docs.google.com/spreadsheets/d/16xl2w6pcCYhgMdJrrBmdpbZRDWd-ZCwGFMeqR7k-8Pc/view",
+    "context": "Talk #1: Yoga and its practical applications at PES College Degree College, Bangalore, May 2010. 200 participants, 60 mins.",
+    "raw_text": "Yoga and its practical applications. Awareness seminar at PES College Degree College, Bangalore. 200 participants. 60 minutes. Date: 1 May 2010.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2010-05-01", "context": "session date"}],
+      "projects": ["PES College Yoga Talk"],
+      "skills": ["yoga_instruction", "public_speaking", "health_wellness", "motivational_speaking"],
+      "people": [],
+      "organizations": [{"name": "PES College", "role": "education"}, {"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Delivered 60-min talk on Yoga and its practical applications to 200 students",
+        "Earliest documented professional giveback session (May 2010)",
+        "Large audience (200 participants) for a non-technical awareness seminar"
+      ],
+      "confidence": 0.90
+    }
+  },
+  {
+    "file_name": "spreadsheet-row2-t2e-isim-mysore-2011.txt",
+    "file_type": "txt",
+    "media_url": "https://docs.google.com/spreadsheets/d/16xl2w6pcCYhgMdJrrBmdpbZRDWd-ZCwGFMeqR7k-8Pc/view",
+    "context": "Talk #2: T2E Challenge hands-on workshop at ISiM (International School of Information Management), Mysore, April 2011. 40 participants, full day.",
+    "raw_text": "T2E Challenge. Full day hands-on workshop at ISiM (International School of Information Management), Mysore. 40 participants. Date: 16 April 2011.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2011-04-16", "context": "workshop date"}],
+      "projects": ["Think Explore Evolve (T2E) Contest"],
+      "skills": ["workshop_facilitation", "university_relations", "knowledge_sharing", "hackathon_facilitation"],
+      "people": [],
+      "organizations": [{"name": "ISiM Mysore", "role": "education"}, {"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Conducted full-day T2E Challenge hands-on workshop at ISiM Mysore",
+        "40 participants in intensive workshop format",
+        "Extended T2E university relations program beyond Bangalore to Mysore"
+      ],
+      "confidence": 0.90
+    }
+  },
+  {
+    "file_name": "spreadsheet-row3-t2e-rvce-2011.txt",
+    "file_type": "txt",
+    "media_url": "https://docs.google.com/spreadsheets/d/16xl2w6pcCYhgMdJrrBmdpbZRDWd-ZCwGFMeqR7k-8Pc/view",
+    "context": "Talk #3: T2E Challenge hands-on workshop at RVCE, Bangalore, May 2011. 40 participants, full day.",
+    "raw_text": "T2E Challenge. Full day hands-on workshop at R V College of Engineering, Bangalore. 40 participants. Date: 7 May 2011.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2011-05-07", "context": "workshop date"}],
+      "projects": ["Think Explore Evolve (T2E) Contest"],
+      "skills": ["workshop_facilitation", "university_relations", "knowledge_sharing", "hackathon_facilitation"],
+      "people": [],
+      "organizations": [{"name": "R V College of Engineering", "role": "education"}, {"name": "IBM", "role": "employer"}],
+      "claims": [
+        "Conducted full-day T2E Challenge hands-on workshop at alma mater RVCE",
+        "40 participants in intensive workshop format",
+        "Gave back to alma mater through IBM University Relations program"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "spreadsheet-exeter-internal-workshops-2014.txt",
+    "file_type": "txt",
+    "media_url": "https://docs.google.com/spreadsheets/d/16xl2w6pcCYhgMdJrrBmdpbZRDWd-ZCwGFMeqR7k-8Pc/view",
+    "context": "Exeter internal workshops 2014: Design Patterns 101 (Jul 11), Advanced DPs (Aug 11), Agile practices (Feb 11), Yoga sessions (Nov 23). Internal training and culture building.",
+    "raw_text": "Exeter Software India internal workshops. (1) What's and Why's of Design Patterns - 101, 4 hours, 30 participants, Jul 11 2014. (2) Advanced DPs - How and where to use them, 4 hours, 30 participants, Aug 11 2014. (3) Adopting agile like practices to achieve discipline and accelerated outcome, 60 mins, 30 participants, Feb 11 2014. (4) Yoga sessions, 3 hours, 5 participants, Nov 23 2013.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2014-07-11", "context": "DP 101 session"}, {"date": "2014-08-11", "context": "Advanced DP session"}, {"date": "2014-02-11", "context": "Agile session"}, {"date": "2013-11-23", "context": "Yoga session"}],
+      "projects": ["Exeter Internal Training"],
+      "skills": ["design_patterns", "workshop_facilitation", "agile_practices", "yoga_instruction", "knowledge_sharing", "team_building"],
+      "people": [],
+      "organizations": [{"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Conducted 4 internal training sessions at Exeter (2013-2014)",
+        "Design Patterns series: 101 + Advanced (8 hours total over 2 sessions)",
+        "Taught agile practices for discipline and accelerated outcomes",
+        "Introduced yoga sessions for team wellness",
+        "Demonstrated internal knowledge sharing and culture building at startup"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "spreadsheet-bmsit-lessons-from-50-failed-interviews-2016.txt",
+    "file_type": "txt",
+    "media_url": "https://docs.google.com/spreadsheets/d/16xl2w6pcCYhgMdJrrBmdpbZRDWd-ZCwGFMeqR7k-8Pc/view",
+    "context": "Talk #28: 'Lessons from 50 failed interviews' at BMSIT, Bangalore, Sep 2016. 60 participants, 90 mins.",
+    "raw_text": "Lessons from 50 failed interviews. Motivational awareness seminar at BMSIT, Bangalore. 60 participants. 90 minutes. Date: 24 September 2016.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2016-09-24", "context": "talk date"}],
+      "projects": ["BMSIT Motivational Talks"],
+      "skills": ["motivational_speaking", "career_mentoring", "interviewing", "resilience", "knowledge_sharing"],
+      "people": [],
+      "organizations": [{"name": "BMSIT", "role": "education"}, {"name": "Exeter Software India Pvt Ltd", "role": "employer"}],
+      "claims": [
+        "Delivered talk on 'Lessons from 50 failed interviews' at BMSIT",
+        "Authentic vulnerability-based motivational approach",
+        "Shared personal failure experiences to inspire students",
+        "Unique talk topic demonstrating growth mindset and learning from failure"
+      ],
+      "confidence": 0.92
+    }
+  },
+  {
+    "file_name": "spreadsheet-sit-tumkur-sessions-2020.txt",
+    "file_type": "txt",
+    "media_url": "https://docs.google.com/spreadsheets/d/16xl2w6pcCYhgMdJrrBmdpbZRDWd-ZCwGFMeqR7k-8Pc/view",
+    "context": "SIT Tumkur 2020 virtual sessions: 'How to deal with uncertainty' (Aug 8, 65 participants) and 'Attitude towards learning' (Jan 12 2021, 60 participants). During COVID pandemic.",
+    "raw_text": "SIT Tumkur virtual sessions during COVID. (1) How to deal with uncertainty, 90 mins, 65 participants, 8 Aug 2020. (2) Attitude towards learning, 90 mins, 60 participants, 12 Jan 2021. Virtual delivery format.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2020-08-08", "context": "uncertainty session"}, {"date": "2021-01-12", "context": "attitude session"}],
+      "projects": ["SIT Tumkur Virtual Sessions"],
+      "skills": ["motivational_speaking", "virtual_facilitation", "resilience", "career_mentoring", "adaptability"],
+      "people": [],
+      "organizations": [{"name": "SIT Tumkur", "role": "education"}, {"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Adapted to virtual delivery during COVID pandemic",
+        "Delivered motivational sessions on dealing with uncertainty during pandemic",
+        "Maintained academic engagement despite lockdown constraints",
+        "SIT Tumkur became repeat engagement institution (2019, 2020, 2021)"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "spreadsheet-pramati-hillview-2020.txt",
+    "file_type": "txt",
+    "media_url": "https://docs.google.com/spreadsheets/d/16xl2w6pcCYhgMdJrrBmdpbZRDWd-ZCwGFMeqR7k-8Pc/view",
+    "context": "Talk #46: 'Do we teach our children, how to handle uncertainty' at Pramti Hillview Academy, Mysore, Aug 2020. 35 participants, 60 mins.",
+    "raw_text": "Do we teach our children, how to handle uncertainty. Motivational awareness seminar at Pramti Hillview Academy, Mysore. 35 participants. 60 minutes. Date: 29 August 2020.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2020-08-29", "context": "session date"}],
+      "projects": ["Pramti Hillview Academy Talk"],
+      "skills": ["motivational_speaking", "parenting_education", "resilience", "child_development"],
+      "people": [],
+      "organizations": [{"name": "Pramti Hillview Academy", "role": "education"}, {"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Delivered session on teaching children to handle uncertainty",
+        "Addressed educators/parents at Pramti Hillview Academy, Mysore",
+        "Applied pandemic context to parenting and child development",
+        "Unique audience: school educators rather than students"
+      ],
+      "confidence": 0.90
+    }
+  },
+  {
+    "file_name": "spreadsheet-philips-virtual-observability-2021.txt",
+    "file_type": "txt",
+    "media_url": "https://docs.google.com/spreadsheets/d/16xl2w6pcCYhgMdJrrBmdpbZRDWd-ZCwGFMeqR7k-8Pc/view",
+    "context": "Talk #50: 'Observability for customer delight' - Philips virtual conference workshop, June 2021. 22 participants, 90 mins.",
+    "raw_text": "Observability for customer delight. Philips virtual conference workshop. 22 participants. 90 minutes. Date: 17 June 2021.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2021-06-17", "context": "session date"}],
+      "projects": ["Philips Internal Technical Training"],
+      "skills": ["observability", "monitoring", "customer_experience", "workshop_facilitation", "knowledge_sharing"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Conducted workshop on Observability for customer delight at Philips virtual conference",
+        "Connected observability (technical) with customer experience (business outcome)",
+        "Demonstrated ability to bridge technical and business perspectives"
+      ],
+      "confidence": 0.92
+    }
+  },
+  {
+    "file_name": "spreadsheet-brazil-global-conference-2021.txt",
+    "file_type": "txt",
+    "media_url": "https://docs.google.com/spreadsheets/d/16xl2w6pcCYhgMdJrrBmdpbZRDWd-ZCwGFMeqR7k-8Pc/view",
+    "context": "Talk #49: 'Less work, more value: Learn why everyone's shifting left' - Global software conference in Brazil, June 2021. 45 participants, 90 min technical demo.",
+    "raw_text": "Less work, more value: Learn why everyone's shifting left. Technical demo session at global software conference in Brazil. 45 participants. 90 minutes. Date: 8 June 2021. Virtual delivery.",
+    "classification": {
+      "type": "presentation",
+      "dates": [{"date": "2021-06-08", "context": "conference date"}],
+      "projects": ["Global Software Conference Brazil 2021"],
+      "skills": ["shift_left_testing", "technical_speaking", "global_impact", "devops", "quality_engineering"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Presented at global software conference in Brazil",
+        "Technical demo: 'Less work, more value: Learn why everyone's shifting left'",
+        "International conference speaking (not just India-based)",
+        "Demonstrated shift-left testing and quality engineering expertise",
+        "First documented international conference presentation"
+      ],
+      "confidence": 0.93
+    }
+  }
+]

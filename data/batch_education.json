@@ -1,0 +1,117 @@
+[
+  {
+    "file_name": "education-be-cse-rvce-2003-2007.txt",
+    "file_type": "txt",
+    "media_url": "https://www.dsvellal.com/educational-background",
+    "context": "BE Computer Science from R V College of Engineering, Bangalore (2003-2007). 79.2% aggregate. CET rank 379.",
+    "raw_text": "Bachelor of Engineering (BE), Computer Science from R V College of Engineering, Bangalore, Karnataka. Duration: 2003-2007. Grade: 79.2% aggregate. Affiliated to Visvesvaraya Technological University (VTU). College project: Face Detection and Recognition. CET Engineering rank 379, Medical rank 429.",
+    "classification": {
+      "type": "certificate",
+      "dates": [{"date": "2003-06-01", "context": "degree start"}, {"date": "2007-06-01", "context": "degree completion"}],
+      "projects": ["Face Detection and Recognition"],
+      "skills": ["computer_science", "software_engineering", "machine_learning", "image_processing"],
+      "people": [],
+      "organizations": [{"name": "R V College of Engineering", "role": "education"}, {"name": "Visvesvaraya Technological University", "role": "education"}],
+      "claims": [
+        "BE Computer Science from R V College of Engineering, Bangalore (2003-2007)",
+        "79.2% aggregate grade",
+        "CET Engineering rank 379 (highly competitive state entrance exam)",
+        "CET Medical rank 429 (qualified for both engineering and medical)",
+        "College project: Face Detection and Recognition",
+        "Affiliated to VTU (Visvesvaraya Technological University)",
+        "RVCE is an autonomous institution, NBA accredited"
+      ],
+      "confidence": 0.98
+    }
+  },
+  {
+    "file_name": "education-msc-yoga-annamalai-2010-2011.txt",
+    "file_type": "txt",
+    "media_url": "https://www.dsvellal.com/educational-background",
+    "context": "MSc Yoga from Annamalai University, Chidambaram (2010-2011). 70% aggregate. Pursued alongside IBM career.",
+    "raw_text": "Master of Science (MSc) in Yoga from Annamalai University, Chidambaram. Duration: 2010-2011. Grade: 70% aggregate. Pursued while working full-time at IBM India Software Labs. Demonstrates commitment to holistic wellness and formal academic study of yoga science.",
+    "classification": {
+      "type": "certificate",
+      "dates": [{"date": "2010-01-01", "context": "degree start"}, {"date": "2011-12-01", "context": "degree completion"}],
+      "projects": ["MSc Yoga Studies"],
+      "skills": ["yoga_instruction", "health_wellness", "mind_body_wellness", "academic_research", "discipline"],
+      "people": [],
+      "organizations": [{"name": "Annamalai University", "role": "education"}, {"name": "IBM", "role": "employer"}],
+      "claims": [
+        "MSc Yoga from Annamalai University, Chidambaram (2010-2011)",
+        "70% aggregate grade",
+        "Pursued Master's degree while working full-time at IBM",
+        "Formal academic qualification in yoga science",
+        "Complements SVYASA Yoga Instructor certification",
+        "Demonstrates ability to balance career with advanced education"
+      ],
+      "confidence": 0.96
+    }
+  },
+  {
+    "file_name": "education-svyasa-yoga-instructor-2010.txt",
+    "file_type": "txt",
+    "media_url": "https://www.dsvellal.com/educational-background",
+    "context": "Yoga Instructors Course from S-VYASA (Swami Vivekananda Yoga Anusandhana Samsthana), 2010.",
+    "raw_text": "Yoga Instructors Course certification from Swami Vivekananda Yoga Anusandhana Samsthana (S-VYASA), 2010. SVYASA is a deemed university specializing in yoga education and research. This certification qualifies for teaching yoga in professional and community settings.",
+    "classification": {
+      "type": "certificate",
+      "dates": [{"date": "2010-01-01", "context": "certification year"}],
+      "projects": ["Yoga Teaching Practice"],
+      "skills": ["yoga_instruction", "certification", "health_wellness", "teaching"],
+      "people": [],
+      "organizations": [{"name": "SVYASA", "role": "education"}],
+      "claims": [
+        "Completed Yoga Instructors Course from S-VYASA (2010)",
+        "SVYASA is a deemed university for yoga research and education",
+        "Professional certification for teaching yoga",
+        "Obtained same year as starting MSc Yoga at Annamalai University"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "file_name": "education-grade12-national-college-2001-2003.txt",
+    "file_type": "txt",
+    "media_url": "https://www.dsvellal.com/educational-background",
+    "context": "Grade 12 (PUC) from National College Jayanagar, Bangalore (2001-2003). 94% in PCM stream. CET rank 379.",
+    "raw_text": "Grade 12 (Pre-University Course) from National College Jayanagar, Bangalore, Karnataka. Duration: 2001-2003. Grade: 94% (PCM - Physics, Chemistry, Mathematics stream). Karnataka State Pre-university board. CET Engineering rank 379, Medical rank 429. Qualified for both engineering and medical streams.",
+    "classification": {
+      "type": "certificate",
+      "dates": [{"date": "2001-06-01", "context": "PUC start"}, {"date": "2003-04-01", "context": "PUC completion"}],
+      "projects": [],
+      "skills": ["academic_excellence"],
+      "people": [],
+      "organizations": [{"name": "National College Jayanagar", "role": "education"}],
+      "claims": [
+        "94% in Grade 12 PCM stream (Physics, Chemistry, Mathematics)",
+        "Karnataka State Pre-university board",
+        "CET Engineering rank 379 out of ~100,000+ candidates",
+        "Also qualified for Medical (rank 429) - chose engineering",
+        "National College Jayanagar, Bangalore"
+      ],
+      "confidence": 0.96
+    }
+  },
+  {
+    "file_name": "education-grade10-vijaya-high-school-1998-2001.txt",
+    "file_type": "txt",
+    "media_url": "https://www.dsvellal.com/educational-background",
+    "context": "Grade 10 (SSLC) from Vijaya High School, Bangalore (1998-2001). 94.08%. Karnataka State Board.",
+    "raw_text": "Grade 10 (SSLC) from Vijaya High School, Bangalore, Karnataka. Duration: 1998-2001. Grade: 94.08%. Karnataka State Board. Strong academic foundation with distinction-level performance.",
+    "classification": {
+      "type": "certificate",
+      "dates": [{"date": "1998-06-01", "context": "school start"}, {"date": "2001-04-01", "context": "SSLC completion"}],
+      "projects": [],
+      "skills": ["academic_excellence"],
+      "people": [],
+      "organizations": [{"name": "Vijaya High School", "role": "education"}],
+      "claims": [
+        "94.08% in Grade 10 SSLC (Karnataka State Board)",
+        "Vijaya High School, Bangalore",
+        "Consistent academic excellence (94% in both 10th and 12th)"
+      ],
+      "confidence": 0.95
+    }
+  }
+]

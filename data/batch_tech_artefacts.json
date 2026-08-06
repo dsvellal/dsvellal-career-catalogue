@@ -1,0 +1,178 @@
+[
+  {
+    "file_name": "tech-artefact-iwillcode202x.txt",
+    "file_type": "txt",
+    "media_url": "https://github.com/dsvellal/IWillCode202x",
+    "context": "IWillCode202x - GitHub project to coach non-techies who are enthusiastic about programming, to program. Teaching coding to beginners.",
+    "raw_text": "IWillCode202x. GitHub repository: https://github.com/dsvellal/IWillCode202x. An experiment to see if I could coach non-techies who are enthusiastic about programming, to program! A structured approach to teach coding fundamentals to complete beginners.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2020-01-01", "context": "project period (202x)"}],
+      "projects": ["IWillCode202x"],
+      "skills": ["teaching", "coaching", "programming_fundamentals", "curriculum_design", "knowledge_sharing"],
+      "people": [],
+      "organizations": [],
+      "claims": [
+        "Created structured program to teach non-techies to code",
+        "Open source educational initiative on GitHub",
+        "Demonstrates ability to make programming accessible to beginners",
+        "Extends professional teaching to open-source coaching format"
+      ],
+      "confidence": 0.91
+    }
+  },
+  {
+    "file_name": "tech-artefact-philips-cerberus-maintainer.txt",
+    "file_type": "txt",
+    "media_url": "https://github.com/philips-software/cerberus/blob/master/MAINTAINERS.md",
+    "context": "Open source maintainer of Philips Cerberus project on GitHub. Listed in MAINTAINERS.md.",
+    "raw_text": "Open source maintainer of Philips Cerberus project. Listed in MAINTAINERS.md at https://github.com/philips-software/cerberus. Cerberus is a Philips open-source software project. Maintainer role involves code review, PR management, and project stewardship.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2019-01-01", "context": "approximate maintainer period"}],
+      "projects": ["Cerberus (Philips Open Source)"],
+      "skills": ["open_source", "code_review", "project_stewardship", "software_architecture", "community_building"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Listed as maintainer of Philips Cerberus open source project",
+        "Official maintainer role: code review, PR management, project stewardship",
+        "Contributes to Philips open source ecosystem on GitHub",
+        "Demonstrates open source leadership within corporate context"
+      ],
+      "confidence": 0.94
+    }
+  },
+  {
+    "file_name": "tech-artefact-philips-textsimilarity-maintainer.txt",
+    "file_type": "txt",
+    "media_url": "https://github.com/philips-software/TextSimilarityProcessor/blob/master/MAINTAINERS.md",
+    "context": "Open source maintainer of Philips TextSimilarityProcessor project on GitHub. NLP/text processing tool.",
+    "raw_text": "Open source maintainer of Philips TextSimilarityProcessor project. Listed in MAINTAINERS.md at https://github.com/philips-software/TextSimilarityProcessor. A text similarity processing tool for NLP applications. Maintainer role involves code review, PR management, and project direction.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2019-01-01", "context": "approximate maintainer period"}],
+      "projects": ["TextSimilarityProcessor (Philips Open Source)"],
+      "skills": ["open_source", "nlp", "text_processing", "code_review", "project_stewardship"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Listed as maintainer of Philips TextSimilarityProcessor open source project",
+        "NLP/text similarity processing tool",
+        "Demonstrates expertise in natural language processing",
+        "Multiple open source maintainer roles at Philips (Cerberus + TextSimilarityProcessor)"
+      ],
+      "confidence": 0.94
+    }
+  },
+  {
+    "file_name": "tech-artefact-philips-python-guardrails.txt",
+    "file_type": "txt",
+    "media_url": "https://github.com/philips-software/python_guardrails",
+    "context": "Code reviewer/contributor to Philips python_guardrails open source project. Quality and code standards enforcement tool.",
+    "raw_text": "Contributor and code reviewer for Philips python_guardrails open source project. https://github.com/philips-software/python_guardrails. A tool for enforcing Python code quality standards and guardrails. Part of Philips software engineering excellence ecosystem.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2020-01-01", "context": "approximate contribution period"}],
+      "projects": ["python_guardrails (Philips Open Source)"],
+      "skills": ["open_source", "python", "code_quality", "code_review", "software_craftsmanship"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Contributor to Philips python_guardrails open source project",
+        "Tool for enforcing Python code quality standards",
+        "Connects to broader code quality culture advocacy at Philips",
+        "Open source contribution aligned with .craft program and engineering excellence"
+      ],
+      "confidence": 0.93
+    }
+  },
+  {
+    "file_name": "tech-artefact-utilities-devops-observability.txt",
+    "file_type": "txt",
+    "media_url": "https://github.com/dsvellal/utilities",
+    "context": "Personal utilities repository - small tools written for personal use and as experimental code to coach DevOps observability.",
+    "raw_text": "GitHub utilities repository: https://github.com/dsvellal/utilities. Small utilities written for personal use and also used as experimental code to coach DevOps observability. Combines personal tooling with educational coaching materials.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2019-01-01", "context": "approximate creation period"}],
+      "projects": ["DevOps Observability Coaching"],
+      "skills": ["devops", "observability", "coaching", "python", "tooling"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Created utilities for personal use and DevOps observability coaching",
+        "Open source coaching materials on GitHub",
+        "Combines practical tooling with educational purpose",
+        "Connects to Philips observability conference workshop (2021)"
+      ],
+      "confidence": 0.89
+    }
+  },
+  {
+    "file_name": "tech-artefact-gitstats-anonymization.txt",
+    "file_type": "txt",
+    "media_url": "https://github.com/dsvellal/gitstats",
+    "context": "Fork of gitstats with new feature for anonymizing reports. Built to enable sharing git statistics without revealing contributor identities.",
+    "raw_text": "Forked gitstats repository and built new feature for anonymizing reports. https://github.com/dsvellal/gitstats. Enables generation of git repository statistics with contributor anonymization. Useful for sharing productivity metrics without compromising privacy.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2019-01-01", "context": "approximate creation period"}],
+      "projects": ["Gitstats Anonymization Feature"],
+      "skills": ["open_source", "privacy", "software_metrics", "data_driven_decision_making", "python"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Built anonymization feature for gitstats open source tool",
+        "Enables privacy-preserving git statistics sharing",
+        "Practical application of data-driven metrics with privacy constraints",
+        "Connects to program behavior metrics work at Philips Software Excellence Conference"
+      ],
+      "confidence": 0.90
+    }
+  },
+  {
+    "file_name": "tech-artefact-new-hire-training-program.txt",
+    "file_type": "txt",
+    "media_url": "https://engin-boot.github.io/get-started/summary.html",
+    "context": "Designed new-hire training program (engin-boot). Structured onboarding curriculum for engineers at Philips.",
+    "raw_text": "New-hire training program: engin-boot. https://engin-boot.github.io/get-started/summary.html. A structured onboarding and training curriculum for new engineering hires. Covers engineering fundamentals, practices, and team integration. Designed to accelerate new hire productivity and cultural alignment.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2019-01-01", "context": "approximate creation period"}],
+      "projects": ["Engin-Boot New Hire Training"],
+      "skills": ["curriculum_design", "onboarding", "engineering_culture", "knowledge_sharing", "teaching", "program_design"],
+      "people": [],
+      "organizations": [{"name": "Philips", "role": "employer"}],
+      "claims": [
+        "Designed structured new-hire training program (engin-boot)",
+        "Published curriculum at engin-boot.github.io",
+        "Structured onboarding covering engineering fundamentals and practices",
+        "Connects to Exeter 1-day-code-a-thon for new hires (2014) - pattern of onboarding design",
+        "Demonstrates investment in scaling engineering culture through onboarding"
+      ],
+      "confidence": 0.93
+    }
+  },
+  {
+    "file_name": "tech-artefact-exercism-profile.txt",
+    "file_type": "txt",
+    "media_url": "https://exercism.io/profiles/dsvellal",
+    "context": "Active Exercism.io profile - practicing and mentoring across multiple programming languages.",
+    "raw_text": "Exercism.io profile: https://exercism.io/profiles/dsvellal. Active participation in Exercism platform for practicing programming challenges across multiple languages and potentially mentoring other learners.",
+    "classification": {
+      "type": "other",
+      "dates": [{"date": "2019-01-01", "context": "approximate activity period"}],
+      "projects": ["Exercism Practice"],
+      "skills": ["continuous_learning", "multi_language_programming", "mentoring", "competitive_programming"],
+      "people": [],
+      "organizations": [{"name": "Exercism", "role": "community"}],
+      "claims": [
+        "Active on Exercism.io platform for programming practice",
+        "Demonstrates commitment to continuous learning and skill sharpening",
+        "Multi-language programming practice"
+      ],
+      "confidence": 0.85
+    }
+  }
+]

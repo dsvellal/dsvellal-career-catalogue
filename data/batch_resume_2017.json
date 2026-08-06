@@ -1,0 +1,98 @@
+[
+  {
+    "file_name": "2017 Dattatreya S Vellal Resume.pdf",
+    "file_type": "pdf",
+    "media_url": "",
+    "context": "Resume circa 2017 — Amazon Development Center India is current role (Feb 2016 – present). 13+ years total experience. Highly highlights-focused format. First resume with detailed Amazon TRMS work: SVA, RiPE, AbusePreventionService, ASIN analytics, XML feed migration. TRMS Zeus Award (Oct 2017) and Spot Award (Nov 2017). Won ACSCS Hackathon 2016. 71 interviews conducted. Scrum and Agile PO workshop facilitator (150+ participants, 4.27/5 rating).",
+    "raw_text": "Dattatreya S Vellal (Datta)\nEmail: dsvellal@gmail.com | LinkedIn | +91 9972312693 | Bangalore, Karnataka\nB.E. CSE, RV College of Engineering, Bangalore, VTU [2003-2007] - 79.2% Aggr\nMSc Yoga, Annamalai University [2010-2011]\nDoB: 6th Dec 1985 | Proficient in English, Kannada, Hindi\n\nOver 13 years of experience in design, architecture, orchestration & implementation of a number of successful scalable projects from the ground up in industries like eCommerce, Healthcare, Insurance, Natural resources. Brings expertise to solve technologically complex problems & build useful software, platforms and tools. An analytical thinker with a proven track record to consistently resolve key customer pain points & providing world-class customer/user experience, often called upon to consult on problems that have eluded resolution by others. A results driven execution specialist, who is proactive in driving functional and nonfunctional requirement implementations, performance improvements, handling uncertainties & mitigating risks. A hard-working team player who does whatever-it-takes to deliver results; no excuses.\n\n=== AREA OF EXPERTISE ===\nJava & J2EE, Data Structure & Algorithm, Product Design, Development, Verification & Delivery, Team building & Leadership, Risk management & mitigation, Release management, Source control management, Agile development & continuous integration, Proactive Communication (Written & Verbal)\n\n=== PROFESSIONAL EXPERIENCE ===\n- Feb 2016 – Till Date: 2 years 5 months, Software Development Engineer II, Amazon Development Center India Pvt Ltd\n- April 2013 – Nov 2015: 2 years 8 months, Senior Lead – Software Development, Exeter Software India Pvt. Ltd., Bangalore\n- July 2007 – Mar 2013: 5 years 9 months, Staff Software Engineer, IBM – India Software Labs, Bangalore\n\n=== KEY ENGINEERING HIGHLIGHTS ===\n- Designed & productionised (D&P) config & rules driven API to evaluate purchases on amazon.in & add friction to purchases with abusive intent\n- D&P a generic context container for multiple fraud-check-services, removing SDE effort, enhancing platform to evaluate any transaction\n- D&P a microservice from scratch to orchestrate uniqueness-of-account-check for AmazonPay, supporting 1130 TPS in production\n- D&P a query generation & ingestion tool, that has ingested more than 2 Billion ASIN data by createDate & category, into our analytics system\n- Improved reporting tool by optimising finding data-mismatches, saving SDE and ML Scientists time by over 60%\n- Benchmarked services via performance tools & fine-tuned code & hardware to achieve $34000 cost reduction & 20% TPS improvement\n- Winner of Amazon's ASCS Hackathon 2016: 45 working prototypes, 30+ teams, 4 countries, judged by principal engineers & senior managers\n- Innovation driven thought process leading to 2 USPTO filed patents, 1 publication with ip.com & 3 developerworks articles\n- Youngest member of the Prototyping & Architecture group hand picked by the CEO of Exeter, responsible for feature implementation decisions\n- Youngest member of the Technical Experts Council – India at IBM\n\n=== KEY LEADERSHIP HIGHLIGHTS ===\n- Proactive in mitigating risk and setting up projects for success, multiple times, recognized via TRMS ZEUS Award in Oct 2017\n- Instrumental in identifying and customising processes, adopted across different teams in Amazon, recognized via TRMS SPOT Award in Nov 2017\n- Facilitator for Scrum & Agile Product Ownership Workshops, with 5 day-long sessions, 150+ participants, avg. presenter rating at 4.27 out of 5\n- Creator and owner of multiple referred assets: Onboarding Guide, OnCall Guide, Troubleshooting page, Coding standards, Bookmarks etc.\n- Tech-promotion calibrater at Amazon, having calibrated 3 promotions from SDE-1 to SDE-2, all of them led to positive conversions\n- Passionate about interviews, have created an interview guideline document & calibrated questions for my org. 71 interviews, conversion rate of 30%\n- Organizing org level hack-days multiple times across all companies worked for\n- Mentoring & leading a team of 15+ members & was directly accountable & responsible for the delivery of product functionality\n- Providing regular performance reviews via written communication & one-one meetings, & being responsible for the career growth of team members\n\n=== SOFTWARE DEVELOPMENT ENGINEER II, AMAZON DEVELOPMENT CENTER INDIA PVT. LTD. (FEB 2016 – PRESENT) ===\nAccountable & responsible for building microservices, APIs, tools and platforms at the Amazon Retail Catalog Services and the Transaction Risk Management Systems organisations. Day-to-day responsibilities: disambiguating problems by defining structured use-cases, design for scale, performance and reusability (HLD & LLD), code, write test-cases (unit & integration), deploy, maintain code, mentor juniors, imbibe best practices.\n\nKey contributions:\n- Implemented rules & config driven API to add friction to a purchase with inventory-block-abuse pattern\n- Designed generic context container for fraud-check-services, now used by 9 external clients to onboard to fraud-check platform\n- Implemented a micro service to check for uniqueness in account creation for AmazonPay, supporting 1130 TPS in production\n- Modified an open-source JSON parser (JsonLib) to handle inconsistent xml to json parsing & improved catalog indexing by 20%\n- Optimised software by running performance benchmarking tools & identified hardware glitches, saved $34000 in 2017\n- Facilitated 5+ day-long workshops on Scrum & Agile Product Ownership, 150+ participants, avg. presenter rating of 4.27 out of 5\n- Customised the scrum process for my team & bringing our task completion rate to 85% from 63%\n- Authored & owned multiple processes including Onboarding, on-call guide, troubleshooting pages, bookmarks\n- Wrote a reporting tool to optimise comparisons & reduce SDE & ML scientists effort by 60%\n- Tool to automate the manual opening of SLA missed workflows for manual investigation\n- Tool to automatically ingest ASIN data daily (over 2 Billion), by createDate and category into analytics systems\n\n=== SENIOR LEAD – SOFTWARE DEVELOPMENT, EXETER SOFTWARE INDIA PVT. LTD. (APRIL 2013 – NOV 2015) ===\nAccountable for critical functions of the Patient Protection & Affordable Care Act implementation for Hawaii & Vermont.\nTechnical contributions:\n- 60% technical & functional ownership of product features\n- 3x faster page loads by adopting a memoized data-fetch model\n- 90% reduction in dependency errors via common dependency library\n- 2x faster implementation via re-architecting & creating central modules\n- 3rd party API integration leading to successful business opportunities\n- Encryption layer in Java for reduced security risks\n- Reusable code-base via centralized business layer\n- Successfully leading & resolving 15+ customer critical situations in 20 months\n\nLeadership contributions:\n- SPOC for functionalities between Legal, Functional, Dev & QA teams\n- 5+ release scoping, execution, artefact & configuration management\n- Devising a Dev to QA to Deployment hand-off process\n- Regular performance reviews, mentoring & career planning for 15+ members\n- Managed a 20+ team, including performance appraisals, career growth\n\n=== STAFF SOFTWARE ENGINEER, IBM – ISL, BANGALORE (JULY 2007 – MARCH 2013) ===\nTechnical contributions:\n- Enabling JAXWS on IBM's LWI framework via SOAP 1.2; TDD for Lotus Expeditor Webcontainer\n- Achieving virtual-zero defects for Expeditor toolkit releases\n- Developing data-transformation layer for NRCOE solutions\n- 2 USPTO filed patents; 1 ip.com publication; 3 developerworks articles\n- Regular Scrum Master\n\nLeadership contributions:\n- SPOC for Lotus Expeditor Webcontainer\n- On-boarding team members from iterative to agile\n- Leading customer presentations & demonstration of solutions\n- Organizing Technical Leadership exchanges & Hackdays\n\n=== PROFESSIONAL ACHIEVEMENTS & GIVEBACKS ===\n- Patent: Managing key performance indicators, published April 2nd 2015. Patent Citations: 2\n- Patent: Determining and conveying user availability, published October 15th 2013. Patent Citations: 27. Non-Patent Citations: 8\n- Co-authored IP publication on Gesture based human identification protocol, IP.COM, 29th Oct 2012\n- Awarded TRMS Spot Award for team process improvements, Nov 2017\n- Awarded TRMS Zeus Team Award for exceptional project delivery (RiPE), Oct 2017\n- Amazon recognised facilitator for Scrum & Agile Product Ownership Workshops\n- Mentored a final year CSE graduate from NIE Mysore via Mentor Together program\n- Delivering awareness sessions at RVCE, NIE, VIT on interview preparation\n- Authoring knowledge share articles on developerworks community for LotusLive, LotusLive Engage & Smartcloud Meetings\n- Delivering knowledge share sessions on adopting-agile-like-practices, design patterns\n- Conducted year-long Tech/Fun sessions via TExeter program\n- Conducted 1-day hands on session at CSI Bangalore chapter on design patterns, 19th April 2015\n- CSI BC Board Committee Member\n- Invited to Gujarat, Marwadi Engineering College, Advanced Java & J2EE workshop, 21st Sept 2013\n- Connecting IBM & colleges via Think Explore & Evolve Challenge\n\n=== SOCIAL ACHIEVEMENTS & GIVEBACKS ===\n- Volunteer with Yogashree; Volunteer with Sudhee; Support Ekal Vidyalaya (adopted school); Volunteer with Nele\n- Certified Yoga trainer from SVYASA; storytelling & personality development sessions from Indian epics\n- 3 IBM Bravo awards\n- Lead book distribution sessions since 2012, reaching 10,000 kids in rural areas of Mysore in 2018\n- First member of IBM Blue Expression Corporate Toastmasters club to be certified Competent Communicator, Competent Leader, Leadership Advisor & a certified judge\n- Masters degree in Yoga from Annamalai University\n\n=== EDUCATION ===\n- R. V. College of Engineering, Bangalore, B.E. Computer Science, 2007 – 79.2%\n- National College Jayanagar, Bangalore, Pre-University Board, 2003 – 94% (PCM)\n- Vijaya High School, Bangalore, State Board, SSLC, 2001 – 94.08%",
+    "classification": {
+      "type": "other",
+      "dates": [
+        {"date": "2016-02-01", "context": "joined Amazon Development Center India as SDE II"},
+        {"date": "2016-07-01", "context": "won ACSCS Hackathon 2016 at Amazon"},
+        {"date": "2017-10-01", "context": "TRMS Zeus Team Award for exceptional project delivery (RiPE)"},
+        {"date": "2017-11-01", "context": "TRMS Spot Award for team process improvements"},
+        {"date": "2017-01-01", "context": "resume snapshot date — SDE II at Amazon, current role"}
+      ],
+      "projects": [
+        "TRMS",
+        "SVA",
+        "RiPE (Risk Profile Evaluation)",
+        "AmazonPay India Launch (Project Phoenix)",
+        "ASIN Analytics Ingestion",
+        "AbusePreventionService Optimization",
+        "XML Parser Migration",
+        "Variable Comparison Tool",
+        "ACSCS Hackathon 2016",
+        "TRMS Zeus Award",
+        "TRMS Spot Award",
+        "Scrum Workshop Facilitation (Amazon)",
+        "TRMS Interview Question Bank",
+        "Onboarding Guide"
+      ],
+      "skills": [
+        "Java",
+        "J2EE",
+        "Microservices",
+        "API Design",
+        "Data Structures Instruction",
+        "Performance Profiling",
+        "Performance Optimization",
+        "Cost Optimization",
+        "Fraud Detection",
+        "Scrum",
+        "Agile",
+        "Scrum Facilitation",
+        "Agile Product Ownership",
+        "Agile Coaching",
+        "Technical Leadership",
+        "Mentoring",
+        "Hiring",
+        "Interviewing",
+        "XML Parsing",
+        "XML/JSON Parsing",
+        "JVM",
+        "JVM Tuning",
+        "Hackathon",
+        "Knowledge Management",
+        "Oncall Management",
+        "Onboarding"
+      ],
+      "people": [
+        {"name": "Dattatreya S Vellal", "role": "author / subject"}
+      ],
+      "organizations": [
+        {"name": "Amazon", "role": "employer"},
+        {"name": "TRMS", "role": "team"},
+        {"name": "ACSCS", "role": "org unit"},
+        {"name": "Exeter Software India Pvt. Ltd.", "role": "former_employer"},
+        {"name": "IBM India Pvt. Ltd.", "role": "former_employer"},
+        {"name": "R. V. College of Engineering", "role": "education"},
+        {"name": "Annamalai University", "role": "education"},
+        {"name": "Computer Society of India", "role": "professional_body"},
+        {"name": "Mentor Together", "role": "community"}
+      ],
+      "claims": [
+        "Software Development Engineer II at Amazon Development Center India (Feb 2016 – present)",
+        "13+ years of experience at time of resume",
+        "Winner of Amazon ACSCS Hackathon 2016 — 45 working prototypes, 30+ teams, 4 countries",
+        "TRMS Zeus Team Award Oct 2017 for exceptional project delivery of RiPE",
+        "TRMS Spot Award Nov 2017 for team process improvements",
+        "Generic context container for fraud-check-services used by 9 external clients",
+        "AmazonPay OneAccountPerCustomer microservice supporting 1130 TPS in production",
+        "Ingested 2+ Billion ASIN data into analytics systems",
+        "Saved $34,000 in 2017 via performance benchmarking and hardware optimization",
+        "20% TPS improvement via performance tuning",
+        "Modified open-source JSON parser (JsonLib) — improved catalog indexing by 20%",
+        "Scrum process improvement: team task completion rate from 63% to 85%",
+        "5 day-long Scrum & Agile PO workshops, 150+ participants, 4.27/5 rating",
+        "71 interviews conducted, 30% conversion rate",
+        "3 SDE-1 to SDE-2 promotion calibrations — all positive conversions",
+        "Reporting tool reduced SDE & ML scientist effort by 60%",
+        "Youngest member of IBM Technical Experts Council India",
+        "Youngest member of Prototyping & Architecture group at Exeter"
+      ],
+      "confidence": 0.98
+    }
+  }
+]

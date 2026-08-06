@@ -1,0 +1,95 @@
+[
+  {
+    "file_name": "2025 Dattatreya Subramanya Vellal Resume.pdf",
+    "file_type": "pdf",
+    "media_url": "",
+    "context": "Resume circa 2025 — Philips North America LLC current role (Nov 2021 – Present). Title: Principal (Software Competency Lead). Rochester, Michigan. Key deltas vs 2023: Bar Raiser program now explicitly quantified — launched and led global program with 15 cross-functional team members, training 50+ engineers, cut senior hiring time by 50%. Explicit tech skills list added including Java, Python, AWS, Azure, GitHub, CoPilot, Scaled Agile, Prompt Engineering. Medical Device Software Compliance dropped from skills sidebar. Philips India savings remain $2.3M/$3.8M. Same career history structure.",
+    "raw_text": "Dattatreya Subramanya Vellal (Datta)\nPrincipal (Software Competency Lead)\nLeader with over 18 years of experience leading global teams, delivering $3M+ in cost savings, and driving business impact in digital transformation, engineering excellence and executive influence across healthcare and e-commerce industries.\nRochester, Michigan | www.dsvellal.com | dsvellal@gmail.com | +1 248-933-2032 | LinkedIn: dattatreyavellal\n\n=== RELEVANT WORK EXPERIENCE ===\n\nPhilips North America LLC, Rochester Hills, Michigan\nSoftware Competency Lead | 11/2021 – Present\n- Directed digital transformation and automation initiatives, leading U.S. teams to achieve $300K in infrastructure savings.\n- Orchestrated continuous value delivery strategy, slashing product delivery time by 60% and enhancing hospital outcomes.\n- Launched and led global 'Bar Raiser' program with 15 cross-functional team members, training 50+ engineers to cut senior hiring time by 50%.\n- Pioneered adoption of digital platforms and Service-Ops automation, boosting productivity for 7,000+ Philips engineers worldwide with 99.999% uptime.\n- Synthesized complex global software development metrics to author the 2024 State of Craftsmanship report, surfacing critical patterns and delivering high-impact insights to elevate software delivery speed and software quality.\n- Mentored executive leaders in Software Development & Delivery, Technical Debt assessment & elimination realizing cost savings.\n\nPhilips India Limited, Bangalore, India\nSoftware Competency Lead | 09/2018 – 11/2021\n- Collaborated with business stakeholders to architect a 3-year digital transformation roadmap, delivering $2.3M in savings and unlocking $3.8M in future opportunities.\n- Championed quality-at-desk program, leading cross-business teams to eliminate technical debt and secure $100K annual savings.\n- Assembled and led a team of 8 to deploy CI/CD pipeline, slashing release cycles by 30% and elevating software quality.\n- Partnered with C-level executives to overhaul Philips India hiring strategy, driving 18% candidate NPS and 15% manager NPS gains.\n- Earned promotion to Principal (youngest in Philips India) by spearheading cost savings and delivery enhancements, showcasing executive-level impact.\n\nAmazon India Private Limited, Bangalore, India\nSoftware Development Engineer | 02/2016 – 08/2018\n- Guided a team of 5 engineers to scale 6 microservices, powering 8M daily transactions with robust performance.\n- Spearheaded infrastructure optimization using performance benchmarking, driving $34K in annual savings.\n- Instituted agile practices and daily management policies, leading teams to reduce release time by 18%.\n- Led scrum and agile ownership workshops for 150+ participants, earning a 4.3/5 satisfaction score and fostering team excellence.\n\n=== PREVIOUS EXPERIENCE ===\nSenior Lead Software Development, Exeter Software India Pvt Ltd | 04/2013 – 11/2015\nSoftware Engineer, IBM India Private Limited | 07/2007 – 03/2013\n\n=== SKILLS ===\n- Cloud-Native Development – serverless, cloud architecture, AWS, Azure, CI/CD\n- Security & Compliance – DevSecOps, zero-trust security\n- Scalable System Architecture – Distributed systems, high-volume workload design\n- AI & Machine Learning – AI-powered testing, automation, data-driven insights\n- Legacy to Modern Software – Technical Debt Elimination, monoliths to microservices, refactoring, cloud adoption\n- Java, Python, AWS, Azure, GitHub, CoPilot, Scaled Agile, Prompt Engineering\n- Program Management – Agile, Scrum, SAFe, Road mapping, Risk Management\n- Stakeholder Management – Executive-level Reporting, Executive Presentations, Cross-functional leadership\n\n=== EDUCATION ===\nR.V. College of Engineering | Bachelor of Engineering, Computer Science | Bangalore, Karnataka, India | 07/2003 – 06/2007\n\n=== OTHER ===\n- Smart Home Automation Enthusiast.\n- Deployed Language Model to reduce cognitive load of coaches in Math Pentathlon.\n- Recipient of the prestigious Outstanding Achievement Award among others.\n- Internationally certified to practice Yoga and Yoga Therapy.\n- Many invited lectures, seminars & workshops globally, addressing over 2K participants from 22 institutions.\n- Secured 2 Patents, driving engineering innovation.\n- Mentored 30+ engineers to senior tech leadership role.",
+    "classification": {
+      "type": "other",
+      "dates": [
+        {"date": "2021-11-01", "context": "current role start: Principal (Software Competency Lead), Philips North America LLC"},
+        {"date": "2025-01-01", "context": "resume snapshot date — Bar Raiser program quantified, explicit tech skills added"},
+        {"date": "2024-01-01", "context": "authored 2024 State of Craftsmanship report"},
+        {"date": "2018-09-01", "context": "Philips India tenure start"},
+        {"date": "2021-11-01", "context": "Philips India tenure end"},
+        {"date": "2016-02-01", "context": "Amazon tenure start"},
+        {"date": "2018-08-31", "context": "Amazon tenure end"},
+        {"date": "2013-04-01", "context": "Exeter tenure start"},
+        {"date": "2015-11-30", "context": "Exeter tenure end"},
+        {"date": "2007-07-01", "context": "IBM tenure start"},
+        {"date": "2013-03-31", "context": "IBM tenure end"}
+      ],
+      "projects": [
+        "Digital Transformation",
+        "Bar Raiser Program",
+        "Service-Ops Automation",
+        "State of Craftsmanship Report",
+        "Software Center of Excellence",
+        "Quality-at-Desk Program",
+        "CI/CD Pipeline",
+        "Math Pentathlon LLM Coaching",
+        "Smart Home Automation",
+        "TRMS",
+        "OneGate",
+        "Advanced Condition Monitoring for High Value Assets (NR CoE)"
+      ],
+      "skills": [
+        "Java",
+        "Python",
+        "AWS",
+        "Azure",
+        "GitHub",
+        "GitHub Copilot",
+        "SAFe",
+        "Prompt Engineering",
+        "Cloud Architecture",
+        "DevSecOps",
+        "Zero-Trust Security",
+        "Distributed Systems",
+        "AI",
+        "Machine Learning",
+        "Technical Debt Elimination",
+        "Cloud Migration",
+        "Program Management",
+        "Stakeholder Management",
+        "Bar Raising",
+        "Digital Transformation",
+        "Software Excellence Leadership",
+        "Mentoring",
+        "Coaching",
+        "CI/CD",
+        "Microservices",
+        "Scalability",
+        "Serverless"
+      ],
+      "people": [
+        {"name": "Dattatreya S Vellal", "role": "author / subject"}
+      ],
+      "organizations": [
+        {"name": "Philips North America", "role": "employer"},
+        {"name": "Philips India", "role": "former_employer"},
+        {"name": "Amazon", "role": "former_employer"},
+        {"name": "Exeter Software India Pvt. Ltd.", "role": "former_employer"},
+        {"name": "IBM India Pvt. Ltd.", "role": "former_employer"},
+        {"name": "R. V. College of Engineering", "role": "education"}
+      ],
+      "claims": [
+        "Title: Principal (Software Competency Lead) at Philips North America LLC",
+        "18+ years experience, $3M+ cost savings delivered across career",
+        "Bar Raiser program: launched and led global program with 15 cross-functional team members, training 50+ engineers to cut senior hiring time by 50%",
+        "Philips NA: $300K infrastructure savings, 60% product delivery time reduction, 99.999% uptime for 7000+ engineers",
+        "Authored 2024 State of Craftsmanship report",
+        "Philips India: $2.3M savings, $3.8M future opportunity, 30% release cycle reduction, 18%/15% NPS gains",
+        "Amazon: 8M daily transactions, $34K savings, 18% release time reduction, 4.3/5 workshop rating",
+        "Explicit tech skills: Java, Python, AWS, Azure, GitHub, CoPilot, Scaled Agile, Prompt Engineering",
+        "30+ engineers mentored to senior tech leadership",
+        "2K+ participants addressed from 22 institutions",
+        "2 patents secured",
+        "Youngest Principal in Philips India",
+        "Deployed LLM for Math Pentathlon coaching"
+      ],
+      "confidence": 0.98
+    }
+  }
+]

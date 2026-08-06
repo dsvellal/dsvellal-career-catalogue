@@ -29,6 +29,8 @@ out/
 # Data (local only, never committed)
 data/*
 !data/evidence/
+!data/batch_*.json
+!data/enrich_*.json
 *.db
 *.db-journal
 
