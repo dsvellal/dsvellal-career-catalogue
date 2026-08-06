@@ -1076,3 +1076,40 @@ Multi-turn interview resulting in data architecture decisions:
 - Decision 025: Data Representation Architecture (Live API + static publish hybrid, view-specific endpoints, DuckDB evidence index, LLM query planner, curated highlights, split graph JSON)
 - Decision 026: Evidence Drill-Down UX — Three-Level Depth (summary, rich summary, full artifact)
 - Decision 027: Reverse Chronological Era Order (newest first everywhere)
+
+---
+
+## Prompt 040
+
+**Timestamp:** 2026-08-06T00:00:00Z
+**Phase:** Data Architecture Enhancement
+**Direction:** User -> System (Interview)
+
+### Prompt
+
+> I am now going to ingest content that were already ingested, from amazon, exeter and IBM.. Can you tell me how per-artifact ingested data and metadata (including chunks, index, tags, and structured data stored) can be enhanced? I want this to be my master set of data. I will create a number of visualizations from data ingested. Not just historic data. I will end up ingesting monthly emails, calendar invites among others going forward, I want to generate a bunch of reports from it. Can you tell me how the data can be structurally stored?
+
+### Interview Questions & Responses
+
+| # | Question | Options | User Choice |
+|---|----------|---------|-------------|
+| 1 | What should be the primary structured data layer? | A: DuckDB-first, markdown as export (Recommended) / B: Dual-write / C: Markdown-first, DuckDB as derived / D: Event-sourced | **C: Markdown-first, DuckDB as derived index** |
+| 2 | How should the YAML frontmatter schema be structured? | A: Flat + comprehensive (Recommended) / B: Nested + typed / C: Flat + minimal | **A: Flat + comprehensive** |
+| 3 | How should recurring/monthly artifacts be handled? | A: Same format with `recurring: true` + `period` (Recommended) / B: Separate `data/recurring/` directory / C: Calendar as table only | **A: Same format, tagged with `recurring: true` + `period`** |
+| 4 | Re-ingestion approach for Amazon/Exeter/IBM? | A: Enhance in-place (Recommended) / B: Re-create from scratch / C: Parallel v2/ copies | **A: Enhance in-place** |
+
+### Response Summary
+
+Designed the enhanced data architecture for the master dataset:
+- **Storage:** Markdown-first with YAML frontmatter; DuckDB rebuilt from frontmatter via `twin index-evidence`
+- **Schema:** Flat + comprehensive (18 fields: title, date, year, era, organization, category, source_type, channel, involvement, role, people, skills, programs, tags, nps, sentiment, impact_type, recurring, period)
+- **Recurring data:** Same evidence file format, `recurring: true` + `period: YYYY-MM`
+- **Re-ingestion:** Enhance existing files in-place (prepend YAML frontmatter, body unchanged)
+- **Next step:** Apply frontmatter to all existing Amazon/Exeter/IBM files, then update `evidence_index.py` to parse frontmatter-first
+
+### Decisions Triggered
+
+- Decision 028: Master Dataset — Markdown-First with DuckDB as Derived Index
+- Decision 029: Flat Comprehensive YAML Frontmatter Schema
+- Decision 030: Recurring Artifacts — Same Format with Tags
+- Decision 031: Re-Ingestion Strategy — Enhance In-Place

@@ -894,6 +894,131 @@ Key files:
 ## Decision 027: Reverse Chronological Era Order
 
 **Date:** 2026-08-05
+**Phase:** Data Representation
+**Category:** UX / Data Display
+
+**Question:** In what order should eras and items appear in the timeline and other views?
+
+**Decision:** Reverse chronological — newest first everywhere.
+
+**Rationale:** Users (recruiters, interviewers) care most about recent work. Showing latest achievements first reduces scroll-to-value time.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Chronological (oldest first) | Forces scrolling past early career to reach current impact |
+| Grouped by theme | Loses temporal narrative arc |
+
+---
+
+## Decision 028: Master Dataset — Markdown-First with DuckDB as Derived Index
+
+**Date:** 2026-08-06
+**Phase:** Data Architecture Enhancement
+**Category:** Storage Architecture
+
+**Question:** What should be the primary structured data layer for the master dataset, given the need for visualizations, recurring monthly ingestion, and report generation?
+
+**Decision:** Markdown evidence files remain the canonical store. DuckDB is rebuilt (derived) from them via `twin index-evidence`. Enhanced with YAML frontmatter for richer structured metadata.
+
+**Rationale:** Preserves git-tracked auditability and human readability. Every artifact is a file you can read, diff, and grep. DuckDB provides the queryable layer for reports and viz without introducing sync complexity between dual stores.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| DuckDB-first, markdown as export | Loses git history as source of truth; markdown becomes a generated artifact that can drift |
+| Dual-write (markdown + DuckDB in parallel) | Two writes per artifact, divergence risk if one is updated without the other |
+| Event-sourced append-only log | Most complex to implement, overkill for the use case; no need for event replay |
+
+---
+
+## Decision 029: Flat Comprehensive YAML Frontmatter Schema
+
+**Date:** 2026-08-06
+**Phase:** Data Architecture Enhancement
+**Category:** Schema Design
+
+**Question:** How should the YAML frontmatter be structured to support reporting needs (time-series, network analysis, skill progression, impact reports)?
+
+**Decision:** Flat + comprehensive — every field at the top level, lists for multi-value fields, 1:1 mapping to DuckDB columns.
+
+**Schema:**
+```yaml
+title: <string>
+date: <ISO date or original date string>
+year: <int>
+era: <Amazon | Exeter | IBM | Philips India | Philips USA | Independent>
+organization: <Philips | Amazon | Exeter | IBM | Independent>
+category: <string>
+source_type: <email | calendar | image | pdf | presentation | spreadsheet | document | social_post | github | certificate>
+channel: <email_archive | outlook_calendar | viva_engage | linkedin | github | internal_screenshot | ...>
+involvement: <author | direct_recipient | cc_mentioned | participant | mentioned_by_name | part_of_distribution>
+role: <role title at time>
+people: [list of names]
+skills: [list of skills demonstrated/exercised]
+programs: [list of programs referenced]
+tags: [flexible multi-label tags]
+nps: <float or null>
+sentiment: <positive | neutral | negative>
+impact_type: <award | recognition | delivery | operational | leadership | technical | mentoring | null>
+recurring: <true | false>
+period: <YYYY-MM, only if recurring>
+```
+
+**Rationale:** Flat schema maximises DuckDB index-building simplicity — each YAML key maps 1:1 to a table column. Fast regex/YAML parse during rebuild. No nesting complexity.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Nested + typed (source.type, involvement.role) | More expressive but requires flattening logic for DuckDB column mapping; complex YAML parsing |
+| Flat + minimal (enrich later) | First-pass reports would be sparse; deferred enrichment adds a second pass |
+
+---
+
+## Decision 030: Recurring Artifacts — Same Format with Tags
+
+**Date:** 2026-08-06
+**Phase:** Data Architecture Enhancement
+**Category:** Temporal Data Handling
+
+**Question:** How should recurring/monthly artifacts (emails, calendar invites, 1:1s) be handled differently from one-off evidence?
+
+**Decision:** Same evidence file format for everything. Recurring items get `recurring: true` and a `period: YYYY-MM` field. No separate directory structure.
+
+**Rationale:** Uniform format means one ingestion path, one parser, one DuckDB table. Time-series aggregation is just `GROUP BY period` in SQL. No special handling needed.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Separate `data/recurring/` directory with roll-ups | Two directory trees, more complex glob patterns, duplicated index logic |
+| Calendar as structured table only (no markdown) | Breaks "everything gets an evidence file" protocol; two ingestion paths |
+
+---
+
+## Decision 031: Re-Ingestion Strategy — Enhance In-Place
+
+**Date:** 2026-08-06
+**Phase:** Data Architecture Enhancement
+**Category:** Migration Strategy
+
+**Question:** For Amazon, Exeter, and IBM content being re-ingested: add frontmatter in-place or create fresh files?
+
+**Decision:** Enhance in-place — read each existing evidence file, infer structured metadata from the body, prepend YAML frontmatter. Body stays unchanged. File paths and numbering preserved.
+
+**Rationale:** No duplicate files, clean git history (diff shows only added frontmatter), maintains all existing cross-references and INDEX.md links. Lowest risk approach.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Re-create from scratch | Loses git history, needs raw source files still accessible, breaks cross-references |
+| Parallel v2/ copies then swap | Temporary duplication, complex directory management, unnecessary if in-place works |
+
+**Date:** 2026-08-05
 **Phase:** Design (UX)
 **Category:** UX / Presentation
 
