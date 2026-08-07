@@ -1,15 +1,13 @@
 # Handover
 
-**Last Updated:** 2026-08-06T19:59:00Z
-**Session:** Evidence commit and repository synchronization
+**Last Updated:** 2026-08-06T20:12:00Z
+**Session:** Exeter career data ingestion (2013-2017)
 
 ---
 
 ## Last Completed Action
 
-Committed and pushed all evidence files, batch/enrich JSON data, images, certificates, PDFs, session data, and .claude configuration to git. Two commits:
-1. 350 files: comprehensive evidence ingestion (recommendations 2012-2025, certificates, presentations, sessions, images, viz media, .claude config)
-2. 44 files: batch_*.json and enrich_*.json data files (gitignore updated to allow them)
+Ingested 98 Exeter (Edifecs) career artifacts from `/Downloads/Career/2013 Exeter/`. Extracted text from 92 PDFs, 2 XLSX performance reviews, 1 PPTX presentation, 2 JPEG JIRA screenshots, and 1 compensation letter. Generated evidence markdown with YAML frontmatter for all. Committed and pushed.
 
 ---
 
@@ -19,9 +17,9 @@ Committed and pushed all evidence files, batch/enrich JSON data, images, certifi
 |--------|--------|
 | Phase | Data architecture enhancement (DESIGN COMPLETE, IMPLEMENTATION PENDING) |
 | Knowledge graph | 3,471 nodes, 17,190 edges, 25,767 chunks (in DuckDB/ChromaDB) |
-| Evidence files (total) | 821 files in data/evidence/ |
-| Evidence markdown | 633 markdown files (587 individual + 12 indexes + 34 other) |
-| Evidence images | 154 files (Viva Engage screenshots, presentation slides) |
+| Evidence files (total) | 923 files in data/evidence/ |
+| Evidence markdown | 731 markdown files (685 individual + 12 indexes + 34 other) |
+| Evidence images | 156 files (Viva Engage screenshots, presentation slides, JIRA screenshots) |
 | Evidence certificates | 14 files (CodeScene, Google, academic credentials) |
 | Evidence sessions | 20 files (student feedback xlsx/csv, talks index) |
 | Evidence snapshots | 4 files (internal Philips content preserved) |
@@ -31,6 +29,7 @@ Committed and pushed all evidence files, batch/enrich JSON data, images, certifi
 | Timeline | 6 eras, 353 items, 43 with evidence links (12%) |
 | Tests | 227 pass, 2 skipped |
 | Build | TypeScript clean |
+| Exeter evidence | 98 artifacts (2013: 17, 2014: 54, 2015: 34, 2017: 2) — fully ingested with frontmatter |
 | Git | Clean (all committed and pushed to main) |
 
 ---
@@ -122,7 +121,7 @@ period: <YYYY-MM, only if recurring>
 
 ### Data committed to git
 
-- `data/evidence/` — 821 files (markdown, images, PDFs, xlsx, csv, json)
+- `data/evidence/` — 923 files (markdown, images, PDFs, xlsx, csv, json)
 - `data/batch_*.json` — 32 batch ingestion source files
 - `data/enrich_*.json` — 11 enrichment output files
 - `viz/` — React app with 8 tabs, D3 visualizations, static data JSON

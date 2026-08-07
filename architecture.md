@@ -127,7 +127,7 @@ A personal knowledge system that ingests all professional artifacts (documents, 
 | LLM (fallback) | Ollama (gemma4, BGE-m3) | Offline capability, free |
 | Frontend | React + TypeScript + Vite + D3 | SPA with tab navigation, static JSON data |
 | Viz Data | `twin publish` static JSON generation | Pre-shaped per view, evidence-enriched |
-| Evidence Index | DuckDB evidence_index table | 821 files (633 markdown, 154 images, 14 certs, 20 sessions) |
+| Evidence Index | DuckDB evidence_index table | 923 files (731 markdown, 156 images, 14 certs, 20 sessions) |
 | CLI | Python (Typer) | Consistent with backend, rich terminal output, modern Click alternative |
 | Drive Sync | Google Drive API v3 | Official API, change tracking with page tokens |
 | Deployment (cloud) | Domain-agnostic, configurable | Vercel/Cloud Run or equivalent. Decided at Phase 7. |

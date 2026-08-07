@@ -1144,3 +1144,48 @@ Then: "Update all the markdown files at the root level, commit and push."
 ### Decisions Triggered
 
 - None (repository maintenance, not architectural)
+
+---
+
+## Prompt 042
+
+**Timestamp:** 2026-08-06T20:00:00Z
+**Phase:** Data Population (Exeter)
+**Direction:** User -> System
+
+### Prompt
+
+> Let's start indexing Exeter data now.. /Users/dsvellal/Downloads/Career/2013\ Exeter
+
+### Clarifications Given
+
+1. **Compensation letter:** Include but focus on "special benefits for critical contributions" angle, not the numbers
+2. **XLSX/PPTX:** Extract full content and create evidence markdown
+3. **PDFs:** Extract text content (not just filename classification)
+
+### Response Summary
+
+Processed 98 files from the Exeter career folder (2013-2017):
+- 92 PDFs: appreciation emails extracted via pdfplumber, classified into 19 categories
+- 2 XLSX: performance reviews (PPM Q1 2015 — Final: 2.864, Behavioral: 4.0/5; PPM March-June 2015 — 10.7x performance improvement)
+- 1 PPTX: IF Plan Selection Rewrite presentation (13 slides, layered architecture)
+- 2 JPEG: JIRA ticket screenshots read visually (ONEGATECORE-27173, ONEGATECORE-24434)
+- 1 PDF: compensation letter (promotion to Senior Lead + special benefits, numbers omitted)
+
+Generated 98 evidence markdown files with full YAML frontmatter:
+- 2013: 15 new files (performance reviews, appreciation, celebrations)
+- 2014: 51 new files (client success, knowledge sharing, leadership, events)
+- 2015: 25 new files (performance reviews, technical analysis, promotion)
+- 2017: 1 new file (TRMS Tech Awards)
+
+Key findings surfaced:
+- "Linchpin in the team" — handling complexity is now an expectation (PPM Q1 2015)
+- "Countless extra miles that have made a big difference to our business" (PPM Q3 2013)
+- Edifecs integration: "It's not a lie to say we can generate 834s now!" — Jonah Egenolf
+- Performance: 16s to 1.5s page load (10.7x improvement)
+- Behavioral competencies: 4.0/5 across all 5 dimensions
+- "Thanks for the detailed note, Datta" — US QA team on JIRA analysis
+
+### Decisions Triggered
+
+- None (data population, not architectural)
