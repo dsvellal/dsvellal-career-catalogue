@@ -1,13 +1,15 @@
 # Handover
 
-**Last Updated:** 2026-08-06T00:30:00Z
-**Session:** Data architecture enhancement — YAML frontmatter schema design
+**Last Updated:** 2026-08-06T19:59:00Z
+**Session:** Evidence commit and repository synchronization
 
 ---
 
 ## Last Completed Action
 
-Designed and documented the enhanced data architecture for the master dataset. Four architecture decisions made via structured interview (Decisions 028-031). No code changes yet — design phase only.
+Committed and pushed all evidence files, batch/enrich JSON data, images, certificates, PDFs, session data, and .claude configuration to git. Two commits:
+1. 350 files: comprehensive evidence ingestion (recommendations 2012-2025, certificates, presentations, sessions, images, viz media, .claude config)
+2. 44 files: batch_*.json and enrich_*.json data files (gitignore updated to allow them)
 
 ---
 
@@ -16,14 +18,20 @@ Designed and documented the enhanced data architecture for the master dataset. F
 | Aspect | Status |
 |--------|--------|
 | Phase | Data architecture enhancement (DESIGN COMPLETE, IMPLEMENTATION PENDING) |
-| Knowledge graph | 3,471 nodes, 17,190 edges, 25,767 chunks |
-| Evidence index | 562 files indexed in DuckDB (349 Philips India, 213 Philips USA) |
-| Evidence files | 600+ markdown files in data/evidence/ (NO frontmatter yet) |
+| Knowledge graph | 3,471 nodes, 17,190 edges, 25,767 chunks (in DuckDB/ChromaDB) |
+| Evidence files (total) | 821 files in data/evidence/ |
+| Evidence markdown | 633 markdown files (587 individual + 12 indexes + 34 other) |
+| Evidence images | 154 files (Viva Engage screenshots, presentation slides) |
+| Evidence certificates | 14 files (CodeScene, Google, academic credentials) |
+| Evidence sessions | 20 files (student feedback xlsx/csv, talks index) |
+| Evidence snapshots | 4 files (internal Philips content preserved) |
+| Batch JSON | 32 files in data/ (ingestion source data) |
+| Enrich JSON | 11 files in data/ (enrichment outputs) |
 | Viz tabs | 8 live at http://localhost:5174 |
 | Timeline | 6 eras, 353 items, 43 with evidence links (12%) |
 | Tests | 227 pass, 2 skipped |
 | Build | TypeScript clean |
-| Git | Uncommitted changes (decisions.md, prompts.md, handover.md) |
+| Git | Clean (all committed and pushed to main) |
 
 ---
 
@@ -77,7 +85,7 @@ None.
 
 ## Key Context
 
-### Architecture Decisions (this session)
+### Architecture Decisions (current)
 
 | Decision | Choice |
 |----------|--------|
@@ -112,14 +120,22 @@ period: <YYYY-MM, only if recurring>
 ---
 ```
 
-### Existing infrastructure
+### Data committed to git
 
-- `src/twin/ingestion/evidence_index.py` — current regex-based parser (needs frontmatter-first upgrade)
-- `src/twin/db.py` — DuckDB schema (evidence_index table needs new columns)
-- `data/evidence/INDEX.md` — master index of all evidence files
-- `twin index-evidence` CLI command — rebuilds evidence_index table
-- Evidence files exist for: 2018 (3), 2019 (155+19), 2020 (67+64), 2021 (3+19), 2022 (7), 2023 (15), 2024 (5), 2025 (56), 2026 (98)
-- Amazon/Exeter/IBM files were ingested via `scripts/ingest_career.py` into the knowledge graph (nodes/edges/chunks) but evidence markdown files for those eras may be minimal or absent — verify what exists in `data/evidence/`
+- `data/evidence/` — 821 files (markdown, images, PDFs, xlsx, csv, json)
+- `data/batch_*.json` — 32 batch ingestion source files
+- `data/enrich_*.json` — 11 enrichment output files
+- `viz/` — React app with 8 tabs, D3 visualizations, static data JSON
+- `.claude/` — skills configuration (agent-browser, impeccable)
+
+### What is NOT in git (local only)
+
+- `data/email_attachments/` — 493 raw email attachment files
+- `data/media/` — 416 raw media files
+- `data/chroma/` — ChromaDB vector store
+- `data/knowledge.duckdb` — DuckDB database
+- `viz/data/knowledge.duckdb` — viz copy of DuckDB
+- `viz/data/chroma/` — viz copy of ChromaDB
 
 ### Key conventions preserved
 
@@ -129,6 +145,7 @@ period: <YYYY-MM, only if recurring>
 - Claude performs all classification (no external API)
 - Every artifact gets an evidence file
 - Evidence files are git-tracked
+- Internal URLs get HTML/PDF snapshots; external URLs referenced only
 
 ### Era/role mapping for frontmatter inference
 

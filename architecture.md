@@ -122,11 +122,12 @@ A personal knowledge system that ingests all professional artifacts (documents, 
 | Database | DuckDB | Embedded analytical DB, larger-than-memory, columnar, FTS extension, better for graph-shaped queries than SQLite |
 | Vectors | ChromaDB (embedded) | Proven in Chitta, works well for <1M vectors |
 | Graph | NetworkX (in-memory from DuckDB) | Fast traversal, no infra dependency. Rebuild from edges table at startup. |
-| LLM (primary) | Google Gemini API (2.5-pro / 2.5-flash) | User's existing subscription, strong synthesis |
+| LLM (classification) | Claude (interactive session) | Superior classification quality, no external API needed (Decision 028) |
+| LLM (synthesis) | Google Gemini API (2.5-pro / 2.5-flash) | User's existing subscription, strong synthesis |
 | LLM (fallback) | Ollama (gemma4, BGE-m3) | Offline capability, free |
 | Frontend | React + TypeScript + Vite + D3 | SPA with tab navigation, static JSON data |
 | Viz Data | `twin publish` static JSON generation | Pre-shaped per view, evidence-enriched |
-| Evidence Index | DuckDB evidence_index table | 562 files parsed and queryable |
+| Evidence Index | DuckDB evidence_index table | 821 files (633 markdown, 154 images, 14 certs, 20 sessions) |
 | CLI | Python (Typer) | Consistent with backend, rich terminal output, modern Click alternative |
 | Drive Sync | Google Drive API v3 | Official API, change tracking with page tokens |
 | Deployment (cloud) | Domain-agnostic, configurable | Vercel/Cloud Run or equivalent. Decided at Phase 7. |

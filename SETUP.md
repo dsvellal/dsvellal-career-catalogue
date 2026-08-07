@@ -1,7 +1,7 @@
 # Setup Instructions
 
 **Project:** dsvellal-personal-knowledge-context
-**Status:** Phase 1 (Core Ingestion + Graph)
+**Status:** Phases 0-6 Complete, Phase 7 (Cloud Deployment) Pending
 
 ---
 
@@ -103,7 +103,10 @@ dsvellal-personal-knowledge-context/
 | Command | Status | Description |
 |---------|--------|-------------|
 | `twin --help` | Working | Show available commands |
-| `twin status` | Working | Show system status |
-| `twin init` | Stub (Phase 1) | Initialize knowledge graph database |
-| `twin ingest <path>` | Stub (Phase 1) | Ingest a file or directory |
-| `twin serve` | Stub (Phase 2) | Start the API server |
+| `twin status` | Working | Show system status (node type breakdown, last ingestion) |
+| `twin init` | Working | Initialize knowledge graph database |
+| `twin ingest <path>` | Working | Ingest a file or directory (full pipeline) |
+| `twin serve` | Working | Start the FastAPI server (chat, ask, generate, summary) |
+| `twin publish` | Working | Generate static portfolio (JSON + HTML) |
+| `twin publish --viz-only` | Working | Generate viz-specific JSON data files |
+| `twin index-evidence` | Working | Rebuild DuckDB evidence_index from evidence markdown |

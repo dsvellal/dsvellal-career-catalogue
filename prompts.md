@@ -1113,3 +1113,34 @@ Designed the enhanced data architecture for the master dataset:
 - Decision 029: Flat Comprehensive YAML Frontmatter Schema
 - Decision 030: Recurring Artifacts — Same Format with Tags
 - Decision 031: Re-Ingestion Strategy — Enhance In-Place
+
+---
+
+## Prompt 041
+
+**Timestamp:** 2026-08-06T19:50:00Z
+**Phase:** Repository Maintenance
+**Direction:** User -> System
+
+### Prompt
+
+> Make sure you update all markdown files, commit and push. Evidences should be pushed irrespective of file types.
+
+Followed by: "just commit everything except knowledge.duckdb, and chroma folder"
+
+Then: "Can you also commit batch_*.json and enrich_*.json?"
+
+Then: "Update all the markdown files at the root level, commit and push."
+
+### Response Summary
+
+1. Staged all 350 untracked/modified files, excluding viz/data/knowledge.duckdb and viz/data/chroma/
+2. Committed and pushed: evidence markdown, images (154), PDFs, certificates (14), xlsx sessions (20), snapshots (4), viz media, .claude skills config
+3. Updated .gitignore to unignore `data/batch_*.json` and `data/enrich_*.json`
+4. Committed and pushed 44 additional files (32 batch + 11 enrich + .gitignore)
+5. Updated all root markdown files (handover, README, plan, SETUP, architecture, prompts) to reflect current state
+6. Final commit and push
+
+### Decisions Triggered
+
+- None (repository maintenance, not architectural)
