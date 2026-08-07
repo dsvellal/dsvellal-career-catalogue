@@ -107,11 +107,35 @@ Detailed, traceable evidence extracted from ingested sources. Each entry links t
 | [2026 (latest)](2026/individual/112-resume-2026-latest-authoritative.md) | 2026 | Software Competency Lead | Comprehensive | Full record-keeping format |
 | [Amazon Work Examples](2018/individual/019-resume-2018-amazon-work-examples.md) | 2018 | SDE-2, Amazon | DOCX (LP format) | 1.9B ASINs, $35K savings, 68 interviews |
 
+## Cross-Cutting: Informal Feedbacks (2019-2026)
+
+**[informal-feedbacks/INDEX.md](informal-feedbacks/INDEX.md)** — 139 images processed into 137 evidence files, spanning 7 years of peer recognition
+
+| Metric | Value |
+|--------|-------|
+| Images processed | 139 |
+| Evidence files | 137 |
+| Date range | Aug 2019 — Aug 2026 |
+| Unique feedback givers | 80+ people |
+| Sources | Teams chats, Viva Engage, email, newsletters, conference screenshots |
+
+**Key themes:** Quality@Desk program (2019-2020), Bar Raisers initiative (2020), I Will Code (2020), reverse mentoring (2020-2026), .tune/.craft assessments (2020-2021), Ultrasound virtualisation (2024-2025), GitHub CoPilot training (2025-2026), Project Sutra/ReqSpec (2025-2026), DORA dashboards (2026), Innovation Impact Week 769 attendees (2026), CIO meeting 180K EUR scope (2026), Building Practical Agents (2026)
+
+**Notable recognition from senior leaders:**
+- Peter Skillman (SVP Design) — multiple Sutra appreciations
+- CIO Ingo — Windchill-Sutra integration meeting
+- Richard Kemkers — reverse mentoring testimonial
+- Chad Malone — DORA dashboard praise
+- Tobin Taylor-Bhatia — "art of possibility" thinking
+
 ## Structure
 
 ```
 data/evidence/
 ├── INDEX.md                          (this file)
+├── informal-feedbacks/               (137 evidence files + 139 source images)
+│   ├── INDEX.md                      (detailed index with year breakdown)
+│   └── images/                       (139 source screenshots)
 ├── 2012/
 │   └── individual/                   (4 files — IBM era + resume)
 ├── 2013/
@@ -421,7 +445,7 @@ data/evidence/
 | Team Engagement & Motivation | 1 | IGT Hospital Workflow team — "motivating them, seeds with fruits" |
 | Project Milestone | 1 | EPS-AD PI Gate passed — "thank each one of you" |
 | LinkedIn Recommendations | 1 | Rafael Vaz (GDP trainee) — informal mentoring, "natural and inspiring leader", phenomenal technical prowess |
-| Informal Feedback (Teams/Viva Engage) | 18 | Peer recognition, technical advisory, tool adoption (PHI Scanner in official playbook), mentoring, event organizing across 2024 |
+| Informal Feedback (Teams/Viva Engage) | 18 | Peer recognition, technical advisory, tool adoption (PHI Scanner in official playbook), mentoring, event organizing across 2024. See also [informal-feedbacks/INDEX.md](informal-feedbacks/INDEX.md) for full 139-image collection (2019-2026). |
 
 ### Thematic Summary
 
