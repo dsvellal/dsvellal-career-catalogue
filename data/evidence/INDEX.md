@@ -336,7 +336,7 @@ data/evidence/
 | 1 | [DevOps Pipeline — SaaS Fusion Team](2022/devops-pipeline-saas-fusion.md) | 4 emails | Architecture to Alpha, "without this fusion team couldn't have achieved", reusable CI workflows |
 | 2 | [GDP Software Track & InnerSource](2022/gdp-software-track-innersource.md) | 3 emails | Global graduate program lead, IssueOps GitHub Actions coding |
 
-## 2023 — 15 emails ingested
+## 2023 — 16 artifacts ingested (15 emails + 1 informal feedback screenshot)
 
 **Full individual index:** [2023/individual/_INDEX.md](2023/individual/_INDEX.md)
 
@@ -350,6 +350,7 @@ data/evidence/
 | Interview Framework | 1 | Resources shared, session requested |
 | Recognition & Milestones | 2 | SW Excellence Awards, 5-year service milestone |
 | LinkedIn Recommendations | 1 | NaveenKumar VR — calmness, purpose-first delegation, "changed me as a person" |
+| Informal Feedback (Teams) | 1 | Taky Djarou — HPM Release Workflows ("extremely helpful" dry-run flag) |
 
 ### Thematic Summaries
 
@@ -359,7 +360,7 @@ data/evidence/
 | 2 | [CodeScene, SBOM & DevOps Tools](2023/codescene-sbom-devops-tools.md) | 4 emails | Director-level adoption interest, SBOM architecture feedback, IGT integration |
 | 3 | [Developer Engagement & Mentoring](2023/developer-engagement-mentoring.md) | 6 emails | 50-person sessions, ad-hoc pairing, invited to mentor DS team on "achieving mastery" |
 
-## 2024 — 5 emails ingested (4 processed + 1 dupe from 2023 CodeScene)
+## 2024 — 23 artifacts ingested (5 emails + 18 informal feedback screenshots/PDFs)
 
 **Full individual index:** [2024/individual/_INDEX.md](2024/individual/_INDEX.md)
 
@@ -371,6 +372,7 @@ data/evidence/
 | Team Engagement & Motivation | 1 | IGT Hospital Workflow team — "motivating them, seeds with fruits" |
 | Project Milestone | 1 | EPS-AD PI Gate passed — "thank each one of you" |
 | LinkedIn Recommendations | 1 | Rafael Vaz (GDP trainee) — informal mentoring, "natural and inspiring leader", phenomenal technical prowess |
+| Informal Feedback (Teams/Viva Engage) | 18 | Peer recognition, technical advisory, tool adoption (PHI Scanner in official playbook), mentoring, event organizing across 2024 |
 
 ### Thematic Summary
 

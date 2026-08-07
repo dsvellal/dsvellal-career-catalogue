@@ -1,13 +1,13 @@
 # Handover
 
-**Last Updated:** 2026-08-06T20:25:00Z
-**Session:** Amazon career data ingestion (2016-2018)
+**Last Updated:** 2026-08-06T22:00:00Z
+**Session:** Informal feedback ingestion (2023 + 2024)
 
 ---
 
 ## Last Completed Action
 
-Ingested 52 Amazon career artifacts from `/Downloads/Career/2016 Amazon/`. Extracted 45 PDFs, 2 annual reviews, 1 comprehensive profile (570 code changes, $12K savings), 3 Scrum workshop evaluations, 2 award certificates (Zeus + Spot), and 1 Phonetool profile with 123 micro-achievements interpreted. Committed and pushed.
+Ingested 19 informal feedback artifacts (18×2024, 1×2023) from screenshots and PDFs in `/Downloads/Career/Feedbacks/Informal/`. Created 19 individual evidence markdown files with full YAML frontmatter, key quotes, and full content transcripts. Copied source images to `data/evidence/images/`. Updated INDEX files for 2023, 2024, and root.
 
 ---
 
@@ -17,9 +17,9 @@ Ingested 52 Amazon career artifacts from `/Downloads/Career/2016 Amazon/`. Extra
 |--------|--------|
 | Phase | Data architecture enhancement (DESIGN COMPLETE, IMPLEMENTATION PENDING) |
 | Knowledge graph | 3,471 nodes, 17,190 edges, 25,767 chunks (in DuckDB/ChromaDB) |
-| Evidence files (total) | 982 files in data/evidence/ |
-| Evidence markdown | 790 markdown files (742 individual + 14 indexes + 34 other) |
-| Evidence images | 160 files (Viva Engage screenshots, presentation slides, JIRA screenshots, awards) |
+| Evidence files (total) | 1001 files in data/evidence/ |
+| Evidence markdown | 809 markdown files (761 individual + 14 indexes + 34 other) |
+| Evidence images | 179 files (Viva Engage screenshots, presentation slides, JIRA screenshots, awards) |
 | Evidence certificates | 14 files (CodeScene, Google, academic credentials) |
 | Evidence sessions | 20 files (student feedback xlsx/csv, talks index) |
 | Evidence snapshots | 4 files (internal Philips content preserved) |
@@ -39,11 +39,15 @@ Ingested 52 Amazon career artifacts from `/Downloads/Career/2016 Amazon/`. Extra
 
 ### Re-Ingestion with Enhanced Schema (NOT YET STARTED)
 
-The user wants to re-ingest Amazon, Exeter, and IBM content by **enhancing existing evidence files in-place** with YAML frontmatter. This is the immediate next action.
+The user wants to re-ingest Amazon, Exeter, and IBM content by **enhancing existing evidence files in-place** with YAML frontmatter. This remains pending.
 
 ---
 
 ## Next Steps
+
+### Step 0: Continue ingesting remaining files from /Downloads/Career/Feedbacks/
+
+Continue ingesting any remaining artifact files from `/Downloads/Career/Feedbacks/` that have not yet been processed.
 
 ### Step 1: Update `evidence_index.py` to parse YAML frontmatter
 
