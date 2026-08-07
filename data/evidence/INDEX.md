@@ -214,13 +214,13 @@ data/evidence/
 | Category | Count | Key Evidence |
 |----------|-------|--------------|
 | Recognition | 6 | Pay-to-Load latency reduction, GC optimization, on-call reduction, Prime Day bug find |
-| Performance Profile | 2 | Phonetool (123 awards), Comprehensive contribution doc (570 code changes) |
+| Performance Profile | 2 | Phonetool (123 micro-achievements), Comprehensive contribution doc (570 code changes) |
 | Performance Review | 2 | Forte 2017 ("never seen anyone better"), Forte 2018 (Ownership 16/16) |
 | Teaching & Training | 3 | Scrum workshop (highest-scoring trainer), Agile PO workshop |
 | Philips era (overlap) | 3 | Code quality, feedback request, Netflix CI/CD (late 2018) |
 
 **Amazon era highlights (2018):**
-- **123 Phonetool awards in 2.5 years** — top percentile at L5 (average is 15-30)
+- **123 Phonetools (micro-achievements) in 2.5 years** — roughly one celebrated contribution per week
 - **$12,344/year cost savings** from host optimization (APS + AbuseCOPS)
 - **570 code changes**, 182,992 lines added, 75 packages, 86 tickets
 - **Forte 2017:** "Process oriented and methodological — never seen anyone do it better"

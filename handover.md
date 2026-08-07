@@ -1,13 +1,13 @@
 # Handover
 
-**Last Updated:** 2026-08-06T20:12:00Z
-**Session:** Exeter career data ingestion (2013-2017)
+**Last Updated:** 2026-08-06T20:25:00Z
+**Session:** Amazon career data ingestion (2016-2018)
 
 ---
 
 ## Last Completed Action
 
-Ingested 98 Exeter (Edifecs) career artifacts from `/Downloads/Career/2013 Exeter/`. Extracted text from 92 PDFs, 2 XLSX performance reviews, 1 PPTX presentation, 2 JPEG JIRA screenshots, and 1 compensation letter. Generated evidence markdown with YAML frontmatter for all. Committed and pushed.
+Ingested 52 Amazon career artifacts from `/Downloads/Career/2016 Amazon/`. Extracted 45 PDFs, 2 annual reviews, 1 comprehensive profile (570 code changes, $12K savings), 3 Scrum workshop evaluations, 2 award certificates (Zeus + Spot), and 1 Phonetool profile with 123 micro-achievements interpreted. Committed and pushed.
 
 ---
 
@@ -17,9 +17,9 @@ Ingested 98 Exeter (Edifecs) career artifacts from `/Downloads/Career/2013 Exete
 |--------|--------|
 | Phase | Data architecture enhancement (DESIGN COMPLETE, IMPLEMENTATION PENDING) |
 | Knowledge graph | 3,471 nodes, 17,190 edges, 25,767 chunks (in DuckDB/ChromaDB) |
-| Evidence files (total) | 923 files in data/evidence/ |
-| Evidence markdown | 731 markdown files (685 individual + 12 indexes + 34 other) |
-| Evidence images | 156 files (Viva Engage screenshots, presentation slides, JIRA screenshots) |
+| Evidence files (total) | 982 files in data/evidence/ |
+| Evidence markdown | 790 markdown files (742 individual + 14 indexes + 34 other) |
+| Evidence images | 160 files (Viva Engage screenshots, presentation slides, JIRA screenshots, awards) |
 | Evidence certificates | 14 files (CodeScene, Google, academic credentials) |
 | Evidence sessions | 20 files (student feedback xlsx/csv, talks index) |
 | Evidence snapshots | 4 files (internal Philips content preserved) |
@@ -30,6 +30,7 @@ Ingested 98 Exeter (Edifecs) career artifacts from `/Downloads/Career/2013 Exete
 | Tests | 227 pass, 2 skipped |
 | Build | TypeScript clean |
 | Exeter evidence | 98 artifacts (2013: 17, 2014: 54, 2015: 34, 2017: 2) — fully ingested with frontmatter |
+| Amazon evidence | 52 artifacts (2016: 13, 2017: 28, 2018: 16) — fully ingested with frontmatter |
 | Git | Clean (all committed and pushed to main) |
 
 ---
