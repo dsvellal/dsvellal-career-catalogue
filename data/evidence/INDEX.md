@@ -79,8 +79,10 @@ data/evidence/
 │   └── individual/                   (54 files — Exeter era)
 ├── 2015/
 │   └── individual/                   (34 files — Exeter era)
+├── 2016/
+│   └── individual/                   (13 files — Amazon era)
 ├── 2017/
-│   └── individual/                   (2 files — Exeter/Amazon era)
+│   └── individual/                   (28 files — Amazon era)
 ├── 2018/
 │   ├── individual/                   (1 file per email — 3 files)
 │   ├── code-quality-guidelines.md    (thematic summary)
@@ -166,22 +168,65 @@ data/evidence/
 - Behavioral competencies scored 4.0/5 across all dimensions
 - JIRA analysis praised: "Thanks for the detailed note, Datta" — US QA team
 
-## 2017 — 2 artifacts ingested
+## 2016 — 13 artifacts ingested (Amazon era begins)
+
+**Full individual index:** [2016/individual/_INDEX.md](2016/individual/_INDEX.md)
+
+| Category | Count | Key Evidence |
+|----------|-------|--------------|
+| Recognition | 7 | MySQL-to-RDS migration, XML parser feedback, Linux migration, HackDay win |
+| Teaching & Training | 3 | EE Scrum Workshop (Nov: 4.12, Dec: 4.47 presenter score, 59 attendees total) |
+| Hiring & Interviewing | 1 | Interview question contributions |
+| Award | 1 | ACSCS 2016 HackDay winner |
+| Other | 1 | Bug found via user testing |
+
+**Amazon era highlights (2016):**
+- Won ACSCS 2016 HackDay
+- Became certified SENPAI Trainer (invitation-only EE program)
+- Scrum Workshop presenter score improved from 4.12 to 4.47 in one month
+- MySQL to RDS migration, XML parser migration (recognized by SDT)
+
+## 2017 — 28 artifacts ingested
 
 **Full individual index:** [2017/individual/_INDEX.md](2017/individual/_INDEX.md)
 
 | Category | Count | Key Evidence |
 |----------|-------|--------------|
-| LinkedIn Recommendations | 1 | M Jeffin Manuel (Amazon peer) — passion, can-do attitude, peer learning |
-| Award | 1 | TRMS Tech Awards (Oct 2017) — newsletter recognition |
+| Recognition | 12 | AmazonPay launch, RiPE API, Bulk Action Tool, SVA unblocks |
+| Award | 4 | Zeus Team Award (Director-signed), TRMS Spot Award, TRMS Tech Awards, SHOWTIME |
+| Teaching & Training | 2 | EE Scrum Workshop (Oct: 4.6 presenter score), PO Facilitator certification |
+| Hiring & Interviewing | 3 | Interview questions bash (30+ curated), false positives feedback |
+| LinkedIn Recommendations | 1 | M Jeffin Manuel (Amazon peer) |
+| Other | 6 | IP/Trade Secret, onboarding guide, wiki, India Tech Conf |
 
-## 2018 — 3 emails ingested
+**Amazon era highlights (2017):**
+- **Zeus Team Award** — "Exceptional work related to project delivery" (signed by TRMS Tech Director)
+- **TRMS Spot Award** — "Contributions to team process improvement" (signed by Sr. Manager)
+- AmazonPay India launch: 1,150 TPS fraud check API (57x over-engineered for safety)
+- SVA Bulk Action Tool: resolved 5,927 investigations that had missed SLA
+- EE Scrum Workshop: 4.6/5 presenter score (highest)
+- TRMS SHOWTIME newsletter feature
 
-| # | Evidence | Date | Category | Datta's Role |
-|---|----------|------|----------|--------------|
-| 1 | [Code Quality Guidelines](2018/individual/001-re-steps-towards-code-quality-improvements.md) | 2018-11-28 | Code Quality | Author (endorsed by manager) |
-| 2 | [Feedback Request](2018/individual/002-feedback-request-for-datta-2018.md) | 2018-12-20 | Self-Development | Author |
-| 3 | [Netflix CI/CD Sharing](2018/individual/003-for-leisure-watching-mastering-chaos-the-netflix-example.md) | 2018-12-17 | CI/CD & DevOps | Author |
+## 2018 — 16 artifacts ingested
+
+**Full individual index:** [2018/individual/_INDEX.md](2018/individual/_INDEX.md)
+
+| Category | Count | Key Evidence |
+|----------|-------|--------------|
+| Recognition | 6 | Pay-to-Load latency reduction, GC optimization, on-call reduction, Prime Day bug find |
+| Performance Profile | 2 | Phonetool (123 awards), Comprehensive contribution doc (570 code changes) |
+| Performance Review | 2 | Forte 2017 ("never seen anyone better"), Forte 2018 (Ownership 16/16) |
+| Teaching & Training | 3 | Scrum workshop (highest-scoring trainer), Agile PO workshop |
+| Philips era (overlap) | 3 | Code quality, feedback request, Netflix CI/CD (late 2018) |
+
+**Amazon era highlights (2018):**
+- **123 Phonetool awards in 2.5 years** — top percentile at L5 (average is 15-30)
+- **$12,344/year cost savings** from host optimization (APS + AbuseCOPS)
+- **570 code changes**, 182,992 lines added, 75 packages, 86 tickets
+- **Forte 2017:** "Process oriented and methodological — never seen anyone do it better"
+- **Forte 2018:** Ownership LP scored 16/16 unanimous; peer recommended TPM/Manager path
+- **Highest-scoring Scrum trainer** in EE program
+- **Prime Day:** Found SVA auto-approval bug before launch (critical save)
 
 **Thematic summaries:** [code-quality-guidelines](2018/code-quality-guidelines.md) | [feedback-request](2018/feedback-request-2018.md) | [netflix-cicd](2018/netflix-cicd-knowledge-sharing.md)
 
