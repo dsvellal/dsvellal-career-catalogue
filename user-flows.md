@@ -173,7 +173,11 @@
 
 ---
 
-## Flow 9: Read the Executive Brief, Then Choose Depth
+## Archived Schema-v2 Portfolio Flows
+
+Flows 9–13 document the prior nine-route observatory and global evidence-lens interaction. They remain for product history but are superseded by the schema-v3 flows that follow.
+
+### Flow 9: Read the Executive Brief, Then Choose Depth (Archived)
 
 **Actor:** Executive recruiter, hiring leader, board or transformation sponsor
 **Goal:** Decide quickly whether Datta merits deeper evaluation, then verify the strongest claims
@@ -189,7 +193,7 @@
 
 ---
 
-## Flow 10: Inspect a Hidden Longitudinal Relationship
+### Flow 10: Inspect a Hidden Longitudinal Relationship (Archived)
 
 **Actor:** Leadership evaluator, organizational-development partner, or skeptical peer
 **Goal:** Determine whether a cross-year leadership pattern is evidence or storytelling
@@ -206,7 +210,7 @@
 
 ---
 
-## Flow 11: Explore Participant Voice and Adaptation
+### Flow 11: Explore Participant Voice and Adaptation (Archived)
 
 **Actor:** Conference organizer, learning leader, prospective mentee, or community participant
 **Goal:** Understand what people actually learned, what they criticized, and how the teaching practice evolved
@@ -222,7 +226,7 @@
 
 ---
 
-## Flow 12: Audit Claims in the Data Room
+### Flow 12: Audit Claims in the Data Room (Archived)
 
 **Actor:** Diligent evaluator, journalist, data-minded peer, or Datta
 **Goal:** Search the complete public claim inventory and understand quality gaps and corrections
@@ -238,7 +242,7 @@
 
 ---
 
-## Flow 13: Change the Evidence Lens
+### Flow 13: Change the Evidence Lens (Archived)
 
 **Actor:** Any portfolio visitor
 **Goal:** Read the same evidence according to the visitor's immediate question
@@ -249,4 +253,54 @@
 3. Method foregrounds formulas, rubrics, denominators, and attribution; Gaps foregrounds caveats, conflicts, privacy boundaries, and missing coverage
 4. The lens changes emphasis only—it does not create different facts or remove contradictory records
 5. The choice remains keyboard operable and understandable on desktop and mobile
+```
+
+---
+
+## Current Schema-v3 Portfolio Flows
+
+### Flow 14: Read an Impact-First Executive Story
+
+**Actor:** Executive recruiter, hiring leader, board member, or transformation sponsor
+**Goal:** Understand Datta's leadership case without being asked to parse the evidence inventory first
+
+```
+1. Visitor opens #/brief and sees Datta's portrait, one concise thesis, and four executive signals
+2. Visitor chooses Leadership, Career Journey, Trust, Innovation & Value, Learning, or Community & Service
+3. The selected route retains the portrait identity anchor and shows two to four non-repeating impact blocks
+4. Each block presents one heading, one meaning statement, one bounded evidence signal, and one evidence action
+5. The same raw claim is never repeated as a second story card on another page
+6. A legacy #/impact link resolves to Innovation & Value rather than failing or reopening a duplicate ledger
+```
+
+### Flow 15: Inspect a Curated Conclusion
+
+**Actor:** Evidence-minded evaluator or skeptical peer
+**Goal:** Move from executive meaning to complete traceability without switching global display modes
+
+```
+1. Visitor chooses Explore evidence / Inspect claim from a story block
+2. The record opens with the block's positive conclusion and bounded evidence signal
+3. Why this matters explains the leadership or organizational significance
+4. Evidence combines the primary claim and every folded supporting conclusion, deduplicating shared sources
+5. How this was derived exposes formulas, rubrics, inputs, inclusion rules, exclusions, and rounding where applicable
+6. Scope & definitions explains scope, attribution, reconciliation, and interpretation boundaries in neutral language
+7. Visitor can open source and method records, including the reviewed excerpt, locator, access state, and held-artifact checksum scope
+8. Browser Back returns to the owning story page; no global Narrative/Proof/Method/Gaps state must be restored
+```
+
+### Flow 16: Search the Curated Data Room
+
+**Actor:** Diligent evaluator, journalist, data-minded peer, or Datta
+**Goal:** Find a conclusion or source without encountering a wall of raw audit records
+
+```
+1. Visitor opens #/data-room and sees the portrait-led page thesis plus an empty search invitation
+2. Visitor searches a topic, refines by evidence access/basis, or explicitly chooses Browse all records
+3. Results contain matching curated conclusions and source records; folded claims contribute to matching without becoming duplicate cards
+4. For example, an AI search returns five curated conclusions and three source records
+5. Visitor opens a conclusion through Inspect claim or opens a source capsule directly
+6. Calculation methods and cross-record relationships remain available in collapsed disclosures below search
+7. Four audit-only claims and their exclusive records stay out of search, browse, and direct public detail views while remaining represented by the audit contract
+8. Clear results returns to the empty search invitation in one action
 ```

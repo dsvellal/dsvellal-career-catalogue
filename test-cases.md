@@ -231,7 +231,7 @@ Verification on 2026-08-06: `npm run build` and `npx tsc --noEmit` pass; the pro
 
 Automated coverage: `tests/test_process_feedback.py`.
 
-### 8.5 Claim-centric portfolio dataset
+### 8.5 Claim-centric portfolio dataset (archived schema-v2 contract)
 
 | # | Test | Input | Expected |
 |---|------|-------|----------|
@@ -247,7 +247,7 @@ Automated coverage: `tests/test_process_feedback.py`.
 
 Automated coverage: `tests/test_build_portfolio_data.py`.
 
-### 8.6 Executive Portfolio Observatory UI and public build
+### 8.6 Executive Portfolio Observatory UI and public build (archived schema-v2 contract)
 
 | # | Test | Input | Expected |
 |---|------|-------|----------|
@@ -270,3 +270,40 @@ Automated coverage: `tests/test_build_portfolio_data.py`.
 - Frontend: TypeScript passed; Vite built 41 modules; independent `scripts/check_public_bundle.py` accepted `viz/dist` with only four reviewed documentary images.
 - Browser: all 9 primary routes rendered the expected heading at 1440×1000 and 390×844; document width equalled viewport width on every route; claim → source and claim → method traversal, Data Room search, filters, and Relationship Lab state filters passed.
 - Accessibility: axe-core WCAG A/AA reported zero violations on the Brief, Data Room Methodology, and Trust Relationship Lab. Gradient backgrounds made automated contrast computation inconclusive, so settled desktop/mobile screenshots were reviewed manually. Console contained only Vite/React development notices; page errors were empty.
+
+### 8.8 Schema-v3 executive story layer
+
+| # | Test | Input | Expected |
+|---|------|-------|----------|
+| T8.8.1 | Exact route contract | Generated `pages` | Eight ordered routes: Brief, Leadership, Journey, Trust, Innovation, Learning, Community, Data Room; no Impact page |
+| T8.8.2 | Legacy route compatibility | `#/impact` | Router resolves to the Innovation & Value page and its focused heading |
+| T8.8.3 | Story-block count and density | Generated `story_blocks` | Exactly 23 blocks; two to four blocks per narrative page; zero blocks in Data Room |
+| T8.8.4 | Exact claim ownership | Primary, folded, and audit-only IDs | All 55 claims occur exactly once: 51 story-owned and 4 audit-only |
+| T8.8.5 | Story reference integrity | Every story block | Page, primary claim, folded claims, optional image source, and source support all resolve |
+| T8.8.6 | One-impact language contract | Story titles and proof copy | No duplicate initiative-card headings or audit-first title vocabulary; each block has title, meaning, proof, and one evidence route |
+| T8.8.7 | Folded traceability | Inspect Claim for a multi-claim block | Primary and folded conclusions appear together; sources are deduplicated; evidence, method, and scope remain openable |
+| T8.8.8 | No global evidence mode | Application shell and detail route | No Narrative/Proof/Method/Gaps control or persisted lens state; claim details contain the relevant disclosures |
+| T8.8.9 | Executive-surface semantics | Story pages | No public confidence/state badges, caveat banner, claim/source/method counts, or raw audit wall |
+| T8.8.10 | Portrait coverage | Eight primary routes | Each route renders one primary portrait plus the compact global-header thumbnail |
+| T8.8.11 | Curated Data Room | Empty, `AI`, browse, and clear states | Empty state shows no wall; `AI` returns 5 conclusions and 3 sources; browse/search operates on 23 conclusions and the 34-source publication closure; Clear results resets in one action |
+| T8.8.12 | Collapsed audit depth | Data Room | Calculation methods and evidence relationships begin closed and remain keyboard operable |
+| T8.8.13 | Responsive geometry | Every route at 390 px | `scrollWidth <= innerWidth`; content, disclosures, and navigation remain usable |
+| T8.8.14 | Accessibility | Brief and Inspect Claim | Axe WCAG A/AA returns zero violations; gradient contrast remains documented for manual review |
+| T8.8.15 | Public-bundle privacy | Production `dist` | Only reviewed assets are present; forbidden private paths, identifiers, raw evidence, and exports are absent |
+| T8.8.16 | Audit publication guard | Audit-only claim, exclusive source, and exclusive method hashes | Generic evidence invitation appears; document title and rendered page reveal no audit identifier or audit copy |
+| T8.8.17 | Story-linked disclosures | Browse all Data Room state | Exactly 34 story-relevant sources, 16 story-linked methods, and 10 story-linked relationships are available; method-input and reconciliation sources remain traceable; audit-only records are absent |
+| T8.8.18 | Mobile answer-first hierarchy | Brief at 390 px | Executive copy appears before a compact portrait; portrait remains present; redundant portrait caption is hidden |
+| T8.8.19 | Bidirectional source lineage | Method-input and reconciliation-only source records | Method/reconciliation links reach the source; source detail reports and links back to its method or reconciled conclusion |
+
+Automated story-layer coverage is in `tests/test_build_portfolio_data.py`; browser assertions cover routes, portrait count, Data Room search, responsive width, and axe checks.
+
+### 8.9 Schema-v3 final verification record — 2026-08-07
+
+- `./scripts/check.sh lint types test frontend`: all seven checks passed.
+- Python: Ruff lint/format and mypy passed; pytest reported 274 passed and 2 skipped.
+- Data: schema v3 regenerated deterministically with 8 pages, 23 story blocks, exact 55-claim ownership, 82 supports, 36 sources, 18 methods, and 11 relationships.
+- Frontend: TypeScript, Vite production build, and independent public-bundle privacy validation passed.
+- Browser: all eight routes rendered the expected page at desktop and 390 px mobile widths; every route had one primary portrait plus the global-header thumbnail; every mobile route satisfied `scrollWidth <= innerWidth`; desktop and mobile screenshots were visually reviewed.
+- Data Room: `AI` search returned 5 curated conclusions and 3 source records rather than a raw claim wall; Browse all returned 23 conclusions and the 34-source publication closure; 16 methods and 10 relationships were story-linked and collapsed initially; Clear results reset in one action.
+- Publication guards: direct hashes for an audit-only claim, source, and method returned the generic evidence invitation without rendering the raw identifier, audit copy, or unsafe document title.
+- Accessibility: Brief and Inspect Claim axe WCAG A/AA audits each returned zero violations. Gradient-background contrast items were automated-incomplete and manually reviewed.

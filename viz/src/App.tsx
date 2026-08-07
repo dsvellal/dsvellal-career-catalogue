@@ -1,34 +1,40 @@
 import { useEffect, useMemo, useState } from 'react'
 import { ClaimDetailPage, MethodDetailPage, SourceDetailPage } from './DetailPages'
-import { LensControl } from './EvidenceUI'
+import { profilePhoto } from './evidence-assets'
 import { PortfolioPageView } from './PortfolioPages'
 import {
   hrefForPage,
   pageById,
   parseRoute,
   portfolio,
+  storyClaimIds,
+  storyBlockForPrimaryClaim,
+  storyMethodIds,
+  storySourceIds,
 } from './portfolio-model'
-import type { EvidenceLens, PortfolioRoute } from './portfolio-types'
+import type { PortfolioRoute } from './portfolio-types'
 
 // Archived view components remain type-checked even though the observatory router
 // no longer mounts them.
 export type Tab = 'hero' | 'constellation' | 'arc' | 'impact' | 'timeline' | 'voices' | 'talks' | 'graph'
 
-function initialLens(): EvidenceLens {
-  try {
-    const stored = window.localStorage.getItem('datta-evidence-lens')
-    if (stored === 'narrative' || stored === 'proof' || stored === 'method' || stored === 'gaps') return stored
-  } catch {
-    // Storage is an enhancement; the narrative lens remains the safe default.
-  }
-  return 'narrative'
-}
-
 function routeTitle(route: PortfolioRoute): string {
   if (route.type === 'page') return pageById.get(route.pageId)?.label ?? 'Executive Brief'
-  if (route.type === 'claim') return portfolio.claims.find(item => item.id === route.id)?.title ?? 'Claim Record'
-  if (route.type === 'source') return portfolio.sources.find(item => item.id === route.id)?.title ?? 'Source Record'
-  return portfolio.methods.find(item => item.id === route.id)?.title ?? 'Method Record'
+  if (route.type === 'claim') {
+    return storyClaimIds.has(route.id)
+      ? storyBlockForPrimaryClaim(route.id)?.title
+        ?? portfolio.claims.find(item => item.id === route.id)?.title
+        ?? 'Claim Record'
+      : 'Evidence Portfolio'
+  }
+  if (route.type === 'source') {
+    return storySourceIds.has(route.id)
+      ? portfolio.sources.find(item => item.id === route.id)?.title ?? 'Source Record'
+      : 'Evidence Portfolio'
+  }
+  return storyMethodIds.has(route.id)
+    ? portfolio.methods.find(item => item.id === route.id)?.title ?? 'Method Record'
+    : 'Evidence Portfolio'
 }
 
 function routeKey(route: PortfolioRoute): string {
@@ -44,7 +50,6 @@ function detailLabel(route: PortfolioRoute): string | undefined {
 
 export default function App() {
   const [route, setRoute] = useState<PortfolioRoute>(() => parseRoute(window.location.hash))
-  const [lens, setLens] = useState<EvidenceLens>(initialLens)
   const activePage = route.type === 'page' ? pageById.get(route.pageId) : undefined
   const title = useMemo(() => routeTitle(route), [route])
 
@@ -56,15 +61,6 @@ export default function App() {
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
-
-  useEffect(() => {
-    try {
-      window.localStorage.setItem('datta-evidence-lens', lens)
-    } catch {
-      // Ignore storage errors in private/restricted browser contexts.
-    }
-    document.documentElement.dataset.evidenceLens = lens
-  }, [lens])
 
   useEffect(() => {
     document.title = `${title} — Datta Vellal`
@@ -101,34 +97,26 @@ export default function App() {
       <header className="obs-shell-header">
         <div className="obs-header-primary">
           <a className="obs-brand" href={hrefForPage(portfolio.pages[0])} aria-label="Datta Vellal executive brief">
-            <span className="obs-brand-mark">DV</span>
+            <img className="obs-brand-photo" src={profilePhoto} alt="" />
             <span className="obs-brand-copy">
               <strong>Datta Vellal</strong>
-              <small>Executive data observatory</small>
+              <small>Leadership · innovation · service</small>
             </span>
           </a>
-
-          <div className="obs-header-status" role="group" aria-label="Public portfolio record counts">
-            <span><strong>{portfolio.claims.length}</strong> claims</span>
-            <span><strong>{portfolio.sources.length}</strong> sources</span>
-            <span><strong>{portfolio.methods.length}</strong> methods</span>
-          </div>
 
           <label className="obs-mobile-route">
             <span>Portfolio view</span>
             <select value={activePage?.id ?? ''} onChange={event => selectRoute(event.target.value)}>
               {!activePage && <option value="">{detailLabel(route)}</option>}
-              {portfolio.pages.map((page, index) => (
-                <option key={page.id} value={page.id}>{String(index + 1).padStart(2, '0')} · {page.label}</option>
+              {portfolio.pages.map(page => (
+                <option key={page.id} value={page.id}>{page.label}</option>
               ))}
             </select>
           </label>
-
-          <LensControl lens={lens} onChange={setLens} />
         </div>
 
         <nav className="obs-primary-nav" aria-label="Executive dossier">
-          {portfolio.pages.map((page, index) => (
+          {portfolio.pages.map(page => (
             <a
               key={page.id}
               href={hrefForPage(page)}
@@ -136,7 +124,6 @@ export default function App() {
               aria-current={activePage?.id === page.id ? 'page' : undefined}
               title={page.question}
             >
-              <span>{String(index + 1).padStart(2, '0')}</span>
               <strong>{page.label}</strong>
             </a>
           ))}
@@ -145,8 +132,8 @@ export default function App() {
 
       <main id="main-content" className="obs-main" tabIndex={-1}>
         <div className="obs-route-transition" key={routeKey(route)}>
-          {route.type === 'page' && activePage && <PortfolioPageView page={activePage} lens={lens} />}
-          {route.type === 'claim' && <ClaimDetailPage claimId={route.id} lens={lens} />}
+          {route.type === 'page' && activePage && <PortfolioPageView page={activePage} />}
+          {route.type === 'claim' && <ClaimDetailPage claimId={route.id} />}
           {route.type === 'source' && <SourceDetailPage sourceId={route.id} />}
           {route.type === 'method' && <MethodDetailPage methodId={route.id} />}
         </div>
@@ -155,7 +142,7 @@ export default function App() {
       <footer className="obs-footer">
         <div>
           <strong>Datta Vellal</strong>
-          <span>Leadership claims presented with their evidence, methods, conflicts, and publication boundaries.</span>
+          <span>A leadership story backed by inspectable evidence and reproducible methods.</span>
         </div>
         <nav aria-label="Footer">
           <a href="#/data-room">Data Room</a>

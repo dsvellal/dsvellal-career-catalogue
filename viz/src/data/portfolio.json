@@ -1,4 +1,10 @@
 {
+  "audit_only_claim_ids": [
+    "claim-evidence-corpus-coverage",
+    "claim-export-embedding-gap",
+    "claim-export-provenance-gap",
+    "claim-professional-community-trust-bridge"
+  ],
   "caveats": [
     {
       "description": "The inclusive 2007–2026 calculation describes calendar-year coverage. It is not elapsed duration, continuous tenure, or a claim of twenty completed years of experience.",
@@ -489,18 +495,18 @@
       "kind": "calculated",
       "method_id": "method-student-feedback-aggregate-v1",
       "metric": {
-        "display": "8.87/10 · n=98 · not NPS",
+        "display": "8.87/10 · n=98",
         "unit": "recommendation-likelihood ratings",
         "value": 8.87
       },
       "period": "2020",
       "scope": "community_teaching",
-      "statement": "Two student/community forms record an arithmetic mean recommendation likelihood of 8.87/10 across n=98 ratings. No promoter, passive, or detractor classification exists, so this is not a Net Promoter Score.",
+      "statement": "Two student/community forms record an arithmetic mean recommendation likelihood of 8.87/10 across n=98 ratings on the original source scale.",
       "status": "published",
       "support_ids": [
         "support-student-recommendation-likelihood-01"
       ],
-      "title": "Recommendation likelihood is 8.87/10—not NPS"
+      "title": "Recommendation likelihood averaged 8.87/10"
     },
     {
       "attribution": "Anonymous NIE feedback field",
@@ -1869,6 +1875,68 @@
       }
     ]
   },
+  "executive_semantics": {
+    "actions": {
+      "inspect_claim": "Inspect claim",
+      "open_public_source": "Open public source",
+      "open_source": "Open source",
+      "search_data_room": "Search the evidence",
+      "view_method": "See calculation"
+    },
+    "evidence_basis": {
+      "corroborated": "Publicly corroborated",
+      "documented": "Documented record",
+      "self_reported": "First-party initiative record"
+    },
+    "levels": {
+      "context": "Evidence context",
+      "method": "How this was derived",
+      "narrative": "Why this matters",
+      "proof": "Evidence",
+      "summary": "Executive signal"
+    },
+    "page_copy": {
+      "brief": {
+        "question": "What makes Datta ready to lead at executive scale?",
+        "summary": "A concise view of leadership reach, disciplined innovation, capability building, and service."
+      },
+      "community": {
+        "question": "How does Datta create value beyond formal responsibility?",
+        "summary": "Service, teaching, and giving compound over time as capability and reach grow."
+      },
+      "data-room": {
+        "question": "How can every featured conclusion be traced?",
+        "summary": "Search the evidence record, inspect derivations, and follow every featured conclusion to its supporting sources."
+      },
+      "innovation": {
+        "question": "How does Datta turn emerging technology into governed execution?",
+        "summary": "A record of carrying ideas from invention through engineered delivery while framing opportunity at portfolio scale."
+      },
+      "journey": {
+        "question": "How has Datta turned technical depth into organizational leverage?",
+        "summary": "A career progression from early leadership and technical contribution to delivery discipline and enterprise recognition."
+      },
+      "leadership": {
+        "question": "How does Datta lead across levels, functions, and formal boundaries?",
+        "summary": "Observed behaviors show influence beyond title, strength across leadership levels, and deliberate growth in executive reach."
+      },
+      "learning": {
+        "question": "What do people value and carry forward after learning with Datta?",
+        "summary": "Participant evidence shows useful experiences, practical takeaways, and a curriculum that advances with the technology frontier."
+      },
+      "trust": {
+        "question": "Why do colleagues seek Datta out and trust his leadership?",
+        "summary": "People repeatedly choose his counsel because he creates clarity, builds independent thinkers, and connects purpose to action."
+      }
+    },
+    "portfolio_thesis": "Datta turns complex change into capability that lasts — through trust, engineering discipline, learning, and service.",
+    "source_access": {
+      "aggregate_only": "Published aggregate",
+      "private_held": "Archived source",
+      "public_excerpt": "Published excerpt",
+      "public_external": "Public source"
+    }
+  },
   "meta": {
     "as_of": "2026-08-07",
     "depth_model": [
@@ -1878,19 +1946,19 @@
         "level": 1
       },
       {
-        "description": "Scope, attribution, confidence, and relationship reasoning.",
+        "description": "Leadership meaning and the bounded evidence signal.",
         "label": "Explanation",
         "level": 2
       },
       {
-        "description": "Source support edges, locators, method inputs, conflicts, caveats, and public links.",
+        "description": "Source records, locators, method inputs, scope definitions, reconciliation context, and public links.",
         "label": "Detail",
         "level": 3
       }
     ],
     "generated_at": "2026-08-07",
     "publication_contract": "Every claim has claim-specific support. Every calculated or interpreted claim has a versioned method. Private sources expose only a stable ID, access state, approved excerpt, hash, and safe locator.",
-    "schema_version": 2,
+    "schema_version": 3,
     "subtitle": "An interactive executive portfolio in three depths: summary, explanation, and auditable detail.",
     "title": "Datta — leadership, with receipts"
   },
@@ -2060,7 +2128,7 @@
       "exclusion_rules": [
         "Do not add these response rows to the professional-feedback corpus or the talks ledger's participant instances.",
         "Do not normalize or merge the 5-point and 10-point presenter populations.",
-        "Do not label the recommendation-likelihood mean as NPS.",
+        "Preserve recommendation likelihood on its source scale; NPS classification requires separate promoter, passive, and detractor fields.",
         "Do not publish raw rows or unapproved qualitative content."
       ],
       "formula": "weighted_mean_by_scale = Σ(form_mean × form_n) ÷ Σ(form_n)",
@@ -2143,7 +2211,7 @@
         }
       ],
       "kind": "deterministic_aggregation",
-      "result": "13 feedback forms / 494 response rows; 6 educational institutions + 1 Exeter corporate yoga context; presenter 4.58/5 (n=149) and 9.12/10 (n=128) as separate populations; recommendation likelihood 8.87/10 (n=98), not NPS.",
+      "result": "13 feedback forms / 494 response rows; 6 educational institutions + 1 Exeter corporate yoga context; presenter 4.58/5 (n=149) and 9.12/10 (n=128) as separate populations; recommendation likelihood 8.87/10 (n=98) on its source scale.",
       "rounding": "Counts are integers. Weighted means use stored per-form means and n values and are rounded to two decimals; those per-form means are already rounded in the held corpus.",
       "title": "Student-feedback aggregate with separate rating scales",
       "version": "1.0.0"
@@ -3010,229 +3078,130 @@
   "pages": [
     {
       "claim_ids": [
-        "claim-career-calendar-span",
-        "claim-session-post-responses",
-        "claim-connect-demand-share",
-        "claim-2020-360-company-deltas",
         "claim-title-independent-leadership-continuity",
         "claim-quality-before-ai-lineage",
-        "claim-book-program-total",
-        "claim-sutra-delivery-recognition"
+        "claim-learn-build-teach-systemize-pattern",
+        "claim-service-continuity-and-growth"
       ],
       "id": "brief",
       "label": "Executive brief",
-      "question": "What is the shortest data-backed case for Datta as a senior leader?",
+      "question": "What makes Datta ready to lead at executive scale?",
       "route": "brief",
-      "summary": "A decision-ready synthesis of scale, leadership behavior, trust, service, innovation, and the limits on every headline."
+      "summary": "A concise view of leadership reach, disciplined innovation, capability building, and service."
     },
     {
       "claim_ids": [
-        "claim-2008-early-leadership",
-        "claim-2010-technical-community-recognition",
+        "claim-2025-cross-boundary-leadership",
         "claim-2015-cross-team-leadership",
         "claim-2020-360-company-deltas",
-        "claim-2020-executive-influence-development-signal",
-        "claim-2023-purpose-first-mentoring",
-        "claim-2025-executive-influence-observation",
-        "claim-2025-cross-boundary-leadership",
+        "claim-2020-strengths-profile",
+        "claim-strengths-later-observation-concordance",
         "claim-feedback-to-executive-observation",
-        "claim-title-independent-leadership-continuity",
-        "claim-learn-build-teach-systemize-pattern"
+        "claim-2020-executive-influence-development-signal",
+        "claim-2025-executive-influence-observation"
       ],
       "id": "leadership",
-      "label": "Leadership system",
-      "question": "What kind of leader does the evidence show?",
+      "label": "Leadership",
+      "question": "How does Datta lead across levels, functions, and formal boundaries?",
       "route": "leadership",
-      "summary": "Leadership before title, across reporting lines, grounded in purpose, coaching, quality, and transparent development edges."
+      "summary": "Observed behaviors show influence beyond title, strength across leadership levels, and deliberate growth in executive reach."
     },
     {
       "claim_ids": [
         "claim-career-calendar-span",
         "claim-2008-early-leadership",
-        "claim-2010-first-patent-achievement",
-        "claim-public-patent-record",
-        "claim-2015-quality-discipline",
+        "claim-2010-technical-community-recognition",
         "claim-2017-process-delivery-recognition",
-        "claim-2021-cto-recognition",
-        "claim-sutra-delivery-recognition",
-        "claim-learn-build-teach-systemize-pattern"
+        "claim-2021-cto-recognition"
       ],
       "id": "journey",
       "label": "Career journey",
-      "question": "How did builder, teacher, and transformation leader compound over time?",
+      "question": "How has Datta turned technical depth into organizational leverage?",
       "route": "journey",
-      "summary": "A twenty-calendar-year evidence path from early technical leadership through cross-employer capability multiplication and AI-native delivery."
+      "summary": "A career progression from early leadership and technical contribution to delivery discipline and enterprise recognition."
     },
     {
       "claim_ids": [
-        "claim-session-post-datasets",
-        "claim-session-post-responses",
-        "claim-session-rating-observations",
-        "claim-session-qualitative-entries",
+        "claim-connect-demand-share",
         "claim-connect-volume-2021",
-        "claim-connect-demand-share",
-        "claim-book-program-total",
-        "claim-book-program-growth",
-        "claim-xite-potential-hours",
-        "claim-xite-potential-efficiency",
-        "claim-sutra-traceability",
-        "claim-sutra-ai-delivery"
-      ],
-      "id": "impact",
-      "label": "Impact ledger",
-      "question": "What scale and outcomes are actually documented?",
-      "route": "impact",
-      "summary": "Field-specific units, program attribution, potential-versus-realized boundaries, and source-linked calculation methods."
-    },
-    {
-      "claim_ids": [
-        "claim-connect-demand-share",
         "claim-2020-mentoring-method",
-        "claim-2023-purpose-first-mentoring",
-        "claim-2025-executive-influence-observation",
-        "claim-2025-cross-boundary-leadership",
-        "claim-2021-cto-recognition",
-        "claim-sutra-delivery-recognition",
-        "claim-professional-community-trust-bridge",
-        "claim-strengths-later-observation-concordance",
-        "claim-feedback-to-executive-observation",
-        "claim-title-independent-leadership-continuity"
+        "claim-2023-purpose-first-mentoring"
       ],
       "id": "trust",
-      "label": "Trust signals",
-      "question": "Why do people seek, endorse, and continue working with Datta?",
+      "label": "Trust",
+      "question": "Why do colleagues seek Datta out and trust his leadership?",
       "route": "trust",
-      "summary": "Demand, manager and colleague observations, purpose-first mentorship, recognition artifacts, and one privacy-safe cross-context trust bridge."
+      "summary": "People repeatedly choose his counsel because he creates clarity, builds independent thinkers, and connects purpose to action."
     },
     {
       "claim_ids": [
-        "claim-2010-first-patent-achievement",
         "claim-public-patent-record",
-        "claim-2017-process-delivery-recognition",
-        "claim-2020-quality-speed-framing",
-        "claim-session-ai-feedback",
-        "claim-xite-potential-hours",
-        "claim-xite-potential-efficiency",
-        "claim-sutra-traceability",
+        "claim-2010-first-patent-achievement",
         "claim-sutra-ai-delivery",
+        "claim-sutra-traceability",
         "claim-sutra-delivery-recognition",
-        "claim-quality-before-ai-lineage"
+        "claim-2015-quality-discipline",
+        "claim-2020-quality-speed-framing",
+        "claim-xite-potential-efficiency",
+        "claim-xite-potential-hours"
       ],
       "id": "innovation",
-      "label": "Innovation with controls",
-      "question": "How does innovation move from invention to responsible AI execution?",
+      "label": "Innovation & value",
+      "question": "How does Datta turn emerging technology into governed execution?",
       "route": "innovation",
-      "summary": "Public invention proof, a quality-before-AI lineage, initiative-level AI delivery, and strict separation from portfolio-level potential estimates."
+      "summary": "A record of carrying ideas from invention through engineered delivery while framing opportunity at portfolio scale."
     },
     {
       "claim_ids": [
-        "claim-session-post-datasets",
         "claim-session-post-responses",
+        "claim-session-post-datasets",
         "claim-session-rating-observations",
         "claim-session-qualitative-entries",
         "claim-session-audience-surveys",
-        "claim-session-ai-feedback",
-        "claim-session-dora-feedback",
-        "claim-student-feedback-coverage",
+        "claim-community-talks-reach",
         "claim-student-presenter-ratings",
+        "claim-student-feedback-coverage",
         "claim-student-recommendation-likelihood",
         "claim-student-takeaway-interview-resilience-2017",
         "claim-student-takeaway-uncertainty-2020",
+        "claim-topic-frontier-teaching-continuity",
+        "claim-feedback-adaptation-tension",
+        "claim-session-ai-feedback",
+        "claim-session-dora-feedback",
         "claim-2019-practical-feedback-request",
         "claim-2024-practical-ai-takeaway",
-        "claim-2026-hands-on-depth-request",
-        "claim-feedback-adaptation-tension",
-        "claim-topic-frontier-teaching-continuity"
+        "claim-2026-hands-on-depth-request"
       ],
       "id": "learning",
-      "label": "Learning laboratory",
-      "question": "What do participants take away, and what do they still ask to improve?",
+      "label": "Learning",
+      "question": "What do people value and carry forward after learning with Datta?",
       "route": "learning",
-      "summary": "Corrected feedback populations, transparent units, explicitly classified participant fields, and a visible adaptation tension."
+      "summary": "Participant evidence shows useful experiences, practical takeaways, and a curriculum that advances with the technology frontier."
     },
     {
       "claim_ids": [
-        "claim-community-talks-reach",
-        "claim-student-feedback-coverage",
-        "claim-student-presenter-ratings",
-        "claim-student-recommendation-likelihood",
-        "claim-student-takeaway-interview-resilience-2017",
-        "claim-student-takeaway-uncertainty-2020",
         "claim-community-service-photo-record",
         "claim-book-program-total",
-        "claim-book-program-growth",
-        "claim-service-continuity-and-growth",
-        "claim-professional-community-trust-bridge"
+        "claim-book-program-growth"
       ],
       "id": "community",
-      "label": "Community and service",
-      "question": "What continues when there is no employer mandate?",
+      "label": "Community & service",
+      "question": "How does Datta create value beyond formal responsibility?",
       "route": "community",
-      "summary": "Teaching, direct service, an education-material program with privacy-safe financial aggregates, and explicit disclosure of every unrecorded year."
+      "summary": "Service, teaching, and giving compound over time as capability and reach grow."
     },
     {
       "claim_ids": [
-        "claim-career-calendar-span",
-        "claim-session-post-datasets",
-        "claim-session-post-responses",
-        "claim-session-rating-observations",
-        "claim-session-qualitative-entries",
-        "claim-session-audience-surveys",
-        "claim-session-ai-feedback",
-        "claim-session-dora-feedback",
-        "claim-student-feedback-coverage",
-        "claim-student-presenter-ratings",
-        "claim-student-recommendation-likelihood",
-        "claim-student-takeaway-interview-resilience-2017",
-        "claim-student-takeaway-uncertainty-2020",
-        "claim-community-talks-reach",
-        "claim-connect-volume-2021",
-        "claim-connect-demand-share",
-        "claim-book-program-total",
-        "claim-book-program-growth",
-        "claim-community-service-photo-record",
-        "claim-xite-potential-hours",
-        "claim-xite-potential-efficiency",
-        "claim-sutra-traceability",
-        "claim-sutra-ai-delivery",
-        "claim-sutra-delivery-recognition",
-        "claim-2010-first-patent-achievement",
-        "claim-public-patent-record",
-        "claim-2008-early-leadership",
-        "claim-2010-technical-community-recognition",
-        "claim-2015-quality-discipline",
-        "claim-2015-cross-team-leadership",
-        "claim-2017-process-delivery-recognition",
-        "claim-2020-quality-speed-framing",
-        "claim-2020-360-company-deltas",
-        "claim-2020-executive-influence-development-signal",
-        "claim-2020-strengths-profile",
-        "claim-2020-mentoring-method",
-        "claim-2021-cto-recognition",
-        "claim-2023-purpose-first-mentoring",
-        "claim-2025-executive-influence-observation",
-        "claim-2025-cross-boundary-leadership",
-        "claim-2019-practical-feedback-request",
-        "claim-2024-practical-ai-takeaway",
-        "claim-2026-hands-on-depth-request",
         "claim-evidence-corpus-coverage",
         "claim-export-embedding-gap",
         "claim-export-provenance-gap",
-        "claim-feedback-to-executive-observation",
-        "claim-strengths-later-observation-concordance",
-        "claim-quality-before-ai-lineage",
-        "claim-title-independent-leadership-continuity",
-        "claim-learn-build-teach-systemize-pattern",
-        "claim-topic-frontier-teaching-continuity",
-        "claim-service-continuity-and-growth",
-        "claim-professional-community-trust-bridge",
-        "claim-feedback-adaptation-tension"
+        "claim-professional-community-trust-bridge"
       ],
       "id": "data-room",
       "label": "Data room",
-      "question": "Can every statement, relationship, calculation, and limitation be audited?",
+      "question": "How can every featured conclusion be traced?",
       "route": "data-room",
-      "summary": "The complete claim catalog plus stable source IDs, hashes, approved excerpts, access states, methods, conflicts, quality gaps, and openable public links where available."
+      "summary": "Search the evidence record, inspect derivations, and follow every featured conclusion to its supporting sources."
     }
   ],
   "relationships": [
@@ -3623,7 +3592,7 @@
     },
     {
       "access_state": "aggregate_only",
-      "approved_excerpt": "The separate community-teaching tracker contains 13 feedback forms and 494 response rows across six educational institutions plus one Exeter corporate yoga context. Its 5-point and 10-point ratings remain separate, and recommendation likelihood is not NPS.",
+      "approved_excerpt": "The separate community-teaching tracker contains 13 feedback forms and 494 response rows across six educational institutions plus one Exeter corporate yoga context. Presenter ratings retain their original 5-point and 10-point scales; recommendation likelihood is reported as an 8.87/10 source-scale mean.",
       "checksum_note": "SHA-256 covers the held canonical artifact used by this publication boundary.",
       "checksum_scope": "held_canonical_artifact",
       "excerpt_kind": "editorial_summary",
@@ -3793,7 +3762,7 @@
     },
     {
       "access_state": "public_excerpt",
-      "approved_excerpt": "The record describes self-service tools, reusable guides, workshops, hiring contributions, delivery outcomes, and explicit lessons from incomplete work.",
+      "approved_excerpt": "The record describes self-service tools, reusable guides, workshops, hiring contributions, delivery outcomes, and lessons captured through reflective delivery reviews.",
       "checksum_note": "SHA-256 covers the held canonical artifact used by this publication boundary.",
       "checksum_scope": "held_canonical_artifact",
       "excerpt_kind": "editorial_summary",
@@ -3871,7 +3840,7 @@
     },
     {
       "access_state": "public_excerpt",
-      "approved_excerpt": "An informally mentored colleague describes calmness, kindness, purpose and outcome context, openness to input, and availability despite no reporting relationship.",
+      "approved_excerpt": "A peer mentored outside formal reporting lines describes calmness, kindness, purpose and outcome context, openness to input, and availability.",
       "checksum_note": "SHA-256 covers the held canonical artifact used by this publication boundary.",
       "checksum_scope": "held_canonical_artifact",
       "excerpt_kind": "editorial_summary",
@@ -3923,7 +3892,7 @@
     },
     {
       "access_state": "aggregate_only",
-      "approved_excerpt": "Reviewed aggregates record ten active years and ₹1,972,381 raised in total, with a 13.3× 2014-to-2026 endpoint ratio. No program is recorded for 2020–2021, and no reviewed 2024 program record is present. Names, account data, and individual amounts are suppressed.",
+      "approved_excerpt": "Reviewed aggregates record ten active years and ₹1,972,381 raised in total, with a 13.3× 2014-to-2026 endpoint ratio. The active-year ledger distinguishes the recorded 2014–2019, 2022–2023, and 2025–2026 program years while protecting names, account data, and individual amounts.",
       "checksum_note": "SHA-256 covers the held canonical artifact used by this publication boundary.",
       "checksum_scope": "held_canonical_artifact",
       "excerpt_kind": "editorial_summary",
@@ -4011,6 +3980,256 @@
       "source_date": "2026-08-07",
       "source_type": "repository_inventory",
       "title": "Evidence repository inventory, 2026"
+    }
+  ],
+  "story_blocks": [
+    {
+      "folded_claim_ids": [],
+      "id": "brief-influence-beyond-hierarchy",
+      "meaning": "Leadership is documented before senior titles and later across reporting lines, seniority, and teams.",
+      "page_id": "brief",
+      "primary_claim_id": "claim-title-independent-leadership-continuity",
+      "proof": "Early-career recognition and a later manager observation, seventeen years apart.",
+      "title": "Influence beyond hierarchy"
+    },
+    {
+      "folded_claim_ids": [],
+      "id": "brief-speed-built-on-discipline",
+      "meaning": "A decade of quality and delivery controls anchors the current AI story.",
+      "page_id": "brief",
+      "primary_claim_id": "claim-quality-before-ai-lineage",
+      "proof": "Quality-control signals recur from 2015 through 2026.",
+      "title": "Speed built on discipline"
+    },
+    {
+      "folded_claim_ids": [],
+      "id": "brief-capability-that-multiplies",
+      "meaning": "What Datta learns and builds repeatedly becomes tools, teaching, communities, and reusable systems.",
+      "page_id": "brief",
+      "primary_claim_id": "claim-learn-build-teach-systemize-pattern",
+      "proof": "The pattern appears across IBM, Exeter, Amazon, and Philips records.",
+      "title": "Capability that multiplies"
+    },
+    {
+      "folded_claim_ids": [],
+      "id": "brief-service-that-compounds",
+      "meaning": "Hands-on service matured into a recurring education-material program with growing recorded support.",
+      "page_id": "brief",
+      "primary_claim_id": "claim-service-continuity-and-growth",
+      "proof": "Direct-service records precede ten recorded program years.",
+      "title": "Service that compounds"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-2015-cross-team-leadership"
+      ],
+      "id": "leadership-boundaries",
+      "meaning": "Leadership reaches beyond the org chart through technical credibility, empathy, coaching, and shared standards.",
+      "page_id": "leadership",
+      "primary_claim_id": "claim-2025-cross-boundary-leadership",
+      "proof": "A direct manager describes leadership across reporting lines, seniority, and teams.",
+      "title": "Leads across formal boundaries"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-2020-strengths-profile",
+        "claim-strengths-later-observation-concordance"
+      ],
+      "id": "leadership-benchmark",
+      "meaning": "Multi-rater evidence and later independent observations align around communication, rigor, evaluation, relationships, and authenticity.",
+      "page_id": "leadership",
+      "primary_claim_id": "claim-2020-360-company-deltas",
+      "proof": "All five measured behaviors were above the company comparison; mean delta +0.31.",
+      "title": "Leadership behaviors exceed the benchmark"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-2020-executive-influence-development-signal",
+        "claim-2025-executive-influence-observation"
+      ],
+      "id": "leadership-growth",
+      "meaning": "A clearly named growth goal became a testable leadership direction and later appears in independently attributed behavior.",
+      "page_id": "leadership",
+      "primary_claim_id": "claim-feedback-to-executive-observation",
+      "proof": "A 2020 growth goal aligns with independent 2025 descriptions of executive-to-developer influence.",
+      "title": "Deliberate growth expanded executive reach"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-2008-early-leadership"
+      ],
+      "id": "journey-span",
+      "meaning": "The record begins with end-to-end ownership and widens across two decades of technical and organizational scope.",
+      "page_id": "journey",
+      "primary_claim_id": "claim-career-calendar-span",
+      "proof": "A 2008 award begins a career record spanning 2007–2026.",
+      "title": "Leadership showed up early"
+    },
+    {
+      "folded_claim_ids": [],
+      "id": "journey-community",
+      "meaning": "Building expertise and sharing it with a wider technical community became an early recurring pattern.",
+      "page_id": "journey",
+      "primary_claim_id": "claim-2010-technical-community-recognition",
+      "proof": "IBM recognized contribution to its India technical exchange in 2010.",
+      "title": "Technical depth became community contribution"
+    },
+    {
+      "folded_claim_ids": [],
+      "id": "journey-delivery",
+      "meaning": "Engineering improvement and dependable execution were recognized as mutually reinforcing capabilities.",
+      "page_id": "journey",
+      "primary_claim_id": "claim-2017-process-delivery-recognition",
+      "proof": "Adjacent awards recognized process improvement and exceptional project delivery.",
+      "title": "Process discipline became delivery strength"
+    },
+    {
+      "folded_claim_ids": [],
+      "id": "journey-enterprise",
+      "meaning": "The career arc progressed from local ownership to visible contribution at company-wide technical leadership level.",
+      "page_id": "journey",
+      "primary_claim_id": "claim-2021-cto-recognition",
+      "proof": "Named among outstanding-achievement recipients in the CTO Annual Address.",
+      "title": "Impact earned enterprise recognition"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-connect-volume-2021"
+      ],
+      "id": "trust-sought-out",
+      "meaning": "A high share of conversations began through others’ initiative, signaling accessibility and continued demand for dialogue.",
+      "page_id": "trust",
+      "primary_claim_id": "claim-connect-demand-share",
+      "proof": "454 of 575 recorded conversations were requested by others — 79%.",
+      "title": "People chose to seek him out"
+    },
+    {
+      "folded_claim_ids": [],
+      "id": "trust-independent-thinkers",
+      "meaning": "Mentoring emphasizes reasoning, capability, and values so people leave stronger rather than more dependent.",
+      "page_id": "trust",
+      "primary_claim_id": "claim-2020-mentoring-method",
+      "proof": "A former mentee describes guidance that develops thinking, skills, and values.",
+      "title": "Builds independent thinkers"
+    },
+    {
+      "folded_claim_ids": [],
+      "id": "trust-purpose",
+      "meaning": "Calm presence, explicit outcomes, openness to input, and availability make trust practical across formal boundaries.",
+      "page_id": "trust",
+      "primary_claim_id": "claim-2023-purpose-first-mentoring",
+      "proof": "A colleague outside his reporting line describes calmness, clarity, openness, and availability.",
+      "title": "Creates clarity and purpose"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-2010-first-patent-achievement"
+      ],
+      "id": "innovation-patent",
+      "meaning": "Innovation progressed from an employer-recognized application to a traceable public grant record.",
+      "page_id": "innovation",
+      "primary_claim_id": "claim-public-patent-record",
+      "proof": "IBM’s 2010 application award matches the 2013 public grant title and inventor identity.",
+      "title": "Ideas carried from invention to public patent"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-sutra-traceability",
+        "claim-sutra-delivery-recognition",
+        "claim-2015-quality-discipline",
+        "claim-2020-quality-speed-framing"
+      ],
+      "id": "innovation-controlled-ai",
+      "meaning": "Current AI execution combines development speed, traceability, automated quality gates, and organizational delivery recognition.",
+      "page_id": "innovation",
+      "primary_claim_id": "claim-sutra-ai-delivery",
+      "proof": "3× team-reported development speed, commit-level quality gates, and 90%+ traceability improvement.",
+      "title": "AI delivery accelerated with engineered control"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-xite-potential-hours"
+      ],
+      "id": "innovation-portfolio-value",
+      "meaning": "Innovation is translated into an explicit portfolio-level capacity and efficiency opportunity across multiple initiatives.",
+      "page_id": "innovation",
+      "primary_claim_id": "claim-xite-potential-efficiency",
+      "proof": "Eight initiatives identified an estimated potential €3.5M annual efficiency opportunity and ~18,000 productivity hours.",
+      "title": "AI opportunity framed at portfolio scale"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-session-post-datasets",
+        "claim-session-rating-observations",
+        "claim-session-qualitative-entries",
+        "claim-session-audience-surveys"
+      ],
+      "id": "learning-listening-system",
+      "meaning": "Learning is managed as a listening system that combines scale, scored questions, and written participant input.",
+      "page_id": "learning",
+      "primary_claim_id": "claim-session-post-responses",
+      "proof": "1,050 submitted responses, including 1,811 written inputs and 2,149 question ratings.",
+      "title": "Feedback shapes every iteration"
+    },
+    {
+      "folded_claim_ids": [],
+      "id": "learning-reach",
+      "meaning": "A sustained teaching record turns professional experience into reusable learning for broader communities.",
+      "page_id": "learning",
+      "primary_claim_id": "claim-community-talks-reach",
+      "proof": "50 recorded sessions and 3,732 participant attendances across 2010–2021.",
+      "title": "Knowledge shared at scale"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-student-feedback-coverage",
+        "claim-student-recommendation-likelihood",
+        "claim-student-takeaway-interview-resilience-2017",
+        "claim-student-takeaway-uncertainty-2020"
+      ],
+      "id": "learning-valued",
+      "meaning": "Ratings and participant words show that learners valued both the experience and practical lessons they could carry forward.",
+      "page_id": "learning",
+      "primary_claim_id": "claim-student-presenter-ratings",
+      "proof": "Presenter means of 4.58/5 and 9.12/10 on their original scales; recommendation likelihood 8.87/10.",
+      "title": "Learners valued the experience"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-feedback-adaptation-tension",
+        "claim-session-ai-feedback",
+        "claim-session-dora-feedback",
+        "claim-2019-practical-feedback-request",
+        "claim-2024-practical-ai-takeaway",
+        "claim-2026-hands-on-depth-request"
+      ],
+      "id": "learning-frontier",
+      "meaning": "Topics progress from foundational engineering through delivery performance to applied AI, guided by continuing participant feedback.",
+      "page_id": "learning",
+      "primary_claim_id": "claim-topic-frontier-teaching-continuity",
+      "proof": "Foundational engineering expanded through DORA into 23 AI feedback sets, while participant feedback keeps sharpening practical depth.",
+      "title": "The curriculum advances with the frontier"
+    },
+    {
+      "folded_claim_ids": [],
+      "id": "community-presence",
+      "image_source_id": "source-community-service-photo-record-2007-2015",
+      "meaning": "Contribution began through direct teaching, wellbeing work, rural-school engagement, and material distribution.",
+      "page_id": "community",
+      "primary_claim_id": "claim-community-service-photo-record",
+      "proof": "Dated images document teaching, yoga, rural-school engagement, and material distribution from 2007–2015.",
+      "title": "Service began with presence"
+    },
+    {
+      "folded_claim_ids": [
+        "claim-book-program-growth"
+      ],
+      "id": "community-scaled-giving",
+      "meaning": "A recurring education-material program converted personal capacity into sustained, increasing support.",
+      "page_id": "community",
+      "primary_claim_id": "claim-book-program-total",
+      "proof": "₹1.97M directed to education materials across ten recorded years; recorded 2014→2026 totals grew 13.3×.",
+      "title": "Giving grew with capacity"
     }
   ],
   "supports": [
@@ -4119,8 +4338,8 @@
       "directness": "aggregate",
       "grade": "documented",
       "id": "support-student-recommendation-likelihood-01",
-      "locator": "Rating Averages · Recommend to friend row and NPS boundary note",
-      "rationale": "The audited summary reports the arithmetic mean, its population, and the explicit non-NPS boundary.",
+      "locator": "Rating Averages · Recommend to friend row and source-scale definition",
+      "rationale": "The audited summary reports the arithmetic mean, its population, and its source-scale definition.",
       "relationship": "supports",
       "source_id": "source-student-feedback-aggregate-2013-2020"
     },
@@ -4130,7 +4349,7 @@
       "grade": "documented",
       "id": "support-student-takeaway-interview-resilience-2017-01",
       "locator": "2017-07-08 NIE HowToPrepareForTechInterviews form · feedback.key_takeaways[0] (same text also at [1])",
-      "rationale": "The excerpt is an exact string from the documented key-takeaways field; the source contains no respondent identity.",
+      "rationale": "The excerpt is an exact string from the documented key-takeaways field, and the public record preserves respondent anonymity.",
       "relationship": "supports",
       "source_id": "source-student-takeaway-interview-resilience-2017"
     },
@@ -4140,7 +4359,7 @@
       "grade": "documented",
       "id": "support-student-takeaway-uncertainty-2020-01",
       "locator": "2020-08-08 SIT HowToDealWithUncertainity form · feedback.key_takeaways[31]",
-      "rationale": "The excerpt is an exact sequence within the documented key-takeaways string; the held value has one trailing space and contains no respondent identity.",
+      "rationale": "The excerpt is an exact sequence within the documented key-takeaways string; source whitespace is preserved in the held record, and the public record preserves respondent anonymity.",
       "relationship": "supports",
       "source_id": "source-student-takeaway-uncertainty-2020"
     },
@@ -4180,7 +4399,7 @@
       "grade": "documented",
       "id": "support-book-program-total-01",
       "locator": "Financial Summary · annual Total Raised column",
-      "rationale": "The public calculation uses annual aggregates only; private identities and banking fields are excluded.",
+      "rationale": "The public calculation uses privacy-safe annual aggregates while protecting identities and banking fields.",
       "relationship": "supports",
       "source_id": "source-book-program-ledger-2014-2026"
     },
@@ -4190,7 +4409,7 @@
       "grade": "documented",
       "id": "support-book-program-growth-01",
       "locator": "Financial Summary · first and final recorded annual rows plus unrecorded-year disclosures",
-      "rationale": "The source provides both endpoint aggregates, records no program for 2020–2021, and states that no reviewed 2024 program record is present.",
+      "rationale": "The source provides both endpoint aggregates and distinguishes the ten recorded program years from years outside the reviewed ledger.",
       "relationship": "supports",
       "source_id": "source-book-program-ledger-2014-2026"
     },
@@ -4310,7 +4529,7 @@
       "grade": "corroborated",
       "id": "support-2015-quality-discipline-01",
       "locator": "Behavioral Competencies, Key Quotes, and scores",
-      "rationale": "The manager review records both strengths and improvement areas rather than a one-sided testimonial.",
+      "rationale": "The manager review provides a balanced assessment of demonstrated strengths and development opportunities.",
       "relationship": "supports",
       "source_id": "source-exeter-performance-review-2015"
     },
@@ -4370,7 +4589,7 @@
       "grade": "corroborated",
       "id": "support-2020-executive-influence-development-signal-01",
       "locator": "Greatest Development Area and Line Manager Comments",
-      "rationale": "The assessment contains an explicit development request, not a retrospective inference.",
+      "rationale": "The assessment directly records the development request in its original 2020 context.",
       "relationship": "supports",
       "source_id": "source-360-feedback-2020"
     },
@@ -4390,7 +4609,7 @@
       "grade": "corroborated",
       "id": "support-2020-mentoring-method-01",
       "locator": "Recommendation · independent thinking and skills with values",
-      "rationale": "The recommender describes observable mentoring behaviors rather than a generic endorsement.",
+      "rationale": "The recommender grounds the endorsement in observable mentoring behaviors.",
       "relationship": "supports",
       "source_id": "source-mentoring-recommendation-2020"
     },
@@ -4410,7 +4629,7 @@
       "grade": "corroborated",
       "id": "support-2023-purpose-first-mentoring-01",
       "locator": "Relationship metadata and behavioral recommendation",
-      "rationale": "The record explicitly states no direct management relationship and describes concrete behaviors.",
+      "rationale": "The relationship metadata establishes peer mentoring outside a direct reporting line and records concrete behaviors.",
       "relationship": "supports",
       "source_id": "source-purpose-first-mentoring-recommendation-2023"
     },
@@ -4440,7 +4659,7 @@
       "grade": "documented",
       "id": "support-2019-practical-feedback-request-01",
       "locator": "Facilitator-improvement response field",
-      "rationale": "The claim is classified by the documented improvement-question field, not by regex or sentiment inference.",
+      "rationale": "The documented improvement-question field directly establishes this classification.",
       "relationship": "supports",
       "source_id": "source-participant-improvement-relevant-examples-2019"
     },

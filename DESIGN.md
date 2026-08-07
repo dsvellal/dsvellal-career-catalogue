@@ -1,8 +1,70 @@
 # UI Screen Design — Data Representation Architecture
 
-> **Current implementation (2026-08-07): Executive Portfolio Observatory.** The claim-centric design below supersedes the Journey Atlas and graph-first mockups later in this document. Archived components and data remain for regression history but are not routed by `App.tsx`.
+> **Current implementation (2026-08-07): schema-v3 Executive Portfolio Observatory.** The feedback-driven story-layer design immediately below supersedes both the earlier nine-route observatory and the Journey Atlas. Archived designs remain in this document for decision history and regression context.
 
-## Executive Portfolio Observatory — Current Design
+## Executive Portfolio Observatory — Current Schema-v3 Design
+
+The public experience is an executive story with an audit path, not an evidence inventory presented as a dashboard. Every primary route pairs Datta's portrait with a short page thesis. Each content block owns one meaningful impact, one explanation, one bounded evidence signal, and one action into the evidence record. Audit metadata remains intact but no longer competes with the story at first glance.
+
+### Eight-page information architecture
+
+| # | Route | Page responsibility | Story blocks |
+|---|-------|---------------------|-------------:|
+| 1 | `#/brief` | Executive synthesis across authority, discipline, multiplication, and service | 4 |
+| 2 | `#/leadership` | Cross-boundary leadership, benchmarked behavior, and growth in executive reach | 3 |
+| 3 | `#/journey` | Two-decade progression through four defining career signals | 4 |
+| 4 | `#/trust` | Sought-out counsel, independent thinkers, clarity, and purpose | 3 |
+| 5 | `#/innovation` | Public invention, controlled AI delivery, and portfolio-scale opportunity | 3 |
+| 6 | `#/learning` | Feedback practice, reach, learner value, and an advancing curriculum | 4 |
+| 7 | `#/community` | Direct presence and giving that grew with capacity | 2 |
+| 8 | `#/data-room` | Search and trace curated conclusions, sources, methods, and relationships | 0 |
+
+The generic Impact page was removed because it repeated evidence already meaningful inside Innovation, Trust, Learning, and Community. Existing `#/impact` links resolve to Innovation & Value so shared links do not fail.
+
+### Story-block grammar
+
+Schema v3 contains 23 `story_blocks`. A block carries `page_id`, `title`, `meaning`, `proof`, one `primary_claim_id`, zero or more `folded_claim_ids`, and an optional documentary `image_source_id`. Fifty-one of the 55 claims are assigned to exactly one block; four corpus-quality or privacy-sensitive claims are audit-only. This ownership rule prevents the same Sutra, feedback, service, or trust statement from becoming separate cards across several pages.
+
+At the public surface, a block contains only:
+
+1. one four-to-eight-word impact heading;
+2. one short sentence explaining why it matters;
+3. one human-readable evidence signal; and
+4. one **Explore evidence** action.
+
+Claim kind, confidence vocabulary, support counts, source counts, period, scope labels, caveat badges, and conflict warnings do not appear on the story card. Initiative names are used only where they add meaning. Raw units such as rows, files, and ledger entries are translated into outcomes or listening signals while their precise definitions remain available in the record.
+
+### Progressive depth without global lenses
+
+The global Narrative / Proof / Method / Gaps switch is removed. **Inspect claim** now holds the complete second and third levels together:
+
+- **Why this matters** — the executive interpretation;
+- **Evidence** — deduplicated sources for the primary and folded claims;
+- **How this was derived** — formula, rubric, inputs, and reconciliation where applicable; and
+- **Scope & definitions** — scope, attribution, reconciliation, and interpretation boundaries in neutral language.
+
+The underlying confidence, caveat, conflict, relationship, and method records remain in the dataset. They are not deleted or overstated; they are presented at the depth where an evaluator has chosen to audit the conclusion. Factual source-basis labels replace subjective confidence banners on the public surface.
+
+### Portrait and evidence imagery
+
+Every primary route displays one main portrait in its page hero, while the global header uses a compact thumbnail. The large Brief portrait is not duplicated as a separate content card. Mobile places the answer first and a smaller portrait second. Documentary images are embedded in a story block only when they remain legible and materially strengthen it—currently the community-service record; the patent artifact remains available on its source-detail route.
+
+### Data Room behavior
+
+The Data Room starts with an invitation to search rather than a wall of 55 raw claims. Search operates over the 23 curated conclusions, their folded claim text, and a 34-record source closure comprising direct supports, method inputs, documentary sources, and reconciliation records. The 16 story-linked methods and 10 story-linked relationships remain accessible as collapsed native disclosures; the full audit contract still retains 18 methods and 11 relationships. Audit-only claims and exclusive records are excluded from browse/search and guarded at direct hashes. A verified `AI` query returns five curated conclusions and three source records, and Clear results restores the empty invitation in one action.
+
+Source-detail pages expose their role in both directions: direct claim support, method-input usage, and reconciliation usage. This ensures a visitor who arrives from a method or reconciliation can still follow the source back into the published reasoning.
+
+### Verified responsive and accessible behavior
+
+- All eight primary routes render one route portrait plus the global header thumbnail.
+- All eight routes at 390 px satisfy `scrollWidth <= innerWidth`; desktop and mobile screenshots were reviewed.
+- Mobile renders the executive copy before a compact route portrait and suppresses its redundant caption.
+- Brief and Inspect Claim axe WCAG A/AA audits report zero violations. Gradient-background contrast remains a manual/incomplete audit item and was visually reviewed.
+- Focusable native disclosures retain keyboard access to evidence, method, and scope without a global mode switch.
+- The full seven-gate repository check passes: 274 tests pass, 2 skip, TypeScript and production build succeed, and the independent public-bundle privacy scan accepts the output.
+
+## Executive Portfolio Observatory — Archived Schema-v2 Design
 
 The product should feel like an executive briefing room with its audit drawer open: decisive at first glance, unusually inspectable on demand, and honest about shared outcomes, interpretation, and missing coverage. It uses a deep navy application frame, warm reading surfaces, cobalt for analytical structure, teal for corroborating evidence, copper for human/community impact, and violet for synthesis or governance. Motion is restrained to route and card arrival; information structure does the visual work.
 

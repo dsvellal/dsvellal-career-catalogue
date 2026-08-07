@@ -24,19 +24,20 @@ Combines two differentiators no standard resume or LinkedIn profile offers: (1) 
 
 ## Operating Context
 
-Nine evidence-led executive questions: Brief, Leadership System, Journey, Impact, Trust, Innovation, Learning & Multiplication, Community & Service, and Data Room. Each begins with a concise answer and descends into explanation and claim/source/method records. The public site consumes one deterministic claim-centric projection; the full graph and raw evidence remain private analysis sources.
+Eight evidence-led routes: Executive Brief, Leadership, Career Journey, Trust, Innovation & Value, Learning, Community & Service, and Data Room. The former generic Impact route is removed because it duplicated evidence owned by the thematic pages; legacy `#/impact` links resolve to Innovation & Value. Every route carries Datta's portrait; the seven narrative routes lead with two to four curated conclusions, while Data Room begins with intentional search rather than an inventory wall. On mobile, the executive answer precedes a compact portrait so identity remains present without delaying meaning.
 
-The current projection contains 55 claims joined to 36 source capsules by 82 first-class support records, with 18 methods, 11 reviewed relationships, 30 caveats, and 8 retained conflicts. Those numbers describe the public argument, not the size of the private corpus.
+Schema v3 adds a presentation-specific story layer: 23 impact-first blocks own 51 claims exactly once, while four corpus-quality or privacy-sensitive claims remain audit-only. The underlying projection still contains 55 claims joined to 36 source capsules by 82 first-class support records, with 18 methods, 11 reviewed relationships, 30 caveats, and 8 retained conflicts. Those records support the story; they are no longer the first thing an executive visitor must parse.
 
 ## Capabilities and Constraints
 
-- Single-page app with stable hash routes for nine primary pages plus claim, source, and method records
+- Single-page app with stable hash routes for eight primary pages plus claim, source, and method records
 - All data is static JSON — no backend API
-- A global Narrative / Proof / Method / Gaps lens changes emphasis without changing the underlying claim set
+- One impact per story block: a short heading, a human meaning statement, a bounded evidence signal, and one evidence action
+- **Inspect claim** combines why the conclusion matters, its evidence, derivation method, scope, and folded supporting-claim traceability
 - Explicit relationship records express only reviewed longitudinal propositions; interpreted links are visually distinct and never inferred from array order, keywords, or raw graph co-occurrence
 - Source provenance, support directness, and claim state are independent; formulas, inputs, caveats, conflicts, and attribution remain attached to each claim
-- A searchable Data Room exposes claims, sources, methods, corrections, and known corpus-quality gaps
-- Professional headshot photo and Devanagari-script logotype as brand assets
+- A searchable Data Room exposes 23 curated conclusions, a 34-record source closure, 16 story-linked methods, and 10 story-linked relationships; the source closure includes direct support, method inputs, documentary records, and reconciliation sources, while methods and relationships begin collapsed
+- Professional portrait appears once in every primary route hero, with a compact global-header thumbnail as the persistent identity anchor
 - Executive data-observatory visual language: navy framing, warm reading surfaces, cobalt/teal/copper/violet signals, restrained motion, responsive and print treatments
 - Production builds disable Vite's `public/` directory; raw evidence is not copied into the deployable bundle
 
@@ -62,9 +63,11 @@ The visual identity combines a deep navy analytical frame with warm reading surf
 2. **Separate fact from interpretation** — observed, calculated, and interpreted claims remain distinguishable, as do provenance and support strength
 3. **Whole person, not just professional** — social impact, volunteering, learning, criticism, and community building are first-class alongside technical achievements
 4. **Progressive depth** — the first read is concise; explanation and source-level detail remain one deliberate action away
-5. **Transparent limits** — selection bias, missing index/embedding coverage, disputed values, privacy withholding, and non-causal relationships stay visible
+5. **Transparent limits at the right depth** — the executive surface stays positive and focused; definitions, attribution, reconciliation, and non-causal boundaries remain available in Inspect Claim and source/method records
 6. **Living system** — the portfolio is compiled from the knowledge layer, not maintained as free-floating factual JSX
 
 ## Accessibility & Inclusion
 
-WCAG 2.1 AA remains the target. Primary navigation, evidence-lens controls, disclosure panels, search/filter controls, claim links, source links, and method links must be keyboard operable with visible focus and semantic labels. Motion respects reduced-motion preferences; dense relationship views retain a readable list representation; mobile layouts preserve the same evidence depth without horizontal page overflow.
+WCAG 2.1 AA remains the target. Primary navigation, Inspect Claim disclosures, search/filter controls, claim links, source links, and method links must be keyboard operable with visible focus and semantic labels. Motion respects reduced-motion preferences; relationship views retain a readable list representation; mobile layouts preserve the same evidence depth without horizontal page overflow.
+
+The schema-v3 release was verified on 2026-08-07 across all eight routes at desktop and 390 px mobile widths. Every route rendered one primary portrait plus the global header thumbnail, no mobile route exceeded the viewport width, and desktop/mobile screenshots were reviewed. Public navigation and direct hashes expose only story-linked claims, sources, methods, and relationships; audit-only hashes resolve to a generic evidence invitation. Axe WCAG A/AA checks on the Brief and Inspect Claim returned zero violations; gradient-background contrast remained a manual visual check. The full repository gate passed with 274 tests, 2 skips, a successful production build, and an accepted privacy scan.

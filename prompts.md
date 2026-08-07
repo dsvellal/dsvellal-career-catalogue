@@ -1485,3 +1485,38 @@ Every relationship has named endpoint claims, evidence supports, a comparison me
 
 - Decision 044: Publish relationships only as explicit, inspectable, non-causal propositions with visual state distinction.
 - Decision 045: Preserve denominator, population, attribution, and time-gap boundaries in every derived comparison.
+
+---
+
+## Prompt 052
+
+**Timestamp:** 2026-08-07T17:44:20Z
+**Phase:** Executive Portfolio Feedback Redesign
+**Direction:** User -> System
+
+### Prompt
+
+> Improve the rebuilt portfolio after presentation review: remove repeated claims such as Sutra within and across pages; reduce word weight and visual clutter; stop foregrounding negative constructions, Gaps, and confidence labels; give each block one meaningful impact rather than an inventory metric; translate operational units such as response rows into human value; show Datta's image on every page; and move Narrative, Proof, and Method inside Inspect Claim instead of exposing global tabs.
+
+### Response Summary
+
+The system challenged the existing content hierarchy, quantified 90 story-page claim placements for only 51 unique claims, and rebuilt the publication layer around exact ownership and progressive disclosure:
+
+- Reduced the information architecture from nine to eight primary routes by removing the generic Impact page and mapping legacy `#/impact` links to Innovation & Value.
+- Added schema-v3 `story_blocks`: 23 curated executive conclusions, each with one impact heading, meaning, evidence signal, primary claim, folded supporting claims, and optional documentary source.
+- Assigned all 55 claims exactly once: 51 claims are folded into the story layer and four corpus-quality/privacy-sensitive claims remain audit-only.
+- Removed the global Narrative / Proof / Method / Gaps lens, public confidence labels, claim-state badges, caveat banners, and inventory counts from the executive surface without deleting the underlying audit data.
+- Rebuilt Inspect Claim around Why this matters, Evidence behind it, How it was derived, and Scope & definitions, including deduplicated sources and complete folded-claim traceability.
+- Made all eight primary routes portrait-led and reduced story pages to two through four impact blocks. Data Room now searches curated conclusions and sources, while methods and relationships start collapsed.
+- Reframed operational counts as meaning-first evidence signals while preserving exact units, denominators, attribution, and interpretation boundaries at audit depth.
+- Restricted browse, search, document titles, and direct detail hashes to the story publication sets: 23 conclusions, a 34-source closure, 16 methods, and 10 relationships; the closure retains method-input and reconciliation lineage while audit-only records remain in the contract without becoming public presentation content.
+- Made mobile summary-first while retaining a compact portrait, removed the duplicate metric from claim-detail heroes, reframed evidence rationales positively, and made Data Room clearing a one-action reset.
+- Closed the public traceability graph over direct supports, documentary evidence, method inputs, and reconciliation sources; source pages link back to each published use while audit-only records remain guarded.
+- Verified all seven repository gates with 274 tests passing and 2 skipped, production/privacy builds, all eight 390 px routes without overflow, visual desktop/mobile review, and zero automated WCAG A/AA violations on Brief and Inspect Claim.
+
+### Decisions Triggered
+
+- Decision 047: Add an exact-ownership story layer over the canonical claim model.
+- Decision 048: Remove the generic Impact route and consolidate its evidence with thematic owners.
+- Decision 049: Move evidence modes into Inspect Claim and remove negative-first audit metadata from the executive surface.
+- Decision 050: Use a portrait-led, one-impact-per-block presentation grammar across all primary routes.

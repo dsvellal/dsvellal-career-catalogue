@@ -1310,3 +1310,91 @@ period: <YYYY-MM, only if recurring>
 | Use identifiable student or child photographs | The source may document service but does not establish public image consent |
 | Use only generated decorative imagery | Weakens authenticity when reviewed documentary evidence is available |
 | Show images without captions or source routes | Turns evidence into atmosphere and prevents verification |
+
+---
+
+## Decision 047: Add an Exact-Ownership Story Layer
+
+**Date:** 2026-08-07
+**Phase:** Executive Portfolio Feedback Redesign
+**Category:** Information Architecture / Data Model
+
+**Question:** How can the site retain all 55 traceable claims without repeating them or forcing executives to read the audit inventory?
+
+**Decision:** Add schema-v3 `story_blocks` above the canonical claim model. Each block owns one primary claim and zero or more folded supporting claims, with concise executive title, meaning, proof, page ownership, and optional documentary source. Require each claim to appear exactly once as primary, folded, or audit-only. The current contract has 23 blocks, 51 story-owned claims, and four audit-only claims.
+
+**Rationale:** The prior story pages had 90 claim placements for only 51 unique featured claims. Exact ownership makes deduplication a build invariant while preserving every claim, support edge, source, method, conflict, and relationship for inspection.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Edit repeated JSX cards manually | Duplication would return as data changes and ownership would remain implicit |
+| Delete secondary claims | Reduces traceability and discards useful denominators, source-scale details, and relationship inputs |
+| Keep all claims in Data Room and hand-author story copy | Creates a second factual store without machine-checkable claim linkage |
+
+---
+
+## Decision 048: Remove the Generic Impact Route
+
+**Date:** 2026-08-07
+**Phase:** Executive Portfolio Feedback Redesign
+**Category:** Product / Navigation
+
+**Question:** Does Impact have a distinct narrative responsibility after every page becomes impact-led?
+
+**Decision:** Remove Impact from the primary page contract and place its evidence with the thematic owner where the outcome has meaning. The active routes are Brief, Leadership, Career Journey, Trust, Innovation & Value, Learning, Community & Service, and Data Room. Map legacy `#/impact` hashes to Innovation & Value.
+
+**Rationale:** The Impact ledger duplicated AI, feedback, conversation, and community facts from their explanatory pages. Once every story block leads with value, a separate metric warehouse creates repetition rather than insight.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Keep Impact as a cross-page scorecard | Repeats the strongest figures and revives the clutter the redesign must remove |
+| Split AI approach from AI value across Impact and Innovation | Forces the same initiative and attribution boundaries onto two routes |
+| Break every outcome into its own page | Mirrors data categories instead of executive questions |
+
+---
+
+## Decision 049: Put Evidence Modes Inside Inspect Claim
+
+**Date:** 2026-08-07
+**Phase:** Executive Portfolio Feedback Redesign
+**Category:** Interaction / Transparency
+
+**Question:** How should narrative, proof, method, and interpretation boundaries remain available without distracting every first-level page?
+
+**Decision:** Remove the global Narrative / Proof / Method / Gaps control and public confidence/caveat badges. Structure Inspect Claim as compact disclosures for Why this matters, Evidence, How this was derived, and Scope & definitions. Resolve the story block's folded claims and deduplicate their sources there. Retain the original confidence, caveat, conflict, attribution, method, and relationship data in the audit model; exact technical scope records remain nested at the deepest disclosure level. Build explicit story-claim, story-source, and story-method publication sets so audit-only records are absent from browse/search and return a generic evidence invitation at direct hashes.
+
+**Rationale:** Global modes made every page feel like an analysis console and foregrounded warning vocabulary before the leadership case. Moving the same rigor behind a deliberate evidence action preserves transparency while restoring executive focus.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Remove qualifications from the public dataset | Produces cleaner copy by sacrificing the traceability promise |
+| Rename Gaps but keep all global tabs | Changes vocabulary without reducing interaction or visual load |
+| Show confidence only as color | Still presents a subjective judgment and makes meaning depend on color |
+
+---
+
+## Decision 050: Use One Impact and One Portrait-Led Hero Per Page
+
+**Date:** 2026-08-07
+**Phase:** Executive Portfolio Feedback Redesign
+**Category:** Content Design / Visual Identity
+
+**Question:** What presentation grammar makes a large evidence corpus readable to senior leaders?
+
+**Decision:** Limit narrative pages to two through four blocks. Each block contains one four-to-eight-word impact heading, one short meaning statement, one human evidence signal, and one evidence action. Every primary route uses a portrait-bearing hero; the global header retains a compact thumbnail. On mobile, copy precedes a smaller portrait and the duplicate portrait caption is suppressed. Claim-detail heroes repeat neither the metric nor the conclusion: one impact heading and one proof sliver lead into the disclosures. Documentary imagery appears only where it materially strengthens a reviewed story block.
+
+**Rationale:** A stable grammar creates attention hierarchy and translates internal units into decisions, value, learning, and service. Reusing the portrait as a consistent identity anchor meets the personal-portfolio intent without adding another verbose section.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Reduce only font sizes and spacing | Treats symptoms while leaving multiple headings, metadata rows, and claims competing for attention |
+| Place a large portrait card inside every page body | Satisfies image repetition but consumes the space needed for the page's one clear thesis |
+| Use decorative generated imagery throughout | Adds visual novelty without documentary or identity value |

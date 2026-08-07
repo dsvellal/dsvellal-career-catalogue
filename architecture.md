@@ -134,7 +134,31 @@ The generated export is private: it contains raw artifact text, people, metadata
 
 ---
 
-### Claim-centric Executive Portfolio Observatory projection
+### Schema-v3 Executive Portfolio Observatory projection (current)
+
+The publication compiler now emits two orthogonal layers in the same privacy-safe contract:
+
+```text
+55 canonical claims + supports + sources + methods + relationships
+                              │
+                    exact ownership validation
+                              │
+          ┌───────────────────┴───────────────────┐
+          ▼                                       ▼
+23 curated story blocks                    4 audit-only claims
+51 claims owned exactly once               retained outside the public story
+          │
+          ▼
+8 primary routes → Inspect Claim → source/method records
+```
+
+`story_blocks` is a presentation layer rather than a second factual store. Each block references one primary claim and any folded supporting claims, adds concise executive `title`, `meaning`, and `proof` copy, and may reference one allowlisted documentary source. Build validation requires every featured claim to have exactly one owner and limits narrative pages to no more than four blocks. The generic Impact route was removed because it had no unique ownership boundary; the route parser maps legacy `impact` hashes to Innovation & Value.
+
+The React shell renders the same portrait-bearing page hero on all eight routes. Public pages do not render a global evidence lens, Gaps mode, confidence badges, claim counts, or support counts. `DetailPages.tsx` resolves a story block's primary and folded claims into four compact disclosures: meaning, deduplicated evidence, derivation method, and scope/evidence context. The data is still complete—confidence, caveats, conflicts, attribution, and relationship reasoning remain part of the audit model—but presentation concerns no longer dominate the executive reading path.
+
+The Data Room searches the 23 curated conclusions and a 34-source publication closure instead of rendering all 55 raw claims by default. That closure includes direct claim supports, documentary sources, inputs to the 16 story-linked methods, and sources used to reconcile story claims; ten story-linked longitudinal relationships remain available behind collapsed native disclosures. The same publication sets guard direct claim/source/method hashes: audit-only records remain in the deterministic contract but reveal only a generic evidence invitation in the public UI. The `#/impact` compatibility redirect and stable story-linked record hashes preserve traceability.
+
+### Claim-centric Executive Portfolio Observatory projection (archived schema v2)
 
 The public portfolio does not query the private export. `scripts/build_portfolio_data.py` is the publication compiler: it reads reviewed evidence and committed aggregates, computes bounded metrics, records editorial relationships, validates every reference, and emits one public-safe contract.
 
@@ -182,7 +206,7 @@ The Vite build sets `publicDir: false`. Only explicitly imported presentation as
 | LLM (synthesis) | Google Gemini API (2.5-pro / 2.5-flash) | User's existing subscription, strong synthesis |
 | LLM (fallback) | Ollama (gemma4, BGE-m3) | Offline capability, free |
 | Frontend | React + TypeScript + Vite + D3 | SPA with hash-addressable view navigation and static JSON data |
-| Portfolio Data | `scripts/build_portfolio_data.py` → `viz/src/data/portfolio.json` | Claim-centric, method-bearing, privacy-safe public projection for nine executive questions and Level 3 records |
+| Portfolio Data | `scripts/build_portfolio_data.py` → `viz/src/data/portfolio.json` | Schema-v3 story layer over claim-centric, method-bearing, privacy-safe evidence for eight routes and stable detail records |
 | Legacy Journey Data | `scripts/build_journey_data.py` → `viz/src/data/journey.json` | Superseded eight-view compatibility projection; retained for regression history |
 | Legacy Viz Data | `twin publish` static JSON generation | Pre-shaped files retained for archived view components |
 | Relationship Export | Deterministic JSON/JSONL/YAML + SHA-256 manifest | Portable inspection of DuckDB, ChromaDB, and the exact runtime NetworkX projection without changing canonical stores |
@@ -242,7 +266,7 @@ The private relationship export is always Local regardless of individual source-
 | 3 | Generators | Resume, cover letter, summary generators via API | Phase 2 |
 | 4 | Chat Interface | Web UI for conversational twin | Phase 2 |
 | 5 | Portfolio Site | Public-facing dynamic portfolio, static generation | Phase 3 |
-| 5d | Executive Portfolio Observatory | Claim/source/method compiler, nine-route evidence UI, Data Room, explicit longitudinal analysis | Phase 5 + reviewed evidence |
+| 5d | Executive Portfolio Observatory | Claim/source/method compiler, eight-route story UI, Data Room, folded traceability, explicit longitudinal analysis | Phase 5 + reviewed evidence |
 | 6 | Cloud Sync | Google Drive monitoring, watch folder | Phase 1 |
 | 7 | Cloud Deployment | Published snapshot to Vercel + Cloud Run | Phase 5 |
 

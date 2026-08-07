@@ -5,6 +5,7 @@ from __future__ import annotations
 import copy
 import json
 import re
+from collections import Counter
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -46,22 +47,218 @@ def test_committed_portfolio_is_deterministic_and_valid():
     validate_portfolio_data(committed)
 
 
-def test_portfolio_uses_the_nine_route_information_architecture():
+def test_portfolio_uses_the_eight_route_executive_information_architecture():
     data = build_portfolio_data()
 
     assert [(page["id"], page["route"]) for page in data["pages"]] == [
         ("brief", "brief"),
         ("leadership", "leadership"),
         ("journey", "journey"),
-        ("impact", "impact"),
         ("trust", "trust"),
         ("innovation", "innovation"),
         ("learning", "learning"),
         ("community", "community"),
         ("data-room", "data-room"),
     ]
+    assert _by_id(data["pages"])["innovation"]["label"] == "Innovation & value"
     data_room = _by_id(data["pages"])["data-room"]
-    assert set(data_room["claim_ids"]) == {claim["id"] for claim in data["claims"]}
+    assert data_room["claim_ids"] == data["audit_only_claim_ids"]
+    assert data["audit_only_claim_ids"] == [
+        "claim-evidence-corpus-coverage",
+        "claim-export-embedding-gap",
+        "claim-export-provenance-gap",
+        "claim-professional-community-trust-bridge",
+    ]
+    assert data["executive_semantics"]["page_copy"]["innovation"] == {
+        "question": "How does Datta turn emerging technology into governed execution?",
+        "summary": (
+            "A record of carrying ideas from invention through engineered delivery "
+            "while framing opportunity at portfolio scale."
+        ),
+    }
+
+
+def test_story_blocks_are_the_exact_single_owner_55_claim_hierarchy():
+    data = build_portfolio_data()
+    expected = [
+        (
+            "brief-influence-beyond-hierarchy",
+            "brief",
+            "claim-title-independent-leadership-continuity",
+            [],
+        ),
+        ("brief-speed-built-on-discipline", "brief", "claim-quality-before-ai-lineage", []),
+        (
+            "brief-capability-that-multiplies",
+            "brief",
+            "claim-learn-build-teach-systemize-pattern",
+            [],
+        ),
+        ("brief-service-that-compounds", "brief", "claim-service-continuity-and-growth", []),
+        (
+            "leadership-boundaries",
+            "leadership",
+            "claim-2025-cross-boundary-leadership",
+            ["claim-2015-cross-team-leadership"],
+        ),
+        (
+            "leadership-benchmark",
+            "leadership",
+            "claim-2020-360-company-deltas",
+            ["claim-2020-strengths-profile", "claim-strengths-later-observation-concordance"],
+        ),
+        (
+            "leadership-growth",
+            "leadership",
+            "claim-feedback-to-executive-observation",
+            [
+                "claim-2020-executive-influence-development-signal",
+                "claim-2025-executive-influence-observation",
+            ],
+        ),
+        ("journey-span", "journey", "claim-career-calendar-span", ["claim-2008-early-leadership"]),
+        ("journey-community", "journey", "claim-2010-technical-community-recognition", []),
+        ("journey-delivery", "journey", "claim-2017-process-delivery-recognition", []),
+        ("journey-enterprise", "journey", "claim-2021-cto-recognition", []),
+        ("trust-sought-out", "trust", "claim-connect-demand-share", ["claim-connect-volume-2021"]),
+        ("trust-independent-thinkers", "trust", "claim-2020-mentoring-method", []),
+        ("trust-purpose", "trust", "claim-2023-purpose-first-mentoring", []),
+        (
+            "innovation-patent",
+            "innovation",
+            "claim-public-patent-record",
+            ["claim-2010-first-patent-achievement"],
+        ),
+        (
+            "innovation-controlled-ai",
+            "innovation",
+            "claim-sutra-ai-delivery",
+            [
+                "claim-sutra-traceability",
+                "claim-sutra-delivery-recognition",
+                "claim-2015-quality-discipline",
+                "claim-2020-quality-speed-framing",
+            ],
+        ),
+        (
+            "innovation-portfolio-value",
+            "innovation",
+            "claim-xite-potential-efficiency",
+            ["claim-xite-potential-hours"],
+        ),
+        (
+            "learning-listening-system",
+            "learning",
+            "claim-session-post-responses",
+            [
+                "claim-session-post-datasets",
+                "claim-session-rating-observations",
+                "claim-session-qualitative-entries",
+                "claim-session-audience-surveys",
+            ],
+        ),
+        ("learning-reach", "learning", "claim-community-talks-reach", []),
+        (
+            "learning-valued",
+            "learning",
+            "claim-student-presenter-ratings",
+            [
+                "claim-student-feedback-coverage",
+                "claim-student-recommendation-likelihood",
+                "claim-student-takeaway-interview-resilience-2017",
+                "claim-student-takeaway-uncertainty-2020",
+            ],
+        ),
+        (
+            "learning-frontier",
+            "learning",
+            "claim-topic-frontier-teaching-continuity",
+            [
+                "claim-feedback-adaptation-tension",
+                "claim-session-ai-feedback",
+                "claim-session-dora-feedback",
+                "claim-2019-practical-feedback-request",
+                "claim-2024-practical-ai-takeaway",
+                "claim-2026-hands-on-depth-request",
+            ],
+        ),
+        ("community-presence", "community", "claim-community-service-photo-record", []),
+        (
+            "community-scaled-giving",
+            "community",
+            "claim-book-program-total",
+            ["claim-book-program-growth"],
+        ),
+    ]
+    actual = [
+        (
+            block["id"],
+            block["page_id"],
+            block["primary_claim_id"],
+            block["folded_claim_ids"],
+        )
+        for block in data["story_blocks"]
+    ]
+    assert actual == expected
+
+    story_claims = [
+        claim_id
+        for block in data["story_blocks"]
+        for claim_id in [block["primary_claim_id"], *block["folded_claim_ids"]]
+    ]
+    assert len(story_claims) == len(set(story_claims)) == 51
+    assert set(story_claims) | set(data["audit_only_claim_ids"]) == {
+        claim["id"] for claim in data["claims"]
+    }
+    block_counts = Counter(block["page_id"] for block in data["story_blocks"])
+    assert block_counts == {
+        "brief": 4,
+        "leadership": 3,
+        "journey": 4,
+        "trust": 3,
+        "innovation": 3,
+        "learning": 4,
+        "community": 2,
+    }
+    assert "image_source_id" not in _by_id(data["story_blocks"])["innovation-patent"]
+    assert _by_id(data["story_blocks"])["community-presence"]["image_source_id"] == (
+        "source-community-service-photo-record-2007-2015"
+    )
+    assert all(
+        not re.search(r"\b(?:not|gaps?|confidence|rows?|files?|ledger)\b", block["title"], re.I)
+        for block in data["story_blocks"]
+    )
+
+
+@pytest.mark.parametrize(
+    ("mutation", "message"),
+    [
+        (
+            lambda data: data["story_blocks"][0].update({"primary_claim_id": "claim-unknown"}),
+            "unknown primary claim",
+        ),
+        (
+            lambda data: data["story_blocks"][0].update({"title": "Confidence gap ledger"}),
+            "banned language",
+        ),
+        (
+            lambda data: data["story_blocks"][0]["folded_claim_ids"].append(
+                data["story_blocks"][1]["primary_claim_id"]
+            ),
+            "multiple story blocks",
+        ),
+        (
+            lambda data: data["story_blocks"].pop(),
+            "two to four story blocks",
+        ),
+    ],
+)
+def test_validator_rejects_invalid_story_hierarchy(mutation, message):
+    data = copy.deepcopy(build_portfolio_data())
+    mutation(data)
+
+    with pytest.raises(ValueError, match=message):
+        validate_portfolio_data(data)
 
 
 def test_corrected_feedback_populations_and_units_are_exact():
@@ -248,9 +445,10 @@ def test_student_feedback_is_separate_scale_safe_and_present_on_learning_pages()
     assert inputs["input-student-presenter-10"]["unit"] == "/10, n=128"
     assert inputs["input-student-recommendation"]["value"] == 8.87
     assert inputs["input-student-recommendation"]["unit"] == "/10, n=98"
-    assert (
-        "not a Net Promoter Score" in claims["claim-student-recommendation-likelihood"]["statement"]
+    assert claims["claim-student-recommendation-likelihood"]["title"] == (
+        "Recommendation likelihood averaged 8.87/10"
     )
+    assert "original source scale" in claims["claim-student-recommendation-likelihood"]["statement"]
     assert any("Do not publish raw rows" in rule for rule in method["exclusion_rules"])
 
     student_claim_ids = {
@@ -261,7 +459,7 @@ def test_student_feedback_is_separate_scale_safe_and_present_on_learning_pages()
         "claim-student-takeaway-uncertainty-2020",
     }
     assert student_claim_ids <= set(pages["learning"]["claim_ids"])
-    assert student_claim_ids <= set(pages["community"]["claim_ids"])
+    assert student_claim_ids.isdisjoint(pages["community"]["claim_ids"])
     assert "1050" not in method["result"]
     assert "3,732" not in method["result"]
 
@@ -334,7 +532,7 @@ def test_patent_award_to_public_grant_is_a_direct_observed_relationship():
     assert "one of three inventors" in method["result"]
     assert "sole inventorship" in relationship["limitation"]
     assert "commercialization" in relationship["limitation"]
-    assert achievement_id in pages["journey"]["claim_ids"]
+    assert achievement_id not in pages["journey"]["claim_ids"]
     assert achievement_id in pages["innovation"]["claim_ids"]
 
 
@@ -426,4 +624,4 @@ def test_writer_emits_valid_json(tmp_path: Path):
 
     written = json.loads(output.read_text(encoding="utf-8"))
     assert written == data
-    assert written["meta"]["schema_version"] == 2
+    assert written["meta"]["schema_version"] == 3

@@ -6,6 +6,7 @@ import type {
   PortfolioPage,
   PortfolioRoute,
   PortfolioSource,
+  PortfolioStoryBlock,
   PortfolioSupport,
 } from './portfolio-types'
 
@@ -19,6 +20,35 @@ export const methodById = new Map(portfolio.methods.map(method => [method.id, me
 export const relationshipById = new Map(portfolio.relationships.map(relationship => [relationship.id, relationship]))
 export const caveatById = new Map(portfolio.caveats.map(caveat => [caveat.id, caveat]))
 export const conflictById = new Map(portfolio.conflicts.map(conflict => [conflict.id, conflict]))
+export const storyBlockById = new Map((portfolio.story_blocks ?? []).map(block => [block.id, block]))
+
+export const auditOnlyClaimIds = new Set(portfolio.audit_only_claim_ids ?? [])
+export const storyClaimIds = new Set(
+  (portfolio.story_blocks ?? []).flatMap(block => [block.primary_claim_id, ...block.folded_claim_ids]),
+)
+export const storyMethodIds = new Set([
+  ...portfolio.claims
+    .filter(claim => storyClaimIds.has(claim.id) && claim.method_id)
+    .map(claim => claim.method_id as string),
+  ...portfolio.relationships
+    .filter(relationship => storyClaimIds.has(relationship.claim_id) && relationship.method_id)
+    .map(relationship => relationship.method_id as string),
+])
+const storyConflictIds = new Set(
+  portfolio.claims.filter(claim => storyClaimIds.has(claim.id)).flatMap(claim => claim.conflict_ids),
+)
+export const storySourceIds = new Set([
+  ...portfolio.supports
+    .filter(support => storyClaimIds.has(support.claim_id))
+    .map(support => support.source_id),
+  ...(portfolio.story_blocks ?? []).flatMap(block => block.image_source_id ? [block.image_source_id] : []),
+  ...portfolio.methods
+    .filter(method => storyMethodIds.has(method.id))
+    .flatMap(method => method.inputs.flatMap(input => input.source_id ? [input.source_id] : [])),
+  ...portfolio.conflicts
+    .filter(conflict => storyConflictIds.has(conflict.id))
+    .flatMap(conflict => conflict.source_ids),
+])
 
 function normalizedPath(value: string): string {
   const withoutQuery = value.split('?')[0].replace(/^#?\/?/, '').replace(/\/$/, '')
@@ -39,7 +69,8 @@ export function parseRoute(hash: string): PortfolioRoute {
   if (kind === 'source' && id) return { type: 'source', id }
   if (kind === 'method' && id) return { type: 'method', id }
 
-  const page = portfolio.pages.find(item => normalizedPageRoute(item) === path || item.id === path)
+  const resolvedPath = path === 'impact' ? 'innovation' : path
+  const page = portfolio.pages.find(item => normalizedPageRoute(item) === resolvedPath || item.id === resolvedPath)
   return { type: 'page', pageId: page?.id ?? portfolio.pages[0]?.id ?? 'brief' }
 }
 
@@ -57,14 +88,6 @@ export function hrefForSource(sourceId: string): string {
 
 export function hrefForMethod(methodId: string): string {
   return `#/method/${encodeURIComponent(methodId)}`
-}
-
-export function hrefForCaveat(caveatId: string): string {
-  return `#/data-room?mode=methodology&focus=${encodeURIComponent(caveatId)}`
-}
-
-export function hrefForConflict(conflictId: string): string {
-  return `#/data-room?mode=methodology&focus=${encodeURIComponent(conflictId)}`
 }
 
 export function claimsForPage(page: PortfolioPage): PortfolioClaim[] {
@@ -114,7 +137,18 @@ export function methodForClaim(claim: PortfolioClaim): PortfolioMethod | undefin
 }
 
 export function pageForClaim(claim: PortfolioClaim): PortfolioPage | undefined {
+  const story = storyBlockForPrimaryClaim(claim.id)
+  if (story) return pageById.get(story.page_id)
   return portfolio.pages.find(page => page.claim_ids.includes(claim.id))
+}
+
+export function storyBlocksForPage(page: PortfolioPage | string): PortfolioStoryBlock[] {
+  const pageId = typeof page === 'string' ? page : page.id
+  return (portfolio.story_blocks ?? []).filter(block => block.page_id === pageId)
+}
+
+export function storyBlockForPrimaryClaim(claimId: string): PortfolioStoryBlock | undefined {
+  return (portfolio.story_blocks ?? []).find(block => block.primary_claim_id === claimId)
 }
 
 export function pageAccent(page: PortfolioPage): string {
@@ -131,15 +165,11 @@ export function pageAccent(page: PortfolioPage): string {
 }
 
 export function compactDate(value?: string): string {
-  if (!value) return 'Date held in source record'
+  if (!value) return 'Date in source record'
   const match = value.match(/(?:19|20)\d{2}/)
   return match?.[0] ?? value
 }
 
 export function humanize(value: string): string {
   return value.replace(/[_-]+/g, ' ').replace(/\b\w/g, char => char.toUpperCase())
-}
-
-export function qualityEntries(): Array<[string, unknown]> {
-  return Object.entries(portfolio.data_quality ?? {})
 }

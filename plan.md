@@ -2,7 +2,7 @@
 
 **Project:** dsvellal-personal-knowledge-context
 **Last Updated:** 2026-08-07
-**Current Phase:** 7 (Cloud Deployment); Phase 5d complete
+**Current Phase:** 7 (Cloud Deployment); Phase 5e complete
 
 ---
 
@@ -147,6 +147,24 @@
 | 5d.6 | Correct committed professional-session aggregate evidence | Done | Separates 88 post-event datasets / 1,050 rows from two pre-event surveys / 133 rows; unsupported global satisfaction and JSCPD causality claims removed |
 | 5d.7 | Run deterministic data, privacy, frontend, accessibility, and browser verification | Done | All 7 repository gates pass; 269 tests pass / 2 skip; 9 routes pass at 1440 and 390 px; zero automated WCAG A/AA violations and no browser errors |
 | 5d.8 | Complete documentation and publish directly to `main` | Done | System/product/design/user-flow/test/setup/handover records reconciled; direct-main publication with no new pull request per owner instruction |
+
+---
+
+## Phase 5e: Feedback-Driven Executive Story Layer (Complete)
+
+| # | Task | Status | Notes |
+|---|------|--------|-------|
+| 5e.1 | Quantify repetition and page-level content density | Done | Found 90 story-page placements for 51 unique featured claims; identified Impact as a duplication surface |
+| 5e.2 | Define exact page and block ownership | Done | Eight-page IA, 23 blocks, 51 claims owned exactly once, 4 audit-only claims |
+| 5e.3 | Add schema-v3 story layer and validation | Done | Builder emits executive semantics, story blocks, folded claims, optional image sources, and exact-ownership assertions |
+| 5e.4 | Replace inventory pages with impact-first story blocks | Done | Two to four blocks per narrative page; one impact, meaning, proof signal, and evidence action per block |
+| 5e.5 | Consolidate evidence modes in Inspect Claim | Done | Removed global lenses, Gaps, confidence/state badges, caveat banners, and duplicate evidence walls; folded traceability remains inspectable |
+| 5e.6 | Simplify Data Room | Done | Searches 23 conclusions and source records; methods and relationships start collapsed; `AI` query returns 5 conclusions / 3 sources |
+| 5e.7 | Make identity visually consistent | Done | Every route has one primary portrait plus the compact global-header thumbnail; reviewed documentary images remain contextual |
+| 5e.8 | Verify data, UI, privacy, responsive, and accessibility contracts | Done | All 7 gates pass; 274 tests pass / 2 skip; 8 routes fit 390 px; Brief and Inspect Claim axe audits report zero violations |
+| 5e.9 | Reconcile current documentation | Done | Current-state sections added while schema-v2 observatory and Journey Atlas remain archived for decision history |
+| 5e.10 | Harden the final executive publication boundary | Done | Audit-only claims and exclusive source/method/relationship records are filtered from browse and direct hashes; Data Room clears in one action |
+| 5e.11 | Complete hierarchy-led screen refinement | Done | Mobile answer-first portrait, non-duplicating claim hero, positive evidence rationales, and final desktop/mobile captures verified |
 
 ---
 

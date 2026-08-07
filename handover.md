@@ -1,13 +1,13 @@
 # Handover
 
 **Last Updated:** 2026-08-07
-**Session:** Executive Portfolio Observatory — evidence correction, deep relationship discovery, full UI rebuild, verification, and direct-main publication
+**Session:** Executive Portfolio Observatory — feedback-led hierarchy refinement, traceability closure, verification, and direct-main publication
 
 ---
 
 ## Last Completed Action
 
-Replaced the eight-view Journey Atlas with a nine-route, three-level Executive Portfolio Observatory and prepared the verified result for the owner's requested direct push to `main` without opening a new pull request. The work is based on the current `origin/main` tree after the earlier Journey Atlas PR was merged.
+Completed the schema-v3 Executive Portfolio Observatory refinement requested after presentation review. The active experience now has eight portrait-led routes, 23 non-repeating impact blocks, progressive Inspect Claim disclosures, and a curated Data Room. The exact final worktree passed the complete seven-gate repository check and live-browser regression. Publication is a direct commit and push to `main`; no pull request is created.
 
 ---
 
@@ -15,53 +15,69 @@ Replaced the eight-view Journey Atlas with a nine-route, three-level Executive P
 
 | Aspect | Status |
 |--------|--------|
-| Public routes | 9 executive questions: Brief, Leadership, Journey, Impact, Trust, Innovation, Learning, Community, and Data Room |
-| Progressive depth | Level 1 summary → Level 2 explanation → Level 3 claim/source/method record |
-| Public evidence contract | 55 claims, 82 supports, 36 source capsules, 18 methods, 11 relationships, 30 caveats, and 8 conflicts |
-| Relationship semantics | 1 observed/direct link and 10 derived links; every record has endpoints, reasoning/method, confidence, caveats, and a limitation |
-| Evidence lenses | Narrative, Proof, Method, and Gaps across the same immutable claim set |
-| Documentary media | Four explicitly imported, privacy-reviewed images only |
-| Professional feedback | 88 post-event/interaction datasets and 1,050 rows; 2 pre-event surveys and 133 rows reported separately |
-| Student feedback | 13 forms and 494 rows; presenter ratings retain their original scales; 8.87/10 recommendation likelihood is not NPS |
-| Service ledger | ₹1,972,381 over 10 recorded years; 2020–2021 and 2024 gaps remain explicit; 13.3× is an endpoint ratio |
-| Innovation boundary | XITE figures remain portfolio estimates of potential; Sutra metrics and team attribution remain separate |
-| Production boundary | Vite `publicDir: false`, exact excerpt verification, held-artifact checksum scope, allowlisted external URLs, and independent bundle deny-list |
-| Full repository gate | All 7 checks pass: Ruff lint/format, mypy, pytest, TypeScript, Vite build, and public-bundle privacy |
-| Python tests | 269 passed, 2 skipped; 3 dependency deprecation warnings |
-| Browser QA | All 9 routes pass at 1440×1000 and 390×844 with no overflow or page errors |
-| Accessibility | 0 axe WCAG A/AA violations on representative routes; gradient contrast was manually reviewed because automation marked it inconclusive |
+| Public routes | 8: Executive Brief, Leadership, Career Journey, Trust, Innovation & Value, Learning, Community & Service, and Data Room; legacy `#/impact` resolves to Innovation |
+| First-level grammar | One page thesis; 2–4 blocks per narrative route; one impact heading, one meaning statement, one evidence signal, and one action per block |
+| Story ownership | 23 story blocks own 51 featured claims exactly once; 4 corpus-quality/privacy-sensitive claims remain audit-only |
+| Canonical audit contract | 55 claims, 82 support edges, 36 sources, 18 methods, 11 relationships, 30 caveats, and 8 conflicts |
+| Public traceability closure | 23 conclusions, 34 story-relevant sources, 16 methods, and 10 relationships; sources include direct support, documentary evidence, method inputs, and reconciliation records |
+| Inspect Claim | Why this matters, Evidence behind it, How it was derived, and Scope & definitions; folded claims and sources are deduplicated |
+| Audit isolation | Audit-only claims and their exclusive source/method/relationship records are absent from search and browse; direct hashes and document titles reveal no audit identifier or copy |
+| Bidirectional lineage | Source pages link to direct claims, methods using the source as input, and conclusions whose reconciliation uses the source |
+| Identity | Datta's portrait is present on every route plus the global header; mobile puts the executive answer before a compact portrait |
+| Data Room | Search-first; Browse all returns 23 conclusions / 34 source records; `AI` returns 5 conclusions / 3 sources; Clear results resets in one action |
+| Innovation boundary | XITE is explicitly an estimated potential portfolio opportunity; Sutra remains an initiative/team execution record |
+| Student feedback | Presenter populations retain their original 5-point and 10-point scales; recommendation likelihood is a source-scale 8.87/10 mean |
+| Production boundary | Vite `publicDir: false`, approved excerpts, scoped held-artifact checksums, allowlisted external URLs, reviewed image imports, and independent bundle deny-list |
+| Full repository gate | All 7 checks pass: Ruff lint, Ruff format, mypy, pytest, TypeScript, Vite build, and public-bundle privacy |
+| Python tests | 274 passed, 2 skipped; 3 dependency deprecation warnings |
+| Focused portfolio tests | 24 passed; deterministic builder `--check` passed |
+| Browser QA | All 8 routes at 390 px have one route portrait, answer-first order, and no horizontal overflow; desktop screens reviewed |
+| Accessibility | Brief and Inspect Claim axe WCAG A/AA audits report 0 violations; gradient-background contrast remains a manually reviewed incomplete item |
+| Development server | Running at `http://127.0.0.1:5173/` |
 | Git publication | Direct push to `main`; no new pull request |
 
 ---
 
-## Deep Relationships Now Represented
+## Deep Relationships Represented
 
-1. IBM's 2010 first-patent application recognition matches the 2013 public grant by exact normalized invention title and inventor identity; no sole-inventor or commercial-impact claim is made.
-2. A 2020 executive-influence development edge is compared with independent 2025 observations as later-consistent, non-causal evidence.
-3. 2020 assessed strengths recur in later independent behavior observations without treating assessment labels as performance proof.
-4. A 2015 → 2017 → 2020 → 2025 → 2026 quality-control lineage contextualizes AI-native delivery as disciplined engineering evolution.
-5. Evidence from 2008 through 2025 tests leadership beyond title and reporting line.
-6. A learn → build → teach → systemize operating pattern recurs across employers.
-7. The teaching frontier shifts from foundational engineering toward AI while demand for practical application persists.
-8. 454 of 575 2021 connect conversations—79%—were requested by others, a bounded demand-led influence signal.
-9. Direct service develops into a recurring but explicitly non-contiguous education-support program.
-10. One exact held-record identity match bridges professional and community trust while the public view withholds the person's identity.
-11. Participant feedback shows adaptation to earlier requests and continuing demand for deeper hands-on AI practice.
+1. IBM's 2010 first-patent application recognition matches the 2013 public grant by normalized invention title and inventor identity.
+2. A 2020 executive-influence development request connects to independent 2025 descriptions of the requested behavior as observational longitudinal concordance.
+3. Five 2020 assessed strengths have later behavioral counterparts in independent 2025 records.
+4. A 2015 → 2017 → 2020 → 2025 → 2026 quality-control lineage contextualizes AI-native delivery as an extension of engineering discipline.
+5. Evidence from 2008 through 2025 establishes leadership continuity beyond title and reporting line.
+6. A learn → build → teach → systemize operating pattern recurs across IBM, Exeter, Amazon, and Philips records.
+7. The teaching frontier advances from foundational engineering toward applied AI while participant feedback continues to shape practical depth.
+8. 454 of 575 recorded 2021 connect conversations—79%—were requested by others, a bounded demand-led influence signal.
+9. Direct community service develops into ten recorded education-support program years with a 13.3× endpoint ratio.
+10. Participant feedback records both adaptation and continuing demand for deeper hands-on practice.
+11. One privacy-safe professional/community identity bridge remains in the audit model and is intentionally absent from public presentation.
+
+---
+
+## Final Screen Captures
+
+- `/tmp/datta-final-brief.png`
+- `/tmp/datta-final-innovation.png`
+- `/tmp/datta-learning-desktop.png`
+- `/tmp/datta-community-desktop.png`
+- `/tmp/datta-data-room.png`
+- `/tmp/datta-claim-evidence-open.png`
+- `/tmp/datta-brief-mobile.png`
 
 ---
 
 ## In-Progress Work
 
-None for Phase 5d. The evidence audit, derived analysis, public compiler, UI, documentation, verification, commit, and direct-main publication are complete as one deliverable.
+None for the portfolio refinement. The implementation, documentation, privacy boundary, responsive review, accessibility audit, final regression, and publication handoff are complete.
 
 ---
 
 ## Next Steps
 
-1. Complete Phase 7 public hosting/domain selection and deploy only `viz/dist`; never deploy `data/exports/relationships/`, raw evidence, DuckDB, or ChromaDB.
-2. If retrieval completeness becomes a priority, generate vectors for the 4,411 DuckDB chunks absent from ChromaDB and repair the 13 unresolved edge-provenance references.
-3. Continue moving held Markdown records to the YAML-frontmatter schema; the public compiler should remain an explicit reviewed boundary rather than ingesting the corpus indiscriminately.
-4. Re-run `./scripts/check.sh lint types test frontend` before every publication.
+1. Select public hosting/domain and deploy only `viz/dist`; never deploy raw evidence, DuckDB, ChromaDB, or `data/exports/relationships/`.
+2. Continue reviewed source curation through `scripts/build_portfolio_data.py`; preserve exact story ownership and the story-source closure.
+3. Re-run `./scripts/check.sh lint types test frontend` before each publication.
+4. Treat the internal retrieval/index completeness work as a private-system concern, not executive portfolio copy.
 
 ---
 
@@ -73,10 +89,10 @@ None.
 
 ## Key Context
 
-- `scripts/build_portfolio_data.py` is the deterministic publication compiler; `viz/src/data/portfolio.json` is the only active portfolio data contract.
-- `scripts/check_public_bundle.py` independently scans the production artifact for private paths, identifiers, raw evidence/export content, and unapproved assets.
-- `viz/src/PortfolioPages.tsx`, `DetailPages.tsx`, `EvidenceUI.tsx`, and `portfolio-model.ts` implement the nine primary routes, detail resolvers, evidence lenses, and Data Room.
-- Source provenance, support directness, and claim state are orthogonal. A calculated or interpreted claim cannot inherit credibility merely from a documented source.
-- Exact verbatim excerpts must occur in their canonical held source. Published SHA-256 values cover the held publication artifact; the public patent link remains independently openable and is not represented as live-page checksum coverage.
-- Raw graph co-occurrence, keywords, chronology, and array position never generate public relationship lines. Only the 11 reviewed relationship records render.
-- The private relationship export remains intentionally tracked only in this confirmed private repository. The noncanonical `viz/data/chroma/` and `viz/data/knowledge.duckdb` stores remain ignored and were not staged or modified.
+- `scripts/build_portfolio_data.py` is the deterministic publication compiler; `viz/src/data/portfolio.json` is the active portfolio contract.
+- `viz/src/portfolio-model.ts` derives the public claim, method, and source publication sets. The source set is a closure over claim support, story images, public method inputs, and public reconciliation records.
+- `viz/src/PortfolioPages.tsx` owns the eight route compositions and Data Room; `viz/src/DetailPages.tsx` owns claim/source/method traceability; `viz/src/App.tsx` applies the same publication guards to routing and document titles.
+- `scripts/check_public_bundle.py` rejects private paths, raw evidence/export content, identifiers, internal URLs, and unapproved assets in `viz/dist`.
+- The canonical model retains technical scope and reconciliation records, while the first two presentation levels use positive, meaning-first language.
+- Documentary assets are explicitly imported. Community-service imagery appears in its story block; patent and recognition artifacts remain available on their source-detail routes.
+- The private relationship export remains local/private and is never consumed by the public build.

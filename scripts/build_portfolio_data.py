@@ -27,9 +27,7 @@ AS_OF = "2026-08-07"
 SESSION_CORPUS = "data/evidence/sessions/all_sessions_data.json"
 SESSION_NARRATIVE = "data/evidence/sessions/SESSION-EVIDENCE.md"
 SESSION_SUMMARY = "data/evidence/sessions/summary_stats.json"
-STUDENT_FEEDBACK_SUMMARY = (
-    "data/evidence/sessions/student-feedback/STUDENT-FEEDBACK-EVIDENCE.md"
-)
+STUDENT_FEEDBACK_SUMMARY = "data/evidence/sessions/student-feedback/STUDENT-FEEDBACK-EVIDENCE.md"
 STUDENT_FEEDBACK_CORPUS = "data/evidence/sessions/student-feedback/all_sessions_raw.json"
 RESUME_2026 = "data/evidence/2026/individual/112-resume-2026-latest-authoritative.md"
 FEEDBACK_360 = "data/evidence/2020/individual/069a-philips-360-degree-feedback-2020.md"
@@ -46,9 +44,7 @@ AMAZON_PROCESS = "data/evidence/2017/individual/026-amazon-trms-spot-award-proce
 AMAZON_DELIVERY = "data/evidence/2017/individual/002-amazon-trms-zeus-award.md"
 AMAZON_WORK = "data/evidence/2018/individual/019-resume-2018-amazon-work-examples.md"
 CONNECT_2021 = "data/evidence/2021/individual/019-connect-annual-summary-2021.md"
-CTO_RECOGNITION = (
-    "data/evidence/2021/individual/001-outstanding-achievement-award-cto-2021.md"
-)
+CTO_RECOGNITION = "data/evidence/2021/individual/001-outstanding-achievement-award-cto-2021.md"
 TALKS_LEDGER = "data/evidence/sessions/givebacks-talks-spreadsheet.md"
 BOOK_LEDGER = "data/evidence/2025/individual/075-social-giveback-book-distribution-program.md"
 SERVICE_PHOTOS = "data/evidence/2025/individual/074-social-giving-back-presentation.md"
@@ -58,12 +54,8 @@ RECOMMENDATION_SANNIHITH = (
 RECOMMENDATION_NAVEEN = (
     "data/evidence/2023/individual/018-linkedin-recommendation-naveenkumar-vr.md"
 )
-RECOMMENDATION_IAN = (
-    "data/evidence/2025/individual/071-linkedin-recommendation-ian-watson.md"
-)
-RECOMMENDATION_ROB = (
-    "data/evidence/2025/individual/072-linkedin-recommendation-rob-nicholson.md"
-)
+RECOMMENDATION_IAN = "data/evidence/2025/individual/071-linkedin-recommendation-ian-watson.md"
+RECOMMENDATION_ROB = "data/evidence/2025/individual/072-linkedin-recommendation-rob-nicholson.md"
 XITE_SUTRA = "data/evidence/2026/individual/111-xite-special-edition-18k-hours-3-5m-sutra-impact.md"
 SUTRA_RECOGNITION = (
     "data/evidence/2026/individual/099-recognition-learning-collaboration-sutra-q2-2026.md"
@@ -173,7 +165,7 @@ SOURCE_SPECS: tuple[dict[str, str], ...] = (
         "source_date": "2013–2020",
         "publisher": "Datta Vellal — community-teaching feedback archive",
         "access_state": "aggregate_only",
-        "approved_excerpt": "The separate community-teaching tracker contains 13 feedback forms and 494 response rows across six educational institutions plus one Exeter corporate yoga context. Its 5-point and 10-point ratings remain separate, and recommendation likelihood is not NPS.",
+        "approved_excerpt": "The separate community-teaching tracker contains 13 feedback forms and 494 response rows across six educational institutions plus one Exeter corporate yoga context. Presenter ratings retain their original 5-point and 10-point scales; recommendation likelihood is reported as an 8.87/10 source-scale mean.",
     },
     {
         "id": "source-student-feedback-structured-corpus-2013-2020",
@@ -306,7 +298,7 @@ SOURCE_SPECS: tuple[dict[str, str], ...] = (
         "source_date": "2018",
         "publisher": "Datta Vellal",
         "access_state": "public_excerpt",
-        "approved_excerpt": "The record describes self-service tools, reusable guides, workshops, hiring contributions, delivery outcomes, and explicit lessons from incomplete work.",
+        "approved_excerpt": "The record describes self-service tools, reusable guides, workshops, hiring contributions, delivery outcomes, and lessons captured through reflective delivery reviews.",
     },
     {
         "id": "source-360-feedback-2020",
@@ -366,7 +358,7 @@ SOURCE_SPECS: tuple[dict[str, str], ...] = (
         "source_date": "2023-02-03",
         "publisher": "Professional colleague and mentee",
         "access_state": "public_excerpt",
-        "approved_excerpt": "An informally mentored colleague describes calmness, kindness, purpose and outcome context, openness to input, and availability despite no reporting relationship.",
+        "approved_excerpt": "A peer mentored outside formal reporting lines describes calmness, kindness, purpose and outcome context, openness to input, and availability.",
     },
     {
         "id": "source-influence-recommendation-2025",
@@ -406,7 +398,7 @@ SOURCE_SPECS: tuple[dict[str, str], ...] = (
         "source_date": "2014–2026",
         "publisher": "Datta Vellal — private program records",
         "access_state": "aggregate_only",
-        "approved_excerpt": "Reviewed aggregates record ten active years and ₹1,972,381 raised in total, with a 13.3× 2014-to-2026 endpoint ratio. No program is recorded for 2020–2021, and no reviewed 2024 program record is present. Names, account data, and individual amounts are suppressed.",
+        "approved_excerpt": "Reviewed aggregates record ten active years and ₹1,972,381 raised in total, with a 13.3× 2014-to-2026 endpoint ratio. The active-year ledger distinguishes the recorded 2014–2019, 2022–2023, and 2025–2026 program years while protecting names, account data, and individual amounts.",
     },
     {
         "id": "source-community-service-photo-record-2007-2015",
@@ -674,8 +666,7 @@ def _sources(root: Path) -> list[dict[str, Any]]:
             )
         else:
             record["checksum_note"] = (
-                "SHA-256 covers the held canonical artifact used by this publication "
-                "boundary."
+                "SHA-256 covers the held canonical artifact used by this publication boundary."
             )
         records.append(record)
     return records
@@ -859,9 +850,7 @@ def _inventory_metrics(root: Path) -> dict[str, int]:
     evidence_root = root / "data" / "evidence"
     markdown = list(evidence_root.rglob("*.md"))
     individual = [
-        path
-        for path in evidence_root.glob("*/individual/*.md")
-        if path.name != "_INDEX.md"
+        path for path in evidence_root.glob("*/individual/*.md") if path.name != "_INDEX.md"
     ]
     informal = [
         path
@@ -1052,20 +1041,82 @@ def _methods(
             "deterministic_aggregation",
             "Recompute public feedback metrics from the file-level structured corpus while separating the post-event/interaction analysis population from pre-session audience surveys.",
             [
-                _input("input-session-corpus", "Structured response corpus", source_id="source-session-response-corpus-2018-2026", locator="All dataset objects"),
-                _input("input-session-post-datasets", "Eligible post-event/interaction analysis files", source_id="source-session-response-corpus-2018-2026", locator="is_duplicate=false and is_pre_session_survey=false", value=sessions["post_session_datasets"], unit="files"),
-                _input("input-session-post-responses", "Post-event/interaction response rows", source_id="source-session-response-corpus-2018-2026", locator="Sum of response_count for eligible post-event/interaction files", value=sessions["post_session_responses"], unit="response rows"),
-                _input("input-session-rating-observations", "Question-level rating observations", source_id="source-session-response-corpus-2018-2026", locator="Sum of ratings[*].count for eligible post-event/interaction files", value=sessions["rating_observations"], unit="rating observations"),
-                _input("input-session-qualitative-entries", "Populated qualitative values", source_id="source-session-response-corpus-2018-2026", locator="Sum of text_feedback array lengths for eligible post-event/interaction files", value=sessions["qualitative_entries"], unit="qualitative entries"),
-                _input("input-session-audience-surveys", "Pre-session audience surveys", source_id="source-session-response-corpus-2018-2026", locator="is_duplicate=false and is_pre_session_survey=true", value=sessions["audience_surveys"], unit="surveys"),
-                _input("input-session-audience-responses", "Pre-session survey responses", source_id="source-session-response-corpus-2018-2026", locator="Sum of response_count for eligible pre-session surveys", value=sessions["audience_survey_responses"], unit="responses"),
+                _input(
+                    "input-session-corpus",
+                    "Structured response corpus",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="All dataset objects",
+                ),
+                _input(
+                    "input-session-post-datasets",
+                    "Eligible post-event/interaction analysis files",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="is_duplicate=false and is_pre_session_survey=false",
+                    value=sessions["post_session_datasets"],
+                    unit="files",
+                ),
+                _input(
+                    "input-session-post-responses",
+                    "Post-event/interaction response rows",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="Sum of response_count for eligible post-event/interaction files",
+                    value=sessions["post_session_responses"],
+                    unit="response rows",
+                ),
+                _input(
+                    "input-session-rating-observations",
+                    "Question-level rating observations",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="Sum of ratings[*].count for eligible post-event/interaction files",
+                    value=sessions["rating_observations"],
+                    unit="rating observations",
+                ),
+                _input(
+                    "input-session-qualitative-entries",
+                    "Populated qualitative values",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="Sum of text_feedback array lengths for eligible post-event/interaction files",
+                    value=sessions["qualitative_entries"],
+                    unit="qualitative entries",
+                ),
+                _input(
+                    "input-session-audience-surveys",
+                    "Pre-session audience surveys",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="is_duplicate=false and is_pre_session_survey=true",
+                    value=sessions["audience_surveys"],
+                    unit="surveys",
+                ),
+                _input(
+                    "input-session-audience-responses",
+                    "Pre-session survey responses",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="Sum of response_count for eligible pre-session surveys",
+                    value=sessions["audience_survey_responses"],
+                    unit="responses",
+                ),
             ],
-            ["Include only files explicitly marked non-duplicate.", "Partition files by the is_pre_session_survey flag before summing.", "Use response_count for response rows, rating.count for rating observations, and text_feedback length for qualitative entries."],
-            ["Exclude duplicate records.", "Exclude pre-session survey rows from post-session totals.", "Do not infer attendance or unique people."],
+            [
+                "Include only files explicitly marked non-duplicate.",
+                "Partition files by the is_pre_session_survey flag before summing.",
+                "Use response_count for response rows, rating.count for rating observations, and text_feedback length for qualitative entries.",
+            ],
+            [
+                "Exclude duplicate records.",
+                "Exclude pre-session survey rows from post-session totals.",
+                "Do not infer attendance or unique people.",
+            ],
             "The source's explicit is_duplicate flag is authoritative; no fuzzy deduplication is applied.",
             "Counts are integers; no rounding.",
             f"88 post-event/interaction analysis files / {sessions['post_session_responses']:,} response rows; {sessions['rating_observations']:,} rating observations; {sessions['qualitative_entries']:,} qualitative entries; 2 pre-session surveys / {sessions['audience_survey_responses']} response rows.",
-            ["caveat-response-unit", "caveat-rating-observation-unit", "caveat-qualitative-entry-unit", "caveat-surveys-separated", "caveat-session-tracker-boundary", "caveat-source-label-conflict"],
+            [
+                "caveat-response-unit",
+                "caveat-rating-observation-unit",
+                "caveat-qualitative-entry-unit",
+                "caveat-surveys-separated",
+                "caveat-session-tracker-boundary",
+                "caveat-source-label-conflict",
+            ],
             formula="Filter → partition → sum field-specific units",
         ),
         _method(
@@ -1074,14 +1125,55 @@ def _methods(
             "deterministic_aggregation",
             "Count the single filename-pattern-derived category assigned to each eligible post-event/interaction file and sum response rows within each category.",
             [
-                _input("input-topic-corpus", "Eligible post-event/interaction files", source_id="source-session-response-corpus-2018-2026", locator="category on non-duplicate post-event/interaction files", value=sessions["post_session_datasets"], unit="files"),
-                _input("input-topic-ai-datasets", "AI/GenAI files", source_id="source-session-response-corpus-2018-2026", locator="category=ai-genai", value=sessions["category_datasets"]["ai-genai"], unit="files"),
-                _input("input-topic-ai-responses", "AI/GenAI response rows", source_id="source-session-response-corpus-2018-2026", locator="category=ai-genai · sum response_count", value=sessions["category_responses"]["ai-genai"], unit="responses"),
-                _input("input-topic-dora-datasets", "DORA files", source_id="source-session-response-corpus-2018-2026", locator="category=dora", value=sessions["category_datasets"]["dora"], unit="files"),
-                _input("input-topic-dora-responses", "DORA response rows", source_id="source-session-response-corpus-2018-2026", locator="category=dora · sum response_count", value=sessions["category_responses"]["dora"], unit="responses"),
+                _input(
+                    "input-topic-corpus",
+                    "Eligible post-event/interaction files",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="category on non-duplicate post-event/interaction files",
+                    value=sessions["post_session_datasets"],
+                    unit="files",
+                ),
+                _input(
+                    "input-topic-ai-datasets",
+                    "AI/GenAI files",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="category=ai-genai",
+                    value=sessions["category_datasets"]["ai-genai"],
+                    unit="files",
+                ),
+                _input(
+                    "input-topic-ai-responses",
+                    "AI/GenAI response rows",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="category=ai-genai · sum response_count",
+                    value=sessions["category_responses"]["ai-genai"],
+                    unit="responses",
+                ),
+                _input(
+                    "input-topic-dora-datasets",
+                    "DORA files",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="category=dora",
+                    value=sessions["category_datasets"]["dora"],
+                    unit="files",
+                ),
+                _input(
+                    "input-topic-dora-responses",
+                    "DORA response rows",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="category=dora · sum response_count",
+                    value=sessions["category_responses"]["dora"],
+                    unit="responses",
+                ),
             ],
-            ["Use the existing filename-pattern-derived category field.", "Include only non-duplicate post-event/interaction files."],
-            ["Do not double-count a file across categories.", "Do not claim that category file counts are counts of distinct facilitated sessions or that the categories capture every concept in free text."],
+            [
+                "Use the existing filename-pattern-derived category field.",
+                "Include only non-duplicate post-event/interaction files.",
+            ],
+            [
+                "Do not double-count a file across categories.",
+                "Do not claim that category file counts are counts of distinct facilitated sessions or that the categories capture every concept in free text.",
+            ],
             "Each eligible file has one category; the explicit duplicate flag is applied first.",
             "Counts are integers; no rounding.",
             category_result,
@@ -1094,22 +1186,99 @@ def _methods(
             "deterministic_aggregation",
             "Recompute the privacy-safe community-teaching aggregate from thirteen structured feedback-form records while keeping context types, rating scales, and recommendation likelihood separate from one another and from the professional-feedback and talks trackers.",
             [
-                _input("input-student-audit-summary", "Audited student-feedback summary", source_id="source-student-feedback-aggregate-2013-2020", locator="Aggregate Statistics and Rating Averages"),
-                _input("input-student-corpus", "Held structured form records", source_id="source-student-feedback-structured-corpus-2013-2020", locator="All form objects"),
-                _input("input-student-forms", "Feedback forms", source_id="source-student-feedback-structured-corpus-2013-2020", locator="Count of form objects", value=student["feedback_forms"], unit="feedback forms"),
-                _input("input-student-responses", "Submitted response rows", source_id="source-student-feedback-structured-corpus-2013-2020", locator="Sum of responses across form objects", value=student["response_rows"], unit="response rows"),
-                _input("input-student-institutions", "Educational institutions", source_id="source-student-feedback-structured-corpus-2013-2020", locator="Distinct college values excluding Exeter", value=student["educational_institution_count"], unit="educational institutions"),
-                _input("input-student-corporate-context", "Exeter corporate yoga context", source_id="source-student-feedback-structured-corpus-2013-2020", locator="college=Exeter", value=student["corporate_context_count"], unit="corporate contexts"),
-                _input("input-student-presenter-5", "Presenter mean on 5-point forms", source_id="source-student-feedback-structured-corpus-2013-2020", locator="presenter aggregates with source scale /5", value=student["presenter_5_mean"], unit=f"/5, n={student['presenter_5_n']}"),
-                _input("input-student-presenter-10", "Presenter mean on 10-point forms", source_id="source-student-feedback-structured-corpus-2013-2020", locator="presenter aggregates with source scale /10", value=student["presenter_10_mean"], unit=f"/10, n={student['presenter_10_n']}"),
-                _input("input-student-recommendation", "Recommendation-likelihood mean", source_id="source-student-feedback-structured-corpus-2013-2020", locator="recommend aggregates on /10 forms", value=student["recommendation_mean"], unit=f"/10, n={student['recommendation_n']}"),
+                _input(
+                    "input-student-audit-summary",
+                    "Audited student-feedback summary",
+                    source_id="source-student-feedback-aggregate-2013-2020",
+                    locator="Aggregate Statistics and Rating Averages",
+                ),
+                _input(
+                    "input-student-corpus",
+                    "Held structured form records",
+                    source_id="source-student-feedback-structured-corpus-2013-2020",
+                    locator="All form objects",
+                ),
+                _input(
+                    "input-student-forms",
+                    "Feedback forms",
+                    source_id="source-student-feedback-structured-corpus-2013-2020",
+                    locator="Count of form objects",
+                    value=student["feedback_forms"],
+                    unit="feedback forms",
+                ),
+                _input(
+                    "input-student-responses",
+                    "Submitted response rows",
+                    source_id="source-student-feedback-structured-corpus-2013-2020",
+                    locator="Sum of responses across form objects",
+                    value=student["response_rows"],
+                    unit="response rows",
+                ),
+                _input(
+                    "input-student-institutions",
+                    "Educational institutions",
+                    source_id="source-student-feedback-structured-corpus-2013-2020",
+                    locator="Distinct college values excluding Exeter",
+                    value=student["educational_institution_count"],
+                    unit="educational institutions",
+                ),
+                _input(
+                    "input-student-corporate-context",
+                    "Exeter corporate yoga context",
+                    source_id="source-student-feedback-structured-corpus-2013-2020",
+                    locator="college=Exeter",
+                    value=student["corporate_context_count"],
+                    unit="corporate contexts",
+                ),
+                _input(
+                    "input-student-presenter-5",
+                    "Presenter mean on 5-point forms",
+                    source_id="source-student-feedback-structured-corpus-2013-2020",
+                    locator="presenter aggregates with source scale /5",
+                    value=student["presenter_5_mean"],
+                    unit=f"/5, n={student['presenter_5_n']}",
+                ),
+                _input(
+                    "input-student-presenter-10",
+                    "Presenter mean on 10-point forms",
+                    source_id="source-student-feedback-structured-corpus-2013-2020",
+                    locator="presenter aggregates with source scale /10",
+                    value=student["presenter_10_mean"],
+                    unit=f"/10, n={student['presenter_10_n']}",
+                ),
+                _input(
+                    "input-student-recommendation",
+                    "Recommendation-likelihood mean",
+                    source_id="source-student-feedback-structured-corpus-2013-2020",
+                    locator="recommend aggregates on /10 forms",
+                    value=student["recommendation_mean"],
+                    unit=f"/10, n={student['recommendation_n']}",
+                ),
             ],
-            ["Include all thirteen form records in the separate student/community tracker.", "Count response rows using each form's responses field.", "Count six distinct educational-institution codes after explicitly separating the one Exeter corporate yoga context.", "Compute weighted presenter means independently for the source 5-point and 10-point scale populations.", "Compute recommendation likelihood only from the two forms that contain the recommend field."],
-            ["Do not add these response rows to the professional-feedback corpus or the talks ledger's participant instances.", "Do not normalize or merge the 5-point and 10-point presenter populations.", "Do not label the recommendation-likelihood mean as NPS.", "Do not publish raw rows or unapproved qualitative content."],
+            [
+                "Include all thirteen form records in the separate student/community tracker.",
+                "Count response rows using each form's responses field.",
+                "Count six distinct educational-institution codes after explicitly separating the one Exeter corporate yoga context.",
+                "Compute weighted presenter means independently for the source 5-point and 10-point scale populations.",
+                "Compute recommendation likelihood only from the two forms that contain the recommend field.",
+            ],
+            [
+                "Do not add these response rows to the professional-feedback corpus or the talks ledger's participant instances.",
+                "Do not normalize or merge the 5-point and 10-point presenter populations.",
+                "Preserve recommendation likelihood on its source scale; NPS classification requires separate promoter, passive, and detractor fields.",
+                "Do not publish raw rows or unapproved qualitative content.",
+            ],
             "Each structured object represents one source feedback form. Distinct dated forms are retained; qualitative strings are not used to inflate the form or response-row counts.",
             "Counts are integers. Weighted means use stored per-form means and n values and are rounded to two decimals; those per-form means are already rounded in the held corpus.",
-            f"{student['feedback_forms']} feedback forms / {student['response_rows']} response rows; {student['educational_institution_count']} educational institutions + {student['corporate_context_count']} Exeter corporate yoga context; presenter {student['presenter_5_mean']:.2f}/5 (n={student['presenter_5_n']}) and {student['presenter_10_mean']:.2f}/10 (n={student['presenter_10_n']}) as separate populations; recommendation likelihood {student['recommendation_mean']:.2f}/10 (n={student['recommendation_n']}), not NPS.",
-            ["caveat-student-tracker-separate", "caveat-student-response-rows", "caveat-student-context-boundary", "caveat-student-rating-scales", "caveat-recommendation-not-nps", "caveat-private-held-source"],
+            f"{student['feedback_forms']} feedback forms / {student['response_rows']} response rows; {student['educational_institution_count']} educational institutions + {student['corporate_context_count']} Exeter corporate yoga context; presenter {student['presenter_5_mean']:.2f}/5 (n={student['presenter_5_n']}) and {student['presenter_10_mean']:.2f}/10 (n={student['presenter_10_n']}) as separate populations; recommendation likelihood {student['recommendation_mean']:.2f}/10 (n={student['recommendation_n']}) on its source scale.",
+            [
+                "caveat-student-tracker-separate",
+                "caveat-student-response-rows",
+                "caveat-student-context-boundary",
+                "caveat-student-rating-scales",
+                "caveat-recommendation-not-nps",
+                "caveat-private-held-source",
+            ],
             formula="weighted_mean_by_scale = Σ(form_mean × form_n) ÷ Σ(form_n)",
         ),
         _method(
@@ -1118,15 +1287,39 @@ def _methods(
             "calendar_arithmetic",
             "Calculate the number of calendar years touched by the held chronology, including both boundary years.",
             [
-                _input("input-career-start", "First recorded career year", source_id="source-career-resume-2026", locator="Career history · IBM begins July 2007", value=career["start_year"], unit="year"),
-                _input("input-career-end", "Portfolio as-of career year", source_id="source-career-resume-2026", locator="Resume source date and current role through 2026", value=career["end_year"], unit="year"),
+                _input(
+                    "input-career-start",
+                    "First recorded career year",
+                    source_id="source-career-resume-2026",
+                    locator="Career history · IBM begins July 2007",
+                    value=career["start_year"],
+                    unit="year",
+                ),
+                _input(
+                    "input-career-end",
+                    "Portfolio as-of career year",
+                    source_id="source-career-resume-2026",
+                    locator="Resume source date and current role through 2026",
+                    value=career["end_year"],
+                    unit="year",
+                ),
             ],
-            ["Use the earliest and latest years in the selected authoritative chronology.", "Include both boundary calendar years."],
-            ["Do not convert the result into completed years of tenure.", "Do not resolve resume headline labels by arithmetic."],
+            [
+                "Use the earliest and latest years in the selected authoritative chronology.",
+                "Include both boundary calendar years.",
+            ],
+            [
+                "Do not convert the result into completed years of tenure.",
+                "Do not resolve resume headline labels by arithmetic.",
+            ],
             "One authoritative career chronology is used; overlapping roles are not separately counted.",
             "Integer calendar years; no rounding.",
             f"{career['start_year']} through {career['end_year']} touches {career['inclusive_calendar_years']} calendar years inclusively.",
-            ["caveat-calendar-span-not-tenure", "caveat-source-label-conflict", "caveat-self-authored-source"],
+            [
+                "caveat-calendar-span-not-tenure",
+                "caveat-source-label-conflict",
+                "caveat-self-authored-source",
+            ],
             formula="end_year − start_year + 1",
         ),
         _method(
@@ -1135,15 +1328,70 @@ def _methods(
             "deterministic_record_match",
             "Match the employer-issued first-patent application certificate to the later public patent grant using the full invention title and Datta's explicitly named recipient/inventor identity.",
             [
-                _input("input-patent-award-title", "Awarded invention title", claim_id="claim-2010-first-patent-achievement", source_id="source-patent-award-2010", locator="Metadata · Invention title and certificate quotation", value="Determining and Conveying User Availability", unit="title"),
-                _input("input-patent-award-recipient", "Named award recipient", claim_id="claim-2010-first-patent-achievement", source_id="source-patent-award-2010", locator="Certificate quotation · recipient", value="Dattatreya S. Vellal", unit="person name"),
-                _input("input-patent-award-date", "First-application recognition date", source_id="source-patent-award-2010", locator="Metadata · Date on certificate", value="2010-12-28", unit="date"),
-                _input("input-patent-registry-title", "Granted-patent title", claim_id="claim-public-patent-record", source_id="source-us-patent-8560487", locator="Public registry · title", value="Determining and conveying user availability", unit="title"),
-                _input("input-patent-registry-inventor", "Named co-inventor", claim_id="claim-public-patent-record", source_id="source-us-patent-8560487", locator="Public registry · Inventor list", value="Dattatreya S. Vellal", unit="person name"),
-                _input("input-patent-registry-grant", "Later public grant", claim_id="claim-public-patent-record", source_id="source-us-patent-8560487", locator="Public registry · publication number and grant date", value="US8560487B2 · 2013-10-15", unit="grant record"),
+                _input(
+                    "input-patent-award-title",
+                    "Awarded invention title",
+                    claim_id="claim-2010-first-patent-achievement",
+                    source_id="source-patent-award-2010",
+                    locator="Metadata · Invention title and certificate quotation",
+                    value="Determining and Conveying User Availability",
+                    unit="title",
+                ),
+                _input(
+                    "input-patent-award-recipient",
+                    "Named award recipient",
+                    claim_id="claim-2010-first-patent-achievement",
+                    source_id="source-patent-award-2010",
+                    locator="Certificate quotation · recipient",
+                    value="Dattatreya S. Vellal",
+                    unit="person name",
+                ),
+                _input(
+                    "input-patent-award-date",
+                    "First-application recognition date",
+                    source_id="source-patent-award-2010",
+                    locator="Metadata · Date on certificate",
+                    value="2010-12-28",
+                    unit="date",
+                ),
+                _input(
+                    "input-patent-registry-title",
+                    "Granted-patent title",
+                    claim_id="claim-public-patent-record",
+                    source_id="source-us-patent-8560487",
+                    locator="Public registry · title",
+                    value="Determining and conveying user availability",
+                    unit="title",
+                ),
+                _input(
+                    "input-patent-registry-inventor",
+                    "Named co-inventor",
+                    claim_id="claim-public-patent-record",
+                    source_id="source-us-patent-8560487",
+                    locator="Public registry · Inventor list",
+                    value="Dattatreya S. Vellal",
+                    unit="person name",
+                ),
+                _input(
+                    "input-patent-registry-grant",
+                    "Later public grant",
+                    claim_id="claim-public-patent-record",
+                    source_id="source-us-patent-8560487",
+                    locator="Public registry · publication number and grant date",
+                    value="US8560487B2 · 2013-10-15",
+                    unit="grant record",
+                ),
             ],
-            ["Normalize Unicode case and whitespace in both full titles, then require exact equality.", "Require the certificate recipient to appear in the public registry's inventor list.", "Preserve the sequence as a 2010 application-recognition artifact followed by a 2013 grant record."],
-            ["Do not match on a shortened title alone.", "Do not infer that the award itself was a grant.", "Do not infer sole inventorship, commercial impact, adoption, revenue, citation impact, or current legal status."],
+            [
+                "Normalize Unicode case and whitespace in both full titles, then require exact equality.",
+                "Require the certificate recipient to appear in the public registry's inventor list.",
+                "Preserve the sequence as a 2010 application-recognition artifact followed by a 2013 grant record.",
+            ],
+            [
+                "Do not match on a shortened title alone.",
+                "Do not infer that the award itself was a grant.",
+                "Do not infer sole inventorship, commercial impact, adoption, revenue, citation impact, or current legal status.",
+            ],
             "One employer certificate and one uniquely identified public grant record are compared; no patent-family records are added to the count.",
             "No numeric rounding; title comparison uses case-folded, whitespace-normalized text.",
             "The normalized full titles match exactly, and Dattatreya S. Vellal is named as the 2010 certificate recipient and as one of three inventors on US8560487B2, granted in 2013.",
@@ -1156,15 +1404,38 @@ def _methods(
             "deterministic_aggregation",
             "Sum the twelve monthly connect counts and the twelve monthly 'set up by others' counts, then divide the latter by the former.",
             [
-                _input("input-connect-total", "All 2021 connects", source_id="source-connect-program-2021", locator="Raw Data Per Month · Connects", value=connect["total_connects"], unit="connects"),
-                _input("input-connect-requested", "Connects set up by others", source_id="source-connect-program-2021", locator="Raw Data Per Month · Setup by Others", value=connect["requested_by_others"], unit="connects"),
+                _input(
+                    "input-connect-total",
+                    "All 2021 connects",
+                    source_id="source-connect-program-2021",
+                    locator="Raw Data Per Month · Connects",
+                    value=connect["total_connects"],
+                    unit="connects",
+                ),
+                _input(
+                    "input-connect-requested",
+                    "Connects set up by others",
+                    source_id="source-connect-program-2021",
+                    locator="Raw Data Per Month · Setup by Others",
+                    value=connect["requested_by_others"],
+                    unit="connects",
+                ),
             ],
-            ["Include every month from January through December 2021.", "Use the ledger's explicit setup attribution."],
-            ["Do not infer unique people, motive, satisfaction, or business outcome from a request."],
+            [
+                "Include every month from January through December 2021.",
+                "Use the ledger's explicit setup attribution.",
+            ],
+            [
+                "Do not infer unique people, motive, satisfaction, or business outcome from a request."
+            ],
             "Monthly rows are mutually exclusive within each ledger metric; no additional deduplication.",
             "Round the percentage to the nearest whole percent; retain raw numerator and denominator.",
             f"{connect['requested_by_others']} of {connect['total_connects']} connects = {connect['requested_by_others'] / connect['total_connects'] * 100:.2f}%, displayed as {connect['requested_share']}%.",
-            ["caveat-touchpoints-not-people", "caveat-inference-not-motive", "caveat-private-held-source"],
+            [
+                "caveat-touchpoints-not-people",
+                "caveat-inference-not-motive",
+                "caveat-private-held-source",
+            ],
             formula="round(100 × requested_by_others ÷ total_connects)",
         ),
         _method(
@@ -1173,18 +1444,64 @@ def _methods(
             "deterministic_aggregation",
             "Parse the ten published annual aggregate rows, sum nominal rupees, and compare the final recorded year with the first recorded year.",
             [
-                _input("input-book-active-years", "Recorded active years", source_id="source-book-program-ledger-2014-2026", locator="Financial Summary · annual rows", value=books["active_years"], unit="active years"),
-                _input("input-book-total", "Sum of annual aggregates", source_id="source-book-program-ledger-2014-2026", locator="Financial Summary · Total Raised", value=books["total_raised_inr"], unit="INR"),
-                _input("input-book-first", "First recorded annual amount", source_id="source-book-program-ledger-2014-2026", locator=f"Financial Summary · {books['first_year']}", value=books["first_year_amount_inr"], unit="INR"),
-                _input("input-book-last", "Latest recorded annual amount", source_id="source-book-program-ledger-2014-2026", locator=f"Financial Summary · {books['last_year']}", value=books["last_year_amount_inr"], unit="INR"),
-                _input("input-book-unrecorded-years", "Calendar years without a reviewed program record", source_id="source-book-program-ledger-2014-2026", locator="Financial Summary · explicit gap rows and annual-year complement", value=books["unrecorded_years_display"], unit="calendar years without records"),
+                _input(
+                    "input-book-active-years",
+                    "Recorded active years",
+                    source_id="source-book-program-ledger-2014-2026",
+                    locator="Financial Summary · annual rows",
+                    value=books["active_years"],
+                    unit="active years",
+                ),
+                _input(
+                    "input-book-total",
+                    "Sum of annual aggregates",
+                    source_id="source-book-program-ledger-2014-2026",
+                    locator="Financial Summary · Total Raised",
+                    value=books["total_raised_inr"],
+                    unit="INR",
+                ),
+                _input(
+                    "input-book-first",
+                    "First recorded annual amount",
+                    source_id="source-book-program-ledger-2014-2026",
+                    locator=f"Financial Summary · {books['first_year']}",
+                    value=books["first_year_amount_inr"],
+                    unit="INR",
+                ),
+                _input(
+                    "input-book-last",
+                    "Latest recorded annual amount",
+                    source_id="source-book-program-ledger-2014-2026",
+                    locator=f"Financial Summary · {books['last_year']}",
+                    value=books["last_year_amount_inr"],
+                    unit="INR",
+                ),
+                _input(
+                    "input-book-unrecorded-years",
+                    "Calendar years without a reviewed program record",
+                    source_id="source-book-program-ledger-2014-2026",
+                    locator="Financial Summary · explicit gap rows and annual-year complement",
+                    value=books["unrecorded_years_display"],
+                    unit="calendar years without records",
+                ),
             ],
-            ["Include only year rows with a numeric annual total.", "Compute missing calendar years between the first and final recorded years and preserve 2020–2021 and 2024 as unrecorded rather than interpolating them.", "Treat the 2024 condition as absence of a reviewed program record, not a verified zero amount."],
-            ["Exclude contributor identities, individual amounts, bank details, currency conversion, inflation adjustment, and beneficiary estimates.", "Do not imply uninterrupted activity after the 2022 resumption or calculate CAGR from non-contiguous recorded years."],
+            [
+                "Include only year rows with a numeric annual total.",
+                "Compute missing calendar years between the first and final recorded years and preserve 2020–2021 and 2024 as unrecorded rather than interpolating them.",
+                "Treat the 2024 condition as absence of a reviewed program record, not a verified zero amount.",
+            ],
+            [
+                "Exclude contributor identities, individual amounts, bank details, currency conversion, inflation adjustment, and beneficiary estimates.",
+                "Do not imply uninterrupted activity after the 2022 resumption or calculate CAGR from non-contiguous recorded years.",
+            ],
             "One aggregate row per active year; no donor-level data enters the method.",
             "Total is exact to the rupee in the aggregate source; the endpoint ratio is rounded to one decimal place.",
             f"₹{books['total_raised_inr']:,} across {books['active_years']} recorded active years; ₹{books['first_year_amount_inr']:,} in {books['first_year']} to ₹{books['last_year_amount_inr']:,} in {books['last_year']} = a {books['growth_factor']}× endpoint ratio. Years without reviewed program records: {books['unrecorded_years_display']}.",
-            ["caveat-active-years-with-gaps", "caveat-currency-not-normalized", "caveat-private-held-source"],
+            [
+                "caveat-active-years-with-gaps",
+                "caveat-currency-not-normalized",
+                "caveat-private-held-source",
+            ],
             formula="total = Σ annual_amount; endpoint_ratio = final_amount ÷ first_amount",
         ),
         _method(
@@ -1205,8 +1522,14 @@ def _methods(
                     for index, (name, value) in enumerate(assessment["behavior_deltas"].items(), 1)
                 ]
             ],
-            ["Use the AVG (Others) and Company Average columns from the same report.", "Include all five listed behaviors."],
-            ["Exclude self ratings from the comparison.", "Do not compare against the universal or digital-ready benchmark where row-level values are not published in the evidence summary."],
+            [
+                "Use the AVG (Others) and Company Average columns from the same report.",
+                "Include all five listed behaviors.",
+            ],
+            [
+                "Exclude self ratings from the comparison.",
+                "Do not compare against the universal or digital-ready benchmark where row-level values are not published in the evidence summary.",
+            ],
             "Each behavior appears once; no rater-level records are republished.",
             "Source deltas have two decimals; their arithmetic mean is rounded to two decimals.",
             f"All five deltas are positive; range +{assessment['minimum_delta']:.2f} to +{assessment['maximum_delta']:.2f}; mean +{assessment['mean_delta']:.2f}. Detail: {delta_result}.",
@@ -1219,16 +1542,72 @@ def _methods(
             "repository_inventory",
             "Inventory held Markdown and documentary image files and compare them with the generated evidence-index and retrieval-export quality report.",
             [
-                _input("input-inventory-markdown", "Evidence Markdown files", source_id="source-evidence-inventory-2026", locator="Repository inventory · all held evidence Markdown", value=inventory["evidence_markdown"], unit="files"),
-                _input("input-inventory-individual", "Individual evidence records excluding year indexes", source_id="source-evidence-inventory-2026", locator="Repository inventory · year/individual records", value=inventory["individual_evidence_records"], unit="files"),
-                _input("input-inventory-informal", "Informal-feedback records excluding index", source_id="source-evidence-inventory-2026", locator="Repository inventory · informal feedback records", value=inventory["informal_feedback_records"], unit="files"),
-                _input("input-inventory-images", "Documentary images", source_id="source-evidence-inventory-2026", locator="Repository inventory · supported image extensions", value=inventory["documentary_images"], unit="files"),
-                _input("input-inventory-index", "Evidence-index rows", source_id="source-relationship-export-quality-2026", locator="DuckDB tables · evidence_index", value=inventory["evidence_index_rows"], unit="rows"),
-                _input("input-inventory-missing-embeddings", "Chunks absent from retrieval index", source_id="source-relationship-export-quality-2026", locator="ChromaDB alignment · missing_in_chroma", value=inventory["missing_in_chroma"], unit="chunks"),
-                _input("input-inventory-orphan-provenance", "Edges with orphan artifact provenance", source_id="source-relationship-export-quality-2026", locator="Referential and graph checks · orphan_edge_artifact_provenance", value=inventory["orphan_edge_artifact_provenance"], unit="edges"),
+                _input(
+                    "input-inventory-markdown",
+                    "Evidence Markdown files",
+                    source_id="source-evidence-inventory-2026",
+                    locator="Repository inventory · all held evidence Markdown",
+                    value=inventory["evidence_markdown"],
+                    unit="files",
+                ),
+                _input(
+                    "input-inventory-individual",
+                    "Individual evidence records excluding year indexes",
+                    source_id="source-evidence-inventory-2026",
+                    locator="Repository inventory · year/individual records",
+                    value=inventory["individual_evidence_records"],
+                    unit="files",
+                ),
+                _input(
+                    "input-inventory-informal",
+                    "Informal-feedback records excluding index",
+                    source_id="source-evidence-inventory-2026",
+                    locator="Repository inventory · informal feedback records",
+                    value=inventory["informal_feedback_records"],
+                    unit="files",
+                ),
+                _input(
+                    "input-inventory-images",
+                    "Documentary images",
+                    source_id="source-evidence-inventory-2026",
+                    locator="Repository inventory · supported image extensions",
+                    value=inventory["documentary_images"],
+                    unit="files",
+                ),
+                _input(
+                    "input-inventory-index",
+                    "Evidence-index rows",
+                    source_id="source-relationship-export-quality-2026",
+                    locator="DuckDB tables · evidence_index",
+                    value=inventory["evidence_index_rows"],
+                    unit="rows",
+                ),
+                _input(
+                    "input-inventory-missing-embeddings",
+                    "Chunks absent from retrieval index",
+                    source_id="source-relationship-export-quality-2026",
+                    locator="ChromaDB alignment · missing_in_chroma",
+                    value=inventory["missing_in_chroma"],
+                    unit="chunks",
+                ),
+                _input(
+                    "input-inventory-orphan-provenance",
+                    "Edges with orphan artifact provenance",
+                    source_id="source-relationship-export-quality-2026",
+                    locator="Referential and graph checks · orphan_edge_artifact_provenance",
+                    value=inventory["orphan_edge_artifact_provenance"],
+                    unit="edges",
+                ),
             ],
-            ["Count held files at build time using explicit extensions.", "Exclude index Markdown from individual and informal-feedback record counts.", "Use generated quality-report values for database and retrieval coverage."],
-            ["Do not interpret a file count as verified claim count.", "Do not publish local filenames or raw records."],
+            [
+                "Count held files at build time using explicit extensions.",
+                "Exclude index Markdown from individual and informal-feedback record counts.",
+                "Use generated quality-report values for database and retrieval coverage.",
+            ],
+            [
+                "Do not interpret a file count as verified claim count.",
+                "Do not publish local filenames or raw records.",
+            ],
             "Filesystem paths are counted once; quality-report rows use their canonical generated counts.",
             "Counts are integers; no rounding.",
             f"{inventory['evidence_markdown']:,} evidence Markdown files, including {inventory['individual_evidence_records']:,} individual records and {inventory['informal_feedback_records']:,} informal-feedback records; {inventory['documentary_images']:,} documentary images; {inventory['evidence_index_rows']:,} indexed evidence rows; {inventory['missing_in_chroma']:,} chunks absent from the retrieval index; {inventory['orphan_edge_artifact_provenance']} provenance gaps.",
@@ -1241,16 +1620,43 @@ def _methods(
             "qualitative_synthesis",
             "Link a specific 2020 development request with independent 2025 observations that describe the requested behavior. The method tests recurrence in language and context; it does not score growth or infer causality.",
             [
-                _input("input-executive-development", "2020 development request", claim_id="claim-2020-executive-influence-development-signal", source_id="source-360-feedback-2020", locator="Greatest Development Area · broaden senior-executive influence"),
-                _input("input-executive-observation", "2025 independent colleague observation", claim_id="claim-2025-executive-influence-observation", source_id="source-influence-recommendation-2025", locator="Recommendation · executives-to-developers communication, influence, roadmap execution, data"),
-                _input("input-cross-boundary-observation", "2025 manager observation", claim_id="claim-2025-cross-boundary-leadership", source_id="source-manager-recommendation-2025", locator="Recommendation · reporting lines, seniority, team boundaries"),
+                _input(
+                    "input-executive-development",
+                    "2020 development request",
+                    claim_id="claim-2020-executive-influence-development-signal",
+                    source_id="source-360-feedback-2020",
+                    locator="Greatest Development Area · broaden senior-executive influence",
+                ),
+                _input(
+                    "input-executive-observation",
+                    "2025 independent colleague observation",
+                    claim_id="claim-2025-executive-influence-observation",
+                    source_id="source-influence-recommendation-2025",
+                    locator="Recommendation · executives-to-developers communication, influence, roadmap execution, data",
+                ),
+                _input(
+                    "input-cross-boundary-observation",
+                    "2025 manager observation",
+                    claim_id="claim-2025-cross-boundary-leadership",
+                    source_id="source-manager-recommendation-2025",
+                    locator="Recommendation · reporting lines, seniority, team boundaries",
+                ),
             ],
-            ["Require a dated development statement and later independently attributed behavioral observations.", "Preserve the source relationship and wording context."],
-            ["Do not claim a before/after score, completed development, promotion readiness, or causal effect."],
+            [
+                "Require a dated development statement and later independently attributed behavioral observations.",
+                "Preserve the source relationship and wording context.",
+            ],
+            [
+                "Do not claim a before/after score, completed development, promotion readiness, or causal effect."
+            ],
             "One assessment and two independently attributed 2025 recommendations are used; duplicated source narratives are excluded.",
             "No numeric rounding; the output is a bounded qualitative relationship.",
             "The requested executive-influence behavior is present in later independent observations, supporting a non-causal development-to-observation concordance.",
-            ["caveat-non-causal-synthesis", "caveat-selected-evidence", "caveat-private-held-source"],
+            [
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+                "caveat-private-held-source",
+            ],
         ),
         _method(
             "method-strengths-observation-concordance-v1",
@@ -1258,16 +1664,44 @@ def _methods(
             "qualitative_synthesis",
             "Map named 2020 assessment strengths to semantically corresponding behaviors in two independent 2025 recommendations.",
             [
-                _input("input-strengths-profile", "2020 ranked strengths", claim_id="claim-2020-strengths-profile", source_id="source-strengths-assessment-2020", locator="Top 7 Strengths"),
-                _input("input-strengths-ian", "2025 colleague observations", claim_id="claim-2025-executive-influence-observation", source_id="source-influence-recommendation-2025", locator="Relationships, multi-level communication, data"),
-                _input("input-strengths-rob", "2025 manager observations", claim_id="claim-2025-cross-boundary-leadership", source_id="source-manager-recommendation-2025", locator="Meticulous, organized, empathetic, collaborative"),
+                _input(
+                    "input-strengths-profile",
+                    "2020 ranked strengths",
+                    claim_id="claim-2020-strengths-profile",
+                    source_id="source-strengths-assessment-2020",
+                    locator="Top 7 Strengths",
+                ),
+                _input(
+                    "input-strengths-ian",
+                    "2025 colleague observations",
+                    claim_id="claim-2025-executive-influence-observation",
+                    source_id="source-influence-recommendation-2025",
+                    locator="Relationships, multi-level communication, data",
+                ),
+                _input(
+                    "input-strengths-rob",
+                    "2025 manager observations",
+                    claim_id="claim-2025-cross-boundary-leadership",
+                    source_id="source-manager-recommendation-2025",
+                    locator="Meticulous, organized, empathetic, collaborative",
+                ),
             ],
-            ["Map only explicit assessment labels to explicit later behavioral descriptions.", "Require the later record to be independently attributed."],
-            ["Do not treat a psychometric profile as performance proof.", "Do not claim every strength was independently observed."],
+            [
+                "Map only explicit assessment labels to explicit later behavioral descriptions.",
+                "Require the later record to be independently attributed.",
+            ],
+            [
+                "Do not treat a psychometric profile as performance proof.",
+                "Do not claim every strength was independently observed.",
+            ],
             "Two distinct 2025 recommenders are used; repeated editorial analysis within source files is ignored.",
             "No numeric rounding; five named correspondences are reported.",
             "Articulate ↔ multi-level communication; Meticulous ↔ meticulous detail; Evaluative ↔ data underpinning; Networker ↔ relationship building; Genuine ↔ approachable, empathetic collaboration.",
-            ["caveat-assessment-not-performance", "caveat-non-causal-synthesis", "caveat-selected-evidence"],
+            [
+                "caveat-assessment-not-performance",
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+            ],
         ),
         _method(
             "method-quality-before-ai-lineage-v1",
@@ -1275,19 +1709,66 @@ def _methods(
             "qualitative_synthesis",
             "Trace a dated sequence in which quality due diligence, process improvement, delivery recognition, quality-as-speed framing, DORA/craft observations, and commit-level AI quality gates recur across roles.",
             [
-                _input("input-quality-2015", "2015 quality discipline", claim_id="claim-2015-quality-discipline", source_id="source-exeter-performance-review-2015", locator="Behavioral Competencies and Key Quotes"),
-                _input("input-quality-2017", "2017 process and delivery recognition", claim_id="claim-2017-process-delivery-recognition", source_id="source-amazon-process-recognition-2017", locator="Award reason"),
-                _input("input-delivery-2017", "2017 exceptional delivery recognition", source_id="source-amazon-delivery-recognition-2017", locator="Award reason"),
-                _input("input-quality-2020", "2020 quality/speed framing", claim_id="claim-2020-quality-speed-framing", source_id="source-360-feedback-2020", locator="Line manager comments · quality in context"),
-                _input("input-quality-2025", "2025 craftsmanship and DORA observation", claim_id="claim-2025-cross-boundary-leadership", source_id="source-manager-recommendation-2025", locator="Craftsmanship, pipelines, DORA"),
-                _input("input-quality-2026", "2026 AI-native gated delivery", claim_id="claim-sutra-ai-delivery", source_id="source-sutra-initiative-outcomes-2026", locator="Datta team comment · 3× speed, AI code, commit gates"),
+                _input(
+                    "input-quality-2015",
+                    "2015 quality discipline",
+                    claim_id="claim-2015-quality-discipline",
+                    source_id="source-exeter-performance-review-2015",
+                    locator="Behavioral Competencies and Key Quotes",
+                ),
+                _input(
+                    "input-quality-2017",
+                    "2017 process and delivery recognition",
+                    claim_id="claim-2017-process-delivery-recognition",
+                    source_id="source-amazon-process-recognition-2017",
+                    locator="Award reason",
+                ),
+                _input(
+                    "input-delivery-2017",
+                    "2017 exceptional delivery recognition",
+                    source_id="source-amazon-delivery-recognition-2017",
+                    locator="Award reason",
+                ),
+                _input(
+                    "input-quality-2020",
+                    "2020 quality/speed framing",
+                    claim_id="claim-2020-quality-speed-framing",
+                    source_id="source-360-feedback-2020",
+                    locator="Line manager comments · quality in context",
+                ),
+                _input(
+                    "input-quality-2025",
+                    "2025 craftsmanship and DORA observation",
+                    claim_id="claim-2025-cross-boundary-leadership",
+                    source_id="source-manager-recommendation-2025",
+                    locator="Craftsmanship, pipelines, DORA",
+                ),
+                _input(
+                    "input-quality-2026",
+                    "2026 AI-native gated delivery",
+                    claim_id="claim-sutra-ai-delivery",
+                    source_id="source-sutra-initiative-outcomes-2026",
+                    locator="Datta team comment · 3× speed, AI code, commit gates",
+                ),
             ],
-            ["Require dated evidence from 2015, 2017, 2020, 2025, and 2026.", "Distinguish independent observations and awards from team-authored delivery commentary."],
-            ["Do not claim that the earlier practices caused the later speed claim.", "Do not generalize Sutra's initiative metrics to the XITE portfolio or other teams."],
+            [
+                "Require dated evidence from 2015, 2017, 2020, 2025, and 2026.",
+                "Distinguish independent observations and awards from team-authored delivery commentary.",
+            ],
+            [
+                "Do not claim that the earlier practices caused the later speed claim.",
+                "Do not generalize Sutra's initiative metrics to the XITE portfolio or other teams.",
+            ],
             "Each time point is represented once; the two complementary 2017 award artifacts are retained as distinct process and delivery observations.",
             "No numeric rounding; chronology and source grades remain visible.",
             "The sequence supports the interpretation that 2026 AI adoption sits on a pre-existing engineering control system, not novelty alone; causality and individual attribution remain unproven.",
-            ["caveat-non-causal-synthesis", "caveat-team-attribution", "caveat-self-authored-source", "caveat-selected-evidence", "caveat-initiative-scope"],
+            [
+                "caveat-non-causal-synthesis",
+                "caveat-team-attribution",
+                "caveat-self-authored-source",
+                "caveat-selected-evidence",
+                "caveat-initiative-scope",
+            ],
         ),
         _method(
             "method-title-independent-leadership-v1",
@@ -1295,13 +1776,42 @@ def _methods(
             "qualitative_synthesis",
             "Compare leadership evidence from an early individual-contributor period with later cross-team, informal-mentoring, and manager observations that explicitly cross formal reporting boundaries.",
             [
-                _input("input-title-2008", "Early-career end-to-end leadership", claim_id="claim-2008-early-leadership", source_id="source-leadership-award-2008", locator="Award citation"),
-                _input("input-title-2015", "Cross-team bridge building", claim_id="claim-2015-cross-team-leadership", source_id="source-cross-team-recommendation-2015", locator="Recommendation · organization-wide and cross-location work"),
-                _input("input-title-2023", "Mentoring without a reporting line", claim_id="claim-2023-purpose-first-mentoring", source_id="source-purpose-first-mentoring-recommendation-2023", locator="Relationship and recommendation"),
-                _input("input-title-2025", "Leadership across boundaries", claim_id="claim-2025-cross-boundary-leadership", source_id="source-manager-recommendation-2025", locator="Recommendation · reporting lines, seniority, team boundaries"),
+                _input(
+                    "input-title-2008",
+                    "Early-career end-to-end leadership",
+                    claim_id="claim-2008-early-leadership",
+                    source_id="source-leadership-award-2008",
+                    locator="Award citation",
+                ),
+                _input(
+                    "input-title-2015",
+                    "Cross-team bridge building",
+                    claim_id="claim-2015-cross-team-leadership",
+                    source_id="source-cross-team-recommendation-2015",
+                    locator="Recommendation · organization-wide and cross-location work",
+                ),
+                _input(
+                    "input-title-2023",
+                    "Mentoring without a reporting line",
+                    claim_id="claim-2023-purpose-first-mentoring",
+                    source_id="source-purpose-first-mentoring-recommendation-2023",
+                    locator="Relationship and recommendation",
+                ),
+                _input(
+                    "input-title-2025",
+                    "Leadership across boundaries",
+                    claim_id="claim-2025-cross-boundary-leadership",
+                    source_id="source-manager-recommendation-2025",
+                    locator="Recommendation · reporting lines, seniority, team boundaries",
+                ),
             ],
-            ["Use evidence that describes behavior or influence, not title alone.", "Include sources from multiple organizations and relationship types."],
-            ["Do not infer formal people-management scope where the source describes informal or cross-boundary leadership."],
+            [
+                "Use evidence that describes behavior or influence, not title alone.",
+                "Include sources from multiple organizations and relationship types.",
+            ],
+            [
+                "Do not infer formal people-management scope where the source describes informal or cross-boundary leadership."
+            ],
             "One representative source per time point is used; source relationship is preserved.",
             "No numeric rounding; the result is a continuity proposition.",
             "Leadership behavior is documented before senior titles and later explicitly outside reporting lines, supporting a title-independent leadership pattern.",
@@ -1313,18 +1823,56 @@ def _methods(
             "qualitative_synthesis",
             "Trace recurring conversion of personal learning or building into reusable artifacts, teaching, and mechanisms across IBM, Exeter, Amazon, and Philips evidence.",
             [
-                _input("input-lbts-ibm", "IBM invention and technical community contribution", claim_id="claim-public-patent-record", source_id="source-us-patent-8560487", locator="Public patent record"),
-                _input("input-lbts-exeter", "Exeter technical teaching and cross-team initiatives", claim_id="claim-2015-cross-team-leadership", source_id="source-cross-team-recommendation-2015", locator="Technology sessions and organization-wide initiatives"),
-                _input("input-lbts-amazon", "Amazon self-service tools, guides, and workshops", source_id="source-amazon-work-examples-2018", locator="Hire & Develop the Best and reusable delivery examples"),
-                _input("input-lbts-philips", "Philips structured feedback corpus", claim_id="claim-session-post-datasets", source_id="source-session-response-corpus-2018-2026", locator="Eligible post-event/interaction files"),
-                _input("input-lbts-sutra", "AI system delivery and learning recognition", claim_id="claim-sutra-delivery-recognition", source_id="source-sutra-recognition-2026", locator="Recognition reason"),
+                _input(
+                    "input-lbts-ibm",
+                    "IBM invention and technical community contribution",
+                    claim_id="claim-public-patent-record",
+                    source_id="source-us-patent-8560487",
+                    locator="Public patent record",
+                ),
+                _input(
+                    "input-lbts-exeter",
+                    "Exeter technical teaching and cross-team initiatives",
+                    claim_id="claim-2015-cross-team-leadership",
+                    source_id="source-cross-team-recommendation-2015",
+                    locator="Technology sessions and organization-wide initiatives",
+                ),
+                _input(
+                    "input-lbts-amazon",
+                    "Amazon self-service tools, guides, and workshops",
+                    source_id="source-amazon-work-examples-2018",
+                    locator="Hire & Develop the Best and reusable delivery examples",
+                ),
+                _input(
+                    "input-lbts-philips",
+                    "Philips structured feedback corpus",
+                    claim_id="claim-session-post-datasets",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="Eligible post-event/interaction files",
+                ),
+                _input(
+                    "input-lbts-sutra",
+                    "AI system delivery and learning recognition",
+                    claim_id="claim-sutra-delivery-recognition",
+                    source_id="source-sutra-recognition-2026",
+                    locator="Recognition reason",
+                ),
             ],
-            ["Require evidence of at least two stages of the pattern at each represented employer.", "Preserve self-authored versus independently documented source grades."],
-            ["Do not imply that every project followed every stage or that teaching caused delivery outcomes."],
+            [
+                "Require evidence of at least two stages of the pattern at each represented employer.",
+                "Preserve self-authored versus independently documented source grades.",
+            ],
+            [
+                "Do not imply that every project followed every stage or that teaching caused delivery outcomes."
+            ],
             "Representative artifacts are selected by employer and stage; duplicate summaries are excluded.",
             "No numeric rounding; the output is a recurring operating-pattern interpretation.",
             "Across employers, the record repeatedly moves from learning/building to reusable teaching or systems, with varying evidence strength at each stage.",
-            ["caveat-non-causal-synthesis", "caveat-selected-evidence", "caveat-self-authored-source"],
+            [
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+                "caveat-self-authored-source",
+            ],
         ),
         _method(
             "method-topic-frontier-teaching-continuity-v1",
@@ -1332,18 +1880,65 @@ def _methods(
             "mixed_method_synthesis",
             "Combine the dated talks ledger with filename-pattern-derived post-event topic counts to compare subject evolution while checking whether practical, feedback-seeking delivery remains present.",
             [
-                _input("input-frontier-talks", "2010–2021 talks ledger", claim_id="claim-community-talks-reach", source_id="source-community-talks-ledger-2010-2021", locator="Complete Talks List · first and last entries", value=50, unit="recorded sessions"),
-                _input("input-frontier-ai", "AI/GenAI post-event files", claim_id="claim-session-ai-feedback", source_id="source-session-response-corpus-2018-2026", locator="category=ai-genai", value=sessions["category_datasets"]["ai-genai"], unit="files"),
-                _input("input-frontier-quality", "Code-quality post-event files", source_id="source-session-response-corpus-2018-2026", locator="category=code-quality", value=sessions["category_datasets"]["code-quality"], unit="files"),
-                _input("input-frontier-practice", "Practical AI takeaway", claim_id="claim-2024-practical-ai-takeaway", source_id="source-participant-takeaway-ai-guardrails-2024", locator="Key-takeaways response field"),
-                _input("input-frontier-depth", "Continuing hands-on request", claim_id="claim-2026-hands-on-depth-request", source_id="source-participant-improvement-hands-on-agents-2026", locator="Facilitator-improvement response field"),
+                _input(
+                    "input-frontier-talks",
+                    "2010–2021 talks ledger",
+                    claim_id="claim-community-talks-reach",
+                    source_id="source-community-talks-ledger-2010-2021",
+                    locator="Complete Talks List · first and last entries",
+                    value=50,
+                    unit="recorded sessions",
+                ),
+                _input(
+                    "input-frontier-ai",
+                    "AI/GenAI post-event files",
+                    claim_id="claim-session-ai-feedback",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="category=ai-genai",
+                    value=sessions["category_datasets"]["ai-genai"],
+                    unit="files",
+                ),
+                _input(
+                    "input-frontier-quality",
+                    "Code-quality post-event files",
+                    source_id="source-session-response-corpus-2018-2026",
+                    locator="category=code-quality",
+                    value=sessions["category_datasets"]["code-quality"],
+                    unit="files",
+                ),
+                _input(
+                    "input-frontier-practice",
+                    "Practical AI takeaway",
+                    claim_id="claim-2024-practical-ai-takeaway",
+                    source_id="source-participant-takeaway-ai-guardrails-2024",
+                    locator="Key-takeaways response field",
+                ),
+                _input(
+                    "input-frontier-depth",
+                    "Continuing hands-on request",
+                    claim_id="claim-2026-hands-on-depth-request",
+                    source_id="source-participant-improvement-hands-on-agents-2026",
+                    locator="Facilitator-improvement response field",
+                ),
             ],
-            ["Use dated ledger endpoints and explicit reviewed topic labels.", "Retain both positive takeaways and improvement requests."],
-            ["Do not treat approximate participant instances as unique people.", "Do not infer that older topics stopped or that category counts equal all teaching activity."],
+            [
+                "Use dated ledger endpoints and explicit reviewed topic labels.",
+                "Retain both positive takeaways and improvement requests.",
+            ],
+            [
+                "Do not treat approximate participant instances as unique people.",
+                "Do not infer that older topics stopped or that category counts equal all teaching activity.",
+            ],
             "The talks ledger and feedback corpus have different scopes and are not merged into one count.",
             "Counts are integers; narrative comparison is not rounded.",
             f"The recorded frontier moves from wellness and foundational software topics toward observability and AI; the post-event corpus includes {sessions['category_datasets']['ai-genai']} AI-category files / {sessions['category_responses']['ai-genai']} response rows, while practical examples, guardrails, and hands-on depth remain recurring teaching concerns.",
-            ["caveat-category-labels", "caveat-touchpoints-not-people", "caveat-session-tracker-boundary", "caveat-feedback-not-longitudinal", "caveat-non-causal-synthesis"],
+            [
+                "caveat-category-labels",
+                "caveat-touchpoints-not-people",
+                "caveat-session-tracker-boundary",
+                "caveat-feedback-not-longitudinal",
+                "caveat-non-causal-synthesis",
+            ],
         ),
         _method(
             "method-service-continuity-growth-v1",
@@ -1351,17 +1946,58 @@ def _methods(
             "mixed_method_synthesis",
             "Combine dated documentary evidence of direct service with the privacy-safe annual financial aggregates while explicitly preserving all unrecorded years and the non-contiguous post-2022 sequence.",
             [
-                _input("input-service-photos", "Dated teaching and distribution record", claim_id="claim-community-service-photo-record", source_id="source-community-service-photo-record-2007-2015", locator="Timeline and slides 20, 27, 30–32, 38–39"),
-                _input("input-service-total", "Program aggregate total", claim_id="claim-book-program-total", source_id="source-book-program-ledger-2014-2026", locator="Financial Summary", value=books["total_raised_inr"], unit="INR"),
-                _input("input-service-growth", "Program endpoint ratio", claim_id="claim-book-program-growth", source_id="source-book-program-ledger-2014-2026", locator="2014 and 2026 annual aggregates", value=books["growth_factor"], unit="times"),
-                _input("input-service-unrecorded-years", "Unrecorded calendar years", source_id="source-book-program-ledger-2014-2026", locator="Financial Summary · 2020–2021 gap and no 2024 record", value=books["unrecorded_years_display"], unit="calendar years without records"),
+                _input(
+                    "input-service-photos",
+                    "Dated teaching and distribution record",
+                    claim_id="claim-community-service-photo-record",
+                    source_id="source-community-service-photo-record-2007-2015",
+                    locator="Timeline and slides 20, 27, 30–32, 38–39",
+                ),
+                _input(
+                    "input-service-total",
+                    "Program aggregate total",
+                    claim_id="claim-book-program-total",
+                    source_id="source-book-program-ledger-2014-2026",
+                    locator="Financial Summary",
+                    value=books["total_raised_inr"],
+                    unit="INR",
+                ),
+                _input(
+                    "input-service-growth",
+                    "Program endpoint ratio",
+                    claim_id="claim-book-program-growth",
+                    source_id="source-book-program-ledger-2014-2026",
+                    locator="2014 and 2026 annual aggregates",
+                    value=books["growth_factor"],
+                    unit="times",
+                ),
+                _input(
+                    "input-service-unrecorded-years",
+                    "Unrecorded calendar years",
+                    source_id="source-book-program-ledger-2014-2026",
+                    locator="Financial Summary · 2020–2021 gap and no 2024 record",
+                    value=books["unrecorded_years_display"],
+                    unit="calendar years without records",
+                ),
             ],
-            ["Require dated direct-service documentation and separate annual aggregate records.", "Show that no program is recorded for 2020–2021 and no reviewed 2024 program record is present.", "Represent 2022 as a resumption and 2025 as the next recorded year, not as proof of uninterrupted post-2022 activity."],
-            ["Exclude identities, individual amounts, bank records, beneficiary estimates, and claims of uninterrupted annual activity.", "Do not infer a zero amount or verified inactivity solely from the absence of a 2024 record."],
+            [
+                "Require dated direct-service documentation and separate annual aggregate records.",
+                "Show that no program is recorded for 2020–2021 and no reviewed 2024 program record is present.",
+                "Represent 2022 as a resumption and 2025 as the next recorded year, not as proof of uninterrupted post-2022 activity.",
+            ],
+            [
+                "Exclude identities, individual amounts, bank records, beneficiary estimates, and claims of uninterrupted annual activity.",
+                "Do not infer a zero amount or verified inactivity solely from the absence of a 2024 record.",
+            ],
             "Photo and ledger evidence remain separate; annual aggregates have one row per active year.",
             "Financial total is exact to the rupee; the endpoint ratio is rounded to one decimal place.",
             f"Direct service is documented before and during the program's early years. The ledger resumes in 2022 after no program recorded for 2020–2021, contains no reviewed 2024 program record, then records 2025 and the highest annual endpoint in 2026. The sequence is explicitly non-contiguous; years without records are {books['unrecorded_years_display']}.",
-            ["caveat-active-years-with-gaps", "caveat-currency-not-normalized", "caveat-private-held-source", "caveat-non-causal-synthesis"],
+            [
+                "caveat-active-years-with-gaps",
+                "caveat-currency-not-normalized",
+                "caveat-private-held-source",
+                "caveat-non-causal-synthesis",
+            ],
         ),
         _method(
             "method-professional-community-trust-bridge-v1",
@@ -1369,15 +2005,37 @@ def _methods(
             "identity_redacted_record_linkage",
             "Use a reviewed identity match held behind the publication boundary to establish that one person appears in both a professional recommendation and multi-year service-program contribution records.",
             [
-                _input("input-trust-professional", "2015 professional recommendation", claim_id="claim-2015-cross-team-leadership", source_id="source-cross-team-recommendation-2015", locator="Identity-held recommendation record"),
-                _input("input-trust-community", "Multi-year contribution continuity", claim_id="claim-book-program-total", source_id="source-book-program-ledger-2014-2026", locator="Identity-held contributor records; public output suppresses identity and amounts"),
+                _input(
+                    "input-trust-professional",
+                    "2015 professional recommendation",
+                    claim_id="claim-2015-cross-team-leadership",
+                    source_id="source-cross-team-recommendation-2015",
+                    locator="Identity-held recommendation record",
+                ),
+                _input(
+                    "input-trust-community",
+                    "Multi-year contribution continuity",
+                    claim_id="claim-book-program-total",
+                    source_id="source-book-program-ledger-2014-2026",
+                    locator="Identity-held contributor records; public output suppresses identity and amounts",
+                ),
             ],
-            ["Require an exact reviewed identity match across the two held records.", "Publish only the existence of continuity."],
-            ["Exclude the person's identity, contribution amounts, contact data, and any inference about motive."],
+            [
+                "Require an exact reviewed identity match across the two held records.",
+                "Publish only the existence of continuity.",
+            ],
+            [
+                "Exclude the person's identity, contribution amounts, contact data, and any inference about motive."
+            ],
             "One matched identity is counted once; no fuzzy identity resolution is exposed.",
             "No numeric amount or frequency is published.",
             "One identity-redacted person appears in both contexts, supporting a bounded cross-context trust signal.",
-            ["caveat-identity-withheld", "caveat-inference-not-motive", "caveat-private-held-source", "caveat-non-causal-synthesis"],
+            [
+                "caveat-identity-withheld",
+                "caveat-inference-not-motive",
+                "caveat-private-held-source",
+                "caveat-non-causal-synthesis",
+            ],
         ),
         _method(
             "method-feedback-adaptation-tension-v1",
@@ -1385,16 +2043,45 @@ def _methods(
             "qualitative_synthesis",
             "Compare selected, dated participant feedback about practical relevance, examples, prompting guardrails, and requests for deeper hands-on work without treating different cohorts as a panel.",
             [
-                _input("input-adaptation-2019", "2019 request for relevant examples and hands-on depth", claim_id="claim-2019-practical-feedback-request", source_id="source-participant-improvement-relevant-examples-2019", locator="Facilitator-improvement response field"),
-                _input("input-adaptation-2024", "2024 takeaway on prompting and guardrails", claim_id="claim-2024-practical-ai-takeaway", source_id="source-participant-takeaway-ai-guardrails-2024", locator="Key-takeaways response field"),
-                _input("input-adaptation-2026", "2026 request for more hands-on agent sessions", claim_id="claim-2026-hands-on-depth-request", source_id="source-participant-improvement-hands-on-agents-2026", locator="Facilitator-improvement response field"),
+                _input(
+                    "input-adaptation-2019",
+                    "2019 request for relevant examples and hands-on depth",
+                    claim_id="claim-2019-practical-feedback-request",
+                    source_id="source-participant-improvement-relevant-examples-2019",
+                    locator="Facilitator-improvement response field",
+                ),
+                _input(
+                    "input-adaptation-2024",
+                    "2024 takeaway on prompting and guardrails",
+                    claim_id="claim-2024-practical-ai-takeaway",
+                    source_id="source-participant-takeaway-ai-guardrails-2024",
+                    locator="Key-takeaways response field",
+                ),
+                _input(
+                    "input-adaptation-2026",
+                    "2026 request for more hands-on agent sessions",
+                    claim_id="claim-2026-hands-on-depth-request",
+                    source_id="source-participant-improvement-hands-on-agents-2026",
+                    locator="Facilitator-improvement response field",
+                ),
             ],
-            ["Use dated feedback that contains a concrete learning takeaway or delivery improvement request.", "Retain both evidence of adaptation and continuing unmet demand."],
-            ["Do not claim the same people were followed over time.", "Do not label the improvement request solved or infer causality from the sequence."],
+            [
+                "Use dated feedback that contains a concrete learning takeaway or delivery improvement request.",
+                "Retain both evidence of adaptation and continuing unmet demand.",
+            ],
+            [
+                "Do not claim the same people were followed over time.",
+                "Do not label the improvement request solved or infer causality from the sequence.",
+            ],
             "Each selected feedback entry represents a distinct source row; no sentiment averaging is applied.",
             "No numeric rounding; the result is a bounded tension statement.",
             "Later feedback praises practical prompting and guardrails, while recent participants still request more hands-on depth: an ongoing adaptation signal, not a solved trajectory.",
-            ["caveat-feedback-not-longitudinal", "caveat-non-causal-synthesis", "caveat-selected-evidence", "caveat-session-tracker-boundary"],
+            [
+                "caveat-feedback-not-longitudinal",
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+                "caveat-session-tracker-boundary",
+            ],
         ),
     ]
 
@@ -1424,11 +2111,27 @@ def _claims(
             "journey",
             "individual",
             "Datta career chronology",
-            [_support("source-career-resume-2026", "Career chronology · IBM through current role", "direct", "self_reported", "The held resume supplies both boundary years.")],
+            [
+                _support(
+                    "source-career-resume-2026",
+                    "Career chronology · IBM through current role",
+                    "direct",
+                    "self_reported",
+                    "The held resume supplies both boundary years.",
+                )
+            ],
             period=f"{career['start_year']}–{career['end_year']}",
-            metric={"value": career["inclusive_calendar_years"], "display": f"{career['inclusive_calendar_years']} calendar years", "unit": "inclusive calendar years"},
+            metric={
+                "value": career["inclusive_calendar_years"],
+                "display": f"{career['inclusive_calendar_years']} calendar years",
+                "unit": "inclusive calendar years",
+            },
             method_id="method-career-calendar-span-v1",
-            caveat_ids=["caveat-calendar-span-not-tenure", "caveat-source-label-conflict", "caveat-self-authored-source"],
+            caveat_ids=[
+                "caveat-calendar-span-not-tenure",
+                "caveat-source-label-conflict",
+                "caveat-self-authored-source",
+            ],
             conflict_ids=["conflict-career-duration-labels"],
             confidence_level="high",
             confidence_rationale="The boundary years are explicit and the inclusive arithmetic is deterministic; the semantic limitation is prominent.",
@@ -1443,9 +2146,17 @@ def _claims(
             "Compiled feedback corpus",
             [session_support],
             period="2018–2026",
-            metric={"value": sessions["post_session_datasets"], "display": f"{sessions['post_session_datasets']} analysis files", "unit": "files"},
+            metric={
+                "value": sessions["post_session_datasets"],
+                "display": f"{sessions['post_session_datasets']} analysis files",
+                "unit": "files",
+            },
             method_id="method-session-composition-v1",
-            caveat_ids=["caveat-surveys-separated", "caveat-session-tracker-boundary", "caveat-source-label-conflict"],
+            caveat_ids=[
+                "caveat-surveys-separated",
+                "caveat-session-tracker-boundary",
+                "caveat-source-label-conflict",
+            ],
             conflict_ids=["conflict-session-population-accounting", "conflict-session-year-count"],
             confidence_level="high",
             confidence_rationale="The explicit duplicate and pre-survey flags reproduce the corrected aggregate exactly.",
@@ -1460,9 +2171,17 @@ def _claims(
             "Compiled feedback corpus",
             [session_support],
             period="2018–2026",
-            metric={"value": sessions["post_session_responses"], "display": f"{sessions['post_session_responses']:,} response rows", "unit": "response rows"},
+            metric={
+                "value": sessions["post_session_responses"],
+                "display": f"{sessions['post_session_responses']:,} response rows",
+                "unit": "response rows",
+            },
             method_id="method-session-composition-v1",
-            caveat_ids=["caveat-response-unit", "caveat-surveys-separated", "caveat-session-tracker-boundary"],
+            caveat_ids=[
+                "caveat-response-unit",
+                "caveat-surveys-separated",
+                "caveat-session-tracker-boundary",
+            ],
             conflict_ids=["conflict-session-population-accounting"],
             confidence_level="high",
             confidence_rationale="The figure is the deterministic sum of response_count in the eligible files.",
@@ -1477,9 +2196,17 @@ def _claims(
             "Compiled feedback corpus",
             [session_support],
             period="2018–2026",
-            metric={"value": sessions["rating_observations"], "display": f"{sessions['rating_observations']:,} rating observations", "unit": "rating observations"},
+            metric={
+                "value": sessions["rating_observations"],
+                "display": f"{sessions['rating_observations']:,} rating observations",
+                "unit": "rating observations",
+            },
             method_id="method-session-composition-v1",
-            caveat_ids=["caveat-rating-observation-unit", "caveat-surveys-separated", "caveat-session-tracker-boundary"],
+            caveat_ids=[
+                "caveat-rating-observation-unit",
+                "caveat-surveys-separated",
+                "caveat-session-tracker-boundary",
+            ],
             conflict_ids=["conflict-session-rating-units"],
             confidence_level="high",
             confidence_rationale="The count is reproducible from the stored per-question count field; it is not relabeled as respondents.",
@@ -1494,9 +2221,17 @@ def _claims(
             "Compiled feedback corpus",
             [session_support],
             period="2018–2026",
-            metric={"value": sessions["qualitative_entries"], "display": f"{sessions['qualitative_entries']:,} qualitative entries", "unit": "qualitative entries"},
+            metric={
+                "value": sessions["qualitative_entries"],
+                "display": f"{sessions['qualitative_entries']:,} qualitative entries",
+                "unit": "qualitative entries",
+            },
             method_id="method-session-composition-v1",
-            caveat_ids=["caveat-qualitative-entry-unit", "caveat-surveys-separated", "caveat-session-tracker-boundary"],
+            caveat_ids=[
+                "caveat-qualitative-entry-unit",
+                "caveat-surveys-separated",
+                "caveat-session-tracker-boundary",
+            ],
             conflict_ids=["conflict-session-population-accounting"],
             confidence_level="high",
             confidence_rationale="The figure is the sum of text_feedback array lengths for eligible files.",
@@ -1511,7 +2246,11 @@ def _claims(
             "Compiled feedback corpus",
             [session_support],
             period="2025",
-            metric={"value": sessions["audience_survey_responses"], "display": f"2 surveys · {sessions['audience_survey_responses']} rows", "unit": "response rows"},
+            metric={
+                "value": sessions["audience_survey_responses"],
+                "display": f"2 surveys · {sessions['audience_survey_responses']} rows",
+                "unit": "response rows",
+            },
             method_id="method-session-composition-v1",
             caveat_ids=["caveat-response-unit", "caveat-surveys-separated"],
             conflict_ids=["conflict-session-population-accounting"],
@@ -1528,9 +2267,17 @@ def _claims(
             "Compiled feedback corpus",
             [session_support],
             period="2024–2026",
-            metric={"value": sessions["category_datasets"]["ai-genai"], "display": f"{sessions['category_datasets']['ai-genai']} files · {sessions['category_responses']['ai-genai']} rows", "unit": "files"},
+            metric={
+                "value": sessions["category_datasets"]["ai-genai"],
+                "display": f"{sessions['category_datasets']['ai-genai']} files · {sessions['category_responses']['ai-genai']} rows",
+                "unit": "files",
+            },
             method_id="method-session-topic-themes-v1",
-            caveat_ids=["caveat-category-labels", "caveat-response-unit", "caveat-session-tracker-boundary"],
+            caveat_ids=[
+                "caveat-category-labels",
+                "caveat-response-unit",
+                "caveat-session-tracker-boundary",
+            ],
             conflict_ids=["conflict-session-category-counts"],
             confidence_level="high",
             confidence_rationale="Counts are reproducible from the explicit category and response_count fields; the filename-rule limitation is disclosed.",
@@ -1545,9 +2292,17 @@ def _claims(
             "Compiled feedback corpus",
             [session_support],
             period="2025",
-            metric={"value": sessions["category_datasets"]["dora"], "display": f"{sessions['category_datasets']['dora']} files · {sessions['category_responses']['dora']} rows", "unit": "files"},
+            metric={
+                "value": sessions["category_datasets"]["dora"],
+                "display": f"{sessions['category_datasets']['dora']} files · {sessions['category_responses']['dora']} rows",
+                "unit": "files",
+            },
             method_id="method-session-topic-themes-v1",
-            caveat_ids=["caveat-category-labels", "caveat-response-unit", "caveat-session-tracker-boundary"],
+            caveat_ids=[
+                "caveat-category-labels",
+                "caveat-response-unit",
+                "caveat-session-tracker-boundary",
+            ],
             conflict_ids=["conflict-session-category-counts"],
             confidence_level="high",
             confidence_rationale="Counts are reproducible from the explicit category and response_count fields; the filename-rule limitation is disclosed.",
@@ -1560,11 +2315,28 @@ def _claims(
             "community_learning",
             "community_teaching",
             "Separate student/community feedback tracker",
-            [_support("source-student-feedback-aggregate-2013-2020", "Aggregate Statistics · form, response-row, and context counts", "aggregate", "documented", "The audited summary states the tracker boundary and the three aggregate units explicitly.")],
+            [
+                _support(
+                    "source-student-feedback-aggregate-2013-2020",
+                    "Aggregate Statistics · form, response-row, and context counts",
+                    "aggregate",
+                    "documented",
+                    "The audited summary states the tracker boundary and the three aggregate units explicitly.",
+                )
+            ],
             period="2013–2020",
-            metric={"value": student["response_rows"], "display": f"{student['feedback_forms']} forms · {student['response_rows']} response rows", "unit": "response rows"},
+            metric={
+                "value": student["response_rows"],
+                "display": f"{student['feedback_forms']} forms · {student['response_rows']} response rows",
+                "unit": "response rows",
+            },
             method_id="method-student-feedback-aggregate-v1",
-            caveat_ids=["caveat-student-tracker-separate", "caveat-student-response-rows", "caveat-student-context-boundary", "caveat-private-held-source"],
+            caveat_ids=[
+                "caveat-student-tracker-separate",
+                "caveat-student-response-rows",
+                "caveat-student-context-boundary",
+                "caveat-private-held-source",
+            ],
             confidence_level="high",
             confidence_rationale="The form and response-row counts are deterministically recomputed from the held structured form records; the tracker boundary and context split are explicit.",
         ),
@@ -1576,27 +2348,62 @@ def _claims(
             "community_learning",
             "community_teaching",
             "Separate student/community feedback tracker",
-            [_support("source-student-feedback-aggregate-2013-2020", "Rating Averages · Presenter rows on /5 and /10 scales", "aggregate", "documented", "The audited summary publishes both source-scale populations and their response counts separately.")],
+            [
+                _support(
+                    "source-student-feedback-aggregate-2013-2020",
+                    "Rating Averages · Presenter rows on /5 and /10 scales",
+                    "aggregate",
+                    "documented",
+                    "The audited summary publishes both source-scale populations and their response counts separately.",
+                )
+            ],
             period="2017–2020",
-            metric={"value": student["presenter_5_mean"], "display": f"{student['presenter_5_mean']:.2f}/5 (n={student['presenter_5_n']}) · {student['presenter_10_mean']:.2f}/10 (n={student['presenter_10_n']})", "unit": "separate source-scale populations"},
+            metric={
+                "value": student["presenter_5_mean"],
+                "display": f"{student['presenter_5_mean']:.2f}/5 (n={student['presenter_5_n']}) · {student['presenter_10_mean']:.2f}/10 (n={student['presenter_10_n']})",
+                "unit": "separate source-scale populations",
+            },
             method_id="method-student-feedback-aggregate-v1",
-            caveat_ids=["caveat-student-tracker-separate", "caveat-student-rating-scales", "caveat-student-response-rows", "caveat-private-held-source"],
+            caveat_ids=[
+                "caveat-student-tracker-separate",
+                "caveat-student-rating-scales",
+                "caveat-student-response-rows",
+                "caveat-private-held-source",
+            ],
             confidence_level="supported",
             confidence_rationale="The weighted means and n values are reproducible from per-form aggregates, while the source-scale and already-rounded-input limitations remain visible.",
         ),
         _claim(
             "claim-student-recommendation-likelihood",
-            "Recommendation likelihood is 8.87/10—not NPS",
-            f"Two student/community forms record an arithmetic mean recommendation likelihood of {student['recommendation_mean']:.2f}/10 across n={student['recommendation_n']} ratings. No promoter, passive, or detractor classification exists, so this is not a Net Promoter Score.",
+            "Recommendation likelihood averaged 8.87/10",
+            f"Two student/community forms record an arithmetic mean recommendation likelihood of {student['recommendation_mean']:.2f}/10 across n={student['recommendation_n']} ratings on the original source scale.",
             "calculated",
             "community_learning",
             "community_teaching",
             "Separate student/community feedback tracker",
-            [_support("source-student-feedback-aggregate-2013-2020", "Rating Averages · Recommend to friend row and NPS boundary note", "aggregate", "documented", "The audited summary reports the arithmetic mean, its population, and the explicit non-NPS boundary.")],
+            [
+                _support(
+                    "source-student-feedback-aggregate-2013-2020",
+                    "Rating Averages · Recommend to friend row and source-scale definition",
+                    "aggregate",
+                    "documented",
+                    "The audited summary reports the arithmetic mean, its population, and its source-scale definition.",
+                )
+            ],
             period="2020",
-            metric={"value": student["recommendation_mean"], "display": f"{student['recommendation_mean']:.2f}/10 · n={student['recommendation_n']} · not NPS", "unit": "recommendation-likelihood ratings"},
+            metric={
+                "value": student["recommendation_mean"],
+                "display": f"{student['recommendation_mean']:.2f}/10 · n={student['recommendation_n']}",
+                "unit": "recommendation-likelihood ratings",
+            },
             method_id="method-student-feedback-aggregate-v1",
-            caveat_ids=["caveat-student-tracker-separate", "caveat-student-rating-scales", "caveat-recommendation-not-nps", "caveat-student-response-rows", "caveat-private-held-source"],
+            caveat_ids=[
+                "caveat-student-tracker-separate",
+                "caveat-student-rating-scales",
+                "caveat-recommendation-not-nps",
+                "caveat-student-response-rows",
+                "caveat-private-held-source",
+            ],
             confidence_level="supported",
             confidence_rationale="The weighted arithmetic mean is reproducible from two stored form aggregates, and its distinction from NPS is explicit.",
         ),
@@ -1608,9 +2415,22 @@ def _claims(
             "participant_takeaway",
             "community_feedback",
             "Anonymous NIE feedback field",
-            [_support("source-student-takeaway-interview-resilience-2017", "2017-07-08 NIE HowToPrepareForTechInterviews form · feedback.key_takeaways[0] (same text also at [1])", "direct", "documented", "The excerpt is an exact string from the documented key-takeaways field; the source contains no respondent identity.")],
+            [
+                _support(
+                    "source-student-takeaway-interview-resilience-2017",
+                    "2017-07-08 NIE HowToPrepareForTechInterviews form · feedback.key_takeaways[0] (same text also at [1])",
+                    "direct",
+                    "documented",
+                    "The excerpt is an exact string from the documented key-takeaways field, and the public record preserves respondent anonymity.",
+                )
+            ],
             period="2017-07-08",
-            caveat_ids=["caveat-student-tracker-separate", "caveat-student-response-rows", "caveat-selected-evidence", "caveat-private-held-source"],
+            caveat_ids=[
+                "caveat-student-tracker-separate",
+                "caveat-student-response-rows",
+                "caveat-selected-evidence",
+                "caveat-private-held-source",
+            ],
             confidence_level="high",
             confidence_rationale="The text and field classification are exact; no identity, uniqueness, representativeness, or causal outcome is inferred.",
         ),
@@ -1622,9 +2442,22 @@ def _claims(
             "participant_takeaway",
             "community_feedback",
             "Anonymous SIT feedback field",
-            [_support("source-student-takeaway-uncertainty-2020", "2020-08-08 SIT HowToDealWithUncertainity form · feedback.key_takeaways[31]", "direct", "documented", "The excerpt is an exact sequence within the documented key-takeaways string; the held value has one trailing space and contains no respondent identity.")],
+            [
+                _support(
+                    "source-student-takeaway-uncertainty-2020",
+                    "2020-08-08 SIT HowToDealWithUncertainity form · feedback.key_takeaways[31]",
+                    "direct",
+                    "documented",
+                    "The excerpt is an exact sequence within the documented key-takeaways string; source whitespace is preserved in the held record, and the public record preserves respondent anonymity.",
+                )
+            ],
             period="2020-08-08",
-            caveat_ids=["caveat-student-tracker-separate", "caveat-student-response-rows", "caveat-selected-evidence", "caveat-private-held-source"],
+            caveat_ids=[
+                "caveat-student-tracker-separate",
+                "caveat-student-response-rows",
+                "caveat-selected-evidence",
+                "caveat-private-held-source",
+            ],
             confidence_level="high",
             confidence_rationale="The text and field classification are exact; no identity, representativeness, or causal outcome is inferred.",
         ),
@@ -1636,10 +2469,26 @@ def _claims(
             "community",
             "community_program",
             "Datta-maintained talks ledger",
-            [_support("source-community-talks-ledger-2010-2021", "Metadata and Complete Talks List", "aggregate", "self_reported", "The ledger publishes session-level dates, topics, formats, venues, and approximate participant counts.")],
+            [
+                _support(
+                    "source-community-talks-ledger-2010-2021",
+                    "Metadata and Complete Talks List",
+                    "aggregate",
+                    "self_reported",
+                    "The ledger publishes session-level dates, topics, formats, venues, and approximate participant counts.",
+                )
+            ],
             period="2010–2021",
-            metric={"value": 50, "display": "50 sessions · 3,732 participant instances", "unit": "recorded sessions"},
-            caveat_ids=["caveat-touchpoints-not-people", "caveat-session-tracker-boundary", "caveat-self-authored-source"],
+            metric={
+                "value": 50,
+                "display": "50 sessions · 3,732 participant instances",
+                "unit": "recorded sessions",
+            },
+            caveat_ids=[
+                "caveat-touchpoints-not-people",
+                "caveat-session-tracker-boundary",
+                "caveat-self-authored-source",
+            ],
             confidence_level="supported",
             confidence_rationale="The figures are documented in a session-level first-party ledger; reach is approximate and not independently audited.",
         ),
@@ -1651,9 +2500,21 @@ def _claims(
             "influence",
             "program",
             "Connect program ledger",
-            [_support("source-connect-program-2021", "Raw Data Per Month · Connects", "aggregate", "documented", "Twelve monthly counts sum to the annual program volume.")],
+            [
+                _support(
+                    "source-connect-program-2021",
+                    "Raw Data Per Month · Connects",
+                    "aggregate",
+                    "documented",
+                    "Twelve monthly counts sum to the annual program volume.",
+                )
+            ],
             period="2021",
-            metric={"value": connect["total_connects"], "display": f"{connect['total_connects']} connects", "unit": "conversation records"},
+            metric={
+                "value": connect["total_connects"],
+                "display": f"{connect['total_connects']} connects",
+                "unit": "conversation records",
+            },
             method_id="method-connect-demand-v1",
             caveat_ids=["caveat-touchpoints-not-people", "caveat-private-held-source"],
             confidence_level="high",
@@ -1667,11 +2528,27 @@ def _claims(
             "trust",
             "program",
             "Connect program ledger",
-            [_support("source-connect-program-2021", "Raw Data Per Month · Connects and Setup by Others", "aggregate", "documented", "The numerator and denominator are explicit monthly program totals.")],
+            [
+                _support(
+                    "source-connect-program-2021",
+                    "Raw Data Per Month · Connects and Setup by Others",
+                    "aggregate",
+                    "documented",
+                    "The numerator and denominator are explicit monthly program totals.",
+                )
+            ],
             period="2021",
-            metric={"value": connect["requested_share"], "display": f"{connect['requested_share']}% requested by others", "unit": "percent"},
+            metric={
+                "value": connect["requested_share"],
+                "display": f"{connect['requested_share']}% requested by others",
+                "unit": "percent",
+            },
             method_id="method-connect-demand-v1",
-            caveat_ids=["caveat-touchpoints-not-people", "caveat-inference-not-motive", "caveat-private-held-source"],
+            caveat_ids=[
+                "caveat-touchpoints-not-people",
+                "caveat-inference-not-motive",
+                "caveat-private-held-source",
+            ],
             confidence_level="high",
             confidence_rationale="The composition is deterministic; its interpretation is bounded to demonstrated demand for a conversation, not outcome or motive.",
         ),
@@ -1683,11 +2560,27 @@ def _claims(
             "community",
             "community_program",
             "Book-distribution program aggregate",
-            [_support("source-book-program-ledger-2014-2026", "Financial Summary · annual Total Raised column", "aggregate", "documented", "The public calculation uses annual aggregates only; private identities and banking fields are excluded.")],
+            [
+                _support(
+                    "source-book-program-ledger-2014-2026",
+                    "Financial Summary · annual Total Raised column",
+                    "aggregate",
+                    "documented",
+                    "The public calculation uses privacy-safe annual aggregates while protecting identities and banking fields.",
+                )
+            ],
             period="2014–2026",
-            metric={"value": books["total_raised_inr"], "display": f"₹{books['total_raised_inr']:,}", "unit": "INR"},
+            metric={
+                "value": books["total_raised_inr"],
+                "display": f"₹{books['total_raised_inr']:,}",
+                "unit": "INR",
+            },
             method_id="method-book-totals-growth-v1",
-            caveat_ids=["caveat-active-years-with-gaps", "caveat-currency-not-normalized", "caveat-private-held-source"],
+            caveat_ids=[
+                "caveat-active-years-with-gaps",
+                "caveat-currency-not-normalized",
+                "caveat-private-held-source",
+            ],
             confidence_level="supported",
             confidence_rationale="The arithmetic is deterministic from reviewed annual aggregates; underlying financial records remain private-held.",
         ),
@@ -1699,11 +2592,27 @@ def _claims(
             "community",
             "community_program",
             "Book-distribution program aggregate",
-            [_support("source-book-program-ledger-2014-2026", "Financial Summary · first and final recorded annual rows plus unrecorded-year disclosures", "aggregate", "documented", "The source provides both endpoint aggregates, records no program for 2020–2021, and states that no reviewed 2024 program record is present.")],
+            [
+                _support(
+                    "source-book-program-ledger-2014-2026",
+                    "Financial Summary · first and final recorded annual rows plus unrecorded-year disclosures",
+                    "aggregate",
+                    "documented",
+                    "The source provides both endpoint aggregates and distinguishes the ten recorded program years from years outside the reviewed ledger.",
+                )
+            ],
             period=f"{books['first_year']}–{books['last_year']}",
-            metric={"value": books["growth_factor"], "display": f"{books['growth_factor']}× endpoint ratio", "unit": "times"},
+            metric={
+                "value": books["growth_factor"],
+                "display": f"{books['growth_factor']}× endpoint ratio",
+                "unit": "times",
+            },
             method_id="method-book-totals-growth-v1",
-            caveat_ids=["caveat-active-years-with-gaps", "caveat-currency-not-normalized", "caveat-private-held-source"],
+            caveat_ids=[
+                "caveat-active-years-with-gaps",
+                "caveat-currency-not-normalized",
+                "caveat-private-held-source",
+            ],
             confidence_level="supported",
             confidence_rationale="The endpoint ratio is reproducible; it is not represented as smooth annual growth or inflation-adjusted impact.",
         ),
@@ -1715,7 +2624,15 @@ def _claims(
             "community",
             "individual_and_family",
             "Documentary photo record",
-            [_support("source-community-service-photo-record-2007-2015", "Timeline; slides 20, 27, 30–32, and 38–39", "direct", "documented", "The photographs and dated artifacts document multiple forms and years of direct service.")],
+            [
+                _support(
+                    "source-community-service-photo-record-2007-2015",
+                    "Timeline; slides 20, 27, 30–32, and 38–39",
+                    "direct",
+                    "documented",
+                    "The photographs and dated artifacts document multiple forms and years of direct service.",
+                )
+            ],
             period="2007–2015",
             caveat_ids=["caveat-selected-evidence", "caveat-self-authored-source"],
             confidence_level="supported",
@@ -1729,10 +2646,26 @@ def _claims(
             "impact",
             "portfolio",
             "XITE program across eight teams",
-            [_support("source-xite-portfolio-outcomes-2026", "Portfolio announcement · eight initiatives and potential annual value", "direct", "documented", "The announcement explicitly scopes the figure to the eight-initiative portfolio and uses potential-value language.")],
+            [
+                _support(
+                    "source-xite-portfolio-outcomes-2026",
+                    "Portfolio announcement · eight initiatives and potential annual value",
+                    "direct",
+                    "documented",
+                    "The announcement explicitly scopes the figure to the eight-initiative portfolio and uses potential-value language.",
+                )
+            ],
             period="2026",
-            metric={"value": 18000, "display": "~18,000 potential hours/year", "unit": "potential annual productivity hours"},
-            caveat_ids=["caveat-potential-not-realized", "caveat-team-attribution", "caveat-private-held-source"],
+            metric={
+                "value": 18000,
+                "display": "~18,000 potential hours/year",
+                "unit": "potential annual productivity hours",
+            },
+            caveat_ids=[
+                "caveat-potential-not-realized",
+                "caveat-team-attribution",
+                "caveat-private-held-source",
+            ],
             confidence_level="supported",
             confidence_rationale="The estimate is directly stated, but realized value and initiative allocation are not established.",
         ),
@@ -1744,10 +2677,26 @@ def _claims(
             "impact",
             "portfolio",
             "XITE program across eight teams",
-            [_support("source-xite-portfolio-outcomes-2026", "Portfolio announcement · eight initiatives and potential annual value", "direct", "documented", "The announcement explicitly scopes the figure to the portfolio and describes potential efficiencies.")],
+            [
+                _support(
+                    "source-xite-portfolio-outcomes-2026",
+                    "Portfolio announcement · eight initiatives and potential annual value",
+                    "direct",
+                    "documented",
+                    "The announcement explicitly scopes the figure to the portfolio and describes potential efficiencies.",
+                )
+            ],
             period="2026",
-            metric={"value": 3.5, "display": "€3.5M potential/year", "unit": "million EUR potential annual efficiencies"},
-            caveat_ids=["caveat-potential-not-realized", "caveat-team-attribution", "caveat-private-held-source"],
+            metric={
+                "value": 3.5,
+                "display": "€3.5M potential/year",
+                "unit": "million EUR potential annual efficiencies",
+            },
+            caveat_ids=[
+                "caveat-potential-not-realized",
+                "caveat-team-attribution",
+                "caveat-private-held-source",
+            ],
             confidence_level="supported",
             confidence_rationale="The estimate is directly stated, but realized value and initiative allocation are not established.",
         ),
@@ -1759,10 +2708,26 @@ def _claims(
             "innovation",
             "team_initiative",
             "Sutra team and Inside XITE",
-            [_support("source-sutra-initiative-outcomes-2026", "Inside XITE · Sutra impact bullets", "direct", "documented", "The traceability figure is stated specifically for the Sutra initiative.")],
+            [
+                _support(
+                    "source-sutra-initiative-outcomes-2026",
+                    "Inside XITE · Sutra impact bullets",
+                    "direct",
+                    "documented",
+                    "The traceability figure is stated specifically for the Sutra initiative.",
+                )
+            ],
             period="2026",
-            metric={"value": 90, "display": "90%+ traceability improvement", "unit": "percent improvement"},
-            caveat_ids=["caveat-initiative-scope", "caveat-team-attribution", "caveat-private-held-source"],
+            metric={
+                "value": 90,
+                "display": "90%+ traceability improvement",
+                "unit": "percent improvement",
+            },
+            caveat_ids=[
+                "caveat-initiative-scope",
+                "caveat-team-attribution",
+                "caveat-private-held-source",
+            ],
             confidence_level="supported",
             confidence_rationale="The initiative announcement states the metric; the underlying measurement protocol is not available in the public evidence summary.",
         ),
@@ -1774,11 +2739,27 @@ def _claims(
             "innovation",
             "team_initiative",
             "Datta's attributed Sutra team comment",
-            [_support("source-sutra-initiative-outcomes-2026", "Datta team comment · AI use, speed, generated code, and quality gates", "direct", "self_reported", "The same attributed comment states both the speed claim and the engineering controls.")],
+            [
+                _support(
+                    "source-sutra-initiative-outcomes-2026",
+                    "Datta team comment · AI use, speed, generated code, and quality gates",
+                    "direct",
+                    "self_reported",
+                    "The same attributed comment states both the speed claim and the engineering controls.",
+                )
+            ],
             period="2026",
             metric={"value": 3, "display": "3× stated development speed", "unit": "times"},
-            caveat_ids=["caveat-initiative-scope", "caveat-team-attribution", "caveat-self-authored-source", "caveat-private-held-source"],
-            conflict_ids=["conflict-sutra-onboarding-arithmetic", "conflict-sutra-zero-quality-boundary"],
+            caveat_ids=[
+                "caveat-initiative-scope",
+                "caveat-team-attribution",
+                "caveat-self-authored-source",
+                "caveat-private-held-source",
+            ],
+            conflict_ids=[
+                "conflict-sutra-onboarding-arithmetic",
+                "conflict-sutra-zero-quality-boundary",
+            ],
             confidence_level="limited",
             confidence_rationale="The implementation controls are specific and attributable, but the speed and AI-code shares are team-reported rather than independently audited.",
         ),
@@ -1790,7 +2771,15 @@ def _claims(
             "trust",
             "team_initiative",
             "Philips Recognition",
-            [_support("source-sutra-recognition-2026", "Recognition reason", "direct", "documented", "The award artifact specifically names conscious AI application and delivery to business units.")],
+            [
+                _support(
+                    "source-sutra-recognition-2026",
+                    "Recognition reason",
+                    "direct",
+                    "documented",
+                    "The award artifact specifically names conscious AI application and delivery to business units.",
+                )
+            ],
             period="2026",
             caveat_ids=["caveat-team-attribution", "caveat-private-held-source"],
             confidence_level="high",
@@ -1804,9 +2793,21 @@ def _claims(
             "innovation",
             "individual_invention",
             "IBM award certificate",
-            [_support("source-patent-award-2010", "Metadata and certificate quotation · recipient, award type, invention title, and date", "direct", "documented", "The employer-issued artifact directly names the recipient, application milestone, invention, and date.")],
+            [
+                _support(
+                    "source-patent-award-2010",
+                    "Metadata and certificate quotation · recipient, award type, invention title, and date",
+                    "direct",
+                    "documented",
+                    "The employer-issued artifact directly names the recipient, application milestone, invention, and date.",
+                )
+            ],
             period="2010-12-28",
-            metric={"value": 1, "display": "1 first-application award", "unit": "employer recognition artifacts"},
+            metric={
+                "value": 1,
+                "display": "1 first-application award",
+                "unit": "employer recognition artifacts",
+            },
             caveat_ids=["caveat-patent-scope", "caveat-selected-evidence"],
             confidence_level="high",
             confidence_rationale="The dated employer certificate directly supports the bounded application-recognition claim; grant and impact are treated separately.",
@@ -1820,8 +2821,20 @@ def _claims(
             "co_inventor",
             "Public patent registry and IBM award",
             [
-                _support("source-us-patent-8560487", "Public registry · inventors and patent title", "direct", "corroborated", "The external registry provides a publicly openable record."),
-                _support("source-patent-award-2010", "IBM award citation", "direct", "documented", "The award artifact independently records the first patent application milestone."),
+                _support(
+                    "source-us-patent-8560487",
+                    "Public registry · inventors and patent title",
+                    "direct",
+                    "corroborated",
+                    "The external registry provides a publicly openable record.",
+                ),
+                _support(
+                    "source-patent-award-2010",
+                    "IBM award citation",
+                    "direct",
+                    "documented",
+                    "The award artifact independently records the first patent application milestone.",
+                ),
             ],
             period="2010–2013",
             metric={"value": 1, "display": "US Patent 8,560,487", "unit": "public patent record"},
@@ -1837,7 +2850,15 @@ def _claims(
             "leadership",
             "individual",
             "IBM award citation",
-            [_support("source-leadership-award-2008", "Award citation", "direct", "documented", "The citation explicitly uses leadership and end-to-end delivery language.")],
+            [
+                _support(
+                    "source-leadership-award-2008",
+                    "Award citation",
+                    "direct",
+                    "documented",
+                    "The citation explicitly uses leadership and end-to-end delivery language.",
+                )
+            ],
             period="2008",
             caveat_ids=["caveat-selected-evidence"],
             confidence_level="high",
@@ -1851,7 +2872,15 @@ def _claims(
             "leadership",
             "technical_community",
             "IBM technical leadership forum",
-            [_support("source-technical-community-recognition-2010", "Certificate citation", "direct", "documented", "The artifact directly records technical-community contribution.")],
+            [
+                _support(
+                    "source-technical-community-recognition-2010",
+                    "Certificate citation",
+                    "direct",
+                    "documented",
+                    "The artifact directly records technical-community contribution.",
+                )
+            ],
             period="2010",
             caveat_ids=["caveat-selected-evidence"],
             confidence_level="high",
@@ -1865,7 +2894,15 @@ def _claims(
             "leadership",
             "team",
             "Exeter manager review",
-            [_support("source-exeter-performance-review-2015", "Behavioral Competencies, Key Quotes, and scores", "direct", "corroborated", "The manager review records both strengths and improvement areas rather than a one-sided testimonial.")],
+            [
+                _support(
+                    "source-exeter-performance-review-2015",
+                    "Behavioral Competencies, Key Quotes, and scores",
+                    "direct",
+                    "corroborated",
+                    "The manager review provides a balanced assessment of demonstrated strengths and development opportunities.",
+                )
+            ],
             period="2015",
             caveat_ids=["caveat-private-held-source"],
             confidence_level="high",
@@ -1879,7 +2916,15 @@ def _claims(
             "leadership",
             "organization",
             "Cross-team colleague",
-            [_support("source-cross-team-recommendation-2015", "Recommendation · team scale, teaching, and barrier crossing", "direct", "corroborated", "The recommender worked on a different team and describes directly observed cross-organizational behavior.")],
+            [
+                _support(
+                    "source-cross-team-recommendation-2015",
+                    "Recommendation · team scale, teaching, and barrier crossing",
+                    "direct",
+                    "corroborated",
+                    "The recommender worked on a different team and describes directly observed cross-organizational behavior.",
+                )
+            ],
             period="2015",
             caveat_ids=["caveat-selected-evidence", "caveat-identity-withheld"],
             confidence_level="supported",
@@ -1894,8 +2939,20 @@ def _claims(
             "team",
             "Amazon TRMS Tech",
             [
-                _support("source-amazon-process-recognition-2017", "Award reason · team process improvement", "direct", "documented", "The first artifact directly names process improvement."),
-                _support("source-amazon-delivery-recognition-2017", "Award reason · exceptional project delivery", "direct", "documented", "The second artifact directly names delivery."),
+                _support(
+                    "source-amazon-process-recognition-2017",
+                    "Award reason · team process improvement",
+                    "direct",
+                    "documented",
+                    "The first artifact directly names process improvement.",
+                ),
+                _support(
+                    "source-amazon-delivery-recognition-2017",
+                    "Award reason · exceptional project delivery",
+                    "direct",
+                    "documented",
+                    "The second artifact directly names delivery.",
+                ),
             ],
             period="2017",
             caveat_ids=["caveat-selected-evidence"],
@@ -1910,7 +2967,15 @@ def _claims(
             "leadership",
             "individual",
             "Line-manager feedback in a multi-rater assessment",
-            [_support("source-360-feedback-2020", "Line Manager Comments · quality in context", "direct", "corroborated", "The assessment preserves the manager's explicit quality-speed-defect-predictability framing.")],
+            [
+                _support(
+                    "source-360-feedback-2020",
+                    "Line Manager Comments · quality in context",
+                    "direct",
+                    "corroborated",
+                    "The assessment preserves the manager's explicit quality-speed-defect-predictability framing.",
+                )
+            ],
             period="2020",
             caveat_ids=["caveat-private-held-source"],
             confidence_level="high",
@@ -1924,9 +2989,21 @@ def _claims(
             "leadership",
             "individual",
             "Fourteen-rater 2020 assessment",
-            [_support("source-360-feedback-2020", "Behavior Scores Summary · AVG (Others), Company Average, and Difference", "aggregate", "corroborated", "The five source rows expose the compared values and deltas.")],
+            [
+                _support(
+                    "source-360-feedback-2020",
+                    "Behavior Scores Summary · AVG (Others), Company Average, and Difference",
+                    "aggregate",
+                    "corroborated",
+                    "The five source rows expose the compared values and deltas.",
+                )
+            ],
             period="2020",
-            metric={"value": assessment["mean_delta"], "display": f"+{assessment['mean_delta']:.2f} mean delta", "unit": "rating points vs company average"},
+            metric={
+                "value": assessment["mean_delta"],
+                "display": f"+{assessment['mean_delta']:.2f} mean delta",
+                "unit": "rating points vs company average",
+            },
             method_id="method-360-company-deltas-v1",
             caveat_ids=["caveat-360-benchmark-scope", "caveat-private-held-source"],
             confidence_level="high",
@@ -1940,7 +3017,15 @@ def _claims(
             "leadership",
             "individual",
             "Line-manager feedback in a multi-rater assessment",
-            [_support("source-360-feedback-2020", "Greatest Development Area and Line Manager Comments", "direct", "corroborated", "The assessment contains an explicit development request, not a retrospective inference.")],
+            [
+                _support(
+                    "source-360-feedback-2020",
+                    "Greatest Development Area and Line Manager Comments",
+                    "direct",
+                    "corroborated",
+                    "The assessment directly records the development request in its original 2020 context.",
+                )
+            ],
             period="2020",
             caveat_ids=["caveat-private-held-source", "caveat-selected-evidence"],
             confidence_level="high",
@@ -1954,7 +3039,15 @@ def _claims(
             "leadership",
             "individual",
             "BeTalent psychometric assessment",
-            [_support("source-strengths-assessment-2020", "Top 7 Strengths · rank order", "direct", "documented", "The held assessment lists the seven labels in rank order.")],
+            [
+                _support(
+                    "source-strengths-assessment-2020",
+                    "Top 7 Strengths · rank order",
+                    "direct",
+                    "documented",
+                    "The held assessment lists the seven labels in rank order.",
+                )
+            ],
             period="2020",
             caveat_ids=["caveat-assessment-not-performance", "caveat-private-held-source"],
             confidence_level="supported",
@@ -1968,7 +3061,15 @@ def _claims(
             "learning",
             "individual",
             "Former mentee recommendation",
-            [_support("source-mentoring-recommendation-2020", "Recommendation · independent thinking and skills with values", "direct", "corroborated", "The recommender describes observable mentoring behaviors rather than a generic endorsement.")],
+            [
+                _support(
+                    "source-mentoring-recommendation-2020",
+                    "Recommendation · independent thinking and skills with values",
+                    "direct",
+                    "corroborated",
+                    "The recommender grounds the endorsement in observable mentoring behaviors.",
+                )
+            ],
             period="2020",
             caveat_ids=["caveat-selected-evidence"],
             confidence_level="supported",
@@ -1982,7 +3083,15 @@ def _claims(
             "trust",
             "individual",
             "Philips CTO Annual Address",
-            [_support("source-philips-cto-recognition-2021", "Outstanding Achievement Awards artifact", "direct", "documented", "The event artifact visibly lists the recipients.")],
+            [
+                _support(
+                    "source-philips-cto-recognition-2021",
+                    "Outstanding Achievement Awards artifact",
+                    "direct",
+                    "documented",
+                    "The event artifact visibly lists the recipients.",
+                )
+            ],
             period="2021",
             metric={"value": 30, "display": "1 of 30 listed recipients", "unit": "recipients"},
             caveat_ids=["caveat-selected-evidence"],
@@ -1997,7 +3106,15 @@ def _claims(
             "leadership",
             "informal_mentoring",
             "Informally mentored colleague",
-            [_support("source-purpose-first-mentoring-recommendation-2023", "Relationship metadata and behavioral recommendation", "direct", "corroborated", "The record explicitly states no direct management relationship and describes concrete behaviors.")],
+            [
+                _support(
+                    "source-purpose-first-mentoring-recommendation-2023",
+                    "Relationship metadata and behavioral recommendation",
+                    "direct",
+                    "corroborated",
+                    "The relationship metadata establishes peer mentoring outside a direct reporting line and records concrete behaviors.",
+                )
+            ],
             period="2023",
             caveat_ids=["caveat-selected-evidence"],
             confidence_level="supported",
@@ -2011,7 +3128,15 @@ def _claims(
             "leadership",
             "organization",
             "Software Excellence colleague",
-            [_support("source-influence-recommendation-2025", "Recommendation · influence, communication, coaching, execution, and data", "direct", "corroborated", "The later observation is independently attributed and behaviorally specific.")],
+            [
+                _support(
+                    "source-influence-recommendation-2025",
+                    "Recommendation · influence, communication, coaching, execution, and data",
+                    "direct",
+                    "corroborated",
+                    "The later observation is independently attributed and behaviorally specific.",
+                )
+            ],
             period="2025",
             caveat_ids=["caveat-selected-evidence"],
             confidence_level="supported",
@@ -2025,7 +3150,15 @@ def _claims(
             "leadership",
             "organization",
             "Former direct manager",
-            [_support("source-manager-recommendation-2025", "Recommendation · boundaries, communication, coaching, craftsmanship, and DORA", "direct", "corroborated", "The direct-manager relationship and specific behavioral observations strengthen attribution.")],
+            [
+                _support(
+                    "source-manager-recommendation-2025",
+                    "Recommendation · boundaries, communication, coaching, craftsmanship, and DORA",
+                    "direct",
+                    "corroborated",
+                    "The direct-manager relationship and specific behavioral observations strengthen attribution.",
+                )
+            ],
             period="2025",
             caveat_ids=["caveat-selected-evidence", "caveat-team-attribution"],
             confidence_level="supported",
@@ -2039,9 +3172,21 @@ def _claims(
             "requested_improvement",
             "participant_feedback",
             "Anonymous participant feedback",
-            [_support("source-participant-improvement-relevant-examples-2019", "Facilitator-improvement response field", "direct", "documented", "The claim is classified by the documented improvement-question field, not by regex or sentiment inference.")],
+            [
+                _support(
+                    "source-participant-improvement-relevant-examples-2019",
+                    "Facilitator-improvement response field",
+                    "direct",
+                    "documented",
+                    "The documented improvement-question field directly establishes this classification.",
+                )
+            ],
             period="2019",
-            caveat_ids=["caveat-response-unit", "caveat-selected-evidence", "caveat-session-tracker-boundary"],
+            caveat_ids=[
+                "caveat-response-unit",
+                "caveat-selected-evidence",
+                "caveat-session-tracker-boundary",
+            ],
             confidence_level="high",
             confidence_rationale="The requested improvements are explicit in documented improvement fields.",
         ),
@@ -2053,9 +3198,21 @@ def _claims(
             "participant_takeaway",
             "participant_feedback",
             "Anonymous participant feedback",
-            [_support("source-participant-takeaway-ai-guardrails-2024", "Three key takeaways response field", "direct", "documented", "The classification follows the documented key-takeaways question field.")],
+            [
+                _support(
+                    "source-participant-takeaway-ai-guardrails-2024",
+                    "Three key takeaways response field",
+                    "direct",
+                    "documented",
+                    "The classification follows the documented key-takeaways question field.",
+                )
+            ],
             period="2024",
-            caveat_ids=["caveat-response-unit", "caveat-selected-evidence", "caveat-session-tracker-boundary"],
+            caveat_ids=[
+                "caveat-response-unit",
+                "caveat-selected-evidence",
+                "caveat-session-tracker-boundary",
+            ],
             confidence_level="high",
             confidence_rationale="The takeaway is explicit in the documented key-takeaways field.",
         ),
@@ -2067,9 +3224,21 @@ def _claims(
             "requested_improvement",
             "participant_feedback",
             "Anonymous participant feedback",
-            [_support("source-participant-improvement-hands-on-agents-2026", "Facilitator-improvement response field", "direct", "documented", "The classification follows the documented improvement-question field.")],
+            [
+                _support(
+                    "source-participant-improvement-hands-on-agents-2026",
+                    "Facilitator-improvement response field",
+                    "direct",
+                    "documented",
+                    "The classification follows the documented improvement-question field.",
+                )
+            ],
             period="2026",
-            caveat_ids=["caveat-response-unit", "caveat-selected-evidence", "caveat-session-tracker-boundary"],
+            caveat_ids=[
+                "caveat-response-unit",
+                "caveat-selected-evidence",
+                "caveat-session-tracker-boundary",
+            ],
             confidence_level="high",
             confidence_rationale="The requested improvement is explicit in the documented facilitator-improvement field.",
         ),
@@ -2082,11 +3251,28 @@ def _claims(
             "corpus",
             "Knowledge-context repository",
             [
-                _support("source-evidence-inventory-2026", "Build-time repository inventory", "aggregate", "documented", "The builder counts files without exposing private filenames."),
-                _support("source-relationship-export-quality-2026", "DuckDB tables · evidence_index", "aggregate", "documented", "The quality report supplies the current indexed subset for comparison.", relationship="qualifies"),
+                _support(
+                    "source-evidence-inventory-2026",
+                    "Build-time repository inventory",
+                    "aggregate",
+                    "documented",
+                    "The builder counts files without exposing private filenames.",
+                ),
+                _support(
+                    "source-relationship-export-quality-2026",
+                    "DuckDB tables · evidence_index",
+                    "aggregate",
+                    "documented",
+                    "The quality report supplies the current indexed subset for comparison.",
+                    relationship="qualifies",
+                ),
             ],
             period="as of 2026-08-07",
-            metric={"value": inventory["evidence_markdown"], "display": f"{inventory['evidence_markdown']:,} evidence Markdown files", "unit": "files"},
+            metric={
+                "value": inventory["evidence_markdown"],
+                "display": f"{inventory['evidence_markdown']:,} evidence Markdown files",
+                "unit": "files",
+            },
             method_id="method-corpus-coverage-v1",
             caveat_ids=["caveat-export-gap", "caveat-private-held-source"],
             confidence_level="high",
@@ -2100,9 +3286,21 @@ def _claims(
             "data_quality",
             "retrieval_export",
             "Knowledge-context export pipeline",
-            [_support("source-relationship-export-quality-2026", "ChromaDB alignment", "direct", "documented", "The generated report exposes both the gap and the mismatch checks.")],
+            [
+                _support(
+                    "source-relationship-export-quality-2026",
+                    "ChromaDB alignment",
+                    "direct",
+                    "documented",
+                    "The generated report exposes both the gap and the mismatch checks.",
+                )
+            ],
             period="as of 2026-08-07",
-            metric={"value": inventory["missing_in_chroma"], "display": f"{inventory['missing_in_chroma']:,} missing embeddings", "unit": "chunks"},
+            metric={
+                "value": inventory["missing_in_chroma"],
+                "display": f"{inventory['missing_in_chroma']:,} missing embeddings",
+                "unit": "chunks",
+            },
             method_id="method-corpus-coverage-v1",
             caveat_ids=["caveat-export-gap"],
             confidence_level="high",
@@ -2116,9 +3314,21 @@ def _claims(
             "data_quality",
             "graph_export",
             "Knowledge-context export pipeline",
-            [_support("source-relationship-export-quality-2026", "Referential and graph checks", "direct", "documented", "The report distinguishes soft provenance gaps from node-reference integrity.")],
+            [
+                _support(
+                    "source-relationship-export-quality-2026",
+                    "Referential and graph checks",
+                    "direct",
+                    "documented",
+                    "The report distinguishes soft provenance gaps from node-reference integrity.",
+                )
+            ],
             period="as of 2026-08-07",
-            metric={"value": inventory["orphan_edge_artifact_provenance"], "display": f"{inventory['orphan_edge_artifact_provenance']} provenance gaps", "unit": "edges"},
+            metric={
+                "value": inventory["orphan_edge_artifact_provenance"],
+                "display": f"{inventory['orphan_edge_artifact_provenance']} provenance gaps",
+                "unit": "edges",
+            },
             method_id="method-corpus-coverage-v1",
             caveat_ids=["caveat-export-gap"],
             confidence_level="high",
@@ -2133,13 +3343,35 @@ def _claims(
             "career_development",
             "Cross-source synthesis",
             [
-                _support("source-360-feedback-2020", "Greatest Development Area", "interpretive", "corroborated", "Supplies the dated development edge."),
-                _support("source-influence-recommendation-2025", "Recommendation · influence, communication, execution, and data", "interpretive", "corroborated", "Supplies a later independent observation aligned with the development edge."),
-                _support("source-manager-recommendation-2025", "Recommendation · leadership across formal boundaries", "interpretive", "corroborated", "Supplies a second later independent observation."),
+                _support(
+                    "source-360-feedback-2020",
+                    "Greatest Development Area",
+                    "interpretive",
+                    "corroborated",
+                    "Supplies the dated development edge.",
+                ),
+                _support(
+                    "source-influence-recommendation-2025",
+                    "Recommendation · influence, communication, execution, and data",
+                    "interpretive",
+                    "corroborated",
+                    "Supplies a later independent observation aligned with the development edge.",
+                ),
+                _support(
+                    "source-manager-recommendation-2025",
+                    "Recommendation · leadership across formal boundaries",
+                    "interpretive",
+                    "corroborated",
+                    "Supplies a second later independent observation.",
+                ),
             ],
             period="2020→2025",
             method_id="method-feedback-executive-observation-v1",
-            caveat_ids=["caveat-non-causal-synthesis", "caveat-selected-evidence", "caveat-private-held-source"],
+            caveat_ids=[
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+                "caveat-private-held-source",
+            ],
             confidence_level="supported",
             confidence_rationale="The semantic correspondence is strong and independently observed twice, but no repeated measurement establishes change or causality.",
         ),
@@ -2152,13 +3384,35 @@ def _claims(
             "leadership_behavior",
             "Cross-source synthesis",
             [
-                _support("source-strengths-assessment-2020", "Top 7 Strengths", "interpretive", "documented", "Supplies the assessment labels."),
-                _support("source-influence-recommendation-2025", "Recommendation · relationships, communication, and data", "interpretive", "corroborated", "Supplies independent behavioral counterparts."),
-                _support("source-manager-recommendation-2025", "Recommendation · meticulous and empathetic collaboration", "interpretive", "corroborated", "Supplies a second set of independent behavioral counterparts."),
+                _support(
+                    "source-strengths-assessment-2020",
+                    "Top 7 Strengths",
+                    "interpretive",
+                    "documented",
+                    "Supplies the assessment labels.",
+                ),
+                _support(
+                    "source-influence-recommendation-2025",
+                    "Recommendation · relationships, communication, and data",
+                    "interpretive",
+                    "corroborated",
+                    "Supplies independent behavioral counterparts.",
+                ),
+                _support(
+                    "source-manager-recommendation-2025",
+                    "Recommendation · meticulous and empathetic collaboration",
+                    "interpretive",
+                    "corroborated",
+                    "Supplies a second set of independent behavioral counterparts.",
+                ),
             ],
             period="2020→2025",
             method_id="method-strengths-observation-concordance-v1",
-            caveat_ids=["caveat-assessment-not-performance", "caveat-non-causal-synthesis", "caveat-selected-evidence"],
+            caveat_ids=[
+                "caveat-assessment-not-performance",
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+            ],
             confidence_level="supported",
             confidence_rationale="Multiple explicit semantic mappings are present, but an assessment cannot be validated by testimonial language alone.",
         ),
@@ -2171,16 +3425,58 @@ def _claims(
             "engineering_system",
             "Cross-employer synthesis",
             [
-                _support("source-exeter-performance-review-2015", "Quality due diligence under high complexity", "interpretive", "corroborated", "Establishes an early quality-discipline observation."),
-                _support("source-amazon-process-recognition-2017", "Team process-improvement award", "interpretive", "documented", "Adds documented process-system recognition."),
-                _support("source-amazon-delivery-recognition-2017", "Exceptional delivery award", "interpretive", "documented", "Places delivery recognition beside the process evidence."),
-                _support("source-360-feedback-2020", "Manager comment · quality as speed, defects, predictability", "interpretive", "corroborated", "Makes the quality-speed theory explicit."),
-                _support("source-manager-recommendation-2025", "Craftsmanship, pipelines, and DORA observation", "interpretive", "corroborated", "Adds later independent observation of engineering mechanisms."),
-                _support("source-sutra-initiative-outcomes-2026", "AI development and commit-gate team comment", "interpretive", "self_reported", "Supplies the 2026 AI-native endpoint and its controls."),
+                _support(
+                    "source-exeter-performance-review-2015",
+                    "Quality due diligence under high complexity",
+                    "interpretive",
+                    "corroborated",
+                    "Establishes an early quality-discipline observation.",
+                ),
+                _support(
+                    "source-amazon-process-recognition-2017",
+                    "Team process-improvement award",
+                    "interpretive",
+                    "documented",
+                    "Adds documented process-system recognition.",
+                ),
+                _support(
+                    "source-amazon-delivery-recognition-2017",
+                    "Exceptional delivery award",
+                    "interpretive",
+                    "documented",
+                    "Places delivery recognition beside the process evidence.",
+                ),
+                _support(
+                    "source-360-feedback-2020",
+                    "Manager comment · quality as speed, defects, predictability",
+                    "interpretive",
+                    "corroborated",
+                    "Makes the quality-speed theory explicit.",
+                ),
+                _support(
+                    "source-manager-recommendation-2025",
+                    "Craftsmanship, pipelines, and DORA observation",
+                    "interpretive",
+                    "corroborated",
+                    "Adds later independent observation of engineering mechanisms.",
+                ),
+                _support(
+                    "source-sutra-initiative-outcomes-2026",
+                    "AI development and commit-gate team comment",
+                    "interpretive",
+                    "self_reported",
+                    "Supplies the 2026 AI-native endpoint and its controls.",
+                ),
             ],
             period="2015→2026",
             method_id="method-quality-before-ai-lineage-v1",
-            caveat_ids=["caveat-non-causal-synthesis", "caveat-team-attribution", "caveat-self-authored-source", "caveat-selected-evidence", "caveat-initiative-scope"],
+            caveat_ids=[
+                "caveat-non-causal-synthesis",
+                "caveat-team-attribution",
+                "caveat-self-authored-source",
+                "caveat-selected-evidence",
+                "caveat-initiative-scope",
+            ],
             confidence_level="supported",
             confidence_rationale="The control-system theme recurs across five dates and multiple source relationships; the 2026 speed endpoint remains team-reported.",
         ),
@@ -2193,12 +3489,50 @@ def _claims(
             "leadership_behavior",
             "Cross-source synthesis",
             [
-                _support("source-leadership-award-2008", "Early-career leadership award", "interpretive", "documented", "Supplies evidence before senior titles."),
-                _support("source-cross-team-recommendation-2015", "Cross-team and cross-location recommendation", "interpretive", "corroborated", "Supplies leadership outside one team."),
-                _support("source-purpose-first-mentoring-recommendation-2023", "Informal mentoring without direct management", "interpretive", "corroborated", "Supplies a no-reporting-line relationship."),
-                _support("source-manager-recommendation-2025", "Leadership across reporting lines, seniority, and teams", "interpretive", "corroborated", "Makes the formal-boundary proposition explicit."),
-                _support("source-technical-community-recognition-2010", "Technical community contribution", "indirect", "documented", "Adds a dated technical-community context.", relationship="context"),
-                _support("source-philips-cto-recognition-2021", "Company-wide outstanding achievement artifact", "indirect", "documented", "Adds later company-wide recognition context.", relationship="context"),
+                _support(
+                    "source-leadership-award-2008",
+                    "Early-career leadership award",
+                    "interpretive",
+                    "documented",
+                    "Supplies evidence before senior titles.",
+                ),
+                _support(
+                    "source-cross-team-recommendation-2015",
+                    "Cross-team and cross-location recommendation",
+                    "interpretive",
+                    "corroborated",
+                    "Supplies leadership outside one team.",
+                ),
+                _support(
+                    "source-purpose-first-mentoring-recommendation-2023",
+                    "Informal mentoring without direct management",
+                    "interpretive",
+                    "corroborated",
+                    "Supplies a no-reporting-line relationship.",
+                ),
+                _support(
+                    "source-manager-recommendation-2025",
+                    "Leadership across reporting lines, seniority, and teams",
+                    "interpretive",
+                    "corroborated",
+                    "Makes the formal-boundary proposition explicit.",
+                ),
+                _support(
+                    "source-technical-community-recognition-2010",
+                    "Technical community contribution",
+                    "indirect",
+                    "documented",
+                    "Adds a dated technical-community context.",
+                    relationship="context",
+                ),
+                _support(
+                    "source-philips-cto-recognition-2021",
+                    "Company-wide outstanding achievement artifact",
+                    "indirect",
+                    "documented",
+                    "Adds later company-wide recognition context.",
+                    relationship="context",
+                ),
             ],
             period="2008→2025",
             method_id="method-title-independent-leadership-v1",
@@ -2215,16 +3549,56 @@ def _claims(
             "operating_pattern",
             "Cross-employer synthesis",
             [
-                _support("source-us-patent-8560487", "Public invention record", "interpretive", "corroborated", "Represents build and codified invention at IBM."),
-                _support("source-technical-community-recognition-2010", "Technical-community contribution", "interpretive", "documented", "Represents community transfer at IBM."),
-                _support("source-cross-team-recommendation-2015", "Technology sessions and organization-wide initiatives", "interpretive", "corroborated", "Represents teaching and systemization at Exeter."),
-                _support("source-amazon-work-examples-2018", "Self-service tools, guides, workshops, and reflective examples", "interpretive", "self_reported", "Represents reusable mechanisms at Amazon."),
-                _support("source-session-response-corpus-2018-2026", "Structured feedback-file corpus", "interpretive", "documented", "Represents measured teaching and adaptation at Philips."),
-                _support("source-sutra-recognition-2026", "AI delivery and learning recognition", "interpretive", "documented", "Represents a recent build-and-learning system endpoint."),
+                _support(
+                    "source-us-patent-8560487",
+                    "Public invention record",
+                    "interpretive",
+                    "corroborated",
+                    "Represents build and codified invention at IBM.",
+                ),
+                _support(
+                    "source-technical-community-recognition-2010",
+                    "Technical-community contribution",
+                    "interpretive",
+                    "documented",
+                    "Represents community transfer at IBM.",
+                ),
+                _support(
+                    "source-cross-team-recommendation-2015",
+                    "Technology sessions and organization-wide initiatives",
+                    "interpretive",
+                    "corroborated",
+                    "Represents teaching and systemization at Exeter.",
+                ),
+                _support(
+                    "source-amazon-work-examples-2018",
+                    "Self-service tools, guides, workshops, and reflective examples",
+                    "interpretive",
+                    "self_reported",
+                    "Represents reusable mechanisms at Amazon.",
+                ),
+                _support(
+                    "source-session-response-corpus-2018-2026",
+                    "Structured feedback-file corpus",
+                    "interpretive",
+                    "documented",
+                    "Represents measured teaching and adaptation at Philips.",
+                ),
+                _support(
+                    "source-sutra-recognition-2026",
+                    "AI delivery and learning recognition",
+                    "interpretive",
+                    "documented",
+                    "Represents a recent build-and-learning system endpoint.",
+                ),
             ],
             period="2010→2026",
             method_id="method-learn-build-teach-systemize-v1",
-            caveat_ids=["caveat-non-causal-synthesis", "caveat-selected-evidence", "caveat-self-authored-source"],
+            caveat_ids=[
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+                "caveat-self-authored-source",
+            ],
             confidence_level="supported",
             confidence_rationale="The pattern recurs across four employer contexts, but the selected sources do not prove that every initiative followed all four stages.",
         ),
@@ -2237,13 +3611,35 @@ def _claims(
             "learning_evolution",
             "Cross-tracker synthesis",
             [
-                _support("source-community-talks-ledger-2010-2021", "Dated Complete Talks List", "interpretive", "self_reported", "Supplies the earlier subject sequence."),
-                _support("source-session-response-corpus-2018-2026", "AI category counts and selected practical-feedback fields", "interpretive", "documented", "Supplies the later measured topic composition and participant perspective."),
+                _support(
+                    "source-community-talks-ledger-2010-2021",
+                    "Dated Complete Talks List",
+                    "interpretive",
+                    "self_reported",
+                    "Supplies the earlier subject sequence.",
+                ),
+                _support(
+                    "source-session-response-corpus-2018-2026",
+                    "AI category counts and selected practical-feedback fields",
+                    "interpretive",
+                    "documented",
+                    "Supplies the later measured topic composition and participant perspective.",
+                ),
             ],
             period="2010→2026",
-            metric={"value": sessions["category_datasets"]["ai-genai"], "display": f"{sessions['category_datasets']['ai-genai']} AI-category feedback files", "unit": "files"},
+            metric={
+                "value": sessions["category_datasets"]["ai-genai"],
+                "display": f"{sessions['category_datasets']['ai-genai']} AI-category feedback files",
+                "unit": "files",
+            },
             method_id="method-topic-frontier-teaching-continuity-v1",
-            caveat_ids=["caveat-category-labels", "caveat-touchpoints-not-people", "caveat-session-tracker-boundary", "caveat-feedback-not-longitudinal", "caveat-non-causal-synthesis"],
+            caveat_ids=[
+                "caveat-category-labels",
+                "caveat-touchpoints-not-people",
+                "caveat-session-tracker-boundary",
+                "caveat-feedback-not-longitudinal",
+                "caveat-non-causal-synthesis",
+            ],
             confidence_level="supported",
             confidence_rationale="The dated topic shift and practical-feedback fields are explicit, but the two trackers have different scopes and incomplete coverage.",
         ),
@@ -2256,13 +3652,34 @@ def _claims(
             "community_service",
             "Cross-source synthesis",
             [
-                _support("source-community-service-photo-record-2007-2015", "Dated direct-service timeline", "interpretive", "documented", "Supplies evidence of direct service before and during the ledger's early years."),
-                _support("source-book-program-ledger-2014-2026", "Annual aggregate rows and explicit unrecorded-year disclosures", "interpretive", "documented", "Supplies the active-year, 2020–2021 no-program, 2024 no-record, resumption, total, and endpoint data."),
+                _support(
+                    "source-community-service-photo-record-2007-2015",
+                    "Dated direct-service timeline",
+                    "interpretive",
+                    "documented",
+                    "Supplies evidence of direct service before and during the ledger's early years.",
+                ),
+                _support(
+                    "source-book-program-ledger-2014-2026",
+                    "Annual aggregate rows and explicit unrecorded-year disclosures",
+                    "interpretive",
+                    "documented",
+                    "Supplies the active-year, 2020–2021 no-program, 2024 no-record, resumption, total, and endpoint data.",
+                ),
             ],
             period="2007→2026",
-            metric={"value": books["growth_factor"], "display": f"{books['growth_factor']}× endpoint ratio", "unit": "times"},
+            metric={
+                "value": books["growth_factor"],
+                "display": f"{books['growth_factor']}× endpoint ratio",
+                "unit": "times",
+            },
             method_id="method-service-continuity-growth-v1",
-            caveat_ids=["caveat-active-years-with-gaps", "caveat-currency-not-normalized", "caveat-private-held-source", "caveat-non-causal-synthesis"],
+            caveat_ids=[
+                "caveat-active-years-with-gaps",
+                "caveat-currency-not-normalized",
+                "caveat-private-held-source",
+                "caveat-non-causal-synthesis",
+            ],
             confidence_level="supported",
             confidence_rationale="The dates and aggregates are explicit; recurrence is not relabeled as uninterrupted continuity, and every unrecorded year is disclosed.",
         ),
@@ -2275,12 +3692,29 @@ def _claims(
             "trust",
             "Identity-redacted record linkage",
             [
-                _support("source-cross-team-recommendation-2015", "Identity-held professional recommendation", "interpretive", "corroborated", "Supplies the professional-trust context without publishing identity."),
-                _support("source-book-program-ledger-2014-2026", "Identity-held multi-year contributor records", "interpretive", "documented", "Supplies the community-trust continuity without publishing identity or amounts."),
+                _support(
+                    "source-cross-team-recommendation-2015",
+                    "Identity-held professional recommendation",
+                    "interpretive",
+                    "corroborated",
+                    "Supplies the professional-trust context without publishing identity.",
+                ),
+                _support(
+                    "source-book-program-ledger-2014-2026",
+                    "Identity-held multi-year contributor records",
+                    "interpretive",
+                    "documented",
+                    "Supplies the community-trust continuity without publishing identity or amounts.",
+                ),
             ],
             period="2015→2026",
             method_id="method-professional-community-trust-bridge-v1",
-            caveat_ids=["caveat-identity-withheld", "caveat-inference-not-motive", "caveat-private-held-source", "caveat-non-causal-synthesis"],
+            caveat_ids=[
+                "caveat-identity-withheld",
+                "caveat-inference-not-motive",
+                "caveat-private-held-source",
+                "caveat-non-causal-synthesis",
+            ],
             confidence_level="limited",
             confidence_rationale="The exact identity linkage was reviewed, but privacy prevents public independent verification and the records do not establish motive.",
         ),
@@ -2293,13 +3727,36 @@ def _claims(
             "learning_adaptation",
             "Cross-cohort feedback synthesis",
             [
-                _support("source-participant-improvement-relevant-examples-2019", "Facilitator-improvement response field", "interpretive", "documented", "Supplies the earlier request for relevance and hands-on depth."),
-                _support("source-participant-takeaway-ai-guardrails-2024", "Key-takeaways response field", "interpretive", "documented", "Supplies a later practical AI and guardrails takeaway."),
-                _support("source-participant-improvement-hands-on-agents-2026", "Facilitator-improvement response field", "interpretive", "documented", "Supplies continuing demand for hands-on depth."),
+                _support(
+                    "source-participant-improvement-relevant-examples-2019",
+                    "Facilitator-improvement response field",
+                    "interpretive",
+                    "documented",
+                    "Supplies the earlier request for relevance and hands-on depth.",
+                ),
+                _support(
+                    "source-participant-takeaway-ai-guardrails-2024",
+                    "Key-takeaways response field",
+                    "interpretive",
+                    "documented",
+                    "Supplies a later practical AI and guardrails takeaway.",
+                ),
+                _support(
+                    "source-participant-improvement-hands-on-agents-2026",
+                    "Facilitator-improvement response field",
+                    "interpretive",
+                    "documented",
+                    "Supplies continuing demand for hands-on depth.",
+                ),
             ],
             period="2019→2026",
             method_id="method-feedback-adaptation-tension-v1",
-            caveat_ids=["caveat-feedback-not-longitudinal", "caveat-non-causal-synthesis", "caveat-selected-evidence", "caveat-session-tracker-boundary"],
+            caveat_ids=[
+                "caveat-feedback-not-longitudinal",
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+                "caveat-session-tracker-boundary",
+            ],
             confidence_level="supported",
             confidence_rationale="The three documented fields support the tension; different cohorts and contexts prevent a claim of individual change or resolution.",
         ),
@@ -2398,7 +3855,11 @@ def _relationships(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "A specific 2020 executive-influence development request is concordant with independent 2025 observations of the requested behavior.",
             "The method compares a dated manager development statement with two later, attributed observations and preserves their different source relationships.",
             "method-feedback-executive-observation-v1",
-            ["caveat-non-causal-synthesis", "caveat-selected-evidence", "caveat-private-held-source"],
+            [
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+                "caveat-private-held-source",
+            ],
             "No repeated score or controlled before/after measure establishes that the development request caused or completed the later behavior.",
             "supported",
             "The correspondence is explicit and independently observed twice; causal change is not measured.",
@@ -2414,7 +3875,11 @@ def _relationships(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "Five assessment labels have close counterparts in two later independent recommendations.",
             "The method maps only explicit 2020 labels to explicit 2025 behavioral descriptions from a colleague and a former manager.",
             "method-strengths-observation-concordance-v1",
-            ["caveat-assessment-not-performance", "caveat-non-causal-synthesis", "caveat-selected-evidence"],
+            [
+                "caveat-assessment-not-performance",
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+            ],
             "Testimonial concordance cannot validate a psychometric profile or prove performance.",
             "supported",
             "Several mappings recur across two observers, but the evidence types remain fundamentally different.",
@@ -2430,7 +3895,13 @@ def _relationships(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "A quality-and-delivery mechanism lineage from 2015–2025 precedes 2026 AI-native speed with commit-level controls.",
             "The path requires evidence at 2015, 2017, 2020, 2025, and 2026 and keeps independent observations separate from team-reported metrics.",
             "method-quality-before-ai-lineage-v1",
-            ["caveat-non-causal-synthesis", "caveat-team-attribution", "caveat-self-authored-source", "caveat-selected-evidence", "caveat-initiative-scope"],
+            [
+                "caveat-non-causal-synthesis",
+                "caveat-team-attribution",
+                "caveat-self-authored-source",
+                "caveat-selected-evidence",
+                "caveat-initiative-scope",
+            ],
             "Chronology supports lineage, not causality; Sutra speed and AI-code shares are team-reported.",
             "supported",
             "The control-system pattern recurs across employers and source types, with a weaker self-reported endpoint.",
@@ -2462,7 +3933,11 @@ def _relationships(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "Across employers, technical learning and building repeatedly become teaching, reusable artifacts, communities, or delivery systems.",
             "The method selects representative IBM, Exeter, Amazon, and Philips sources and preserves their varying evidence grades.",
             "method-learn-build-teach-systemize-v1",
-            ["caveat-non-causal-synthesis", "caveat-selected-evidence", "caveat-self-authored-source"],
+            [
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+                "caveat-self-authored-source",
+            ],
             "The selected sources do not establish that every project followed all four stages.",
             "supported",
             "The pattern recurs in four employer contexts but includes first-party evidence.",
@@ -2478,7 +3953,13 @@ def _relationships(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "Topics shift from wellness and foundational software through observability toward AI, while practical teaching concerns persist.",
             "The method keeps two trackers separate, uses their dated scopes, and relies only on explicit category fields and documented feedback questions.",
             "method-topic-frontier-teaching-continuity-v1",
-            ["caveat-category-labels", "caveat-touchpoints-not-people", "caveat-session-tracker-boundary", "caveat-feedback-not-longitudinal", "caveat-non-causal-synthesis"],
+            [
+                "caveat-category-labels",
+                "caveat-touchpoints-not-people",
+                "caveat-session-tracker-boundary",
+                "caveat-feedback-not-longitudinal",
+                "caveat-non-causal-synthesis",
+            ],
             "Tracker coverage differs, filename-derived categories are not hand-coded, and topic counts are not unique session counts.",
             "supported",
             "The direction of topic change is clear; corpus boundaries constrain completeness.",
@@ -2494,7 +3975,11 @@ def _relationships(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "454 of 575 recorded connects were set up by others, yielding a 79% displayed share.",
             "The method sums twelve monthly numerator and denominator rows and retains both values beside the rounded percentage.",
             "method-connect-demand-v1",
-            ["caveat-touchpoints-not-people", "caveat-inference-not-motive", "caveat-private-held-source"],
+            [
+                "caveat-touchpoints-not-people",
+                "caveat-inference-not-motive",
+                "caveat-private-held-source",
+            ],
             "A request demonstrates demand for a conversation, not motive, satisfaction, unique reach, or business outcome.",
             "high",
             "The arithmetic is deterministic and the interpretation is narrowly bounded.",
@@ -2510,7 +3995,12 @@ def _relationships(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "Documented direct service precedes the financial ledger; the ledger resumes in 2022 after no program recorded for 2020–2021, has no reviewed 2024 program record, and later records 2025 and its highest endpoint in 2026.",
             "The method combines dated images with privacy-safe annual aggregates and refuses to interpolate 2020, 2021, or 2024 or imply uninterrupted post-2022 activity.",
             "method-service-continuity-growth-v1",
-            ["caveat-active-years-with-gaps", "caveat-currency-not-normalized", "caveat-private-held-source", "caveat-non-causal-synthesis"],
+            [
+                "caveat-active-years-with-gaps",
+                "caveat-currency-not-normalized",
+                "caveat-private-held-source",
+                "caveat-non-causal-synthesis",
+            ],
             "The records do not establish uninterrupted annual activity, any activity or amount for 2024, inflation-adjusted impact, or beneficiary counts; absence of a reviewed 2024 record is not treated as a verified zero.",
             "supported",
             "The timeline and endpoints are documented; the statement explicitly preserves all three unrecorded calendar years and the non-contiguous post-2022 sequence.",
@@ -2526,7 +4016,12 @@ def _relationships(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "One reviewed identity appears in both a professional recommendation and multi-year community contribution records.",
             "An exact held-record match is used, while the public output suppresses identity, amounts, and frequency.",
             "method-professional-community-trust-bridge-v1",
-            ["caveat-identity-withheld", "caveat-inference-not-motive", "caveat-private-held-source", "caveat-non-causal-synthesis"],
+            [
+                "caveat-identity-withheld",
+                "caveat-inference-not-motive",
+                "caveat-private-held-source",
+                "caveat-non-causal-synthesis",
+            ],
             "Privacy prevents public independent verification, and cross-context participation does not establish motive.",
             "limited",
             "The linkage is exact in held records, but its public proof is intentionally constrained.",
@@ -2542,7 +4037,12 @@ def _relationships(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "Later praise for practical AI prompting and guardrails sits between earlier and later requests for hands-on depth.",
             "The method uses documented question types—requested improvement and participant takeaway—not regex-derived sentiment or theme classification.",
             "method-feedback-adaptation-tension-v1",
-            ["caveat-feedback-not-longitudinal", "caveat-non-causal-synthesis", "caveat-selected-evidence", "caveat-session-tracker-boundary"],
+            [
+                "caveat-feedback-not-longitudinal",
+                "caveat-non-causal-synthesis",
+                "caveat-selected-evidence",
+                "caveat-session-tracker-boundary",
+            ],
             "Different cohorts and contexts prevent claims of individual longitudinal change, resolution, or causality.",
             "supported",
             "The three fields support the tension, but not a completed improvement trajectory.",
@@ -2550,179 +4050,346 @@ def _relationships(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
     ]
 
 
-def _pages(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    all_claim_ids = [claim["id"] for claim in claims]
+EXECUTIVE_SEMANTICS: dict[str, Any] = {
+    "portfolio_thesis": "Datta turns complex change into capability that lasts — through trust, engineering discipline, learning, and service.",
+    "levels": {
+        "summary": "Executive signal",
+        "narrative": "Why this matters",
+        "proof": "Evidence",
+        "method": "How this was derived",
+        "context": "Evidence context",
+    },
+    "actions": {
+        "inspect_claim": "Inspect claim",
+        "open_source": "Open source",
+        "open_public_source": "Open public source",
+        "view_method": "See calculation",
+        "search_data_room": "Search the evidence",
+    },
+    "evidence_basis": {
+        "corroborated": "Publicly corroborated",
+        "documented": "Documented record",
+        "self_reported": "First-party initiative record",
+    },
+    "source_access": {
+        "public_external": "Public source",
+        "public_excerpt": "Published excerpt",
+        "private_held": "Archived source",
+        "aggregate_only": "Published aggregate",
+    },
+    "page_copy": {
+        "brief": {
+            "question": "What makes Datta ready to lead at executive scale?",
+            "summary": "A concise view of leadership reach, disciplined innovation, capability building, and service.",
+        },
+        "leadership": {
+            "question": "How does Datta lead across levels, functions, and formal boundaries?",
+            "summary": "Observed behaviors show influence beyond title, strength across leadership levels, and deliberate growth in executive reach.",
+        },
+        "journey": {
+            "question": "How has Datta turned technical depth into organizational leverage?",
+            "summary": "A career progression from early leadership and technical contribution to delivery discipline and enterprise recognition.",
+        },
+        "trust": {
+            "question": "Why do colleagues seek Datta out and trust his leadership?",
+            "summary": "People repeatedly choose his counsel because he creates clarity, builds independent thinkers, and connects purpose to action.",
+        },
+        "innovation": {
+            "question": "How does Datta turn emerging technology into governed execution?",
+            "summary": "A record of carrying ideas from invention through engineered delivery while framing opportunity at portfolio scale.",
+        },
+        "learning": {
+            "question": "What do people value and carry forward after learning with Datta?",
+            "summary": "Participant evidence shows useful experiences, practical takeaways, and a curriculum that advances with the technology frontier.",
+        },
+        "community": {
+            "question": "How does Datta create value beyond formal responsibility?",
+            "summary": "Service, teaching, and giving compound over time as capability and reach grow.",
+        },
+        "data-room": {
+            "question": "How can every featured conclusion be traced?",
+            "summary": "Search the evidence record, inspect derivations, and follow every featured conclusion to its supporting sources.",
+        },
+    },
+}
+
+
+AUDIT_ONLY_CLAIM_IDS: tuple[str, ...] = (
+    "claim-evidence-corpus-coverage",
+    "claim-export-embedding-gap",
+    "claim-export-provenance-gap",
+    "claim-professional-community-trust-bridge",
+)
+
+
+STORY_BLOCKS: tuple[dict[str, Any], ...] = (
+    {
+        "id": "brief-influence-beyond-hierarchy",
+        "page_id": "brief",
+        "title": "Influence beyond hierarchy",
+        "meaning": "Leadership is documented before senior titles and later across reporting lines, seniority, and teams.",
+        "proof": "Early-career recognition and a later manager observation, seventeen years apart.",
+        "primary_claim_id": "claim-title-independent-leadership-continuity",
+        "folded_claim_ids": [],
+    },
+    {
+        "id": "brief-speed-built-on-discipline",
+        "page_id": "brief",
+        "title": "Speed built on discipline",
+        "meaning": "A decade of quality and delivery controls anchors the current AI story.",
+        "proof": "Quality-control signals recur from 2015 through 2026.",
+        "primary_claim_id": "claim-quality-before-ai-lineage",
+        "folded_claim_ids": [],
+    },
+    {
+        "id": "brief-capability-that-multiplies",
+        "page_id": "brief",
+        "title": "Capability that multiplies",
+        "meaning": "What Datta learns and builds repeatedly becomes tools, teaching, communities, and reusable systems.",
+        "proof": "The pattern appears across IBM, Exeter, Amazon, and Philips records.",
+        "primary_claim_id": "claim-learn-build-teach-systemize-pattern",
+        "folded_claim_ids": [],
+    },
+    {
+        "id": "brief-service-that-compounds",
+        "page_id": "brief",
+        "title": "Service that compounds",
+        "meaning": "Hands-on service matured into a recurring education-material program with growing recorded support.",
+        "proof": "Direct-service records precede ten recorded program years.",
+        "primary_claim_id": "claim-service-continuity-and-growth",
+        "folded_claim_ids": [],
+    },
+    {
+        "id": "leadership-boundaries",
+        "page_id": "leadership",
+        "title": "Leads across formal boundaries",
+        "meaning": "Leadership reaches beyond the org chart through technical credibility, empathy, coaching, and shared standards.",
+        "proof": "A direct manager describes leadership across reporting lines, seniority, and teams.",
+        "primary_claim_id": "claim-2025-cross-boundary-leadership",
+        "folded_claim_ids": ["claim-2015-cross-team-leadership"],
+    },
+    {
+        "id": "leadership-benchmark",
+        "page_id": "leadership",
+        "title": "Leadership behaviors exceed the benchmark",
+        "meaning": "Multi-rater evidence and later independent observations align around communication, rigor, evaluation, relationships, and authenticity.",
+        "proof": "All five measured behaviors were above the company comparison; mean delta +0.31.",
+        "primary_claim_id": "claim-2020-360-company-deltas",
+        "folded_claim_ids": [
+            "claim-2020-strengths-profile",
+            "claim-strengths-later-observation-concordance",
+        ],
+    },
+    {
+        "id": "leadership-growth",
+        "page_id": "leadership",
+        "title": "Deliberate growth expanded executive reach",
+        "meaning": "A clearly named growth goal became a testable leadership direction and later appears in independently attributed behavior.",
+        "proof": "A 2020 growth goal aligns with independent 2025 descriptions of executive-to-developer influence.",
+        "primary_claim_id": "claim-feedback-to-executive-observation",
+        "folded_claim_ids": [
+            "claim-2020-executive-influence-development-signal",
+            "claim-2025-executive-influence-observation",
+        ],
+    },
+    {
+        "id": "journey-span",
+        "page_id": "journey",
+        "title": "Leadership showed up early",
+        "meaning": "The record begins with end-to-end ownership and widens across two decades of technical and organizational scope.",
+        "proof": "A 2008 award begins a career record spanning 2007–2026.",
+        "primary_claim_id": "claim-career-calendar-span",
+        "folded_claim_ids": ["claim-2008-early-leadership"],
+    },
+    {
+        "id": "journey-community",
+        "page_id": "journey",
+        "title": "Technical depth became community contribution",
+        "meaning": "Building expertise and sharing it with a wider technical community became an early recurring pattern.",
+        "proof": "IBM recognized contribution to its India technical exchange in 2010.",
+        "primary_claim_id": "claim-2010-technical-community-recognition",
+        "folded_claim_ids": [],
+    },
+    {
+        "id": "journey-delivery",
+        "page_id": "journey",
+        "title": "Process discipline became delivery strength",
+        "meaning": "Engineering improvement and dependable execution were recognized as mutually reinforcing capabilities.",
+        "proof": "Adjacent awards recognized process improvement and exceptional project delivery.",
+        "primary_claim_id": "claim-2017-process-delivery-recognition",
+        "folded_claim_ids": [],
+    },
+    {
+        "id": "journey-enterprise",
+        "page_id": "journey",
+        "title": "Impact earned enterprise recognition",
+        "meaning": "The career arc progressed from local ownership to visible contribution at company-wide technical leadership level.",
+        "proof": "Named among outstanding-achievement recipients in the CTO Annual Address.",
+        "primary_claim_id": "claim-2021-cto-recognition",
+        "folded_claim_ids": [],
+    },
+    {
+        "id": "trust-sought-out",
+        "page_id": "trust",
+        "title": "People chose to seek him out",
+        "meaning": "A high share of conversations began through others’ initiative, signaling accessibility and continued demand for dialogue.",
+        "proof": "454 of 575 recorded conversations were requested by others — 79%.",
+        "primary_claim_id": "claim-connect-demand-share",
+        "folded_claim_ids": ["claim-connect-volume-2021"],
+    },
+    {
+        "id": "trust-independent-thinkers",
+        "page_id": "trust",
+        "title": "Builds independent thinkers",
+        "meaning": "Mentoring emphasizes reasoning, capability, and values so people leave stronger rather than more dependent.",
+        "proof": "A former mentee describes guidance that develops thinking, skills, and values.",
+        "primary_claim_id": "claim-2020-mentoring-method",
+        "folded_claim_ids": [],
+    },
+    {
+        "id": "trust-purpose",
+        "page_id": "trust",
+        "title": "Creates clarity and purpose",
+        "meaning": "Calm presence, explicit outcomes, openness to input, and availability make trust practical across formal boundaries.",
+        "proof": "A colleague outside his reporting line describes calmness, clarity, openness, and availability.",
+        "primary_claim_id": "claim-2023-purpose-first-mentoring",
+        "folded_claim_ids": [],
+    },
+    {
+        "id": "innovation-patent",
+        "page_id": "innovation",
+        "title": "Ideas carried from invention to public patent",
+        "meaning": "Innovation progressed from an employer-recognized application to a traceable public grant record.",
+        "proof": "IBM’s 2010 application award matches the 2013 public grant title and inventor identity.",
+        "primary_claim_id": "claim-public-patent-record",
+        "folded_claim_ids": ["claim-2010-first-patent-achievement"],
+    },
+    {
+        "id": "innovation-controlled-ai",
+        "page_id": "innovation",
+        "title": "AI delivery accelerated with engineered control",
+        "meaning": "Current AI execution combines development speed, traceability, automated quality gates, and organizational delivery recognition.",
+        "proof": "3× team-reported development speed, commit-level quality gates, and 90%+ traceability improvement.",
+        "primary_claim_id": "claim-sutra-ai-delivery",
+        "folded_claim_ids": [
+            "claim-sutra-traceability",
+            "claim-sutra-delivery-recognition",
+            "claim-2015-quality-discipline",
+            "claim-2020-quality-speed-framing",
+        ],
+    },
+    {
+        "id": "innovation-portfolio-value",
+        "page_id": "innovation",
+        "title": "AI opportunity framed at portfolio scale",
+        "meaning": "Innovation is translated into an explicit portfolio-level capacity and efficiency opportunity across multiple initiatives.",
+        "proof": "Eight initiatives identified an estimated potential €3.5M annual efficiency opportunity and ~18,000 productivity hours.",
+        "primary_claim_id": "claim-xite-potential-efficiency",
+        "folded_claim_ids": ["claim-xite-potential-hours"],
+    },
+    {
+        "id": "learning-listening-system",
+        "page_id": "learning",
+        "title": "Feedback shapes every iteration",
+        "meaning": "Learning is managed as a listening system that combines scale, scored questions, and written participant input.",
+        "proof": "1,050 submitted responses, including 1,811 written inputs and 2,149 question ratings.",
+        "primary_claim_id": "claim-session-post-responses",
+        "folded_claim_ids": [
+            "claim-session-post-datasets",
+            "claim-session-rating-observations",
+            "claim-session-qualitative-entries",
+            "claim-session-audience-surveys",
+        ],
+    },
+    {
+        "id": "learning-reach",
+        "page_id": "learning",
+        "title": "Knowledge shared at scale",
+        "meaning": "A sustained teaching record turns professional experience into reusable learning for broader communities.",
+        "proof": "50 recorded sessions and 3,732 participant attendances across 2010–2021.",
+        "primary_claim_id": "claim-community-talks-reach",
+        "folded_claim_ids": [],
+    },
+    {
+        "id": "learning-valued",
+        "page_id": "learning",
+        "title": "Learners valued the experience",
+        "meaning": "Ratings and participant words show that learners valued both the experience and practical lessons they could carry forward.",
+        "proof": "Presenter means of 4.58/5 and 9.12/10 on their original scales; recommendation likelihood 8.87/10.",
+        "primary_claim_id": "claim-student-presenter-ratings",
+        "folded_claim_ids": [
+            "claim-student-feedback-coverage",
+            "claim-student-recommendation-likelihood",
+            "claim-student-takeaway-interview-resilience-2017",
+            "claim-student-takeaway-uncertainty-2020",
+        ],
+    },
+    {
+        "id": "learning-frontier",
+        "page_id": "learning",
+        "title": "The curriculum advances with the frontier",
+        "meaning": "Topics progress from foundational engineering through delivery performance to applied AI, guided by continuing participant feedback.",
+        "proof": "Foundational engineering expanded through DORA into 23 AI feedback sets, while participant feedback keeps sharpening practical depth.",
+        "primary_claim_id": "claim-topic-frontier-teaching-continuity",
+        "folded_claim_ids": [
+            "claim-feedback-adaptation-tension",
+            "claim-session-ai-feedback",
+            "claim-session-dora-feedback",
+            "claim-2019-practical-feedback-request",
+            "claim-2024-practical-ai-takeaway",
+            "claim-2026-hands-on-depth-request",
+        ],
+    },
+    {
+        "id": "community-presence",
+        "page_id": "community",
+        "title": "Service began with presence",
+        "meaning": "Contribution began through direct teaching, wellbeing work, rural-school engagement, and material distribution.",
+        "proof": "Dated images document teaching, yoga, rural-school engagement, and material distribution from 2007–2015.",
+        "primary_claim_id": "claim-community-service-photo-record",
+        "folded_claim_ids": [],
+        "image_source_id": "source-community-service-photo-record-2007-2015",
+    },
+    {
+        "id": "community-scaled-giving",
+        "page_id": "community",
+        "title": "Giving grew with capacity",
+        "meaning": "A recurring education-material program converted personal capacity into sustained, increasing support.",
+        "proof": "₹1.97M directed to education materials across ten recorded years; recorded 2014→2026 totals grew 13.3×.",
+        "primary_claim_id": "claim-book-program-total",
+        "folded_claim_ids": ["claim-book-program-growth"],
+    },
+)
+
+
+PAGE_LABELS = {
+    "brief": "Executive brief",
+    "leadership": "Leadership",
+    "journey": "Career journey",
+    "trust": "Trust",
+    "innovation": "Innovation & value",
+    "learning": "Learning",
+    "community": "Community & service",
+    "data-room": "Data room",
+}
+
+
+def _pages() -> list[dict[str, Any]]:
+    claims_by_page: dict[str, list[str]] = {page_id: [] for page_id in PAGE_LABELS}
+    for block in STORY_BLOCKS:
+        claims_by_page[block["page_id"]].append(block["primary_claim_id"])
+        claims_by_page[block["page_id"]].extend(block["folded_claim_ids"])
+    claims_by_page["data-room"] = list(AUDIT_ONLY_CLAIM_IDS)
+
     return [
         {
-            "id": "brief",
-            "route": "brief",
-            "label": "Executive brief",
-            "question": "What is the shortest data-backed case for Datta as a senior leader?",
-            "summary": "A decision-ready synthesis of scale, leadership behavior, trust, service, innovation, and the limits on every headline.",
-            "claim_ids": [
-                "claim-career-calendar-span",
-                "claim-session-post-responses",
-                "claim-connect-demand-share",
-                "claim-2020-360-company-deltas",
-                "claim-title-independent-leadership-continuity",
-                "claim-quality-before-ai-lineage",
-                "claim-book-program-total",
-                "claim-sutra-delivery-recognition",
-            ],
-        },
-        {
-            "id": "leadership",
-            "route": "leadership",
-            "label": "Leadership system",
-            "question": "What kind of leader does the evidence show?",
-            "summary": "Leadership before title, across reporting lines, grounded in purpose, coaching, quality, and transparent development edges.",
-            "claim_ids": [
-                "claim-2008-early-leadership",
-                "claim-2010-technical-community-recognition",
-                "claim-2015-cross-team-leadership",
-                "claim-2020-360-company-deltas",
-                "claim-2020-executive-influence-development-signal",
-                "claim-2023-purpose-first-mentoring",
-                "claim-2025-executive-influence-observation",
-                "claim-2025-cross-boundary-leadership",
-                "claim-feedback-to-executive-observation",
-                "claim-title-independent-leadership-continuity",
-                "claim-learn-build-teach-systemize-pattern",
-            ],
-        },
-        {
-            "id": "journey",
-            "route": "journey",
-            "label": "Career journey",
-            "question": "How did builder, teacher, and transformation leader compound over time?",
-            "summary": "A twenty-calendar-year evidence path from early technical leadership through cross-employer capability multiplication and AI-native delivery.",
-            "claim_ids": [
-                "claim-career-calendar-span",
-                "claim-2008-early-leadership",
-                "claim-2010-first-patent-achievement",
-                "claim-public-patent-record",
-                "claim-2015-quality-discipline",
-                "claim-2017-process-delivery-recognition",
-                "claim-2021-cto-recognition",
-                "claim-sutra-delivery-recognition",
-                "claim-learn-build-teach-systemize-pattern",
-            ],
-        },
-        {
-            "id": "impact",
-            "route": "impact",
-            "label": "Impact ledger",
-            "question": "What scale and outcomes are actually documented?",
-            "summary": "Field-specific units, program attribution, potential-versus-realized boundaries, and source-linked calculation methods.",
-            "claim_ids": [
-                "claim-session-post-datasets",
-                "claim-session-post-responses",
-                "claim-session-rating-observations",
-                "claim-session-qualitative-entries",
-                "claim-connect-volume-2021",
-                "claim-connect-demand-share",
-                "claim-book-program-total",
-                "claim-book-program-growth",
-                "claim-xite-potential-hours",
-                "claim-xite-potential-efficiency",
-                "claim-sutra-traceability",
-                "claim-sutra-ai-delivery",
-            ],
-        },
-        {
-            "id": "trust",
-            "route": "trust",
-            "label": "Trust signals",
-            "question": "Why do people seek, endorse, and continue working with Datta?",
-            "summary": "Demand, manager and colleague observations, purpose-first mentorship, recognition artifacts, and one privacy-safe cross-context trust bridge.",
-            "claim_ids": [
-                "claim-connect-demand-share",
-                "claim-2020-mentoring-method",
-                "claim-2023-purpose-first-mentoring",
-                "claim-2025-executive-influence-observation",
-                "claim-2025-cross-boundary-leadership",
-                "claim-2021-cto-recognition",
-                "claim-sutra-delivery-recognition",
-                "claim-professional-community-trust-bridge",
-                "claim-strengths-later-observation-concordance",
-                "claim-feedback-to-executive-observation",
-                "claim-title-independent-leadership-continuity",
-            ],
-        },
-        {
-            "id": "innovation",
-            "route": "innovation",
-            "label": "Innovation with controls",
-            "question": "How does innovation move from invention to responsible AI execution?",
-            "summary": "Public invention proof, a quality-before-AI lineage, initiative-level AI delivery, and strict separation from portfolio-level potential estimates.",
-            "claim_ids": [
-                "claim-2010-first-patent-achievement",
-                "claim-public-patent-record",
-                "claim-2017-process-delivery-recognition",
-                "claim-2020-quality-speed-framing",
-                "claim-session-ai-feedback",
-                "claim-xite-potential-hours",
-                "claim-xite-potential-efficiency",
-                "claim-sutra-traceability",
-                "claim-sutra-ai-delivery",
-                "claim-sutra-delivery-recognition",
-                "claim-quality-before-ai-lineage",
-            ],
-        },
-        {
-            "id": "learning",
-            "route": "learning",
-            "label": "Learning laboratory",
-            "question": "What do participants take away, and what do they still ask to improve?",
-            "summary": "Corrected feedback populations, transparent units, explicitly classified participant fields, and a visible adaptation tension.",
-            "claim_ids": [
-                "claim-session-post-datasets",
-                "claim-session-post-responses",
-                "claim-session-rating-observations",
-                "claim-session-qualitative-entries",
-                "claim-session-audience-surveys",
-                "claim-session-ai-feedback",
-                "claim-session-dora-feedback",
-                "claim-student-feedback-coverage",
-                "claim-student-presenter-ratings",
-                "claim-student-recommendation-likelihood",
-                "claim-student-takeaway-interview-resilience-2017",
-                "claim-student-takeaway-uncertainty-2020",
-                "claim-2019-practical-feedback-request",
-                "claim-2024-practical-ai-takeaway",
-                "claim-2026-hands-on-depth-request",
-                "claim-feedback-adaptation-tension",
-                "claim-topic-frontier-teaching-continuity",
-            ],
-        },
-        {
-            "id": "community",
-            "route": "community",
-            "label": "Community and service",
-            "question": "What continues when there is no employer mandate?",
-            "summary": "Teaching, direct service, an education-material program with privacy-safe financial aggregates, and explicit disclosure of every unrecorded year.",
-            "claim_ids": [
-                "claim-community-talks-reach",
-                "claim-student-feedback-coverage",
-                "claim-student-presenter-ratings",
-                "claim-student-recommendation-likelihood",
-                "claim-student-takeaway-interview-resilience-2017",
-                "claim-student-takeaway-uncertainty-2020",
-                "claim-community-service-photo-record",
-                "claim-book-program-total",
-                "claim-book-program-growth",
-                "claim-service-continuity-and-growth",
-                "claim-professional-community-trust-bridge",
-            ],
-        },
-        {
-            "id": "data-room",
-            "route": "data-room",
-            "label": "Data room",
-            "question": "Can every statement, relationship, calculation, and limitation be audited?",
-            "summary": "The complete claim catalog plus stable source IDs, hashes, approved excerpts, access states, methods, conflicts, quality gaps, and openable public links where available.",
-            "claim_ids": all_claim_ids,
-        },
+            "id": page_id,
+            "route": page_id,
+            "label": label,
+            **EXECUTIVE_SEMANTICS["page_copy"][page_id],
+            "claim_ids": claims_by_page[page_id],
+        }
+        for page_id, label in PAGE_LABELS.items()
     ]
 
 
@@ -2734,8 +4401,17 @@ def _conflicts() -> list[dict[str, Any]]:
             "status": "resolved_by_versioned_recalculation",
             "severity": "material",
             "description": "A historical portfolio assertion used 90 unique files and 1,183 response rows as a session-feedback headline, which included two pre-session audience surveys. The corrected narrative now records that prior error explicitly.",
-            "source_ids": ["source-session-corrected-narrative-2026", "source-session-response-corpus-2018-2026", "source-session-corrected-summary-2026"],
-            "affected_claim_ids": ["claim-session-post-datasets", "claim-session-post-responses", "claim-session-qualitative-entries", "claim-session-audience-surveys"],
+            "source_ids": [
+                "source-session-corrected-narrative-2026",
+                "source-session-response-corpus-2018-2026",
+                "source-session-corrected-summary-2026",
+            ],
+            "affected_claim_ids": [
+                "claim-session-post-datasets",
+                "claim-session-post-responses",
+                "claim-session-qualitative-entries",
+                "claim-session-audience-surveys",
+            ],
             "resolution": "Version 1 of the public method excludes two duplicate files, reports two pre-session surveys separately, and labels the remaining 88 records as post-event/interaction analysis files rather than facilitated sessions.",
         },
         {
@@ -2744,7 +4420,11 @@ def _conflicts() -> list[dict[str, Any]]:
             "status": "resolved_by_unit_definition",
             "severity": "material",
             "description": "The historical 2,296 figure counts question-level rating observations across all 92 extracted source files. The post-event/interaction analysis population contains 2,149 rating observations; 221 is the number of question-level aggregates, not observations.",
-            "source_ids": ["source-session-corrected-narrative-2026", "source-session-corrected-summary-2026", "source-session-response-corpus-2018-2026"],
+            "source_ids": [
+                "source-session-corrected-narrative-2026",
+                "source-session-corrected-summary-2026",
+                "source-session-response-corpus-2018-2026",
+            ],
             "affected_claim_ids": ["claim-session-rating-observations"],
             "resolution": "The public claim names the population and unit together and publishes the formula: sum ratings[*].count over the 88-file analysis population.",
         },
@@ -2754,7 +4434,10 @@ def _conflicts() -> list[dict[str, Any]]:
             "status": "resolved_by_label_correction",
             "severity": "moderate",
             "description": "The inclusive recorded-year range 2018–2026 contains nine calendar years, while a historical narrative labeled it eight years.",
-            "source_ids": ["source-session-corrected-narrative-2026", "source-session-response-corpus-2018-2026"],
+            "source_ids": [
+                "source-session-corrected-narrative-2026",
+                "source-session-response-corpus-2018-2026",
+            ],
             "affected_claim_ids": ["claim-session-post-datasets"],
             "resolution": "The portfolio uses the date range 2018–2026 and does not publish the historical eight-year label.",
         },
@@ -2764,7 +4447,11 @@ def _conflicts() -> list[dict[str, Any]]:
             "status": "resolved_by_population_separation",
             "severity": "moderate",
             "description": "Historical category headlines reported 24 AI/GenAI files and 12 DORA files. After pre-session surveys are separated, the post-event/interaction population contains 23 AI/GenAI files and 11 DORA files.",
-            "source_ids": ["source-session-corrected-narrative-2026", "source-session-corrected-summary-2026", "source-session-response-corpus-2018-2026"],
+            "source_ids": [
+                "source-session-corrected-narrative-2026",
+                "source-session-corrected-summary-2026",
+                "source-session-response-corpus-2018-2026",
+            ],
             "affected_claim_ids": ["claim-session-ai-feedback", "claim-session-dora-feedback"],
             "resolution": "Category counts now use only the 88-file analysis population and are labeled filename-pattern-derived file counts, not distinct session counts.",
         },
@@ -2784,7 +4471,10 @@ def _conflicts() -> list[dict[str, Any]]:
             "status": "claim_withheld",
             "severity": "material",
             "description": "A historical narrative described the JSCPD pair as proof of measurable code improvement, but the committed extract has unmatched before and after populations and no shared outcome measure.",
-            "source_ids": ["source-session-corrected-narrative-2026", "source-session-response-corpus-2018-2026"],
+            "source_ids": [
+                "source-session-corrected-narrative-2026",
+                "source-session-response-corpus-2018-2026",
+            ],
             "affected_claim_ids": [],
             "resolution": "The corrected narrative states the limitation, and this portfolio publishes no causal JSCPD improvement claim.",
         },
@@ -2828,7 +4518,7 @@ def build_portfolio_data(root: Path = REPO_ROOT) -> dict[str, Any]:
     relationships = _relationships(claims)
     data: dict[str, Any] = {
         "meta": {
-            "schema_version": 2,
+            "schema_version": 3,
             "title": "Datta — leadership, with receipts",
             "subtitle": "An interactive executive portfolio in three depths: summary, explanation, and auditable detail.",
             "generated_at": AS_OF,
@@ -2836,11 +4526,28 @@ def build_portfolio_data(root: Path = REPO_ROOT) -> dict[str, Any]:
             "publication_contract": "Every claim has claim-specific support. Every calculated or interpreted claim has a versioned method. Private sources expose only a stable ID, access state, approved excerpt, hash, and safe locator.",
             "depth_model": [
                 {"level": 1, "label": "Summary", "description": "Decision-ready claim and metric."},
-                {"level": 2, "label": "Explanation", "description": "Scope, attribution, confidence, and relationship reasoning."},
-                {"level": 3, "label": "Detail", "description": "Source support edges, locators, method inputs, conflicts, caveats, and public links."},
+                {
+                    "level": 2,
+                    "label": "Explanation",
+                    "description": "Leadership meaning and the bounded evidence signal.",
+                },
+                {
+                    "level": 3,
+                    "label": "Detail",
+                    "description": "Source records, locators, method inputs, scope definitions, reconciliation context, and public links.",
+                },
             ],
         },
-        "pages": _pages(claims),
+        "executive_semantics": json.loads(json.dumps(EXECUTIVE_SEMANTICS, ensure_ascii=False)),
+        "pages": _pages(),
+        "story_blocks": [
+            {
+                **block,
+                "folded_claim_ids": list(block["folded_claim_ids"]),
+            }
+            for block in STORY_BLOCKS
+        ],
+        "audit_only_claim_ids": list(AUDIT_ONLY_CLAIM_IDS),
         "claims": claims,
         "supports": supports,
         "sources": _sources(root),
@@ -2852,7 +4559,9 @@ def build_portfolio_data(root: Path = REPO_ROOT) -> dict[str, Any]:
             "summary": "The portfolio is a curated publication layer over a larger private corpus. It exposes corrected units, source conflicts, selection limits, privacy boundaries, and current export gaps rather than hiding them.",
             "coverage": {
                 "evidence_markdown_files": inventory["evidence_markdown"],
-                "individual_evidence_records_excluding_indexes": inventory["individual_evidence_records"],
+                "individual_evidence_records_excluding_indexes": inventory[
+                    "individual_evidence_records"
+                ],
                 "informal_feedback_records_excluding_index": inventory["informal_feedback_records"],
                 "documentary_images": inventory["documentary_images"],
                 "records_with_yaml_frontmatter": inventory["frontmatter_records"],
@@ -2888,11 +4597,26 @@ def build_portfolio_data(root: Path = REPO_ROOT) -> dict[str, Any]:
                 },
             ],
             "unit_dictionary": [
-                {"unit": "analysis file", "definition": "One non-duplicate, non-pre-survey workbook extract in the operational post-event/interaction population; not necessarily one facilitated session."},
-                {"unit": "response row", "definition": "One submitted spreadsheet row; not necessarily a unique person or attendee."},
-                {"unit": "rating observation", "definition": "One response to one rating question; one response row may contribute multiple observations."},
-                {"unit": "qualitative entry", "definition": "One populated qualitative field value; one response row may contribute multiple entries."},
-                {"unit": "participant instance", "definition": "An approximate attendance touchpoint in a first-party activity ledger; not a unique person."},
+                {
+                    "unit": "analysis file",
+                    "definition": "One non-duplicate, non-pre-survey workbook extract in the operational post-event/interaction population; not necessarily one facilitated session.",
+                },
+                {
+                    "unit": "response row",
+                    "definition": "One submitted spreadsheet row; not necessarily a unique person or attendee.",
+                },
+                {
+                    "unit": "rating observation",
+                    "definition": "One response to one rating question; one response row may contribute multiple observations.",
+                },
+                {
+                    "unit": "qualitative entry",
+                    "definition": "One populated qualitative field value; one response row may contribute multiple entries.",
+                },
+                {
+                    "unit": "participant instance",
+                    "definition": "An approximate attendance touchpoint in a first-party activity ledger; not a unique person.",
+                },
             ],
             "conflict_ids": [conflict["id"] for conflict in conflicts],
             "privacy_boundary": "Raw participant rows, internal URLs, emails, local paths, identities in financial records, individual contribution amounts, account data, and private corporate payloads are not published.",
@@ -2914,7 +4638,10 @@ def validate_portfolio_data(data: dict[str, Any]) -> None:
     """Fail closed if the browser bundle loses traceability or leaks private detail."""
     required = {
         "meta",
+        "executive_semantics",
         "pages",
+        "story_blocks",
+        "audit_only_claim_ids",
         "claims",
         "supports",
         "sources",
@@ -2929,6 +4656,7 @@ def validate_portfolio_data(data: dict[str, Any]) -> None:
         raise ValueError(f"Missing top-level portfolio collections: {sorted(missing)}")
 
     page_ids = _unique_ids(data["pages"], "page")
+    story_block_ids = _unique_ids(data["story_blocks"], "story block")
     claim_ids = _unique_ids(data["claims"], "claim")
     support_ids = _unique_ids(data["supports"], "support")
     source_ids = _unique_ids(data["sources"], "source")
@@ -2939,6 +4667,7 @@ def validate_portfolio_data(data: dict[str, Any]) -> None:
 
     all_primary_ids = (
         page_ids
+        | story_block_ids
         | claim_ids
         | support_ids
         | source_ids
@@ -2951,6 +4680,7 @@ def validate_portfolio_data(data: dict[str, Any]) -> None:
         len(collection)
         for collection in (
             data["pages"],
+            data["story_blocks"],
             data["claims"],
             data["supports"],
             data["sources"],
@@ -2967,6 +4697,14 @@ def validate_portfolio_data(data: dict[str, Any]) -> None:
     support_by_id = {support["id"]: support for support in data["supports"]}
     method_by_id = {method["id"]: method for method in data["methods"]}
 
+    expected_page_ids = set(PAGE_LABELS)
+    if page_ids != expected_page_ids:
+        raise ValueError(
+            f"Portfolio pages must match the executive IA: {sorted(expected_page_ids)}"
+        )
+    if set(data["executive_semantics"].get("page_copy", {})) != page_ids:
+        raise ValueError("Executive page copy must resolve exactly to the portfolio pages")
+
     page_routes = [page["route"] for page in data["pages"]]
     if len(page_routes) != len(set(page_routes)):
         raise ValueError("Page routes must be unique")
@@ -2978,7 +4716,97 @@ def validate_portfolio_data(data: dict[str, Any]) -> None:
             raise ValueError(f"Page {page['id']} references unknown claims: {sorted(unknown)}")
     mapped_claims = {claim_id for page in data["pages"] for claim_id in page["claim_ids"]}
     if mapped_claims != claim_ids:
-        raise ValueError(f"Every claim must appear on a page; unmapped: {sorted(claim_ids - mapped_claims)}")
+        raise ValueError(
+            f"Every claim must appear on a page; unmapped: {sorted(claim_ids - mapped_claims)}"
+        )
+
+    audit_only_claim_ids = data["audit_only_claim_ids"]
+    if len(audit_only_claim_ids) != len(set(audit_only_claim_ids)):
+        raise ValueError("Audit-only claim IDs must not repeat")
+    if tuple(audit_only_claim_ids) != AUDIT_ONLY_CLAIM_IDS:
+        raise ValueError("Audit-only claims must match the four approved audit records")
+    if set(audit_only_claim_ids) - claim_ids:
+        raise ValueError("Audit-only claims reference an unknown claim")
+
+    blocks_by_page: dict[str, list[dict[str, Any]]] = {page_id: [] for page_id in page_ids}
+    story_claim_owners: list[str] = []
+    banned_title_pattern = re.compile(
+        r"\b(?:not|gaps?|confidence|rows?|files?|ledger)\b", re.IGNORECASE
+    )
+    for block in data["story_blocks"]:
+        page_id = block.get("page_id")
+        if page_id not in page_ids:
+            raise ValueError(f"Story block references an unknown page: {block['id']}")
+        if page_id == "data-room":
+            raise ValueError("Data room must not contain story blocks")
+        if banned_title_pattern.search(block.get("title", "")):
+            raise ValueError(f"Story block title contains banned language: {block['id']}")
+        if not all(block.get(field, "").strip() for field in ("title", "meaning", "proof")):
+            raise ValueError(f"Story block lacks executive copy: {block['id']}")
+
+        primary_claim_id = block.get("primary_claim_id")
+        folded_claim_ids = block.get("folded_claim_ids")
+        if primary_claim_id not in claim_ids:
+            raise ValueError(f"Story block references an unknown primary claim: {block['id']}")
+        if not isinstance(folded_claim_ids, list):
+            raise ValueError(f"Story block folded claims must be a list: {block['id']}")
+        if set(folded_claim_ids) - claim_ids:
+            raise ValueError(f"Story block references an unknown folded claim: {block['id']}")
+        if primary_claim_id in folded_claim_ids or len(folded_claim_ids) != len(
+            set(folded_claim_ids)
+        ):
+            raise ValueError(f"Story block repeats a claim: {block['id']}")
+        if not claim_by_id[primary_claim_id]["support_ids"]:
+            raise ValueError(f"Story block primary claim has no support: {block['id']}")
+        image_source_id = block.get("image_source_id")
+        if image_source_id and image_source_id not in source_ids:
+            raise ValueError(f"Story block references an unknown image source: {block['id']}")
+
+        blocks_by_page[page_id].append(block)
+        story_claim_owners.extend([primary_claim_id, *folded_claim_ids])
+
+    for page_id in page_ids - {"data-room"}:
+        block_count = len(blocks_by_page[page_id])
+        if not 2 <= block_count <= 4:
+            raise ValueError(
+                f"Page {page_id} must contain two to four story blocks, found {block_count}"
+            )
+    if blocks_by_page["data-room"]:
+        raise ValueError("Data room must not contain story blocks")
+
+    duplicate_story_claims = sorted(
+        claim_id for claim_id, count in Counter(story_claim_owners).items() if count > 1
+    )
+    if duplicate_story_claims:
+        raise ValueError(
+            f"Claims cannot be owned by multiple story blocks: {duplicate_story_claims}"
+        )
+    audit_only_set = set(audit_only_claim_ids)
+    if set(story_claim_owners) & audit_only_set:
+        raise ValueError("Audit-only claims cannot be assigned to story blocks")
+    expected_story_claims = claim_ids - audit_only_set
+    if set(story_claim_owners) != expected_story_claims:
+        raise ValueError(
+            "Every non-audit claim must be assigned exactly once across story blocks; "
+            f"unassigned: {sorted(expected_story_claims - set(story_claim_owners))}"
+        )
+
+    page_claims = {page["id"]: page["claim_ids"] for page in data["pages"]}
+    for page_id, blocks in blocks_by_page.items():
+        expected_claims = (
+            list(audit_only_claim_ids)
+            if page_id == "data-room"
+            else [
+                claim_id
+                for block in blocks
+                for claim_id in [
+                    block["primary_claim_id"],
+                    *block["folded_claim_ids"],
+                ]
+            ]
+        )
+        if page_claims[page_id] != expected_claims:
+            raise ValueError(f"Page claim ownership diverges from story blocks: {page_id}")
 
     valid_kinds = {"observed", "calculated", "interpreted"}
     valid_confidence = {"high", "supported", "limited", "contested"}
@@ -3036,9 +4864,7 @@ def validate_portfolio_data(data: dict[str, Any]) -> None:
             raise ValueError(f"Source lacks a SHA-256 digest: {source['id']}")
         if source.get("checksum_scope") != "held_canonical_artifact":
             raise ValueError(f"Source checksum scope is missing or invalid: {source['id']}")
-        if not isinstance(source.get("checksum_note"), str) or not source[
-            "checksum_note"
-        ].strip():
+        if not isinstance(source.get("checksum_note"), str) or not source["checksum_note"].strip():
             raise ValueError(f"Source checksum note is missing: {source['id']}")
         if source["access_state"] not in {
             "public_external",
@@ -3054,12 +4880,11 @@ def validate_portfolio_data(data: dict[str, Any]) -> None:
         url = source.get("external_url")
         if source["access_state"] == "public_external" and not url:
             raise ValueError(f"Public external source lacks a URL: {source['id']}")
-        if source["access_state"] == "public_external" and "not live external page content" not in source[
-            "checksum_note"
-        ]:
-            raise ValueError(
-                f"Public external source checksum note is ambiguous: {source['id']}"
-            )
+        if (
+            source["access_state"] == "public_external"
+            and "not live external page content" not in source["checksum_note"]
+        ):
+            raise ValueError(f"Public external source checksum note is ambiguous: {source['id']}")
         if url:
             parsed = urlparse(url)
             if (
@@ -3121,26 +4946,25 @@ def validate_portfolio_data(data: dict[str, Any]) -> None:
         if not conflict["resolution"]:
             raise ValueError(f"Conflict lacks a resolution: {conflict['id']}")
 
-    referenced_sources = {
-        support["source_id"] for support in data["supports"]
-    } | {
-        item["source_id"]
-        for method in data["methods"]
-        for item in method["inputs"]
-        if item.get("source_id")
-    } | {
-        source_id for conflict in data["conflicts"] for source_id in conflict["source_ids"]
-    } | {
-        gap["source_id"] for gap in data["data_quality"]["export_gaps"]
-    }
+    referenced_sources = (
+        {support["source_id"] for support in data["supports"]}
+        | {
+            item["source_id"]
+            for method in data["methods"]
+            for item in method["inputs"]
+            if item.get("source_id")
+        }
+        | {source_id for conflict in data["conflicts"] for source_id in conflict["source_ids"]}
+        | {gap["source_id"] for gap in data["data_quality"]["export_gaps"]}
+    )
     if referenced_sources != source_ids:
         raise ValueError(
             f"Every public source must be used; unused: {sorted(source_ids - referenced_sources)}"
         )
 
-    used_methods = {
-        claim["method_id"] for claim in data["claims"] if claim.get("method_id")
-    } | {relationship["method_id"] for relationship in data["relationships"]}
+    used_methods = {claim["method_id"] for claim in data["claims"] if claim.get("method_id")} | {
+        relationship["method_id"] for relationship in data["relationships"]
+    }
     if used_methods != method_ids:
         raise ValueError(f"Every method must be used; unused: {sorted(method_ids - used_methods)}")
 

@@ -646,7 +646,7 @@ The 2026-08-06 export contains 3,471 nodes, 17,190 edges, 25,767 DuckDB chunks, 
 
 ---
 
-## 8. Claim-Centric Public Portfolio Dataset
+## 8. Claim-Centric Public Portfolio Dataset (Archived Schema v2)
 
 `scripts/build_portfolio_data.py` deterministically compiles reviewed evidence and committed aggregates into `viz/src/data/portfolio.json`. It is a publication compiler rather than a general graph export: only explicit claims, approved source capsules, bounded methods, declared conflicts, and editorially reviewed longitudinal relationships cross the boundary.
 
@@ -729,3 +729,86 @@ The public builder rejects output unless:
 `portfolio-model.ts` imports the JSON and provides typed indexes plus hash-route helpers. `App.tsx` binds nine primary routes and Level 3 `claim`, `source`, and `method` routes. `PortfolioPages.tsx` supplies question-specific Level 1/2 compositions, an explicit Relationship Lab, participant voice/criticism, and the Data Room. `DetailPages.tsx` resolves proof trails and methods. `EvidenceUI.tsx` supplies the global Narrative/Proof/Method/Gaps lens and shared evidence components. `evidence-assets.ts` is the reviewed documentary-media allowlist; Vite's disabled `publicDir` prevents any unimported raw artifact from entering the build.
 
 The prior `journey.json` contract remains versioned for regression history. No active component imports it.
+
+---
+
+## 9. Schema-v3 Story Layer (Current)
+
+Schema v3 retains every canonical claim/source/support/method/relationship record described above and adds an executive presentation layer. It changes ownership and rendering, not the underlying evidence.
+
+### 9.1 Top-level additions and route contract
+
+```json
+{
+  "meta": {"schema_version": 3},
+  "executive_semantics": {},
+  "pages": [],
+  "story_blocks": [],
+  "audit_only_claim_ids": [],
+  "claims": [],
+  "supports": [],
+  "sources": [],
+  "methods": [],
+  "relationships": [],
+  "caveats": [],
+  "conflicts": [],
+  "data_quality": {}
+}
+```
+
+The eight ordered page IDs are `brief`, `leadership`, `journey`, `trust`, `innovation`, `learning`, `community`, and `data-room`. The route parser treats `impact` as a compatibility alias for `innovation`; no Impact page record or story-block owner exists.
+
+### 9.2 Story-block record
+
+```json
+{
+  "id": "innovation-controlled-ai",
+  "page_id": "innovation",
+  "title": "AI delivery accelerated with engineered control",
+  "meaning": "Current AI execution combines development speed, traceability, automated quality gates, and organizational delivery recognition.",
+  "proof": "3× team-reported development speed, commit-level quality gates, and 90%+ traceability improvement.",
+  "primary_claim_id": "claim-sutra-ai-delivery",
+  "folded_claim_ids": [
+    "claim-sutra-traceability",
+    "claim-sutra-delivery-recognition",
+    "claim-2015-quality-discipline",
+    "claim-2020-quality-speed-framing"
+  ]
+}
+```
+
+`image_source_id` is optional and must resolve to an allowlisted documentary source. A primary claim supplies the stable Inspect Claim route. Folded claims remain canonical, searchable through their owner block, and visible inside that claim dossier; they do not create another executive card.
+
+The current projection contains 23 blocks distributed as Brief 4, Leadership 3, Journey 4, Trust 3, Innovation & Value 3, Learning 4, and Community & Service 2. Those blocks own 51 claims exactly once. The four IDs in `audit_only_claim_ids` are:
+
+- `claim-evidence-corpus-coverage`
+- `claim-export-embedding-gap`
+- `claim-export-provenance-gap`
+- `claim-professional-community-trust-bridge`
+
+### 9.3 Executive semantics
+
+`executive_semantics` centralizes presentation-safe language rather than duplicating it in components. It contains the portfolio thesis, page question/summary copy, evidence-depth labels, actions, factual evidence-basis labels, and source-access labels. The active depth labels are **Executive signal**, **Why this matters**, **Evidence**, **How this was derived**, and **Scope & definitions**. There is no global Gaps mode or public confidence label.
+
+### 9.4 Builder validation
+
+In addition to the schema-v2 integrity and privacy checks, the compiler rejects schema-v3 output unless:
+
+- the eight-page order is exact and Data Room is last;
+- every story block resolves its page, primary claim, folded claims, and optional image source;
+- narrative pages contain between two and four blocks and Data Room contains none;
+- each of the 55 claims appears exactly once across primary, folded, or audit-only ownership;
+- all 51 featured claims have source support;
+- Data Room's claim list equals `audit_only_claim_ids` and featured claims do not leak into that list;
+- story titles avoid internal/audit-first vocabulary and repeated initiative naming; and
+- deterministic regeneration matches committed `portfolio.json`.
+
+### 9.5 React binding
+
+`PortfolioPages.tsx` renders `storyBlocksForPage(page)` through one portrait-bearing page hero and a compact story grid. Trust and Learning add at most two selected voices after their blocks. `DetailPages.tsx` maps a primary claim back to its owner block and resolves folded claims into deduplicated evidence, method, and scope disclosures. Source details enumerate direct-claim, method-input, and reconciliation usage so the traceability path works in both directions. `portfolio-model.ts` derives `storyClaimIds`, `storySourceIds`, and `storyMethodIds`; the Data Room and all direct detail routes use those publication sets, while audit-only hashes receive a generic missing-record view with no raw identifier. `App.tsx` uses the same sets for safe document titles and has no lens state or global mode control. `EvidenceUI.tsx` supplies source/method primitives, not public confidence or caveat cards.
+
+The Data Room returns curated `story_blocks` and a 34-record source closure only after a query, filter, or explicit browse action. The closure is the union of direct story-claim support sources, documentary image sources, source inputs to story-linked methods, and reconciliation sources for story-claim conflicts. Sixteen story-linked methods and ten story-linked relationships render inside collapsed `<details>` elements. Clear results resets query, browse, access, and grade state in one action. An `AI` search is regression-tested in the browser to return five conclusions and three source records rather than a raw claim wall.
+
+### 9.6 Verification baseline
+
+The 2026-08-07 schema-v3 baseline passed all seven repository checks: Ruff lint/format, mypy, 274 tests with 2 skips, TypeScript, Vite production build, and public-bundle privacy validation. All eight routes at 390 px satisfied `scrollWidth <= innerWidth`; mobile copy precedes the compact portrait; audit-only direct hashes revealed no audit copy; and desktop/mobile screenshots were reviewed. Axe WCAG A/AA checks on the Brief and Inspect Claim each reported zero violations, with gradient-background contrast retained for manual review.

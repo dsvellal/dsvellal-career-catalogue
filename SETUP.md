@@ -106,7 +106,9 @@ Regenerate and validate the claim-centric public projection:
 
 The builder reads committed source records, recomputes bounded metrics, and validates:
 
-- exactly nine primary page records and stable human-readable claim/source/method IDs;
+- schema version 3 with exactly eight primary page records; legacy `impact` is a router alias for Innovation & Value, not a page record;
+- exactly 23 story blocks and exact ownership of all 55 claims: 51 assigned once as primary/folded story evidence and 4 audit-only;
+- two to four one-impact blocks on every narrative page, no story blocks in Data Room, and complete page/claim/image-source references;
 - a support edge and source record for every public claim;
 - method records for calculated and interpreted claims;
 - explicit endpoint claims, support, confidence, method/reasoning, and limitation for every longitudinal relationship;
@@ -126,7 +128,9 @@ npm run build
 npx tsc --noEmit
 ```
 
-The default development URL is `http://localhost:5173/#/brief`. Page routes and Level 3 records use stable hashes such as `#/trust`, `#/claim/<id>`, `#/source/<id>`, and `#/method/<id>`. `publicDir` is disabled, so production builds must import approved assets explicitly. The output must not contain raw `data/evidence/`, `data/exports/relationships/`, local paths, or internal URLs.
+The default development URL is `http://localhost:5173/#/brief`. The eight primary routes are `brief`, `leadership`, `journey`, `trust`, `innovation`, `learning`, `community`, and `data-room`; `#/impact` redirects to `#/innovation`. Story-linked detail records use stable hashes such as `#/claim/<id>`, `#/source/<id>`, and `#/method/<id>`; audit-only hashes resolve to a generic Data Room invitation without rendering the identifier or audit copy. Every primary route renders the shared portrait hero, with summary-first ordering on mobile. `publicDir` is disabled, so production builds must import approved assets explicitly. The output must not contain raw `data/evidence/`, `data/exports/relationships/`, local paths, or internal URLs.
+
+The active UI has no global evidence lens. Use **Inspect claim** to review Why this matters, Evidence behind it, How it was derived, and Scope & definitions, including the story block's folded claims. Data Room searches curated conclusions and story-supporting sources; story-linked calculation methods and relationships are collapsed until requested.
 
 Verify both derived-data pipelines with:
 
@@ -137,6 +141,14 @@ Verify both derived-data pipelines with:
   tests/test_build_journey_data.py \
   tests/test_export_relationships.py -q
 ```
+
+Run the complete repository gate before publication:
+
+```bash
+./scripts/check.sh lint types test frontend
+```
+
+The 2026-08-07 schema-v3 baseline passes all seven checks with 274 tests passing and 2 skipped, a successful production build, and an accepted public-bundle privacy scan. Browser validation covers all eight routes at 390 px without horizontal overflow plus zero automated WCAG A/AA violations on the Brief and Inspect Claim; gradient-background contrast remains a manual review item.
 
 ---
 

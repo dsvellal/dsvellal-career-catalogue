@@ -25,27 +25,30 @@
 
 **Purpose:** Dynamic, always-current professional portfolio.
 
-**Executive-question routes (compiled from evidence):**
+**Current executive-question routes (schema v3):**
 
 1. Brief — what is the executive thesis and strongest bounded proof?
-2. Leadership System — how does Datta turn credibility into capability and change?
+2. Leadership — how does Datta lead across levels, functions, and formal boundaries?
 3. Journey — how did responsibility, context, and contribution develop over time?
-4. Impact — what changed, at what scale, and with what attribution?
-5. Trust — why do colleagues, leaders, and participants voluntarily seek or recommend him?
-6. Innovation — how does he adopt emerging technology while protecting quality and governance?
-7. Learning & Multiplication — what do participants take away and how does expertise spread?
-8. Community & Service — what values persist outside formal role or employer?
-9. Data Room — which claims, methods, sources, corrections, gaps, and privacy boundaries underlie the narrative?
+4. Trust — why do colleagues voluntarily seek his counsel and trust his leadership?
+5. Innovation & Value — how does emerging technology become governed execution and explicit opportunity?
+6. Learning — what do participants value and carry forward?
+7. Community & Service — how does value continue beyond formal responsibility?
+8. Data Room — how can every featured conclusion be traced?
+
+The former generic Impact route is intentionally absent: its evidence is owned by the route where the outcome has meaning. A compatibility redirect sends `#/impact` to Innovation & Value.
 
 **Progressive depth:**
 
-- Level 1 is a concise executive answer with exact unit, scope, period, attribution, confidence, source count, and a visible caveat.
-- Level 2 is an explanation dossier with mechanism, breakdown, supporting and counterbalancing evidence, related claims, and “show your work” controls.
-- Level 3 is a stable claim, source, or method record with approved excerpt/media, locator, held-artifact checksum scope/note, formula/rubric, and privacy/access status. A public external URL remains independently openable; the checksum does not purport to fingerprint mutable live-page content.
+- Level 1 is a concise page thesis plus three or four story blocks. Each block owns one impact heading, one meaning sentence, one bounded evidence signal, and one evidence action.
+- Level 2 begins at **Inspect claim**, which combines why the conclusion matters with all folded supporting conclusions and deduplicated evidence.
+- Level 3 remains within the same record through derivation, scope/evidence context, stable source capsules, approved excerpt/media, locator, held-artifact checksum scope/note, formula/rubric, and privacy/access status. A public external URL remains independently openable; the checksum does not purport to fingerprint mutable live-page content.
 
-**Tech:** Static React/Vite site built from one deterministic claim-centric `portfolio.json` projection. Every page and Level 3 record has a stable hash deep link. The raw relationship export and evidence archive are local-only inputs and are not copied into the build.
+**Tech:** Static React/Vite site built from one deterministic schema-v3 `portfolio.json` projection. Twenty-three story blocks own 51 featured claims exactly once, with four claims reserved for audit. Every page and detail record has a stable hash deep link. The raw relationship export and evidence archive are local-only inputs and are not copied into the build.
 
-**Presentation rule:** Lead with a bounded conclusion, then let the visitor increase depth without losing context. Interpreted relationships use only explicit endpoints and visibly carry their non-causal limitations. Counterevidence, critique, corrections, and corpus gaps are first-class rather than hidden in fine print.
+**Presentation rule:** Lead with positive meaning, then let the visitor increase depth without losing context. Do not expose a global Narrative/Proof/Method/Gaps switch, confidence label, caveat badge, or inventory count on the executive surface. Keep interpretation boundaries, attribution, reconciliation, and explicit non-causal relationship reasoning intact inside Inspect Claim and source/method records.
+
+Every primary route uses one portrait-bearing hero plus the compact global identity thumbnail. On mobile, the page answer appears before a smaller portrait. The Data Room searches the 23 curated conclusions and a 34-source closure that preserves direct support, method-input, documentary, and reconciliation lineage; 16 story-linked methods and 10 relationships begin collapsed. Audit-only records remain in the compiled contract while browse, search, and direct public hashes are restricted to the story publication sets. Mobile must preserve the same depth without horizontal overflow.
 
 ### 1.3 Resume Generator
 

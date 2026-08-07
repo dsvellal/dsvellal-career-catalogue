@@ -1,5 +1,3 @@
-export type EvidenceLens = 'narrative' | 'proof' | 'method' | 'gaps'
-
 export type ClaimKind = 'observed' | 'calculated' | 'interpreted'
 export type ConfidenceLevel = 'high' | 'supported' | 'limited' | 'contested'
 export type SupportRelationship = 'supports' | 'qualifies' | 'contradicts' | 'context'
@@ -26,6 +24,38 @@ export interface PortfolioPage {
   question: string
   summary: string
   claim_ids: string[]
+}
+
+export interface PortfolioStoryBlock {
+  id: string
+  page_id: string
+  title: string
+  meaning: string
+  proof: string
+  primary_claim_id: string
+  folded_claim_ids: string[]
+  image_source_id?: string
+}
+
+export interface PortfolioExecutiveSemantics {
+  portfolio_thesis: string
+  levels: {
+    summary: string
+    narrative: string
+    proof: string
+    method: string
+    context: string
+  }
+  actions: {
+    inspect_claim: string
+    open_source: string
+    open_public_source: string
+    view_method: string
+    search_data_room: string
+  }
+  evidence_basis: Record<SourceGrade, string>
+  source_access: Record<SourceAccessState, string>
+  page_copy: Record<string, Pick<PortfolioPage, 'question' | 'summary'>>
 }
 
 export interface ClaimMetric {
@@ -152,7 +182,10 @@ export interface DataQuality {
 
 export interface PortfolioData {
   meta: PortfolioMeta
+  executive_semantics: PortfolioExecutiveSemantics
   pages: PortfolioPage[]
+  story_blocks: PortfolioStoryBlock[]
+  audit_only_claim_ids: string[]
   claims: PortfolioClaim[]
   supports: PortfolioSupport[]
   sources: PortfolioSource[]
