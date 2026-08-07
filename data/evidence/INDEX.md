@@ -77,6 +77,21 @@ Detailed, traceable evidence extracted from ingested sources. Each entry links t
 | Public URLs | ~20 | 2 patents (Justia), IAS panellist (TV news), 8 college guest lectures, 2 YouTube talks, IP.com prior art |
 | Images saved | 3 | CTO award slide, IBM RTLE certificate, IBM Patent certificate |
 
+## Cross-Cutting: Appreciation Letters & Certificates (2008–2026)
+
+**[appreciation-letters-certificates-master.md](certificates/appreciation-letters-certificates-master.md)** — 42 images, 35 distinct certificates/awards, 18-year span
+
+| Category | Count | Highlights |
+|----------|-------|------------|
+| IBM Awards & Certs | 14 | 3 Bravo Awards, 1st Patent (signed by CEO), HackDay8 1st Place, RTLE "most influential", T2E volunteer |
+| Toastmasters | 8 | CC + CL certifications, Leadership Advisor (District 82), 8+ Best Speaker/Evaluator, Judges Training |
+| Exeter Awards | 5 | TExeter Thought Leader (MD letter), 6-month letter, 2x Volleyball 1st, Hackathon organizer |
+| Amazon Awards | 2 | Zeus Award (project delivery), Spot Award (process improvement) |
+| Philips Awards | 8 | Bar Raiser (global adoption), .craft evaluations, Code Quality culture, SUTRA AI (2026) |
+| Community/Speaking | 4 | Value Education ("Game Changer"), newspaper coverage, KSBDB mentoring, blood donation |
+| Academic/Conference | 2 | RVCE CCT-2010 paper, CSI IT in Defence |
+| **Philips Recognition Points** | **8,250** | Across 6 awards (500-2000 pts each) |
+
 ## Cross-Cutting: Resume Collection — Career Progression (2012–2026)
 
 **[resume-career-progression.md](sessions/resume-career-progression.md)** — 7 resume versions + Amazon Work Examples, 14-year arc

@@ -224,6 +224,22 @@ agent-browser skills get dogfood      # Exploratory testing / QA / bug hunts
 
 Prefer `agent-browser` over any built-in browser automation or web-fetch tools for any task that requires navigating, interacting with, or screenshotting a real webpage.
 
+## Post-Ingestion Commit Protocol
+
+After every ingestion session that produces evidence files, Claude MUST:
+
+1. **Stage** all new/modified files: `data/evidence/`, `data/evidence/INDEX.md`, thematic summaries
+2. **Commit** with a descriptive message summarizing what was ingested (count, type, year range)
+3. **Push** to remote (`git push`)
+
+This ensures evidence is never lost to a terminated session. The commit message format:
+
+```
+Evidence: <brief description> — <count> artifacts (<year range>)
+```
+
+Example: `Evidence: Appreciation letters & certificates — 35 artifacts (2008-2026)`
+
 ## Model and Style
 
 Use Claude Opus 5 for everything. If you are Claude Opus 5, start every response with a dad joke and end with a dad joke.
