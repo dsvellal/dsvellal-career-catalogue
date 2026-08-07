@@ -287,7 +287,7 @@ data/evidence/
 | 8 | [Technical Debt / SIG / BEQR](2019/technical-debt-sig-partnership.md) | 9 emails | External partnership, judging |
 | 9 | [Cross-BU Influence](2019/cross-bu-engagement-influence.md) | 14 emails | Organizational connector role |
 
-## 2020 — 67 emails + 64 .connect artifacts + 12 informal feedback screenshots + 1 resume ingested
+## 2020 — 67 emails + 64 .connect artifacts + 12 informal feedback screenshots + 1 resume + 7 development center assessments ingested
 
 **Full individual index:** [2020/individual/_INDEX.md](2020/individual/_INDEX.md)
 
@@ -308,6 +308,7 @@ data/evidence/
 | BEQR & Best Practices | 1 | Monthly reporting |
 | Role & Organization | 1 | Next steps engagement |
 | Informal Feedback Screenshots | 12 | CI/CD whitepaper (Jan, #180), Lombok/HSDP (Apr, 24% duplication reduction, #181), Automation Dashboards (May, #182), XLint CI gates (May, #183), PHDSI test quality (Jun, #184), IoT Super POM (Jun, #185), PSI2M cultural change (Jun, #186), .grow reverse mentoring (Jun, #187), Microservices session 100 attendees (Jul, #188), Technical Connectedness PIC 236 views (Jul, #189), HackerNoon judge (Aug, #190), Cultural Behaviour Workshop 6 peers praising (Aug, #191) |
+| Development Center Assessments | 7 | [360 Feedback](2020/individual/069a-philips-360-degree-feedback-2020.md) (all behaviors above company avg, 14 raters), [Leadership Development Report](2020/individual/069b-philips-leadership-development-report-2020.md) (10 competencies by Zircon), [BeTalent Strengths](2020/individual/069c-philips-betalent-strengths-2020.md) (top: Articulate, Meticulous, Evaluative, Genuine, Achiever), [Decision Styles](2020/individual/069d-philips-decision-styles-2020.md) (Assured 8/10, Internal 8/10), [Swift Aptitude](2020/individual/069e-philips-swift-executive-aptitude-2020.md) (62nd percentile vs Sr Mgrs), [Situation Analysis](2020/individual/069f-philips-situation-analysis-2020.md) (strategic SWOT exercise), [.craft Recognition 2000pts](2020/individual/069g-philips-recognition-team-up-craft-2019.md) |
 
 ### Thematic Summaries
 
@@ -322,7 +323,7 @@ data/evidence/
 
 **Image:** [pic-annual-awards-2020-organisational-capabilities.jpg](images/2020/pic-annual-awards-2020-organisational-capabilities.jpg)
 
-## 2021 — 3 prior artifacts + 19 .connect artifacts + 1 resume ingested
+## 2021 — 3 prior artifacts + 19 .connect artifacts + 1 resume + 1 resilience assessment ingested
 
 **Full individual index:** [2021/individual/](2021/individual/)
 
@@ -332,6 +333,7 @@ data/evidence/
 | 2 | [TDC Connections 2021 — Speaker](2021/individual/002-tdc-connections-2021-speaker.md) | 2021-06-08 | Image (certificate) | External conference speaker, "Less work, more value: shifting left", co-presented with Ian Watson & David Terol |
 | 3 | [Philips Excellence Competition — .grow Program](2021/individual/003-philips-excellence-competition-grow-2021.md) | 2021 | PDF (10 pages) | Global program touching 10,000+ employees, 6,560 community members, Bar Raiser, O'Reilly 10K licenses, JSCPD cited |
 | 44 | [Resume 2021 — Philips Competency Lead](2021/individual/044-resume-2021-philips-competency-lead.md) | 2021 | PDF (1 page) | €2.1M savings, CTO Award, defects 37→0.11, US move, 15 years exp |
+| 45 | [BeTalent Resilience Assessment](2021/individual/045-philips-resilience-assessment-2021.md) | 2021-10-08 | PDF (11 pages) | Strengths: Composed, Self-Assured, Confident. Risks: Self-Indulgent, Pessimistic, Fierce |
 
 **Images:** [outstanding-achievement-award-cto-2021.jpg](images/2021/outstanding-achievement-award-cto-2021.jpg) | [tdc-connections-2021-speaker-certificate.jpg](images/2021/tdc-connections-2021-speaker-certificate.jpg)
 
@@ -355,7 +357,7 @@ data/evidence/
 | 1 | [DevOps Pipeline — SaaS Fusion Team](2022/devops-pipeline-saas-fusion.md) | 4 emails | Architecture to Alpha, "without this fusion team couldn't have achieved", reusable CI workflows |
 | 2 | [GDP Software Track & InnerSource](2022/gdp-software-track-innersource.md) | 3 emails | Global graduate program lead, IssueOps GitHub Actions coding |
 
-## 2023 — 17 artifacts ingested (15 emails + 1 informal feedback screenshot + 1 resume)
+## 2023 — 18 artifacts ingested (15 emails + 1 informal feedback screenshot + 1 resume + 1 authored report)
 
 **Full individual index:** [2023/individual/_INDEX.md](2023/individual/_INDEX.md)
 
@@ -371,6 +373,7 @@ data/evidence/
 | LinkedIn Recommendations | 1 | NaveenKumar VR — calmness, purpose-first delegation, "changed me as a person" |
 | Informal Feedback (Teams) | 1 | Taky Djarou — HPM Release Workflows ("extremely helpful" dry-run flag) |
 | Resume | 1 | [2023 resume](2023/individual/021-resume-2023-digital-transformation-leader.md) — modern 2-column redesign, $3M+ headline, AI/ML skills, youngest Principal in Philips India |
+| Authored Report | 1 | [State of Craftsmanship 2023](2023/individual/022-philips-state-of-craftsmanship-2023-report.md) — **Lead author** of 22-page report covering 138 projects, 80%+ Philips SW community |
 
 ### Thematic Summaries
 
