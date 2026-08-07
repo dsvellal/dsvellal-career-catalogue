@@ -63,11 +63,12 @@ The system's primary persona is a first-person digital twin that can explain Dat
 **Phase 7: Cloud Deployment** — Pending. Static publish (`twin publish --viz-only`) works; cloud endpoints not yet deployed.
 
 **Data:**
-- 1,173 evidence files in `data/evidence/` (888 markdown, 236 images, 14 certificates, 20 session files, 4 snapshots)
+- ~1,177 evidence files in `data/evidence/` (892 markdown, 239 images, 14 certificates, 21 session files, 4 snapshots)
 - 32 batch ingestion source files + 11 enrichment outputs
 - Knowledge graph: 3,471 nodes, 17,190 edges, 25,767 chunks
 - Viz app: 8-tab React + D3 portfolio at `viz/` (Hero, Professional Identity, Career Arc, Impact, Timeline, Voices, Talks & Givebacks, Knowledge Graph)
-- Evidence spans 2012-2026 across 6 eras (IBM, Exeter, Amazon, Philips India, Philips USA, Independent)
+- Evidence spans 2007-2026 across 6 eras (IBM, Exeter, Amazon, Philips India, Philips USA, Independent)
+- Awards & citations: 16 awards, 12 recognitions, 2 USPTO patents (27+ citations), ~20 public references
 
 **Next:** Apply YAML frontmatter schema to all evidence files (Decision 028-031), then rebuild DuckDB index.
 
