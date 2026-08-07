@@ -1,8 +1,8 @@
 # Low-Level Design
 
 **Project:** dsvellal-personal-knowledge-context
-**Version:** 0.1.0
-**Status:** Draft
+**Version:** 0.2.0
+**Status:** Active
 
 ---
 
@@ -646,62 +646,86 @@ The 2026-08-06 export contains 3,471 nodes, 17,190 edges, 25,767 DuckDB chunks, 
 
 ---
 
-## 8. Evidence-Tiered Journey Dataset
+## 8. Claim-Centric Public Portfolio Dataset
 
-`scripts/build_journey_data.py` builds two deterministic editorial outputs from reviewed evidence: the public React data module at `viz/src/data/journey.json` and the human-readable interpretation at `data/journey-analysis.md`.
+`scripts/build_portfolio_data.py` deterministically compiles reviewed evidence and committed aggregates into `viz/src/data/portfolio.json`. It is a publication compiler rather than a general graph export: only explicit claims, approved source capsules, bounded methods, declared conflicts, and editorially reviewed longitudinal relationships cross the boundary.
 
 ### 8.1 Top-level contract
 
 ```json
 {
-  "meta": {"schema_version": 1, "views": []},
-  "thesis": {},
-  "headline_metrics": [],
-  "eras": [],
-  "service_lane": {},
-  "capability_streams": [],
-  "impact_ledger": [],
-  "influence": {},
-  "respect": {},
-  "teaching_service": {},
-  "momentum": {},
-  "caveats": {}
+  "meta": {"schema_version": 1, "generated_at": "2026-08-07", "as_of": "2026-08-07"},
+  "pages": [],
+  "claims": [],
+  "supports": [],
+  "sources": [],
+  "methods": [],
+  "relationships": [],
+  "caveats": [],
+  "conflicts": [],
+  "data_quality": {}
 }
 ```
 
-`meta.views` is ordered and binds each UI view to one or more top-level `data_keys`. The exact IDs are `portrait`, `journey`, `capabilities`, `outcomes`, `respect`, `influence`, `service`, and `momentum`.
+`pages` contains exactly nine ordered records: `brief`, `leadership`, `journey`, `impact`, `trust`, `innovation`, `learning`, `community`, and `data-room`. A page owns only an ordered list of claim IDs; the canonical claim and evidence records remain shared.
 
-Every source-bearing item uses:
+### 8.2 Claim and support records
+
+A claim records its stable ID, title, statement, kind (`observed`, `calculated`, or `interpreted`), category, scope, attribution, status, period, optional typed/display metric, support IDs, optional method ID, caveat/conflict IDs, and reasoned confidence (`high`, `supported`, `limited`, or `contested`).
+
+A support record is a first-class claim-to-source edge:
 
 ```json
 {
-  "evidence": [
-    {
-      "source_id": "src_0123456789ab",
-      "tier": "corroborated | documented | self-reported | derived",
-      "supports": "What this source supports",
-      "year": 2025
-    }
-  ],
-  "caveat_labels": ["team_attribution"]
+  "id": "support-demand-led-trust-ledger",
+  "claim_id": "claim-demand-led-trust",
+  "source_id": "source-connect-program-2021",
+  "relationship": "supports",
+  "locator": "Annual ledger, Setup by Others and Connects rows",
+  "directness": "direct",
+  "grade": "documented",
+  "rationale": "The ledger provides both numerator and denominator."
 }
 ```
 
-Every displayed metric additionally has `id`, `label`, typed `value`, formatted `display`, optional `unit`/`period`, at least one evidence reference, and any applicable caveats. Outcome-ledger records also carry an explicit leverage `scope` (`individual`, `team`, `organization`, `ecosystem`, or `community`) so the visual ladder never has to infer scope from prose. The current dataset contains five professional eras, six capability streams, eight outcome-ledger records, a 20-entry recommendation manifest with seven selected direct quotations, and separate influence, teaching/service, and momentum structures.
+`grade` describes source provenance (`corroborated`, `documented`, or `self_reported`). `directness` describes the logical path (`direct`, `aggregate`, `indirect`, or `interpretive`). These remain separate from claim kind so a calculated claim cannot masquerade as an evidence provenance class.
 
-### 8.2 Builder validation
+### 8.3 Source registry
 
-Before publication, the builder validates the private path-bearing model and then `validate_journey_data()` checks the stripped public projection:
+Every source has a stable human-readable ID, title, type, source date, publisher, access state, SHA-256 checksum, `checksum_scope`, `checksum_note`, approved excerpt, `excerpt_kind`, and optional allowlisted public URL. `excerpt_kind` is either `verbatim` or `editorial_summary`; the builder rejects a verbatim excerpt unless the exact string occurs in the held canonical source. Access states are:
 
-- the exact top-level key set and eight-view order;
-- the 2007–2026 career boundary and recommendation count/manifest agreement;
-- the exact shape and existence of every referenced local evidence file before stripping;
-- stable opaque public source IDs and the absence of local paths after stripping;
-- evidence on every displayed metric;
-- absence of email-domain strings, web URLs, account-number language, and other forbidden public payloads.
+- `public_external` — reviewed public original can be opened;
+- `public_excerpt` — approved excerpt or documentary derivative is public;
+- `private_held` — canonical original remains privately held;
+- `aggregate_only` — only the bounded aggregate can be published.
 
-The public JSON contains opaque source IDs but neither local evidence paths nor source bodies. Names appear only in the attributed recommendation subset; donor identities, personal contribution amounts, emails, internal URLs, PAN/account details, raw mail, and full embeddings are excluded.
+Local evidence paths exist only in the builder's private source specification. They are used to verify existence and compute checksums, then removed from the emitted record. Every emitted checksum is scoped as `held_canonical_artifact`; its note states that it covers the held artifact used at the publication boundary. For a `public_external` source the note additionally says that it does not cover live external page content. A private-held source remains traceable through metadata, locator, checksum, support statement, and withholding explanation without publishing its body.
 
-### 8.3 React binding
+### 8.4 Methods, conflicts, and relationships
 
-`JourneyAtlas.tsx` imports the JSON at build time and maps each exact ID to one view component. `App.tsx` normalizes invalid hashes to `#portrait`, updates browser history/title, moves focus to the new view heading, and supports desktop arrow/Home/End navigation plus a native mobile selector. SVGs use titles/descriptions or are marked decorative; dense visuals expose keyboard-focusable scroll regions; CSS supplies visible focus, reduced-motion, print, and responsive rules.
+Every calculated or interpreted claim resolves to a method with version, method kind, description, optional formula, declared inputs, inclusion/exclusion rules, deduplication, rounding, result, and caveats. Method inputs can resolve to a source or another claim.
+
+Conflicts retain the disputed or superseded assertion, affected claims and sources, severity/status, and resolution. Corrections therefore remain inspectable—for example, the professional-feedback corpus separates 88 post-event/interaction datasets and 1,050 response rows from two pre-event surveys and 133 response rows instead of silently repeating a mixed 90/1,183 population.
+
+Each longitudinal relationship records a relationship claim, from/to claim IDs, relation type, state, statement, reasoning, optional method, support IDs, confidence, caveats, and an explicit limitation. Relationship lines are rendered only from these records. Raw knowledge-graph co-occurrence, shared keywords, chronology, and array position never generate a public influence edge.
+
+### 8.5 Builder validation
+
+The public builder rejects output unless:
+
+- every stable ID is unique and every cross-reference resolves;
+- the page list and order match the nine-route contract;
+- every claim has support, and every calculated/interpreted claim has a method;
+- every relationship has resolvable endpoint and relationship claims, support, reasoning/method, confidence, and limitation;
+- methods have declared inputs, rules, result, rounding, and deduplication behavior;
+- source files exist locally before publication and emitted sources contain no local path;
+- external URLs use an explicit public-host allowlist;
+- serialized output contains no internal domains, local paths, email addresses, account/PAN language, raw export paths, or placeholder evidence;
+- corrected session, connect, assessment, service, inventory, and relationship-quality calculations agree with their source records;
+- a regenerated object is byte-for-byte equivalent to the committed JSON after deterministic formatting.
+
+### 8.6 React binding
+
+`portfolio-model.ts` imports the JSON and provides typed indexes plus hash-route helpers. `App.tsx` binds nine primary routes and Level 3 `claim`, `source`, and `method` routes. `PortfolioPages.tsx` supplies question-specific Level 1/2 compositions, an explicit Relationship Lab, participant voice/criticism, and the Data Room. `DetailPages.tsx` resolves proof trails and methods. `EvidenceUI.tsx` supplies the global Narrative/Proof/Method/Gaps lens and shared evidence components. `evidence-assets.ts` is the reviewed documentary-media allowlist; Vite's disabled `publicDir` prevents any unimported raw artifact from entering the build.
+
+The prior `journey.json` contract remains versioned for regression history. No active component imports it.

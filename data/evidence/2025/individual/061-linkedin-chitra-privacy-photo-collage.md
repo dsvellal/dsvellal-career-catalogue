@@ -108,13 +108,19 @@ Positioned AI as an **implementer executing high-level design decisions** rather
 - Published technical writing
 
 ## Impact Statement
-This project is the strongest evidence of Datta's **personal engineering values**. He applies the SAME quality standards to a solo weekend project that he teaches 1,183 people at Philips:
-- Mutation testing ✓ (teaches it in workshops)
-- Quality gates ✓ (Quality@Desk program)
-- Privacy-first ✓ (healthcare compliance mindset)
-- AI-assisted but human-directed ✓ (his exact professional philosophy)
+This self-authored project documents Datta applying several practices in a
+personal context that also recur in his professional teaching and program records:
 
-The fact that he won't even upload family photos to a commercial app — and instead builds his own tool with enterprise-grade testing — reveals someone for whom software quality isn't a job requirement but a personal conviction.
+- mutation testing;
+- quality gates;
+- privacy-preserving, client-side processing; and
+- AI-assisted development with human review.
+
+The professional-feedback corpus records response rows rather than unique people,
+so it is not used here as a personal reach count. This project is direct evidence
+of the choices made in one personal application; comparisons with workplace values
+are interpretive and do not by themselves establish consistency or outcomes in
+every professional setting.
 
 ## Cross-References
 - [[pair-programming-quality-at-desk]] — Quality@Desk program (same standards, different context)

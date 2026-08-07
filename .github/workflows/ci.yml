@@ -20,8 +20,19 @@ jobs:
       - name: Set up Python
         run: uv python install 3.12
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: viz/package-lock.json
+
       - name: Install dependencies
         run: uv sync --extra dev
+
+      - name: Install portfolio dependencies
+        working-directory: viz
+        run: npm ci
 
       - name: Install system tools
         run: |

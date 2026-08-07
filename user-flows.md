@@ -1,7 +1,7 @@
 # User Flows
 
 **Project:** dsvellal-personal-knowledge-context
-**Version:** 0.1.0
+**Version:** 0.2.0
 
 ---
 
@@ -173,17 +173,80 @@
 
 ---
 
-## Flow 9: Explore the Public Journey Atlas
+## Flow 9: Read the Executive Brief, Then Choose Depth
 
-**Actor:** Hiring manager, engineering peer, conference organizer, or community visitor
-**Goal:** Understand Datta's growth, value, trust, influence, service, and forward direction at the right level of depth
+**Actor:** Executive recruiter, hiring leader, board or transformation sponsor
+**Goal:** Decide quickly whether Datta merits deeper evaluation, then verify the strongest claims
 
 ```
-1. Visitor opens the shared portfolio link; #portrait establishes identity and the evidence vocabulary
-2. Visitor follows the deliberate sequence through Journey, Capabilities, Outcomes, Respect, Influence, Service, and Momentum
-3. Each view names its data basis and displays evidence-tier or caveat labels near material claims
-4. Visitor can deep-link directly to any view through its URL hash
-5. Desktop users navigate with links or Left/Right/Home/End keys; mobile users use a labeled select control
-6. Dense charts expose scroll regions and accessible SVG titles/descriptions; reduced-motion preferences disable page animation
-7. Raw evidence files, private relationships, emails, donor identities, and full embeddings are never served by the public build
+1. Visitor opens #/brief and receives a concise leadership thesis plus a small set of bounded proof points
+2. Every proof point shows scope, unit, period, attribution, confidence, source count, and one material caveat
+3. Visitor opens a claim dossier to understand why the claim matters and how it connects to other evidence
+4. Visitor follows support links to source capsules or a method link to inspect inputs, formula/rubric, exclusions, and rounding
+5. Browser Back returns to the same executive-question context without losing the evidence lens
+6. No raw private artifact or local path is served at any depth
+```
+
+---
+
+## Flow 10: Inspect a Hidden Longitudinal Relationship
+
+**Actor:** Leadership evaluator, organizational-development partner, or skeptical peer
+**Goal:** Determine whether a cross-year leadership pattern is evidence or storytelling
+
+```
+1. Visitor opens Leadership System or Trust and enters the Relationship Lab
+2. Visitor selects an explicit relationship such as 2020 development edge → 2025 independent corroborating observation
+3. The interface shows both endpoint claims, their dates and claim states, and the relationship statement
+4. Solid/dashed treatment distinguishes direct or calculated structure from interpretation
+5. Visitor opens the relationship method/reasoning and sees confidence plus the explicit non-causal limitation
+6. Visitor resolves each endpoint to its sources and can compare supporting, qualifying, or conflicting records
+7. The interface never invents an edge from graph proximity, shared keywords, or visual layout
+```
+
+---
+
+## Flow 11: Explore Participant Voice and Adaptation
+
+**Actor:** Conference organizer, learning leader, prospective mentee, or community participant
+**Goal:** Understand what people actually learned, what they criticized, and how the teaching practice evolved
+
+```
+1. Visitor opens Learning & Multiplication
+2. The summary separates delivery counts, participant instances, feedback datasets, response rows, qualitative entries, and rating observations
+3. Visitor reads approved excerpts grouped by explicit participant-takeaway claim categories
+4. Visitor compares those takeaways with approved excerpts explicitly classified as requested improvements
+5. Visitor follows an adaptation relationship to later evidence while seeing that chronology does not prove causation
+6. Source links resolve to sanitized aggregates or approved excerpts; participant identity remains withheld unless explicitly public
+```
+
+---
+
+## Flow 12: Audit Claims in the Data Room
+
+**Actor:** Diligent evaluator, journalist, data-minded peer, or Datta
+**Goal:** Search the complete public claim inventory and understand quality gaps and corrections
+
+```
+1. Visitor opens #/data-room and searches claim/source text, then filters by source access state or evidence grade
+2. Results expose claims, supporting/qualifying links, methods, source capsules, and conflict records
+3. Visitor opens a correction such as 90 mixed datasets → 88 post-event datasets + two pre-event surveys
+4. The record shows the prior interpretation, corrected population, exact units, resolution, and affected claims
+5. Visitor reviews corpus coverage gaps such as incomplete frontmatter/indexing, missing embeddings, orphan provenance, and curation bias
+6. Private-source records state why originals are withheld and still expose a held-artifact checksum with its scope/note, an approved verbatim excerpt or labelled editorial summary, and what was supported; public external records clarify that the checksum is not of the mutable live page
+```
+
+---
+
+## Flow 13: Change the Evidence Lens
+
+**Actor:** Any portfolio visitor
+**Goal:** Read the same evidence according to the visitor's immediate question
+
+```
+1. Visitor selects Narrative, Proof, Method, or Gaps from the global lens control
+2. Narrative foregrounds the executive explanation; Proof foregrounds source and support paths
+3. Method foregrounds formulas, rubrics, denominators, and attribution; Gaps foregrounds caveats, conflicts, privacy boundaries, and missing coverage
+4. The lens changes emphasis only—it does not create different facts or remove contradictory records
+5. The choice remains keyboard operable and understandable on desktop and mobile
 ```

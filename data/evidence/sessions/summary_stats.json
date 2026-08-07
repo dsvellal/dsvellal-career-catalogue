@@ -1,35 +1,203 @@
 {
-  "total_files": 92,
-  "total_sessions_excluding_duplicates_and_surveys": 90,
-  "total_responses": 1183,
-  "sessions_by_year": {
-    "2025": 28,
-    "2019": 20,
-    "2018": 1,
-    "2020": 16,
-    "2026": 12,
-    "2024": 3,
-    "2021": 6,
-    "2023": 3,
-    "2022": 1
+  "schema_version": 2,
+  "generated_from": "all_sessions_data.json",
+  "population_definitions": {
+    "source_files": "Every committed workbook extract, including known duplicate files.",
+    "duplicates_excluded": "Files marked is_duplicate=true; excluded before defining analysis populations.",
+    "pre_session_surveys": "Unique files marked is_pre_session_survey=true; reported separately and excluded from post-event aggregates.",
+    "post_event_feedback": "Unique files not marked as pre-session surveys. This operational population also contains interaction feedback, connect logs, and the JSCPD before/after pair, so file_count is not a count of facilitated sessions."
   },
-  "sessions_by_category": {
-    "ai-genai": 24,
-    "dora": 12,
-    "code-quality": 18,
-    "tech-debt": 5,
-    "feedback-about-datta": 9,
-    "connects": 2,
-    "interview": 9,
-    "other": 9,
-    "before-after": 2
+  "source_inventory": {
+    "source_files": {
+      "file_count": 92,
+      "response_rows": 1193,
+      "qualitative_entries": 2023,
+      "rating_question_aggregates": 228,
+      "rating_observations": 2296
+    },
+    "duplicates_excluded": {
+      "file_count": 2,
+      "response_rows": 10,
+      "qualitative_entries": 20,
+      "rating_question_aggregates": 5,
+      "rating_observations": 16,
+      "filenames": [
+        "13th Sept 2019 - Code dojo session with Simao(1-2) (1).xlsx",
+        "20190415 - Conducting interviews - knowledge sharing session(1-8) (1).xlsx"
+      ]
+    },
+    "unique_files": {
+      "file_count": 90,
+      "response_rows": 1183,
+      "qualitative_entries": 2003,
+      "rating_question_aggregates": 223,
+      "rating_observations": 2280
+    }
   },
-  "overall_ratings": {
-    "grand_average_normalized_5_scale": 4.3,
-    "total_rating_data_points": 223,
-    "min_normalized": 1.8,
-    "max_normalized": 5.0,
-    "grand_average_raw": 6.84
+  "analysis_populations": {
+    "post_event_feedback": {
+      "file_count": 88,
+      "response_rows": 1050,
+      "qualitative_entries": 1811,
+      "rating_question_aggregates": 221,
+      "rating_observations": 2149
+    },
+    "pre_session_surveys": {
+      "file_count": 2,
+      "response_rows": 133,
+      "qualitative_entries": 192,
+      "rating_question_aggregates": 2,
+      "rating_observations": 131,
+      "filenames": [
+        "21st August 2025 - DORA for Software Leaders - Understanding the audience(1-1).xlsx",
+        "28th Aug 2025 - GROW 3.0 - Unlocking the future with AI - Understanding our audience.(1-132).xlsx"
+      ]
+    }
+  },
+  "post_event_by_year": {
+    "2018": {
+      "file_count": 1,
+      "response_rows": 9,
+      "qualitative_entries": 12,
+      "rating_question_aggregates": 1,
+      "rating_observations": 9
+    },
+    "2019": {
+      "file_count": 20,
+      "response_rows": 291,
+      "qualitative_entries": 978,
+      "rating_question_aggregates": 78,
+      "rating_observations": 898
+    },
+    "2020": {
+      "file_count": 16,
+      "response_rows": 289,
+      "qualitative_entries": 366,
+      "rating_question_aggregates": 44,
+      "rating_observations": 361
+    },
+    "2021": {
+      "file_count": 6,
+      "response_rows": 29,
+      "qualitative_entries": 60,
+      "rating_question_aggregates": 16,
+      "rating_observations": 69
+    },
+    "2022": {
+      "file_count": 1,
+      "response_rows": 7,
+      "qualitative_entries": 6,
+      "rating_question_aggregates": 0,
+      "rating_observations": 0
+    },
+    "2023": {
+      "file_count": 3,
+      "response_rows": 14,
+      "qualitative_entries": 6,
+      "rating_question_aggregates": 3,
+      "rating_observations": 5
+    },
+    "2024": {
+      "file_count": 3,
+      "response_rows": 34,
+      "qualitative_entries": 48,
+      "rating_question_aggregates": 7,
+      "rating_observations": 74
+    },
+    "2025": {
+      "file_count": 26,
+      "response_rows": 268,
+      "qualitative_entries": 207,
+      "rating_question_aggregates": 33,
+      "rating_observations": 323
+    },
+    "2026": {
+      "file_count": 12,
+      "response_rows": 109,
+      "qualitative_entries": 128,
+      "rating_question_aggregates": 39,
+      "rating_observations": 410
+    }
+  },
+  "post_event_by_category": {
+    "ai-genai": {
+      "file_count": 23,
+      "response_rows": 288,
+      "qualitative_entries": 256,
+      "rating_question_aggregates": 45,
+      "rating_observations": 560
+    },
+    "before-after": {
+      "file_count": 2,
+      "response_rows": 22,
+      "qualitative_entries": 42,
+      "rating_question_aggregates": 2,
+      "rating_observations": 12
+    },
+    "code-quality": {
+      "file_count": 18,
+      "response_rows": 319,
+      "qualitative_entries": 388,
+      "rating_question_aggregates": 57,
+      "rating_observations": 615
+    },
+    "connects": {
+      "file_count": 2,
+      "response_rows": 76,
+      "qualitative_entries": 424,
+      "rating_question_aggregates": 1,
+      "rating_observations": 9
+    },
+    "dora": {
+      "file_count": 11,
+      "response_rows": 79,
+      "qualitative_entries": 64,
+      "rating_question_aggregates": 18,
+      "rating_observations": 116
+    },
+    "feedback-about-datta": {
+      "file_count": 9,
+      "response_rows": 57,
+      "qualitative_entries": 106,
+      "rating_question_aggregates": 23,
+      "rating_observations": 113
+    },
+    "interview": {
+      "file_count": 9,
+      "response_rows": 72,
+      "qualitative_entries": 165,
+      "rating_question_aggregates": 33,
+      "rating_observations": 220
+    },
+    "other": {
+      "file_count": 9,
+      "response_rows": 109,
+      "qualitative_entries": 334,
+      "rating_question_aggregates": 31,
+      "rating_observations": 452
+    },
+    "tech-debt": {
+      "file_count": 5,
+      "response_rows": 28,
+      "qualitative_entries": 32,
+      "rating_question_aggregates": 11,
+      "rating_observations": 52
+    }
+  },
+  "rating_inventory": {
+    "question_level_aggregates": 221,
+    "rating_observations": 2149,
+    "by_scale": {
+      "10": {
+        "question_level_aggregates": 126,
+        "rating_observations": 1325
+      },
+      "5": {
+        "question_level_aggregates": 95,
+        "rating_observations": 824
+      }
+    },
+    "aggregation_policy": "No global average is reported. The extracted rating questions measure different constructs on 5-point and 10-point scales; normalizing and averaging them would not produce a defensible overall score."
   },
   "top_quotes": [
     {
@@ -72,13 +240,13 @@
       "session": "2019 .connects of Datta",
       "date": "2019",
       "question": "Outcome?",
-      "response": "We had close to 19 participants participate & commit to some awesome code changes. Specifically - 3700+ lines of code was removed by Karthika. This was awesome: https://docs.philips.com/:b:/g/personal/dsvellal_philips_com/ESck9-uNcCJHrWC_tx5b0P4B6SDfcrg2ZSpvmVIcoat0NQ?e=LX4iS0"
+      "response": "Suggested Legal compliance about the data that Philips which will get. \n\nThe repo link:\nhttps://tfsemea1.ta.philips.com/tfs/TPC_Region27/CDI_InnerSource/_git/cdi-swcoe-deadcode_IS \n\nInnersource link:\nhttps://caoapps.htce.nl.philips.com/innersource/#/repository/view_details/125"
     },
     {
       "session": "2019 .connects of Datta",
       "date": "2019",
       "question": "Outcome?",
-      "response": "Suggested Legal compliance about the data that Philips which will get. \n\nThe repo link:\nhttps://tfsemea1.ta.philips.com/tfs/TPC_Region27/CDI_InnerSource/_git/cdi-swcoe-deadcode_IS \n\nInnersource link:\nhttps://caoapps.htce.nl.philips.com/innersource/#/repository/view_details/125"
+      "response": "We had close to 19 participants participate & commit to some awesome code changes. Specifically - 3700+ lines of code was removed by Karthika. This was awesome: https://docs.philips.com/:b:/g/personal/dsvellal_philips_com/ESck9-uNcCJHrWC_tx5b0P4B6SDfcrg2ZSpvmVIcoat0NQ?e=LX4iS0"
     },
     {
       "session": "Feedback about today's conversation",
@@ -105,28 +273,28 @@
       "response": "The session helped gain knowledge on Sonarlint tool for both C# and Java.\nThe tactics said in the session  for formatting ,spacing etc. are really useful.\nSimple brainstorming of tools available in the market  for each category  and also tools inside Philips was good"
     },
     {
-      "session": "Tech Debt - What does that mean",
-      "date": "2019-08-08",
-      "question": "From the content discussed in this session, what three things can you apply to improve your day-to-day work quality?",
-      "response": "1. Improving code quality by have complete knowledge of acceptance criteria and the technology i am working on\n\n2. Following best practices .. using static code analysis ever before commiting the code.\n\n3. No last minute changes .. cause it degrades the code quality"
-    },
-    {
       "session": "Coding with GitHub CoPilot",
       "date": "2026-01-28",
       "question": "What went well in today's session?",
       "response": "The session provided useful insights into how GitHub Copilot can help with test automation, script development, code reviews, documentation, and improving productivity. The practical prompting examples and discussions on responsible AI usage were especially helpful."
     },
     {
-      "session": "Conducting interviews - knowledge sharing session",
-      "date": "2019-04-15",
-      "question": "What are your three main take-aways from this session?",
-      "response": "1. Interview should now be more than 45 min and Max 1 Hour\n2. We have to be prepared with the appropriate problems/questions before taking interview\n3. With in first 20 min we will have the decision and rest of the discussion is just making sure about the decision"
+      "session": "Tech Debt - What does that mean",
+      "date": "2019-08-08",
+      "question": "From the content discussed in this session, what three things can you apply to improve your day-to-day work quality?",
+      "response": "1. Improving code quality by have complete knowledge of acceptance criteria and the technology i am working on\n\n2. Following best practices .. using static code analysis ever before commiting the code.\n\n3. No last minute changes .. cause it degrades the code quality"
     },
     {
       "session": "202001 - Initiative_ I will code!",
       "date": "2020",
       "question": "How can we improve the session, for better engagement and participation?",
       "response": "I suggest that a discussion on metrics used by TICS like compiler warnings and cyclomatic complexity in our code examples can be done. If TICS (or similar tool) can be demonstrated even on simple programs, the meaning of the metrics may be clearer to the audience."
+    },
+    {
+      "session": "Conducting interviews - knowledge sharing session",
+      "date": "2019-04-15",
+      "question": "What are your three main take-aways from this session?",
+      "response": "1. Interview should now be more than 45 min and Max 1 Hour\n2. We have to be prepared with the appropriate problems/questions before taking interview\n3. With in first 20 min we will have the decision and rest of the discussion is just making sure about the decision"
     },
     {
       "session": "2020 - Software CoE - Interaction experience",
@@ -222,13 +390,13 @@
       "session": "Dec-16-Workshop_ GitHub Copilot & Requirements Analysis",
       "date": "2024-12-16",
       "question": "What should I improve?",
-      "response": "The time spent in refining requirements was confusing to me, largely because I don't have a med-device background and the docs referred to are only vaguely familiar to me (e.g. 62304).  I was unsure the entire time what I should be doing."
+      "response": "- invest less time in items no one asks questions during the overview and short demo\n- try to find how could WE use the tool and not just explain why the tool is good - all tools are good - we're looking for those which are relevant to us"
     },
     {
       "session": "Dec-16-Workshop_ GitHub Copilot & Requirements Analysis",
       "date": "2024-12-16",
       "question": "What should I improve?",
-      "response": "- invest less time in items no one asks questions during the overview and short demo\n- try to find how could WE use the tool and not just explain why the tool is good - all tools are good - we're looking for those which are relevant to us"
+      "response": "The time spent in refining requirements was confusing to me, largely because I don't have a med-device background and the docs referred to are only vaguely familiar to me (e.g. 62304).  I was unsure the entire time what I should be doing."
     },
     {
       "session": "Project Elevate_ Building Practical Agents",
@@ -257,14 +425,14 @@
     {
       "session": "Code duplication elimination workshop",
       "date": "2019-09-09",
-      "question": "What are your three key learnings about your code-base and duplicates from this workshop?",
-      "response": "1. Identification of code duplication can be integrated easily.\n2. With a little time and effort, it can be efficiently eliminated and avoided.\n3. Judicious decision making in the trade-off between code complexity and duplication."
+      "question": "How could we have improved this workshop?",
+      "response": "Very Effective . On the basis of audience and if it makes sense then we can do some of the activities like a prerequisite for the workshop like downloading and running (if runs fine) so that we have more and more time to interact."
     },
     {
       "session": "Code duplication elimination workshop",
       "date": "2019-09-09",
-      "question": "How could we have improved this workshop?",
-      "response": "Very Effective . On the basis of audience and if it makes sense then we can do some of the activities like a prerequisite for the workshop like downloading and running (if runs fine) so that we have more and more time to interact."
+      "question": "What are your three key learnings about your code-base and duplicates from this workshop?",
+      "response": "1. Identification of code duplication can be integrated easily.\n2. With a little time and effort, it can be efficiently eliminated and avoided.\n3. Judicious decision making in the trade-off between code complexity and duplication."
     },
     {
       "session": "Leading Continuous Value Delivery",
@@ -281,14 +449,14 @@
     {
       "session": "End of _I Will Code_ Survey",
       "date": "2020-10-16",
-      "question": "What were your 3 biggest take-aways points about the \"I Will Code\" program? \nEg: \n- Without any coding background, having learnt to write code, test it and execute it, it felt good. \n- Coding usin...",
-      "response": "My 3 biggest take-away points are:\n1.) Concepts like inheritance and encapsulation were explained in simple manner. 2.) I learnt usage of Github and pull requests. 3.) With Srinivas, I was able to practice paired programming."
+      "question": "What can Datta improve as a facilitator of such long running programs?",
+      "response": "Datta can explain how certain concepts or ideas work in real life projects. For example, if Java Scanners are not closed, it may result in memory leakages, which over time, could result in performance of the system degrading."
     },
     {
       "session": "End of _I Will Code_ Survey",
       "date": "2020-10-16",
-      "question": "What can Datta improve as a facilitator of such long running programs?",
-      "response": "Datta can explain how certain concepts or ideas work in real life projects. For example, if Java Scanners are not closed, it may result in memory leakages, which over time, could result in performance of the system degrading."
+      "question": "What were your 3 biggest take-aways points about the \"I Will Code\" program? \nEg: \n- Without any coding background, having learnt to write code, test it and execute it, it felt good. \n- Coding usin...",
+      "response": "My 3 biggest take-away points are:\n1.) Concepts like inheritance and encapsulation were explained in simple manner. 2.) I learnt usage of Github and pull requests. 3.) With Srinivas, I was able to practice paired programming."
     },
     {
       "session": "Feedback to Dattaterya S Vellal (dsvellal@philips.com)",
@@ -327,43 +495,27 @@
       "response": "The session was very useful and practical. More hands-on demos, real project examples, and additional guidance on effective prompting would make it even better. A follow-up advanced session would also be valuable."
     },
     {
-      "session": "New Hire Mentoring - Feedback to your mentor_ Dattatreya S Vellal (dsvellal@philips.com)",
-      "date": "2019-07-26",
-      "question": "As a mentor, do you have any points of improvements to Datta and/or would you want to appreciate any behavior of Datta?",
-      "response": "Liked how he introduces many different approach with pros and cons and still make us think and choose the approach instead of straight away telling the best possible solution and refraining us to think other ways"
+      "session": "Feedback about the _Bar_Skill raiser training_ session",
+      "date": "2020-08-13",
+      "question": "What could we have improved in this session?",
+      "response": "- Probably this should be more interactive with some case studies and hands-on tasks (e.g. provide a situation and give voting choices for responses). At the end, there should be a discussion around the responses"
     }
   ],
   "before_after_comparison": {
     "before": {
       "filename": "JSCPD Before Elimination(1-16).xlsx",
-      "response_count": 16,
-      "ratings": {},
-      "text_feedback_sample": [
-        {
-          "question": "Name",
-          "response": "Shwetha Naranapura Chandrashekaraswamy"
-        },
-        {
-          "question": "Name",
-          "response": "Madhusmita Mishra"
-        },
-        {
-          "question": "Name",
-          "response": "Vishravars Ramasubramanian"
-        },
-        {
-          "question": "Name",
-          "response": "Sunil Kumar Gawaday"
-        },
-        {
-          "question": "Name",
-          "response": "Kalmesh Sambrani"
-        }
-      ]
+      "response_rows": 16,
+      "qualitative_entries": 32,
+      "rating_question_aggregates": 0,
+      "rating_observations": 0,
+      "ratings": {}
     },
     "after": {
       "filename": "JSCPD After Elimination(1-6).xlsx",
-      "response_count": 6,
+      "response_rows": 6,
+      "qualitative_entries": 10,
+      "rating_question_aggregates": 2,
+      "rating_observations": 12,
       "ratings": {
         "On a scale of 1 (least effective) to 10 (very effective), how would you rate the effectiveness of the session?": {
           "avg": 8.33,
@@ -379,39 +531,15 @@
           "count": 6,
           "scale": 10
         }
-      },
-      "text_feedback_sample": [
-        {
-          "question": "Name",
-          "response": "Vishravars Ramasubramanian"
-        },
-        {
-          "question": "Name",
-          "response": "Madhusmita Mishra"
-        },
-        {
-          "question": "Name",
-          "response": "Shwetha Naranapura Chandrashekaraswamy"
-        },
-        {
-          "question": "Name",
-          "response": "Anil Khandelwal"
-        },
-        {
-          "question": "Name",
-          "response": "Ajay Mummadisetti"
-        }
-      ]
+      }
     },
-    "interpretation": "JSCPD code duplication - feedback collected before elimination (baseline metrics) and after elimination (effectiveness ratings). The 'before' file captures baseline duplication data while 'after' captures session effectiveness ratings."
+    "interpretation": "The files are paired by their before/after filenames. The committed extract contains 16 baseline rows and six post-exercise feedback rows, but it does not contain matched before/after outcome measures. The pair supports reporting the post-exercise ratings; it does not by itself establish code improvement or causality."
   },
   "sessions_with_errors": [],
-  "pre_session_surveys": [
-    "21st August 2025 - DORA for Software Leaders - Understanding the audience(1-1).xlsx",
-    "28th Aug 2025 - GROW 3.0 - Unlocking the future with AI - Understanding our audience.(1-132).xlsx"
-  ],
-  "duplicates": [
-    "13th Sept 2019 - Code dojo session with Simao(1-2) (1).xlsx",
-    "20190415 - Conducting interviews - knowledge sharing session(1-8) (1).xlsx"
+  "methodology_notes": [
+    "response_rows count spreadsheet rows, not verified unique participants or attendees.",
+    "qualitative_entries count extracted text_feedback records; a row can contribute more than one entry, and the legacy extraction has not been manually coded or deduplicated.",
+    "rating_question_aggregates count question-level summaries in the committed extract; rating_observations sum each summary's count field.",
+    "The source workbooks are not committed. This summary is reproducible from the committed all_sessions_data.json extract, but participant-level rating values cannot be audited from that extract because it retains aggregates and only a three-row raw sample."
   ]
 }

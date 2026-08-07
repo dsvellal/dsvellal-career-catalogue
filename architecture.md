@@ -134,28 +134,39 @@ The generated export is private: it contains raw artifact text, people, metadata
 
 ---
 
-### Curated Journey Atlas projection
+### Claim-centric Executive Portfolio Observatory projection
 
-The public portfolio does not query the private export. `scripts/build_journey_data.py` is a deliberate editorial boundary that selects reviewed, public-safe evidence into one versioned static contract:
+The public portfolio does not query the private export. `scripts/build_portfolio_data.py` is the publication compiler: it reads reviewed evidence and committed aggregates, computes bounded metrics, records editorial relationships, validates every reference, and emits one public-safe contract.
 
 ```
-reviewed evidence files + longitudinal analysis
-                    │
-                    ▼
-        validate schema, provenance,
-        chronology, metrics, and privacy
-                    │
-          ┌─────────┴─────────┐
-          ▼                   ▼
-viz/src/data/journey.json   data/journey-analysis.md
-          │
-          ▼
-eight-view React Journey Atlas ──> Vite static build
+reviewed evidence + committed aggregates + editorial relationship definitions
+                              │
+                              ▼
+                  deterministic claim compiler
+       ┌──────────────────────┼──────────────────────┐
+       │ validate IDs/support │ compute methods      │ privacy allowlist
+       │ attribution/conflicts│ formulas/rounding    │ excerpts/media/URLs
+       └──────────────────────┴──────────────────────┘
+                              │
+                              ▼
+                 viz/src/data/portfolio.json
+                              │
+                  ┌───────────┴───────────┐
+                  ▼                       ▼
+        nine executive-question       Level 3 resolvers
+        Level 1/2 experiences         claim/source/method
+                  └───────────┬───────────┘
+                              ▼
+                      Vite static build
 ```
 
-The builder validates private references containing local evidence paths, then removes those paths at the publication boundary. Public references contain only an opaque `source_id`, `tier`, `supports`, and optional source year. Evidence tiers distinguish corroborated, documented, self-reported, and derived material; `caveat_labels` resolve through a shared glossary. The browser receives neither artifact bodies nor local filenames.
+The contract is claim-centric. Source provenance (`corroborated`, `documented`, or `self_reported`), support directness, and claim state (`observed`, `calculated`, or `interpreted`) are independent fields. Calculations and interpretations resolve to versioned method records with explicit inputs, formula or rubric, inclusion/exclusion and deduplication rules, rounding, result, and caveats. Conflicts remain visible instead of being silently overwritten.
 
-The Vite build sets `publicDir: false`. Only explicitly imported presentation assets can enter the module graph, which prevents the local raw-evidence symlink from being copied into `dist`.
+Sources use stable editorial IDs rather than path hashes. A public source capsule contains reviewed metadata, a verbatim or explicitly labelled editorial-summary excerpt, held-artifact SHA-256 plus its scope/note, access state, and optional allowlisted public URL. Exact verbatim excerpts are validated against the canonical source. A public link remains independently openable, while the checksum is explicitly scoped to the held publication artifact rather than the mutable live page. Private originals remain locally verifiable and are described as withheld; local paths, internal URLs, participant identity, and raw artifact bodies are excluded from the browser contract.
+
+Longitudinal links are an explicit editorial dataset, not a rendering of graph co-occurrence. Every relationship names its endpoint claims, relation type, reasoning or method, confidence, and limitation. The prior `journey.json`/eight-view builder remains a legacy compatibility artifact but is not the active portfolio input.
+
+The Vite build sets `publicDir: false`. Only explicitly imported presentation assets and individually reviewed documentary evidence can enter the module graph, which prevents the local raw-evidence symlink from being copied into `dist`.
 
 ---
 
@@ -171,7 +182,8 @@ The Vite build sets `publicDir: false`. Only explicitly imported presentation as
 | LLM (synthesis) | Google Gemini API (2.5-pro / 2.5-flash) | User's existing subscription, strong synthesis |
 | LLM (fallback) | Ollama (gemma4, BGE-m3) | Offline capability, free |
 | Frontend | React + TypeScript + Vite + D3 | SPA with hash-addressable view navigation and static JSON data |
-| Journey Data | `scripts/build_journey_data.py` → `viz/src/data/journey.json` | Curated, evidence-tiered, public-safe projection for exactly eight views |
+| Portfolio Data | `scripts/build_portfolio_data.py` → `viz/src/data/portfolio.json` | Claim-centric, method-bearing, privacy-safe public projection for nine executive questions and Level 3 records |
+| Legacy Journey Data | `scripts/build_journey_data.py` → `viz/src/data/journey.json` | Superseded eight-view compatibility projection; retained for regression history |
 | Legacy Viz Data | `twin publish` static JSON generation | Pre-shaped files retained for archived view components |
 | Relationship Export | Deterministic JSON/JSONL/YAML + SHA-256 manifest | Portable inspection of DuckDB, ChromaDB, and the exact runtime NetworkX projection without changing canonical stores |
 | Evidence Index | DuckDB evidence_index table | 562 indexed Markdown records; coverage gap is reported rather than hidden |
@@ -216,7 +228,7 @@ Public consumers (portfolio, chat, API)
 | Internal | Professional but private | Performance review content, salary info | Local only, never published |
 | Confidential | Sensitive | NDA-covered project details, personal emails | Local only, redacted in outputs |
 
-The private relationship export is always Local regardless of individual source-row visibility. The Journey Atlas receives only reviewed aggregates and attributed public recommendations after validation.
+The private relationship export is always Local regardless of individual source-row visibility. The Executive Portfolio Observatory receives only reviewed claims, bounded aggregates, approved excerpts, and allowlisted documentary media after validation.
 
 ---
 
@@ -230,6 +242,7 @@ The private relationship export is always Local regardless of individual source-
 | 3 | Generators | Resume, cover letter, summary generators via API | Phase 2 |
 | 4 | Chat Interface | Web UI for conversational twin | Phase 2 |
 | 5 | Portfolio Site | Public-facing dynamic portfolio, static generation | Phase 3 |
+| 5d | Executive Portfolio Observatory | Claim/source/method compiler, nine-route evidence UI, Data Room, explicit longitudinal analysis | Phase 5 + reviewed evidence |
 | 6 | Cloud Sync | Google Drive monitoring, watch folder | Phase 1 |
 | 7 | Cloud Deployment | Published snapshot to Vercel + Cloud Run | Phase 5 |
 

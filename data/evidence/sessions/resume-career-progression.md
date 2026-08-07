@@ -4,6 +4,11 @@
 
 Seven resume versions spanning 14 years document Datta's transformation from a Java middleware developer at IBM to a Principal-level global engineering excellence leader at Philips North America. This collection also includes a structured Amazon Work Examples document demonstrating leadership principles in action.
 
+> **Interpretation boundary:** Quantitative statements in this thematic summary are
+> resume-originated unless another linked artifact independently corroborates them.
+> Organizational population or addressable-community figures are context, not counts
+> of people personally served or uniquely influenced.
+
 ## The Arc: Developer → Component Lead → Org Transformer → Global Principal
 
 ### Phase 1: Technical Foundation (2007–2013) — IBM
@@ -32,7 +37,7 @@ Identity: SDE-2 at Amazon, Senior Lead at Exeter
 **Resumes:** [2020 (Philips India)](../2020/individual/001-resume-2020-philips-india-swcoe.md), [2021 (post-US move)](../2021/individual/044-resume-2021-philips-competency-lead.md)
 
 Identity: Competency Specialist II → Software Competency Lead
-- 2500 developers, 24 locations, 72 departments influenced
+- Resume-described organizational reach context: 2,500 developers, 24 locations, 72 departments; this is not a verified unique-person service count
 - €2.1M savings realized, €3.45M future opportunity
 - Built proprietary code-quality analyzer (~400 engineers)
 - Chosen by Philips India head for global hiring policy
@@ -45,7 +50,7 @@ Identity: Competency Specialist II → Software Competency Lead
 
 Identity: Principal (Software Competency Lead)
 - $3M+ total cost savings headline
-- 7,000+ engineers served with 99.999% uptime platforms
+- A roughly 7,000-person global software community is described as the addressable organizational context; it is not evidence that 7,000 people were personally served. The 99.999% platform-uptime figure is a separate resume-originated claim.
 - Customer defects: 37 → 0.11 per 100 exams
 - App store ratings: 2.3 → 4.5
 - Bar Raiser program: 15 cross-functional members, 50+ trained, 50% hiring time reduction
@@ -75,7 +80,7 @@ Datta maintains parallel formats:
 | Metric | Value | Source |
 |--------|-------|--------|
 | Total cost savings | $3M+ (€2.1M + $300K + Amazon $35K + ...) | 2023+ resumes |
-| Engineers influenced | 7,000+ (Philips global) | 2023 resume |
+| Addressable software community | ~7,000 (Philips global); not a personally served or unique-person count | 2023 resume + 2020 manager context |
 | Customer defect reduction | 37 → 0.11 per 100 exams | Multiple resumes |
 | App store improvement | 2.3 → 4.5 | Multiple resumes |
 | Release time reduction | 60% | Multiple resumes |
@@ -83,7 +88,7 @@ Datta maintains parallel formats:
 | Workshops/lectures delivered | 47 | Multiple resumes |
 | Workshop participants | 2,500+ | Multiple resumes |
 | Interviews conducted (Amazon alone) | 68 in 18 months | Work Examples |
-| Patents | 2 USPTO | Multiple resumes |
+| Invention families | 2, represented by multiple application/publication/grant records | Multiple resumes + public patent index |
 | Outsource center set up | 450 engineers | 2021 resume |
 | Duplicate code eliminated | 18,000 lines | 2021 resume |
 | ASINs processed (Amazon) | 1.9 billion | Work Examples |

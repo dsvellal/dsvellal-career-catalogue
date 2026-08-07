@@ -365,7 +365,7 @@ period: 2007-2020
 ### Student Feedback Evidence
 
 - **File:** `data/evidence/sessions/student-feedback/STUDENT-FEEDBACK-EVIDENCE.md`
-- **Coverage:** 13 sessions, 494 responses, 7 colleges, 2013-2020
+- **Coverage:** 13 feedback forms, 494 response rows, 6 educational institutions plus 1 Exeter corporate yoga session, 2013-2020
 - **Presenter rating:** 4.58/5 (149 responses) and 9.12/10 (128 responses)
 - **Sessions with feedback that map to talks in this index:**
   - Exeter Yoga Session (2013-11-23) -> Talk #21

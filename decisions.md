@@ -1173,3 +1173,140 @@ period: <YYYY-MM, only if recurring>
 | Omit embeddings | Makes the committed export incomplete |
 | Commit a compressed archive | Reduces inspectability and can still produce oversized opaque objects |
 | Publish the export with the portfolio | Violates the private-data boundary; repository storage does not authorize public deployment |
+
+---
+
+## Decision 041: Model the Portfolio Around Claims, Not Pages or Artifacts
+
+**Date:** 2026-08-07
+**Phase:** Executive Portfolio Observatory
+**Category:** Data Model / Traceability
+
+**Question:** What is the smallest public unit that can connect an executive narrative to reproducible evidence without confusing source quality, logical support, and interpretation?
+
+**Decision:** Make the claim the primary public unit. Model three independent dimensions for each claim: source provenance, claim-to-source support strength, and claim state (`observed`, `calculated`, `interpreted`, or `aspirational`). Attach calculations and interpretations to versioned methods with inputs, formula or rubric, inclusion and exclusion rules, as-of date, caveats, confidence, and conflicts.
+
+**Rationale:** A source can be authentic yet only partially support an interpretation, while a precisely calculated claim can still rely on self-reported inputs. Keeping these dimensions orthogonal makes confidence inspectable and prevents the former `derived` evidence tier from implying either strong or weak provenance.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Keep evidence tier as the only credibility label | Conflates where evidence came from, how directly it supports a claim, and whether the claim is calculated or interpreted |
+| Organize public data around source documents | Forces visitors to reconstruct the argument and gives no stable home to formulas, caveats, or conflicting evidence |
+| Put factual copy directly in React components | Makes claims impossible to validate systematically and easy to drift away from their sources |
+
+---
+
+## Decision 042: Use Three Progressive Depth Levels Across Nine Executive Questions
+
+**Date:** 2026-08-07
+**Phase:** Executive Portfolio Observatory
+**Category:** Information Architecture
+
+**Question:** How should a large evidence corpus serve an executive skimmer, an interested evaluator, and a diligent verifier without becoming either superficial or overwhelming?
+
+**Decision:** Use three consistent depth levels: Level 1 executive summaries, Level 2 explanatory dossiers, and Level 3 claim/source/method records. Organize Level 1 around nine questions: Brief; Leadership System; Journey; Impact; Trust; Innovation; Learning & Multiplication; Community & Service; and Data Room. Provide stable claim, source, and method routes beneath those pages.
+
+**Rationale:** The nine questions reflect how executive candidates are evaluated while the depth model preserves a short first read. Every headline can descend through the same interaction grammar instead of sending visitors into an undifferentiated archive.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| One long interactive résumé | Makes parallel themes look sequential and buries verification far below the claim it supports |
+| A separate page for every data category | Mirrors storage structure rather than the questions an evaluator is asking |
+| Show all evidence at the first level | Overwhelms a first-time visitor and weakens the executive narrative |
+| Keep the prior eight-view atlas unchanged | Its evidence disclosures were terminal controls and its influence visualization used non-evidentiary visual connections |
+
+---
+
+## Decision 043: Publish a Stable, Privacy-Aware Source Registry
+
+**Date:** 2026-08-07
+**Phase:** Executive Portfolio Observatory
+**Category:** Publication / Privacy
+
+**Question:** How can a public visitor trace a claim when much of the canonical evidence is private, internal, or contains third-party personal information?
+
+**Decision:** Assign stable human-readable source IDs independent of file paths. For every source, publish a capsule containing descriptive metadata, supported claims, an approved verbatim excerpt or clearly labelled editorial summary, optional reviewed media, and a SHA-256 checksum explicitly scoped to the held canonical artifact. Require exact verbatim strings to exist in that source. For external public records, state that the held-artifact checksum is not a checksum of mutable live-page content. Use one implemented access class: `public_external`, `public_excerpt`, `private_held`, or `aggregate_only`. Expose allowlisted public URLs only; explain why a private original is withheld.
+
+**Rationale:** Traceability does not require indiscriminate disclosure. A registry gives every citation a resolvable public destination while preserving the boundary between private verification and publication consent. A checksum tracks the canonical artifact without leaking its path or content.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Continue using truncated hashes of local paths | IDs change when files move, reveal no meaning, and had no route a visitor could open |
+| Publish every original artifact | Exposes private correspondence, internal links, participant identity, and potentially sensitive account data |
+| Cite only a filename or opaque label | Gives the appearance of provenance without a usable source record |
+| Link all URLs found in evidence files | Internal and authentication-bearing URLs are not public publication approval |
+
+---
+
+## Decision 044: Treat Hidden Relationships as Explicit, Testable Propositions
+
+**Date:** 2026-08-07
+**Phase:** Executive Portfolio Observatory
+**Category:** Analysis / Integrity
+
+**Question:** How should the site reveal deep longitudinal relationships without implying causality or influence from mere co-occurrence?
+
+**Decision:** Publish only editorially defined relationships with named endpoint claims, an explicit relation type, a method or reasoning statement, confidence, and a limitation. Visually distinguish observed links from calculated and interpreted links. Do not convert proximity in the extracted knowledge graph, array position, shared keywords, or chronology alone into an influence edge.
+
+**Rationale:** The most valuable patterns span years and sources—for example, 2020 executive-influence development themes and independent 2025 observations of C-level translation. These patterns are credible when the visitor can inspect both endpoints and the non-causal interpretation boundary.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Render all graph co-occurrence as influence | Co-occurrence does not prove trust, causality, development, or influence |
+| Generate connecting lines from array position | Produces an attractive but fabricated relationship structure |
+| Avoid derived relationships entirely | Hides the longitudinal depth that the corpus can support when methods and limitations are explicit |
+| Phrase temporal sequence as causal growth | The evidence shows later behavior consistent with development, not that one record caused the other |
+
+---
+
+## Decision 045: Correct Denominators and Preserve Metric Conflicts
+
+**Date:** 2026-08-07
+**Phase:** Executive Portfolio Observatory
+**Category:** Data Quality / Methodology
+
+**Question:** What should happen when an existing résumé metric is based on mixed populations, an ambiguous denominator, or unsupported interpretation?
+
+**Decision:** Recompute from committed records, publish the exact population and unit, and preserve the old value as a disclosed correction when useful. Separate post-event feedback from pre-event audience research; separate response rows, qualitative entries, question-level rating aggregates, and rating observations; and do not publish a single heterogeneous normalized rating as satisfaction. Keep potential value separate from realized value and team or portfolio outcomes separate from Datta-attributed outcomes.
+
+**Rationale:** Transparent corrections strengthen rather than weaken the leadership story. The corrected professional-learning population is 88 post-event datasets and 1,050 response rows, plus two separately reported pre-event surveys and 133 response rows. The previous 4.3/5 combined unlike questions and therefore cannot carry the meaning assigned to it.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Retain familiar rounded résumé numbers | Repeats errors and makes later source inspection contradict the headline |
+| Delete all superseded values without explanation | Hides the audit trail and makes corrections look arbitrary |
+| Average every numeric survey question | Produces a mathematically valid number with no coherent construct |
+| Attribute shared program potential to one person | Confuses contribution with sole ownership and potential with realized impact |
+
+---
+
+## Decision 046: Use Documentary Media Through an Explicit Safety Allowlist
+
+**Date:** 2026-08-07
+**Phase:** Executive Portfolio Observatory
+**Category:** Visual Design / Privacy
+
+**Question:** Which evidence images should be embedded to make the portfolio tangible without turning private records or identifiable participants into decoration?
+
+**Decision:** Import only individually reviewed documentary assets at the module boundary. The current allowlist is limited to Datta-only certificate records and non-identifying service materials. Do not publish images containing identifiable children, unconsented participants or colleagues, internal comments, or internal URLs. Give every displayed image a source record, descriptive caption, supported claim, and access state.
+
+**Rationale:** Real documentary media makes evidence legible and memorable, but an image is also a disclosure. An explicit allowlist keeps the Vite build privacy-safe and makes each visual part of the same traceability model as quantitative claims.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Copy the complete evidence image directory | Reintroduces the raw-public-directory leak and bypasses consent review |
+| Use identifiable student or child photographs | The source may document service but does not establish public image consent |
+| Use only generated decorative imagery | Weakens authenticity when reviewed documentary evidence is available |
+| Show images without captions or source routes | Turns evidence into atmosphere and prevents verification |

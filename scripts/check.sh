@@ -55,6 +55,13 @@ if should_run "test"; then
     run_check "Pytest" uv run pytest tests/ -q --tb=short
 fi
 
+# ─── PUBLIC PORTFOLIO ─────────────────────────────────────────────────────────
+if should_run "frontend"; then
+    run_check "Portfolio TypeScript" npm --prefix viz exec -- tsc -p viz/tsconfig.json --noEmit
+    run_check "Portfolio production build" npm --prefix viz run build
+    run_check "Public bundle privacy" python3 scripts/check_public_bundle.py viz/dist
+fi
+
 # ─── SPELLING ─────────────────────────────────────────────────────────────────
 if should_run "spell"; then
     if command -v typos &>/dev/null; then

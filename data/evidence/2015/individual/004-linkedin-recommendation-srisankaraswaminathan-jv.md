@@ -98,7 +98,7 @@ This recommendation is exceptionally valuable because:
 
 ### Cross-references
 - Corroborates Manohar Veeraiah (001, 2015): "managing big teams without any hassle" ↔ "manage such a large team (30+ developers)"
-- Corroborates Rob Nicholson (072, 2025): "7000 software professionals" — the scale grew, but team management was proven at 30+ already at Exeter
+- Contextual comparison with Rob Nicholson (072, 2025): Rob describes Datta as part of a worldwide team dedicated to a community of roughly 7,000 software professionals; he does not say Datta managed or personally served all 7,000
 - Corroborates Rob Nicholson (072, 2025): "regardless of reporting lines, seniority, or team boundaries" ↔ "breaking the technology-project-location barrier"
 - Corroborates Ian Watson (071, 2025): "contributed to strategy roadmaps" ↔ "organization wide initiatives"
 - Corroborates Robert Parks (003, 2015): bridge role ↔ "breaking the technology-project-location barrier"

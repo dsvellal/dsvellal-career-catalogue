@@ -1,7 +1,7 @@
 # Test Cases
 
 **Project:** dsvellal-personal-knowledge-context
-**Version:** 0.1.0
+**Version:** 0.2.0
 
 ---
 
@@ -174,7 +174,7 @@ Expected: Node properties reflect new content, audit trail records update
 
 ---
 
-## 8. Relationship Export and Journey Projection
+## 8. Relationship Export and Public Portfolio Projection
 
 ### 8.1 Portable relationship export
 
@@ -191,7 +191,7 @@ Expected: Node properties reflect new content, audit trail records update
 
 Automated coverage: `tests/test_export_relationships.py` (5 tests, passing on 2026-08-07).
 
-### 8.2 Curated journey dataset
+### 8.2 Curated journey dataset (legacy regression)
 
 | # | Test | Input | Expected |
 |---|------|-------|----------|
@@ -204,7 +204,7 @@ Automated coverage: `tests/test_export_relationships.py` (5 tests, passing on 20
 
 Automated coverage: `tests/test_build_journey_data.py` (5 tests, passing on 2026-08-07). Together with the export suite, 10 focused tests pass.
 
-### 8.3 Journey Atlas UI and public build
+### 8.3 Journey Atlas UI and public build (archived verification)
 
 | # | Test | Input | Expected |
 |---|------|-------|----------|
@@ -217,3 +217,56 @@ Automated coverage: `tests/test_build_journey_data.py` (5 tests, passing on 2026
 | T8.3.7 | Static typing | `npx tsc --noEmit` | No TypeScript errors in current or archived components |
 
 Verification on 2026-08-06: `npm run build` and `npx tsc --noEmit` pass; the production artifact is 1.2 MB with five files (HTML, CSS, JS, logo, photo), and `dist/data/evidence` is absent. All eight desktop and 390 px mobile deep links were reviewed, the mobile document width stayed equal to the viewport, arrow-key navigation was exercised, and automated WCAG A/AA checks reported zero violations. Gradient contrast remains a manual visual check and was reviewed in settled screenshots.
+
+### 8.4 Corrected professional-feedback aggregate
+
+| # | Test | Input | Expected |
+|---|------|-------|----------|
+| T8.4.1 | Mutually exclusive populations | Duplicate, pre-survey, and post-event fixtures | Duplicate files are excluded first; pre-surveys and post-event records have no overlap |
+| T8.4.2 | Transparent units | Files with multiple text and rating fields | File count, response rows, qualitative entries, rating-question aggregates, and rating observations remain separate |
+| T8.4.3 | Correct committed totals | `all_sessions_data.json` | 88 post-event/interaction datasets and 1,050 rows; two pre-surveys and 133 rows; category counts match the reviewed table |
+| T8.4.4 | No heterogeneous satisfaction score | Mixed 5/10-point questions and constructs | Rating inventory is reported, but no global average/satisfaction claim is emitted |
+| T8.4.5 | JSCPD interpretation boundary | Before file plus post-exercise ratings | Post ratings can be reported; unmatched files do not establish code improvement or causality |
+| T8.4.6 | Deterministic regeneration | Committed JSON extract and temporary output | Repeated `--from-json` generation is byte stable and matches committed `summary_stats.json` |
+
+Automated coverage: `tests/test_process_feedback.py`.
+
+### 8.5 Claim-centric portfolio dataset
+
+| # | Test | Input | Expected |
+|---|------|-------|----------|
+| T8.5.1 | Deterministic committed projection | `build_portfolio_data()` and `portfolio.json` | Parsed objects match exactly and validation succeeds |
+| T8.5.2 | Exact route contract | Generated `pages` | Nine ordered routes: Brief through Data Room; every page claim ID resolves |
+| T8.5.3 | Stable reference integrity | Claims, supports, sources, methods, relationships, caveats, conflicts | IDs are unique and every cross-reference resolves |
+| T8.5.4 | Claim support and method coverage | All public claims | Every claim has support; calculated/interpreted claims have versioned methods with inputs/rules/result |
+| T8.5.5 | Explicit relationship integrity | All longitudinal relationships | Endpoint and relationship claims, supports, state, reasoning/method, confidence, caveats, and limitation are present |
+| T8.5.6 | Correct metric derivations | Session, connect, 360, service, career, and inventory records | Values, formula inputs, unit, scope, attribution, rounding, and caveats match source records |
+| T8.5.7 | Privacy boundary | Serialized projection | No local path, internal domain, email, account/PAN language, raw export payload, or placeholder evidence; external URL hosts are allowlisted |
+| T8.5.8 | Source publication record | Every source capsule | Stable human ID, held-artifact checksum scope/note, access state, locator through support, and approved excerpt are present; exact verbatim excerpts occur in their canonical source and an external-page checksum is never implied |
+| T8.5.9 | Conflict transparency | Superseded mixed-population and attribution claims | Conflict remains visible and affected claims point to the corrected resolution |
+
+Automated coverage: `tests/test_build_portfolio_data.py`.
+
+### 8.6 Executive Portfolio Observatory UI and public build
+
+| # | Test | Input | Expected |
+|---|------|-------|----------|
+| T8.6.1 | Primary and detail routing | Empty/invalid hash; nine page hashes; claim/source/method hashes | Default and invalid routes resolve safely; every valid route renders a focused heading and browser-history entry |
+| T8.6.2 | Global evidence lens | Narrative, Proof, Method, Gaps controls | Same claim set remains; selected layer becomes visible; state is keyboard operable and persisted as a nonessential enhancement |
+| T8.6.3 | Claim-to-source traversal | A summary claim with method/support | Visitor can reach claim dossier, support/source record, and method record, then navigate back without a dead end |
+| T8.6.4 | Relationship Lab semantics | Observed and interpreted records | Only declared records render; line style and text communicate state; endpoints/method/caveat are navigable |
+| T8.6.5 | Participant transparency | Learning route | Positive takeaways and constructive criticism use explicit data groupings; no unversioned browser-side sentiment/theme inference |
+| T8.6.6 | Data Room discovery | Search and access/grade/state filters | Claims and sources are discoverable; result count updates accessibly; methodology exposes conflicts, caveats, and quality gaps |
+| T8.6.7 | Media safety | Production asset graph | Only allowlisted reviewed images are bundled; no third-party faces/names, internal comments/URLs, or identifiable children |
+| T8.6.8 | Responsive layout | Desktop and compact viewport | Primary navigation adapts, cards remain readable, detail routes preserve depth, and page width does not overflow viewport |
+| T8.6.9 | Accessibility and motion | Keyboard, focus, semantic landmarks, reduced-motion preference | Skip link, route focus, controls, tabs, links, and focus indicators work without pointer/color dependence; nonessential motion is disabled |
+| T8.6.10 | Type/build/privacy gates | TypeScript, Vite build, serialized bundle scan | `tsc --noEmit` and production build pass; bundle has no forbidden private token or raw evidence/export directory |
+
+### 8.7 Final verification record — 2026-08-07
+
+- `./scripts/check.sh lint types test frontend`: all 7 gates passed.
+- Python: Ruff lint and format passed; mypy passed across 35 source files; pytest reported 269 passed, 2 skipped, and 3 dependency deprecation warnings.
+- Portfolio: deterministic builder check passed for 9 routes, 55 claims, 82 supports, 36 sources, 18 methods, 11 relationships, 30 caveats, and 8 conflicts.
+- Frontend: TypeScript passed; Vite built 41 modules; independent `scripts/check_public_bundle.py` accepted `viz/dist` with only four reviewed documentary images.
+- Browser: all 9 primary routes rendered the expected heading at 1440×1000 and 390×844; document width equalled viewport width on every route; claim → source and claim → method traversal, Data Room search, filters, and Relationship Lab state filters passed.
+- Accessibility: axe-core WCAG A/AA reported zero violations on the Brief, Data Room Methodology, and Trust Relationship Lab. Gradient backgrounds made automated contrast computation inconclusive, so settled desktop/mobile screenshots were reviewed manually. Console contained only Vite/React development notices; page errors were empty.

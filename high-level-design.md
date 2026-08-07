@@ -1,8 +1,8 @@
 # High-Level Design
 
 **Project:** dsvellal-personal-knowledge-context
-**Version:** 0.1.0
-**Status:** Draft
+**Version:** 0.2.0
+**Status:** Active
 
 ---
 
@@ -25,20 +25,27 @@
 
 **Purpose:** Dynamic, always-current professional portfolio.
 
-**Journey Atlas views (curated from evidence):**
+**Executive-question routes (compiled from evidence):**
 
-1. Executive Portrait — concise identity, operating modes, and strongest proof points
-2. Twenty-Year Journey — braided professional, service, and capability timelines
-3. Capability Compounder — how technical depth became broader organizational leverage
-4. Outcome Ledger — quantified contribution grouped by scale, with attribution caveats
-5. Trust & Respect — selected person-attributed recommendations and recognition
-6. Influence Web — credibility → reusable mechanism → expanded reach, not a causal social graph
-7. Teaching & Service Ripple — sustained teaching and service as a parallel career lane
-8. Momentum & Next Horizon — recent evidence signals and explicitly aspirational directions
+1. Brief — what is the executive thesis and strongest bounded proof?
+2. Leadership System — how does Datta turn credibility into capability and change?
+3. Journey — how did responsibility, context, and contribution develop over time?
+4. Impact — what changed, at what scale, and with what attribution?
+5. Trust — why do colleagues, leaders, and participants voluntarily seek or recommend him?
+6. Innovation — how does he adopt emerging technology while protecting quality and governance?
+7. Learning & Multiplication — what do participants take away and how does expertise spread?
+8. Community & Service — what values persist outside formal role or employer?
+9. Data Room — which claims, methods, sources, corrections, gaps, and privacy boundaries underlie the narrative?
 
-**Tech:** Static React/Vite site built from one curated, evidence-tiered JSON projection. Every view has a stable hash deep link. The raw relationship export and evidence archive are local-only inputs and are not copied into the build.
+**Progressive depth:**
 
-**Presentation rule:** The sequence is intentional: orient the visitor, establish chronology, demonstrate compounding capability and measurable value, then let other people's words validate trust before showing influence, service, and future momentum. This projects confidence without converting co-occurrence or self-authored claims into false authority.
+- Level 1 is a concise executive answer with exact unit, scope, period, attribution, confidence, source count, and a visible caveat.
+- Level 2 is an explanation dossier with mechanism, breakdown, supporting and counterbalancing evidence, related claims, and “show your work” controls.
+- Level 3 is a stable claim, source, or method record with approved excerpt/media, locator, held-artifact checksum scope/note, formula/rubric, and privacy/access status. A public external URL remains independently openable; the checksum does not purport to fingerprint mutable live-page content.
+
+**Tech:** Static React/Vite site built from one deterministic claim-centric `portfolio.json` projection. Every page and Level 3 record has a stable hash deep link. The raw relationship export and evidence archive are local-only inputs and are not copied into the build.
+
+**Presentation rule:** Lead with a bounded conclusion, then let the visitor increase depth without losing context. Interpreted relationships use only explicit endpoints and visibly carry their non-causal limitations. Counterevidence, critique, corrections, and corpus gaps are first-class rather than hidden in fine print.
 
 ### 1.3 Resume Generator
 
@@ -170,7 +177,7 @@ Configurable weights per consumer:
 - Weekly summary: high temporal weight
 - Chat twin: balanced across all four
 - Legacy graph portfolio views: high graph weight
-- Current Journey Atlas: no runtime fusion; it consumes the reviewed static journey projection
+- Current Executive Portfolio Observatory: no runtime fusion; it consumes the validated static claim projection
 
 ---
 
@@ -184,8 +191,9 @@ Configurable weights per consumer:
 - Cloud deployment receives ONLY published nodes
 - No raw artifact text in cloud, only synthesized outputs and embeddings
 - Voice profile and system prompts stay local (cloud uses a published voice summary)
-- The Journey Atlas consumes `viz/src/data/journey.json`, never `data/exports/relationships/` or raw evidence bodies
-- Journey claims retain an evidence tier, opaque source ID, and caveat labels; private evidence paths are validated locally and removed before the browser bundle
+- The Executive Portfolio Observatory consumes `viz/src/data/portfolio.json`, never `data/exports/relationships/` or raw evidence bodies
+- Portfolio claims retain independent provenance, support-directness, and claim-state fields; source capsules carry stable editorial IDs, checksums, approved excerpts, access states, and optional allowlisted public URLs
+- Calculated and interpreted claims resolve to versioned method records; explicit relationships retain confidence and non-causal limitations
 - Vite `publicDir` is disabled so `viz/public/data/evidence` cannot be copied into a production bundle
 
 ### 4.2 Confidential Project Handling

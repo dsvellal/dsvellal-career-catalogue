@@ -1,4 +1,4 @@
-# Evidence: JSCPD Code Duplication Detection — Enterprise-Wide Initiative
+# Evidence: JSCPD Code Duplication Detection — Cross-BU Enablement and Reporting
 
 ## Source
 - **Files (representative selection from ~30+ related emails):**
@@ -26,16 +26,20 @@
 | Workshop Participants | 30+ developers across BUs | multiple |
 
 ## Context
-Datta conceived, developed, and led a company-wide initiative to detect and reduce code duplication using JSCPD (JavaScript Copy Paste Detector). Starting with hands-on workshops in September 2019, this grew into a cross-BU program that produced data directly presented to the CTO and PLP leadership.
+The reviewed records attribute to Datta a cross-BU effort to introduce JSCPD
+(JavaScript Copy Paste Detector), create enablement material, facilitate hands-on
+work, and compile results for a CTO extended call and PLP leadership. They
+document activity across several teams; they do not establish company-wide
+adoption, a unique participant total, or an aggregate reduction in duplicate code.
 
 ## Datta's Role & Title
 - **Competency Specialist – Software Excellence, Software Center of Excellence**
-- Sole architect and driver of this initiative
+- Primary named organizer and driver in the reviewed record set
 
 ## Key Contributions Evidenced
 
 ### 1. Conceived & Built the Program
-Datta designed the entire approach:
+The reviewed records attribute these elements of the approach to Datta:
 - Introduced JSCPD tool to Philips
 - Created installation guides and usage documentation
 - Designed hands-on workshop curriculum
@@ -54,21 +58,25 @@ From Datta's email to leadership (2019-10-12):
 
 Maintained:
 - Comprehensive tracking spreadsheet
-- Before/after reports for all analyzed source code
+- Before/after reporting templates and reports for reviewed source-code examples
 - Quantified results (e.g., "20% Code Duplications in UDM Common Apps")
 
 ### 4. Leadership Endorsement
 Rani Malli (Senior Director) responded:
 > "Great Datta. It provides good insight. As next step we need to devise mechanism to remove and commit 23% of duplicate code."
 
-### 5. Drove Organizational Change
-- Teams committed dedicated sprint days for tech-debt reduction (3 days per PI)
-- Integration with existing tools (TiCS, CodeScene) explored
-- Multiple BUs adopted JSCPD as standard practice
-- Workshop participants independently ran tools and submitted reports
+### 5. Documented Follow-through
+- At least one record proposes dedicated sprint time for technical-debt reduction
+  (3 days per PI); the corpus does not establish organization-wide implementation
+- Integration with existing tools (TiCS, CodeScene) was explored
+- Participants from multiple BUs independently ran the tool and submitted reports
+- The records support cross-BU interest and follow-through, not a claim that every
+  named BU adopted JSCPD as standard practice
 
 ### 6. Scale of Impact
-Based on email evidence, workshops/sessions were conducted for:
+The reviewed email set associates workshops, reports, or outreach with the
+following teams. This list is not a count of distinct delivered sessions or
+verified adoption:
 - IDM team (Bangalore)
 - MR (Magnetic Resonance) team
 - EOI (Enterprise Operations Intelligence) team
@@ -78,7 +86,7 @@ Based on email evidence, workshops/sessions were conducted for:
 - Multiple other product teams
 
 ## Individual Developer Reports Received
-Evidence of workshop impact — developers independently ran JSCPD and reported back:
+Evidence of follow-through — developers independently ran JSCPD and reported back:
 - Karthika R, Alok Kumar, Soumabha Bhandari, Vaisakh K, Mitesh Kumar N, Sankalp Malhotra, Pankaja Sadashivaiah, Naveen Rao, Rohinee N A, Ankita Thakur, Pradyutha Tumati, Darshan Ashpal, Kalmesh Sambrani, Sunil Baba Villuri, Deep Kumar, Madhusmita Mishra, Subodh Kumar, and more.
 
 ## Skills Demonstrated
@@ -92,10 +100,13 @@ Evidence of workshop impact — developers independently ran JSCPD and reported 
 - Open source tooling adoption
 
 ## Impact Statement
-This single initiative demonstrates Datta's ability to:
+This record set supports Datta's role in:
 1. Identify an enterprise-level problem (code duplication)
-2. Find and validate a solution (JSCPD)
+2. Evaluate and introduce a candidate solution (JSCPD)
 3. Create enablement materials (guides, workshops)
-4. Execute at scale (30+ developers, multiple BUs, global sessions)
-5. Report to executive leadership (CTO-level data)
-6. Drive organizational behavior change (dedicated tech-debt sprints)
+4. Engage developers across multiple BUs and collect follow-up reports
+5. Prepare data for executive-level review
+
+The evidence does not support multiplying one developer's before/after result
+across the other records. It does not quantify enterprise-wide adoption, unique
+reach, total code removed, or a causal average improvement.

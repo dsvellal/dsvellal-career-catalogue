@@ -1,7 +1,7 @@
 # Setup Instructions
 
 **Project:** dsvellal-personal-knowledge-context
-**Status:** Phases 0-6 Complete, Phase 7 (Cloud Deployment) Pending
+**Status:** Phases 0-6 and Executive Portfolio Observatory complete; Phase 7 cloud deployment pending
 
 ---
 
@@ -96,35 +96,44 @@ Verify the exporter with:
 .venv/bin/python -m pytest tests/test_export_relationships.py -q
 ```
 
-### Build and run the Journey Atlas
+### Build and run the Executive Portfolio Observatory
 
-Regenerate the curated, public-safe journey dataset and its analysis report:
+Regenerate and validate the claim-centric public projection:
 
 ```bash
-.venv/bin/python scripts/build_journey_data.py
+.venv/bin/python scripts/build_portfolio_data.py
 ```
 
-The builder validates the exact eight-view schema, 2007–2026 chronology, private evidence-reference shape and file existence, recommendation manifest count, evidence on every displayed metric, and a deny-list for email addresses, URLs, account details, and similar private payloads. It then strips local evidence paths and emits stable opaque source IDs. It writes:
+The builder reads committed source records, recomputes bounded metrics, and validates:
 
-- `viz/src/data/journey.json`: the static public projection imported by the React app
-- `data/journey-analysis.md`: the thesis, rationale for the eight views, and interpretation boundaries
+- exactly nine primary page records and stable human-readable claim/source/method IDs;
+- a support edge and source record for every public claim;
+- method records for calculated and interpreted claims;
+- explicit endpoint claims, support, confidence, method/reasoning, and limitation for every longitudinal relationship;
+- reference integrity across claims, supports, sources, methods, caveats, and conflicts;
+- an allowlist for external public links and a deny-list for local paths, internal URLs, emails, account/PAN language, and similar private payloads;
+- deterministic equality with `viz/src/data/portfolio.json`.
+
+The prior `scripts/build_journey_data.py` and `journey.json` remain for regression history but are not the active UI contract.
 
 Run and verify the portfolio:
 
 ```bash
 cd viz
-npm install
+npm ci
 npm run dev
 npm run build
 npx tsc --noEmit
 ```
 
-The default development URL is `http://localhost:5173/#portrait`. Other views use the documented hash IDs. `publicDir` is disabled, so production builds must import approved assets explicitly and must not contain `data/evidence/`.
+The default development URL is `http://localhost:5173/#/brief`. Page routes and Level 3 records use stable hashes such as `#/trust`, `#/claim/<id>`, `#/source/<id>`, and `#/method/<id>`. `publicDir` is disabled, so production builds must import approved assets explicitly. The output must not contain raw `data/evidence/`, `data/exports/relationships/`, local paths, or internal URLs.
 
 Verify both derived-data pipelines with:
 
 ```bash
 .venv/bin/python -m pytest \
+  tests/test_build_portfolio_data.py \
+  tests/test_process_feedback.py \
   tests/test_build_journey_data.py \
   tests/test_export_relationships.py -q
 ```
@@ -150,9 +159,10 @@ dsvellal-personal-knowledge-context/
 │   └── exports/relationships/  # Generated portable export, private-repository only
 ├── scripts/                    # Export and derived-data builders
 │   ├── export_relationships.py
-│   └── build_journey_data.py
+│   ├── build_portfolio_data.py
+│   └── build_journey_data.py   # Superseded compatibility projection
 ├── tests/
-├── viz/                        # React/Vite Journey Atlas
+├── viz/                        # React/Vite Executive Portfolio Observatory
 ├── templates/                  # Resume/PDF templates
 ├── pyproject.toml
 ├── .env.example

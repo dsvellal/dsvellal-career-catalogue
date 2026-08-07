@@ -86,7 +86,7 @@ This recommendation is valuable because:
 
 ### Cross-references
 - Corroborates Rajesh Kumar (183, 2019): "project architect" ↔ "system design and development"
-- Corroborates Rob Nicholson (072, 2025): "upskilling 7,000 engineers" ↔ "helped all team members enhancing code quality"
+- Contextual comparison with Rob Nicholson (072, 2025): Rob describes a worldwide team dedicated to a roughly 7,000-person software community; this is not evidence that Datta personally upskilled all 7,000
 - Corroborates JSCPD initiative evidence (2019): Enterprise code quality program ↔ "made everyone follow coding standards"
 - Corroborates Ian Watson (071, 2025): "prodigious technical hands-on skill" ↔ "exceptionally well in system design and development"
 - Aligns with 2019 evidence on code quality workshops, JSCPD, SonarLint, and clean code sessions

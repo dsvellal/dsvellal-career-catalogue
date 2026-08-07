@@ -95,7 +95,7 @@ recurring: false
 This recommendation is the earliest managerial endorsement and is valuable because:
 1. **IBM Executive Architect** — The recommender is now an Executive Architect at IBM, adding significant credibility
 2. **Patent portfolio contribution** — Concrete, verifiable IP output (patents are public records)
-3. **Networking in 400K+ org** — "Collaborate with the right experts" in a company of IBM's scale — this skill later manifests as cross-BU engagement at Philips (7,000 engineers)
+3. **Networking in 400K+ org** — "Collaborate with the right experts" in a company of IBM's scale can be compared with later cross-BU engagement at Philips; the roughly 7,000-person software community is organizational context, not Datta's personal reach
 4. **"Never been let down"** — Absolute trust statement from a direct manager
 5. **IBM CoE experience** — Working in a Centre of Excellence at IBM directly foreshadows creating/leading one at Philips (SWCoE)
 6. **Earliest era evidence** — Proves the fundamental traits (sincerity, competence, enthusiasm, networking) were present from the very beginning of the career arc

@@ -1,8 +1,8 @@
 # Execution Plan
 
 **Project:** dsvellal-personal-knowledge-context
-**Last Updated:** 2026-08-06
-**Current Phase:** 7 (Cloud Deployment) + Journey Analysis and Visualization
+**Last Updated:** 2026-08-07
+**Current Phase:** 7 (Cloud Deployment); Phase 5d complete
 
 ---
 
@@ -132,6 +132,21 @@
 | 5c.5 | Implement exact eight-view Journey Atlas | Done | UI, data binding, hash navigation, responsive shell, production build, and TypeScript check complete |
 | 5c.6 | Enforce raw-evidence/public-build boundary | Done | `publicDir` disabled; local filenames replaced by opaque source IDs; 1.2 MB build contains only HTML, CSS, JS, logo, and photo—no evidence directory |
 | 5c.7 | Browser, responsive, accessibility, build, and type verification | Done | Eight desktop/mobile deep links, keyboard navigation, zero page overflow at 390 px, zero automated WCAG A/AA violations, production build, and static typing verified |
+
+---
+
+## Phase 5d: Executive Portfolio Observatory (Complete)
+
+| # | Task | Status | Notes |
+|---|------|--------|-------|
+| 5d.1 | Audit public metrics, attribution, privacy, and data quality | Done | Corrected mixed session/survey populations, heterogeneous rating interpretation, service-growth wording, XITE/Sutra attribution, and other claim boundaries |
+| 5d.2 | Identify defensible longitudinal and cross-domain relationships | Done | Development-to-later-observation, assessed-to-observed strengths, quality-enables-speed, title-independent leadership, capability multiplication, topic-frontier shift, demand-led influence, and service continuity |
+| 5d.3 | Define claim/source/support/method/conflict schema | Done | Provenance, support directness, and claim state are orthogonal; stable human-readable IDs and privacy-aware access states |
+| 5d.4 | Build deterministic `portfolio.json` public projection | Done | 9 routes, 55 claims, 82 supports, 36 sources, 18 methods, 11 explicit relationships, 30 caveats, and 8 conflicts |
+| 5d.5 | Replace Journey Atlas with nine-route executive observatory | Done | Three progressive depth levels, global evidence lens, claim/source/method routes, Data Room, documentary media, and responsive interactions |
+| 5d.6 | Correct committed professional-session aggregate evidence | Done | Separates 88 post-event datasets / 1,050 rows from two pre-event surveys / 133 rows; unsupported global satisfaction and JSCPD causality claims removed |
+| 5d.7 | Run deterministic data, privacy, frontend, accessibility, and browser verification | Done | All 7 repository gates pass; 269 tests pass / 2 skip; 9 routes pass at 1440 and 390 px; zero automated WCAG A/AA violations and no browser errors |
+| 5d.8 | Complete documentation and publish directly to `main` | Done | System/product/design/user-flow/test/setup/handover records reconciled; direct-main publication with no new pull request per owner instruction |
 
 ---
 

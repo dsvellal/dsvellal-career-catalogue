@@ -99,7 +99,7 @@ This recommendation is the **foundational origin evidence** because:
 - Corroborates Sannihith Reddy (142, 2020): "perfect mentor" ↔ "mentoring interns" already at IBM in early career
 - Corroborates NaveenKumar VR (018, 2023): mentoring ↔ mentoring starting from the very first job
 - Corroborates Rafael Vaz (010, 2024): "true mentor" ↔ mentoring was present from day one
-- Foreshadows entire career arc: "great potential to achieve greater things" → patents → 30+ dev team → Amazon SDE-2 → 7,000-engineer enablement
+- Career comparison, not a reach claim: "great potential to achieve greater things" can be read alongside later patents, a 30+ developer team context, an Amazon SDE-2 role, and membership in a worldwide team dedicated to a roughly 7,000-person software community
 
 ## Full Content
 

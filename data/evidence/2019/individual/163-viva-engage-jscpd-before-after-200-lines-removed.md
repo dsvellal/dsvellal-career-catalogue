@@ -1,4 +1,4 @@
-# Evidence: Viva Engage — JSCPD Before/After: ~200 Lines Removed in 1 Hour (Oct 2019, Seen by 169)
+# Evidence: Viva Engage — Single JSCPD Pairing Report: ~200 Lines Removed (Oct 2019)
 
 ## Source
 - **Platform:** Viva Engage (IEN Software Engineering Excellence community)
@@ -77,8 +77,8 @@
 > (Datta) "Very rewarding to see you commit the changes so fast! Very commendable!"
 
 ## Key Context
-- **Before/After HTML reports attached** — tangible, verifiable evidence of impact
-- **Git commit ID provided** — traceable to exact code changes
+- **Before/After HTML reports attached** — preserved artifacts for this one reported instance
+- **Git commit ID provided** — a traceable locator for the reported code changes; the internal repository is not publicly openable
 - **Installation guide hosted on Datta's SharePoint** — he created the enablement material
 - **15-minute setup** — demonstrates tool accessibility
 - **Same Rajeshwar Raja** who later thanked Datta for SonarQube support in 2024
@@ -101,18 +101,21 @@
 - JavaScript/code analysis
 - CodeScene recommendation
 
-## Impact Statement
-This is the **most complete single-instance proof** of JSCPD impact:
+## Bounded Impact Statement
+This is a well-documented single-instance report of JSCPD use:
 - **Problem:** Developer needs quality gates for duplication
-- **Action:** Datta pairs with them, sets up JSCPD in 15 min
-- **Result:** 200 lines removed in 1 hour
-- **Evidence:** Before/after HTML reports + Git commit ID
-- **Publicity:** Published to 169 people with credit
+- **Action:** The author says Datta paired with him and helped set up JSCPD in about 15 minutes
+- **Result:** The author reports removing about 200 duplicate lines during roughly one hour of work
+- **Evidence:** Preserved before/after HTML reports and an internal Git commit locator
+- **Internal visibility:** The captured post records 169 view events, not verified unique people
 
-Multiply this by 30+ similar sessions documented in the email evidence, and the enterprise-wide impact becomes clear. This one post alone captures the entire value chain: approach → pair → solve → document → share.
+The other JSCPD records demonstrate additional activity and follow-through, but
+this result cannot be multiplied by their count. This instance does not estimate
+enterprise-wide code reduction, a typical workshop outcome, or causal impact for
+unmatched before/after populations.
 
 ## Cross-References
-- [[jscpd-code-duplication-initiative]] — Enterprise JSCPD initiative (this is one instance)
+- [[jscpd-code-duplication-initiative]] — Cross-BU JSCPD enablement and reporting (this is one instance)
 - [[enterprise-tooling-pi-gate]] — Same Rajeshwar Raja thanked Datta for SonarQube in 2024
 - Email: Multiple JSCPD report submissions from developers (2019)
 - Session feedback: "JSCPD Before Elimination" and "JSCPD After Elimination" spreadsheets

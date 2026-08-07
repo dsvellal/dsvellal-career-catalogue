@@ -11,7 +11,7 @@
 - **Category:** Awards & Recognition / Career Portfolio
 
 ## Metadata
-- **Total awards:** 16
+- **Award index entries:** 16 (some entries aggregate multiple club-level recognitions)
 - **Total recognitions/appreciations:** 12
 - **Total public URL references:** ~20
 - **Span:** 2008–2021
@@ -20,11 +20,11 @@
 
 ## Datta's Involvement
 - **Role at time:** Various (spanning entire career)
-- **Involvement type:** Direct recipient of all awards and recognitions
+- **Involvement type:** Direct recipient or named participant in the indexed awards and recognitions
 
 ---
 
-## Part 1: Awards (16)
+## Part 1: Award Index (16 entries)
 
 ### Philips Awards (6)
 
@@ -162,8 +162,8 @@ Many of these awards are already captured in existing evidence files:
 ## Significance
 
 This collection demonstrates:
-1. **Consistency** — awards every 1-2 years across 4 organizations and 14 years
+1. **Continuity** — recognition records span four employers from 2008 through 2021; the cadence is uneven and includes multi-year gaps
 2. **Breadth** — technical (patents), leadership (RTLE), delivery (Zeus), culture change (Code Quality), people development (Bar Raiser)
 3. **Increasing scope** — from IBM hackday volunteer → Amazon team award → Philips campus-level → CTO-level global award
 4. **Community contribution** — Toastmasters certifications, college guest lectures, IAS panellist
-5. **Intellectual property** — 2 USPTO patents with 29+ combined citations (US8560487 has 27 citations — significant)
+5. **Intellectual property** — two invention families are represented by multiple application, publication, and grant records; US8560487 is the clearly identified grant in this index

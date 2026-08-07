@@ -4,17 +4,19 @@ Process 92 Philips session feedback Excel files into structured JSON.
 Extracts ratings, text feedback, dates, and categorizes each session.
 """
 
+import argparse
 import json
 import os
 import re
+from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from statistics import mean
 
 import openpyxl
 
-FEEDBACK_DIR = "/Users/dsvellal/Downloads/Website/Philips-Sessions-Feedback"
-OUTPUT_DIR = "/Users/dsvellal/Code/dsvellal-personal-knowledge-context/data/evidence/sessions"
+FEEDBACK_DIR = Path("/Users/dsvellal/Downloads/Website/Philips-Sessions-Feedback")
+OUTPUT_DIR = Path(__file__).resolve().parent
 
 # Month name to number mapping
 MONTH_MAP = {
@@ -43,7 +45,13 @@ def extract_date_from_filename(filename):
         return f"{year}-{month:02d}-{day:02d}"
 
     # Pattern: DDth Month YYYY or DDth Month Year
-    m = re.search(r'(\d{1,2})(?:st|nd|rd|th)?\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(\d{4})', name, re.IGNORECASE)
+    month_pattern = (
+        r"(\d{1,2})(?:st|nd|rd|th)?\s+"
+        r"(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|"
+        r"Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|"
+        r"Dec(?:ember)?)\s+(\d{4})"
+    )
+    m = re.search(month_pattern, name, re.IGNORECASE)
     if m:
         day = int(m.group(1))
         month = MONTH_MAP.get(m.group(2).lower()[:3], 0)
@@ -52,7 +60,11 @@ def extract_date_from_filename(filename):
             return f"{year}-{month:02d}-{day:02d}"
 
     # Pattern: Dec-16-Workshop, Dec-17-Workshop, Dec-18
-    m = re.search(r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-(\d{1,2})', name, re.IGNORECASE)
+    m = re.search(
+        r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-(\d{1,2})",
+        name,
+        re.IGNORECASE,
+    )
     if m:
         month = MONTH_MAP.get(m.group(1).lower()[:3], 0)
         day = int(m.group(2))
@@ -88,7 +100,11 @@ def categorize_session(filename, questions=None):
     # Connects / personal feedback about Datta
     if '.connects' in name or 'connects' in name:
         return "connects"
-    if 'feedback about datta' in name or 'feedback for datta' in name or 'feedback to datta' in name:
+    if (
+        "feedback about datta" in name
+        or "feedback for datta" in name
+        or "feedback to datta" in name
+    ):
         return "feedback-about-datta"
     if 'new hire mentoring' in name:
         return "feedback-about-datta"
@@ -327,7 +343,12 @@ def process_file(filepath):
 
         # Read all rows using max_row/max_column for reliable reading
         rows = []
-        for row in ws.iter_rows(min_row=1, max_row=ws.max_row, max_col=ws.max_column, values_only=True):
+        for row in ws.iter_rows(
+            min_row=1,
+            max_row=ws.max_row,
+            max_col=ws.max_column,
+            values_only=True,
+        ):
             rows.append(row)
         wb.close()
 
@@ -345,7 +366,10 @@ def process_file(filepath):
         if result["date"] == "unknown" and data_rows:
             # Look for timestamp columns
             for col_idx, header in enumerate(headers):
-                if header and any(kw in str(header).lower() for kw in ['start time', 'completion time', 'timestamp']):
+                timestamp_headers = ["start time", "completion time", "timestamp"]
+                if header and any(
+                    keyword in str(header).lower() for keyword in timestamp_headers
+                ):
                     for row in data_rows:
                         if col_idx < len(row) and row[col_idx] is not None:
                             val = row[col_idx]
@@ -355,7 +379,12 @@ def process_file(filepath):
                                 break
                             elif isinstance(val, str):
                                 # Try parsing string date
-                                for fmt in ["%Y-%m-%d %H:%M:%S", "%m/%d/%Y %H:%M:%S", "%d/%m/%Y %H:%M:%S"]:
+                                timestamp_formats = [
+                                    "%Y-%m-%d %H:%M:%S",
+                                    "%m/%d/%Y %H:%M:%S",
+                                    "%d/%m/%Y %H:%M:%S",
+                                ]
+                                for fmt in timestamp_formats:
                                     try:
                                         dt = datetime.strptime(val.split('.')[0], fmt)
                                         result["date"] = dt.strftime("%Y-%m-%d")
@@ -423,90 +452,76 @@ def process_file(filepath):
     return result
 
 
-def compute_summary(all_sessions):
-    """Compute summary statistics across all sessions."""
-    summary = {
-        "total_files": len(all_sessions),
-        "total_sessions_excluding_duplicates_and_surveys": 0,
-        "total_responses": 0,
-        "sessions_by_year": {},
-        "sessions_by_category": {},
-        "overall_ratings": {
-            "all_averages": [],
-            "normalized_to_5_scale": []
-        },
-        "top_quotes": [],
-        "before_after_comparison": {},
-        "sessions_with_errors": [],
-        "pre_session_surveys": [],
-        "duplicates": []
+def count_records(sessions):
+    """Count files and extracted observations for one explicitly defined population."""
+    return {
+        "file_count": len(sessions),
+        "response_rows": sum(int(session.get("response_count", 0)) for session in sessions),
+        "qualitative_entries": sum(
+            len(session.get("text_feedback", [])) for session in sessions
+        ),
+        "rating_question_aggregates": sum(
+            len(session.get("ratings", {})) for session in sessions
+        ),
+        "rating_observations": sum(
+            int(rating.get("count", 0))
+            for session in sessions
+            for rating in session.get("ratings", {}).values()
+        ),
     }
 
+
+def group_record_counts(sessions, key_function):
+    """Return deterministic population counts grouped by a session attribute."""
+    groups = defaultdict(list)
+    for session in sessions:
+        groups[str(key_function(session))].append(session)
+    return {key: count_records(groups[key]) for key in sorted(groups)}
+
+
+def session_year(session):
+    """Return a four-digit year when available, otherwise ``unknown``."""
+    date_str = str(session.get("date") or "unknown")
+    if date_str != "unknown" and re.match(r"^\d{4}", date_str):
+        return date_str[:4]
+    return "unknown"
+
+
+def rating_inventory(sessions):
+    """Describe rating coverage without combining semantically different questions."""
+    by_scale = defaultdict(lambda: {"question_level_aggregates": 0, "rating_observations": 0})
+    for session in sessions:
+        for rating in session.get("ratings", {}).values():
+            scale = str(rating.get("scale") or "unknown")
+            by_scale[scale]["question_level_aggregates"] += 1
+            by_scale[scale]["rating_observations"] += int(rating.get("count", 0))
+
+    counts = count_records(sessions)
+    return {
+        "question_level_aggregates": counts["rating_question_aggregates"],
+        "rating_observations": counts["rating_observations"],
+        "by_scale": {key: by_scale[key] for key in sorted(by_scale)},
+        "aggregation_policy": (
+            "No global average is reported. The extracted rating questions measure different "
+            "constructs on 5-point and 10-point scales; normalizing and averaging them would not "
+            "produce a defensible overall score."
+        ),
+    }
+
+
+def select_top_quotes(sessions):
+    """Select substantive excerpts from the post-event analysis population only."""
     all_text_feedback = []
-    all_rating_avgs = []
-
-    for session in all_sessions:
-        if session.get("is_duplicate"):
-            summary["duplicates"].append(session["filename"])
-            continue
-        if session.get("is_pre_session_survey"):
-            summary["pre_session_surveys"].append(session["filename"])
-
-        summary["total_sessions_excluding_duplicates_and_surveys"] += 1
-        summary["total_responses"] += session["response_count"]
-
-        if session.get("error"):
-            summary["sessions_with_errors"].append({
-                "filename": session["filename"],
-                "error": session["error"]
-            })
-
-        # Year breakdown
-        date_str = session["date"]
-        year = "unknown"
-        if date_str and date_str != "unknown":
-            year = date_str[:4]
-        summary["sessions_by_year"][year] = summary["sessions_by_year"].get(year, 0) + 1
-
-        # Category breakdown
-        cat = session["category"]
-        summary["sessions_by_category"][cat] = summary["sessions_by_category"].get(cat, 0) + 1
-
-        # Collect ratings
-        for q, rating_data in session["ratings"].items():
-            avg = rating_data["avg"]
-            scale = rating_data.get("scale", 5)
-            all_rating_avgs.append(avg)
-            # Normalize to 5-point scale
-            if scale == 10:
-                normalized = avg / 2
-            else:
-                normalized = avg
-            summary["overall_ratings"]["normalized_to_5_scale"].append(normalized)
-
-        # Collect text feedback
-        for fb in session["text_feedback"]:
-            all_text_feedback.append({
-                "session": session["session_name"],
-                "date": session["date"],
-                "question": fb["question"],
-                "response": fb["response"]
-            })
-
-    # Calculate overall rating stats
-    if summary["overall_ratings"]["normalized_to_5_scale"]:
-        norm_ratings = summary["overall_ratings"]["normalized_to_5_scale"]
-        summary["overall_ratings"]["grand_average_normalized_5_scale"] = round(mean(norm_ratings), 2)
-        summary["overall_ratings"]["total_rating_data_points"] = len(norm_ratings)
-        summary["overall_ratings"]["min_normalized"] = round(min(norm_ratings), 2)
-        summary["overall_ratings"]["max_normalized"] = round(max(norm_ratings), 2)
-
-    if all_rating_avgs:
-        summary["overall_ratings"]["grand_average_raw"] = round(mean(all_rating_avgs), 2)
-
-    # Remove the raw lists from final output
-    del summary["overall_ratings"]["all_averages"]
-    del summary["overall_ratings"]["normalized_to_5_scale"]
+    for session in sessions:
+        for feedback in session.get("text_feedback", []):
+            all_text_feedback.append(
+                {
+                    "session": session.get("session_name", session.get("filename", "unknown")),
+                    "date": session.get("date", "unknown"),
+                    "question": feedback.get("question", ""),
+                    "response": feedback.get("response", ""),
+                }
+            )
 
     # Select top quotes (longer, more substantive feedback)
     # Filter out trivial responses and email-like content
@@ -517,7 +532,18 @@ def compute_summary(all_sessions):
         # Skip trivial or non-feedback text
         if len(resp) < 30:
             continue
-        if lower_resp.startswith(('yes', 'no', 'na', 'n/a', 'none', 'nothing', 'good', 'ok', 'nil')):
+        trivial_prefixes = (
+            "yes",
+            "no",
+            "na",
+            "n/a",
+            "none",
+            "nothing",
+            "good",
+            "ok",
+            "nil",
+        )
+        if lower_resp.startswith(trivial_prefixes):
             continue
         # Skip email-like content (contains multiple @philips.com references)
         if resp.count('@philips.com') > 1:
@@ -539,7 +565,16 @@ def compute_summary(all_sessions):
         else:
             return 1
 
-    substantive_quotes.sort(key=lambda x: (-quote_quality(x), -len(x["response"])))
+    substantive_quotes.sort(
+        key=lambda item: (
+            -quote_quality(item),
+            -len(item["response"]),
+            item["session"],
+            item["date"],
+            item["question"],
+            item["response"],
+        )
+    )
 
     # Pick diverse quotes across sessions (max 3 per session)
     selected_quotes = []
@@ -553,40 +588,215 @@ def compute_summary(all_sessions):
         if len(selected_quotes) >= 50:
             break
 
-    summary["top_quotes"] = selected_quotes
+    return selected_quotes
 
-    # Before/After comparison
+
+def build_before_after_comparison(sessions):
+    """Describe the JSCPD pair without asserting an unsupported causal outcome."""
     before_session = None
     after_session = None
-    for session in all_sessions:
-        if 'before elimination' in session["filename"].lower():
+    for session in sessions:
+        filename = session.get("filename", "").lower()
+        if "before elimination" in filename:
             before_session = session
-        elif 'after elimination' in session["filename"].lower():
+        elif "after elimination" in filename:
             after_session = session
 
-    if before_session and after_session:
-        summary["before_after_comparison"] = {
-            "before": {
-                "filename": before_session["filename"],
-                "response_count": before_session["response_count"],
-                "ratings": before_session["ratings"],
-                "text_feedback_sample": before_session["text_feedback"][:5]
-            },
-            "after": {
-                "filename": after_session["filename"],
-                "response_count": after_session["response_count"],
-                "ratings": after_session["ratings"],
-                "text_feedback_sample": after_session["text_feedback"][:5]
-            },
-            "interpretation": "JSCPD code duplication - feedback collected before elimination (baseline metrics) and after elimination (effectiveness ratings). The 'before' file captures baseline duplication data while 'after' captures session effectiveness ratings."
+    if not before_session or not after_session:
+        return {}
+
+    def comparison_record(session):
+        counts = count_records([session])
+        return {
+            "filename": session["filename"],
+            "response_rows": counts["response_rows"],
+            "qualitative_entries": counts["qualitative_entries"],
+            "rating_question_aggregates": counts["rating_question_aggregates"],
+            "rating_observations": counts["rating_observations"],
+            "ratings": session.get("ratings", {}),
         }
+
+    return {
+        "before": comparison_record(before_session),
+        "after": comparison_record(after_session),
+        "interpretation": (
+            "The files are paired by their before/after filenames. The committed extract contains "
+            "16 baseline rows and six post-exercise feedback rows, but it does not contain matched "
+            "before/after outcome measures. The pair supports reporting the post-exercise ratings; "
+            "it does not by itself establish code improvement or causality."
+        ),
+    }
+
+
+def compute_summary(all_sessions):
+    """Compute transparent statistics for mutually exclusive analysis populations."""
+    duplicate_files = [session for session in all_sessions if session.get("is_duplicate")]
+    unique_files = [session for session in all_sessions if not session.get("is_duplicate")]
+    pre_session_surveys = [
+        session for session in unique_files if session.get("is_pre_session_survey")
+    ]
+    post_event_feedback = [
+        session for session in unique_files if not session.get("is_pre_session_survey")
+    ]
+
+    duplicate_counts = count_records(duplicate_files)
+    duplicate_counts["filenames"] = sorted(session["filename"] for session in duplicate_files)
+    pre_survey_counts = count_records(pre_session_surveys)
+    pre_survey_counts["filenames"] = sorted(
+        session["filename"] for session in pre_session_surveys
+    )
+
+    summary = {
+        "schema_version": 2,
+        "generated_from": "all_sessions_data.json",
+        "population_definitions": {
+            "source_files": "Every committed workbook extract, including known duplicate files.",
+            "duplicates_excluded": (
+                "Files marked is_duplicate=true; excluded before defining analysis populations."
+            ),
+            "pre_session_surveys": (
+                "Unique files marked is_pre_session_survey=true; reported separately and excluded "
+                "from post-event aggregates."
+            ),
+            "post_event_feedback": (
+                "Unique files not marked as pre-session surveys. This operational population also "
+                "contains interaction feedback, connect logs, and the JSCPD before/after pair, so "
+                "file_count is not a count of facilitated sessions."
+            ),
+        },
+        "source_inventory": {
+            "source_files": count_records(all_sessions),
+            "duplicates_excluded": duplicate_counts,
+            "unique_files": count_records(unique_files),
+        },
+        "analysis_populations": {
+            "post_event_feedback": count_records(post_event_feedback),
+            "pre_session_surveys": pre_survey_counts,
+        },
+        "post_event_by_year": group_record_counts(post_event_feedback, session_year),
+        "post_event_by_category": group_record_counts(
+            post_event_feedback, lambda session: session.get("category") or "unknown"
+        ),
+        "rating_inventory": rating_inventory(post_event_feedback),
+        "top_quotes": select_top_quotes(post_event_feedback),
+        "before_after_comparison": build_before_after_comparison(post_event_feedback),
+        "sessions_with_errors": sorted(
+            [
+                {
+                    "filename": session["filename"],
+                    "error": session["error"],
+                }
+                for session in all_sessions
+                if session.get("error")
+            ],
+            key=lambda item: item["filename"],
+        ),
+        "methodology_notes": [
+            "response_rows count spreadsheet rows, not verified unique participants or attendees.",
+            "qualitative_entries count extracted text_feedback records; a row can contribute "
+            "more than one entry, and the legacy extraction has not been manually coded or "
+            "deduplicated.",
+            "rating_question_aggregates count question-level summaries in the committed extract; "
+            "rating_observations sum each summary's count field.",
+            "The source workbooks are not committed. This summary is reproducible from the "
+            "committed all_sessions_data.json extract, but participant-level rating values cannot "
+            "be audited from that extract because it retains aggregates and only a three-row raw "
+            "sample.",
+        ],
+    }
 
     return summary
 
 
-def main():
-    feedback_dir = Path(FEEDBACK_DIR)
-    output_dir = Path(OUTPUT_DIR)
+def write_json(data, output_path):
+    """Write stable, human-reviewable JSON with a trailing newline."""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(
+        json.dumps(data, indent=2, ensure_ascii=False, default=str) + "\n",
+        encoding="utf-8",
+    )
+
+
+def regenerate_summary_from_json(input_path, output_path):
+    """Regenerate summary statistics from the committed extracted-session JSON."""
+    all_sessions = json.loads(input_path.read_text(encoding="utf-8"))
+    if not isinstance(all_sessions, list):
+        raise ValueError(f"Expected a JSON list of session records in {input_path}")
+    summary = compute_summary(all_sessions)
+    write_json(summary, output_path)
+    return summary
+
+
+def build_argument_parser():
+    parser = argparse.ArgumentParser(
+        description="Extract professional-session feedback or regenerate its summary."
+    )
+    parser.add_argument(
+        "--from-json",
+        type=Path,
+        help="Regenerate only summary_stats.json from an existing all_sessions_data.json.",
+    )
+    parser.add_argument(
+        "--summary-output",
+        type=Path,
+        help="Summary JSON destination (defaults to <output-dir>/summary_stats.json).",
+    )
+    parser.add_argument(
+        "--feedback-dir",
+        type=Path,
+        default=FEEDBACK_DIR,
+        help="Directory containing the source XLSX files.",
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=OUTPUT_DIR,
+        help="Directory for all_sessions_data.json and summary_stats.json.",
+    )
+    return parser
+
+
+def print_summary(summary):
+    post_event = summary["analysis_populations"]["post_event_feedback"]
+    pre_surveys = summary["analysis_populations"]["pre_session_surveys"]
+    duplicates = summary["source_inventory"]["duplicates_excluded"]
+
+    print("\n" + "=" * 60)
+    print("PROCESSING COMPLETE")
+    print("=" * 60)
+    print(f"Source files: {summary['source_inventory']['source_files']['file_count']}")
+    print(
+        "Post-event/interaction feedback: "
+        f"{post_event['file_count']} files, {post_event['response_rows']} response rows"
+    )
+    print(
+        f"Pre-session surveys: {pre_surveys['file_count']} files, "
+        f"{pre_surveys['response_rows']} response rows"
+    )
+    print(
+        f"Duplicates excluded: {duplicates['file_count']} files, "
+        f"{duplicates['response_rows']} response rows"
+    )
+    print(
+        "Rating coverage: "
+        f"{post_event['rating_question_aggregates']} question-level aggregates, "
+        f"{post_event['rating_observations']} observations"
+    )
+    print("No heterogeneous global rating is calculated.")
+
+
+def main(argv=None):
+    args = build_argument_parser().parse_args(argv)
+    output_dir = args.output_dir
+    summary_file = args.summary_output or output_dir / "summary_stats.json"
+
+    if args.from_json:
+        summary = regenerate_summary_from_json(args.from_json, summary_file)
+        print(f"Written summary stats to: {summary_file}")
+        print_summary(summary)
+        return
+
+    feedback_dir = args.feedback_dir
 
     # Get all xlsx files
     xlsx_files = sorted(feedback_dir.glob("*.xlsx"))
@@ -600,30 +810,14 @@ def main():
 
     # Write all sessions data
     output_file = output_dir / "all_sessions_data.json"
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(all_sessions, f, indent=2, ensure_ascii=False, default=str)
+    write_json(all_sessions, output_file)
     print(f"\nWritten all sessions data to: {output_file}")
 
     # Compute and write summary
     summary = compute_summary(all_sessions)
-    summary_file = output_dir / "summary_stats.json"
-    with open(summary_file, 'w', encoding='utf-8') as f:
-        json.dump(summary, f, indent=2, ensure_ascii=False, default=str)
+    write_json(summary, summary_file)
     print(f"Written summary stats to: {summary_file}")
-
-    # Print key stats
-    print(f"\n{'='*60}")
-    print(f"PROCESSING COMPLETE")
-    print(f"{'='*60}")
-    print(f"Total files processed: {summary['total_files']}")
-    print(f"Sessions (excl duplicates/surveys): {summary['total_sessions_excluding_duplicates_and_surveys']}")
-    print(f"Total responses: {summary['total_responses']}")
-    print(f"Sessions by year: {json.dumps(summary['sessions_by_year'], indent=2)}")
-    print(f"Sessions by category: {json.dumps(summary['sessions_by_category'], indent=2)}")
-    if 'grand_average_normalized_5_scale' in summary['overall_ratings']:
-        print(f"Grand average rating (normalized to 5-point): {summary['overall_ratings']['grand_average_normalized_5_scale']}")
-    print(f"Duplicates found: {len(summary['duplicates'])}")
-    print(f"Pre-session surveys: {len(summary['pre_session_surveys'])}")
+    print_summary(summary)
     if summary['sessions_with_errors']:
         print(f"Files with errors: {len(summary['sessions_with_errors'])}")
         for err in summary['sessions_with_errors']:

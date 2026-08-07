@@ -38,6 +38,10 @@ data/*
 *.db
 *.db-journal
 
+# Noncanonical visualization-local stores (private; never portfolio inputs)
+/viz/data/knowledge.duckdb
+/viz/data/chroma/
+
 # Credentials
 credentials.json
 token.json

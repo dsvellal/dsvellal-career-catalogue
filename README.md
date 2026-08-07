@@ -44,7 +44,9 @@ The system's primary persona is a first-person digital twin that can explain Dat
 | `test-cases.md` | Golden tests and integration test specs |
 | `SETUP.md` | Local development setup instructions |
 | `scripts/export_relationships.py` | Export and validate the canonical private relationship stores |
-| `scripts/build_journey_data.py` | Build the curated public Journey Atlas dataset and analysis report |
+| `scripts/build_portfolio_data.py` | Compile and validate the claim-centric public executive portfolio dataset |
+| `scripts/check_public_bundle.py` | Independently reject private paths, identifiers, raw evidence, or unapproved assets in the production bundle |
+| `scripts/build_journey_data.py` | Build the superseded eight-view Journey Atlas compatibility dataset |
 
 ---
 
@@ -65,28 +67,32 @@ The system's primary persona is a first-person digital twin that can explain Dat
 
 **Phase 7: Cloud Deployment** — Pending. Static publish (`twin publish --viz-only`) works; cloud endpoints not yet deployed.
 
-**Journey Atlas:** Data builder, eight views, production build, static typing, public-bundle isolation, and interactive desktop/mobile review are complete.
+**Executive Portfolio Observatory:** Nine executive-question routes, three progressive evidence levels, global Narrative/Proof/Method/Gaps lenses, claim/source/method records, explicit longitudinal relationships, documentary evidence, and a searchable Data Room are compiled from a deterministic public projection. The previous Journey Atlas remains as regression history, not the active UI.
 
 **Data:**
 - 1,498 evidence files in `data/evidence/`, including 1,086 Markdown files; 277 Markdown files currently carry YAML frontmatter
 - 32 batch ingestion source files + 11 enrichment outputs
 - Knowledge graph: 3,471 nodes, 17,190 edges, 25,767 chunks
 - Portable private relationship export: all 10 DuckDB tables, full Chroma documents/metadata/embeddings, exact NetworkX node-link graph, hashes, and consistency checks under `data/exports/relationships/`
-- Viz app: eight-view Journey Atlas at `viz/` (Executive Portrait, Twenty-Year Journey, Capability Compounder, Outcome Ledger, Trust & Respect, Influence Web, Teaching & Service Ripple, Momentum & Next Horizon)
+- Viz app: nine-route Executive Portfolio Observatory at `viz/` (Brief, Leadership System, Journey, Impact, Trust, Innovation, Learning & Multiplication, Community & Service, Data Room)
+- Public evidence contract: 55 claims, 82 support edges, 36 source capsules, 18 methods, 11 explicit relationships, 30 caveats, and 8 retained conflicts across 9 routes
 - Evidence spans 2007-2026 across 6 eras (IBM, Exeter, Amazon, Philips India, Philips USA, Independent)
-- Awards & citations: 16 awards, 12 recognitions, 2 USPTO patents (27+ citations), ~20 public references
+- Professional feedback accounting: 88 post-event/interaction datasets and 1,050 response rows; two pre-event audience surveys and 133 rows are reported separately
+- Community learning: 50 recorded deliveries, 3,732 participant instances, and 13 student-feedback forms with 494 response rows; presenter ratings remain separate at 4.58/5 (`n=149`) and 9.12/10 (`n=128`), while 8.87/10 (`n=98`) is recommendation likelihood—not NPS
 
 **Next:** Close embedding and evidence-index coverage gaps, continue applying the YAML frontmatter schema, and complete the reviewed public deployment boundary.
 
 See `plan.md` for full execution plan.
 
-### Build the curated Journey Atlas data
+### Build the public Executive Portfolio Observatory data
 
 ```bash
-.venv/bin/python scripts/build_journey_data.py
+.venv/bin/python scripts/build_portfolio_data.py
 ```
 
-This validates every private evidence path and displayed metric, then replaces local paths with opaque public source IDs before writing the public-safe `viz/src/data/journey.json` and the editorial rationale in `data/journey-analysis.md`. The public dataset contains curated aggregates and attributed recommendations—not raw artifacts, internal filenames, internal links, email addresses, donor identities, account details, or full relationship records.
+The builder validates stable IDs and references, computes bounded metrics from committed records, attaches claims to supports and versioned methods, checks explicit longitudinal relationships, restricts external URLs to an allowlist, and writes `viz/src/data/portfolio.json`. Verbatim excerpts must occur exactly in their held canonical source. Published SHA-256 values cover that held artifact; for an external public record they explicitly do **not** claim to checksum the live web page. The browser projection contains approved excerpts and scoped source checksums—not local paths, raw artifacts, internal links, participant/donor identities, account details, or the private relationship export.
+
+The current public contract keeps three independent credibility dimensions: source provenance, support directness, and claim state. Calculated or interpreted claims disclose inputs, formula or rubric, inclusion/exclusion and deduplication rules, rounding, caveats, confidence, and conflicts. An interpreted relationship never becomes causal merely because its endpoints occur in sequence.
 
 ### Private relationship export
 

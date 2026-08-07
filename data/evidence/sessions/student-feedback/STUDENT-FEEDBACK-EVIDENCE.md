@@ -1,5 +1,5 @@
 ---
-title: Student Feedback Evidence — 13 Sessions, 494 Responses (2013-2020)
+title: Student Feedback Evidence — 13 Feedback Forms, 494 Response Rows (2013-2020)
 date: 2020-08-08
 year: 2020
 era: Cross-Era (Exeter, Philips India)
@@ -25,17 +25,15 @@ tags:
   - community-teaching
   - bangalore-colleges
   - voluntary
-  - nps
   - ratings
   - qualitative-feedback
-nps: null
 sentiment: positive
 impact_type: mentoring
 recurring: true
 period: 2013-2020
 ---
 
-# Student Feedback Evidence — 13 Sessions, 494 Responses
+# Student Feedback Evidence — 13 Feedback Forms, 494 Response Rows
 
 ## Source
 - **Files:** 13 feedback forms (1 CSV, 12 XLSX)
@@ -47,18 +45,19 @@ period: 2013-2020
 
 ## Summary
 
-This is structured feedback from **494 students** across **7 colleges** in Bangalore,
-collected over **7 years** of voluntary guest lectures. These are NOT Philips professional
-sessions — they are personal community give-back sessions at engineering colleges,
-delivered on weekends in Datta's own time.
+This is structured feedback from **494 response rows** across **six educational
+institutions plus one Exeter corporate yoga session** in Bangalore, collected over
+**7 years** of voluntary community sessions. These are not Philips professional-session
+records. Most are personal engineering-college givebacks; the 2013 Exeter record is a
+workplace yoga session and is reported separately from the educational institutions.
 
 ## Aggregate Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total sessions | 13 |
-| Total responses | 494 |
-| Unique colleges | 7 (RVCE, NIE, VemanaIT, BMSIT, SIT, AIT, Exeter) |
+| Total feedback forms | 13 |
+| Response rows | 494 |
+| Contexts | 6 educational institutions (RVCE, NIE, VemanaIT, BMSIT, SIT, AIT) + 1 Exeter corporate session |
 | Unique topics | 10 |
 | Date span | Nov 2013 — Aug 2020 (7 years) |
 | Largest session | 84 responses (NIE, Jul 2017) |
@@ -70,6 +69,11 @@ delivered on weekends in Datta's own time.
 | Presenter (Datta) | **4.58** | /5 | 149 |
 | Presenter (Datta) | **9.12** | /10 | 128 |
 | Recommend to friend | **8.87** | /10 | 98 |
+
+The **8.87/10 (`n=98`)** value is the arithmetic mean of a
+recommendation-likelihood question. It is not a Net Promoter Score: no
+promoter/passive/detractor classification or `% promoters − % detractors`
+calculation is used here.
 
 ## Sessions Detail
 
@@ -86,8 +90,8 @@ delivered on weekends in Datta's own time.
 | 9 | 2019-02-22 | SIT | HowToPreparePresentations | 36 | — |  |
 | 10 | 2019-05-18 | SIT | SocialMediaAndTheWorldOfMicroservices | 18 | — |  |
 | 11 | 2019-10-19 | SIT | HowToThinkOnYourFeet | 30 | 9.17/10 |  |
-| 12 | 2020-03-07 | AIT | TechPresentationPaperAndIP | 61 | 9.16/10 | NPS-proxy 8.85/10 |
-| 13 | 2020-08-08 | SIT | HowToDealWithUncertainity | 37 | 9.03/10 | NPS-proxy 8.89/10 |
+| 12 | 2020-03-07 | AIT | TechPresentationPaperAndIP | 61 | 9.16/10 | Recommendation likelihood 8.85/10 |
+| 13 | 2020-08-08 | SIT | HowToDealWithUncertainity | 37 | 9.03/10 | Recommendation likelihood 8.89/10 |
 
 ### Session 1: Yoga Session Feedback — Exeter (2013-11-23)
 

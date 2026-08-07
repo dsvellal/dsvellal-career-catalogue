@@ -96,7 +96,13 @@ The article concludes by inviting readers to share additional strategies for exe
 - Storytelling for influence
 
 ## Impact Statement
-This article is arguably the **most important single piece of evidence** for understanding Datta's professional identity. His entire career at Philips — from JSCPD workshops to Bar Raiser to Quality@Desk to Sutra — has been about **influencing without authority**. He has never been a people manager, yet has driven programs touching 10,000+ employees. This article is him codifying that approach using game theory frameworks (Prisoner's Dilemma, Nash Equilibrium). Every other piece of evidence in this system is a data point proving this philosophy works.
+This self-authored article is direct evidence of how Datta described influence
+without formal authority in 2024. Its game-theory framing can be compared with
+independent recommendations and program ledgers elsewhere in the corpus. Those
+later or parallel records are consistent with the philosophy, but they do not
+prove that this article caused the behavior or that every program participant was
+uniquely influenced. Cross-program population and touchpoint figures overlap and
+must not be summed into a unique reach claim.
 
 ## Cross-References
 - [[linkedin-collaborative-leadership-article]] — Earlier (2021) leadership article — precursor to this deeper framework
@@ -104,4 +110,4 @@ This article is arguably the **most important single piece of evidence** for und
 - [[connects-program-scale]] — 2,125 participants engaged through influence (no authority)
 - [[bar-raiser-program]] — "no way we could make this work without you" (Amsterdam TA, not his team)
 - [[sutra-xite-ai-platform]] — ExCo presentation (influence at C-level without being in their org)
-- All 90 sessions, 1,183 feedback responses — every one is influence without authority
+- Corrected professional-feedback population: 88 post-event/interaction datasets and 1,050 response rows, plus 2 pre-session surveys and 133 rows reported separately; these records provide context, not proof that every response represents influence

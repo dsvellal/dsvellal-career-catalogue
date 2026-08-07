@@ -16,14 +16,14 @@ Detailed, traceable evidence extracted from ingested sources. Each entry links t
 
 ## Cross-Cutting: Session Feedback (2018-2026)
 
-**[SESSION-EVIDENCE.md](sessions/SESSION-EVIDENCE.md)** — 90 sessions, 1,183 responses, 4.3/5 avg rating, 8 years
+**[SESSION-EVIDENCE.md](sessions/SESSION-EVIDENCE.md)** — 88 post-event/interaction feedback datasets and 1,050 response rows, with 2 pre-session surveys reported separately
 
 | Metric | Value |
 |--------|-------|
-| Sessions delivered | 90 unique |
-| Feedback responses | 1,183 |
-| Average rating | 4.3/5 |
-| Peak audience | 132 (GROW 3.0) |
+| Analysis datasets | 88 (not a count of distinct delivered sessions) |
+| Post-event/interaction response rows | 1,050 |
+| Pre-session audience research | 2 files, 133 response rows |
+| Rating coverage | 221 question aggregates, 2,149 observations; no heterogeneous global score |
 | Data files | [all_sessions_data.json](sessions/all_sessions_data.json) &#124; [summary_stats.json](sessions/summary_stats.json) |
 
 ## Cross-Cutting: Academic Credentials (2001-2011)
@@ -54,27 +54,27 @@ Detailed, traceable evidence extracted from ingested sources. Each entry links t
 
 ## Cross-Cutting: Student Feedback — Community Sessions (2013-2020)
 
-**[STUDENT-FEEDBACK-EVIDENCE.md](sessions/student-feedback/STUDENT-FEEDBACK-EVIDENCE.md)** — 13 sessions, 494 responses, 7 colleges, 7 years
+**[STUDENT-FEEDBACK-EVIDENCE.md](sessions/student-feedback/STUDENT-FEEDBACK-EVIDENCE.md)** — 13 feedback forms, 494 response rows, 6 educational institutions plus 1 corporate session, 7 years
 
 | Metric | Value |
 |--------|-------|
-| Sessions | 13 (voluntary community teaching) |
-| Total responses | 494 |
-| Colleges | 7 (RVCE, NIE, VemanaIT, BMSIT, SIT, AIT, Exeter) |
-| Presenter rating | 4.5+/5, 9.1/10 |
+| Feedback forms | 13 (voluntary community teaching and wellness) |
+| Response rows | 494 |
+| Contexts | 6 educational institutions (RVCE, NIE, VemanaIT, BMSIT, SIT, AIT) + 1 Exeter corporate yoga session |
+| Ratings by scale | Presenter 4.58/5 (`n=149`); presenter 9.12/10 (`n=128`); recommendation likelihood 8.87/10 (`n=98`, not NPS) |
 | Topics | Interview prep, SOLID, Presentations, Yoga, Microservices, Attitude, Uncertainty |
 | Date span | Nov 2013 — Aug 2020 |
 | Data files | [all_sessions_raw.json](sessions/student-feedback/all_sessions_raw.json) &#124; 13 source files |
 
 ## Cross-Cutting: Awards, Recognitions & Public Citations (2008–2021)
 
-**[awards-recognition-citations-master.md](sessions/awards-recognition-citations-master.md)** — 16 awards, 12 recognitions, ~20 public URL references
+**[awards-recognition-citations-master.md](sessions/awards-recognition-citations-master.md)** — 16 award-index entries, 12 recognition entries, ~20 public URL references
 
 | Category | Count | Highlights |
 |----------|-------|------------|
-| Awards | 16 | Philips CTO Outstanding Achievement (global, 1 of 30), IBM RTLE "most influential TEC India", 2 USPTO patents (27 citations), Amazon Zeus/Spot, Exeter Thought Leader |
+| Award index | 16 entries (some aggregate multiple club recognitions) | Philips CTO Outstanding Achievement (global, 1 of 30), IBM RTLE technical-community recognition, patent/invention recognition, Amazon Zeus/Spot, Exeter Thought Leader |
 | Recognitions | 12 | Toastmasters CC/CL/Leadership Advisor, IBM T2E volunteer, Hackday 1st place, CCT paper |
-| Public URLs | ~20 | 2 patents (Justia), IAS panellist (TV news), 8 college guest lectures, 2 YouTube talks, IP.com prior art |
+| Public URLs | ~20 | 2 invention families represented across application/publication/grant records, IAS panellist (TV news), college guest lectures, 2 YouTube talks, IP.com prior art |
 | Images saved | 3 | CTO award slide, IBM RTLE certificate, IBM Patent certificate |
 
 ## Cross-Cutting: Appreciation Letters & Certificates (2008–2026)
@@ -305,7 +305,7 @@ data/evidence/
 
 | Category | Count | Key Evidence |
 |----------|-------|--------------|
-| Code Duplication / JSCPD | 31 | Enterprise-wide initiative, CTO reporting, 30+ workshop reports |
+| Code Duplication / JSCPD | 31 | Cross-BU enablement and CTO reporting; 30+ related workshop/report records, not 30+ equivalent measured outcomes |
 | Workshops & Technical Sessions | 18 | 225+ attendees, 9 topics, global delivery |
 | Interview Process & Hiring | 13 | Process standardisation, interviewer training |
 | Recognition & Appreciation | 10 | Formal awards, Yammer praise, leadership acknowledgment |
@@ -467,10 +467,10 @@ data/evidence/
 | Ultrasound / AST / Virtualization | ~5 | Simulator virtualization, AST triaging automation |
 | Engineering Workshops (IGT, etc.) | ~5 | Proposals accepted, travel budgets allocated |
 | Viva Engage Recognition | ~4 | IEN leadership praise, GenAI posts, team mentions |
-| LinkedIn Recommendations | 3 | Rob Nicholson (manager) — natural leader, DORA metrics, 7K engineers; Ian Watson — influence-led transformation; Fernando Vieira — C-level sponsorship |
+| LinkedIn Recommendations | 3 | Rob Nicholson (manager) — natural leader, DORA metrics, and a team serving a ~7K-person organizational community (not Datta's personal reach); Ian Watson — influence-led transformation; Fernando Vieira — C-level sponsorship |
 | Professional Giving Back | 1 | 74-slide photo album — 15+ venues, 1000+ students, 10yr span (IBM→Exeter→Philips→community), 73 images preserved |
 | Social Giving Back | 1 | 39-slide photo album — govt schools, yoga with children (from 2007!), rural villages, Ekal Vidyalaya, book donations, 38 images |
-| Book Distribution Program | 1 | 10 years (2014-2026), Rs. 19.7 lakh raised ($24K), 219 contributors, Sevabharathi Trust, organized from India then USA |
+| Book Distribution Program | 1 | 10 recorded years between 2014–2026; no records for 2020–2021 or 2024; Rs. 19.7 lakh raised ($24K); 219 contributor instances; Sevabharathi Trust; organized from India then USA |
 | Resume | 1 | [2025 resume](2025/individual/079-resume-2025-principal-competency-lead.md) — Principal title elevated, Bar Raiser quantified, Prompt Engineering skill |
 
 ### Thematic Summaries

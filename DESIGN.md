@@ -1,8 +1,54 @@
 # UI Screen Design — Data Representation Architecture
 
-> **Current implementation (2026-08-06): Journey Atlas.** The eight views and privacy rules below supersede the legacy graph-first mockups later in this document. Legacy components remain in the source tree for reference but are not routed by `App.tsx`.
+> **Current implementation (2026-08-07): Executive Portfolio Observatory.** The claim-centric design below supersedes the Journey Atlas and graph-first mockups later in this document. Archived components and data remain for regression history but are not routed by `App.tsx`.
 
-## Journey Atlas — Current Eight-View Projection
+## Executive Portfolio Observatory — Current Design
+
+The product should feel like an executive briefing room with its audit drawer open: decisive at first glance, unusually inspectable on demand, and honest about shared outcomes, interpretation, and missing coverage. It uses a deep navy application frame, warm reading surfaces, cobalt for analytical structure, teal for corroborating evidence, copper for human/community impact, and violet for synthesis or governance. Motion is restrained to route and card arrival; information structure does the visual work.
+
+### Nine primary questions
+
+| # | Route | First-level question | Distinct interaction |
+|---|-------|----------------------|----------------------|
+| 1 | `#/brief` | What is the executive thesis? | Portrait, bounded proof runway, leadership brief |
+| 2 | `#/leadership` | How does leadership become a repeatable system? | Claim mechanisms and support paths |
+| 3 | `#/journey` | How did responsibility and contribution develop? | Claim-backed longitudinal record |
+| 4 | `#/impact` | What changed, at what scale, with whose attribution? | Scope-filtered outcome ledger |
+| 5 | `#/trust` | Why do people voluntarily seek and recommend Datta? | Attributed voices and explicit Relationship Lab |
+| 6 | `#/innovation` | How are emerging technologies adopted with control? | Status board separating novelty, delivery, and guardrails |
+| 7 | `#/learning` | What do participants retain and ask to improve? | Takeaways and criticism shown together |
+| 8 | `#/community` | Which values persist outside formal authority? | Service ledger and safe documentary material |
+| 9 | `#/data-room` | Can every public claim be audited? | Search/filter across claims and sources; methods, conflicts, caveats, and coverage gaps |
+
+### Three levels and four lenses
+
+- **Level 1 — Summary:** exact value/unit/period/scope/attribution, confidence, support count, and the most material caveat.
+- **Level 2 — Explanation:** why the claim matters, mechanism, breakdown, related claims, supporting and qualifying evidence, and visible “show your work” paths.
+- **Level 3 — Record:** stable `claim`, `source`, and `method` routes containing support locators, approved excerpt or documentary image, held-artifact checksum scope/note, access state, formula/rubric, rules, conflicts, and limitations.
+
+The global **Narrative / Proof / Method / Gaps** lens changes which layer is foregrounded on every claim card. It never changes the underlying facts or removes contradictory records.
+
+The compiled interaction graph is intentionally finite and countable: 9 routes, 55 claims, 82 support edges, 36 source capsules, 18 methods, 11 relationship propositions, 30 caveats, and 8 retained conflicts. Header counts and the Data Room are derived from that same contract.
+
+### Relationship grammar
+
+The Relationship Lab renders only records declared in `portfolio.json`. Each record contains two endpoint claims, a separately inspectable relationship claim, relation type, reasoning or versioned method, source support, confidence, and an explicit limitation. Solid paths are reserved for declared observed/direct structure. Dashed paths denote calculated or interpreted structure. Layout proximity, array index, common keywords, and raw graph co-occurrence never create a line.
+
+### Documentary evidence and privacy
+
+`evidence-assets.ts` is an explicit media allowlist. Current approved documentary classes are Datta-only certificates and non-identifying service materials. Assets showing identifiable children, unconsented participants or colleagues, internal comments, or internal URLs are not imported. Every displayed image links to its source capsule and caption; an image is evidence, not background decoration.
+
+Vite retains `publicDir: false`. The production graph can therefore contain only modules explicitly imported by the active application. Local evidence paths, raw correspondence, internal URLs, donor/participant identity, account data, the private relationship export, and unreviewed screenshots must be absent from `dist`.
+
+### Responsive and accessible behavior
+
+- Desktop uses a persistent nine-item dossier navigation; compact viewports use a labeled route selector.
+- The evidence lens, tabs, filters, search, disclosures, and all three record types are keyboard operable with visible focus.
+- A skip link and route-change focus management move users directly to the active dossier heading.
+- Relationship records keep a readable linear endpoint/reasoning representation, so comprehension does not depend on color or SVG geometry.
+- Reduced-motion preferences disable non-essential transition behavior; mobile preserves the same source/method depth without horizontal page overflow.
+
+## Journey Atlas — Archived Eight-View Projection
 
 The atlas uses one evidence vocabulary across all views: Tier A (corroborated), Tier B (documented), Tier C (self-reported), and derived synthesis. Caveat labels stay beside claims. Visual encodings explain scope and progression, but never imply statistical causality, uninterrupted skill use, psychometric rank, or sole attribution.
 

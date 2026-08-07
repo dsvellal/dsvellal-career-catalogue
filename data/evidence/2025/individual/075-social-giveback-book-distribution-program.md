@@ -75,14 +75,14 @@ period: 2014-2026
 
 ## Program Overview
 
-Datta founded and organizes an annual book distribution program for underprivileged children in rural Karnataka, India. Operating through **Sevabharathi Trust** (AC NO: 485250010...), the program collects voluntary contributions from Datta's personal and professional network, pools the funds, and purchases educational materials (textbooks, notebooks, school supplies) for distribution to children at tribal and government schools.
+Datta founded and organizes a recurring book distribution program for underprivileged children in rural Karnataka, India. Operating through **Sevabharathi Trust** (bank-account details held privately and omitted here), the program collects voluntary contributions from Datta's personal and professional network, pools the funds, and purchases educational materials (textbooks, notebooks, school supplies) for distribution to children at tribal and government schools.
 
 This is NOT corporate CSR. This is NOT a one-time charitable act. This is a **self-started, self-managed, personally funded social enterprise** that has:
 
 - Survived 3 job changes (Exeter → Philips Bangalore → Philips USA)
 - Survived an international move (India to USA, 2021)
-- Survived a global pandemic (2020-2021 gap, resumed 2022)
-- Grown 13x in annual contributions over 10 years
+- Resumed after the documented 2020-2021 pandemic gap; no 2024 program record is present
+- Reached a latest recorded annual total 13.3x the first recorded annual total; this is an endpoint ratio, not an annual growth rate
 - Maintained a core group of repeat donors who trust Datta's stewardship
 
 The program connects to the **Ekal Vidyalaya** (Friends of Tribals Society) ecosystem seen in evidence 074 (slide 29 of Social Giving Back presentation), and directly enables the physical distribution of materials documented in slides 27-32 and 38-39 of that presentation.
@@ -100,6 +100,7 @@ The program connects to the **Ekal Vidyalaya** (Friends of Tribals Society) ecos
 | — | *COVID gap (2020-2021)* | — | — | — | *No program — Datta relocated to USA* |
 | 2022 | Book Distribution | 12 | 2,39,234 | 10,000 | Resumed from USA; listed via "Vidhathri Dattatreya" |
 | 2023 | Book Distribution Drive | 15 | 2,69,908 | 10,046 | Continued from USA; formal receipts |
+| — | *No 2024 record* | — | — | — | *No annual program record in the reviewed ledger* |
 | 2025 | Book Distribution | 23 | 4,14,858 | 10,000 | Record year; 23 contributors |
 | 2026 | Book Distribution | 23 | 4,70,437 | 10,001 | All-time high; Datta first entry |
 
@@ -107,12 +108,12 @@ The program connects to the **Ekal Vidyalaya** (Friends of Tribals Society) ecos
 
 | Metric | Value |
 |--------|-------|
-| **Years active** | 10 (2014-2026, gap 2020-2021) |
+| **Years active** | 10 recorded years between 2014 and 2026 (no records for 2020-2021 or 2024) |
 | **Total raised** | Rs. 19,72,381 (~$24,000 USD) |
 | **Datta's personal contribution** | Rs. 1,21,050 (~$1,458 USD) |
 | **Total contributor instances** | 219 (many are repeat donors) |
 | **Peak year** | 2026 — Rs. 4,70,437 |
-| **Growth factor** | 13.3x (Rs. 35K in 2014 → Rs. 4.7 lakh in 2026) |
+| **Endpoint ratio** | 13.3x (Rs. 35,432 in 2014 → Rs. 4,70,437 in 2026); not an annualized rate |
 | **Average annual raised** | Rs. 1,97,238 |
 | **Contributor growth** | 4 (2016 low) → 23 (2025-2026 high) = 5.75x |
 | **Beneficiary** | Sevabharathi Trust — serves underprivileged children in rural Karnataka |
@@ -201,7 +202,9 @@ This is not a corporate program. There is no employer branding, no matching fund
 - Contributes his own money every year
 - Continued across 3 employers and 2 countries
 
-This is **social entrepreneurship** in its purest form — identifying a need, building a sustainable funding mechanism, and executing consistently for a decade.
+The ledger documents a self-initiated funding mechanism and repeated organizing
+across ten active years. Describing that as social entrepreneurship is an
+interpretation; the annual records are the underlying evidence.
 
 ### 2. Sustained Impact Across Life Changes
 
@@ -210,13 +213,20 @@ The program survived:
 - **Job change 2:** Philips Bangalore to Philips USA (2021)
 - **Country move:** India to USA (2021)
 - **Global pandemic:** COVID-19 (2020-2021 gap, then resumed)
-- **10 years of personal life changes:** marriage, children, relocations
+- **Unrecorded year:** No 2024 program record appears in the reviewed ledger
 
-The fact that this program RESUMED after COVID and a transcontinental move — and then GREW to its highest-ever levels (Rs. 4.7 lakh in 2026) — demonstrates extraordinary commitment.
+The ledger shows that the program resumed after the 2020-2021 gap and a
+transcontinental move, and that its highest recorded annual total was Rs. 4.7
+lakh in 2026. That sequence supports continuity across disruption without
+claiming uninterrupted annual operation.
 
 ### 3. Trust and Financial Stewardship
 
-219 contributor instances over 10 years means people keep coming back. The same 8-10 core donors have trusted Datta with their money for nearly a decade. In a world where charitable fraud is common, this repeat trust is a powerful signal of:
+The aggregate contains 219 contributor instances over ten active years. Private
+identity matching indicates a recurring core, but names and individual amounts
+are withheld; contributor instances are not unique people. Repeated participation
+is consistent with trust in the program, but the records do not establish each
+contributor's motive. The operating practices documented here include:
 - Transparent financial management
 - Consistent delivery (materials actually reach children)
 - Personal integrity
@@ -230,16 +240,23 @@ Datta never asks others to do what he won't do himself:
 - He does the unglamorous work (spreadsheets, receipts, coordination)
 - He personally travels to rural schools for distribution (pre-USA move)
 
-### 5. 13x Growth = Network Building Mastery
+### 5. 13.3x Endpoint Ratio and Network Continuity
 
-Growing annual contributions from Rs. 35,000 to Rs. 4,70,437 over 10 years (13.3x) is not luck. It requires:
+The latest recorded annual total, Rs. 4,70,437 in 2026, is 13.3x the first
+recorded annual total, Rs. 35,432 in 2014. This endpoint ratio spans ten active
+years within a thirteen-year window and is not a compound annual growth rate;
+there are no program records for 2020-2021 or 2024. The ledger is consistent with
+several network-building practices:
 - Consistent outreach to new potential donors
 - Maintaining relationships with existing donors
 - Demonstrating impact so donors feel their money matters
 - Building trust so word-of-mouth referrals work
 - Adapting the pitch across cultures (Indian colleagues, UK colleagues, US-based contributors)
 
-This is the SAME skill set that makes Datta effective at building engineering communities, growing competency programs, and scaling technical initiatives at Philips — the "network mobilization" muscle was trained through a decade of charitable fundraising.
+These practices can be compared with Datta's engineering-community records as a
+non-causal cross-context pattern. The financial ledger alone does not establish
+donor motives, prove which practice caused the endpoint change, or prove
+professional-program effectiveness.
 
 ### 6. Values Alignment: The Thread That Connects Everything
 
