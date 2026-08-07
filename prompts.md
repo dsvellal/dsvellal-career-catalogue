@@ -1414,7 +1414,7 @@ Completed a validated private relationship snapshot and an evidence-led public J
 
 ### Response Summary
 
-In progress. Publishing the completed Journey Atlas and full private relationship export to a dedicated agent branch in the confirmed private GitHub repository. The full embedding stream is being deterministically partitioned below GitHub's per-file limit without dropping records.
+Published the completed Journey Atlas and full private relationship export to branch `agent/journey-atlas-relationship-export` in the confirmed private GitHub repository. Commit `7f57401` contains all 36 export files (about 363 MB), including all 21,356 embedding records deterministically partitioned across four JSONL parts without dropping records. All repository hooks passed, including a 353.21 MB gitleaks scan with no findings, and draft PR #1 was opened at <https://github.com/dsvellal/dsvellal-career-catalogue/pull/1>.
 
 ### Decisions Triggered
 
