@@ -1,0 +1,483 @@
+---
+title: "2024 Philips Anytime Feedback (360 Degree)"
+date: 2024-12-31
+year: 2024
+era: Philips USA
+organization: Philips
+category: Anytime Feedback
+source_type: spreadsheet
+channel: email_archive
+involvement: direct_recipient
+role: Software Competency Lead
+people: ["Isabel Ching", "Rajeshwar Raja", "Aravind HU", "Sijo Jose", "Joseph Jayakar Nalluri", "Sai Gopal Garimella", "Shridhar Shinde", "Naveen DB", "Naveenkumar Vasudevananth Rajalakashmi", "Matthew Altman", "Harsha Vardhan", "Chaya .", "Rohit Ranjan Pandey", "Jeremy Port", "Fred Calil", "Vivian Ramirez", "Richa Rajwar", "Robert Desmarais", "Steve Kauffman", "Christophe Dore", "Elaine Mitchell", "Rafael Vaz", "Ravindra Verma", "Sundaresan Jagadeesan", "Kitty Verberne", "Jegan Kunniya", "Brijesh Krishnan K", "Fernando Vieira"]
+skills: ["CI-CD", "GitHub-Actions", "DevOps", "mentoring", "coaching", "virtualization", "developer-experience", "hackathon", "developer-days", "reverse-mentoring", "software-architecture", "NebOS-migration", "code-quality", "CodeScene", "stakeholder-management", "influence-without-authority"]
+programs: ["SWCoE", "Developer Days India 2024", "Ultrasound Virtualization", "Reverse Mentoring", "GDP Software Track", "Golden Pipeline", "Software Conference", ".assess", "XITE Program"]
+tags: ["anytime-feedback", "360-degree", "peer-feedback"]
+sentiment: positive
+impact_type: recognition
+recurring: true
+period: 2024-12
+---
+
+# Evidence: 2024 Philips Anytime Feedback (360 Degree)
+
+## Source
+- **File:** `2024-Anytime-Feedback.xlsx`
+- **Date:** 2024-12-31
+- **Ingested:** 2026-08-06
+- **Channel:** Email archive / Internal Philips feedback system
+- **Category:** Anytime Feedback
+
+## Datta's Involvement
+- **Role at time:** Software Competency Lead
+- **Involvement type:** Direct recipient -- 360-degree feedback from 28 stakeholders across multiple business units and geographies
+
+## Summary Statistics
+- **Total respondents:** 28
+- **Locations represented:** Bangalore (India), Cambridge (USA), Bothell (USA), Eindhoven (Netherlands), Blumenau (Brazil), Panama City, UK
+- **Business units represented:** IGT Apps, HPM, EI Radiology, IGT-S (XITE), OHC, Ultrasound, IEN, SRC, Emergency Care, GS Product & Security, GBS, I&S PMO, SW Excellence
+
+## 5-Word Attribute Summaries
+
+| # | Name | Designation | Business | Location | Attributes |
+|---|------|-------------|----------|----------|------------|
+| 1 | Isabel Ching | SARA Specialist | GBS SC LATAM Customer Order Team | Panama City | Enhancing, insightful, open-minded, articulate, uplifting. |
+| 2 | Rajeshwar Raja | Senior Software Architect | IGT Apps | Bangalore | Organized, clear, considerate, collaborative, inspiring. |
+| 3 | Aravind HU | Senior Software Architect | HPM | Bangalore | Skilled, innovative, motivational, methodical, unifying. |
+| 4 | Sijo Jose | Software Architect | EI Radiology Informatics | Bangalore | Insightful, knowledgeable, lucid, supportive, priceless. |
+| 5 | Joseph Jayakar Nalluri | Senior Scientist | IGT-S (XITE Program) | Cambridge | Passionate, proactive, nurturing, accessible, transformative. |
+| 6 | Sai Gopal Garimella | Senior Software Architect | IGT-S | Bangalore | Supportive, attentive, engaging, people-focused, empowering. |
+| 7 | Shridhar Shinde | Firmware Senior Manager | OHC | Bothell | Optimized, proactive, reliable, remarkable, impactful. |
+| 8 | Naveen DB | OHC Digital Solution R&D Leader | OHC | Bangalore | Enhanced, articulate, inclusive, diligent, helpful. |
+| 9 | Naveenkumar Vasudevananth Rajalakashmi | Senior Software Technologist I | SRC | Bangalore | Patient, empathetic, practical, dependable, supportive. |
+| 10 | Matthew Altman | Director of software platforms | Ultrasound | Bothell | Streamlined, Resourceful, thoughtful, proactive, collaborative. |
+| 11 | Harsha Vardhan | Software DevOps Architect | IEN | Bangalore | Empowered, Knowledgeable, adaptable, strategic, mentoring. |
+| 12 | Chaya . | Software Technologist I | IEN | Bangalore | Supportive, patient, positive, talented, cooperative. |
+| 13 | Rohit Ranjan Pandey | Architect II | SRC | Bangalore | Transformed, uplifting, goal-oriented, innovative, constructive. |
+| 14 | Jeremy Port | Senior Embedded Software Engineer | OHC | Bothell | Amplified, Integrate, Trained, Innovate, Added value. |
+| 15 | Fred Calil | Director of Engineering | OHC | Bothell | Accelerated, supportive, collaborative, insightful, valuable. |
+| 16 | Vivian Ramirez | Software Development Manager | HPM | Cambridge | Empower, Inspire, Encourage, Innovate, Support. |
+| 17 | Richa Rajwar | Director of R&D | Emergency Care | Bothell | Communicative, supportive, proactive, timely, appreciated. |
+| 18 | Robert Desmarais | Senior Software Architect | Ultrasound | Bothell | Leading, Persisting, Influencing, Executing, Collaborating. |
+| 19 | Steven Kauffman | Software Development Engineer 5 | Ultrasound | Bothell | Delivered, Enabled, Optimized, Scaled, Collaborated. |
+| 20 | Christophe Dore | Product Security Officer | GS Product & Security Services | USA Home-Based | Value, Acknowledge, Appreciate, Learn, Inspire |
+| 21 | Elaine Mitchell | I&S PMO Program Director | SW Excellence | UK | Appreciative, insightful, clear, supportive, impactful. |
+| 22 | Rafael Vaz | Graduate Development Program SW-Ex Intern | SW Excellence | Blumenau | Mentoring, transformative, dedicated, inspiring, exceptional. |
+| 23 | Ravindra Verma | Senior DevOps Architect | SW Excellence | Bangalore | Communicative, analytical, collaborative, supportive, committed. |
+| 24 | Sundaresan Jagadeesan | Software Excellence Program Leader | SW Excellence | Bangalore | Ownership, leadership, demonstrative, impactful, quality-focused. |
+| 25 | Kitty Verberne | Software Excellence Community Leader | SW Excellence | Eindhoven | Responsible, collaborative, reliable, proactive, driven. |
+| 26 | Jegan Kunniya | Platform Innovation Specialist | SW Excellence | Bangalore | Empower, Build, Motivate, Listen, Collaborate |
+| 27 | Brijesh Krishnan K | Software Competency Lead | SW Excellence | Bangalore | Appreciating, Driving, Improving, Listening, Contributing |
+| 28 | Fernando Vieira | Software Competency Lead | SW Excellence | Brazil | Focused, Impactful, Organized, Adaptable, Collaborative |
+
+## Feedback Entries (Full Details)
+
+### 1. Isabel Ching -- SARA Specialist, GBS SC LATAM Customer Order Team (Panama City)
+
+**What I did well:**
+Datta and I have been connecting since September 2023, and it has been an enriching experience working with you, and I appreciate your dedication and commitment to our reverse mentoring program, taking in consideration our different time zones. 
+
+Here are some key points I wanted to highlight:
+
+Expertise and Insight: Your expertise in software COE competency leadership has been invaluable. Your insights into industry trends, best practices, and emerging technologies have provided me with a deeper understanding of our field. Your ability to explain complex concepts in a clear and concise manner has been particularly helpful.
+
+Openness to Learning: I have been impressed by your openness to learning from different perspectives. Your willingness to engage in discussions, ask questions, and explore new ideas demonstrates your commitment to personal and professional growth. Your curiosity and eagerness to understand diverse viewpoints have contributed significantly to the success of our sessions.
+
+Effective Communication: Your communication skills have been exemplary throughout our interactions. You have been patient, attentive, and respectful, creating a supportive environment where I feel comfortable sharing my thoughts and experiences. Your ability to listen actively and provide constructive feedback has enhanced the quality of our discussions.
+
+Leadership and Mentorship: As a software COE competency lead, you have demonstrated strong leadership and mentorship qualities. Your guidance, encouragement, and mentorship have been instrumental in helping me navigate challenges and develop my skills. Your passion for empowering others and fostering a culture of continuous learning is truly inspiring.
+
+**What I can improve:**
+Feedback and Reflection: Encourage a culture of feedback and reflection, both for yourself and your mentees. Solicit feedback from mentees on your mentoring style and effectiveness, and reflect on areas where you can improve. Providing constructive feedback in a supportive manner can also help mentees grow and develop.
+
+Networking and Collaboration: Actively engage in networking opportunities within and outside your organization to broaden your professional network and learn from others. Collaboration with peers and mentors from diverse backgrounds can provide new insights and perspectives that enrich your mentoring approach.
+
+Continued Learning: Stay updated on the latest trends, technologies, and best practices in software development and leadership. Consider pursuing additional training, certifications, or attending relevant workshops and conferences to further enhance your skills and knowledge.
+
+
+
+By focusing on these areas for development, you can continue to grow as a mentor and leader, making an even greater impact on your mentees and the success of the reverse mentoring program.
+
+---
+
+### 2. Rajeshwar Raja -- Senior Software Architect, IGT Apps (Bangalore)
+
+**What I did well:**
+I see Datta as a very organized person, crystal clear in communication and very considerate of stakeholder goals when collaborating. I always feel very excited to work with him in CoE activities like Dev Days & Software Conferences or day to day activities like identifying code duplications. I appreciate all your guidance. Thank you.
+
+**What I can improve:**
+It is very hard to think of a point here, but I feel Datta could get little bit deeper into topics during .assess sessions and provide more context for identified actions. I recognize that it is a difficult ask, but I am sure Datta could achieve.
+
+---
+
+### 3. Aravind HU -- Senior Software Architect, HPM (Bangalore)
+
+**What I did well:**
+Datta, your strengths are evident in several key areas. Your technical expertise and problem-solving skills consistently lead to innovative solutions. Your leadership and mentorship foster a collaborative and growth-oriented environment. You communicate complex concepts clearly, ensuring team alignment and effective stakeholder engagement. Your commitment to excellence and continuous improvement inspires the team to maintain high-quality standards. Additionally, your organization of the Developer Day conference showcased your ability to bring the community together and share valuable insights.
+
+**What I can improve:**
+Hey Datta, I see you're already doing a great job collaborating with other departments. I think there's even more potential if you expand that collaboration further—it could bring in more diverse perspectives and drive even greater innovation. By involving more teams, you'll likely uncover more creative solutions and ensure that strategies continue to align with the broader goals of the organization.
+
+---
+
+### 4. Sijo Jose -- Software Architect, EI Radiology Informatics (Bangalore)
+
+**What I did well:**
+I’d like to express my sincere appreciation for our insightful and productive discussion regarding the Neb OS migration from CentOS 6 to AlmaLinux 9. The contacts you provided and the clear direction you offered were instrumental/
+
+Your deep ecosystem knowledge of software and technologies, combined with your remarkable cross-functional insight, truly stood out. Additionally, your ability to communicate ideas in a crisp and clear manner made everything much easier to understand.
+
+Thank you once again for your invaluable support and expertise.
+
+**What I can improve:**
+Nothing to mention.
+
+---
+
+### 5. Joseph Jayakar Nalluri -- Senior Scientist, IGT-S (XITE Program) (Cambridge)
+
+**What I did well:**
+Datta is very passionate about developer experience and genuinely wants to scale up the level of coding talent within Philips. He is eager to remove every and any hurdle that prevents an engineer in their growth journey. He would lower the barrier to entry significantly to help in gaining adoption. Very often, he would say, "Why are we merely talking about this? Let me show this in your code now". And he would whip up his laptop, clone our repo. and show the benefits of Developer tools on our code. Such a quick demonstration quickly shows the impact of Developer tools on client's code. Datta is ever accessible and open to hear ideas and pain-points of our team. He has repeatedly offered his assitance and quick accessibility to him whenever needed. He has done presentations to our team about the various offerings of Software Excellence and has followed up with some of the individual members later on as well.
+
+**What I can improve:**
+For developing further, something to consider - Datta can help us in shaping our capabilities so that they are easily adopted by BUs. We don't yet have a standard way or a framework around this. Data & AI sub-function under I&S has been tasked with looking at enterprise-wide capabilities. With each BU having a different ecosystem of tools, solutions, it becomes very hard for us (primarily as data scientists) to position our capability offering in a generlizable way. E.g., recently we have looked at adhering to Good Machine Learning Practices (GMLP) released from FDA. Among many things, it asks to ensure there is backup/disaster recovery plan for data, to have integration tests for the full ML pipeline, to implement tests for algorithms with asserts on output data, to stage blue/green deployment strategies, logging and telemetry systems in place, to safely roll back, continuous monitoring, etc. Having this requirements figured well in advance would allow us to be prepared whenever our algorithms/capabilities are evaluated from a regulatory aspect. To be fair, not many of our projects are customer facing... yet.
+
+---
+
+### 6. Sai Gopal Garimella -- Senior Software Architect, IGT-S (Bangalore)
+
+**What I did well:**
+You show up yourself as a leader with whom one can feel psychologically safe.
+You are a great listener and can read between the lines easily
+You are a great speaker who can connect well with the audience
+You prioritize people and culture on top of work and content which I feel is the right thing to do (culture eats strategy for breakfast)
+
+**What I can improve:**
+With the interaction with you I did not find any area which I feel you should improve.
+
+---
+
+### 7. Shridhar Shinde -- Firmware Senior Manager, OHC (Bothell)
+
+**What I did well:**
+Your deep understanding of software excellence and your proactive approach to engaging with functions to offer support are truly impressive strengths. They greatly contribute to our team's success Know.
+
+**What I can improve:**
+Your expertise in embedded software, particularly in automated build and testing, will be incredibly beneficial for our team as we progress. I believe your support in these areas will significantly enhance our efficiency and effectiveness in future projects.
+
+---
+
+### 8. Naveen DB -- OHC Digital Solution R&D Leader, OHC (Bangalore)
+
+**What I did well:**
+As always, upto date with latest tools, trends and very well articulated during the SWCoE Developer Days in PIC.
+
+Diligently provided me an opportunity to voice out my opinion which was show cased it in external site
+
+**What I can improve:**
+Involve me in more such opportunities :) and where possible - share me context upfront for better preparation!
+
+---
+
+### 9. Naveenkumar Vasudevananth Rajalakashmi -- Senior Software Technologist I, SRC (Bangalore)
+
+**What I did well:**
+You are an excellent listener, showing great patience and understanding in every interaction. Your ability to assess situations and offer tailored guidance is impressive. Your ability to understand situations and give helpful guidance is impressive. You always provide solutions that are clear, practical, and directly solve the problem. Your mentorship and support have been invaluable, always providing clarity when I'm confused. You have a strong ability to connect with others, which makes the advice you offer more impactful. Thank you for being such a reliable mentor. Keep up the great work!
+
+**What I can improve:**
+You are doing a great job. Please doing the good work and support many people as possible.
+
+---
+
+### 10. Matthew Altman -- Director of software platforms, Ultrasound (Bothell)
+
+**What I did well:**
+Datta has been a great partner in moving ultrasound forward and modernizing the development practices. I found Datta to be resourceful and thoughtful. Datta has also been proactive in providing suggestions and guidance
+
+**What I can improve:**
+keep bringing all the stakeholders together. We want to make sure everything is as transparent as possibl
+
+---
+
+### 11. Harsha Vardhan -- Software DevOps Architect, IEN (Bangalore)
+
+**What I did well:**
+Datta is very knowledgeable, both process-orientated as well as technically.
+He is a good mentor for anybody. He shows a great character of learning together and is always very collaborative.
+His major strengths are technical focus, adaptability, and strategic mind.
+
+**What I can improve:**
+There are no any major weakness as such.
+Datta could improve his task delegation. To outline the tasks to team members and follow up on the same is one thing he could consider. (for all usecase)
+
+---
+
+### 12. Chaya . -- Software Technologist I, IEN (Bangalore)
+
+**What I did well:**
+Hi Datta,
+
+You are very supportive, you always listen when we share our thoughts and concerns, and I truly appreciate how you guide us with patience and positivity.
+
+Thank you for being both a technically skilled and supportive leader. I appreciate your support, look forward to the next challenges and working with you.
+
+**What I can improve:**
+You are already doing good.
+
+---
+
+### 13. Rohit Ranjan Pandey -- Architect II, SRC (Bangalore)
+
+**What I did well:**
+With your mentorship I have realized a lot of change in my approach and shift in mindset to take challenges, a structured approach to find a solution. Below are your certain strengths that helped me a lot to improve.
+
+Identifying the abilities and helping in building-boosting the self confidence
+Setting up the clear goals and structured approach to achieve them
+Ways to be more innovative towards finding the solution
+Approach to embrace the feedbacks and look with a positive mindset
+
+**What I can improve:**
+Your mentorship has set a strong foundation for me, and I see the difference in confidence I've developed.
+
+​I do not have suggestion this time for anything to do different or further than what are you doing now. I feel it is all great. 
+
+---
+
+### 14. Jeremy Port -- Senior Embedded Software Engineer, OHC (Bothell)
+
+**What I did well:**
+A major help to the team for our efforts in setting up Github integration and brainstorming solutions to many of our server related problems. Datta has always responded relatively quickly to emails and inquiries and helped us get to the point where we can start running test projects on Github. He also provides a wealth of contacts when we want to explore outside of the box solutions and introduce new tools to out workflow.
+
+**What I can improve:**
+Not much I can think of, keep up the great work!
+
+---
+
+### 15. Fred Calil -- Director of Engineering, OHC (Bothell)
+
+**What I did well:**
+Datta is receptive to the Business Unit needs and actually listens to the inputs from the BU. He does not try to push a pre-cooked solution. He has been a valuable partner helping to bridge the gap between the OHC BU and the SW Excellence team. Moreover, Datta is not in an ivory tower, he understands the reality and the challenges OHC face to adopt new tools and methods for SW development and provides guidance and support to get things done.
+
+**What I can improve:**
+Your training sessions are very well received by the team. I know it can be time consuming to do live training, but that is a key element of lowering the perceived barrier to change for the team. It also helps to foster a connection to the SW community in Philips (I think the FW developers in OHC, especially in Bothell, are a bit disconnected to the rest of Philips).
+
+Let's make the Dev Days happen in Bothell!!!
+
+---
+
+### 16. Vivian Ramirez -- Software Development Manager, HPM (Cambridge)
+
+**What I did well:**
+I am extremely grateful for the mentorship and support that Datta has provided me. During times when I felt overwhelmed and unsure, he consistently stepped in with guidance and advice that helped me navigate through the challenges I was facing. His calm demeanor and trustworthy nature created an environment where I felt comfortable sharing.
+
+Datta has a unique ability to offer perspective from his own experiences. Beyond his technical knowledge, what truly sets him apart is his genuine care for others' success. He approaches every situation with patience, professionalism, and a deep understanding of individual needs.
+
+His mentorship has been invaluable, and I’ve learned not only from his expertise but also from the way he handles stress, communication, and decision-making. His advice has shaped my approach to both work and personal growth, and I am grateful for his continuous support.
+
+He is an amazing mentor.
+
+**What I can improve:**
+I haven’t yet had enough time or experiences to fully assess what Datta can do differently.
+
+---
+
+### 17. Richa Rajwar -- Director of R&D, Emergency Care (Bothell)
+
+**What I did well:**
+It has been a pleasure to work with Datta. I've found him to be very communicative and supportive. His timely responses to queries and proactive updates on upcoming trainings and follow-ups are greatly appreciated. Keep up the good work!
+
+**What I can improve:**
+Nothing comes to mind.
+
+---
+
+### 18. Robert Desmarais -- Senior Software Architect, Ultrasound (Bothell)
+
+**What I did well:**
+It's not easy leading an effort that moves the business. Your good nature goes a long way to ease the work needed to make virtualization a reality. Your persistence through obstacles, consistent right-pressure to keep the work moving. Added to your knowledge and contacts this is a powerful mix.
+
+**What I can improve:**
+Can't think of any. I will follow up I anything comes to mind.
+
+---
+
+### 19. Steve Kauffman -- Software Development Engineer 5, Ultrasound (Bothell)
+
+**What I did well:**
+I was very glad to have Datta reach out proactively to offer assistance with adding GitHub Actions CI/CD capabilities to some of our Ultrasound repositories. We use ElectricFlow for CI/CD for our two "big" repos, but want to use GitHub Actions as a lighter-weight, self-service option for our smaller repos. But we don't have the depth of knowledge in GitHub Actions.
+
+You offered your expertise, identified a design approach, and provided an example implementation. This was really appreciated.
+
+Going further into the cloud CI/CD world, you helped Ultrasound to prototype running our AST test suites on virtual-machine "runners" rather than on physical systems in our lab. This has the potential to allow for a lot more flexibility to scale our test infrastructure to reduce bottlenecks. This was another area where we didn't have the skillset natively in our team, and without your help this probably just wouldn't have happened.
+
+Overall we've really appreciated having the opportunity to have you as a consulting resource.
+
+**What I can improve:**
+main thing that I could see would be to solicit more "business" by keeping engaged with your several contact points within Ultrasound. It's easy for us to forget what resources we have available to us, as we focus on our day-to-day problems; consider providing a periodic reminder of services you can provide (and maybe examples of work done with other business units?).
+
+---
+
+### 20. Christophe Dore -- Product Security Officer, GS Product & Security Services (USA Home-based)
+
+**What I did well:**
+I just wanted to provide a shout out about Datta. I interacted wit him only a few days, yet I am already impressed by his deep knowledge of source code management, the solutions that help source code management like code scene, his culture on the commonly used programming languages, his culture on development (good and bad) practices, how he can relate all this to some business insight.
+
+And on top of this, last but not least, I enjoyed his company, I feel blessed by his patience explaining so many things with such clarity, I learned a lot in these few days. I am very grateful about it.
+
+---
+
+### 21. Elaine Mitchell -- I&S PMO Program Director, I&S PMO Org (UK)
+
+**What I did well:**
+Datta, I really wanted to let you know how much I appreciate the quality of the capability funnel items that you have recently added recently.  It makes understanding the problem the BU has so clear and also helps us in Delivery and Adoption including Joland and Tobin understand the ways in which the capability teams are responding to BUs. Thank you.
+
+---
+
+### 22. Rafael Vaz -- Graduate Development Program SW-Stream Intern, SW Excellence (Blumenau)
+
+**What I did well:**
+Datta, it's been such a pleasure to work with you. You quickly became more than just a colleague, but a true mentor. Your constant invaluable advice, introductions to new technologies, and overall influence have greatly accelerated my professional development. Your technical prowess is phenomenal, and I've constantly been impressed by how you effortlessly navigate (or masterfully dismantle) even the most challenging problems we've faced.
+
+
+
+Your dedication is truly unmatched. Your passion for your work is contagious, and your genuine care for the team and company is evident in everything you do. These qualities, along with your exceptional skills, make you, in my eyes, a natural and inspiring leader.
+
+
+
+Working with you has been a privilege and a joy. I look forward to our paths crossing again in the future.
+
+---
+
+### 23. Ravindra Verma -- Senior DevOps Architect, Software Excellence (Bangalore)
+
+**What I did well:**
+It’s a pleasure working with you, and there’s so much to learn from your experience.
+
+
+One of your key strengths is your ability to communicate complex ideas clearly and concisely. This ensures that everyone on the team stays aligned and informed. You consistently break down challenging concepts into understandable parts, which is incredibly helpful.
+
+Additionally, your problem-solving skills stand out. Whether addressing technical challenges like UST Virtualization or optimizing CI workflows, you approach problems with a thoughtful, analytical mindset, always considering the broader impact on the team and project goals.
+
+Another strength is your consistent collaboration and leadership. You actively listen to others' opinions and work collaboratively to find the best approach. You also provide constructive feedback and offer support when needed, which fosters a positive and productive team environment. Your clear and effective communication is another standout quality.
+
+And, your commitment to continuous improvement is evident. You're always looking for ways to refine processes, whether it's through suggesting new process or fine-tuning our current methods.
+
+**What I can improve:**
+I really appreciate the positive impact you’ve had on our work. From my perspective, everything you’re doing is working well, and I can’t think of anything specific that needs to be done differently at the moment. I’ve enjoyed learning from you and feel that you’re already setting a great example.
+
+---
+
+### 24. Sundaresan Jagadeesan -- Software Excellence Program Leader, SW Excellence (Bangalore)
+
+**What I did well:**
+1) Taking ownership and technical leadership :
+a) Thanks for the Amazing 'Developer Days' in PIC-BLR. You took the technical leadership role and did a wonderful job. we had a great NPS on the event
+b) the inroads made in U/S business stood out and we were able to showcase our pairworking to businesses
+
+2) Show versus Tell Behaviour:
+a) Able to successfully demonstate working scenarios in Businesses [ eg OHC, EMR-CM, EC]
+
+3)Enabling Patient Safety and Quality
+a) I would like to give a big shout-out for the good craftsmanship assessments done in U/S and IGT-S Business units. Technically sound and quickly executed, with clear and concise improvement actions [On the importance of these craft asseesment - Today in a meeting with HSSAP - Sitangshu , he said SW excellence should retrigger the craft assessment in all Biz and I have asked him to give this f/b to Rob]
+
+**What I can improve:**
+1) Kindly check and devise ways, how you can be in the USA office Biz location of Cambridge and Bothell as lot of imporatnce is being given for 'on-site' presence , engagement and colloboration by leadership/Exco. Let me know for any support needed on this
+
+2) Restart and sustain some of your 'Code craft' technical sessions to Businesses . The github copilot sessions to OHC was a good start, and devise ways, how to make this as a continuous and routine event
+
+---
+
+### 25. Kitty Verberne -- Software Excellence Community Leader, SW Excellence (Eindhoven)
+
+**What I did well:**
+You took the responsibility to organize the Developer Days India 2024 on top of your tasks and made it happen, therefore we could continue with the other planned events this year. It shows your collaborative mindset & prioritizing the team needs above your own preferences is a leadership skill.
+When you are asked to host an online event, I can rely on you: you are on time and prepared!
+Most of the times you have an idea for improving something, I really like that drive and it fits with how we should act as a SW Excellence member.
+
+**What I can improve:**
+Because it fits with your ambitions its more an advise: to focus in 2025 on updating the learning material around Software leadership and to step in when we need someone to train them.
+
+---
+
+### 26. Jegan Kunniya -- Platform Innovation Specialist, SW Excellence (Bangalore)
+
+**What I did well:**
+* - You play to your "strength" i.e., look forward to a win-win in your interaction with business, without losing the essence of the bigger picture i.e., making meaningful impact in the business.
+
+- Your ability to "build and motivate the team" is commendable. An example of it is how you managed the IEN resources to deliver on the Ultrasound infrastructure migration. Your strategic approach to transition and securing stakeholder commitment shows your leadership and commitment.
+
+- Your "listening skill" is your superpower. I haven't seen you jump to conclusion in a conversation and have put forward your inputs to its merit.
+
+Looking forward to a lot more collaboration in the years to come.
+
+**What I can improve:**
+* - Your "leadership" is under-utilized / under-exposed. Having visible and impactful demonstration of your leadership,  could significantly impact the team and organization.
+
+- Your "contributions" in areas such as CI/CD improvements, resolving business challenges, and craftsmanship assessment are valuable. However, the impact of these achievements could be better communicated. Consider showcasing them more prominently, perhaps in larger forums beyond demos or team meetings.
+
+- From our mentoring discussions, it’s clear you have a knack for "solving complex business problems" in an amicable and effective way. I suggest you to seek more opportunities to address such challenges would help you further develop and demonstrate this strength.
+
+- While the "Developer Days India" event was a success, it had the potential to make a stronger impact. Unlike similar events in other locations, the outcomes did not extend far beyond a summary and NPS share. I was hoping we could have leveraged the event to generate more impactful stories and actionable leads, which presents an opportunity for improvement. As the SW Excellence team, we missed the chance to amplify the event through post-event publishing, and I was counting on your leadership to drive this difference.
+
+---
+
+### 27. Brijesh Krishnan K -- Software Competency Lead, SW Excellence (Bangalore)
+
+**What I did well:**
+I truly appreciate the effort you have put in alongside the U/S team to drive progress in overall software improvement, particularly in the area of virtualization. Your excellent technical expertise and strong listening skills set you apart as a valuable contributor.
+
+**What I can improve:**
+Focusing on influencing leadership to implement changes that bring the most value to the business and driving those initiatives could be a key area to further enhance your leadership skills and impact.
+
+---
+
+### 28. Fernando Vieira -- Software Competency Lead, SW Excellence (Brazil)
+
+**What I did well:**
+Customer oriented, always focus on actions that can bring impact, improving processes and technology. Well organized. Have the skill of changing contexts and navigate in different problems and landscapes. Management skills are well used, specially to make contact with leader in different businesses
+
+**What I can improve:**
+Here in Americas we have to act in business as one man team in most cases. However, I found some of our actions could be more effective when working in team. It could be better to find the right synergies and opportunities of paring and do together; generally the results are better and faster.
+
+---
+
+## Key Quotes
+
+> "Your deep ecosystem knowledge is very impressive. You clearly understand how things connect and work together at a system level, which gives you the ability to provide clear direction and support." -- Sijo Jose (Software Architect, EI Radiology)
+
+> "Datta is very passionate about developer experience and genuinely wants to scale up the level of coding talent within Philips. He would lower the barrier to entry for engineers." -- Joseph Jayakar Nalluri (Senior Scientist, IGT-S XITE)
+
+> "You show up yourself as a leader with whom one can feel psychologically safe. You are a great listener and can read between the lines easily." -- Sai Gopal Garimella (Senior Software Architect, IGT-S)
+
+> "Datta has been a great partner in moving ultrasound forward and modernizing the development practices. I found Datta to be resourceful and thoughtful." -- Matthew Altman (Director of Software Platforms, Ultrasound)
+
+> "I am extremely grateful for the mentorship and support that Datta has provided me. During times when I felt overwhelmed and unsure, he consistently stepped in with guidance and advice." -- Vivian Ramirez (Software Development Manager, HPM)
+
+> "It's not easy leading an effort that moves the business. Your good nature goes a long way to ease the work needed to make virtualization a reality. Your persistence through obstacles, consistent right-pressure to keep the work moving." -- Robert Desmarais (Senior Software Architect, Ultrasound)
+
+> "I am already impressed by his deep knowledge of source code management, the solutions that help source code management like CodeScene, his culture on the community." -- Christophe Dore (Product Security Officer)
+
+> "Datta, it's been such a pleasure to work with you. You quickly became more than just a colleague, but a true mentor. Your constant invaluable advice, introductions to new technologies, and overall influence have greatly accelerated my professional development." -- Rafael Vaz (GDP Intern)
+
+> "You are very supportive, you always listen when we share our thoughts and concerns, and I truly appreciate how you guide us with patience and positivity." -- Chaya (Software Technologist I, IEN)
+
+> "I see Datta as a very organized person, crystal clear in communication and very considerate of stakeholder goals when collaborating. I always feel very excited to work with him." -- Rajeshwar Raja (Senior Software Architect, IGT Apps)
+
+> "A major help to the team for our efforts in setting up GitHub integration and brainstorming solutions to many of our server related problems." -- Jeremy Port (Senior Embedded SW Engineer, OHC)
+
+> "Datta is receptive to the Business Unit needs and actually listens to the inputs from the BU. He does not try to push a pre-cooked solution." -- Fred Calil (Director of Engineering, OHC)
+
+> "Your leadership is under-utilized / under-exposed. Having visible and impactful demonstration of your leadership could significantly impact the team and organization." -- Jegan Kunniya (Platform Innovation Specialist)
+
+> "Customer oriented, always focus on actions that can bring impact, improving processes and technology. Well organized. Have the skill of changing contexts and navigate in different problems and landscapes." -- Fernando Vieira (Software Competency Lead)
+
+## Themes
+1. **Developer Experience Champion:** Passionate about scaling coding talent, lowering barriers, modernizing practices
+2. **Ultrasound Virtualization Leadership:** Persistent, diplomatic leadership driving major technical transformation
+3. **Psychological Safety:** Creates safe spaces for learning, makes people feel heard and supported
+4. **Multi-Business Impact:** Active across IGT, HPM, OHC, Ultrasound, IEN, Emergency Care, SRC -- extraordinary breadth
+5. **Developer Days India 2024:** Took ownership and delivered flagship event with great NPS
+6. **Reverse Mentoring Innovation:** Cross-cultural, cross-functional mentoring demonstrating growth mindset
+7. **Technical Depth + People Skills:** Unique combination of deep technical expertise with empathy and listening
+8. **Director-Level Recognition:** Praised by multiple Directors and Senior Leaders for strategic impact
+9. **Under-utilized Leadership:** Multiple stakeholders note potential for larger organizational leadership role

@@ -89,7 +89,7 @@ data/evidence/
 │   ├── feedback-request-2018.md      (thematic summary)
 │   └── netflix-cicd-knowledge-sharing.md (thematic summary)
 ├── 2019/
-│   ├── individual/                   (1 file per email — 155 files)
+│   ├── individual/                   (159 files — 155 emails + 4 informal screenshots)
 │   │   └── _INDEX.md                 (categorized index of all individual files)
 │   ├── role-announcement-idm-project-architect.md       (thematic summary)
 │   ├── role-transition-swcoe-competency-specialist.md   (thematic summary)
@@ -230,7 +230,7 @@ data/evidence/
 
 **Thematic summaries:** [code-quality-guidelines](2018/code-quality-guidelines.md) | [feedback-request](2018/feedback-request-2018.md) | [netflix-cicd](2018/netflix-cicd-knowledge-sharing.md)
 
-## 2019 — 155 emails + 19 .connect artifacts ingested
+## 2019 — 155 emails + 19 .connect artifacts + 4 informal screenshots ingested
 
 **Full individual index:** [2019/individual/_INDEX.md](2019/individual/_INDEX.md)
 
@@ -254,6 +254,7 @@ data/evidence/
 | Project Tracking (TFS) | 3 | Story assignments |
 | General / Other | 48 | Various operational emails |
 | LinkedIn Recommendations | 2 | Rajesh Kumar — project architect, multiple solutions; Rajesh Manghani — system design, code quality for whole team |
+| Informal Feedback Screenshots | 4 | JaCoCo/PowerMock credit; SWCoE Conference; Clean Code Workshop; JSCPD mentoring (Raja) |
 
 ### Thematic Summaries (cross-reference multiple individual files)
 
@@ -269,7 +270,7 @@ data/evidence/
 | 8 | [Technical Debt / SIG / BEQR](2019/technical-debt-sig-partnership.md) | 9 emails | External partnership, judging |
 | 9 | [Cross-BU Influence](2019/cross-bu-engagement-influence.md) | 14 emails | Organizational connector role |
 
-## 2020 — 67 emails + 64 .connect artifacts ingested
+## 2020 — 67 emails + 64 .connect artifacts + 12 informal feedback screenshots ingested
 
 **Full individual index:** [2020/individual/_INDEX.md](2020/individual/_INDEX.md)
 
@@ -289,6 +290,7 @@ data/evidence/
 | Project Tracking (TFS) | 2 | Crack-the-code Brazil, .craft assessments |
 | BEQR & Best Practices | 1 | Monthly reporting |
 | Role & Organization | 1 | Next steps engagement |
+| Informal Feedback Screenshots | 12 | CI/CD whitepaper (Jan, #180), Lombok/HSDP (Apr, 24% duplication reduction, #181), Automation Dashboards (May, #182), XLint CI gates (May, #183), PHDSI test quality (Jun, #184), IoT Super POM (Jun, #185), PSI2M cultural change (Jun, #186), .grow reverse mentoring (Jun, #187), Microservices session 100 attendees (Jul, #188), Technical Connectedness PIC 236 views (Jul, #189), HackerNoon judge (Aug, #190), Cultural Behaviour Workshop 6 peers praising (Aug, #191) |
 
 ### Thematic Summaries
 

@@ -1,6 +1,6 @@
 # 2023 Individual Evidence Files
 
-**Total:** 18 evidence files
+**Total:** 19 evidence files
 
 | # | Date | Subject | Datta's Role | Evidence File |
 |---|------|---------|--------------|---------------|
@@ -20,3 +20,4 @@
 | | Fri, 04 Aug 2023 | Re: [philips-internal/swcoe-main] Engagement with IGT System | CC'd — explicitly mentioned | [014-re-philips-internalswcoe-main-engagement-with-igt-systems-issue-88.md](014-re-philips-internalswcoe-main-engagement-with-igt-systems-issue-88.md) |
 | | Tue, 19 Sep 2023 | Your Service Milestone with Philips North America | Direct recipient — explicitly  | [015-your-service-milestone-with-philips-north-america.md](015-your-service-milestone-with-philips-north-america.md) |
 | | 2023-02-03 | LinkedIn Recommendation — NaveenKumar VR | Direct recipient — recommended | [018-linkedin-recommendation-naveenkumar-vr.md](018-linkedin-recommendation-naveenkumar-vr.md) |
+| | 2023-10-18 | Taky Djarou Feedback — HPM Release Workflows (Teams chat) | Direct recipient — peer recognition | [020-philips-informal-taky-hpm-release-workflows.md](020-philips-informal-taky-hpm-release-workflows.md) |

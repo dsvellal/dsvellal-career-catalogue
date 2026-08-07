@@ -1,6 +1,6 @@
 # 2019 Individual Evidence Files
 
-**Total:** 155 evidence files from 158 source emails
+**Total:** 159 evidence files (155 from emails, 4 from informal screenshot images)
 
 
 ## Agile Transformation
@@ -239,3 +239,12 @@
 |---|------|---------|--------------|---------------|
 | | 2019-08-14 | LinkedIn Recommendation — Rajesh Manghani | Direct recipient — recommended | [184-linkedin-recommendation-rajesh-manghani.md](184-linkedin-recommendation-rajesh-manghani.md) |
 | | 2019-08-21 | LinkedIn Recommendation — Rajesh Kumar | Direct recipient — recommended | [183-linkedin-recommendation-rajesh-kumar.md](183-linkedin-recommendation-rajesh-kumar.md) |
+
+## Informal Feedback — Screenshots
+
+| # | Date | Subject | Datta's Role | Evidence File |
+|---|------|---------|--------------|---------------|
+| 185 | 2019-08-20 | JaCoCo Offline Instrumentation with PowerMock — Unit Test Workshop Credit | Direct recipient — recognized by name | [185-philips-informal-jacoco-offline-instrumentation-powermock-feedback.md](185-philips-informal-jacoco-offline-instrumentation-powermock-feedback.md) |
+| 186 | 2019-09-13 | SWCoE Conference 2019 — Engaging and Thought Provoking Sessions | Direct recipient — named organizer/contributor | [186-philips-informal-swcoe-conference-2019-feedback.md](186-philips-informal-swcoe-conference-2019-feedback.md) |
+| 187 | 2019-09-25 | Clean Code & Clean Test Workshop — Parallel Hands-On Sessions | Direct recipient — named facilitator/organizer | [187-philips-informal-clean-code-clean-test-workshop-feedback.md](187-philips-informal-clean-code-clean-test-workshop-feedback.md) |
+| 188 | 2019-10-03 | JSCPD Code Duplication Tool — Raja Rajeshwar's Experience Report | Direct recipient — recognized as mentor | [188-philips-informal-jscpd-code-duplication-raja-feedback.md](188-philips-informal-jscpd-code-duplication-raja-feedback.md) |

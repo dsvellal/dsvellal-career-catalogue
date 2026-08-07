@@ -1,6 +1,6 @@
 # 2020 Individual Evidence Files
 
-**Total:** 67 evidence files from 70 source emails
+**Total:** 79 evidence files (67 from email sources + 12 informal feedback screenshot images #180–191)
 
 
 ## BEQR & Best Practices
@@ -136,3 +136,20 @@
 | # | Date | Subject | Datta's Role | Evidence File |
 |---|------|---------|--------------|---------------|
 | | 2020-11 | DevOps Whitepaper (CAO) + Bar Raiser Intranet + Reference Pipelines | Co-author, Founding Bar Raiser | [143-tech-artifacts-devops-whitepaper-bar-raiser-pipelines.md](143-tech-artifacts-devops-whitepaper-bar-raiser-pipelines.md) |
+
+## Informal Feedback (Screenshot Images) — Jan–Aug 2020
+
+| # | Date | Subject | Datta's Role | Evidence File |
+|---|------|---------|--------------|---------------|
+| 180 | 2020-01-25 | CI/CD Ref Architecture Whitepaper — Nagaraj Shamanna thanks Datta's notes | Direct recipient — recognized | [180-philips-informal-cicd-ref-architecture-nagaraj-shamanna.md](180-philips-informal-cicd-ref-architecture-nagaraj-shamanna.md) |
+| 181 | 2020-04-08 | Quality at Desk — Lombok boilerplate reduction, HSDP team adopts (24% duplication reduction) | Direct presenter — credited | [181-philips-informal-quality-at-desk-lombok-boilerplate-hsdp.md](181-philips-informal-quality-at-desk-lombok-boilerplate-hsdp.md) |
+| 182 | 2020-05-06 | SW Excellence — Automation Dashboards presentation influence, Datta praises session | Direct recipient/community builder | [182-philips-informal-swcoe-automation-dashboards-yammer-influence.md](182-philips-informal-swcoe-automation-dashboards-yammer-influence.md) |
+| 183 | 2020-05-25 | Quality at Desk — EMR team XLint compiler warnings gated PR integration | Indirect — initiative impact | [183-philips-informal-quality-at-desk-emr-xlint-compiler-warnings.md](183-philips-informal-quality-at-desk-emr-xlint-compiler-warnings.md) |
+| 184 | 2020-06-04 | Quality at Desk — PHDSI test automation code quality transformation, Datta credited | Direct contributor — named | [184-philips-informal-quality-at-desk-phdsi-test-automation-quality.md](184-philips-informal-quality-at-desk-phdsi-test-automation-quality.md) |
+| 185 | 2020-06-10 | Quality at Desk — IoT Super POM parent POM with quality infrastructure | Indirect — initiative impact | [185-philips-informal-quality-at-desk-iot-super-pom.md](185-philips-informal-quality-at-desk-iot-super-pom.md) |
+| 186 | 2020-06-25 | Quality at Desk — PSI2M ASP team cultural change, Datta thanked by name | Direct contributor — thanked | [186-philips-informal-quality-at-desk-psi2m-asp-team.md](186-philips-informal-quality-at-desk-psi2m-asp-team.md) |
+| 187 | 2020-06-26 | .grow Reverse Mentoring — Ronald Wiericx introduction, praising Datta's DevOps guidance | Direct mentor — praised | [187-philips-informal-grow-reverse-mentoring-ronald-wiericx-intro.md](187-philips-informal-grow-reverse-mentoring-ronald-wiericx-intro.md) |
+| 188 | 2020-07-02 | Microservices & Reliability Design Thinking — Teams chat appreciation (100 attendees) | Direct presenter — thanked | [188-philips-informal-microservices-reliability-design-thinking-teams-feedback.md](188-philips-informal-microservices-reliability-design-thinking-teams-feedback.md) |
+| 189 | 2020-07-14 | Quality at Desk — Technical Connectedness best practice, PIC Bangalore SW Leaders (236 seen) | Indirect — initiative impact | [189-philips-informal-quality-at-desk-technical-connectedness-pic-bangalore.md](189-philips-informal-quality-at-desk-technical-connectedness-pic-bangalore.md) |
+| 190 | 2020-08-06 | HackerNoon 2020 Bangalore Finals — Datta as judge for 10 finalists | Direct judge — named | [190-philips-informal-hackernoon-2020-finals-judge.md](190-philips-informal-hackernoon-2020-finals-judge.md) |
+| 191 | 2020-08-24 | Cultural Behaviour Workshop — Teams thank-you messages for Datta (6 peers) | Direct recipient — recognized | [191-philips-informal-cultural-behaviour-workshop-thank-you-datta.md](191-philips-informal-cultural-behaviour-workshop-thank-you-datta.md) |

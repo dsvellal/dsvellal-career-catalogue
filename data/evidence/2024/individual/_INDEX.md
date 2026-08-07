@@ -1,6 +1,6 @@
 # 2024 Individual Evidence Files
 
-**Total:** 11 evidence files
+**Total:** 29 evidence files
 
 | # | Date | Subject | Datta's Role | Evidence File |
 |---|------|---------|--------------|---------------|
@@ -11,3 +11,21 @@
 | | Wed, 12 Jun 2024 | SonarQube integration in AppEngine | Direct recipient — explicitly  | [005-sonarqube-integration-in-appengine.md](005-sonarqube-integration-in-appengine.md) |
 | | 2024-05-03 | LinkedIn Recommendation — Rafael Medeiros de Farias Vaz | Direct recipient — recommended | [010-linkedin-recommendation-rafael-vaz.md](010-linkedin-recommendation-rafael-vaz.md) |
 | | 2024-10-04 | Personality Type — ENFJ-A "Protagonist" (16Personalities) | Self-assessment | [011-personality-type-enfj-protagonist.md](011-personality-type-enfj-protagonist.md) |
+| | 2024-02-02 | Elwin de Weerdt MR Survey — BlackDuck Engagement (8/10 NPS, 9/10 recommend) | Direct recipient — recognized | [012-philips-informal-elwin-mr-blackduck-feedback.md](012-philips-informal-elwin-mr-blackduck-feedback.md) |
+| | 2024-02-07 | Elaine Mitchell Peer Recognition — Requirements Facilitation ("You really are awesome") | Direct recipient — peer recognition | [013-philips-informal-elaine-mitchell-peer-recognition.md](013-philips-informal-elaine-mitchell-peer-recognition.md) |
+| | 2024-02-07 | State of Software Craftsmanship 2023 — Co-author, Rob Nicholson + Matthew Albers public praise (487 views) | Co-author — public recognition | [014-philips-informal-state-of-craftsmanship-2023-report.md](014-philips-informal-state-of-craftsmanship-2023-report.md) |
+| | 2024-02-09 | EMR CMDK CI/CD Working Session — 5 actionable code review recommendations (16 participants) | Facilitator — recognized | [015-philips-informal-emr-cmdk-code-review-session.md](015-philips-informal-emr-cmdk-code-review-session.md) |
+| | 2024-02-28 | Lavina Antonia D'Souza — Interview Advisory for Janar & Chandrashekar (Bangalore hiring) | Interviewer — recognized | [016-philips-informal-lavina-interview-janar.md](016-philips-informal-lavina-interview-janar.md) |
+| | 2024-02-28 | Surendhar Vaithiyanathan — IDM Kubernetes Advisory (Alma Linux + K3S + Fiesta, 3-part) | Technical advisor — recognized | [017-philips-informal-surendhar-pso-idm-kubernetes.md](017-philips-informal-surendhar-pso-idm-kubernetes.md) |
+| | 2024-02-28 | Surendhar Advisory Part 2 — K3S CAO Whitelisting and Governance Discussion | Technical advisor | [018-philips-informal-surendhar-pso-idm-kubernetes-part2.md](018-philips-informal-surendhar-pso-idm-kubernetes-part2.md) |
+| | 2024-02-28 | Surendhar Advisory Part 3 — Fiesta + Security-First Kubernetes Guidance ("thats a good approach") | Technical advisor — recognized | [019-philips-informal-surendhar-pso-idm-kubernetes-part3.md](019-philips-informal-surendhar-pso-idm-kubernetes-part3.md) |
+| | 2024-03-19 | Robert Desmarais — Ultrasound Virtualisation Technical Advisory ("benefit the business greatly") | Technical advisor — recognized | [020-philips-informal-bob-desmarais-ultrasound-virtualisation.md](020-philips-informal-bob-desmarais-ultrasound-virtualisation.md) |
+| | 2024-03-19 | Fred Calil — Thanks for Organising OHC GitHub Q&A Session (55 mins, 16 participants) | Organiser — recognized | [021-philips-informal-fred-calil-ohc-github-qa.md](021-philips-informal-fred-calil-ohc-github-qa.md) |
+| | 2024-03-26 | Kitty Verberne — Recognition for Tech Graph Contribution to Recruitment Marketing | Contributor — recognized | [022-philips-informal-kitty-recruitment-marketing-tech-graph.md](022-philips-informal-kitty-recruitment-marketing-tech-graph.md) |
+| | 2024-03-27 | Kitty Verberne — SOLID Principles SharePoint ("did more than expected") | Contributor — recognized | [023-philips-informal-kitty-solid-principles-sharepoint.md](023-philips-informal-kitty-solid-principles-sharepoint.md) |
+| | 2024-06-19 | Ultrasound Virtualisation Milestone — Viva Engage Post (71 views, Tobin Taylor-Bhatia praise) | Author — public recognition | [024-philips-informal-ultrasound-virtualisation-viva-engage-post.md](024-philips-informal-ultrasound-virtualisation-viva-engage-post.md) |
+| | 2024-10-09 | Matthew Altman + Neil Owen — Innovation Forum Feedback ("excellent topic and presentation") | Presenter — recognized | [025-philips-informal-matt-neil-ultrasound-virtualisation-innovation-forum.md](025-philips-informal-matt-neil-ultrasound-virtualisation-innovation-forum.md) |
+| | 2024-10-21 | PHI Scanner listed in Philips EI R&D Cloud Migration Playbook (official tool recognition) | Tool creator — institutionally recognized | [026-philips-informal-phi-scanner-cloud-migration-playbook.md](026-philips-informal-phi-scanner-cloud-migration-playbook.md) |
+| | 2024-11-05 | Richa Rajwar — Competency to Skills Mapping Advisory for India Expansion | Advisor — recognized | [027-philips-informal-richa-rajwar-competency-skills-mapping.md](027-philips-informal-richa-rajwar-competency-skills-mapping.md) |
+| | 2024-11-26 | Vivek Raheja — .NET Code Coverage Tool Advisory (Coverlet recommendation) | Advisor — recognized | [028-philips-informal-vivek-raheja-dotnet-testing-tool.md](028-philips-informal-vivek-raheja-dotnet-testing-tool.md) |
+| | 2024-12-11 | Brian Collamore — Mentoring Vivian Recognition ("coaching contributing to her success") | Mentor — recognized | [029-philips-informal-brian-collamore-vivian-mentoring.md](029-philips-informal-brian-collamore-vivian-mentoring.md) |
