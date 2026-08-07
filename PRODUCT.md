@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-React + TypeScript + Vite + D3. Single-page application with tab-based navigation. CSS in a single styles.css file (no CSS-in-JS). Static deployment target.
+React + TypeScript + Vite + D3. Single-page application with hash-addressable view navigation and namespaced CSS (no CSS-in-JS). Static deployment target.
 
 ## Users
 
@@ -20,42 +20,43 @@ A living digital portfolio and professional identity system — not a static res
 
 ## Positioning
 
-Combines two differentiators no standard resume or LinkedIn profile offers: (1) a structured knowledge system / digital twin architecture that enables AI-powered tailored outputs, and (2) unprecedented depth of evidence — quantified impact across four organizations, 220+ peer testimonials, a full talks inventory, and a knowledge graph mapping skills across eras.
+Combines two differentiators no standard resume or LinkedIn profile offers: (1) a structured knowledge system / digital twin architecture that enables AI-powered tailored outputs, and (2) unusual evidence depth—quantified impact across four employers, 20 attributed public recommendations, 80+ contributors to the informal-feedback archive, a full talks inventory, and a knowledge graph mapping skills across eras.
 
 ## Operating Context
 
-Eight interactive views: Overview (hero), Professional Identity (BeTalent force graph), Career Arc (stacked bar), Impact (20 filterable cards), Timeline (vertical accordion, 343 achievements), Voices (220 rotating quotes), Talks & Givebacks (3-column + activity bar), Knowledge Graph (5 sub-views). Data sourced from JSON files extracted via DuckDB from a comprehensive personal knowledge corpus.
+Eight evidence-led Journey Atlas views: Executive Portrait, Twenty-Year Journey, Capability Compounder, Outcome Ledger, Trust & Respect, Influence Web, Teaching & Service Ripple, and Momentum & Next Horizon. Together they move from identity and chronology through capability, outcomes, independent validation, influence, service, and future direction. The public site consumes one curated static journey dataset; the full graph and raw evidence remain private analysis sources.
 
 ## Capabilities and Constraints
 
-- Single-page app with client-side tab routing (no URL-based routes currently)
+- Single-page app with hash deep links (`#portrait`, `#journey`, `#capabilities`, `#outcomes`, `#respect`, `#influence`, `#service`, `#momentum`)
 - All data is static JSON — no backend API
-- D3 used for force-directed graphs and data visualizations
-- Era-based color coding across all views (IBM blue, Amazon green, Philips orange, Exeter gold, Independent purple)
+- SVG/CSS visualizations express braided timelines, capability rivers, leverage ladders, evidence timelines, structured influence flows, service ripples, and momentum signals
+- Evidence tiers and caveat labels remain attached to claims; visualization geometry is explicitly bounded so it is not mistaken for causality, psychometrics, or proportional scale
 - Professional headshot photo and Devanagari-script logotype as brand assets
-- Dark theme throughout
+- Warm architectural-blueprint visual language with responsive and print treatments
+- Production builds disable Vite's `public/` directory; raw evidence is not copied into the deployable bundle
 
 ## Brand Commitments
 
-Current visual identity is functional but open to evolution. No hard constraints on the dark theme, era colors, or typography — all can be refreshed if design direction warrants it. The Devanagari logotype and professional photo are retained assets.
+The current visual identity uses warm vellum, architectural rules, restrained blueprint accents, condensed display type, and a provenance vocabulary that feels rigorous without becoming clinical. The Devanagari logotype and professional photo are retained assets.
 
 ## Evidence on Hand
 
 - Professional headshot: `viz/public/photo.jpg`
 - Logotype: `viz/public/logo.jpg`
-- 343 deduplicated timeline achievements across 5 eras
-- 220+ peer testimonials and recommendations
-- 40+ documented talks and social contributions
-- Quantified metrics: $3M+ savings, 60% delivery reduction, 99.999% uptime, 10,000+ children reached
-- Full career arc data with recognition/certification/recommendation counts by year
+- Career evidence spanning 2007–2026 across IBM, Exeter, Amazon, Philips India, Philips North America, and a parallel independent service lane
+- 20 attributed LinkedIn recommendations, 16 formal awards, 12 public recognitions, and a larger local corpus of informal feedback
+- 90 facilitated sessions with 1,183 feedback responses, plus 13 voluntary college sessions with 494 student responses
+- Quantified delivery and business outcomes, with resume-originated figures labeled self-reported unless independently corroborated
+- Two USPTO patents and evidence of continued AI-native, regulated-software, teaching, and community work
 
 ## Product Principles
 
-1. **Evidence over claims** — every assertion is backed by quantifiable data or verifiable testimony
+1. **Evidence over claims** — assertions carry evidence tiers and explicit caveats; unsupported certainty is avoided
 2. **Whole person, not just professional** — social impact, volunteering, and community building are first-class alongside technical achievements
-3. **Explorable depth** — visitors choose their own path through the material at any level of detail
+3. **Focused depth** — visitors choose among eight perspectives while private raw artifacts stay outside the public experience
 4. **Living system** — the portfolio is a product of the knowledge layer, not a handcrafted static site
 
 ## Accessibility & Inclusion
 
-No specific standard established yet. Current implementation uses semantic HTML, keyboard navigation on interactive cards, and sufficient contrast on the dark theme. WCAG 2.1 AA as a reasonable target.
+WCAG 2.1 AA remains the target. The current atlas provides semantic sections and labeled SVGs, visible focus treatment, `aria-current`, arrow/Home/End desktop navigation, a labeled mobile selector, horizontal-scroll labels for dense visuals, reduced-motion behavior, and single-column responsive fallbacks.

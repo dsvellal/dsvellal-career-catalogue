@@ -1,0 +1,480 @@
+{
+  "chromadb": {
+    "collections": {
+      "twin_chunks": {
+        "count": 21356,
+        "dimension": 384,
+        "files": {
+          "artifact_links": "chromadb/twin_chunks_artifact_links.jsonl",
+          "embeddings": [
+            "chromadb/twin_chunks_embeddings.part-0001.jsonl",
+            "chromadb/twin_chunks_embeddings.part-0002.jsonl",
+            "chromadb/twin_chunks_embeddings.part-0003.jsonl",
+            "chromadb/twin_chunks_embeddings.part-0004.jsonl"
+          ],
+          "records": "chromadb/twin_chunks.jsonl"
+        },
+        "metadata": {
+          "hnsw:space": "cosine"
+        },
+        "slug": "twin_chunks"
+      }
+    },
+    "validation": {
+      "chroma_ids": 21356,
+      "document_mismatches": 0,
+      "duckdb_chunk_ids": 25767,
+      "extra_in_chroma": 0,
+      "metadata_mismatches": 0,
+      "missing_in_chroma": 4411,
+      "orphan_artifact_links": 0,
+      "overlap": 21356
+    }
+  },
+  "derived_viz": [
+    {
+      "bytes": 40070,
+      "mtime_ns": 1785709705108469561,
+      "path": "viz/src/data/career_arc.json",
+      "sha256": "2513156bb06db45a8fbd555ab6733cb3b7c488b7292cdd3b9fd42dd9ce94a30e",
+      "top_level_keys": [
+        "eras",
+        "years"
+      ],
+      "top_level_type": "object",
+      "valid_json": true
+    },
+    {
+      "bytes": 15277,
+      "mtime_ns": 1785709705107412030,
+      "path": "viz/src/data/constellation.json",
+      "sha256": "846465dfa96ba3602780fbe478de2927a1203e35f552d8f3d3ddd7e0e1d48405",
+      "top_level_keys": [
+        "betalent_skills",
+        "clusters",
+        "orbit_skills"
+      ],
+      "top_level_type": "object",
+      "valid_json": true
+    },
+    {
+      "bytes": 1047710,
+      "graph_summary": {
+        "ego_centers": 148,
+        "force_edges": 1619,
+        "force_nodes": 148,
+        "radial_items": 28
+      },
+      "mtime_ns": 1785725542022258989,
+      "path": "viz/src/data/graph.json",
+      "sha256": "2f36919d249b4e0ba6fe6698e861463aa1d76f65646367baded8944105b4fa23",
+      "top_level_keys": [
+        "ego_index",
+        "force",
+        "heatmap",
+        "org_subgraphs",
+        "radial"
+      ],
+      "top_level_type": "object",
+      "valid_json": true
+    },
+    {
+      "bytes": 7299,
+      "items": 20,
+      "mtime_ns": 1786074718410666754,
+      "path": "viz/src/data/impact.json",
+      "sha256": "2d43338c0156fa9dbb98a7b7baca46d0cab0eb6480cbb0dd3f29c69bda202d39",
+      "top_level_type": "array",
+      "valid_json": true
+    },
+    {
+      "bytes": 98622,
+      "mtime_ns": 1786076878210978355,
+      "path": "viz/src/data/journey.json",
+      "sha256": "e2e19f3b544e7e88a6f24d84480edb3e5acdba670db2b7cef9bc04666fce5a77",
+      "top_level_keys": [
+        "capability_streams",
+        "caveats",
+        "eras",
+        "headline_metrics",
+        "impact_ledger",
+        "influence",
+        "meta",
+        "momentum",
+        "respect",
+        "service_lane",
+        "teaching_service",
+        "thesis"
+      ],
+      "top_level_type": "object",
+      "valid_json": true
+    },
+    {
+      "bytes": 20678,
+      "items": 43,
+      "mtime_ns": 1785725589955271806,
+      "path": "viz/src/data/talks.json",
+      "sha256": "adbc0fef65a83ff9fd0909498d456629ceabbb79144ccbbe9c7f121f14a364f6",
+      "top_level_type": "array",
+      "valid_json": true
+    },
+    {
+      "bytes": 5165,
+      "items": 4,
+      "mtime_ns": 1785728164496793722,
+      "path": "viz/src/data/timeline.json",
+      "sha256": "82992463ffcc623e79d5e67065dcb0279dec0ee77424d509f77e36898be5e254",
+      "top_level_type": "array",
+      "valid_json": true
+    },
+    {
+      "bytes": 133378,
+      "items": 6,
+      "mtime_ns": 1786074742916434865,
+      "path": "viz/src/data/timeline_full.json",
+      "sha256": "b141ea8355929245bab20df7c428373c36a3e0159f57b0d43c3c3655cec457e2",
+      "top_level_type": "array",
+      "valid_json": true
+    },
+    {
+      "bytes": 44766,
+      "items": 220,
+      "mtime_ns": 1786074742916874283,
+      "path": "viz/src/data/voices.json",
+      "sha256": "0499455cb2de268b04760d1418ca79b5f087109fa980949b4bf55ed4eb8c73c1",
+      "top_level_type": "array",
+      "valid_json": true
+    }
+  ],
+  "duckdb": {
+    "integrity": {
+      "duplicate_ordered_edge_pairs": 0,
+      "orphan_chunk_artifacts": 0,
+      "orphan_edge_artifact_provenance": 13,
+      "orphan_edge_sources": 0,
+      "orphan_edge_targets": 0,
+      "orphan_ingestion_artifacts": 0,
+      "self_loops": 0
+    },
+    "relationship_projections": {
+      "artifact_classifications.jsonl": 1364,
+      "chunk_artifact_links.jsonl": 25767,
+      "edge_artifact_links.jsonl": 17190,
+      "edges_enriched.jsonl": 17190,
+      "evidence_people.jsonl": 758,
+      "evidence_programs.jsonl": 37,
+      "evidence_skills.jsonl": 317,
+      "ingestion_artifact_links.jsonl": 1259,
+      "node_source_artifact_links.jsonl": 0,
+      "person_relationship_labels.jsonl": 954
+    },
+    "tables": {
+      "anonymization_map": 0,
+      "artifacts": 1364,
+      "chunks": 25767,
+      "edges": 17190,
+      "evidence_index": 562,
+      "gdrive_sync": 0,
+      "ingestion_log": 1259,
+      "nodes": 3471,
+      "publications": 0,
+      "voice_profile": 1
+    }
+  },
+  "generated_at_utc": "2026-08-07T04:46:57.373131+00:00",
+  "generator": "scripts/export_relationships.py",
+  "networkx": {
+    "files": {
+      "node_metrics.jsonl": 3471
+    },
+    "summary": {
+      "density": 0.0014272228435360254,
+      "directed": true,
+      "edges": 17190,
+      "graph_class": "DiGraph",
+      "isolates": 244,
+      "largest_weak_component": 3223,
+      "multigraph": false,
+      "nodes": 3471,
+      "runtime_edge_attributes": [
+        "confidence",
+        "type",
+        "weight"
+      ],
+      "runtime_node_attributes": [
+        "name",
+        "type"
+      ],
+      "self_loops": 0,
+      "strong_components": 3471,
+      "weak_components": 247
+    }
+  },
+  "outputs": [
+    {
+      "bytes": 1090,
+      "path": "README.md",
+      "sha256": "d754dcc3c51e1d06bfc3d8118aeaefafc6602a0cc73aed8f1448312cb305a9b2"
+    },
+    {
+      "bytes": 56813424,
+      "path": "chromadb/twin_chunks.jsonl",
+      "records": 21356,
+      "sha256": "8a64c1174a4425590986e5fc81d5bad65ab08605ae23a690f4bb1f6f86ee05f1"
+    },
+    {
+      "bytes": 1922040,
+      "path": "chromadb/twin_chunks_artifact_links.jsonl",
+      "records": 21356,
+      "sha256": "ff2b306d871602601e38815f7ddb6d443ef6cb934d3725b22e1384da87f17e71"
+    },
+    {
+      "bytes": 50324742,
+      "path": "chromadb/twin_chunks_embeddings.part-0001.jsonl",
+      "records": 6218,
+      "sha256": "8e709f5fbae9961d3391b958a6faa09c73360b3580a211d2b4b389d9f730f2a9"
+    },
+    {
+      "bytes": 50331443,
+      "path": "chromadb/twin_chunks_embeddings.part-0002.jsonl",
+      "records": 6219,
+      "sha256": "ff6688bfe52a9084a0208a4d7229bab0a9c2cd5d50ff11da3c07cf1b56e618be"
+    },
+    {
+      "bytes": 50331301,
+      "path": "chromadb/twin_chunks_embeddings.part-0003.jsonl",
+      "records": 6219,
+      "sha256": "e1e25880894cb345039e41ab52c9bff0bf7b6154f48dc22bceaae6a42fd253c0"
+    },
+    {
+      "bytes": 21851752,
+      "path": "chromadb/twin_chunks_embeddings.part-0004.jsonl",
+      "records": 2700,
+      "sha256": "5def09df8e0875ef02fb2981f79f7b7e4ef129d7987f3a7b5442b91506b7e1c3"
+    },
+    {
+      "bytes": 1047710,
+      "path": "derived/viz_graph.snapshot.json",
+      "sha256": "2f36919d249b4e0ba6fe6698e861463aa1d76f65646367baded8944105b4fa23"
+    },
+    {
+      "bytes": 791547,
+      "path": "duckdb/relationships/artifact_classifications.jsonl",
+      "records": 1364,
+      "sha256": "9e8dc1aac60e1348cd069400cf2f662246d1c4513f0ee58988ac87421b17ab9f"
+    },
+    {
+      "bytes": 7440941,
+      "path": "duckdb/relationships/chunk_artifact_links.jsonl",
+      "records": 25767,
+      "sha256": "de4ce6c4f0a2329d0700182f6d386ef49492dc246a4a085722fc34db99c878b1"
+    },
+    {
+      "bytes": 1512733,
+      "path": "duckdb/relationships/edge_artifact_links.jsonl",
+      "records": 17190,
+      "sha256": "8fb1654154d672c602c5cb1166cc4ad7fb5f44889c1180c4afe3b00668c5f994"
+    },
+    {
+      "bytes": 10361261,
+      "path": "duckdb/relationships/edges_enriched.jsonl",
+      "records": 17190,
+      "sha256": "b096edff2f62ca693e05bb72b273507910049a0a0a61ff33f9d13da864efe97a"
+    },
+    {
+      "bytes": 256206,
+      "path": "duckdb/relationships/evidence_people.jsonl",
+      "records": 758,
+      "sha256": "4e3b57a3968ac289af689c8739e2bf1c4d003ca59bcf415392e05109a6a4818c"
+    },
+    {
+      "bytes": 12517,
+      "path": "duckdb/relationships/evidence_programs.jsonl",
+      "records": 37,
+      "sha256": "8ef813bdef6791ef7b30e65a4f27cdf04d8555b9f93dc58b4b5dc45755f89a1b"
+    },
+    {
+      "bytes": 117434,
+      "path": "duckdb/relationships/evidence_skills.jsonl",
+      "records": 317,
+      "sha256": "f3b18bdc70d1309be4fe5c61a94ce2bc48a783ffdfe0754dc0b82aca4ac6d027"
+    },
+    {
+      "bytes": 120864,
+      "path": "duckdb/relationships/ingestion_artifact_links.jsonl",
+      "records": 1259,
+      "sha256": "f6b53e091e8a90dc6fef9b444df7eb3821e8d945135cbc391fda688a703c11d1"
+    },
+    {
+      "bytes": 0,
+      "path": "duckdb/relationships/node_source_artifact_links.jsonl",
+      "records": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 153854,
+      "path": "duckdb/relationships/person_relationship_labels.jsonl",
+      "records": 954,
+      "sha256": "2ad40daa9ec4749a6495ce1127ff547ddc7c737c4178e9872c3cdbca3df805dd"
+    },
+    {
+      "bytes": 18691,
+      "path": "duckdb/schema.yml",
+      "sha256": "2f6a7da82d790598a507b537654c65130c32b19fe9c9c3568c487aa7fb45767e"
+    },
+    {
+      "bytes": 0,
+      "path": "duckdb/tables/anonymization_map.jsonl",
+      "records": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 52169471,
+      "path": "duckdb/tables/artifacts.jsonl",
+      "records": 1364,
+      "sha256": "a3ef412d8c258ed315cac901e92c8c0089274d6e89e0d5e3c945bf54a35e3284"
+    },
+    {
+      "bytes": 60188240,
+      "path": "duckdb/tables/chunks.jsonl",
+      "records": 25767,
+      "sha256": "5026813ca46168fc96e5e75c4f79b54b11d05bfb3b3043d6c092f8a7a6ecb474"
+    },
+    {
+      "bytes": 5059255,
+      "path": "duckdb/tables/edges.jsonl",
+      "records": 17190,
+      "sha256": "f435d7f95f5e38d4a558a503970d4bfbc4e342b2ea4fa4073cb8b46e0ca59ac0"
+    },
+    {
+      "bytes": 682197,
+      "path": "duckdb/tables/evidence_index.jsonl",
+      "records": 562,
+      "sha256": "725f75001a2c37538d573c3d33a666fd55c1254110ae8e4d5b4329f10630e4a0"
+    },
+    {
+      "bytes": 0,
+      "path": "duckdb/tables/gdrive_sync.jsonl",
+      "records": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 360638,
+      "path": "duckdb/tables/ingestion_log.jsonl",
+      "records": 1259,
+      "sha256": "86c2a28eda11c2f8650a4a6400ae8a76bc7649ea6358a76e5fa3adc954467c44"
+    },
+    {
+      "bytes": 1227000,
+      "path": "duckdb/tables/nodes.jsonl",
+      "records": 3471,
+      "sha256": "9ae52764e4a284e7ad4ab80778ccd1f17a4ca3c8b4d3d6ac1bd88b1fc29b433a"
+    },
+    {
+      "bytes": 0,
+      "path": "duckdb/tables/publications.jsonl",
+      "records": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4257,
+      "path": "duckdb/tables/voice_profile.jsonl",
+      "records": 1,
+      "sha256": "7d1ebe42d7cb3dd8879bbb0fe0da0bae9d86642d12efd7e2583f4a267fd7546b"
+    },
+    {
+      "bytes": 2967,
+      "path": "inventory/derived_viz.json",
+      "sha256": "dd4c7f8b615626f078fd07e26d773463d4a5a522d9450bc26a4a51f955a0435b"
+    },
+    {
+      "bytes": 2033,
+      "path": "inventory/source_stores.json",
+      "sha256": "c615621aeaafd975b1082f7f8a5e08b0ee6f1792181ec4854b3a0a16c3f94cf2"
+    },
+    {
+      "bytes": 4181138,
+      "path": "networkx/graph.node-link.json",
+      "sha256": "a6ce0c36176f1ba1f17ab43b3fc5dcc1fc6dff31e959ad896e76b00391000792"
+    },
+    {
+      "bytes": 1167103,
+      "path": "networkx/node_metrics.jsonl",
+      "records": 3471,
+      "sha256": "2850bb1e170608297dcd20d3b6d34af34c5c8b710dd2296bc6b1d1c57d3a7fcd"
+    },
+    {
+      "bytes": 410,
+      "path": "networkx/summary.json",
+      "sha256": "cbcaff2c91ab103bf989c0e16d106943cbaf542dcc01d2993abc1f6a0c1d8eb5"
+    },
+    {
+      "bytes": 1403,
+      "path": "quality/consistency-report.md",
+      "sha256": "8c93b80903684a594dc0d5cec56183196bfb8cbdf3c08167197d0027dde9b8db"
+    }
+  ],
+  "schema_version": 2,
+  "sources": {
+    "canonical": {
+      "chromadb": {
+        "files": [
+          {
+            "bytes": 35216112,
+            "mtime_ns": 1785684417931759360,
+            "path": "data/chroma/902c6b4b-e680-4ee3-8980-9ae9e9b529d6/data_level0.bin",
+            "sha256": "c5c8ea3f7b3b640021e2943c730bf642051072ab081d2df1565978ac68873104"
+          },
+          {
+            "bytes": 100,
+            "mtime_ns": 1785684417923535819,
+            "path": "data/chroma/902c6b4b-e680-4ee3-8980-9ae9e9b529d6/header.bin",
+            "sha256": "0870de4fca64351f1e1b1298d8e17432d3fab9a1bd42ada16a23d55a54f5ef04"
+          },
+          {
+            "bytes": 1176884,
+            "mtime_ns": 1785684417948839149,
+            "path": "data/chroma/902c6b4b-e680-4ee3-8980-9ae9e9b529d6/index_metadata.pickle",
+            "sha256": "73c388f7d893bd6f232ff13907011169f8103399865babb90a8da20269d0bfc9"
+          },
+          {
+            "bytes": 84048,
+            "mtime_ns": 1785684417939032775,
+            "path": "data/chroma/902c6b4b-e680-4ee3-8980-9ae9e9b529d6/length.bin",
+            "sha256": "0e78d2a34d5467fff283c2fedc04ddb25b53c3576b7c785d6883046ea123593b"
+          },
+          {
+            "bytes": 179792,
+            "mtime_ns": 1785684417947520483,
+            "path": "data/chroma/902c6b4b-e680-4ee3-8980-9ae9e9b529d6/link_lists.bin",
+            "sha256": "564f9838e9984738966d5aec8db570fa227393f145694bc61476d6f5849b4eb9"
+          },
+          {
+            "bytes": 198434816,
+            "mtime_ns": 1786078018914159197,
+            "path": "data/chroma/chroma.sqlite3",
+            "sha256": "117400f3f393c4981a094148a09948e3acedfc2915f223420506d13c54b16ac9"
+          }
+        ],
+        "path": "data/chroma",
+        "tree_sha256": "24606fa16b21495ad8d090a0bfaf9f0b1c27f36db00db910f42c62b670862adc"
+      },
+      "duckdb": {
+        "bytes": 202911744,
+        "mtime_ns": 1785972558482787631,
+        "path": "data/knowledge.duckdb",
+        "sha256": "741b66c563e32e069bfa53b6ce58e1bbd6162f443057ecc6a2642ab294531b62"
+      }
+    },
+    "excluded_noncanonical": [
+      "viz/data/knowledge.duckdb",
+      "viz/data/chroma"
+    ]
+  },
+  "versions": {
+    "chromadb": "1.5.9",
+    "duckdb": "1.5.5",
+    "networkx": "3.6.1",
+    "python": "3.14.6"
+  }
+}

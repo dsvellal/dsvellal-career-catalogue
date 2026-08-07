@@ -1,0 +1,56 @@
+{
+  "canonical": {
+    "chromadb": {
+      "files": [
+        {
+          "bytes": 35216112,
+          "mtime_ns": 1785684417931759360,
+          "path": "data/chroma/902c6b4b-e680-4ee3-8980-9ae9e9b529d6/data_level0.bin",
+          "sha256": "c5c8ea3f7b3b640021e2943c730bf642051072ab081d2df1565978ac68873104"
+        },
+        {
+          "bytes": 100,
+          "mtime_ns": 1785684417923535819,
+          "path": "data/chroma/902c6b4b-e680-4ee3-8980-9ae9e9b529d6/header.bin",
+          "sha256": "0870de4fca64351f1e1b1298d8e17432d3fab9a1bd42ada16a23d55a54f5ef04"
+        },
+        {
+          "bytes": 1176884,
+          "mtime_ns": 1785684417948839149,
+          "path": "data/chroma/902c6b4b-e680-4ee3-8980-9ae9e9b529d6/index_metadata.pickle",
+          "sha256": "73c388f7d893bd6f232ff13907011169f8103399865babb90a8da20269d0bfc9"
+        },
+        {
+          "bytes": 84048,
+          "mtime_ns": 1785684417939032775,
+          "path": "data/chroma/902c6b4b-e680-4ee3-8980-9ae9e9b529d6/length.bin",
+          "sha256": "0e78d2a34d5467fff283c2fedc04ddb25b53c3576b7c785d6883046ea123593b"
+        },
+        {
+          "bytes": 179792,
+          "mtime_ns": 1785684417947520483,
+          "path": "data/chroma/902c6b4b-e680-4ee3-8980-9ae9e9b529d6/link_lists.bin",
+          "sha256": "564f9838e9984738966d5aec8db570fa227393f145694bc61476d6f5849b4eb9"
+        },
+        {
+          "bytes": 198434816,
+          "mtime_ns": 1786078018914159197,
+          "path": "data/chroma/chroma.sqlite3",
+          "sha256": "117400f3f393c4981a094148a09948e3acedfc2915f223420506d13c54b16ac9"
+        }
+      ],
+      "path": "data/chroma",
+      "tree_sha256": "24606fa16b21495ad8d090a0bfaf9f0b1c27f36db00db910f42c62b670862adc"
+    },
+    "duckdb": {
+      "bytes": 202911744,
+      "mtime_ns": 1785972558482787631,
+      "path": "data/knowledge.duckdb",
+      "sha256": "741b66c563e32e069bfa53b6ce58e1bbd6162f443057ecc6a2642ab294531b62"
+    }
+  },
+  "excluded_noncanonical": [
+    "viz/data/knowledge.duckdb",
+    "viz/data/chroma"
+  ]
+}

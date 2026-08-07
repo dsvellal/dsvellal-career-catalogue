@@ -1366,3 +1366,56 @@ Copied 139 images to `data/evidence/informal-feedbacks/images/`, launched 13 par
 - Combined multi-part images (3 Surendhar K8s screenshots) into single evidence file
 - Excluded .mp4 video file (not processable as image)
 - Used sequential numbering (001-139) with slug-based filenames
+
+---
+
+## Prompt 048
+
+**Timestamp:** 2026-08-07T03:29:39Z
+**Phase:** Data Portability, Analysis, and Visualization
+**Direction:** User -> System
+
+### Prompt
+
+> Analyse the data present in `data/`, ChromaDB, DuckDB, NetworkX, and any other relationship stores. Export all relationship data into corresponding human-readable text/Markdown/YAML/JSON files under `data/`; understand the 20-year professional and personal journey; and create eight meaningful visual views showing growth, impact, value, identity, respect, and expanding influence. Explain why this is the best projection of the data. Interview one question at a time with reasoned options and a recommendation if clarification is needed.
+
+### Response Summary
+
+Completed a validated private relationship snapshot and an evidence-led public Journey Atlas:
+
+- Exported all 10 DuckDB tables, relationship projections, 21,356 Chroma records with full vectors, and the exact 3,471-node/17,190-edge runtime NetworkX graph into 33 JSON/JSONL/YAML/Markdown files under the gitignored `data/exports/relationships/` directory.
+- Added SHA-256 manifests, source inventories, referential checks, atomic replacement, and a consistency report. The audit surfaced 4,411 DuckDB chunks without Chroma vectors and 13 soft edge-provenance references to one absent artifact; it found no graph endpoint, Chroma-extra, or overlapping document/metadata mismatches.
+- Built a public-safe, evidence-tiered 2007–2026 journey model plus `data/journey-analysis.md`, with visible caveats for self-reported, shared, population-specific, and future-direction claims.
+- Replaced the legacy routed portfolio with eight hash-addressable views: Executive Portrait, Twenty-Year Journey, Capability Compounder, Outcome Ledger, Trust & Respect, Influence Web, Teaching & Service Ripple, and Momentum & Next Horizon.
+- Established a hard public-build boundary by disabling Vite's implicit `public/` copy, replacing local evidence filenames with opaque source IDs, and importing only the logo and portrait. The resulting 1.2 MB production build contains no raw evidence or internal filenames.
+- Verified 9 focused Python tests, Ruff, TypeScript, production build, all eight desktop/mobile views, keyboard navigation, mobile overflow, browser console behavior, and automated WCAG A/AA checks.
+
+### Decisions Triggered
+
+- Decision 035: Treat the portable relationship export as a private derived snapshot, not a new source of truth.
+- Decision 036: Use an editorially curated public dataset with explicit evidence tiers and caveats.
+- Decision 037: Order the eight views from identity through future relevance so claims earn trust progressively.
+- Decision 038: Disable Vite `publicDir` and explicitly import approved presentation assets so raw evidence cannot enter the production bundle.
+- Decision 039: Use opaque public source IDs and native evidence/caveat disclosures so provenance remains private, keyboard-operable, and touch-operable.
+
+---
+
+## Prompt 049
+
+**Timestamp:** 2026-08-07T04:45:36Z
+**Phase:** Publication
+**Direction:** User -> System
+
+### Prompt
+
+> Commit and push.
+>
+> Include exports folder.
+
+### Response Summary
+
+Published the completed Journey Atlas and full private relationship export to branch `agent/journey-atlas-relationship-export` in the confirmed private GitHub repository. Commit `7f57401` contains all 36 export files (about 363 MB), including all 21,356 embedding records deterministically partitioned across four JSONL parts without dropping records. All repository hooks passed, including a 353.21 MB gitleaks scan with no findings, and draft PR #1 was opened at <https://github.com/dsvellal/dsvellal-career-catalogue/pull/1>.
+
+### Decisions Triggered
+
+- Decision 040: Version the complete export only in the private repository and split full-vector JSONL into deterministic Git-hostable parts.

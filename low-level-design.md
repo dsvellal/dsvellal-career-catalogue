@@ -600,3 +600,108 @@ twin generate resume --jd ./senior-ml-engineer-jd.txt --format pdf
    - VP recognition as evidence of impact
    - Tailored skill section emphasizing JD keywords
 5. Output: `./output/resume-senior-ml-engineer-2026-07-27.pdf`
+
+---
+
+## 7. Portable Relationship Export
+
+`scripts/export_relationships.py` serializes all relationship-bearing stores into `data/exports/relationships/`. It is an audit and portability artifact; DuckDB and ChromaDB remain canonical. The owner explicitly chose to version the snapshot in the access-controlled private repository, while keeping it outside every public deployment path.
+
+### 7.1 Command and safety model
+
+```bash
+.venv/bin/python scripts/export_relationships.py \
+  --db data/knowledge.duckdb \
+  --chroma data/chroma \
+  --output data/exports/relationships
+```
+
+The defaults are the same paths shown above. The implementation:
+
+1. resolves and validates the explicit output target;
+2. opens DuckDB in read-only mode;
+3. writes into a sibling temporary staging directory;
+4. validates counts, references, Chroma alignment, graph shape, and output hashes;
+5. atomically replaces the previous snapshot only after all checks pass;
+6. preserves the previous snapshot if validation fails.
+
+### 7.2 Output contract
+
+| Path | Contract |
+|------|----------|
+| `duckdb/schema.yml` | Tables, columns, types, nullability, defaults, and constraints |
+| `duckdb/tables/*.jsonl` | Every DuckDB table in deterministic primary-key order; JSON-valued columns are parsed |
+| `duckdb/relationships/*.jsonl` | Enriched edges and explicit edge/artifact, chunk/artifact, ingestion/artifact, node/artifact, person-label, and evidence list relationships |
+| `chromadb/<collection>.jsonl` | IDs, documents, metadata, and DuckDB artifact linkage |
+| `chromadb/<collection>_embeddings.part-NNNN.jsonl` | Full embedding vectors kept separate from readable records and deterministically split below 48 MiB per file |
+| `networkx/graph.node-link.json` | Exact directed `DiGraph` shape built by the production graph loader |
+| `networkx/node_metrics.jsonl` | Degree, in/out degree, isolation, and component metrics per node |
+| `inventory/*.json` | Canonical source-store fingerprints and snapshots of derived visualization inputs |
+| `manifest.json` | Schema v2 generator versions, source information, row counts, output byte sizes, SHA-256 hashes, and ordered embedding-part lists |
+| `quality/consistency-report.md` | Human-readable referential, vector alignment, and graph checks |
+
+### 7.3 Current consistency baseline
+
+The 2026-08-06 export contains 3,471 nodes, 17,190 edges, 25,767 DuckDB chunks, and 21,356 Chroma vectors. All Chroma IDs belong to DuckDB, and overlapping document/metadata values match. The report deliberately exposes two incomplete-provenance conditions: 4,411 DuckDB chunks have no Chroma vector, and 13 edge `source_artifact_id` values refer to an absent artifact. These are reported gaps, not silently normalized successes.
+
+---
+
+## 8. Evidence-Tiered Journey Dataset
+
+`scripts/build_journey_data.py` builds two deterministic editorial outputs from reviewed evidence: the public React data module at `viz/src/data/journey.json` and the human-readable interpretation at `data/journey-analysis.md`.
+
+### 8.1 Top-level contract
+
+```json
+{
+  "meta": {"schema_version": 1, "views": []},
+  "thesis": {},
+  "headline_metrics": [],
+  "eras": [],
+  "service_lane": {},
+  "capability_streams": [],
+  "impact_ledger": [],
+  "influence": {},
+  "respect": {},
+  "teaching_service": {},
+  "momentum": {},
+  "caveats": {}
+}
+```
+
+`meta.views` is ordered and binds each UI view to one or more top-level `data_keys`. The exact IDs are `portrait`, `journey`, `capabilities`, `outcomes`, `respect`, `influence`, `service`, and `momentum`.
+
+Every source-bearing item uses:
+
+```json
+{
+  "evidence": [
+    {
+      "source_id": "src_0123456789ab",
+      "tier": "corroborated | documented | self-reported | derived",
+      "supports": "What this source supports",
+      "year": 2025
+    }
+  ],
+  "caveat_labels": ["team_attribution"]
+}
+```
+
+Every displayed metric additionally has `id`, `label`, typed `value`, formatted `display`, optional `unit`/`period`, at least one evidence reference, and any applicable caveats. Outcome-ledger records also carry an explicit leverage `scope` (`individual`, `team`, `organization`, `ecosystem`, or `community`) so the visual ladder never has to infer scope from prose. The current dataset contains five professional eras, six capability streams, eight outcome-ledger records, a 20-entry recommendation manifest with seven selected direct quotations, and separate influence, teaching/service, and momentum structures.
+
+### 8.2 Builder validation
+
+Before publication, the builder validates the private path-bearing model and then `validate_journey_data()` checks the stripped public projection:
+
+- the exact top-level key set and eight-view order;
+- the 2007–2026 career boundary and recommendation count/manifest agreement;
+- the exact shape and existence of every referenced local evidence file before stripping;
+- stable opaque public source IDs and the absence of local paths after stripping;
+- evidence on every displayed metric;
+- absence of email-domain strings, web URLs, account-number language, and other forbidden public payloads.
+
+The public JSON contains opaque source IDs but neither local evidence paths nor source bodies. Names appear only in the attributed recommendation subset; donor identities, personal contribution amounts, emails, internal URLs, PAN/account details, raw mail, and full embeddings are excluded.
+
+### 8.3 React binding
+
+`JourneyAtlas.tsx` imports the JSON at build time and maps each exact ID to one view component. `App.tsx` normalizes invalid hashes to `#portrait`, updates browser history/title, moves focus to the new view heading, and supports desktop arrow/Home/End navigation plus a native mobile selector. SVGs use titles/descriptions or are marked decorative; dense visuals expose keyboard-focusable scroll regions; CSS supplies visible focus, reduced-motion, print, and responsive rules.

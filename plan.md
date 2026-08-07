@@ -2,7 +2,7 @@
 
 **Project:** dsvellal-personal-knowledge-context
 **Last Updated:** 2026-08-06
-**Current Phase:** 7 (Cloud Deployment) + Data Architecture Enhancement (frontmatter schema)
+**Current Phase:** 7 (Cloud Deployment) + Journey Analysis and Visualization
 
 ---
 
@@ -115,9 +115,23 @@
 | 5b.5 | Evidence index in DuckDB | Done | 562 files indexed, src/twin/ingestion/evidence_index.py |
 | 5b.6 | `twin publish --viz-only` command | Done | Generates split, evidence-enriched JSON |
 | 5b.7 | `twin index-evidence` CLI command | Done | Rebuilds evidence_index table |
-| 5b.8 | Evidence file serving (symlink) | Done | viz/public/data/evidence → data/evidence |
+| 5b.8 | Legacy evidence file serving (symlink) | Superseded | Symlink remains local but is inert because the current Vite build disables `publicDir` |
 | 5b.9 | Reverse chronological order everywhere | Done | Philips USA → India → Amazon → Exeter → IBM |
 | 5b.10 | Evidence matching in publish | Done | 43/353 items linked (12%), DuckDB-backed |
+
+---
+
+## Phase 5c: Journey Analysis and Visualization (Complete)
+
+| # | Task | Status | Notes |
+|---|------|--------|-------|
+| 5c.1 | Export all canonical relationship stores | Done | Deterministic private DuckDB, ChromaDB, and exact NetworkX snapshot under `data/exports/relationships/` |
+| 5c.2 | Validate export completeness and failure safety | Done | Manifest/hashes/consistency report; 4 focused tests passing |
+| 5c.3 | Document the longitudinal journey model | Done | `data/journey-analysis.md` records the thesis, view rationale, evidence picture, and confidence boundaries |
+| 5c.4 | Build evidence-tiered public journey dataset | Done | Deterministic builder, exact schema, privacy/provenance validation, and 5 focused tests |
+| 5c.5 | Implement exact eight-view Journey Atlas | Done | UI, data binding, hash navigation, responsive shell, production build, and TypeScript check complete |
+| 5c.6 | Enforce raw-evidence/public-build boundary | Done | `publicDir` disabled; local filenames replaced by opaque source IDs; 1.2 MB build contains only HTML, CSS, JS, logo, and photo—no evidence directory |
+| 5c.7 | Browser, responsive, accessibility, build, and type verification | Done | Eight desktop/mobile deep links, keyboard navigation, zero page overflow at 390 px, zero automated WCAG A/AA violations, production build, and static typing verified |
 
 ---
 

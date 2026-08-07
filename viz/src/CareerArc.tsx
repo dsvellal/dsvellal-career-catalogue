@@ -264,7 +264,7 @@ function SkillsTimelineView({ years, eras }: { years: YearData[]; eras: Era[] })
 }
 
 export function CareerArcView() {
-  const years: YearData[] = (careerData.years as YearData[]).filter(d => d.year >= 2007 && d.year <= 2026)
+  const years: YearData[] = (careerData.years as unknown as YearData[]).filter(d => d.year >= 2007 && d.year <= 2026)
   const eras: Era[] = careerData.eras as Era[]
   const [view, setView] = useState<SubView>('load')
 
