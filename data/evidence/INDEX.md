@@ -74,13 +74,13 @@ data/evidence/
 ├── 2012/
 │   └── individual/                   (2 files — IBM era)
 ├── 2013/
-│   └── individual/                   (2 files — IBM era)
+│   └── individual/                   (17 files — IBM/Exeter era)
 ├── 2014/
-│   └── individual/                   (2 files — IBM era)
+│   └── individual/                   (54 files — Exeter era)
 ├── 2015/
-│   └── individual/                   (4 files — Exeter era)
+│   └── individual/                   (34 files — Exeter era)
 ├── 2017/
-│   └── individual/                   (1 file — Amazon era)
+│   └── individual/                   (2 files — Exeter/Amazon era)
 ├── 2018/
 │   ├── individual/                   (1 file per email — 3 files)
 │   ├── code-quality-guidelines.md    (thematic summary)
@@ -108,37 +108,72 @@ data/evidence/
 |----------|-------|--------------|
 | LinkedIn Recommendations | 3 | Mahesh Paradkar (Master Inventor) — HackDay with universities; Brijesh Krishnan (mgr, now VP) — mentoring interns early; Praveen Kumar — "go to man for any situation" |
 
-## 2013 — 2 artifacts ingested
+## 2013 — 17 artifacts ingested
 
 **Full individual index:** [2013/individual/_INDEX.md](2013/individual/_INDEX.md)
 
 | Category | Count | Key Evidence |
 |----------|-------|--------------|
-| LinkedIn Recommendations | 2 | Lohith Ravi Naidu (co-inventor, now CTO/investor) — captcha published disclosure, innovation hunger; Gaurav Gupta (4yr) — HackDay/RTE co-organizer, patience |
+| LinkedIn Recommendations | 2 | Lohith Ravi Naidu (co-inventor, now CTO/investor); Gaurav Gupta (4yr) — HackDay/RTE co-organizer |
+| Performance Review | 2 | PPM Q3 2013 (P:3.6, I:3.6, C:3.3); PPM Q4 2013 |
+| Exeter Appreciation | 11 | Release support, troubleshooting, collaboration, celebrations, team mentoring |
 
-## 2014 — 2 artifacts ingested
+**Exeter era highlights (2013):**
+- "First individual in the team to take ownership across layers" (PPM Q3)
+- "Countless extra miles that have made a big difference to our business" (PPM Q3)
+- Client-facing release support recognized by both India and US management
+
+## 2014 — 54 artifacts ingested
 
 **Full individual index:** [2014/individual/_INDEX.md](2014/individual/_INDEX.md)
 
 | Category | Count | Key Evidence |
 |----------|-------|--------------|
-| LinkedIn Recommendations | 2 | Rajaraman Hariharan (IBM manager) — patents/IP, "never let down"; Dr. Arun Kumar (Prof/HOD) — 2012 Java seminar at Sir MVIT, community contribution |
+| LinkedIn Recommendations | 2 | Rajaraman Hariharan (IBM manager) — patents/IP; Dr. Arun Kumar (Prof/HOD) — community contribution |
+| Do The Right Thing | 14 | Code revamps, analysis, process improvements, architecture decisions |
+| Taking Things To Conclusion | 7 | Client escalations, release completions, complex deliveries |
+| Leadership & Ownership | 6 | Release ownership, application intake, stretch goals |
+| Spreading Knowledge & Practices | 5 | Design patterns, agile adoption, code quality metrics |
+| Leadership In Organizing Events | 5 | TExeter Thursday series (4 editions), Tarang FEAT 2014 |
+| Client Success | 4 | Edifecs end-to-end integration (monumental progress) |
+| Performance Review | 3 | PPM Q1 2014, quarterly reviews |
+| Other categories | 8 | Collaboration, troubleshooting, mentoring, risk mitigation, official notes |
 
-## 2015 — 4 artifacts ingested
+**Exeter era highlights (2014):**
+- Led Edifecs end-to-end 834 integration: "It's not a lie to say we can generate 834s now!" - Jonah Egenolf
+- Created TExeter Thursday knowledge-sharing series (4 editions)
+- "Cannot fault him for not trying" - PPM Q1 2014 review
+- IF Plan Selection Rewrite presentation (13 slides, 10.7x performance improvement)
+
+## 2015 — 34 artifacts ingested
 
 **Full individual index:** [2015/individual/_INDEX.md](2015/individual/_INDEX.md)
 
 | Category | Count | Key Evidence |
 |----------|-------|--------------|
-| LinkedIn Recommendations | 4 | Srisankaraswaminathan JV — 30+ devs, org-wide initiatives; Robert Parks (US) — onshore-offshore bridge; Manohar (3yr) — composed, big teams; Vinay SV (2.5yr) — calmness in chaos |
+| LinkedIn Recommendations | 4 | Srisankaraswaminathan JV — 30+ devs; Robert Parks (US) — onshore-offshore bridge; Manohar — composed; Vinay SV — calmness in chaos |
+| Performance Review | 4 | PPM Q1 2015 (Final: 2.864, Behavioral: 4.0/5), PPM March-June 2015 |
+| Do The Right Thing | 5 | Password solution, fix the right problem, customer-centric batch jobs |
+| Taking Things To Conclusion | 7 | JIRA analyses, release completions, Liferay performance improvements |
+| Leadership & Ownership | 3 | 3.3.2.10 HF1 release, age-out issues, Apollo releases |
+| Recognition | 1 | Compensation letter with promotion to Senior Lead + special benefits |
+| Other categories | 10 | Collaboration, stakeholder communication, release support, coding guidelines |
 
-## 2017 — 1 artifact ingested
+**Exeter era highlights (2015):**
+- Promoted to "Senior Lead - Software Development" with special benefits package
+- "Linchpin in the team" — handling complexity is now an expectation (PPM Q1)
+- Performance optimization: 16s to 1.5s page load (10.7x improvement)
+- Behavioral competencies scored 4.0/5 across all dimensions
+- JIRA analysis praised: "Thanks for the detailed note, Datta" — US QA team
+
+## 2017 — 2 artifacts ingested
 
 **Full individual index:** [2017/individual/_INDEX.md](2017/individual/_INDEX.md)
 
 | Category | Count | Key Evidence |
 |----------|-------|--------------|
 | LinkedIn Recommendations | 1 | M Jeffin Manuel (Amazon peer) — passion, can-do attitude, peer learning |
+| Award | 1 | TRMS Tech Awards (Oct 2017) — newsletter recognition |
 
 ## 2018 — 3 emails ingested
 

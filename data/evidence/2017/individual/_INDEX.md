@@ -1,7 +1,15 @@
-# 2017 Individual Evidence Files
+# Evidence Index: 2017
 
-**Total:** 1 evidence file
+**Total files:** 2
 
-| # | Date | Subject | Datta's Role | Evidence File |
-|---|------|---------|--------------|---------------|
-| | 2017-04-15 | LinkedIn Recommendation — M Jeffin Manuel | Direct recipient — recommended | [001-linkedin-recommendation-jeffin-manuel.md](001-linkedin-recommendation-jeffin-manuel.md) |
+## By Category
+
+| Category | Count |
+|----------|-------|
+| Award | 1 |
+| Recognition | 1 |
+
+## Files
+
+- [001-linkedin-recommendation-jeffin-manuel.md](001-linkedin-recommendation-jeffin-manuel.md)
+- [002-exeter-oct-2017.md](002-exeter-oct-2017.md)
