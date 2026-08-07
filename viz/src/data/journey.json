@@ -1,0 +1,3296 @@
+{
+  "capability_streams": [
+    {
+      "color": "#2563a8",
+      "id": "engineering",
+      "label": "Engineering craft",
+      "stages": [
+        {
+          "caveat_labels": [],
+          "era_id": "ibm",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_0f1c815ad128",
+              "supports": "Early end-to-end ownership and internship leadership",
+              "tier": "documented",
+              "year": 2008
+            }
+          ],
+          "label": "Hands-on foundation",
+          "level": 2
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "exeter",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_232a37d10c2b",
+              "supports": "Manager assessment of complexity, quality, and team role",
+              "tier": "corroborated",
+              "year": 2015
+            }
+          ],
+          "label": "Technical anchor",
+          "level": 3
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "amazon",
+          "evidence": [
+            {
+              "source_id": "src_286a0ab23763",
+              "supports": "Detailed first-party work examples and scale metrics",
+              "tier": "self-reported",
+              "year": 2018
+            },
+            {
+              "source_id": "src_97f40bc7a351",
+              "supports": "Hardware-efficiency savings record",
+              "tier": "documented",
+              "year": 2018
+            }
+          ],
+          "label": "Scale and operations",
+          "level": 4
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "philips-india",
+          "evidence": [
+            {
+              "source_id": "src_d2df4a290741",
+              "supports": "Role, transformation scope, and business metrics",
+              "tier": "self-reported",
+              "year": 2021
+            },
+            {
+              "source_id": "src_88379cfa7ae6",
+              "supports": "Annual .connect reach and demand record",
+              "tier": "documented",
+              "year": 2020
+            }
+          ],
+          "label": "Craft as a system",
+          "level": 4
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "philips-na",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_127b44d872c3",
+              "supports": "Peer testimony on transformation through influence",
+              "tier": "corroborated",
+              "year": 2025
+            }
+          ],
+          "label": "AI-native, quality-gated craft",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "color": "#0d7a52",
+      "id": "systems",
+      "label": "Systems & platforms",
+      "stages": [
+        {
+          "caveat_labels": [],
+          "era_id": "ibm",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_0f1c815ad128",
+              "supports": "Early end-to-end ownership and internship leadership",
+              "tier": "documented",
+              "year": 2008
+            }
+          ],
+          "label": "Enterprise integration",
+          "level": 2
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "exeter",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_232a37d10c2b",
+              "supports": "Manager assessment of complexity, quality, and team role",
+              "tier": "corroborated",
+              "year": 2015
+            }
+          ],
+          "label": "Healthcare delivery systems",
+          "level": 3
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "amazon",
+          "evidence": [
+            {
+              "source_id": "src_286a0ab23763",
+              "supports": "Detailed first-party work examples and scale metrics",
+              "tier": "self-reported",
+              "year": 2018
+            },
+            {
+              "source_id": "src_97f40bc7a351",
+              "supports": "Hardware-efficiency savings record",
+              "tier": "documented",
+              "year": 2018
+            }
+          ],
+          "label": "Marketplace-scale systems",
+          "level": 5
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "philips-india",
+          "evidence": [
+            {
+              "source_id": "src_d2df4a290741",
+              "supports": "Role, transformation scope, and business metrics",
+              "tier": "self-reported",
+              "year": 2021
+            },
+            {
+              "source_id": "src_88379cfa7ae6",
+              "supports": "Annual .connect reach and demand record",
+              "tier": "documented",
+              "year": 2020
+            }
+          ],
+          "label": "Reusable engineering platforms",
+          "level": 4
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "philips-na",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_127b44d872c3",
+              "supports": "Peer testimony on transformation through influence",
+              "tier": "corroborated",
+              "year": 2025
+            }
+          ],
+          "label": "Global regulated platforms",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "color": "#b84c1a",
+      "id": "quality",
+      "label": "Quality & regulation",
+      "stages": [
+        {
+          "caveat_labels": [],
+          "era_id": "ibm",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_0f1c815ad128",
+              "supports": "Early end-to-end ownership and internship leadership",
+              "tier": "documented",
+              "year": 2008
+            }
+          ],
+          "label": "Disciplined delivery",
+          "level": 1
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "exeter",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_232a37d10c2b",
+              "supports": "Manager assessment of complexity, quality, and team role",
+              "tier": "corroborated",
+              "year": 2015
+            }
+          ],
+          "label": "Quality ownership",
+          "level": 3
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "amazon",
+          "evidence": [
+            {
+              "source_id": "src_286a0ab23763",
+              "supports": "Detailed first-party work examples and scale metrics",
+              "tier": "self-reported",
+              "year": 2018
+            },
+            {
+              "source_id": "src_97f40bc7a351",
+              "supports": "Hardware-efficiency savings record",
+              "tier": "documented",
+              "year": 2018
+            }
+          ],
+          "label": "Operational mechanisms",
+          "level": 4
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "philips-india",
+          "evidence": [
+            {
+              "source_id": "src_d2df4a290741",
+              "supports": "Role, transformation scope, and business metrics",
+              "tier": "self-reported",
+              "year": 2021
+            },
+            {
+              "source_id": "src_88379cfa7ae6",
+              "supports": "Annual .connect reach and demand record",
+              "tier": "documented",
+              "year": 2020
+            }
+          ],
+          "label": "Quality transformation",
+          "level": 5
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "philips-na",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_127b44d872c3",
+              "supports": "Peer testimony on transformation through influence",
+              "tier": "corroborated",
+              "year": 2025
+            }
+          ],
+          "label": "Compliance as continuous evidence",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "color": "#b57b00",
+      "id": "transformation",
+      "label": "Transformation leadership",
+      "stages": [
+        {
+          "caveat_labels": [],
+          "era_id": "ibm",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_0f1c815ad128",
+              "supports": "Early end-to-end ownership and internship leadership",
+              "tier": "documented",
+              "year": 2008
+            }
+          ],
+          "label": "Community initiative",
+          "level": 2
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "exeter",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_232a37d10c2b",
+              "supports": "Manager assessment of complexity, quality, and team role",
+              "tier": "corroborated",
+              "year": 2015
+            }
+          ],
+          "label": "Team practice change",
+          "level": 3
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "amazon",
+          "evidence": [
+            {
+              "source_id": "src_286a0ab23763",
+              "supports": "Detailed first-party work examples and scale metrics",
+              "tier": "self-reported",
+              "year": 2018
+            },
+            {
+              "source_id": "src_97f40bc7a351",
+              "supports": "Hardware-efficiency savings record",
+              "tier": "documented",
+              "year": 2018
+            }
+          ],
+          "label": "Mechanism building",
+          "level": 3
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "philips-india",
+          "evidence": [
+            {
+              "source_id": "src_d2df4a290741",
+              "supports": "Role, transformation scope, and business metrics",
+              "tier": "self-reported",
+              "year": 2021
+            },
+            {
+              "source_id": "src_88379cfa7ae6",
+              "supports": "Annual .connect reach and demand record",
+              "tier": "documented",
+              "year": 2020
+            }
+          ],
+          "label": "Organization-wide programs",
+          "level": 5
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "philips-na",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_127b44d872c3",
+              "supports": "Peer testimony on transformation through influence",
+              "tier": "corroborated",
+              "year": 2025
+            }
+          ],
+          "label": "Enterprise portfolio influence",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "color": "#6b46b0",
+      "id": "people",
+      "label": "Coaching & influence",
+      "stages": [
+        {
+          "caveat_labels": [],
+          "era_id": "ibm",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_0f1c815ad128",
+              "supports": "Early end-to-end ownership and internship leadership",
+              "tier": "documented",
+              "year": 2008
+            }
+          ],
+          "label": "Interns and technical community",
+          "level": 2
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "exeter",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_232a37d10c2b",
+              "supports": "Manager assessment of complexity, quality, and team role",
+              "tier": "corroborated",
+              "year": 2015
+            }
+          ],
+          "label": "Twenty-person leadership",
+          "level": 4
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "amazon",
+          "evidence": [
+            {
+              "source_id": "src_286a0ab23763",
+              "supports": "Detailed first-party work examples and scale metrics",
+              "tier": "self-reported",
+              "year": 2018
+            },
+            {
+              "source_id": "src_97f40bc7a351",
+              "supports": "Hardware-efficiency savings record",
+              "tier": "documented",
+              "year": 2018
+            }
+          ],
+          "label": "Hiring and onboarding",
+          "level": 4
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "philips-india",
+          "evidence": [
+            {
+              "source_id": "src_d2df4a290741",
+              "supports": "Role, transformation scope, and business metrics",
+              "tier": "self-reported",
+              "year": 2021
+            },
+            {
+              "source_id": "src_88379cfa7ae6",
+              "supports": "Annual .connect reach and demand record",
+              "tier": "documented",
+              "year": 2020
+            }
+          ],
+          "label": "Demand-driven .connect network",
+          "level": 5
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "philips-na",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_127b44d872c3",
+              "supports": "Peer testimony on transformation through influence",
+              "tier": "corroborated",
+              "year": 2025
+            }
+          ],
+          "label": "Executive-to-developer translation",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "color": "#b83d6b",
+      "id": "ai",
+      "label": "AI-native engineering",
+      "stages": [
+        {
+          "caveat_labels": [],
+          "era_id": "amazon",
+          "evidence": [
+            {
+              "source_id": "src_286a0ab23763",
+              "supports": "Detailed first-party work examples and scale metrics",
+              "tier": "self-reported",
+              "year": 2018
+            },
+            {
+              "source_id": "src_97f40bc7a351",
+              "supports": "Hardware-efficiency savings record",
+              "tier": "documented",
+              "year": 2018
+            }
+          ],
+          "label": "Automation mindset",
+          "level": 1
+        },
+        {
+          "caveat_labels": [],
+          "era_id": "philips-india",
+          "evidence": [
+            {
+              "source_id": "src_d2df4a290741",
+              "supports": "Role, transformation scope, and business metrics",
+              "tier": "self-reported",
+              "year": 2021
+            },
+            {
+              "source_id": "src_88379cfa7ae6",
+              "supports": "Annual .connect reach and demand record",
+              "tier": "documented",
+              "year": 2020
+            }
+          ],
+          "label": "Data-led engineering systems",
+          "level": 2
+        },
+        {
+          "caveat_labels": [
+            "team_attribution"
+          ],
+          "era_id": "philips-na",
+          "evidence": [
+            {
+              "source_id": "src_1d9606ac20a2",
+              "supports": "Employment chronology and role history",
+              "tier": "self-reported",
+              "year": 2026
+            },
+            {
+              "source_id": "src_127b44d872c3",
+              "supports": "Peer testimony on transformation through influence",
+              "tier": "corroborated",
+              "year": 2025
+            }
+          ],
+          "label": "AI delivery with traceability and gates",
+          "level": 5
+        }
+      ]
+    }
+  ],
+  "caveats": {
+    "category_estimate": "The category total is an approximate rollup from session records.",
+    "cooccurrence_not_influence": "Knowledge-graph co-occurrence is not treated as proof of social influence.",
+    "curated_milestones": "The narrative selects representative milestones rather than every archived event.",
+    "currency_context": "Currency values retain their original period and are not inflation- or exchange-rate-adjusted.",
+    "derived_average": "Calculated from the monthly values in the cited annual source.",
+    "employment_dates_self_reported": "Employment dates come from first-party career documents.",
+    "excerpted_quote": "The quote is shortened for display without changing its meaning.",
+    "feedback_respondents_only": "Ratings describe respondents, not every attendee.",
+    "future_direction": "This describes an active direction, not a promised or completed outcome.",
+    "inclusive_year_count": "The span counts calendar years inclusively from 2007 through 2026.",
+    "initiative_specific": "The metric belongs to the cited initiative and should not be generalized to all work.",
+    "light_grammar_edit": "Minor grammar was normalized for display; the source preserves the original wording.",
+    "mixed_attribution": "The record combines personal contribution with shared delivery context.",
+    "mixed_evidence_tiers": "The claim combines sources with different evidentiary strength.",
+    "narrative_synthesis": "This is an interpretation across multiple sources, not a single source claim.",
+    "participant_counts_not_unique": "Participant totals are session instances and may include repeat attendees.",
+    "period_specific": "The value applies only to the stated year or period.",
+    "pilot_not_scaled_outcome": "A pilot or proposal demonstrates direction, not enterprise-scale adoption.",
+    "population_not_active_users": "The figure describes the addressable software community, not measured active users.",
+    "portfolio_attribution": "The outcome belongs to a portfolio of initiatives rather than one project or person alone.",
+    "public_citation_index": "Patent counts and citations are based on the archived public-reference index.",
+    "public_safe_aggregate": "Names, personal contribution amounts, account details, and identifiers are intentionally excluded.",
+    "responses_not_attendance": "Feedback responses are not the same as total attendance.",
+    "selected_evidence": "Recommendations and quotations are curated, not an unbiased survey.",
+    "self_reported": "The figure is reported in a first-party resume or work narrative.",
+    "team_attribution": "The result is a team outcome; Datta's role is contribution and leadership, not sole credit.",
+    "touchpoints_not_unique_people": "Participant touchpoints may include the same person more than once."
+  },
+  "eras": [
+    {
+      "capabilities": [
+        "software engineering",
+        "integration",
+        "technical writing",
+        "community leadership"
+      ],
+      "caveat_labels": [
+        "employment_dates_self_reported"
+      ],
+      "end": 2013,
+      "evidence": [
+        {
+          "source_id": "src_1d9606ac20a2",
+          "supports": "Employment chronology and role history",
+          "tier": "self-reported",
+          "year": 2026
+        },
+        {
+          "source_id": "src_0f1c815ad128",
+          "supports": "Early end-to-end ownership and internship leadership",
+          "tier": "documented",
+          "year": 2008
+        },
+        {
+          "source_id": "src_086517e3736d",
+          "supports": "IBM India HackDay 8 first-place record",
+          "tier": "corroborated",
+          "year": 2010
+        },
+        {
+          "source_id": "src_dfb2391e01e1",
+          "supports": "Patent, award, and public-citation index",
+          "tier": "documented"
+        }
+      ],
+      "id": "ibm",
+      "impact_claims": [
+        "Led end-to-end delivery early in career",
+        "Won IBM India HackDay 8 in Pune",
+        "Co-invented two US patents"
+      ],
+      "label": "Builder becomes a technical citizen",
+      "organization": "IBM",
+      "role": "Application Developer · Technical Community Leader",
+      "start": 2007,
+      "summary": "Built deep middleware and integration craft while stepping beyond delivery into patents, papers, HackDays, technical community leadership, and teaching."
+    },
+    {
+      "capabilities": [
+        "healthcare software",
+        "delivery leadership",
+        "quality systems",
+        "facilitation"
+      ],
+      "caveat_labels": [
+        "employment_dates_self_reported"
+      ],
+      "end": 2015,
+      "evidence": [
+        {
+          "source_id": "src_1d9606ac20a2",
+          "supports": "Employment chronology and role history",
+          "tier": "self-reported",
+          "year": 2026
+        },
+        {
+          "source_id": "src_232a37d10c2b",
+          "supports": "Manager assessment of complexity, quality, and team role",
+          "tier": "corroborated",
+          "year": 2015
+        },
+        {
+          "source_id": "src_a8e828e4d87e",
+          "supports": "Internal technical learning community continuity",
+          "tier": "documented",
+          "year": 2014
+        }
+      ],
+      "id": "exeter",
+      "impact_claims": [
+        "Became the team's linchpin for high-complexity work",
+        "Combined release ownership with coaching and technical forums"
+      ],
+      "label": "Technical anchor becomes team enabler",
+      "organization": "Exeter Group",
+      "role": "Senior Lead — Software Development",
+      "start": 2013,
+      "summary": "Took responsibility for complex healthcare software, releases, engineering practices, and a roughly twenty-person delivery group while creating learning rituals around the work."
+    },
+    {
+      "capabilities": [
+        "distributed systems",
+        "operational excellence",
+        "product ownership",
+        "hiring"
+      ],
+      "caveat_labels": [
+        "employment_dates_self_reported",
+        "mixed_attribution"
+      ],
+      "end": 2018,
+      "evidence": [
+        {
+          "source_id": "src_286a0ab23763",
+          "supports": "Detailed first-party work examples and scale metrics",
+          "tier": "self-reported",
+          "year": 2018
+        },
+        {
+          "source_id": "src_97f40bc7a351",
+          "supports": "Hardware-efficiency savings record",
+          "tier": "documented",
+          "year": 2018
+        },
+        {
+          "source_id": "src_d1c96b36a2b6",
+          "supports": "Reusable onboarding mechanism",
+          "tier": "documented",
+          "year": 2017
+        }
+      ],
+      "id": "amazon",
+      "impact_claims": [
+        "Contributed to a 1.9-billion-ASIN backfill across 12 marketplaces",
+        "Conducted 68 interviews in 18 months",
+        "Reduced onboarding from one week to two days"
+      ],
+      "label": "Scale sharpens product judgment",
+      "organization": "Amazon",
+      "role": "Software Development Engineer II",
+      "start": 2016,
+      "summary": "Worked at marketplace scale, improved operational mechanisms, raised the hiring bar, and turned hard-won delivery knowledge into onboarding and workshop systems for others."
+    },
+    {
+      "capabilities": [
+        "software excellence",
+        "organizational change",
+        "regulated quality",
+        "influence without authority"
+      ],
+      "caveat_labels": [
+        "employment_dates_self_reported",
+        "mixed_attribution"
+      ],
+      "end": 2021,
+      "evidence": [
+        {
+          "source_id": "src_d2df4a290741",
+          "supports": "Role, transformation scope, and business metrics",
+          "tier": "self-reported",
+          "year": 2021
+        },
+        {
+          "source_id": "src_88379cfa7ae6",
+          "supports": "Annual .connect reach and demand record",
+          "tier": "documented",
+          "year": 2020
+        },
+        {
+          "source_id": "src_4c6bb418004b",
+          "supports": "Formal CTO recognition",
+          "tier": "corroborated",
+          "year": 2021
+        }
+      ],
+      "id": "philips-india",
+      "impact_claims": [
+        "Built a broad one-to-one influence network",
+        "Scaled code-quality and Bar Raiser practices",
+        "Received the CTO Outstanding Achievement Award"
+      ],
+      "label": "Practice scales into transformation",
+      "organization": "Philips India",
+      "role": "Competency Specialist — Software Excellence",
+      "start": 2018,
+      "summary": "Moved from improving code to improving the system around code: quality programs, communities, standards, mentoring, and a demand-driven network across roles, departments, and geographies."
+    },
+    {
+      "capabilities": [
+        "enterprise platforms",
+        "digital transformation",
+        "AI-native engineering",
+        "executive translation"
+      ],
+      "caveat_labels": [
+        "employment_dates_self_reported",
+        "team_attribution"
+      ],
+      "end": 2026,
+      "evidence": [
+        {
+          "source_id": "src_1d9606ac20a2",
+          "supports": "Employment chronology and role history",
+          "tier": "self-reported",
+          "year": 2026
+        },
+        {
+          "source_id": "src_127b44d872c3",
+          "supports": "Peer testimony on transformation through influence",
+          "tier": "corroborated",
+          "year": 2025
+        },
+        {
+          "source_id": "src_e2a765c37bad",
+          "supports": "Direct-manager testimony on global leadership and engineering depth",
+          "tier": "corroborated",
+          "year": 2025
+        },
+        {
+          "source_id": "src_a0c8699d99bb",
+          "supports": "AI-native traceability outcomes and quality controls",
+          "tier": "documented",
+          "year": 2026
+        }
+      ],
+      "id": "philips-na",
+      "impact_claims": [
+        "Served a global software community",
+        "Led AI and continuous-delivery capability programs",
+        "Helped build a quality-gated AI traceability platform"
+      ],
+      "label": "Enterprise multiplier enters the AI era",
+      "organization": "Philips North America",
+      "role": "Software Competency Lead — Innovation Engineering",
+      "start": 2021,
+      "summary": "Connected global platform reliability, regulated-software rigor, DORA and continuous value delivery, AI enablement, and AI-native traceability into an enterprise transformation portfolio."
+    }
+  ],
+  "headline_metrics": [
+    {
+      "caveat_labels": [
+        "inclusive_year_count",
+        "employment_dates_self_reported"
+      ],
+      "display": "20 years",
+      "evidence": [
+        {
+          "source_id": "src_1d9606ac20a2",
+          "supports": "Employment chronology and role history",
+          "tier": "self-reported",
+          "year": 2026
+        }
+      ],
+      "id": "career-span",
+      "label": "Professional journey",
+      "period": "2007–2026",
+      "unit": "",
+      "value": 20
+    },
+    {
+      "caveat_labels": [
+        "responses_not_attendance"
+      ],
+      "display": "1,183",
+      "evidence": [
+        {
+          "source_id": "src_4b83f419bc86",
+          "supports": "Aggregate of 90 session workbooks and participant feedback",
+          "tier": "corroborated"
+        },
+        {
+          "source_id": "src_a3464c80958f",
+          "supports": "Machine-readable aggregate statistics",
+          "tier": "corroborated"
+        }
+      ],
+      "id": "responses",
+      "label": "Session feedback responses",
+      "period": "2018–2026",
+      "unit": "",
+      "value": 1183
+    },
+    {
+      "caveat_labels": [
+        "selected_evidence"
+      ],
+      "display": "20",
+      "evidence": [
+        {
+          "source_id": "src_73c96700f205",
+          "supports": "Dated, attributed recommendation from Mahesh Paradkar",
+          "tier": "corroborated",
+          "year": 2012
+        },
+        {
+          "source_id": "src_a023aebef289",
+          "supports": "Dated, attributed recommendation from Brijesh Krishnan",
+          "tier": "corroborated",
+          "year": 2012
+        },
+        {
+          "source_id": "src_bb8a5e85c21a",
+          "supports": "Dated, attributed recommendation from Praveen Kumar Vaidyanathan",
+          "tier": "corroborated",
+          "year": 2012
+        },
+        {
+          "source_id": "src_3b31599ee851",
+          "supports": "Dated, attributed recommendation from Gaurav Gupta",
+          "tier": "corroborated",
+          "year": 2013
+        },
+        {
+          "source_id": "src_0ea5721eaef3",
+          "supports": "Dated, attributed recommendation from Lohith Ravi Naidu",
+          "tier": "corroborated",
+          "year": 2013
+        },
+        {
+          "source_id": "src_c4bc0992ed94",
+          "supports": "Dated, attributed recommendation from Rajaraman Hariharan",
+          "tier": "corroborated",
+          "year": 2014
+        },
+        {
+          "source_id": "src_429b190ea2ca",
+          "supports": "Dated, attributed recommendation from Dr Arun Kumar B R",
+          "tier": "corroborated",
+          "year": 2014
+        },
+        {
+          "source_id": "src_1966bf3f7846",
+          "supports": "Dated, attributed recommendation from Manohar Veeraiah",
+          "tier": "corroborated",
+          "year": 2015
+        },
+        {
+          "source_id": "src_50f1710d38b9",
+          "supports": "Dated, attributed recommendation from Vinay S V",
+          "tier": "corroborated",
+          "year": 2015
+        },
+        {
+          "source_id": "src_a3a64232ca09",
+          "supports": "Dated, attributed recommendation from Robert Parks",
+          "tier": "corroborated",
+          "year": 2015
+        },
+        {
+          "source_id": "src_9b95192c6ecf",
+          "supports": "Dated, attributed recommendation from Srisankaraswaminathan J V",
+          "tier": "corroborated",
+          "year": 2015
+        },
+        {
+          "source_id": "src_cf841e5e1b1b",
+          "supports": "Dated, attributed recommendation from Jeffin Manuel",
+          "tier": "corroborated",
+          "year": 2017
+        },
+        {
+          "source_id": "src_d36f35e1937d",
+          "supports": "Dated, attributed recommendation from Rajesh Kumar",
+          "tier": "corroborated",
+          "year": 2019
+        },
+        {
+          "source_id": "src_5b5e1bd6bfaa",
+          "supports": "Dated, attributed recommendation from Rajesh Manghani",
+          "tier": "corroborated",
+          "year": 2019
+        },
+        {
+          "source_id": "src_f6231c47feb9",
+          "supports": "Dated, attributed recommendation from Sannihith Reddy P",
+          "tier": "corroborated",
+          "year": 2020
+        },
+        {
+          "source_id": "src_4288049ee32f",
+          "supports": "Dated, attributed recommendation from NaveenKumar V R",
+          "tier": "corroborated",
+          "year": 2023
+        },
+        {
+          "source_id": "src_34180bb6679a",
+          "supports": "Dated, attributed recommendation from Rafael Vaz",
+          "tier": "corroborated",
+          "year": 2024
+        },
+        {
+          "source_id": "src_09954e1ed23e",
+          "supports": "Dated, attributed recommendation from Fernando Vieira",
+          "tier": "corroborated",
+          "year": 2025
+        },
+        {
+          "source_id": "src_127b44d872c3",
+          "supports": "Dated, attributed recommendation from Ian Watson",
+          "tier": "corroborated",
+          "year": 2025
+        },
+        {
+          "source_id": "src_e2a765c37bad",
+          "supports": "Dated, attributed recommendation from Rob Nicholson",
+          "tier": "corroborated",
+          "year": 2025
+        }
+      ],
+      "id": "recommendations",
+      "label": "Attributed recommendations",
+      "period": "2012–2025",
+      "unit": "",
+      "value": 20
+    },
+    {
+      "caveat_labels": [
+        "public_citation_index"
+      ],
+      "display": "2",
+      "evidence": [
+        {
+          "source_id": "src_dfb2391e01e1",
+          "supports": "Patent and citation index",
+          "tier": "documented"
+        }
+      ],
+      "id": "patents",
+      "label": "US patents",
+      "period": "",
+      "unit": "",
+      "value": 2
+    }
+  ],
+  "impact_ledger": [
+    {
+      "category": "individual-to-team engineering",
+      "caveat_labels": [
+        "team_attribution"
+      ],
+      "evidence": [
+        {
+          "source_id": "src_286a0ab23763",
+          "supports": "First-party work example",
+          "tier": "self-reported",
+          "year": 2018
+        }
+      ],
+      "id": "amazon-scale",
+      "metrics": [
+        {
+          "caveat_labels": [
+            "self_reported",
+            "team_attribution"
+          ],
+          "display": "1.9B",
+          "evidence": [
+            {
+              "source_id": "src_286a0ab23763",
+              "supports": "Detailed work-example scale",
+              "tier": "self-reported",
+              "year": 2018
+            }
+          ],
+          "id": "asins",
+          "label": "ASINs processed",
+          "period": "Amazon era",
+          "unit": "",
+          "value": 1900000000
+        }
+      ],
+      "scope": "individual",
+      "statement": "Contributed engineering and operational mechanisms to a backfill spanning 1.9 billion ASINs across 12 marketplaces.",
+      "title": "Marketplace-scale migration"
+    },
+    {
+      "category": "team capability",
+      "caveat_labels": [
+        "mixed_evidence_tiers"
+      ],
+      "evidence": [
+        {
+          "source_id": "src_d1c96b36a2b6",
+          "supports": "Onboarding mechanism",
+          "tier": "documented",
+          "year": 2017
+        },
+        {
+          "source_id": "src_286a0ab23763",
+          "supports": "Before/after and interview count",
+          "tier": "self-reported",
+          "year": 2018
+        }
+      ],
+      "id": "hiring-onboarding",
+      "metrics": [
+        {
+          "caveat_labels": [
+            "self_reported"
+          ],
+          "display": "68",
+          "evidence": [
+            {
+              "source_id": "src_286a0ab23763",
+              "supports": "Interview count and period",
+              "tier": "self-reported",
+              "year": 2018
+            }
+          ],
+          "id": "interviews",
+          "label": "Interviews",
+          "period": "18 months",
+          "unit": "",
+          "value": 68
+        }
+      ],
+      "scope": "team",
+      "statement": "Conducted 68 interviews in 18 months and converted onboarding knowledge from a one-week path into a two-day guide-led experience.",
+      "title": "Hiring judgment becomes a reusable system"
+    },
+    {
+      "category": "organizational business impact",
+      "caveat_labels": [
+        "portfolio_attribution",
+        "self_reported"
+      ],
+      "evidence": [
+        {
+          "source_id": "src_d2df4a290741",
+          "supports": "First-party business-impact claims",
+          "tier": "self-reported",
+          "year": 2021
+        }
+      ],
+      "id": "philips-value",
+      "metrics": [
+        {
+          "caveat_labels": [
+            "self_reported",
+            "portfolio_attribution",
+            "currency_context"
+          ],
+          "display": "€2.1M+",
+          "evidence": [
+            {
+              "source_id": "src_e94a6920152f",
+              "supports": "Resume-derived cumulative impact",
+              "tier": "self-reported"
+            }
+          ],
+          "id": "savings",
+          "label": "Realized savings",
+          "period": "Philips India",
+          "unit": "",
+          "value": 2.1
+        }
+      ],
+      "scope": "organization",
+      "statement": "Career documents attribute more than €2.1M in realized savings to the Philips India transformation portfolio.",
+      "title": "Engineering excellence tied to business value"
+    },
+    {
+      "category": "enterprise platform",
+      "caveat_labels": [
+        "self_reported",
+        "population_not_active_users"
+      ],
+      "evidence": [
+        {
+          "source_id": "src_1d9606ac20a2",
+          "supports": "Employment chronology and role history",
+          "tier": "self-reported",
+          "year": 2026
+        }
+      ],
+      "id": "global-platform",
+      "metrics": [
+        {
+          "caveat_labels": [
+            "self_reported",
+            "population_not_active_users"
+          ],
+          "display": "7,000+",
+          "evidence": [
+            {
+              "source_id": "src_e94a6920152f",
+              "supports": "Resume-derived global platform reach",
+              "tier": "self-reported"
+            }
+          ],
+          "id": "engineers",
+          "label": "Engineers served",
+          "period": "",
+          "unit": "",
+          "value": 7000
+        }
+      ],
+      "scope": "ecosystem",
+      "statement": "Resume records describe platforms serving 7,000+ engineers with 99.999% availability.",
+      "title": "Global platforms as an engineering product"
+    },
+    {
+      "category": "organizational people capability",
+      "caveat_labels": [
+        "responses_not_attendance"
+      ],
+      "evidence": [
+        {
+          "source_id": "src_4b83f419bc86",
+          "supports": "Aggregate of 90 session workbooks and participant feedback",
+          "tier": "corroborated"
+        },
+        {
+          "source_id": "src_a3464c80958f",
+          "supports": "Machine-readable aggregate statistics",
+          "tier": "corroborated"
+        }
+      ],
+      "id": "learning-system",
+      "metrics": [
+        {
+          "caveat_labels": [],
+          "display": "1,183",
+          "evidence": [
+            {
+              "source_id": "src_4b83f419bc86",
+              "supports": "Aggregate of 90 session workbooks and participant feedback",
+              "tier": "corroborated"
+            },
+            {
+              "source_id": "src_a3464c80958f",
+              "supports": "Machine-readable aggregate statistics",
+              "tier": "corroborated"
+            }
+          ],
+          "id": "responses",
+          "label": "Participant responses",
+          "period": "2018–2026",
+          "unit": "",
+          "value": 1183
+        }
+      ],
+      "scope": "organization",
+      "statement": "Ninety facilitated sessions generated 1,183 responses and a normalized 4.3/5 average across eight years.",
+      "title": "Learning measured at the point of experience"
+    },
+    {
+      "category": "enterprise influence",
+      "caveat_labels": [
+        "period_specific"
+      ],
+      "evidence": [
+        {
+          "source_id": "src_88379cfa7ae6",
+          "supports": "Annual interaction, role, department, and city rollups",
+          "tier": "documented",
+          "year": 2020
+        }
+      ],
+      "id": "connect-system",
+      "metrics": [
+        {
+          "caveat_labels": [],
+          "display": "778",
+          "evidence": [
+            {
+              "source_id": "src_88379cfa7ae6",
+              "supports": "Annual unique-participant rollup",
+              "tier": "documented",
+              "year": 2020
+            }
+          ],
+          "id": "connect-people",
+          "label": "Unique people",
+          "period": "2020",
+          "unit": "",
+          "value": 778
+        }
+      ],
+      "scope": "ecosystem",
+      "statement": "A one-to-one engagement practice reached 778 unique people across 26 cities and 74 departments in 2020 alone.",
+      "title": "Influence made observable through .connect"
+    },
+    {
+      "category": "enterprise AI transformation",
+      "caveat_labels": [
+        "team_attribution",
+        "initiative_specific"
+      ],
+      "evidence": [
+        {
+          "source_id": "src_a0c8699d99bb",
+          "supports": "Team-authored 2026 delivery and showcase metrics",
+          "tier": "documented",
+          "year": 2026
+        }
+      ],
+      "id": "sutra",
+      "metrics": [
+        {
+          "caveat_labels": [
+            "team_attribution"
+          ],
+          "display": "90%+",
+          "evidence": [
+            {
+              "source_id": "src_a0c8699d99bb",
+              "supports": "Team-authored 2026 delivery and showcase metrics",
+              "tier": "documented",
+              "year": 2026
+            }
+          ],
+          "id": "traceability",
+          "label": "Traceability improvement",
+          "period": "2026",
+          "unit": "",
+          "value": 90
+        }
+      ],
+      "scope": "ecosystem",
+      "statement": "The Sutra team reported 90%+ traceability improvement, 3× development speed, roughly 80% AI-generated code, and a 400+ attendee showcase while enforcing continuous quality gates.",
+      "title": "AI speed held behind quality gates"
+    },
+    {
+      "category": "community service",
+      "caveat_labels": [
+        "public_safe_aggregate"
+      ],
+      "evidence": [
+        {
+          "source_id": "src_a8b60d192d06",
+          "supports": "Program totals, continuity, and growth",
+          "tier": "documented",
+          "year": 2025
+        }
+      ],
+      "id": "book-program",
+      "metrics": [
+        {
+          "caveat_labels": [
+            "public_safe_aggregate",
+            "currency_context"
+          ],
+          "display": "₹19.72L",
+          "evidence": [
+            {
+              "source_id": "src_a8b60d192d06",
+              "supports": "Aggregate of ten annual ledgers",
+              "tier": "documented",
+              "year": 2025
+            }
+          ],
+          "id": "book-total",
+          "label": "Funds mobilized",
+          "period": "2014–2026",
+          "unit": "",
+          "value": 1972381
+        }
+      ],
+      "scope": "community",
+      "statement": "A personally organized book-distribution program sustained ten active years and grew annual contributions 13.3× while keeping donor details private.",
+      "title": "Trust mobilized for rural education"
+    }
+  ],
+  "influence": {
+    "annual_connects": [
+      {
+        "caveat_labels": [
+          "period_specific"
+        ],
+        "connects": 341,
+        "display": "236 unique people",
+        "evidence": [
+          {
+            "source_id": "src_bdeee6a37969",
+            "supports": "Annual program rollup",
+            "tier": "documented",
+            "year": 2019
+          }
+        ],
+        "id": "connect-2019",
+        "unique_people": 236,
+        "year": 2019
+      },
+      {
+        "caveat_labels": [
+          "period_specific"
+        ],
+        "connects": 2731,
+        "display": "778 unique people",
+        "evidence": [
+          {
+            "source_id": "src_88379cfa7ae6",
+            "supports": "Annual program rollup",
+            "tier": "documented",
+            "year": 2020
+          }
+        ],
+        "id": "connect-2020",
+        "unique_people": 778,
+        "year": 2020
+      },
+      {
+        "caveat_labels": [
+          "touchpoints_not_unique_people"
+        ],
+        "connects": 575,
+        "display": "2,975 touchpoints",
+        "evidence": [
+          {
+            "source_id": "src_b00cbe085a27",
+            "supports": "Annual participant-touchpoint rollup",
+            "tier": "documented",
+            "year": 2021
+          }
+        ],
+        "id": "connect-2021",
+        "people": 2975,
+        "year": 2021
+      }
+    ],
+    "caveat_labels": [
+      "cooccurrence_not_influence",
+      "period_specific"
+    ],
+    "evidence": [
+      {
+        "source_id": "src_bdeee6a37969",
+        "supports": "2019 influence network",
+        "tier": "documented",
+        "year": 2019
+      },
+      {
+        "source_id": "src_88379cfa7ae6",
+        "supports": "2020 influence network",
+        "tier": "documented",
+        "year": 2020
+      },
+      {
+        "source_id": "src_b00cbe085a27",
+        "supports": "2021 demand and reach",
+        "tier": "documented",
+        "year": 2021
+      }
+    ],
+    "reach_dimensions": [
+      {
+        "caveat_labels": [
+          "period_specific"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_88379cfa7ae6",
+            "supports": "Geographic rollup",
+            "tier": "documented",
+            "year": 2020
+          }
+        ],
+        "id": "cities",
+        "label": "Cities reached in 2020",
+        "value": 26
+      },
+      {
+        "caveat_labels": [
+          "period_specific"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_88379cfa7ae6",
+            "supports": "Department rollup",
+            "tier": "documented",
+            "year": 2020
+          }
+        ],
+        "id": "departments",
+        "label": "Departments reached in 2020",
+        "value": 74
+      },
+      {
+        "caveat_labels": [
+          "period_specific"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_88379cfa7ae6",
+            "supports": "Role rollup",
+            "tier": "documented",
+            "year": 2020
+          }
+        ],
+        "id": "roles",
+        "label": "Role categories reached in 2020",
+        "value": 45
+      },
+      {
+        "caveat_labels": [
+          "derived_average"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_b00cbe085a27",
+            "supports": "Monthly demand-origin measures",
+            "tier": "documented",
+            "year": 2021
+          }
+        ],
+        "id": "demand",
+        "label": "Average share initiated by others",
+        "value": 79
+      },
+      {
+        "caveat_labels": [
+          "population_not_active_users"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_e2a765c37bad",
+            "supports": "Direct-manager description of community scale",
+            "tier": "corroborated",
+            "year": 2025
+          }
+        ],
+        "id": "enterprise",
+        "label": "Global software community",
+        "value": 7000
+      }
+    ],
+    "stories": [
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_88379cfa7ae6",
+            "supports": "Sustained one-to-one program",
+            "tier": "documented",
+            "year": 2020
+          }
+        ],
+        "id": "one-to-one",
+        "mechanism": "Listen one-to-one",
+        "summary": "Use structured conversations to discover friction and earn permission to help."
+      },
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_127b44d872c3",
+            "supports": "Peer description of influence mechanism",
+            "tier": "corroborated",
+            "year": 2025
+          }
+        ],
+        "id": "co-create",
+        "mechanism": "Deliver early together",
+        "summary": "Build credibility with hands-on contribution before asking teams to change."
+      },
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_f6231c47feb9",
+            "supports": "Mentee description of teaching method",
+            "tier": "corroborated",
+            "year": 2020
+          }
+        ],
+        "id": "teach",
+        "mechanism": "Teach for independence",
+        "summary": "Coach people to reason and own the practice rather than depend on the coach."
+      },
+      {
+        "caveat_labels": [
+          "narrative_synthesis"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_4b83f419bc86",
+            "supports": "Repeated learning system",
+            "tier": "corroborated"
+          },
+          {
+            "source_id": "src_a0c8699d99bb",
+            "supports": "Reusable quality-gated platform",
+            "tier": "documented",
+            "year": 2026
+          }
+        ],
+        "id": "system",
+        "mechanism": "Leave a reusable system",
+        "summary": "Turn recurring lessons into standards, platforms, communities, and guardrails."
+      },
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_127b44d872c3",
+            "supports": "Peer testimony across organizational levels",
+            "tier": "corroborated",
+            "year": 2025
+          }
+        ],
+        "id": "translate",
+        "mechanism": "Translate across levels",
+        "summary": "Make strategy and engineering reality understandable from executive rooms to developer teams."
+      }
+    ]
+  },
+  "meta": {
+    "audience": "Public professional audience",
+    "generated_at": "2026-08-06",
+    "privacy": "Curated aggregates and attributed public recommendations only; raw evidence remains local.",
+    "schema_version": 1,
+    "title": "Datta Vellal — Evidence-backed Journey Atlas",
+    "views": [
+      {
+        "data_keys": [
+          "thesis",
+          "headline_metrics"
+        ],
+        "description": "Begin with a concise identity and high-trust proof points.",
+        "id": "portrait",
+        "label": "Executive Portrait"
+      },
+      {
+        "data_keys": [
+          "eras",
+          "service_lane",
+          "capability_streams"
+        ],
+        "description": "Read work, service, and learning as parallel reinforcing strands.",
+        "id": "journey",
+        "label": "Twenty-Year Journey"
+      },
+      {
+        "data_keys": [
+          "capability_streams",
+          "eras"
+        ],
+        "description": "Show how craft was reinvested into wider forms of leverage.",
+        "id": "capabilities",
+        "label": "Capability Compounder"
+      },
+      {
+        "data_keys": [
+          "impact_ledger"
+        ],
+        "description": "Separate individual, team, organizational, enterprise, and community value.",
+        "id": "outcomes",
+        "label": "Outcome Ledger"
+      },
+      {
+        "data_keys": [
+          "respect"
+        ],
+        "description": "Let attributable third-party voices establish character and credibility.",
+        "id": "respect",
+        "label": "Trust & Respect"
+      },
+      {
+        "data_keys": [
+          "influence",
+          "capability_streams"
+        ],
+        "description": "Explain the mechanisms that turn credibility into reusable reach.",
+        "id": "influence",
+        "label": "Influence Web"
+      },
+      {
+        "data_keys": [
+          "teaching_service",
+          "service_lane"
+        ],
+        "description": "Show that teaching and stewardship persist beyond job boundaries.",
+        "id": "service",
+        "label": "Teaching & Service Ripple"
+      },
+      {
+        "data_keys": [
+          "momentum"
+        ],
+        "description": "Ground future direction in recent work without presenting aspiration as delivery.",
+        "id": "momentum",
+        "label": "Momentum & Next Horizon"
+      }
+    ]
+  },
+  "momentum": {
+    "ai_session_metrics": [
+      {
+        "caveat_labels": [],
+        "display": "24",
+        "evidence": [
+          {
+            "source_id": "src_4b83f419bc86",
+            "supports": "Aggregate of 90 session workbooks and participant feedback",
+            "tier": "corroborated"
+          },
+          {
+            "source_id": "src_a3464c80958f",
+            "supports": "Machine-readable aggregate statistics",
+            "tier": "corroborated"
+          }
+        ],
+        "id": "ai-genai-sessions",
+        "label": "AI/GenAI sessions",
+        "period": "2024–2026",
+        "unit": "",
+        "value": 24
+      },
+      {
+        "caveat_labels": [
+          "category_estimate"
+        ],
+        "display": "~450",
+        "evidence": [
+          {
+            "source_id": "src_4b83f419bc86",
+            "supports": "Aggregate of 90 session workbooks and participant feedback",
+            "tier": "corroborated"
+          },
+          {
+            "source_id": "src_a3464c80958f",
+            "supports": "Machine-readable aggregate statistics",
+            "tier": "corroborated"
+          }
+        ],
+        "id": "ai-feedback",
+        "label": "Approx. feedback responses",
+        "period": "2024–2026",
+        "unit": "",
+        "value": 450
+      },
+      {
+        "caveat_labels": [],
+        "display": "34",
+        "evidence": [
+          {
+            "source_id": "src_61bea0474506",
+            "supports": "Dated class record",
+            "tier": "documented",
+            "year": 2025
+          }
+        ],
+        "id": "copilot-class",
+        "label": "Train-the-trainer attendees",
+        "period": "2025",
+        "unit": "",
+        "value": 34
+      }
+    ],
+    "caveat_labels": [
+      "future_direction",
+      "team_attribution"
+    ],
+    "evidence": [
+      {
+        "source_id": "src_c9554c6a321b",
+        "supports": "2025 AI program portfolio",
+        "tier": "documented",
+        "year": 2025
+      },
+      {
+        "source_id": "src_a0c8699d99bb",
+        "supports": "2026 AI-native delivery evidence",
+        "tier": "documented",
+        "year": 2026
+      }
+    ],
+    "frontier_projects": [
+      {
+        "caveat_labels": [
+          "team_attribution"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_a0c8699d99bb",
+            "supports": "Team-authored 2026 delivery and showcase metrics",
+            "tier": "documented",
+            "year": 2026
+          }
+        ],
+        "id": "traceability",
+        "summary": "A team platform connects requirements, tests, and evidence while quality gates remain non-negotiable.",
+        "title": "AI-assisted end-to-end traceability",
+        "year": 2026
+      },
+      {
+        "caveat_labels": [
+          "pilot_not_scaled_outcome",
+          "team_attribution"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_5524995fa27d",
+            "supports": "Dated pilot proposal",
+            "tier": "documented",
+            "year": 2026
+          }
+        ],
+        "id": "requirements",
+        "summary": "Active experiments use domain context to accelerate specifications and tests without presenting pilots as completed enterprise outcomes.",
+        "title": "AI-assisted requirements and test generation",
+        "year": 2026
+      },
+      {
+        "caveat_labels": [
+          "initiative_specific"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_348ca654b51e",
+            "supports": "Public internal-community post and engagement",
+            "tier": "documented",
+            "year": 2026
+          }
+        ],
+        "id": "patient-safety",
+        "summary": "The direction extends AI-native engineering into regulated quality workflows where traceability matters most.",
+        "title": "AI applied to patient-safety and quality work",
+        "year": 2026
+      },
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_c9554c6a321b",
+            "supports": "Multi-program AI enablement record",
+            "tier": "documented",
+            "year": 2025
+          }
+        ],
+        "id": "copilot-enablement",
+        "summary": "Structured learning, train-the-trainer work, and practical sessions turn tool adoption into engineering judgment.",
+        "title": "Enterprise AI capability enablement",
+        "year": 2025
+      }
+    ],
+    "next_horizon": [
+      {
+        "caveat_labels": [
+          "future_direction"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_303acb160fbb",
+            "supports": "Current platform direction supports this horizon",
+            "tier": "derived",
+            "year": 2026
+          }
+        ],
+        "id": "evidence-native",
+        "summary": "Make requirements, decisions, tests, code, risk, and validation continuously traceable as one living system.",
+        "title": "Evidence-native AI engineering",
+        "year": 2026
+      },
+      {
+        "caveat_labels": [
+          "future_direction"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_a0c8699d99bb",
+            "supports": "Current quality-gated AI delivery supports this direction",
+            "tier": "derived",
+            "year": 2026
+          }
+        ],
+        "id": "quality-first",
+        "summary": "Scale AI assistance only when automated gates, review, observability, and engineering judgment scale with it.",
+        "title": "Quality-first code generation",
+        "year": 2026
+      },
+      {
+        "caveat_labels": [
+          "future_direction"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_5524995fa27d",
+            "supports": "Current context-rich pilot supports this direction",
+            "tier": "derived",
+            "year": 2026
+          }
+        ],
+        "id": "context-systems",
+        "summary": "Turn fragmented organizational knowledge into governed context that people and agents can use safely.",
+        "title": "Context systems for regulated work",
+        "year": 2026
+      },
+      {
+        "caveat_labels": [
+          "future_direction",
+          "narrative_synthesis"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_4b83f419bc86",
+            "supports": "Longitudinal teaching record",
+            "tier": "derived"
+          },
+          {
+            "source_id": "src_127b44d872c3",
+            "supports": "Observed transformation-through-influence pattern",
+            "tier": "corroborated",
+            "year": 2025
+          }
+        ],
+        "id": "human-multiplier",
+        "summary": "Pair AI-native systems with coaching and communities so adoption increases judgment, ownership, and agency.",
+        "title": "Human capability remains the multiplier",
+        "year": 2026
+      }
+    ],
+    "quality_guardrails": [
+      {
+        "caveat_labels": [
+          "team_attribution",
+          "initiative_specific"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_a0c8699d99bb",
+            "supports": "Team-authored 2026 delivery and showcase metrics",
+            "tier": "documented",
+            "year": 2026
+          }
+        ],
+        "id": "ci-gates",
+        "summary": "The reported AI-native delivery system disallowed commits that broke quality rules and used independent analyzers in CI/CD.",
+        "title": "Quality rules block broken commits",
+        "year": 2026
+      },
+      {
+        "caveat_labels": [
+          "team_attribution"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_303acb160fbb",
+            "supports": "Thematic platform evidence",
+            "tier": "documented",
+            "year": 2026
+          }
+        ],
+        "id": "traceability-gate",
+        "summary": "Evidence continuity is designed into delivery rather than assembled only at the end.",
+        "title": "Traceability treated as a product capability",
+        "year": 2026
+      },
+      {
+        "caveat_labels": [
+          "mixed_evidence_tiers"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_7534a7f52c6c",
+            "supports": "DORA and CVD learning-program evidence",
+            "tier": "documented",
+            "year": 2025
+          },
+          {
+            "source_id": "src_e2a765c37bad",
+            "supports": "Direct-manager outcome testimony",
+            "tier": "corroborated",
+            "year": 2025
+          }
+        ],
+        "id": "dora",
+        "summary": "Leadership sessions and coaching connect delivery speed to stability and value rather than optimizing velocity alone.",
+        "title": "Flow measured with DORA and continuous value delivery",
+        "year": 2025
+      }
+    ]
+  },
+  "respect": {
+    "caveat_labels": [
+      "selected_evidence"
+    ],
+    "evidence": [
+      {
+        "source_id": "src_73c96700f205",
+        "supports": "Dated, attributed recommendation from Mahesh Paradkar",
+        "tier": "corroborated",
+        "year": 2012
+      },
+      {
+        "source_id": "src_a023aebef289",
+        "supports": "Dated, attributed recommendation from Brijesh Krishnan",
+        "tier": "corroborated",
+        "year": 2012
+      },
+      {
+        "source_id": "src_bb8a5e85c21a",
+        "supports": "Dated, attributed recommendation from Praveen Kumar Vaidyanathan",
+        "tier": "corroborated",
+        "year": 2012
+      },
+      {
+        "source_id": "src_3b31599ee851",
+        "supports": "Dated, attributed recommendation from Gaurav Gupta",
+        "tier": "corroborated",
+        "year": 2013
+      },
+      {
+        "source_id": "src_0ea5721eaef3",
+        "supports": "Dated, attributed recommendation from Lohith Ravi Naidu",
+        "tier": "corroborated",
+        "year": 2013
+      },
+      {
+        "source_id": "src_c4bc0992ed94",
+        "supports": "Dated, attributed recommendation from Rajaraman Hariharan",
+        "tier": "corroborated",
+        "year": 2014
+      },
+      {
+        "source_id": "src_429b190ea2ca",
+        "supports": "Dated, attributed recommendation from Dr Arun Kumar B R",
+        "tier": "corroborated",
+        "year": 2014
+      },
+      {
+        "source_id": "src_1966bf3f7846",
+        "supports": "Dated, attributed recommendation from Manohar Veeraiah",
+        "tier": "corroborated",
+        "year": 2015
+      },
+      {
+        "source_id": "src_50f1710d38b9",
+        "supports": "Dated, attributed recommendation from Vinay S V",
+        "tier": "corroborated",
+        "year": 2015
+      },
+      {
+        "source_id": "src_a3a64232ca09",
+        "supports": "Dated, attributed recommendation from Robert Parks",
+        "tier": "corroborated",
+        "year": 2015
+      },
+      {
+        "source_id": "src_9b95192c6ecf",
+        "supports": "Dated, attributed recommendation from Srisankaraswaminathan J V",
+        "tier": "corroborated",
+        "year": 2015
+      },
+      {
+        "source_id": "src_cf841e5e1b1b",
+        "supports": "Dated, attributed recommendation from Jeffin Manuel",
+        "tier": "corroborated",
+        "year": 2017
+      },
+      {
+        "source_id": "src_d36f35e1937d",
+        "supports": "Dated, attributed recommendation from Rajesh Kumar",
+        "tier": "corroborated",
+        "year": 2019
+      },
+      {
+        "source_id": "src_5b5e1bd6bfaa",
+        "supports": "Dated, attributed recommendation from Rajesh Manghani",
+        "tier": "corroborated",
+        "year": 2019
+      },
+      {
+        "source_id": "src_f6231c47feb9",
+        "supports": "Dated, attributed recommendation from Sannihith Reddy P",
+        "tier": "corroborated",
+        "year": 2020
+      },
+      {
+        "source_id": "src_4288049ee32f",
+        "supports": "Dated, attributed recommendation from NaveenKumar V R",
+        "tier": "corroborated",
+        "year": 2023
+      },
+      {
+        "source_id": "src_34180bb6679a",
+        "supports": "Dated, attributed recommendation from Rafael Vaz",
+        "tier": "corroborated",
+        "year": 2024
+      },
+      {
+        "source_id": "src_09954e1ed23e",
+        "supports": "Dated, attributed recommendation from Fernando Vieira",
+        "tier": "corroborated",
+        "year": 2025
+      },
+      {
+        "source_id": "src_127b44d872c3",
+        "supports": "Dated, attributed recommendation from Ian Watson",
+        "tier": "corroborated",
+        "year": 2025
+      },
+      {
+        "source_id": "src_e2a765c37bad",
+        "supports": "Dated, attributed recommendation from Rob Nicholson",
+        "tier": "corroborated",
+        "year": 2025
+      },
+      {
+        "source_id": "src_dfb2391e01e1",
+        "supports": "Master recognition index",
+        "tier": "documented"
+      }
+    ],
+    "quotes": [
+      {
+        "caveat_labels": [
+          "light_grammar_edit"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_a023aebef289",
+            "supports": "Public attributed recommendation",
+            "tier": "corroborated",
+            "year": 2012
+          }
+        ],
+        "id": "early-leadership",
+        "organization": "IBM",
+        "person": "Brijesh Krishnan",
+        "quote": "He had, in a very early stage of his career, started getting involved in project initiatives, mentoring interns and technical vitality activities, which showed his leadership capabilities.",
+        "role": "IBM colleague",
+        "year": 2012
+      },
+      {
+        "caveat_labels": [
+          "excerpted_quote"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_232a37d10c2b",
+            "supports": "Direct manager-review quotation",
+            "tier": "corroborated",
+            "year": 2015
+          }
+        ],
+        "id": "linchpin",
+        "organization": "Exeter",
+        "person": "Exeter performance reviewer",
+        "quote": "Handling complexity is now an expectation from Datta and … the key reason for him being a linchpin in the team.",
+        "role": "Manager review",
+        "year": 2015
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_957f5b42cc91",
+            "supports": "Attributed peer quotation retained in impact record",
+            "tier": "corroborated",
+            "year": 2020
+          }
+        ],
+        "id": "improvement",
+        "organization": "Philips",
+        "person": "Robert Van Lieshout",
+        "quote": "I cannot think of an improvement area for Datta.",
+        "role": "Product Owner",
+        "year": 2020
+      },
+      {
+        "caveat_labels": [
+          "light_grammar_edit"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_f6231c47feb9",
+            "supports": "Public attributed recommendation",
+            "tier": "corroborated",
+            "year": 2020
+          }
+        ],
+        "id": "values",
+        "organization": "Philips",
+        "person": "Sannihith Reddy P",
+        "quote": "Best part about Datta is he teaches skills with values.",
+        "role": "Mentee and colleague",
+        "year": 2020
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_4288049ee32f",
+            "supports": "Public attributed recommendation",
+            "tier": "corroborated",
+            "year": 2023
+          }
+        ],
+        "id": "changed",
+        "organization": "Philips",
+        "person": "NaveenKumar V R",
+        "quote": "Your technical and personal advice and support have been invaluable to me. I can't say how much it changed me as a person.",
+        "role": "Mentee and colleague",
+        "year": 2023
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_127b44d872c3",
+            "supports": "Public attributed recommendation",
+            "tier": "corroborated",
+            "year": 2025
+          }
+        ],
+        "id": "influence",
+        "organization": "Philips",
+        "person": "Ian Watson",
+        "quote": "Datta is a master of leading digital transformation through influence.",
+        "role": "Transformation peer",
+        "year": 2025
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_e2a765c37bad",
+            "supports": "Public attributed direct-manager recommendation",
+            "tier": "corroborated",
+            "year": 2025
+          }
+        ],
+        "id": "natural-leader",
+        "organization": "Philips",
+        "person": "Rob Nicholson",
+        "quote": "Datta is a natural leader who inspires and motivates people across all levels, regardless of reporting lines, seniority, or team boundaries.",
+        "role": "Direct manager",
+        "year": 2025
+      }
+    ],
+    "recognitions": [
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_086517e3736d",
+            "supports": "Award record",
+            "tier": "corroborated",
+            "year": 2010
+          }
+        ],
+        "id": "hackday",
+        "title": "IBM India HackDay 8 — Pune first place",
+        "year": 2010
+      },
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_b1c7b55279a8",
+            "supports": "Award record",
+            "tier": "corroborated",
+            "year": 2010
+          }
+        ],
+        "id": "rtle",
+        "title": "Most influential member, IBM Technical Experts Council India",
+        "year": 2010
+      },
+      {
+        "caveat_labels": [
+          "team_attribution"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_3c3cffd02444",
+            "supports": "Award record",
+            "tier": "corroborated",
+            "year": 2017
+          },
+          {
+            "source_id": "src_fbfe92992f43",
+            "supports": "Team award record",
+            "tier": "corroborated",
+            "year": 2017
+          }
+        ],
+        "id": "amazon",
+        "title": "TRMS Spot and Zeus awards",
+        "year": 2017
+      },
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_4c6bb418004b",
+            "supports": "Formal award record",
+            "tier": "corroborated",
+            "year": 2021
+          }
+        ],
+        "id": "cto",
+        "title": "Philips CTO Outstanding Achievement Award",
+        "year": 2021
+      },
+      {
+        "caveat_labels": [
+          "team_attribution"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_d796cc32bc66",
+            "supports": "Team recognition record",
+            "tier": "corroborated",
+            "year": 2026
+          }
+        ],
+        "id": "impact-makers",
+        "title": "Sutra team recognized as Impact Makers",
+        "year": 2026
+      }
+    ],
+    "recommendation_count": 20,
+    "recommendation_manifest": [
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_73c96700f205",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2012
+          }
+        ],
+        "id": "recommendation-01",
+        "organization": "IBM",
+        "person": "Mahesh Paradkar",
+        "year": 2012
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_a023aebef289",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2012
+          }
+        ],
+        "id": "recommendation-02",
+        "organization": "IBM",
+        "person": "Brijesh Krishnan",
+        "year": 2012
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_bb8a5e85c21a",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2012
+          }
+        ],
+        "id": "recommendation-03",
+        "organization": "IBM",
+        "person": "Praveen Kumar Vaidyanathan",
+        "year": 2012
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_3b31599ee851",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2013
+          }
+        ],
+        "id": "recommendation-04",
+        "organization": "IBM",
+        "person": "Gaurav Gupta",
+        "year": 2013
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_0ea5721eaef3",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2013
+          }
+        ],
+        "id": "recommendation-05",
+        "organization": "IBM",
+        "person": "Lohith Ravi Naidu",
+        "year": 2013
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_c4bc0992ed94",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2014
+          }
+        ],
+        "id": "recommendation-06",
+        "organization": "Exeter",
+        "person": "Rajaraman Hariharan",
+        "year": 2014
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_429b190ea2ca",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2014
+          }
+        ],
+        "id": "recommendation-07",
+        "organization": "Academic community",
+        "person": "Dr Arun Kumar B R",
+        "year": 2014
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_1966bf3f7846",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2015
+          }
+        ],
+        "id": "recommendation-08",
+        "organization": "Exeter",
+        "person": "Manohar Veeraiah",
+        "year": 2015
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_50f1710d38b9",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2015
+          }
+        ],
+        "id": "recommendation-09",
+        "organization": "Exeter",
+        "person": "Vinay S V",
+        "year": 2015
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_a3a64232ca09",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2015
+          }
+        ],
+        "id": "recommendation-10",
+        "organization": "Exeter",
+        "person": "Robert Parks",
+        "year": 2015
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_9b95192c6ecf",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2015
+          }
+        ],
+        "id": "recommendation-11",
+        "organization": "Exeter",
+        "person": "Srisankaraswaminathan J V",
+        "year": 2015
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_cf841e5e1b1b",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2017
+          }
+        ],
+        "id": "recommendation-12",
+        "organization": "Amazon",
+        "person": "Jeffin Manuel",
+        "year": 2017
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_d36f35e1937d",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2019
+          }
+        ],
+        "id": "recommendation-13",
+        "organization": "Philips",
+        "person": "Rajesh Kumar",
+        "year": 2019
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_5b5e1bd6bfaa",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2019
+          }
+        ],
+        "id": "recommendation-14",
+        "organization": "Philips",
+        "person": "Rajesh Manghani",
+        "year": 2019
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_f6231c47feb9",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2020
+          }
+        ],
+        "id": "recommendation-15",
+        "organization": "Philips",
+        "person": "Sannihith Reddy P",
+        "year": 2020
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_4288049ee32f",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2023
+          }
+        ],
+        "id": "recommendation-16",
+        "organization": "Philips",
+        "person": "NaveenKumar V R",
+        "year": 2023
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_34180bb6679a",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2024
+          }
+        ],
+        "id": "recommendation-17",
+        "organization": "Philips",
+        "person": "Rafael Vaz",
+        "year": 2024
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_09954e1ed23e",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2025
+          }
+        ],
+        "id": "recommendation-18",
+        "organization": "Philips",
+        "person": "Fernando Vieira",
+        "year": 2025
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_127b44d872c3",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2025
+          }
+        ],
+        "id": "recommendation-19",
+        "organization": "Philips",
+        "person": "Ian Watson",
+        "year": 2025
+      },
+      {
+        "caveat_labels": [
+          "selected_evidence"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_e2a765c37bad",
+            "supports": "Dated, attributed recommendation",
+            "tier": "corroborated",
+            "year": 2025
+          }
+        ],
+        "id": "recommendation-20",
+        "organization": "Philips",
+        "person": "Rob Nicholson",
+        "year": 2025
+      }
+    ]
+  },
+  "service_lane": {
+    "caveat_labels": [
+      "curated_milestones"
+    ],
+    "evidence": [
+      {
+        "source_id": "src_35b99725f8ef",
+        "supports": "Eleven-year giveback record",
+        "tier": "documented"
+      },
+      {
+        "source_id": "src_a8b60d192d06",
+        "supports": "Ten active years of social service",
+        "tier": "documented",
+        "year": 2025
+      }
+    ],
+    "label": "Teaching, community, and stewardship",
+    "metrics": [
+      {
+        "caveat_labels": [],
+        "display": "50",
+        "evidence": [
+          {
+            "source_id": "src_35b99725f8ef",
+            "supports": "Complete dated talks spreadsheet",
+            "tier": "documented"
+          }
+        ],
+        "id": "talks",
+        "label": "Recorded giveback talks",
+        "period": "2010–2021",
+        "unit": "",
+        "value": 50
+      },
+      {
+        "caveat_labels": [
+          "participant_counts_not_unique"
+        ],
+        "display": "3,732",
+        "evidence": [
+          {
+            "source_id": "src_35b99725f8ef",
+            "supports": "Participant counts by session",
+            "tier": "documented"
+          }
+        ],
+        "id": "talk-reach",
+        "label": "Recorded participants",
+        "period": "2010–2021",
+        "unit": "",
+        "value": 3732
+      },
+      {
+        "caveat_labels": [
+          "public_safe_aggregate"
+        ],
+        "display": "10 years",
+        "evidence": [
+          {
+            "source_id": "src_a8b60d192d06",
+            "supports": "Annual program ledgers",
+            "tier": "documented",
+            "year": 2025
+          }
+        ],
+        "id": "service-years",
+        "label": "Book-program years active",
+        "period": "2014–2026",
+        "unit": "",
+        "value": 10
+      }
+    ],
+    "milestones": [
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_35b99725f8ef",
+            "supports": "First dated giveback session",
+            "tier": "documented"
+          }
+        ],
+        "id": "yoga-2010",
+        "metrics": [],
+        "summary": "A non-technical college session established the service lane.",
+        "title": "First recorded community talk: practical yoga",
+        "year": 2010
+      },
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_35b99725f8ef",
+            "supports": "Dated participant and venue records",
+            "tier": "documented"
+          }
+        ],
+        "id": "t2e-2011",
+        "metrics": [],
+        "summary": "Hands-on T2E workshops brought industry craft into colleges.",
+        "title": "Technical education workshops",
+        "year": 2011
+      },
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_e90cdb595c63",
+            "supports": "Student response archive begins",
+            "tier": "corroborated"
+          }
+        ],
+        "id": "college-2013",
+        "metrics": [],
+        "summary": "Technical, career, and yoga sessions developed into a long-running feedback-backed practice.",
+        "title": "College teaching expands",
+        "year": 2013
+      },
+      {
+        "caveat_labels": [
+          "public_safe_aggregate"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_a8b60d192d06",
+            "supports": "Ten annual program ledgers",
+            "tier": "documented",
+            "year": 2025
+          }
+        ],
+        "id": "books-2014",
+        "metrics": [],
+        "summary": "A personal initiative grew into a recurring, network-supported education program.",
+        "title": "Rural book-distribution program begins",
+        "year": 2014
+      },
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_35b99725f8ef",
+            "supports": "Conference and workshop records",
+            "tier": "documented"
+          },
+          {
+            "source_id": "src_bdeee6a37969",
+            "supports": "Annual connection record",
+            "tier": "documented",
+            "year": 2019
+          }
+        ],
+        "id": "conference-2019",
+        "metrics": [],
+        "summary": "Software excellence talks, workshops, and .connect translated practice across teams.",
+        "title": "Teaching reaches enterprise scale",
+        "year": 2019
+      },
+      {
+        "caveat_labels": [
+          "touchpoints_not_unique_people"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_35b99725f8ef",
+            "supports": "Virtual and global conference sessions",
+            "tier": "documented"
+          },
+          {
+            "source_id": "src_b00cbe085a27",
+            "supports": "Global participant touchpoints",
+            "tier": "documented",
+            "year": 2021
+          }
+        ],
+        "id": "virtual-2021",
+        "metrics": [],
+        "summary": "Observability, shift-left, interviews, and community sessions crossed geographic boundaries.",
+        "title": "Global virtual reach",
+        "year": 2021
+      },
+      {
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_c9554c6a321b",
+            "supports": "AI enablement program evidence",
+            "tier": "documented",
+            "year": 2025
+          },
+          {
+            "source_id": "src_4b83f419bc86",
+            "supports": "Session feedback and topic evolution",
+            "tier": "corroborated"
+          }
+        ],
+        "id": "ai-teaching-2025",
+        "metrics": [],
+        "summary": "Copilot, prompt engineering, DORA, and continuous value delivery became repeatable learning programs.",
+        "title": "AI literacy becomes the teaching frontier",
+        "year": 2025
+      },
+      {
+        "caveat_labels": [
+          "public_safe_aggregate"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_a0c8699d99bb",
+            "supports": "AI platform showcase",
+            "tier": "documented",
+            "year": 2026
+          },
+          {
+            "source_id": "src_a8b60d192d06",
+            "supports": "2026 aggregate program record",
+            "tier": "documented",
+            "year": 2025
+          }
+        ],
+        "id": "service-2026",
+        "metrics": [],
+        "summary": "AI teaching and the book program both reached new documented peaks.",
+        "title": "Professional and social programs keep compounding",
+        "year": 2026
+      }
+    ],
+    "start": 2010,
+    "summary": "A parallel practice of teaching and service has continued across employers, locations, and life transitions—evidence that contribution is a personal operating principle, not a job-title artifact."
+  },
+  "teaching_service": {
+    "caveat_labels": [
+      "participant_counts_not_unique",
+      "public_safe_aggregate"
+    ],
+    "college_program": {
+      "category": "Teaching",
+      "caveat_labels": [
+        "feedback_respondents_only"
+      ],
+      "evidence": [
+        {
+          "source_id": "src_e90cdb595c63",
+          "supports": "Thirteen feedback-form datasets",
+          "tier": "corroborated"
+        }
+      ],
+      "id": "college-teaching",
+      "metrics": [
+        {
+          "caveat_labels": [],
+          "display": "13",
+          "evidence": [
+            {
+              "source_id": "src_e90cdb595c63",
+              "supports": "Raw survey aggregate",
+              "tier": "corroborated"
+            }
+          ],
+          "id": "college-sessions",
+          "label": "Feedback-backed sessions",
+          "period": "",
+          "unit": "",
+          "value": 13
+        },
+        {
+          "caveat_labels": [],
+          "display": "494",
+          "evidence": [
+            {
+              "source_id": "src_e90cdb595c63",
+              "supports": "Raw survey aggregate",
+              "tier": "corroborated"
+            }
+          ],
+          "id": "student-responses",
+          "label": "Student responses",
+          "period": "",
+          "unit": "",
+          "value": 494
+        },
+        {
+          "caveat_labels": [],
+          "display": "4.58/5",
+          "evidence": [
+            {
+              "source_id": "src_e90cdb595c63",
+              "supports": "149 presenter ratings",
+              "tier": "corroborated"
+            }
+          ],
+          "id": "presenter-five",
+          "label": "Presenter rating",
+          "period": "",
+          "unit": "",
+          "value": 4.58
+        },
+        {
+          "caveat_labels": [],
+          "display": "9.12/10",
+          "evidence": [
+            {
+              "source_id": "src_e90cdb595c63",
+              "supports": "128 presenter ratings",
+              "tier": "corroborated"
+            }
+          ],
+          "id": "presenter-ten",
+          "label": "Presenter rating",
+          "period": "",
+          "unit": "",
+          "value": 9.12
+        }
+      ],
+      "period": "2013–2020",
+      "summary": "Thirteen weekend and community sessions across seven institutions produced 494 student responses on technical craft, careers, communication, and yoga.",
+      "title": "Voluntary college teaching with direct student feedback",
+      "year": 2013
+    },
+    "evidence": [
+      {
+        "source_id": "src_4b83f419bc86",
+        "supports": "Aggregate of 90 session workbooks and participant feedback",
+        "tier": "corroborated"
+      },
+      {
+        "source_id": "src_a3464c80958f",
+        "supports": "Machine-readable aggregate statistics",
+        "tier": "corroborated"
+      },
+      {
+        "source_id": "src_e90cdb595c63",
+        "supports": "Student feedback archive",
+        "tier": "corroborated"
+      },
+      {
+        "source_id": "src_a8b60d192d06",
+        "supports": "Social program aggregate",
+        "tier": "documented",
+        "year": 2025
+      }
+    ],
+    "service_programs": [
+      {
+        "category": "Teaching",
+        "caveat_labels": [
+          "participant_counts_not_unique"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_35b99725f8ef",
+            "supports": "Complete session list",
+            "tier": "documented"
+          }
+        ],
+        "id": "giveback-talks",
+        "metrics": [
+          {
+            "caveat_labels": [],
+            "display": "50",
+            "evidence": [
+              {
+                "source_id": "src_35b99725f8ef",
+                "supports": "Dated talks spreadsheet",
+                "tier": "documented"
+              }
+            ],
+            "id": "giveback-count",
+            "label": "Recorded sessions",
+            "period": "",
+            "unit": "",
+            "value": 50
+          },
+          {
+            "caveat_labels": [
+              "participant_counts_not_unique"
+            ],
+            "display": "3,732",
+            "evidence": [
+              {
+                "source_id": "src_35b99725f8ef",
+                "supports": "Per-session participant counts",
+                "tier": "documented"
+              }
+            ],
+            "id": "giveback-reach",
+            "label": "Participant instances",
+            "period": "",
+            "unit": "",
+            "value": 3732
+          }
+        ],
+        "period": "2010–2021",
+        "summary": "Fifty recorded seminars, workshops, panels, and talks reached 3,732 participant instances across 25 venues.",
+        "title": "Giveback talks and workshops",
+        "year": 2010
+      },
+      {
+        "category": "Service",
+        "caveat_labels": [
+          "public_safe_aggregate"
+        ],
+        "evidence": [
+          {
+            "source_id": "src_a8b60d192d06",
+            "supports": "Aggregate program history",
+            "tier": "documented",
+            "year": 2025
+          }
+        ],
+        "id": "book-distribution",
+        "metrics": [
+          {
+            "caveat_labels": [],
+            "display": "10",
+            "evidence": [
+              {
+                "source_id": "src_a8b60d192d06",
+                "supports": "Annual ledgers",
+                "tier": "documented",
+                "year": 2025
+              }
+            ],
+            "id": "book-years",
+            "label": "Active years",
+            "period": "",
+            "unit": "",
+            "value": 10
+          },
+          {
+            "caveat_labels": [
+              "public_safe_aggregate"
+            ],
+            "display": "13.3×",
+            "evidence": [
+              {
+                "source_id": "src_a8b60d192d06",
+                "supports": "2014-to-2026 aggregate",
+                "tier": "documented",
+                "year": 2025
+              }
+            ],
+            "id": "book-growth",
+            "label": "Annual growth factor",
+            "period": "",
+            "unit": "",
+            "value": 13.3
+          }
+        ],
+        "period": "2014–2026",
+        "summary": "Ten active years of organizing sustained an education giveback program through relocation and a pandemic pause.",
+        "title": "Rural education book program",
+        "year": 2014
+      },
+      {
+        "category": "Teaching",
+        "caveat_labels": [],
+        "evidence": [
+          {
+            "source_id": "src_c9554c6a321b",
+            "supports": "AI leadership and enablement record",
+            "tier": "documented",
+            "year": 2025
+          },
+          {
+            "source_id": "src_4b83f419bc86",
+            "supports": "Session topic and response aggregate",
+            "tier": "corroborated"
+          }
+        ],
+        "id": "ai-learning",
+        "metrics": [
+          {
+            "caveat_labels": [],
+            "display": "24",
+            "evidence": [
+              {
+                "source_id": "src_4b83f419bc86",
+                "supports": "Aggregate of 90 session workbooks and participant feedback",
+                "tier": "corroborated"
+              },
+              {
+                "source_id": "src_a3464c80958f",
+                "supports": "Machine-readable aggregate statistics",
+                "tier": "corroborated"
+              }
+            ],
+            "id": "ai-sessions",
+            "label": "AI/GenAI sessions",
+            "period": "2024–2026",
+            "unit": "",
+            "value": 24
+          }
+        ],
+        "period": "2024–2026",
+        "summary": "Copilot, prompt engineering, context engineering, DORA, and agent-building sessions show the teaching portfolio moving with the engineering frontier.",
+        "title": "AI and continuous-delivery learning system",
+        "year": 2024
+      }
+    ],
+    "session_metrics": [
+      {
+        "caveat_labels": [],
+        "display": "90",
+        "evidence": [
+          {
+            "source_id": "src_4b83f419bc86",
+            "supports": "Aggregate of 90 session workbooks and participant feedback",
+            "tier": "corroborated"
+          },
+          {
+            "source_id": "src_a3464c80958f",
+            "supports": "Machine-readable aggregate statistics",
+            "tier": "corroborated"
+          }
+        ],
+        "id": "facilitated-sessions",
+        "label": "Facilitated sessions",
+        "period": "2018–2026",
+        "unit": "",
+        "value": 90
+      },
+      {
+        "caveat_labels": [
+          "responses_not_attendance"
+        ],
+        "display": "1,183",
+        "evidence": [
+          {
+            "source_id": "src_4b83f419bc86",
+            "supports": "Aggregate of 90 session workbooks and participant feedback",
+            "tier": "corroborated"
+          },
+          {
+            "source_id": "src_a3464c80958f",
+            "supports": "Machine-readable aggregate statistics",
+            "tier": "corroborated"
+          }
+        ],
+        "id": "feedback-responses",
+        "label": "Feedback responses",
+        "period": "2018–2026",
+        "unit": "",
+        "value": 1183
+      },
+      {
+        "caveat_labels": [],
+        "display": "4.3/5",
+        "evidence": [
+          {
+            "source_id": "src_4b83f419bc86",
+            "supports": "Aggregate of 90 session workbooks and participant feedback",
+            "tier": "corroborated"
+          },
+          {
+            "source_id": "src_a3464c80958f",
+            "supports": "Machine-readable aggregate statistics",
+            "tier": "corroborated"
+          }
+        ],
+        "id": "average-rating",
+        "label": "Normalized average",
+        "period": "2018–2026",
+        "unit": "",
+        "value": 4.3
+      }
+    ]
+  },
+  "thesis": {
+    "caveat_labels": [
+      "narrative_synthesis"
+    ],
+    "evidence": [
+      {
+        "source_id": "src_e94a6920152f",
+        "supports": "Longitudinal career synthesis",
+        "tier": "derived"
+      },
+      {
+        "source_id": "src_127b44d872c3",
+        "supports": "Observed influence pattern",
+        "tier": "corroborated",
+        "year": 2025
+      },
+      {
+        "source_id": "src_f6231c47feb9",
+        "supports": "Observed mentoring pattern",
+        "tier": "corroborated",
+        "year": 2020
+      },
+      {
+        "source_id": "src_a8b60d192d06",
+        "supports": "Long-horizon service continuity",
+        "tier": "documented",
+        "year": 2025
+      }
+    ],
+    "headline": "Engineering excellence that compounds through people",
+    "role": "Digital transformation leader · Regulated software · AI-native engineering",
+    "statement": "Across five professional eras, Datta's consistent move has been to understand complexity deeply, make it legible, build a reusable mechanism, and help other people own it—while sustaining a parallel commitment to teaching and service."
+  }
+}

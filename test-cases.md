@@ -171,3 +171,49 @@ Expected: Node properties reflect new content, audit trail records update
 | T7.4 | Concurrent ingestion | 10 files simultaneously | No race conditions on entity resolution |
 | T7.5 | Network offline | Gemini unreachable | Falls back to Ollama, logs degradation |
 | T7.6 | Empty artifact | File with no extractable text | Logged as failed, no phantom nodes created |
+
+---
+
+## 8. Relationship Export and Journey Projection
+
+### 8.1 Portable relationship export
+
+| # | Test | Input | Expected |
+|---|------|-------|----------|
+| T8.1.1 | Complete deterministic serialization | Fixture DuckDB, Chroma collection, and derived viz files | Every table, relationship projection, Chroma record/vector part, NetworkX graph, inventory, report, and manifest is written in stable order |
+| T8.1.2 | Parsed data types | JSON-valued DuckDB fields and Unicode/newline text | JSON is emitted as objects/lists and text round-trips without loss |
+| T8.1.3 | Cross-store alignment | Matching DuckDB and Chroma chunks | IDs, documents, metadata, and artifact links agree; counts appear in the report |
+| T8.1.4 | Exact runtime graph | Connected and isolated fixture nodes | Node-link graph and per-node degree/component metrics match the production `DiGraph` projection |
+| T8.1.5 | Atomic replacement | Existing output plus a valid new snapshot | Old output is replaced only after all hashes and validations pass; no staging directories remain |
+| T8.1.6 | Failure preservation | Chroma record with a missing artifact reference | Export fails and preserves the prior snapshot unchanged |
+| T8.1.7 | Missing canonical source | Absent DuckDB or Chroma path | Clear failure without creating a phantom database or output |
+| T8.1.8 | Git-hostable vector partitioning | Embedding JSONL larger than the configured part limit | Complete ordered record stream is split into deterministic parts, each at or below the byte limit |
+
+Automated coverage: `tests/test_export_relationships.py` (5 tests, passing on 2026-08-07).
+
+### 8.2 Curated journey dataset
+
+| # | Test | Input | Expected |
+|---|------|-------|----------|
+| T8.2.1 | Committed output is reproducible | `build_journey_data()` and committed `journey.json` | Parsed objects match exactly and both pass validation |
+| T8.2.2 | Exact view contract | Generated `meta.views` | Exactly eight IDs in narrative order; every declared `data_key` exists |
+| T8.2.3 | Public payload boundary | Serialized journey object | No local evidence path/filename, email domain, HTTP(S) URL, PAN-card phrase, account-number phrase, or raw artifact body |
+| T8.2.4 | Evidence vocabulary | Private source model and nested public references | Private paths exist before stripping; public refs have opaque stable IDs and support text; all four evidence tiers are represented |
+| T8.2.5 | Claim boundaries | Eras, metrics, and caveat glossary | Canonical chronology is exact; every displayed metric has evidence; team, self-reported, co-occurrence, and future-direction caveats exist |
+| T8.2.6 | Writer outputs | Temporary output/report paths | Valid schema-versioned JSON and analysis explaining the eight-view rationale are written |
+
+Automated coverage: `tests/test_build_journey_data.py` (5 tests, passing on 2026-08-07). Together with the export suite, 10 focused tests pass.
+
+### 8.3 Journey Atlas UI and public build
+
+| # | Test | Input | Expected |
+|---|------|-------|----------|
+| T8.3.1 | Hash normalization | Empty, invalid, and valid view hashes | Empty/invalid hashes resolve to `#portrait`; valid hashes render the named view |
+| T8.3.2 | Keyboard navigation | Desktop nav focus plus Left/Right/Home/End | Focus wraps or moves to the first/last view without changing semantic link behavior |
+| T8.3.3 | Mobile navigation | Viewport ≤900 px | Desktop tabs hide; labeled native selector remains available |
+| T8.3.4 | Chart accessibility | Braided and momentum SVGs, influence links, scroll regions | Informative charts have names/descriptions, decoration is hidden, dense regions are keyboard focusable |
+| T8.3.5 | Motion preference | `prefers-reduced-motion: reduce` | Page animation and smooth scrolling are disabled |
+| T8.3.6 | Public bundle isolation | Production Vite build | Build succeeds, all eight views render, approved logo/photo assets load, and `dist/data/evidence` is absent |
+| T8.3.7 | Static typing | `npx tsc --noEmit` | No TypeScript errors in current or archived components |
+
+Verification on 2026-08-06: `npm run build` and `npx tsc --noEmit` pass; the production artifact is 1.2 MB with five files (HTML, CSS, JS, logo, photo), and `dist/data/evidence` is absent. All eight desktop and 390 px mobile deep links were reviewed, the mobile document width stayed equal to the viewport, arrow-key navigation was exercised, and automated WCAG A/AA checks reported zero violations. Gradient contrast remains a manual visual check and was reviewed in settled screenshots.

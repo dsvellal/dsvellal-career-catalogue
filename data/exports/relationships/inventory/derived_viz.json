@@ -1,0 +1,115 @@
+[
+  {
+    "bytes": 40070,
+    "mtime_ns": 1785709705108469561,
+    "path": "viz/src/data/career_arc.json",
+    "sha256": "2513156bb06db45a8fbd555ab6733cb3b7c488b7292cdd3b9fd42dd9ce94a30e",
+    "top_level_keys": [
+      "eras",
+      "years"
+    ],
+    "top_level_type": "object",
+    "valid_json": true
+  },
+  {
+    "bytes": 15277,
+    "mtime_ns": 1785709705107412030,
+    "path": "viz/src/data/constellation.json",
+    "sha256": "846465dfa96ba3602780fbe478de2927a1203e35f552d8f3d3ddd7e0e1d48405",
+    "top_level_keys": [
+      "betalent_skills",
+      "clusters",
+      "orbit_skills"
+    ],
+    "top_level_type": "object",
+    "valid_json": true
+  },
+  {
+    "bytes": 1047710,
+    "graph_summary": {
+      "ego_centers": 148,
+      "force_edges": 1619,
+      "force_nodes": 148,
+      "radial_items": 28
+    },
+    "mtime_ns": 1785725542022258989,
+    "path": "viz/src/data/graph.json",
+    "sha256": "2f36919d249b4e0ba6fe6698e861463aa1d76f65646367baded8944105b4fa23",
+    "top_level_keys": [
+      "ego_index",
+      "force",
+      "heatmap",
+      "org_subgraphs",
+      "radial"
+    ],
+    "top_level_type": "object",
+    "valid_json": true
+  },
+  {
+    "bytes": 7299,
+    "items": 20,
+    "mtime_ns": 1786074718410666754,
+    "path": "viz/src/data/impact.json",
+    "sha256": "2d43338c0156fa9dbb98a7b7baca46d0cab0eb6480cbb0dd3f29c69bda202d39",
+    "top_level_type": "array",
+    "valid_json": true
+  },
+  {
+    "bytes": 98622,
+    "mtime_ns": 1786076878210978355,
+    "path": "viz/src/data/journey.json",
+    "sha256": "e2e19f3b544e7e88a6f24d84480edb3e5acdba670db2b7cef9bc04666fce5a77",
+    "top_level_keys": [
+      "capability_streams",
+      "caveats",
+      "eras",
+      "headline_metrics",
+      "impact_ledger",
+      "influence",
+      "meta",
+      "momentum",
+      "respect",
+      "service_lane",
+      "teaching_service",
+      "thesis"
+    ],
+    "top_level_type": "object",
+    "valid_json": true
+  },
+  {
+    "bytes": 20678,
+    "items": 43,
+    "mtime_ns": 1785725589955271806,
+    "path": "viz/src/data/talks.json",
+    "sha256": "adbc0fef65a83ff9fd0909498d456629ceabbb79144ccbbe9c7f121f14a364f6",
+    "top_level_type": "array",
+    "valid_json": true
+  },
+  {
+    "bytes": 5165,
+    "items": 4,
+    "mtime_ns": 1785728164496793722,
+    "path": "viz/src/data/timeline.json",
+    "sha256": "82992463ffcc623e79d5e67065dcb0279dec0ee77424d509f77e36898be5e254",
+    "top_level_type": "array",
+    "valid_json": true
+  },
+  {
+    "bytes": 133378,
+    "items": 6,
+    "mtime_ns": 1786074742916434865,
+    "path": "viz/src/data/timeline_full.json",
+    "sha256": "b141ea8355929245bab20df7c428373c36a3e0159f57b0d43c3c3655cec457e2",
+    "top_level_type": "array",
+    "valid_json": true
+  },
+  {
+    "bytes": 44766,
+    "items": 220,
+    "mtime_ns": 1786074742916874283,
+    "path": "viz/src/data/voices.json",
+    "sha256": "0499455cb2de268b04760d1418ca79b5f087109fa980949b4bf55ed4eb8c73c1",
+    "top_level_type": "array",
+    "valid_json": true
+  }
+]

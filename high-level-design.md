@@ -25,15 +25,20 @@
 
 **Purpose:** Dynamic, always-current professional portfolio.
 
-**Sections (auto-generated from graph):**
-- About (synthesized from voice profile + career narrative)
-- Projects (from Project nodes, sorted by impact/recency)
-- Skills (from Skill nodes, visualized as graph or matrix)
-- Timeline (from TimeRange nodes, interactive)
-- Recognition (from Achievement nodes)
-- Contact
+**Journey Atlas views (curated from evidence):**
 
-**Tech:** Static site generation from published snapshot. Rebuilt on each publish.
+1. Executive Portrait — concise identity, operating modes, and strongest proof points
+2. Twenty-Year Journey — braided professional, service, and capability timelines
+3. Capability Compounder — how technical depth became broader organizational leverage
+4. Outcome Ledger — quantified contribution grouped by scale, with attribution caveats
+5. Trust & Respect — selected person-attributed recommendations and recognition
+6. Influence Web — credibility → reusable mechanism → expanded reach, not a causal social graph
+7. Teaching & Service Ripple — sustained teaching and service as a parallel career lane
+8. Momentum & Next Horizon — recent evidence signals and explicitly aspirational directions
+
+**Tech:** Static React/Vite site built from one curated, evidence-tiered JSON projection. Every view has a stable hash deep link. The raw relationship export and evidence archive are local-only inputs and are not copied into the build.
+
+**Presentation rule:** The sequence is intentional: orient the visitor, establish chronology, demonstrate compounding capability and measurable value, then let other people's words validate trust before showing influence, service, and future momentum. This projects confidence without converting co-occurrence or self-authored claims into false authority.
 
 ### 1.3 Resume Generator
 
@@ -164,7 +169,8 @@ Configurable weights per consumer:
 - Resume generator: high vector weight (semantic matching to JD)
 - Weekly summary: high temporal weight
 - Chat twin: balanced across all four
-- Portfolio: high graph weight (relationship visualization)
+- Legacy graph portfolio views: high graph weight
+- Current Journey Atlas: no runtime fusion; it consumes the reviewed static journey projection
 
 ---
 
@@ -178,6 +184,9 @@ Configurable weights per consumer:
 - Cloud deployment receives ONLY published nodes
 - No raw artifact text in cloud, only synthesized outputs and embeddings
 - Voice profile and system prompts stay local (cloud uses a published voice summary)
+- The Journey Atlas consumes `viz/src/data/journey.json`, never `data/exports/relationships/` or raw evidence bodies
+- Journey claims retain an evidence tier, opaque source ID, and caveat labels; private evidence paths are validated locally and removed before the browser bundle
+- Vite `publicDir` is disabled so `viz/public/data/evidence` cannot be copied into a production bundle
 
 ### 4.2 Confidential Project Handling
 

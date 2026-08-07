@@ -1,0 +1,22 @@
+{
+  "density": 0.0014272228435360254,
+  "directed": true,
+  "edges": 17190,
+  "graph_class": "DiGraph",
+  "isolates": 244,
+  "largest_weak_component": 3223,
+  "multigraph": false,
+  "nodes": 3471,
+  "runtime_edge_attributes": [
+    "confidence",
+    "type",
+    "weight"
+  ],
+  "runtime_node_attributes": [
+    "name",
+    "type"
+  ],
+  "self_loops": 0,
+  "strong_components": 3471,
+  "weak_components": 247
+}

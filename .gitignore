@@ -31,6 +31,10 @@ data/*
 !data/evidence/
 !data/batch_*.json
 !data/enrich_*.json
+!data/journey-analysis.md
+!data/exports/
+!data/exports/relationships/
+!data/exports/relationships/**
 *.db
 *.db-journal
 

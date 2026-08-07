@@ -1032,3 +1032,144 @@ period: <YYYY-MM, only if recurring>
 |--------|-------------|
 | Chronological (oldest first) | Users care most about recent work |
 | User-toggleable | Adds UI complexity for no clear benefit |
+
+---
+
+## Decision 035: Portable Relationship Export Is a Private Derived Snapshot
+
+**Date:** 2026-08-06
+**Phase:** Journey Analysis and Visualization
+**Category:** Data Portability / Privacy
+
+**Question:** How should all DuckDB, ChromaDB, NetworkX, and other derived relationship data be made inspectable without creating another canonical store or publishing private content?
+
+**Decision:** Generate a deterministic, manifest-backed snapshot under gitignored `data/exports/relationships/`. Export every DuckDB table, explicit relationship projections, Chroma documents/metadata/full vectors, and the exact NetworkX graph rebuilt by production code. Treat the entire snapshot as private local data.
+
+**Status update (2026-08-07):** Decision 040 supersedes only the gitignored-storage portion. The export remains private and noncanonical, but the owner explicitly chose to version it in the access-controlled private repository.
+
+**Rationale:** JSONL and JSON make the corpus inspectable with ordinary tools; YAML captures the schema; SHA-256 inventories and consistency checks make completeness and drift visible. A staged atomic replacement prevents a failed run from destroying the last valid snapshot. Keeping the directory outside the public data flow preserves the existing local/private versus curated/public boundary.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Query each database ad hoc | Not portable or repeatable, misses runtime graph shape, and provides no completeness manifest |
+| Make exported files a new canonical store | Creates bidirectional synchronization and drift with DuckDB/ChromaDB |
+| Export only edges and omit embeddings/raw tables | Does not satisfy a complete dump and hides cross-store alignment gaps |
+| Commit the snapshot for audit history | The export contains private artifact text, people, metadata, and vectors; repository history is an inappropriate privacy boundary |
+
+---
+
+## Decision 036: Public Journey Data Is Evidence-Tiered and Editorially Curated
+
+**Date:** 2026-08-06
+**Phase:** Journey Analysis and Visualization
+**Category:** Data Product / Credibility
+
+**Question:** How should twenty years of private, heterogeneous evidence become a strong public professional narrative without flattening provenance or overstating attribution?
+
+**Decision:** Generate a purpose-built `journey.json` with exactly eight view bindings. Every displayed metric has one or more evidence references; references state what they support and use one of four tiers: corroborated, documented, self-reported, or derived. Shared caveat labels preserve attribution, period, population, currency, and interpretation boundaries.
+
+**Rationale:** A public portfolio is an argument, not a database browser. Curation gives the audience a coherent path while evidence tiers keep strong claims distinguishable from first-party records and synthesis. Visible caveats let the site project confidence without claiming sole credit, confusing touchpoints with people, or calling extracted graph co-occurrence social influence.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Render the raw NetworkX graph as the primary story | Co-occurrence and extracted edges are visually dense and do not prove influence, respect, or causality |
+| Reuse legacy timeline/impact JSON unchanged | It contains chronology errors, low evidence-link coverage, and unsupported or unlabeled claims |
+| Show only independently corroborated claims | Hides valuable first-party career evidence instead of labeling its actual strength |
+| Publish every evidence artifact for visitor verification | Exposes private/internal material and overwhelms the narrative with undifferentiated source documents |
+
+---
+
+## Decision 037: Journey Projection Uses Eight Deliberately Ordered Views
+
+**Date:** 2026-08-06
+**Phase:** Journey Analysis and Visualization
+**Category:** Information Architecture
+
+**Question:** Which views best demonstrate growth, impact, value, character, respect, influence, and continued momentum to a broad professional audience?
+
+**Decision:** Use Executive Portrait → Twenty-Year Journey → Capability Compounder → Outcome Ledger → Trust & Respect → Influence Web → Teaching & Service Ripple → Momentum & Next Horizon. Give each view a stable URL hash and a distinct visual grammar.
+
+**Rationale:** Identity and chronology orient the visitor; capability and outcomes earn the value proposition; third-party voices establish trust before the site interprets influence; service reveals character beyond title; evidence-backed momentum closes on relevance rather than nostalgia. Stable hashes let any audience enter at the view most relevant to them without losing the intended sequence.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Keep the legacy eight graph/data tabs | Organizes by source shape rather than the questions a professional audience is trying to answer |
+| One long scrolling résumé | Makes twenty years linear and hides the parallel service and capability strands |
+| Lead with a social/knowledge graph | Visually impressive but risks implying influence from co-occurrence and asks visitors to decode the data before knowing the person |
+| Lead with testimonials | External validation is stronger after visitors understand the work it validates |
+
+---
+
+## Decision 038: Production Portfolio Builds Exclude the Raw Public Directory
+
+**Date:** 2026-08-06
+**Phase:** Journey Analysis and Visualization
+**Category:** Privacy / Deployment
+
+**Question:** How can the static portfolio retain the approved photo and logo without copying the local raw-evidence symlink into every production build?
+
+**Decision:** Set Vite `publicDir: false`, import approved presentation assets explicitly, and replace validated local evidence paths with opaque source IDs before writing `journey.json`.
+
+**Rationale:** The previous `viz/public/data/evidence` symlink caused Vite to copy the entire evidence corpus into `dist`. Disabling implicit public copying makes inclusion opt-in at the module boundary and reduces the production bundle from a private archive to the curated app and approved assets.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Leave `publicDir` enabled and rely on deployment excludes | Easy to misconfigure and still produces an unsafe local build artifact |
+| Delete the evidence symlink | Destructive to a legacy workflow and does not create a durable build-time boundary |
+| Copy a curated evidence subset into `public/` | Requires a second publication allow-list and raw-artifact renderer that the current eight views do not need |
+| Keep local filenames as non-clickable provenance | Still discloses internal-looking mail and proposal subjects without helping a public visitor verify them |
+| Keep raw paths clickable but protect them only in hosting | Static hosting has no reliable authorization layer for bundled files |
+
+---
+
+## Decision 039: Provenance Explanations Use Public Disclosures
+
+**Date:** 2026-08-06
+**Phase:** Journey Analysis and Visualization
+**Category:** Accessibility / Evidence UX
+
+**Question:** How should evidence strength and caveat explanations remain inspectable without exposing local filenames or depending on hover-only browser tooltips?
+
+**Decision:** Publish a stable opaque source ID with each reference and present evidence/caveat explanations through compact native disclosure controls. Keep the tier and caveat label visible when collapsed; reveal the support statement or glossary definition to mouse, keyboard, and touch users.
+
+**Rationale:** Evidence credibility depends on both the label and its meaning. Native disclosures are progressively enhanced, keyboard-operable, touch-operable, and screen-reader discoverable. Opaque IDs preserve internal traceability through the builder without leaking local artifact names into the deployable bundle.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Continue using `title` attributes | Hover-only detail is unreliable on touch and inaccessible to many keyboard users |
+| Print every explanation permanently | Repeats long provenance copy across dense visual cards and obscures the journey narrative |
+| Remove provenance details entirely | Weakens the evidence-led positioning and makes tier/caveat labels harder to interpret |
+
+---
+
+## Decision 040: Version the Complete Export in the Private Repository
+
+**Date:** 2026-08-07
+**Phase:** Publication
+**Category:** Data Portability / Repository Storage
+
+**Question:** How should the owner-requested complete 363 MB relationship export be committed when one full-vector JSONL file exceeds GitHub's 100 MB per-file limit?
+
+**Decision:** Track the complete export in the confirmed private GitHub repository and deterministically split each embedding stream into sequential JSONL parts capped below 48 MiB. Preserve every record, list every part in the manifest, and keep the export excluded from the public Vite build.
+
+**Rationale:** The owner explicitly requested that the export folder be included. Deterministic parts satisfy normal GitHub file-size constraints without installing Git LFS, losing vectors, changing their order, or weakening manifest verification. Private repository versioning provides an access-controlled portability copy while the canonical DuckDB and ChromaDB stores remain local.
+
+**Alternatives Considered:**
+
+| Option | Why It Lost |
+|--------|-------------|
+| Keep the export gitignored | Contradicts the owner's explicit publication scope |
+| Install and use Git LFS | Adds client/server tooling and quota dependencies that this repository does not currently use |
+| Omit embeddings | Makes the committed export incomplete |
+| Commit a compressed archive | Reduces inspectability and can still produce oversized opaque objects |
+| Publish the export with the portfolio | Violates the private-data boundary; repository storage does not authorize public deployment |

@@ -114,6 +114,51 @@ A personal knowledge system that ingests all professional artifacts (documents, 
 
 ---
 
+### Canonical relationship export lane
+
+The operational stores remain canonical: DuckDB owns structured records, ChromaDB owns vector records, and NetworkX is rebuilt in memory from DuckDB nodes and edges. `scripts/export_relationships.py` creates a portable, deterministic private snapshot without introducing another source of truth.
+
+```
+data/knowledge.duckdb ──┐
+                        ├──> validated staging ──> atomic install
+data/chroma/ ─────────┘      data/exports/relationships/
+          │                         ├─ DuckDB tables + relationship projections
+          └─ NetworkX rebuild      ├─ Chroma documents, metadata, vectors
+                                    ├─ exact node-link graph + metrics
+                                    └─ manifest, hashes, inventories, checks
+```
+
+The exporter opens DuckDB read-only, verifies Chroma IDs before and after streaming, compares overlapping Chroma documents and metadata with DuckDB chunks, validates graph counts and endpoints, hashes every output, and replaces the previous export only after validation. `viz/data/knowledge.duckdb` and `viz/data/chroma` are noncanonical and excluded.
+
+The generated export is private: it contains raw artifact text, people, metadata, and full embedding vectors. It is versioned only in the access-controlled private repository by explicit owner decision and never crosses the public deployment boundary. Oversized vector streams are deterministically split below 48 MiB per file so the complete snapshot remains Git-hostable without Git LFS.
+
+---
+
+### Curated Journey Atlas projection
+
+The public portfolio does not query the private export. `scripts/build_journey_data.py` is a deliberate editorial boundary that selects reviewed, public-safe evidence into one versioned static contract:
+
+```
+reviewed evidence files + longitudinal analysis
+                    │
+                    ▼
+        validate schema, provenance,
+        chronology, metrics, and privacy
+                    │
+          ┌─────────┴─────────┐
+          ▼                   ▼
+viz/src/data/journey.json   data/journey-analysis.md
+          │
+          ▼
+eight-view React Journey Atlas ──> Vite static build
+```
+
+The builder validates private references containing local evidence paths, then removes those paths at the publication boundary. Public references contain only an opaque `source_id`, `tier`, `supports`, and optional source year. Evidence tiers distinguish corroborated, documented, self-reported, and derived material; `caveat_labels` resolve through a shared glossary. The browser receives neither artifact bodies nor local filenames.
+
+The Vite build sets `publicDir: false`. Only explicitly imported presentation assets can enter the module graph, which prevents the local raw-evidence symlink from being copied into `dist`.
+
+---
+
 ## 3. Tech Stack
 
 | Layer | Technology | Rationale |
@@ -125,9 +170,11 @@ A personal knowledge system that ingests all professional artifacts (documents, 
 | LLM (classification) | Claude (interactive session) | Superior classification quality, no external API needed (Decision 028) |
 | LLM (synthesis) | Google Gemini API (2.5-pro / 2.5-flash) | User's existing subscription, strong synthesis |
 | LLM (fallback) | Ollama (gemma4, BGE-m3) | Offline capability, free |
-| Frontend | React + TypeScript + Vite + D3 | SPA with tab navigation, static JSON data |
-| Viz Data | `twin publish` static JSON generation | Pre-shaped per view, evidence-enriched |
-| Evidence Index | DuckDB evidence_index table | 1,154 files (869 markdown, 236 images, 14 certs, 20 sessions) |
+| Frontend | React + TypeScript + Vite + D3 | SPA with hash-addressable view navigation and static JSON data |
+| Journey Data | `scripts/build_journey_data.py` → `viz/src/data/journey.json` | Curated, evidence-tiered, public-safe projection for exactly eight views |
+| Legacy Viz Data | `twin publish` static JSON generation | Pre-shaped files retained for archived view components |
+| Relationship Export | Deterministic JSON/JSONL/YAML + SHA-256 manifest | Portable inspection of DuckDB, ChromaDB, and the exact runtime NetworkX projection without changing canonical stores |
+| Evidence Index | DuckDB evidence_index table | 562 indexed Markdown records; coverage gap is reported rather than hidden |
 | CLI | Python (Typer) | Consistent with backend, rich terminal output, modern Click alternative |
 | Drive Sync | Google Drive API v3 | Official API, change tracking with page tokens |
 | Deployment (cloud) | Domain-agnostic, configurable | Vercel/Cloud Run or equivalent. Decided at Phase 7. |
@@ -142,15 +189,19 @@ A personal knowledge system that ingests all professional artifacts (documents, 
 
 - **Local:** Development, ingestion, private data management. All source material stays on local machine.
 - **Cloud:** Read-only public projection. Portfolio site, chat twin, API for consumers. Deployed data is a curated subset.
+- **Private export:** `data/exports/relationships/` stays local and is never consumed by the public build.
 
 ### Data Flow
 
 ```
 Local Machine (source of truth)
     │
-    │ explicit publish action
+    │ curated builder + explicit publish action
     ▼
-Cloud (read-only projection)
+Validated public projection (no raw evidence)
+    │
+    ▼
+Cloud (read-only static build)
     │
     │ serves
     ▼
@@ -164,6 +215,8 @@ Public consumers (portfolio, chat, API)
 | Public | Safe to publish | Project names, public skills, cert names | Published to cloud |
 | Internal | Professional but private | Performance review content, salary info | Local only, never published |
 | Confidential | Sensitive | NDA-covered project details, personal emails | Local only, redacted in outputs |
+
+The private relationship export is always Local regardless of individual source-row visibility. The Journey Atlas receives only reviewed aggregates and attributed public recommendations after validation.
 
 ---
 

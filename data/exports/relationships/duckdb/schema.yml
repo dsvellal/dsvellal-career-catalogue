@@ -1,0 +1,716 @@
+version: 1
+tables:
+  "anonymization_map":
+    row_count: 0
+    columns:
+      - name: "id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "original_node_id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "anonymized_name"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "anonymized_description"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "anonymized_properties"
+        type: "JSON"
+        nullable: true
+        default: "'{}'"
+      - name: "created_at"
+        type: "TIMESTAMP"
+        nullable: false
+        default: "CURRENT_TIMESTAMP"
+      - name: "reviewed"
+        type: "BOOLEAN"
+        nullable: true
+        default: "CAST('f' AS BOOLEAN)"
+      - name: "reviewer_notes"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+    constraints:
+      - type: "PRIMARY KEY"
+        text: "PRIMARY KEY(id)"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["original_node_id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "FOREIGN KEY"
+        text: "FOREIGN KEY (original_node_id) REFERENCES nodes(id)"
+        columns: ["original_node_id"]
+        referenced_table: "nodes"
+        referenced_columns: ["id"]
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["anonymized_name"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["created_at"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+  "artifacts":
+    row_count: 1364
+    columns:
+      - name: "id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "file_path"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "file_name"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "file_type"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "content_hash"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "ingested_at"
+        type: "TIMESTAMP"
+        nullable: false
+        default: "CURRENT_TIMESTAMP"
+      - name: "source_channel"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "status"
+        type: "VARCHAR"
+        nullable: true
+        default: "'processed'"
+      - name: "metadata"
+        type: "JSON"
+        nullable: true
+        default: "'{}'"
+      - name: "classification"
+        type: "JSON"
+        nullable: true
+        default: "'{}'"
+      - name: "raw_text"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "chunk_count"
+        type: "INTEGER"
+        nullable: true
+        default: "0"
+      - name: "media_path"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "media_url"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+    constraints:
+      - type: "PRIMARY KEY"
+        text: "PRIMARY KEY(id)"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["file_name"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["file_type"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["content_hash"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["ingested_at"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["source_channel"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+  "chunks":
+    row_count: 25767
+    columns:
+      - name: "id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "artifact_id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "sequence"
+        type: "INTEGER"
+        nullable: false
+        default: null
+      - name: "content"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "section"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "embedding_id"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "metadata"
+        type: "JSON"
+        nullable: true
+        default: "'{}'"
+    constraints:
+      - type: "PRIMARY KEY"
+        text: "PRIMARY KEY(id)"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["artifact_id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "FOREIGN KEY"
+        text: "FOREIGN KEY (artifact_id) REFERENCES artifacts(id)"
+        columns: ["artifact_id"]
+        referenced_table: "artifacts"
+        referenced_columns: ["id"]
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["sequence"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["content"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+  "edges":
+    row_count: 17190
+    columns:
+      - name: "id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "source_id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "target_id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "type"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "properties"
+        type: "JSON"
+        nullable: false
+        default: "'{}'"
+      - name: "weight"
+        type: "DOUBLE"
+        nullable: true
+        default: "1.0"
+      - name: "created_at"
+        type: "TIMESTAMP"
+        nullable: false
+        default: "CURRENT_TIMESTAMP"
+      - name: "source_artifact_id"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "confidence"
+        type: "DOUBLE"
+        nullable: true
+        default: "1.0"
+    constraints:
+      - type: "PRIMARY KEY"
+        text: "PRIMARY KEY(id)"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["source_id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "FOREIGN KEY"
+        text: "FOREIGN KEY (source_id) REFERENCES nodes(id)"
+        columns: ["source_id"]
+        referenced_table: "nodes"
+        referenced_columns: ["id"]
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["target_id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "FOREIGN KEY"
+        text: "FOREIGN KEY (target_id) REFERENCES nodes(id)"
+        columns: ["target_id"]
+        referenced_table: "nodes"
+        referenced_columns: ["id"]
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["type"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["properties"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["created_at"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+  "evidence_index":
+    row_count: 562
+    columns:
+      - name: "id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "file_path"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "file_name"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "title"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "year"
+        type: "INTEGER"
+        nullable: true
+        default: null
+      - name: "date"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "era"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "category"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "channel"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "involvement_type"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "role_at_time"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "people"
+        type: "VARCHAR[]"
+        nullable: true
+        default: null
+      - name: "skills"
+        type: "VARCHAR[]"
+        nullable: true
+        default: null
+      - name: "programs"
+        type: "VARCHAR[]"
+        nullable: true
+        default: null
+      - name: "quotes"
+        type: "VARCHAR[]"
+        nullable: true
+        default: null
+      - name: "nps_score"
+        type: "FLOAT"
+        nullable: true
+        default: null
+      - name: "metric_value"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "metric_label"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "source_type"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "has_image"
+        type: "BOOLEAN"
+        nullable: true
+        default: "CAST('f' AS BOOLEAN)"
+      - name: "created_at"
+        type: "TIMESTAMP"
+        nullable: true
+        default: "CURRENT_TIMESTAMP"
+    constraints:
+      - type: "PRIMARY KEY"
+        text: "PRIMARY KEY(id)"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["file_path"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["file_name"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+  "gdrive_sync":
+    row_count: 0
+    columns:
+      - name: "id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "drive_file_id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "drive_name"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "drive_modified_time"
+        type: "TIMESTAMP"
+        nullable: true
+        default: null
+      - name: "local_artifact_id"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "sync_status"
+        type: "VARCHAR"
+        nullable: true
+        default: "'synced'"
+      - name: "last_synced_at"
+        type: "TIMESTAMP"
+        nullable: true
+        default: null
+      - name: "page_token"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+    constraints:
+      - type: "PRIMARY KEY"
+        text: "PRIMARY KEY(id)"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["drive_file_id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "UNIQUE"
+        text: "UNIQUE(drive_file_id)"
+        columns: ["drive_file_id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["drive_name"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "FOREIGN KEY"
+        text: "FOREIGN KEY (local_artifact_id) REFERENCES artifacts(id)"
+        columns: ["local_artifact_id"]
+        referenced_table: "artifacts"
+        referenced_columns: ["id"]
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+  "ingestion_log":
+    row_count: 1259
+    columns:
+      - name: "id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "timestamp"
+        type: "TIMESTAMP"
+        nullable: false
+        default: "CURRENT_TIMESTAMP"
+      - name: "action"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "artifact_id"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "details"
+        type: "JSON"
+        nullable: true
+        default: "'{}'"
+      - name: "channel"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+    constraints:
+      - type: "PRIMARY KEY"
+        text: "PRIMARY KEY(id)"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["timestamp"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["action"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+  "nodes":
+    row_count: 3471
+    columns:
+      - name: "id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "type"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "name"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "description"
+        type: "VARCHAR"
+        nullable: true
+        default: null
+      - name: "properties"
+        type: "JSON"
+        nullable: false
+        default: "'{}'"
+      - name: "created_at"
+        type: "TIMESTAMP"
+        nullable: false
+        default: "CURRENT_TIMESTAMP"
+      - name: "updated_at"
+        type: "TIMESTAMP"
+        nullable: false
+        default: "CURRENT_TIMESTAMP"
+      - name: "source_artifacts"
+        type: "VARCHAR[]"
+        nullable: true
+        default: "main.list_value()"
+      - name: "confidence"
+        type: "DOUBLE"
+        nullable: true
+        default: "1.0"
+      - name: "published"
+        type: "BOOLEAN"
+        nullable: true
+        default: "CAST('f' AS BOOLEAN)"
+      - name: "visibility"
+        type: "VARCHAR"
+        nullable: true
+        default: "'public'"
+    constraints:
+      - type: "PRIMARY KEY"
+        text: "PRIMARY KEY(id)"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["type"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["name"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["properties"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["created_at"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["updated_at"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+  "publications":
+    row_count: 0
+    columns:
+      - name: "id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "published_at"
+        type: "TIMESTAMP"
+        nullable: false
+        default: "CURRENT_TIMESTAMP"
+      - name: "snapshot_hash"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "node_count"
+        type: "INTEGER"
+        nullable: true
+        default: null
+      - name: "config"
+        type: "JSON"
+        nullable: true
+        default: "'{}'"
+    constraints:
+      - type: "PRIMARY KEY"
+        text: "PRIMARY KEY(id)"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["published_at"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["snapshot_hash"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+  "voice_profile":
+    row_count: 1
+    columns:
+      - name: "id"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "version"
+        type: "INTEGER"
+        nullable: false
+        default: null
+      - name: "profile_text"
+        type: "VARCHAR"
+        nullable: false
+        default: null
+      - name: "writing_samples"
+        type: "JSON"
+        nullable: true
+        default: "'[]'"
+      - name: "tone_parameters"
+        type: "JSON"
+        nullable: true
+        default: "'{}'"
+      - name: "created_at"
+        type: "TIMESTAMP"
+        nullable: false
+        default: "CURRENT_TIMESTAMP"
+      - name: "active"
+        type: "BOOLEAN"
+        nullable: true
+        default: "CAST('t' AS BOOLEAN)"
+    constraints:
+      - type: "PRIMARY KEY"
+        text: "PRIMARY KEY(id)"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["version"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["profile_text"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["created_at"]
+        referenced_table: null
+        referenced_columns: []
+      - type: "NOT NULL"
+        text: "NOT NULL"
+        columns: ["id"]
+        referenced_table: null
+        referenced_columns: []

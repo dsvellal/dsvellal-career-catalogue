@@ -152,3 +152,38 @@
 7. User sees: graph statistics (node count by type, edge count, coverage timeline)
 8. User reviews and manually marks nodes as published/confidential
 ```
+
+---
+
+## Flow 8: Audit All Relationship Stores Locally
+
+**Actor:** Datta or a trusted local analyst
+**Goal:** Inspect every structured and vector relationship in portable formats without changing the source stores
+
+```
+1. User runs: .venv/bin/python scripts/export_relationships.py
+2. Exporter opens data/knowledge.duckdb read-only and connects to canonical data/chroma
+3. System stages every DuckDB table, enriched relationship projections, Chroma records/full vectors, and the exact rebuilt NetworkX graph
+4. System checks referential integrity, Chroma/DuckDB alignment, graph counts, and output hashes
+5. On success, system atomically installs data/exports/relationships/
+6. User reviews manifest.json and quality/consistency-report.md before querying the JSON/JSONL/YAML files
+7. If validation fails, the prior valid snapshot remains untouched
+8. The private export remains local and never enters the portfolio build
+```
+
+---
+
+## Flow 9: Explore the Public Journey Atlas
+
+**Actor:** Hiring manager, engineering peer, conference organizer, or community visitor
+**Goal:** Understand Datta's growth, value, trust, influence, service, and forward direction at the right level of depth
+
+```
+1. Visitor opens the shared portfolio link; #portrait establishes identity and the evidence vocabulary
+2. Visitor follows the deliberate sequence through Journey, Capabilities, Outcomes, Respect, Influence, Service, and Momentum
+3. Each view names its data basis and displays evidence-tier or caveat labels near material claims
+4. Visitor can deep-link directly to any view through its URL hash
+5. Desktop users navigate with links or Left/Right/Home/End keys; mobile users use a labeled select control
+6. Dense charts expose scroll regions and accessible SVG titles/descriptions; reduced-motion preferences disable page animation
+7. Raw evidence files, private relationships, emails, donor identities, and full embeddings are never served by the public build
+```
