@@ -66,13 +66,28 @@ Detailed, traceable evidence extracted from ingested sources. Each entry links t
 | Date span | Nov 2013 — Aug 2020 |
 | Data files | [all_sessions_raw.json](sessions/student-feedback/all_sessions_raw.json) &#124; 13 source files |
 
+## Cross-Cutting: Resume Collection — Career Progression (2012–2026)
+
+**[resume-career-progression.md](sessions/resume-career-progression.md)** — 7 resume versions + Amazon Work Examples, 14-year arc
+
+| Version | Year | Title | Format | Key Evidence |
+|---------|------|-------|--------|--------------|
+| [2012 (IBM era)](2012/individual/004-resume-2012-ibm-era.md) | 2012 | Staff Software Engineer, IBM | 5-page detailed | Patents, worldwide component lead, 9 events organized |
+| [2020 (Philips India)](2020/individual/001-resume-2020-philips-india-swcoe.md) | 2020 | Competency Specialist II, Philips India | 1-page professional | 2500 devs, 72 departments, code-quality analyzer |
+| [2021 (US move)](2021/individual/044-resume-2021-philips-competency-lead.md) | 2021 | Software Competency Lead, Philips NA | 1-page executive | €2.1M savings, CTO Award, defects 37→0.11 |
+| [2022 (established)](2022/individual/011-resume-2022-philips-usa-established.md) | 2022 | Software CoE Competency Lead | 1-page executive | USA/LATAM/Europe/Mexico scope |
+| [2023 (redesign)](2023/individual/021-resume-2023-digital-transformation-leader.md) | 2023 | Software Excellence Competency Lead | Modern 2-column | $3M+ headline, AI/ML skills, youngest Principal |
+| [2025 (principal)](2025/individual/079-resume-2025-principal-competency-lead.md) | 2025 | Principal (Software Competency Lead) | Modern 2-column | Bar Raiser program, Prompt Engineering |
+| [2026 (latest)](2026/individual/112-resume-2026-latest-authoritative.md) | 2026 | Software Competency Lead | Comprehensive | Full record-keeping format |
+| [Amazon Work Examples](2018/individual/019-resume-2018-amazon-work-examples.md) | 2018 | SDE-2, Amazon | DOCX (LP format) | 1.9B ASINs, $35K savings, 68 interviews |
+
 ## Structure
 
 ```
 data/evidence/
 ├── INDEX.md                          (this file)
 ├── 2012/
-│   └── individual/                   (2 files — IBM era)
+│   └── individual/                   (4 files — IBM era + resume)
 ├── 2013/
 │   └── individual/                   (17 files — IBM/Exeter era)
 ├── 2014/
@@ -102,13 +117,14 @@ data/evidence/
 │   └── cross-bu-engagement-influence.md                 (thematic summary)
 ```
 
-## 2012 — 2 artifacts ingested
+## 2012 — 4 artifacts ingested
 
 **Full individual index:** [2012/individual/_INDEX.md](2012/individual/_INDEX.md)
 
 | Category | Count | Key Evidence |
 |----------|-------|--------------|
 | LinkedIn Recommendations | 3 | Mahesh Paradkar (Master Inventor) — HackDay with universities; Brijesh Krishnan (mgr, now VP) — mentoring interns early; Praveen Kumar — "go to man for any situation" |
+| Resume | 1 | [2012 IBM era resume](2012/individual/004-resume-2012-ibm-era.md) — 5-page detailed: patents, worldwide lead, 9 events organized, most influential TEC member |
 
 ## 2013 — 17 artifacts ingested
 
@@ -207,7 +223,7 @@ data/evidence/
 - EE Scrum Workshop: 4.6/5 presenter score (highest)
 - TRMS SHOWTIME newsletter feature
 
-## 2018 — 16 artifacts ingested
+## 2018 — 17 artifacts ingested
 
 **Full individual index:** [2018/individual/_INDEX.md](2018/individual/_INDEX.md)
 
@@ -217,6 +233,7 @@ data/evidence/
 | Performance Profile | 2 | Phonetool (123 micro-achievements), Comprehensive contribution doc (570 code changes) |
 | Performance Review | 2 | Forte 2017 ("never seen anyone better"), Forte 2018 (Ownership 16/16) |
 | Teaching & Training | 3 | Scrum workshop (highest-scoring trainer), Agile PO workshop |
+| Resume / Work Examples | 1 | [Amazon Work Examples](2018/individual/019-resume-2018-amazon-work-examples.md) — LP format: 1.9B ASINs, $35K savings, 68 interviews, RiPE, SVA tools |
 | Philips era (overlap) | 3 | Code quality, feedback request, Netflix CI/CD (late 2018) |
 
 **Amazon era highlights (2018):**
@@ -270,7 +287,7 @@ data/evidence/
 | 8 | [Technical Debt / SIG / BEQR](2019/technical-debt-sig-partnership.md) | 9 emails | External partnership, judging |
 | 9 | [Cross-BU Influence](2019/cross-bu-engagement-influence.md) | 14 emails | Organizational connector role |
 
-## 2020 — 67 emails + 64 .connect artifacts + 12 informal feedback screenshots ingested
+## 2020 — 67 emails + 64 .connect artifacts + 12 informal feedback screenshots + 1 resume ingested
 
 **Full individual index:** [2020/individual/_INDEX.md](2020/individual/_INDEX.md)
 
@@ -305,7 +322,7 @@ data/evidence/
 
 **Image:** [pic-annual-awards-2020-organisational-capabilities.jpg](images/2020/pic-annual-awards-2020-organisational-capabilities.jpg)
 
-## 2021 — 3 prior artifacts + 19 .connect artifacts ingested
+## 2021 — 3 prior artifacts + 19 .connect artifacts + 1 resume ingested
 
 **Full individual index:** [2021/individual/](2021/individual/)
 
@@ -314,10 +331,11 @@ data/evidence/
 | 1 | [Outstanding Achievement Award — CTO 2021](2021/individual/001-outstanding-achievement-award-cto-2021.md) | 2021-02-24 | Image (screenshot) | CTO-level award, 1 of 30 globally, enterprise R&D recognition |
 | 2 | [TDC Connections 2021 — Speaker](2021/individual/002-tdc-connections-2021-speaker.md) | 2021-06-08 | Image (certificate) | External conference speaker, "Less work, more value: shifting left", co-presented with Ian Watson & David Terol |
 | 3 | [Philips Excellence Competition — .grow Program](2021/individual/003-philips-excellence-competition-grow-2021.md) | 2021 | PDF (10 pages) | Global program touching 10,000+ employees, 6,560 community members, Bar Raiser, O'Reilly 10K licenses, JSCPD cited |
+| 44 | [Resume 2021 — Philips Competency Lead](2021/individual/044-resume-2021-philips-competency-lead.md) | 2021 | PDF (1 page) | €2.1M savings, CTO Award, defects 37→0.11, US move, 15 years exp |
 
 **Images:** [outstanding-achievement-award-cto-2021.jpg](images/2021/outstanding-achievement-award-cto-2021.jpg) | [tdc-connections-2021-speaker-certificate.jpg](images/2021/tdc-connections-2021-speaker-certificate.jpg)
 
-## 2022 — 7 emails ingested
+## 2022 — 7 emails + 1 resume ingested
 
 **Full individual index:** [2022/individual/_INDEX.md](2022/individual/_INDEX.md)
 
@@ -328,6 +346,7 @@ data/evidence/
 | DevOps Pipeline / Pair Reviews | 4 | Fusion team Alpha pipeline, reusable CI workflows, weekly pair sessions |
 | GDP Software Track | 2 | Global graduate program track ownership, trainee mentoring |
 | InnerSource / GitHub | 1 | IssueOps implementation for LDAP automation |
+| Resume | 1 | [2022 resume](2022/individual/011-resume-2022-philips-usa-established.md) — CoE title, USA/LATAM/Europe/Mexico scope |
 
 ### Thematic Summaries
 
@@ -336,7 +355,7 @@ data/evidence/
 | 1 | [DevOps Pipeline — SaaS Fusion Team](2022/devops-pipeline-saas-fusion.md) | 4 emails | Architecture to Alpha, "without this fusion team couldn't have achieved", reusable CI workflows |
 | 2 | [GDP Software Track & InnerSource](2022/gdp-software-track-innersource.md) | 3 emails | Global graduate program lead, IssueOps GitHub Actions coding |
 
-## 2023 — 16 artifacts ingested (15 emails + 1 informal feedback screenshot)
+## 2023 — 17 artifacts ingested (15 emails + 1 informal feedback screenshot + 1 resume)
 
 **Full individual index:** [2023/individual/_INDEX.md](2023/individual/_INDEX.md)
 
@@ -351,6 +370,7 @@ data/evidence/
 | Recognition & Milestones | 2 | SW Excellence Awards, 5-year service milestone |
 | LinkedIn Recommendations | 1 | NaveenKumar VR — calmness, purpose-first delegation, "changed me as a person" |
 | Informal Feedback (Teams) | 1 | Taky Djarou — HPM Release Workflows ("extremely helpful" dry-run flag) |
+| Resume | 1 | [2023 resume](2023/individual/021-resume-2023-digital-transformation-leader.md) — modern 2-column redesign, $3M+ headline, AI/ML skills, youngest Principal in Philips India |
 
 ### Thematic Summaries
 
@@ -380,7 +400,7 @@ data/evidence/
 |---|-------|-----------------|---------|
 | 1 | [Enterprise Tooling, SonarQube & PI Gate](2024/enterprise-tooling-pi-gate.md) | 5 emails | CodeScene "impressive", SonarQube reusable workflows, EPS-AD PI gate passed, organizing Developer Days |
 
-## 2025 — 74 artifacts ingested
+## 2025 — 75 artifacts ingested (74 prior + 1 resume)
 
 **Full individual index:** [2025/individual/_INDEX.md](2025/individual/_INDEX.md)
 
@@ -398,6 +418,7 @@ data/evidence/
 | Professional Giving Back | 1 | 74-slide photo album — 15+ venues, 1000+ students, 10yr span (IBM→Exeter→Philips→community), 73 images preserved |
 | Social Giving Back | 1 | 39-slide photo album — govt schools, yoga with children (from 2007!), rural villages, Ekal Vidyalaya, book donations, 38 images |
 | Book Distribution Program | 1 | 10 years (2014-2026), Rs. 19.7 lakh raised ($24K), 219 contributors, Sevabharathi Trust, organized from India then USA |
+| Resume | 1 | [2025 resume](2025/individual/079-resume-2025-principal-competency-lead.md) — Principal title elevated, Bar Raiser quantified, Prompt Engineering skill |
 
 ### Thematic Summaries
 
@@ -407,7 +428,7 @@ data/evidence/
 | 2 | [Skill Building — Philips University](2025/skill-building-philips-university.md) | 8 emails | 33 sessions, 492 learners, €84K, 8.9/10, 2026 AI curriculum planning |
 | 3 | [PQR NPS 10/10 & Product Quality](2025/pqr-nps10-product-quality.md) | 5 emails | Perfect NPS, "Bulls eye", "innovative ideas", Freddie 30-question review |
 
-## 2026 — 98 emails ingested
+## 2026 — 99 artifacts ingested (98 emails + 1 resume)
 
 **Full individual index:** [2026/individual/_INDEX.md](2026/individual/_INDEX.md)
 
@@ -423,6 +444,7 @@ data/evidence/
 | XITE Leadership Showcase | ~5 | Presented to Roy/Shez (ExCo), leadership Q&A notes shared |
 | NAM Analytics / US Engagement | ~3 | Community calls March + June 2026 |
 | 62304 / Compliance Training | ~3 | PU session on 62304 + AI compliance |
+| Resume | 1 | [2026 resume (comprehensive)](2026/individual/112-resume-2026-latest-authoritative.md) — full-detail format, record-keeping version |
 
 ### Thematic Summaries
 

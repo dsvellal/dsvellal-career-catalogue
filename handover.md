@@ -1,13 +1,18 @@
 # Handover
 
-**Last Updated:** 2026-08-06T22:00:00Z
-**Session:** Informal feedback ingestion (2023 + 2024)
+**Last Updated:** 2026-08-06T23:00:00Z
+**Session:** Resume collection ingestion (7 PDFs + 1 DOCX)
 
 ---
 
 ## Last Completed Action
 
-Ingested 19 informal feedback artifacts (18×2024, 1×2023) from screenshots and PDFs in `/Downloads/Career/Feedbacks/Informal/`. Created 19 individual evidence markdown files with full YAML frontmatter, key quotes, and full content transcripts. Copied source images to `data/evidence/images/`. Updated INDEX files for 2023, 2024, and root.
+Ingested 8 resume/career files from `/Downloads/Career/Resume/`:
+- 6 PDF resume versions (2012, 2020, 2021, 2022, 2023, 2025, 2026) — each as individual evidence file
+- 1 DOCX Amazon Work Examples document — structured LP-format work examples
+- 1 thematic summary (career progression arc across all versions)
+
+Updated INDEX.md (root + year-specific), updated README.md total count (1,154 → 1,162).
 
 ---
 
@@ -17,21 +22,22 @@ Ingested 19 informal feedback artifacts (18×2024, 1×2023) from screenshots and
 |--------|--------|
 | Phase | Data architecture enhancement (DESIGN COMPLETE, IMPLEMENTATION PENDING) |
 | Knowledge graph | 3,471 nodes, 17,190 edges, 25,767 chunks (in DuckDB/ChromaDB) |
-| Evidence files (total) | 1001 files in data/evidence/ |
-| Evidence markdown | 809 markdown files (761 individual + 14 indexes + 34 other) |
-| Evidence images | 179 files (Viva Engage screenshots, presentation slides, JIRA screenshots, awards) |
-| Evidence certificates | 14 files (CodeScene, Google, academic credentials) |
-| Evidence sessions | 20 files (student feedback xlsx/csv, talks index) |
-| Evidence snapshots | 4 files (internal Philips content preserved) |
+| Evidence files (total) | 1,162 files in data/evidence/ |
+| Evidence markdown | 877 markdown files |
+| Evidence images | 236 files |
+| Evidence certificates | 14 files |
+| Evidence sessions | 20 files |
+| Evidence snapshots | 4 files |
 | Batch JSON | 32 files in data/ (ingestion source data) |
 | Enrich JSON | 11 files in data/ (enrichment outputs) |
 | Viz tabs | 8 live at http://localhost:5174 |
 | Timeline | 6 eras, 353 items, 43 with evidence links (12%) |
 | Tests | 227 pass, 2 skipped |
 | Build | TypeScript clean |
-| Exeter evidence | 98 artifacts (2013: 17, 2014: 54, 2015: 34, 2017: 2) — fully ingested with frontmatter |
-| Amazon evidence | 52 artifacts (2016: 13, 2017: 28, 2018: 16) — fully ingested with frontmatter |
-| Git | Clean (all committed and pushed to main) |
+| Exeter evidence | 98 artifacts (2013: 17, 2014: 54, 2015: 34, 2017: 2) |
+| Amazon evidence | 53 artifacts (2016: 13, 2017: 28, 2018: 17) — includes Work Examples doc |
+| Resume collection | 8 artifacts (2012, 2020, 2021, 2022, 2023, 2025, 2026 + Amazon Work Examples) |
+| Git | Uncommitted changes (resume ingestion) |
 
 ---
 
@@ -45,39 +51,21 @@ The user wants to re-ingest Amazon, Exeter, and IBM content by **enhancing exist
 
 ## Next Steps
 
-### Step 0: Continue ingesting remaining files from /Downloads/Career/Feedbacks/
+### Step 0: Continue ingesting remaining files from /Downloads/Career/
 
-Continue ingesting any remaining artifact files from `/Downloads/Career/Feedbacks/` that have not yet been processed.
+Check if there are other subdirectories in `/Downloads/Career/` not yet ingested.
 
 ### Step 1: Update `evidence_index.py` to parse YAML frontmatter
 
-The DuckDB index builder (`src/twin/ingestion/evidence_index.py`) currently parses evidence files using regex on the markdown body. It needs to:
-1. Check for YAML frontmatter (between `---` markers) first
-2. If present, use frontmatter values directly (fast path)
-3. If absent, fall back to current regex parsing (backward compat)
-4. Add new columns to evidence_index table: `organization`, `tags`, `sentiment`, `impact_type`, `recurring`, `period`
+The DuckDB index builder needs YAML frontmatter support (see Decision 028-031).
 
 ### Step 2: Enhance existing evidence files in-place
 
-For each file in `data/evidence/<year>/individual/*.md`:
-1. Read the file
-2. Extract/infer all 18 frontmatter fields from the body content
-3. Prepend YAML frontmatter block
-4. Write back (body unchanged)
-
-Priority order:
-- Amazon files (in `data/evidence/` — check what exists)
-- Exeter files
-- IBM files
-- Then all Philips files (2018-2026)
+Prepend YAML frontmatter to all existing evidence markdown files.
 
 ### Step 3: Rebuild DuckDB index
 
-Run `twin index-evidence` after enhancement to verify all frontmatter parses correctly.
-
-### Step 4: Begin new content ingestion
-
-User will provide new Amazon/Exeter/IBM content for re-ingestion with the enhanced schema.
+Run `twin index-evidence` after enhancement.
 
 ---
 
@@ -98,48 +86,13 @@ None.
 | 030: Recurring artifacts | Same format, `recurring: true` + `period: YYYY-MM` |
 | 031: Re-ingestion strategy | Enhance in-place (prepend frontmatter, body unchanged) |
 
-### YAML Frontmatter Schema (canonical)
+### Resume Collection Key Insight
 
-```yaml
----
-title: <string>
-date: <ISO date or original date string>
-year: <int>
-era: <Amazon | Exeter | IBM | Philips India | Philips USA | Independent>
-organization: <Philips | Amazon | Exeter | IBM | Independent>
-category: <string>
-source_type: <email | calendar | image | pdf | presentation | spreadsheet | document | social_post | github | certificate>
-channel: <email_archive | outlook_calendar | viva_engage | linkedin | github | internal_screenshot | ...>
-involvement: <author | direct_recipient | cc_mentioned | participant | mentioned_by_name | part_of_distribution>
-role: <role title at time>
-people: [list of names]
-skills: [list of skills demonstrated/exercised]
-programs: [list of programs referenced]
-tags: [flexible multi-label tags]
-nps: <float or null>
-sentiment: <positive | neutral | negative>
-impact_type: <award | recognition | delivery | operational | leadership | technical | mentoring | null>
-recurring: <true | false>
-period: <YYYY-MM, only if recurring>
----
-```
+Datta maintains **two parallel resume formats**:
+1. **Impact format** (2023, 2025): Modern two-column, $3M+ headline, domain-specific skills — for external positioning
+2. **Comprehensive format** (2021, 2022, 2026): Traditional layout, full detail — for internal/immigration processes
 
-### Data committed to git
-
-- `data/evidence/` — 923 files (markdown, images, PDFs, xlsx, csv, json)
-- `data/batch_*.json` — 32 batch ingestion source files
-- `data/enrich_*.json` — 11 enrichment output files
-- `viz/` — React app with 8 tabs, D3 visualizations, static data JSON
-- `.claude/` — skills configuration (agent-browser, impeccable)
-
-### What is NOT in git (local only)
-
-- `data/email_attachments/` — 493 raw email attachment files
-- `data/media/` — 416 raw media files
-- `data/chroma/` — ChromaDB vector store
-- `data/knowledge.duckdb` — DuckDB database
-- `viz/data/knowledge.duckdb` — viz copy of DuckDB
-- `viz/data/chroma/` — viz copy of ChromaDB
+Career arc: Java dev (IBM) → worldwide component lead → org transformer (Philips India) → global Principal (Philips NA)
 
 ### Key conventions preserved
 
@@ -150,14 +103,3 @@ period: <YYYY-MM, only if recurring>
 - Every artifact gets an evidence file
 - Evidence files are git-tracked
 - Internal URLs get HTML/PDF snapshots; external URLs referenced only
-
-### Era/role mapping for frontmatter inference
-
-| Era | Years | Organization | Role(s) |
-|-----|-------|--------------|---------|
-| IBM | 2007-2014 | IBM | Application Developer, Senior Application Developer |
-| Exeter | 2014-2017 | Exeter (Edifecs) | Software Engineer, Technical Lead |
-| Amazon | 2017-2018 | Amazon | SDE-2 |
-| Philips India | 2018-2021 | Philips | SWCoE Competency Specialist |
-| Philips USA | 2021-present | Philips | Software Competency Lead, Innovation Engineering |
-| Independent | various | Independent | Community contributor, Yoga instructor |

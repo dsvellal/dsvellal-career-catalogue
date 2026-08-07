@@ -63,7 +63,7 @@ The system's primary persona is a first-person digital twin that can explain Dat
 **Phase 7: Cloud Deployment** — Pending. Static publish (`twin publish --viz-only`) works; cloud endpoints not yet deployed.
 
 **Data:**
-- 1,154 evidence files in `data/evidence/` (869 markdown, 236 images, 14 certificates, 20 session files, 4 snapshots)
+- 1,162 evidence files in `data/evidence/` (877 markdown, 236 images, 14 certificates, 20 session files, 4 snapshots)
 - 32 batch ingestion source files + 11 enrichment outputs
 - Knowledge graph: 3,471 nodes, 17,190 edges, 25,767 chunks
 - Viz app: 8-tab React + D3 portfolio at `viz/` (Hero, Professional Identity, Career Arc, Impact, Timeline, Voices, Talks & Givebacks, Knowledge Graph)

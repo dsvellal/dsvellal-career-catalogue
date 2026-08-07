@@ -1,6 +1,6 @@
 # Evidence Index: 2018
 
-**Total files:** 16
+**Total files:** 19
 
 ## By Category
 
@@ -10,6 +10,8 @@
 | Profile & Awards | 1 |
 | Recognition | 7 |
 | Teaching & Training | 4 |
+| Resume / Work Examples | 1 |
+| Performance Review (PPM) | 2 |
 | Unknown | 3 |
 
 ## Files
@@ -30,3 +32,6 @@
 - [014-amazon-scrum-workshop-highest-scoring-trainer.md](014-amazon-scrum-workshop-highest-scoring-trainer.md)
 - [015-amazon-phonetool-profile-123-awards.md](015-amazon-phonetool-profile-123-awards.md)
 - [016-amazon-comprehensive-contribution-profile.md](016-amazon-comprehensive-contribution-profile.md)
+- [017-amazon-ppm-2018-forte.md](017-amazon-ppm-2018-forte.md)
+- [018-philips-ppm-2018-end-year.md](018-philips-ppm-2018-end-year.md)
+- [019-resume-2018-amazon-work-examples.md](019-resume-2018-amazon-work-examples.md)
