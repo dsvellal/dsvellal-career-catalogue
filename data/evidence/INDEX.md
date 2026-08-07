@@ -66,6 +66,17 @@ Detailed, traceable evidence extracted from ingested sources. Each entry links t
 | Date span | Nov 2013 — Aug 2020 |
 | Data files | [all_sessions_raw.json](sessions/student-feedback/all_sessions_raw.json) &#124; 13 source files |
 
+## Cross-Cutting: Awards, Recognitions & Public Citations (2008–2021)
+
+**[awards-recognition-citations-master.md](sessions/awards-recognition-citations-master.md)** — 16 awards, 12 recognitions, ~20 public URL references
+
+| Category | Count | Highlights |
+|----------|-------|------------|
+| Awards | 16 | Philips CTO Outstanding Achievement (global, 1 of 30), IBM RTLE "most influential TEC India", 2 USPTO patents (27 citations), Amazon Zeus/Spot, Exeter Thought Leader |
+| Recognitions | 12 | Toastmasters CC/CL/Leadership Advisor, IBM T2E volunteer, Hackday 1st place, CCT paper |
+| Public URLs | ~20 | 2 patents (Justia), IAS panellist (TV news), 8 college guest lectures, 2 YouTube talks, IP.com prior art |
+| Images saved | 3 | CTO award slide, IBM RTLE certificate, IBM Patent certificate |
+
 ## Cross-Cutting: Resume Collection — Career Progression (2012–2026)
 
 **[resume-career-progression.md](sessions/resume-career-progression.md)** — 7 resume versions + Amazon Work Examples, 14-year arc
