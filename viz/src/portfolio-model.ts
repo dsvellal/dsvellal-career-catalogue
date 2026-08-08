@@ -151,19 +151,6 @@ export function storyBlockForPrimaryClaim(claimId: string): PortfolioStoryBlock 
   return (portfolio.story_blocks ?? []).find(block => block.primary_claim_id === claimId)
 }
 
-export function pageAccent(page: PortfolioPage): string {
-  const route = `${page.id} ${page.route} ${page.label}`.toLowerCase()
-  if (route.includes('trust')) return 'violet'
-  if (route.includes('impact')) return 'copper'
-  if (route.includes('innovation')) return 'cobalt'
-  if (route.includes('learn')) return 'teal'
-  if (route.includes('community') || route.includes('service')) return 'copper'
-  if (route.includes('data')) return 'violet'
-  if (route.includes('journey')) return 'cobalt'
-  if (route.includes('leadership')) return 'teal'
-  return 'cobalt'
-}
-
 export function compactDate(value?: string): string {
   if (!value) return 'Date in source record'
   const match = value.match(/(?:19|20)\d{2}/)

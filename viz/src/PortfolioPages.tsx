@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from 'react'
 import { documentaryAssetForSource, profilePhoto } from './evidence-assets'
 import { MethodCard, QuoteCard, SourceAccessBadge } from './EvidenceUI'
 import {
@@ -6,7 +6,6 @@ import {
   hrefForClaim,
   hrefForSource,
   humanize,
-  pageAccent,
   portfolio,
   sourceById,
   storyClaimIds,
@@ -30,12 +29,31 @@ function routeIdentity(page: PortfolioPage): string {
   return `${page.id} ${page.route} ${page.label}`.toLowerCase()
 }
 
+const QUESTION_PARTS: Record<string, { lead: string; focus: string }> = {
+  brief: { lead: 'What makes Datta ready', focus: 'to lead at executive scale?' },
+  leadership: { lead: 'How does Datta lead', focus: 'across levels, functions, and formal boundaries?' },
+  journey: { lead: 'How has Datta turned technical depth', focus: 'into organizational leverage?' },
+  trust: { lead: 'Why do colleagues seek Datta out', focus: 'and trust his leadership?' },
+  innovation: { lead: 'How does Datta turn emerging technology', focus: 'into governed execution?' },
+  learning: { lead: 'What do people value and carry forward', focus: 'after learning with Datta?' },
+  community: { lead: 'How does Datta create value', focus: 'beyond formal responsibility?' },
+}
+
+function questionParts(page: PortfolioPage): { lead: string; focus: string } {
+  return QUESTION_PARTS[page.id] ?? { lead: page.question, focus: '' }
+}
+
 function PageHero({ page, brief = false }: { page: PortfolioPage; brief?: boolean }) {
+  const parts = questionParts(page)
+  const pageIndex = portfolio.pages.indexOf(page) + 1
   return (
-    <header className={`obs-page-hero accent-${pageAccent(page)}${brief ? ' is-brief' : ''}`}>
+    <header className={`obs-page-hero${brief ? ' is-brief' : ''}`}>
       <div className="obs-page-hero-copy">
-        <span className="obs-page-label">{page.label}</span>
-        <h1 id={`page-heading-${page.id}`} tabIndex={-1}>{page.question}</h1>
+        <span className="obs-page-label"><i aria-hidden="true">{String(pageIndex).padStart(2, '0')} /</i>{page.label}</span>
+        <h1 id={`page-heading-${page.id}`} tabIndex={-1}>
+          <span>{parts.lead}</span>
+          {parts.focus && <em>{parts.focus}</em>}
+        </h1>
         <p>{page.summary}</p>
         {brief && (
           <div className="obs-hero-actions">
@@ -45,10 +63,10 @@ function PageHero({ page, brief = false }: { page: PortfolioPage; brief?: boolea
         )}
       </div>
       <figure className="obs-page-portrait">
-        <img src={profilePhoto} alt={brief ? 'Datta Vellal' : ''} />
+        <img src={profilePhoto} alt="Datta Vellal" />
         <figcaption>
           <strong>Datta Vellal</strong>
-          <span>Leadership · innovation · service</span>
+          <span>Leadership through evidence</span>
         </figcaption>
       </figure>
     </header>
@@ -59,38 +77,127 @@ function sourceForStoryBlock(block: PortfolioStoryBlock): PortfolioSource | unde
   return block.image_source_id ? sourceById.get(block.image_source_id) : undefined
 }
 
-function StoryBlock({ block, index }: { block: PortfolioStoryBlock; index: number }) {
-  const claim = claimById.get(block.primary_claim_id)
-  if (!claim) return null
-  const source = sourceForStoryBlock(block)
-  const asset = source ? documentaryAssetForSource(source) : undefined
+function StoryFocus({ page }: { page: PortfolioPage }) {
+  const blocks = useMemo(() => storyBlocksForPage(page), [page.id])
+  const focusId = new URLSearchParams(window.location.hash.split('?')[1] ?? '').get('focus')
+  const [selectedIndex, setSelectedIndex] = useState(() => {
+    const focusedIndex = blocks.findIndex(block => block.id === focusId)
+    return focusedIndex >= 0 ? focusedIndex : 0
+  })
+  const tabRefs = useRef<Array<HTMLButtonElement | null>>([])
+  const selectedBlock = blocks[selectedIndex] ?? blocks[0]
+  const selectedClaim = selectedBlock ? claimById.get(selectedBlock.primary_claim_id) : undefined
+  const selectedSource = selectedBlock ? sourceForStoryBlock(selectedBlock) : undefined
+  const selectedAsset = selectedSource ? documentaryAssetForSource(selectedSource) : undefined
+
+  const selectStory = (index: number) => {
+    setSelectedIndex(index)
+    const currentPath = window.location.hash.split('?')[0]
+    const hashParameters = new URLSearchParams(window.location.hash.split('?')[1] ?? '')
+    hashParameters.set('focus', blocks[index].id)
+    window.history.replaceState(null, '', `${currentPath}?${hashParameters.toString()}`)
+  }
+
+  useEffect(() => {
+    const requestedIndex = focusId ? blocks.findIndex(block => block.id === focusId) : 0
+    const nextIndex = requestedIndex >= 0 ? requestedIndex : 0
+    setSelectedIndex(currentIndex => currentIndex === nextIndex ? currentIndex : nextIndex)
+
+    if (focusId && requestedIndex < 0 && blocks[0]) {
+      const currentPath = window.location.hash.split('?')[0]
+      const hashParameters = new URLSearchParams(window.location.hash.split('?')[1] ?? '')
+      hashParameters.set('focus', blocks[0].id)
+      window.history.replaceState(null, '', `${currentPath}?${hashParameters.toString()}`)
+    }
+
+    if (!focusId) return
+    const focusFrame = window.requestAnimationFrame(() => {
+      const selectedTab = tabRefs.current[nextIndex]
+      selectedTab?.scrollIntoView({ block: 'start', inline: 'nearest' })
+      selectedTab?.focus({ preventScroll: true })
+    })
+    return () => window.cancelAnimationFrame(focusFrame)
+  }, [blocks, focusId, page.id])
+
+  const handleTabKeyDown = (event: ReactKeyboardEvent<HTMLButtonElement>, index: number) => {
+    let nextIndex: number | undefined
+    if (event.key === 'ArrowRight') nextIndex = (index + 1) % blocks.length
+    if (event.key === 'ArrowLeft') nextIndex = (index - 1 + blocks.length) % blocks.length
+    if (event.key === 'Home') nextIndex = 0
+    if (event.key === 'End') nextIndex = blocks.length - 1
+    if (nextIndex === undefined) return
+    event.preventDefault()
+    selectStory(nextIndex)
+  }
+
+  if (!selectedBlock || !selectedClaim) return null
 
   return (
-    <article className={`obs-story-block accent-${index % 3 === 0 ? 'cobalt' : index % 3 === 1 ? 'teal' : 'copper'}`}>
-      {asset && source && (
-        <a className="obs-story-image" href={hrefForSource(source.id)} aria-label={`Open evidence record: ${source.title}`}>
-          <img src={asset.url} alt={asset.alt} loading="lazy" />
-        </a>
-      )}
-      <div className="obs-story-content">
-        <span className="obs-story-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-        <h2>{block.title}</h2>
-        <p className="obs-story-meaning">{block.meaning}</p>
-        <div className="obs-story-proof">
-          <span>Evidence signal</span>
-          <p>{block.proof}</p>
-        </div>
-        <a className="obs-story-link" href={hrefForClaim(claim.id)}>Explore evidence <span aria-hidden="true">↗</span></a>
+    <section className={`obs-focus-deck is-${page.id}`} aria-label={`${page.label} leadership signals`}>
+      <div className="obs-focus-rail" role="tablist" aria-label="Choose one leadership signal">
+        {blocks.map((block, index) => (
+          <button
+            type="button"
+            role="tab"
+            key={block.id}
+            id={`story-tab-${page.id}-${block.id}`}
+            ref={node => { tabRefs.current[index] = node }}
+            className={selectedIndex === index ? 'is-selected' : ''}
+            aria-selected={selectedIndex === index}
+            aria-controls={`story-panel-${page.id}`}
+            tabIndex={selectedIndex === index ? 0 : -1}
+            onClick={() => selectStory(index)}
+            onKeyDown={event => handleTabKeyDown(event, index)}
+          >
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            <strong>{block.title}</strong>
+          </button>
+        ))}
       </div>
-    </article>
-  )
-}
 
-function StoryGrid({ page }: { page: PortfolioPage }) {
-  const blocks = storyBlocksForPage(page)
-  return (
-    <section className={`obs-story-grid is-${page.id}`} aria-label={`${page.label} leadership signals`}>
-      {blocks.map((block, index) => <StoryBlock key={block.id} block={block} index={index} />)}
+      <article
+        className="obs-focus-stage"
+        id={`story-panel-${page.id}`}
+        role="tabpanel"
+        aria-labelledby={`story-tab-${page.id}-${selectedBlock.id}`}
+        tabIndex={0}
+        key={selectedBlock.id}
+      >
+        <div className="obs-focus-title">
+          <span>Signal {String(selectedIndex + 1).padStart(2, '0')} / {String(blocks.length).padStart(2, '0')}</span>
+          <h2>{selectedBlock.title}</h2>
+        </div>
+        <div className="obs-focus-detail">
+          <p>{selectedBlock.meaning}</p>
+          <div className="obs-focus-proof">
+            <span>Evidence</span>
+            <strong>{selectedBlock.proof}</strong>
+          </div>
+          <a href={hrefForClaim(selectedClaim.id)}>Inspect claim <span aria-hidden="true">↗</span></a>
+        </div>
+        {selectedAsset && selectedSource && (
+          <a className="obs-focus-media" href={hrefForSource(selectedSource.id)} aria-label={`Open evidence record: ${selectedSource.title}`}>
+            <img src={selectedAsset.url} alt={selectedAsset.alt} loading="lazy" />
+            <span>View source · {selectedSource.title} ↗</span>
+          </a>
+        )}
+      </article>
+
+      <div className="obs-focus-print" aria-hidden="true">
+        {blocks.map((block, index) => {
+          const source = sourceForStoryBlock(block)
+          return (
+            <article key={block.id}>
+              <span>Signal {String(index + 1).padStart(2, '0')}</span>
+              <h2>{block.title}</h2>
+              <p>{block.meaning}</p>
+              <strong>{block.proof}</strong>
+              <a href={hrefForClaim(block.primary_claim_id)}>Claim record</a>
+              {source && <a href={hrefForSource(source.id)}>Source: {source.title}</a>}
+            </article>
+          )
+        })}
+      </div>
     </section>
   )
 }
@@ -121,7 +228,7 @@ function StoryPage({ page, brief = false }: { page: PortfolioPage; brief?: boole
   return (
     <>
       <PageHero page={page} brief={brief} />
-      <StoryGrid page={page} />
+      <StoryFocus key={page.id} page={page} />
     </>
   )
 }
@@ -133,7 +240,7 @@ function TrustPage({ page }: { page: PortfolioPage }) {
   return (
     <>
       <PageHero page={page} />
-      <StoryGrid page={page} />
+      <StoryFocus key={page.id} page={page} />
       {quotes.length > 0 && (
         <section className="obs-voices-section" aria-labelledby="trust-voices-heading">
           <header className="obs-simple-heading">
@@ -155,7 +262,7 @@ function LearningPage({ page }: { page: PortfolioPage }) {
   return (
     <>
       <PageHero page={page} />
-      <StoryGrid page={page} />
+      <StoryFocus key={page.id} page={page} />
       {takeaways.length > 0 && (
         <section className="obs-voices-section" aria-labelledby="learning-voices-heading">
           <header className="obs-simple-heading">

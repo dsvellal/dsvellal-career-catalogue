@@ -1,4 +1,4 @@
-import { documentaryAssetForSource } from './evidence-assets'
+import { documentaryAssetForSource, profilePhoto } from './evidence-assets'
 import {
   MethodCard,
   SectionHeading,
@@ -44,6 +44,18 @@ function Breadcrumbs({ items }: { items: Array<{ label: string; href?: string }>
         </span>
       ))}
     </nav>
+  )
+}
+
+function DetailPortrait() {
+  return (
+    <figure className="obs-detail-portrait">
+      <img src={profilePhoto} alt="" />
+      <figcaption>
+        <strong>Datta Vellal</strong>
+        <span>Evidence-backed leadership</span>
+      </figcaption>
+    </figure>
   )
 }
 
@@ -93,6 +105,7 @@ export function ClaimDetailPage({ claimId }: { claimId: string }) {
       ]} />
       <header className="obs-detail-hero">
         <div>
+          <DetailPortrait />
           <span className="obs-detail-kicker">Evidence-backed impact{page ? ` · ${page.label}` : ''}</span>
           <h1 id="detail-heading" tabIndex={-1}>{executiveTitle}</h1>
           <p>{executiveMeaning}</p>
@@ -248,6 +261,7 @@ export function SourceDetailPage({ sourceId }: { sourceId: string }) {
       <Breadcrumbs items={[{ label: 'Data Room', href: '#/data-room' }, { label: source.title }]} />
       <header className="obs-source-hero">
         <div>
+          <DetailPortrait />
           <span className="obs-detail-kicker">Source record · {source.id}</span>
           <SourceAccessLabel source={source} />
           <h1 id="detail-heading" tabIndex={-1}>{source.title}</h1>
@@ -378,6 +392,7 @@ export function MethodDetailPage({ methodId }: { methodId: string }) {
     <article className="obs-detail-page">
       <Breadcrumbs items={[{ label: 'Data Room', href: '#/data-room' }, { label: method.title }]} />
       <header className="obs-method-hero">
+        <DetailPortrait />
         <span className="obs-detail-kicker">Method record · {method.id}</span>
         <span>{humanize(method.kind)} · version {method.version}</span>
         <h1 id="detail-heading" tabIndex={-1}>{method.title}</h1>
@@ -433,6 +448,7 @@ export function MethodDetailPage({ methodId }: { methodId: string }) {
 function MissingRecord({ kind }: { kind: string; id: string }) {
   return (
     <section className="obs-missing-record">
+      <DetailPortrait />
       <span>Explore the evidence portfolio</span>
       <h1 id="detail-heading" tabIndex={-1}>Browse the available {kind} records.</h1>
       <a href="#/data-room">Search the Data Room</a>
