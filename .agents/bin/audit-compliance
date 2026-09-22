@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# ==============================================================================
+# Micro-Automation: audit-compliance
+# Deterministically checks that zero proprietary binary raw files are tracked or leaked.
+# ==============================================================================
+set -eo pipefail
+
+echo "==> [Compliance Guard] Auditing workspace compliance boundary..."
+
+FORBIDDEN_TRACKED_PATTERNS=(
+  ".pdf"
+  ".docx"
+  ".xlsx"
+  ".pptx"
+  ".eml"
+  ".mp4"
+)
+
+# 1. Check git tracked files if git repository exists
+if [ -d ".git" ]; then
+  TRACKED=$(git ls-files)
+  for PATTERN in "${FORBIDDEN_TRACKED_PATTERNS[@]}"; do
+    MATCHES=$(echo "$TRACKED" | grep -i "$PATTERN" || true)
+    if [ -n "$MATCHES" ]; then
+      echo "❌ [COMPLIANCE BREACH] Git is tracking forbidden raw artifact: $MATCHES"
+      echo "Please run: git rm --cached \"$MATCHES\" and verify .gitignore"
+      exit 1
+    fi
+  done
+fi
+
+# 2. Check sanitized data folder exists and contains valid JSON
+if [ -f "data/sanitized/executive_evidence.json" ]; then
+  python3 -c "import json; json.load(open('data/sanitized/executive_evidence.json'))" || {
+    echo "❌ [ERROR] data/sanitized/executive_evidence.json is invalid JSON!"
+    exit 1
+  }
+fi
+
+echo "✅ [Compliance Guard] Audit PASSED. Zero proprietary raw files are exposed or tracked."

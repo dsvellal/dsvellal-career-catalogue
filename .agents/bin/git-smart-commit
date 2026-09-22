@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# ==============================================================================
+# Micro-Automation: git-smart-commit
+# Minimizes token usage by executing deterministic commit routines locally.
+# ==============================================================================
+set -eo pipefail
+
+echo "==> [APM] Running Smart Commit..."
+
+# 1. Pre-commit compliance check
+if [ -f ".agents/bin/audit-compliance" ]; then
+  .agents/bin/audit-compliance
+fi
+
+# 2. Stage modified tracked files if clean staging
+if git diff --cached --quiet; then
+  git add -u
+fi
+
+# 3. Check if anything is staged
+DIFF_SUMMARY=$(git diff --cached --stat)
+if [ -z "$DIFF_SUMMARY" ]; then
+  echo "No changes staged to commit."
+  exit 0
+fi
+
+# 4. Craft deterministic commit message or use custom arg
+MSG="$1"
+if [ -z "$MSG" ]; then
+  FIRST_CHANGED_FILE=$(git diff --cached --name-only | head -n 1)
+  MSG="feat(portfolio): update $(basename "$FIRST_CHANGED_FILE") and executive assets"
+fi
+
+git commit -m "$MSG"
+echo "==> [APM] Commit successful: $MSG"

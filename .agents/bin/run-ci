@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# ==============================================================================
+# Micro-Automation: run-ci
+# Fast verification runner: runs compliance audit, data validation, and web build.
+# ==============================================================================
+set -eo pipefail
+
+echo "==> [CI] Running Full Verification Suite..."
+
+# 1. Audit compliance boundary
+if [ -f ".agents/bin/audit-compliance" ]; then
+  bash .agents/bin/audit-compliance
+fi
+
+# 2. Build web application if present
+if [ -d "web" ] && [ -f "web/package.json" ]; then
+  echo "==> [CI] Validating web application build..."
+  (cd web && npm run build)
+fi
+
+echo "✅ [CI] All verification checks passed successfully."

@@ -1,0 +1,13 @@
+# 20190808 - Tech Debt - What does that mean (1-4)
+
+> Converted from spreadsheet `20190808 - Tech Debt - What does that mean_(1-4).xlsx`
+
+
+## Sheet: Sheet1
+
+| ID | Start time | Completion time | Email | Name | How relevant was this session to your day-to-day job? | Help select the right option calling out your learning from this session. | From the content discussed in this session, what three things can you apply to improve your day-to-day work quality? | How likely are you to recommend this session to a friend or colleague? | (Optional) Do you have inputs on how we can improve this session? | How would you rate Datta as a facilitator of this session? | Would you like to pass on any suggestions to Datta to improve and/or appreciate him?  (Please be as candid and detailed as possible) | Capturing attention | Audience engagement | Knowledge on topic | Content delivery |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 2019-08-08 15:06:12 | 2019-08-08 15:08:29 | anonymous |  | 10 | I learnt a lot and I believe I can try a few things in my day-day work | ABout  tech debt, Common pitfalls Cost of tech debt | 9 | More of hands on. Example project or current project. | 10 | Need more examples apart from theory. Real world examples would definitely help in better visualize. | 5 | 5 | 5 | 4 |
+| 2 | 2019-08-08 15:17:15 | 2019-08-08 15:24:19 | anonymous |  | 9 | I learnt techniques, but I am already following them in my day-to-day work | 1. Identify debts at the earliest possible phase 2. Change our behavior towards technical debt  3. Make sure not to increase the baseline value which has an impact on the cost | 9 |  | 10 | Was very interesting the way such a complex topic simplified which touched a lot of dimensions. | 5 | 5 | 5 | 4 |
+| 3 | 2019-08-08 15:06:11 | 2019-08-08 15:38:29 | anonymous |  | 8 | I learnt techniques, but I am already following them in my day-to-day work | 1. Improving code quality by have complete knowledge of acceptance criteria and the technology i am working on  2. Following best practices .. using static code analysis ever before commiting the code.  3. No last minute changes .. cause it degrades the code quality | 8 |  | 8 | Well its a huge topic and cannot be covered in such a small period of time ... will suggest to have multiple sessions ... including indepth discussion on each topic | 4 | 4 | 4 | 4 |
+| 4 | 2019-08-08 15:06:15 | 2019-08-08 15:47:41 | anonymous |  | 7 | I learnt a lot and I believe I can try a few things in my day-day work | Finding reason fro tech-debt Choosing right solution Observing the cause regularly | 7 | Slide3s and KT videos will be helpful | 7 | Very good session and its helpful. | 4 | 4 | 4 | 4 |

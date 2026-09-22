@@ -1,0 +1,42 @@
+# ==============================================================================
+# COMPLIANCE BOUNDARY: RAW BINARY ISOLATION
+# All raw binary artifacts (*.pdf, *.docx, *.xlsx, *.pptx, *.eml) remain strictly UNTRACKED.
+# Only high-fidelity Markdown (*.md) and embedded web images (*.png, *.jpg) are committed.
+# ==============================================================================
+
+# Raw Binary Documents & Presentations
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pptx
+*.ppt
+*.pdf
+*.eml
+*.msg
+*.odp
+*.wrf
+*.heic
+*.HEIC
+*.mp4
+*.mov
+*.avi
+*.m4a
+*.mp3
+*.zip
+*.tar
+*.gz
+
+# OS & Temp Files
+.DS_Store
+*.log
+~$*
+__pycache__/
+*.pyc
+
+# Dependencies & Build Artifacts
+node_modules/
+dist/
+build/
+.vite/
+

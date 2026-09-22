@@ -1,0 +1,19 @@
+# 21st Aug 2025 - DORA for Software Leaders - Feedback(1-10)
+
+> Converted from spreadsheet `21st Aug 2025 - DORA for Software Leaders - Feedback(1-10).xlsx`
+
+
+## Sheet: Sheet1
+
+| ID | Start time | Completion time | Email | Name | Last modified time | How likely are you to recommend this session to a friend or colleague? | [Optional] What value did today's session add to your day to day work? | [Optional] What could I have improved in today's session to make this more valuable to you? | [Opitonal] If you want me or any other leaders from IEN to get in touch with you separately, to understand how we can help you drive DORA in your team/org, please drop your email id below. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 2025-08-21 15:48:20 | 2025-08-21 15:49:07 | anonymous |  |  | 9 | understanding the DORA metrics, sharing changellenges with other businesses. |  |  |
+| 2 | 2025-08-21 15:47:51 | 2025-08-21 15:49:25 | anonymous |  |  | 10 | The concept of DORA, the discussions and the value addition due to the developer tools available across Philips really helped to get an understanding of this metric and how it can be used to improve the way we work. |  |  |
+| 3 | 2025-08-21 15:48:32 | 2025-08-21 15:49:40 | anonymous |  |  | 8 | Good description of DORA and its use case | A little bit less of a sales pitch for the SW CoE dev portal and tools |  |
+| 4 | 2025-08-21 15:47:51 | 2025-08-21 15:50:43 | anonymous |  |  | 8 | Explained DORA and showed the various tools available. | Could have a slide on mapping how each of the tools could help with the various DORA metrics and talk about potentially how the tools could also help with the "known" problems we experience (e.g. QMS overhead, tech debt reduction, scope creep, etc...) |  |
+| 5 | 2025-08-21 15:48:12 | 2025-08-21 15:51:03 | anonymous |  |  | 8 | Learn more about the options we have in Philips Developer Portal and DORA metrics | Successful examples from another Philips BU | eby.peters@philips.com |
+| 6 | 2025-09-04 07:48:46 | 2025-09-04 07:50:13 | anonymous |  |  | 7 | Clearness on the DORA metrics., | Clearer interpretation of the meaning and the intend of the factors. |  |
+| 7 | 2025-09-04 07:48:59 | 2025-09-04 07:50:26 | anonymous |  |  | 9 | Hearing from others what challenges they are facing and realizing that my teams are not the only ones with similar challenges. | Nothing top of mind |  |
+| 8 | 2025-09-04 07:48:47 | 2025-09-04 07:51:42 | anonymous |  |  | 10 |  | Covering the reporting aspect. Is there any tool(s) which can automatically generate data for these metrics against the BUs, products? |  |
+| 9 | 2025-09-04 07:48:51 | 2025-09-04 07:59:30 | anonymous |  |  | 8 | The DORA metrics are a great health check for your software delivery. It would be great if a dashboard for this could be offered as part of the internal platform, including leading KPIs that help dev teams to identify their bottlenecks | For me (who is already well aware of the DORA metrics) it started out a bit slow. I would like to have gotten more quickly towards interpreting them and how to improve your sw delivery |  |
+| 10 | 2025-09-04 07:48:43 | 2025-09-04 07:59:49 | anonymous |  |  | 8 | overview and the context of how this applies to philips and some of the challenges we face is really valueable. I liked the way the trainer triggered discussion in the team. | i fully agree with the DORA concept and metrics, would like to see more concrete step on how to enable and promote DORA through out the organization. and like see some cross pollination across departments, (like in the training) post training. e.g here you can talk or post you DORA metric insight measurement. | i would really like to have a discussion with some teams on who to we measure these things automatically to get some baseline data going accros the organization. |

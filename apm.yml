@@ -1,0 +1,20 @@
+name: executive-portfolio
+version: 1.0.0
+description: "Universal Agent Configuration & Micro-Automations for Dattatreya S Vellal Executive Portfolio"
+author: "Dattatreya S Vellal"
+
+dependencies:
+  apm:
+    - core-agent-skills#v1.0.0
+
+targets:
+  claude: CLAUDE.md
+  cursor: .cursorrules
+  copilot: .github/copilot-instructions.md
+  universal: AGENTS.md
+
+scripts:
+  sanitize: .agents/bin/sanitize-data
+  audit: .agents/bin/audit-compliance
+  commit: .agents/bin/git-smart-commit
+  ci: .agents/bin/run-ci

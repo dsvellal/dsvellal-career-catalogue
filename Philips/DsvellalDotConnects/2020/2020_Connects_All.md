@@ -1,0 +1,682 @@
+# 2020 Connects All
+
+> Converted from spreadsheet `2020_Connects_All.xlsx`
+
+
+## Sheet: UniqueParticipants
+
+| Row Labels | Count of Email |
+| --- | --- |
+| Pankaj.Nirmal@philips.com | 54 |
+| brijesh.krishnank@philips.com | 42 |
+| sameer.karayi@philips.com | 41 |
+| rajesh.arasu@philips.com | 41 |
+| tejaswini.chalam@philips.com | 35 |
+| kiran.mirle@philips.com | 35 |
+| nikila.gangadharan@philips.com | 35 |
+| Sapna.Pillutla@philips.com | 33 |
+| Mahesh.Belavadi@philips.com | 33 |
+| suyog.gaidhani@philips.com | 32 |
+| musarrath.jabeen.gn@philips.com | 32 |
+| nataraj.kumar@philips.com | 31 |
+| Sobi.DM@philips.com | 28 |
+| sharath.kalyan@philips.com | 28 |
+| sandhya.kaiprath@philips.com | 27 |
+| sanjay.yatgiri@philips.com | 27 |
+| Srimathi.Radha@philips.com | 27 |
+| sujay.kumar.suvarna@philips.com | 26 |
+| srinivas.gangiredla@philips.com | 26 |
+| vinodkumar.ch@philips.com | 26 |
+| Maheswararaj.J@philips.com | 26 |
+| Rahul.Kshirsagar@philips.com | 26 |
+| Pavithra.Poonacha@philips.com | 26 |
+| david.terol@philips.com | 26 |
+| kala.hariharan@philips.com | 26 |
+| Garima.Jain@philips.com | 26 |
+| Ramu.Periaswamy@philips.com | 23 |
+| Arunkumar.Satapathy@philips.com | 22 |
+| vikas.appaji@philips.com | 20 |
+| Sajith.Satheesan@philips.com | 19 |
+| david.papp@philips.com | 19 |
+| prabha.ramchandran@philips.com | 18 |
+| sharickahmed.mohammedusman@philips.com | 17 |
+| srikanth.kondayil@philips.com | 17 |
+| rajendra.kumar.jaiswal@philips.com | 17 |
+| kunal.paul@philips.com | 17 |
+| amrithraj.kannanth@philips.com | 17 |
+| sowmya.kairanna@philips.com | 16 |
+| nagaraj.shamanna@philips.com | 16 |
+| soumya.treesa.jose@philips.com | 15 |
+| Sriram.Balasubramanian@philips.com | 15 |
+| aravind.gundumane@philips.com | 15 |
+| Binod.Suman@philips.com | 14 |
+| Arun.Balakrishna@philips.com | 13 |
+| lakshmi.thyagaraja@philips.com | 12 |
+| gopi.k@philips.com | 12 |
+| pooja.jayaram@philips.com | 11 |
+| prasad.p.thakar@philips.com | 11 |
+| pattabhirama.pandit@philips.com | 11 |
+| Bharath.Battaje@philips.com | 11 |
+| caroline.solange@philips.com | 11 |
+| anasuyamohanrao@philips.com | 11 |
+| narayan.ak@philips.com | 10 |
+| prabhakar.reddy.kallam@philips.com | 10 |
+| madhusudhan.karupakula@philips.com | 10 |
+| Tarun.Mohapatra@philips.com | 9 |
+| senthil.kumar@philips.com | 9 |
+| Susmita.Shukla@philips.com | 9 |
+| satyareddy@philips.com | 9 |
+| miteshkumar.mitra@philips.com | 9 |
+| kr.shivakumar@philips.com | 9 |
+| Mukul.Gharpure@philips.com | 9 |
+| minatee.mishra@philips.com | 9 |
+| christopher.burrows@philips.com | 9 |
+| karthick.ramanathan@philips.com | 9 |
+| chandan.rathore@philips.com | 9 |
+| Subodh.Kumar@philips.com | 8 |
+| sankara.narayanan@philips.com | 8 |
+| vikram.rao@philips.com | 8 |
+| saria.nazneen@philips.com | 8 |
+| kshitija.thakar@philips.com | 8 |
+| mona.shivaramakrishnan@philips.com | 8 |
+| ashwini.sn@philips.com | 8 |
+| Gaurav.Balani@philips.com | 8 |
+| darlan.marco@philips.com | 8 |
+| sanmathi.rameeth@philips.com | 7 |
+| sweta.paul@philips.com | 7 |
+| Lakshmi.Sujatha@philips.com | 7 |
+| Pooja.Chourey@philips.com | 7 |
+| nandita.badami@philips.com | 7 |
+| anand.tyagaraj@philips.com | 7 |
+| cristina.andrus@philips.com | 7 |
+| BiswoRanjan.Dash@philips.com | 7 |
+| Ashok.Kumar2@Philips.com | 7 |
+| deepak.shivakumar@philips.com | 7 |
+| Belliappa.p.t@philips.com | 7 |
+| agusty.rebekah@philips.com | 7 |
+| Hemal.Mistry@philips.com | 7 |
+| vaishnavai.balasubramanian@philips.com | 6 |
+| veera.kotte@philips.com | 6 |
+| ryan.moran@philips.com | 6 |
+| vineed.mathew@philips.com | 6 |
+| shivani.srivastava@philips.com | 6 |
+| Sumanth.V@philips.com | 6 |
+| namrata.aind@philips.com | 6 |
+| ramachandra.bhatt@philips.com | 6 |
+| rohan.rajagopalan@philips.com | 6 |
+| Poovaramanan.Kannan@philips.com | 6 |
+| roopa.achar@philips.com | 6 |
+| harath.rao@philips.com | 6 |
+| arumugam.natarajan@philips.com | 6 |
+| jayaraj.singh@philips.com | 6 |
+| Kala.KRC@philips.com | 6 |
+| anurag.thakur@philips.com | 6 |
+| ajay.mahajan@philips.com | 6 |
+| Jess.Neeson@philips.com | 6 |
+| Tejaswini.N@philips.com | 5 |
+| Vivek@philips.com | 5 |
+| sriranga.natha@philips.com | 5 |
+| tejeswara.rao.kottapalli@philips.com | 5 |
+| Sandeep.Bairampalli@philips.com | 5 |
+| sudarsan.padmanaban@philips.com | 5 |
+| saravanan.narayanasamy@philips.com | 5 |
+| surendhar.v@philips.com | 5 |
+| SreekumarThekkuttu.Pisharam@philips.com | 5 |
+| patricia.torres@philips.com | 5 |
+| ravi.athmanathan@philips.com | 5 |
+| praveen.kumat@philips.com | 5 |
+| Pragya.Shrimali@philips.com | 5 |
+| Ravichandra.Shatdarshnam@philips.com | 5 |
+| muhammed.idris@philips.com | 5 |
+| Rohini.Gadre@philips.com | 5 |
+| ramakrishna.elapanda@philips.com | 5 |
+| Ronald.Wiericx@philips.com | 5 |
+| kalavathi.gv@philips.com | 5 |
+| jan.zwanenburg@philips.com | 5 |
+| abhishek.ankush@philips.com | 5 |
+| Geetha.muddana@philips.com | 5 |
+| bharath.rao@philips.com | 5 |
+| karthik.krishnaswamy@philips.com | 5 |
+| chetan.palavalli@philips.com | 5 |
+| sunil.bidarakatti@philips.com | 4 |
+| srinibas.prusty@philips.com | 4 |
+| suryakant.mulik@philips.com | 4 |
+| sathish.balakrishnan@philips.com | 4 |
+| sitangshu.supakar@philips.com | 4 |
+| senthil.manickavel@philips.com | 4 |
+| shine.surendran@philips.com | 4 |
+| Satyam.Kumar@philips.com | 4 |
+| vinodh.valleri@philips.com | 4 |
+| sudhir.prabhu@philips.com | 4 |
+| Saurav.Mullick@philips.com | 4 |
+| santanu.jena@philips.com | 4 |
+| Sheela.Biradar@philips.com | 4 |
+| sudeep.prasad@philips.com | 4 |
+| mubarak.reddy@philips.com | 4 |
+| Karthik.PVS@philips.com | 4 |
+| magesh.kumar.subramaniyan@philips.com | 4 |
+| lillian.bose@philips.com | 4 |
+| rajni.wadhawan@philips.com | 4 |
+| prashant.bidarakundi@philips.com | 4 |
+| Ramachandra.Kulkarni@philips.com | 4 |
+| raghavendra.hv@philips.com | 4 |
+| MaheshKumar.Velayutham@philips.com | 4 |
+| lavina.dsouza@philips.com | 4 |
+| rajashekaragouda.g.s@philips.com | 4 |
+| dinakaran.jagadeesan@philips.com | 4 |
+| Ian.Watson@philips.com | 4 |
+| Hamsa.Krishnaraj@philips.com | 4 |
+| arjun.sn@philips.com | 4 |
+| Dilip.choudhary@philips.com | 4 |
+| ashwini.sangolagi@philips.com | 4 |
+| bhasker.gopal@philips.com | 4 |
+| aparna.shetty@philips.com | 4 |
+| hemantkumar.vernekar@philips.com | 4 |
+| Arun.Sabat@philips.com | 4 |
+| carlos.trentin@philips.com | 4 |
+| dhrubajyoti.lahon@philips.com | 4 |
+| ajit.ashok@philips.com | 4 |
+| venkateswaran.l@philips.com | 3 |
+| SathishKumar.Varatharasu@philips.com | 3 |
+| vivek.raheja@philips.com | 3 |
+| sangeetha.kharvi@philips.com | 3 |
+| Savitri.Kerakalamatti@philips.com | 3 |
+| Shashank.Shrivastava@philips.com | 3 |
+| vishravars.ramasubramanian@philips.com | 3 |
+| Shubham.Kesarwani@philips.com | 3 |
+| sundaresan.j@philips.com | 3 |
+| siddharth.harjeet@philips.com | 3 |
+| Usha.V@philips.com | 3 |
+| singh.rakesh@philips.com | 3 |
+| vamsidhar.sagala@philips.com | 3 |
+| sophia.dsouza@philips.com | 3 |
+| vijay.venkatesh.doraisamy@philips.com | 3 |
+| Sowbhagya.Beeraiah@philips.com | 3 |
+| vivek.brahmavar@philips.com | 3 |
+| sakshi.sharma@philips.com | 3 |
+| roopa.jois@philips.com | 3 |
+| steve.livingston@philips.com | 3 |
+| pushkaraj.shinde@philips.com | 3 |
+| maarten.metz@philips.com | 3 |
+| phalguna.vemuri@philips.com | 3 |
+| Raghavendra.Mirajkar@philips.com | 3 |
+| Kitty.Verberne@philips.com | 3 |
+| komal.singh@philips.com | 3 |
+| Remy.Bohmer@philips.com | 3 |
+| Rahul.Singal@philips.com | 3 |
+| poulami.banerjee@philips.com | 3 |
+| ManojKumar.Biswal@philips.com | 3 |
+| patrick.savari@philips.com | 3 |
+| md.sajidmustfa@philips.com | 3 |
+| ravi.teja@philips.com | 3 |
+| pandurangaiah.simbhothu@philips.com | 3 |
+| ravindra.manjeshwar@philips.com | 3 |
+| rajesh.vasudevan@philips.com | 3 |
+| pawan.s@philips.com | 3 |
+| malatesh.mylarappachar@philips.com | 3 |
+| Rohit.Raj@philips.com | 3 |
+| naveen.sasi@philips.com | 3 |
+| nanda.kumar1@philips.com | 3 |
+| Nishant.Tanwar@philips.com | 3 |
+| Abhishek.Surana@philips.com | 3 |
+| elizabeth.parakal@philips.com | 3 |
+| ashwinkumar.dk@philips.com | 3 |
+| arunkumar.rao@philips.com | 3 |
+| ashish.agrawal@philips.com | 3 |
+| gernot.eggen@philips.com | 3 |
+| hemant.srivastava@philips.com | 3 |
+| Balaji.Subbaram@philips.com | 3 |
+| herwig.wens@philips.com | 3 |
+| Ashutosh.Bhawasinka@philips.com | 3 |
+| Eric.Schmuck@philips.com | 3 |
+| binu.orakkan@philips.com | 3 |
+| Jegan.Kunniya@philips.com | 3 |
+| harshal.bahadure@philips.com | 3 |
+| Abey.Thomas@philips.com | 3 |
+| akshay.godkhindi@philips.com | 3 |
+| saisree.edara@philips.com | 2 |
+| venkat.rajvanshi@philips.com | 2 |
+| sheetalkumar.kulkarni@philips.com | 2 |
+| sarat.khilar@philips.com | 2 |
+| SmrutiRanjan.Dash@philips.com | 2 |
+| Srinivas.Arakere@philips.com | 2 |
+| sreekanth.viswanath@philips.com | 2 |
+| shivaraj.hasarani@philips.com | 2 |
+| Sagnik.Bhattacharya@philips.com | 2 |
+| Saritha.Achari@philips.com | 2 |
+| sjoerd.crijns@philips.com | 2 |
+| Srivathsa.HH@philips.com | 2 |
+| vinod.sankuthodi@philips.com | 2 |
+| steffen.epple@philips.com | 2 |
+| shivaprashanth.nuji_1@philips.com | 2 |
+| Xiao.Xu@philips.com | 2 |
+| tiffany.martrano@philips.com | 2 |
+| Shrishti.Agarwal@philips.com | 2 |
+| Sheraj.Ahemad@philips.com | 2 |
+| shruti.prahlada@philips.com | 2 |
+| vandana.srivastava@philips.com | 2 |
+| shubha.ramesh@philips.com | 2 |
+
+*...and 529 more rows.*
+
+
+
+## Sheet: UniqueCities
+
+| Row Labels | Count of City |
+| --- | --- |
+| Bangalore | 2364 |
+| Eindhoven | 82 |
+| Pune | 53 |
+| Blumenau | 52 |
+| Amsterdam | 41 |
+| Best | 40 |
+| Murrysville | 14 |
+| Monroeville | 12 |
+| Haifa | 12 |
+| Andover | 10 |
+| Cambridge | 8 |
+| Highland Heights | 7 |
+| Belfast | 6 |
+| Shenyang | 6 |
+| Shanghai | 5 |
+| London | 5 |
+| Bothell | 3 |
+| Alpharetta | 2 |
+| Hamburg | 2 |
+| Zeist | 2 |
+| Baltimore | 2 |
+| Gurgaon | 1 |
+| Petah Tiqwa | 1 |
+| Singapore | 1 |
+| (blank) |  |
+| Grand Total | 2731 |
+
+
+## Sheet: UniqueJobRoles
+
+| Row Labels | Count of NormalizedJobRole |
+| --- | --- |
+| Architect | 516 |
+| Manager | 358 |
+| Technologist | 302 |
+| Specialist | 281 |
+| Recruiter | 217 |
+| SDE | 195 |
+| Director | 131 |
+| Contingent Worker | 112 |
+| Project Manager | 109 |
+| DevOps | 63 |
+| Quality Engineer | 63 |
+| Leader | 48 |
+| Program Manager | 43 |
+| Coach | 42 |
+| Program Director | 31 |
+| Head | 31 |
+| QMS Manager | 23 |
+| Scrum Master | 17 |
+| HR | 17 |
+| V&V Lead | 14 |
+| Intern | 13 |
+| Assistant | 13 |
+| Design Engineer | 12 |
+| Product Owner | 12 |
+| Specialist - Build & Release | 10 |
+| BPE | 7 |
+| IP&S | 7 |
+| Q&R Specialist | 5 |
+| Test Manager | 5 |
+| Finance | 5 |
+| Scientist | 5 |
+| IT | 4 |
+| Quality Manager | 4 |
+| RTE | 3 |
+| Product Manager | 2 |
+| Trainee | 2 |
+| Team Lead | 2 |
+| Data Scientist | 2 |
+| Transformation Lead | 1 |
+| Delivery Leader | 1 |
+| Department Head | 1 |
+| Regulatory Specialist | 1 |
+| BPO | 1 |
+| (blank) |  |
+| Grand Total | 2731 |
+
+
+## Sheet: UniqueDepartments
+
+| Row Labels | Count of NormalizedDepartment |
+| --- | --- |
+| Q&R | 247 |
+| HSP | 238 |
+| PD | 214 |
+| Serviceability | 200 |
+| IGT | 188 |
+| BEQR | 153 |
+| SRC | 119 |
+| TA | 101 |
+| SWCOE | 94 |
+| CAO | 90 |
+| DI CT | 81 |
+| SIG Markets | 71 |
+| PIC PMO | 59 |
+| PIC Process | 57 |
+| MR | 53 |
+| PHDSI | 51 |
+| Genomics | 47 |
+| EMR | 46 |
+| DXR | 40 |
+| CC | 39 |
+| I2ME | 38 |
+| EIS | 36 |
+| Oncology | 32 |
+| MA PM | 30 |
+| CT AMI | 28 |
+| Mobile Device Farm | 26 |
+| ICAP | 25 |
+| PIC | 23 |
+| Transformation | 22 |
+| IT Delivery | 22 |
+| PCA | 20 |
+| MA | 19 |
+| HR | 16 |
+| SIG Analytics | 16 |
+| Radonc | 15 |
+| Digital Pathology | 12 |
+| DH&PC | 12 |
+| Asia Digital and R&D | 10 |
+| US | 10 |
+| Architecture and System Engineering | 9 |
+| IOT | 8 |
+| Therapeutic Care | 8 |
+| Learning | 8 |
+| Coffee | 7 |
+| RI | 7 |
+| Healthcare Management | 7 |
+| Security | 7 |
+| SIG | 6 |
+| CTO | 5 |
+| CS | 5 |
+| I4 | 5 |
+| HC | 5 |
+| GS | 4 |
+| R HS: Data science | 4 |
+| CDI China | 4 |
+| Quality Engineering | 4 |
+| EDI | 4 |
+| PQMS | 3 |
+| Backbone | 3 |
+| MG Innovation DTN | 3 |
+| Cardiology | 2 |
+| Finance CTO | 2 |
+| Diagnostic Imaging | 2 |
+| Platform & DevOps | 1 |
+| XD | 1 |
+| GSC MRPC | 1 |
+| HS GC | 1 |
+| BTY | 1 |
+| Technical Applications | 1 |
+| R Healthcare Solutions India | 1 |
+| Clinical Research | 1 |
+| DI IC Image China | 1 |
+| (blank) |  |
+| Grand Total | 2731 |
+
+
+## Sheet: 2020_dsvDotConnects
+
+| Meeting Start Date | Subject | Organizer | Duration (Mins) | Participant Name | Email | Job Title | Department | City | StateOrProvince | NormalizedJobRole | NormalizedDepartment |  |  |  |  |  |  |  |  | Philips Job Title | Job Title without Business Names | Normalized Job Title | IC or Non-IC | Tech or Non-Tech | Grade |  |  | Department | Normalised Department Name |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2020-04-02 00:00:00 | Catch up over coffee with Datta | Vellal, Dattatreya | 30 | Pas, Marco | marco.pas@philips.com | Senior Software Designer | I&S CTO R DH&PC SW Concepts Guild | Eindhoven |  | SDE | DH&PC |  |  |  |  |  |  |  |  | Advanced Development Engineer | Advanced Development Engineer | SDE | IC | Tech |  |  |  | Architecture and System Engineering | Architecture and System Engineering |
+| 2020-05-02 00:00:00 | Datta show facade | Pas, Marco | 30 | Pas, Marco | marco.pas@philips.com | Senior Software Designer | I&S CTO R DH&PC SW Concepts Guild | Eindhoven |  | SDE | DH&PC |  |  |  |  |  |  |  |  | Advanced Software Development Engineer | Advanced Software Development Engineer | SDE | IC | Tech |  |  |  | Asia Digital and R&D | Asia Digital and R&D |
+| 2020-05-02 00:00:00 | Datta show facade | Pas, Marco | 30 | Golsteijn, Bart | bart.golsteijn@philips.com | Senior Architect | I&S CTO R DH&PC SW Concepts Guild | Eindhoven |  | Architect | DH&PC |  |  |  |  |  |  |  |  | Advanced Software DevOps Engineer | Advanced Software DevOps Engineer | SDE | IC | Tech |  |  |  | Backbone | Backbone |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Gangadharan, Nikila | nikila.gangadharan@philips.com | Senior Manager II | I&S HSP R&D PIC Clinical Platform | Bangalore | Karnataka | Manager | HSP |  |  |  |  |  |  |  |  | Advanced Software Engineer | Advanced Software Engineer | SDE | IC | Tech |  |  |  | BG DI BU IC Image Chain R&D | DI IC Image China |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Yadav, Abhishek Kumar | abhishek.kumar.yadav@philips.com | Software Engineer II | I&S HSP R&D PIC CP D&I Development and IOCC | Bangalore | Karnataka | SDE | HSP |  |  |  |  |  |  |  |  | Advanced Software Test Engineer | Advanced Software Test Engineer | SDE | IC | Tech |  |  |  | BG DI BU IC Image Chain R&D Generators | DI IC Image China |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Mirajkar, Raghavendra | Raghavendra.Mirajkar@philips.com | Software Technologist I | I&S HSP R&D PIC CP D&I Development | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Agile Coach I2M | Agile Coach I2M | Coach | IC | Non-Tech |  |  |  | BG DI BU IC Image Chain R&D Generators Ctl | DI IC Image China |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Wadhawan, Rajni | rajni.wadhawan@philips.com | Senior Manager II | I&S HSP R&D PIC Clinical Platform | Bangalore | Karnataka | Manager | HSP |  |  |  |  |  |  |  |  | Architect | Architect | Architect | IC | Tech |  |  |  | BG DI Reliability Engineering | DI IC Image China |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Paul, Sweta | sweta.paul@philips.com | Project Manager II | I&S HSP R&D PIC CP Data & Infrastructure | Bangalore | Karnataka | Project Manager | HSP |  |  |  |  |  |  |  |  | Architect 4 | Architect 4 | Architect | IC | Tech |  |  |  | BG US R&D (I2M) Transducer & Mech | I2M |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Kadli, Chethana | chethana.kadli@philips.com | Manager II | I&S HSP R&D PIC CP Application Dev Environment | Bangalore | Karnataka | Manager | HSP |  |  |  |  |  |  |  |  | Architect I | Architect I | Architect | IC | Tech |  |  |  | BIU CT-AMI R&D China | CT AMI |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Doraisamy, Vijay Venkatesh | vijay.venkatesh.doraisamy@philips.com | Senior Software Technologist I | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Architect I - Data Science Platform | Architect I | Architect | IC | Tech |  |  |  | BIU CT-AMI R&D China Gantry Software Control | CT AMI |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Agrawal, Ashish | ashish.agrawal@philips.com | Software Technologist II | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Architect I - MR PatAdmin | Architect I | Architect | IC | Tech |  |  |  | BIU CT-AMI R&D China Software | CT AMI |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Kerakalamatti, Savitri | Savitri.Kerakalamatti@philips.com | Software Technologist I | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Architect I - Verification | Architect I | Architect | IC | Tech |  |  |  | BIU CT-AMI R&D China Software Console | CT AMI |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Ahemad, Sheraj | Sheraj.Ahemad@philips.com | Contingent Worker | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Contingent Worker | HSP |  |  |  |  |  |  |  |  | Architect II | Architect II | Architect | IC | Tech |  |  |  | BIU DI ARCH-HID-DOC | DI ARCH-HID-DOC |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Mushtaq, Mohammed | mohammed.mushtaq@philips.com | Software Technologist | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Architect II - Serviceability | Architect II | Architect | IC | Tech |  |  |  | BIU DI CT - AMI R&D | CT AMI |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Kumari, Mamta | Mamta.Kumari@philips.com | Software Engineer II | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | SDE | HSP |  |  |  |  |  |  |  |  | Architect II - Test Automation | Architect II | Architect | IC | Tech |  |  |  | BIU DI CT CNH DMS Software | CT AMI |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Lookose, Lixon | lixon.lookose@philips.com | Senior Software Technologist I | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Architect, Agile | Architect | Architect | IC | Tech |  |  |  | BIU DI CT R&D OCE | CT AMI |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Sajeev, Neethu | neethu.sajeev@philips.com | Software Technologist I | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Architecture & Sys. Engineering Director | Architecture & Sys. Engineering Director | Director | Non-IC | Non-Tech |  |  |  | BIU DI CT/AMI R&D Imaging | CT AMI |
+| 2020-05-02 00:00:00 | Pair programming - introduction | Gangadharan, Nikila | 60 | Sathyanarayana, Swetha | Swetha.Sathyanarayana@philips.com | Scrum Master I | I&S HSP R&D PIC CP Data & Infrastructure | Bangalore | Karnataka | Scrum Master | HSP |  |  |  |  |  |  |  |  | Assistant | Assistant | Assistant | IC | Non-Tech |  |  |  | BIU DI CT/AMI R&D Imaging Software | CT AMI |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Mathew, Vineed | vineed.mathew@philips.com | BPE I2M SAFe | I&S PE I2ME Process Design | Bangalore | Karnataka | BPE | I2ME |  |  |  |  |  |  |  |  | BPE I2M SAFe | BPE I2M SAFe | BPE | IC | Non-Tech |  |  |  | BIU DI MR Therapy Software | MR |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Mirle, Kiran | kiran.mirle@philips.com | Senior Specialist II - Q&R - QA/QE | I&S CTO PIC BEQR CT | Bangalore | Karnataka | Specialist | BEQR |  |  |  |  |  |  |  |  | BPO Software & Solutions Operations | BPO Software & Solutions Operations | BPO | IC | Non-Tech |  |  |  | BIU DXR Development | DXR |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Prasad, Pankaj | Pankaj.Nirmal@philips.com | Senior Specialist II | I&S CTO SW CoE PIC Project Management Office | Bangalore | Karnataka | Specialist | PIC PMO |  |  |  |  |  |  |  |  | Business Leader | Business Leader | Leader | Non-IC | Non-Tech |  |  |  | BIU DXR Legacy LCM & Support | DXR |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Radha, S Srimathi | Srimathi.Radha@philips.com | Contingent Worker | I&S CTO SW CoE PIC Project Management Office | Bangalore | Karnataka | Contingent Worker | PIC PMO |  |  |  |  |  |  |  |  | Campus Recruiter | Campus Recruiter | Recruiter | IC | Non-Tech |  |  |  | BIU RadOnc Global R&D | RadOnc |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Beeraiah, Sowbhagya | Sowbhagya.Beeraiah@philips.com | Contingent Worker | I&S CTO SW CoE PIC Process | Bangalore | Karnataka | Contingent Worker | PIC Process |  |  |  |  |  |  |  |  | Campus Recruitment Lead, India Subcontinent | Campus Recruitment Lead | Recruiter | IC | Non-Tech |  |  |  | BTY Product Development IPL Skincare | BTY |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | GN, Musarrath Jabeen | musarrath.jabeen.gn@philips.com | Enterprise Agile Coach | I&S CTO SW CoE PIC Process | Bangalore | Karnataka | Coach | PIC Process |  |  |  |  |  |  |  |  | Case Consultant | Case Consultant | Consultant | IC | Tech |  |  |  | BTY R&D IPL & SC Electronic dev | BTY |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Sk, Anuradha | Anuradha.SK@philips.com | Research & Development Executive Assistant | I&S CTO SW CoE PIC Project Management Office | Bangalore | Karnataka | Assistant | PIC PMO |  |  |  |  |  |  |  |  | CDP2 Data Intelligence Manager | CDP2 Data Intelligence Manager | Manager | Non-IC | Non-Tech |  |  |  | BU MA GSC CDC R&D DECG Software | MA GSC |
+| 2020-04-03 00:00:00 | [category:Quality@Desk][subject:Pom.xml gating][type:Business request][value:Code quality gating @ Desk][language:Java]Setting up Configuration of POM to gate for CQ at build | R U, Rashmi | 120 | Kumar, Nanda | nanda.kumar1@philips.com | Technical Applications | Technical Applications | Bangalore | Karnataka | Technologist | Technical Applications |  |  |  |  |  |  |  |  | Chief Scientist | Chief Scientist | Scientist | IC | Tech |  |  |  | Bu MA Patient Monitoring PIC - Apps | MA PM |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Karayi, Sameer | sameer.karayi@philips.com | Critical Capabilities Director, TA | Global Digital, Q&R, R&D and Talent Intelligence | Bangalore | Karnataka | Recruiter | Genomics |  |  |  |  |  |  |  |  | China Branch Manager, BIU DI CT/AMI R&D Imaging | China Branch Manager | Manager | Non-IC | Non-Tech |  |  |  | Bu MA Patient Monitoring PIC - MDI | MA PM |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Periaswamy, Ramu | Ramu.Periaswamy@philips.com | Sr Manager - Talent Acquisition | India Digital, Q&R, R&D | Bangalore | Karnataka | Recruiter | IGT |  |  |  |  |  |  |  |  | China Innovation Leader, PH, China | China Innovation Leader | Leader | Non-IC | Non-Tech |  |  |  | Bu MA PCA PIC Informatics | MA PCA |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Rajkumar, Gopikrishnan | gopi.k@philips.com | Sr Digital TA Consultant - Asia | India Digital, Q&R, R&D | Bangalore | Karnataka | Recruiter | IGT |  |  |  |  |  |  |  |  | Competence Group Manager | Competence Group Manager | Manager | Non-IC | Non-Tech |  |  |  | Bu MA PM Architecture & Infrastructure | MA PM |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Badami, Nandita | nandita.badami@philips.com | Digital TA consultant Asia | India Digital, Q&R, R&D | Bangalore | Karnataka | Recruiter | IGT |  |  |  |  |  |  |  |  | Contingent Worker | Contingent Worker | Contingent Worker | IC | Tech |  |  |  | Bu MA PM Monitoring Applications | MA PM |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Ramchandran, Prabha | prabha.ramchandran@philips.com | Digital TA consultant Asia | India Digital, Q&R, R&D | Bangalore | Karnataka | Recruiter | IGT |  |  |  |  |  |  |  |  | Critical Capabilities Director, TA | Critical Capabilities Director | Recruiter | Non-IC | Non-Tech |  |  |  | Bu MA PM Solution Robustness Automation | MA PM |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Choudhary, Dilip Kumar | Dilip.choudhary@philips.com | Digital TA consultant, Asia | India Digital, Q&R, R&D | Pune | Maharashtra | Recruiter | IGT |  |  |  |  |  |  |  |  | CT/AMI Product SW Leader | AMI Product SW Leader | Leader | Non-IC | Non-Tech |  |  |  | BU RI PMO | RI |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Antonia D'Souza, Lavina | lavina.dsouza@philips.com | Digital TA Consultant Asia | India Digital, Q&R, R&D | Pune | Maharashtra | Recruiter | IGT |  |  |  |  |  |  |  |  | Data Scientist | Data Scientist | Data Scientist | IC | Tech |  |  |  | BU TC ECR SZ R&D | TC ECR |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Singh, Komal | komal.singh@philips.com | Contingent Worker | India Digital, Q&R, R&D | Bangalore | Karnataka | Contingent Worker | IGT |  |  |  |  |  |  |  |  | Data Scientist - Business Analytics | Data Scientist | Data Scientist | IC | Tech |  |  |  | Business Analytics Team | Business Analytics Team |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Srivastava, Shivani | shivani.srivastava@philips.com | Digital TA consultant Asia | Asia Digital and R&D | Bangalore | Karnataka | Recruiter | Asia Digital and R&D |  |  |  |  |  |  |  |  | DECG & iECG Leader | DECG & iECG Leader | Leader | Non-IC | Non-Tech |  |  |  | Business Cluster Precision Diagnosis | PD |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Lakshmanaraj, Venkateswaran | venkateswaran.l@philips.com | Contingent Worker | Asia Digital and R&D | Bangalore | Karnataka | Contingent Worker | Asia Digital and R&D |  |  |  |  |  |  |  |  | Department Assistant, China Digital Innovation | Department Assistant | Assistant | IC | Non-Tech |  |  |  | CC Business Connected Care Informatics | CC |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Shrivastava, Shashank | Shashank.Shrivastava@philips.com | Contingent Worker | Quality & Regulatory | Bangalore | Karnataka | Contingent Worker | Q&R |  |  |  |  |  |  |  |  | Department Head | Department Head | Department Head | Non-IC | Non-Tech |  |  |  | CC CCI EIS Solution Delivery Business-1 | CC |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Krishnaraj, Hamsa | Hamsa.Krishnaraj@philips.com | Senior Manager II | PIC Serviceability R&D | Bangalore | Karnataka | Manager | Serviceability |  |  |  |  |  |  |  |  | Deployment Manager, I2M Excellence | Deployment Manager | Manager | Non-IC | Non-Tech |  |  |  | CC CCI EIS Solution Delivery Markets-1 | CC |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Prusty, Srinibas | srinibas.prusty@philips.com | Senior Specialist II - Q&R QA/QE | IGT Systems Q&R QA & QE | Bangalore | Karnataka | Specialist | IGT |  |  |  |  |  |  |  |  | Deputy Manager | Deputy Manager | Manager | Non-IC | Non-Tech |  |  |  | CC CCI EIS Solution Delivery Markets-2 | CC |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Shatdarshnam, Ravichandra | Ravichandra.Shatdarshnam@philips.com | Senior Specialist I - Q&R- QA/QE | HI Q&R Process QA &QE | Bangalore | Karnataka | Specialist | Q&R |  |  |  |  |  |  |  |  | Design Control Engineer | Design Control Engineer | Design Engineer | IC | Tech |  |  |  | CC CCI Enterprise Integrated Solutions | CC |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Yatgiri, Sanjay | sanjay.yatgiri@philips.com | Senior Specialist II - Q&R - QA/QE | PIC BEQR CT | Bangalore | Karnataka | Specialist | BEQR |  |  |  |  |  |  |  |  | Designer | Designer | Design Engineer | IC | Tech |  |  |  | CC CCI R&D | CC |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Kharvi, Sangeetha | sangeetha.kharvi@philips.com | Contingent Worker | I&S CTO PIC BEQR CT | Bangalore | Karnataka | Contingent Worker | BEQR |  |  |  |  |  |  |  |  | Designer Senior | Designer Senior | Design Engineer | IC | Tech |  |  |  | CC MA R&D/Product Development | CC |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Balasubramanian, Vaishnavai | vaishnavai.balasubramanian@philips.com | Project Manager I | PIC Serviceability R&D - IDM & New Service | Bangalore | Karnataka | Project Manager | Serviceability |  |  |  |  |  |  |  |  | Designer SW | Designer SW | Design Engineer | IC | Tech |  |  |  | CC PHM India Software Engineering 2 | CC |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Chourey, Pooja | Pooja.Chourey@philips.com | Project Manager I | PIC Serviceability R&D - IDM & New Service | Bangalore | Karnataka | Project Manager | Serviceability |  |  |  |  |  |  |  |  | SDE Clinical MRI Applications | SDE Clinical MRI Applications | SDE | IC | Tech |  |  |  | CC PHM R&D | CC |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Jayaram, Pooja | pooja.jayaram@philips.com | Project Manager I | PIC Serviceability R&D - IoT For Services | Bangalore | Karnataka | Project Manager | Serviceability |  |  |  |  |  |  |  |  | Development Engineer | Development Engineer | SDE | IC | Tech |  |  |  | CC PHM Software Engineering | CC |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Kumat, Praveen | praveen.kumat@philips.com | Project Manager I | PIC Serviceability R&D - IDM & New Service | Bangalore | Karnataka | Project Manager | Serviceability |  |  |  |  |  |  |  |  | DeveOps Specialist | DeveOps Specialist | DevOps | IC | Tech |  |  |  | CCI EIS R&D | EIS |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Battaje, Bharath | Bharath.Battaje@philips.com | Sr. Software Technologist I | PIC Serviceability R&D - IDM & New Service | Bangalore | Karnataka | Technologist | Serviceability |  |  |  |  |  |  |  |  | Dev-Ops Engineer | Dev | DevOps | IC | Tech |  |  |  | CCI EMR Q&R | EMR |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Thomas, Abey | Abey.Thomas@philips.com | Architect II | PIC Serviceability R&D - IoT For Services | Bangalore | Karnataka | Architect | Serviceability |  |  |  |  |  |  |  |  | Digital Accelerator Innovation Lead | Digital Accelerator Innovation Lead | Recruiter | Non-IC | Non-Tech |  |  |  | CCI EMR R&D | EMR |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Sabat, Arun | Arun.Sabat@philips.com | Architect II - Serviceability | PIC Serviceability R&D - IoT For Services | Bangalore | Karnataka | Architect | Serviceability |  |  |  |  |  |  |  |  | Digital TA consultant Asia | Digital TA consultant Asia | Recruiter | IC | Non-Tech |  |  |  | CCI PCA R&D | PCA |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Peters, Roopa | Roopa.Peters@philips.com | Executive Assistant | PIC HC MGMT | Bangalore | Karnataka | Assistant | HC |  |  |  |  |  |  |  |  | Digital TA consultant, Asia | Digital TA consultant | Recruiter | IC | Non-Tech |  |  |  | CCI Q&R | Q&R |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | PVS, Karthik | Karthik.PVS@philips.com | Deployment Manager, I2M Excellence | I&S PE I2ME Deployments | Bangalore | Karnataka | Manager | I2ME |  |  |  |  |  |  |  |  | Director | Director | Director | Non-IC | Non-Tech |  |  |  | CCI Q&R QAQE | Q&R |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Kondayil, Srikanth | srikanth.kondayil@philips.com | Senior Specialist II - Q&R -QA/QE | HI Q&R Process QA &QE | Bangalore | Karnataka | Specialist | Q&R |  |  |  |  |  |  |  |  | Director - Program Management | Director | Director | Non-IC | Non-Tech |  |  |  | Chief Architect Office | CAO |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Pillutla, Sapna | Sapna.Pillutla@philips.com | Senior Specialist I - Q&R - QA/QE | I&S CTO PIC BEQR CT | Bangalore | Karnataka | Specialist | BEQR |  |  |  |  |  |  |  |  | Director Electronics and Software | Director Electronics and Software | Director | Non-IC | Non-Tech |  |  |  | CI R&D Enterprise Cardiology | Cardiology |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Jain, Garima | Garima.Jain@philips.com | Sr Quality Engineer | PIC BEQR Ultrasound | Bangalore | Karnataka | Quality Engineer | BEQR |  |  |  |  |  |  |  |  | Director Engineering | Director Engineering | Director | Non-IC | Non-Tech |  |  |  | Coffee Innovation Prod Dev FA Espresso | Coffee |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | DM, Sobi | Sobi.DM@philips.com | Software Engineer II - Q&R - QA QE | I&S CTO PIC BEQR CT | Bangalore | Karnataka | SDE | BEQR |  |  |  |  |  |  |  |  | Director Global SW Engineering Leader DXR | Director Global SW Engineering Leader DXR | Director | Non-IC | Non-Tech |  |  |  | CT/AMI Haifa R&D | CT AMI |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Kaiprath, Sandhya | sandhya.kaiprath@philips.com | Senior Specialist I-Q&R QA/QE, EDI Q&R | HI Q&R Process QA &QE | Bangalore | Karnataka | Specialist | Q&R |  |  |  |  |  |  |  |  | Director I&D Electronics | Director I&D Electronics | Director | Non-IC | Non-Tech |  |  |  | EDI R&D | EDI |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Jeyarajan, Maheswararaj | Maheswararaj.J@philips.com | Sr Manager-Deployment | I&S PE Idea 2 Market Excellence | Bangalore | Karnataka | Manager | I2ME |  |  |  |  |  |  |  |  | Director ISP Global R&D Manager | Director ISP Global R&D Manager | Director | Non-IC | Non-Tech |  |  |  | EIS R&D CAPI | EIS |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Hariharan, Kala | kala.hariharan@philips.com | Senior Specialist I - Q&R -PQMS | Oncology Informatics Quality | Bangalore | Karnataka | Specialist | Oncology |  |  |  |  |  |  |  |  | Director of CT China R&D Software | Director of CT China R&D Software | Director | Non-IC | Non-Tech |  |  |  | EIS R&D Emerging | EIS |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Suvarna, Sujay Kumar | sujay.kumar.suvarna@philips.com | QMS Manager | CCI Q&R | Bangalore | Karnataka | QMS Manager | Q&R |  |  |  |  |  |  |  |  | Director Program Management | Director Program Management | Director | Non-IC | Non-Tech |  |  |  | EMR R&D Bangalore | EMR |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Gangiredla, Srinivas | srinivas.gangiredla@philips.com | Software Validation Manager  EDI Q&R | HI Q&R Process QA &QE | Bangalore | Karnataka | Manager | Q&R |  |  |  |  |  |  |  |  | Director Technical Applications India | Director Technical Applications India | Director | Non-IC | Non-Tech |  |  |  | EMR R&D Bangalore Operations Backoffice | EMR |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | KSHIRSAGAR, Rahul | Rahul.Kshirsagar@philips.com | Contingent Worker | CCI Q&R QAQE | Bangalore | Karnataka | Contingent Worker | Q&R |  |  |  |  |  |  |  |  | Director,  ESA DevOps, Reliability & Services | Director | Director | Non-IC | Non-Tech |  |  |  | EMR R&D Bangalore Operations Clinical | EMR |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Peerzada Mohamed Usman, Sharick Ahmed | sharickahmed.mohammedusman@philips.com | Quality Engineer Software | CCI EMR Q&R | Bangalore | Karnataka | Quality Engineer | EMR |  |  |  |  |  |  |  |  | Director, ESA Development | Director | Director | Non-IC | Non-Tech |  |  |  | EMR R&D Bangalore Patient Admin System | EMR |
+| 2020-07-02 00:00:00 | uSWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Poonacha, Pavithra | Pavithra.Poonacha@philips.com | Senior Specialist I | PIC BEQR CDC | Bangalore | Karnataka | Specialist | BEQR |  |  |  |  |  |  |  |  | Director, Head of QA QE BG HI | Director | Head | Non-IC | Non-Tech |  |  |  | EMR R&D DevOps | EMR |
+| 2020-07-02 00:00:00 | SW Excellence epic | Shivakumar, Kr | 30 | Shivakumar, Kr | kr.shivakumar@philips.com | Fellow Architect Chief Architect Office | I&S CTO Chief Architect Office | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Director, HI Customer Operations | Director | Director | Non-IC | Non-Tech |  |  |  | EMR R&D Verification & Validation | EMR |
+| 2020-07-02 00:00:00 | SW Excellence epic | Shivakumar, Kr | 30 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Director, Imaging Platform | Director | Director | Non-IC | Non-Tech |  |  |  | EMR R&D Verification & Validation I | EMR |
+| 2020-07-02 00:00:00 | SW Excellence epic | Shivakumar, Kr | 30 | Belavadi, Mahesh | Mahesh.Belavadi@philips.com | Senior Software Architect | I&S CTO PIC HC MGMT SIG Markets | Bangalore | Karnataka | Architect | SIG Markets |  |  |  |  |  |  |  |  | Director, ImCS R&D Site Leader | Director | Director | Non-IC | Non-Tech |  |  |  | EMR R&D Verification & Validation II | EMR |
+| 2020-07-02 00:00:00 | SW Excellence epic | Shivakumar, Kr | 30 | Ashok, Ajit | ajit.ashok@philips.com | Director, Market Solutions and Big Data Analytics | PIC HC MGMT | Bangalore | Karnataka | Director | HC |  |  |  |  |  |  |  |  | Director, Market Solutions and Big Data Analytics | Director | Director | Non-IC | Non-Tech |  |  |  | Enabling Plat. EIS - Products | EIS |
+| 2020-07-02 00:00:00 | CoE .craft evaluation walkthrough | Arasu, Rajesh | 30 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Director, Offensive Security | Director | Director | Non-IC | Non-Tech |  |  |  | Enabling Plat. EIS - Products - CAPI | EIS |
+| 2020-07-02 00:00:00 | CT/AMI -Software Assessment Preparation | Kumar S, Senthil | 60 | Kumar S, Senthil | senthil.kumar@philips.com | Director | BIU DI CT - AMI R&D | Bangalore | Karnataka | Director | CT AMI |  |  |  |  |  |  |  |  | Director, Software Engineering | Director | Director | Non-IC | Non-Tech |  |  |  | Enabling Plat. EIS - Solution Delivery | EIS |
+| 2020-07-02 00:00:00 | CT/AMI -Software Assessment Preparation | Kumar S, Senthil | 60 | Manjeshwar, Ravindra | ravindra.manjeshwar@philips.com | Chief Scientist | BIU DI CT - AMI R&D | Highland Heights | Ohio | Scientist | CT AMI |  |  |  |  |  |  |  |  | Director, Ultrasound SW | Director | Director | Non-IC | Non-Tech |  |  |  | Enabling Plat. EIS-Products - Emerging | EIS |
+| 2020-07-02 00:00:00 | CT/AMI -Software Assessment Preparation | Kumar S, Senthil | 60 | Paul, Kunal | kunal.paul@philips.com | Senior Architect II | PIC DI CT HOST | Bangalore | Karnataka | Architect | DI CT |  |  |  |  |  |  |  |  | District Team Lead, Solution Delivery | District Team Lead | Team Lead | Non-IC | Non-Tech |  |  |  | Finance CTO Office | Finance CTO |
+| 2020-07-02 00:00:00 | CT/AMI -Software Assessment Preparation | Kumar S, Senthil | 60 | Rekhson, Misha | misha.rekhson@philips.com | Principal Architect, BIU DI CT/AMI R&D Imaging | BIU DI CT/AMI R&D Imaging | Highland Heights | Ohio | Architect | CT AMI |  |  |  |  |  |  |  |  | District Team Lead, West Zone | District Team Lead | Team Lead | Non-IC | Non-Tech |  |  |  | Genomics R&D | Genomics |
+| 2020-07-02 00:00:00 | CT/AMI -Software Assessment Preparation | Kumar S, Senthil | 60 | Kasibhatla, Sastry | sastry.kasibhatla@philips.com | Senior Serviceability Architect | BIU DI CT R&D OCE | Highland Heights | Ohio | Architect | CT AMI |  |  |  |  |  |  |  |  | Engineer R&D | Engineer R&D | SDE | IC | Non-Tech |  |  |  | Global Learning Operations APAC | Learning |
+| 2020-07-02 00:00:00 | Updated invitation: SIG Technical Validation Session Tuscany iOS for Philips ... @ Fri Feb 7, 2020 11am - 1pm (CET) (dsvellal@philips.com) | w.heijstek@sig.eu | 120 | Puthukudi, Swaroop | swaroop.puthukudi@philips.com | Sr. Software Technologist I | PIC PHDSI_Blr_Propositions_Beauty | Bangalore | Karnataka | Technologist | PHDSI |  |  |  |  |  |  |  |  | Engineering Director | Engineering Director | Director | Non-IC | Non-Tech |  |  |  | Global MR R&D | MR |
+| 2020-10-02 00:00:00 | Evaluation of  Siva Sankar Mannem |  | 60 | Ramchandran, Prabha | prabha.ramchandran@philips.com | Digital TA consultant Asia | India Digital, Q&R, R&D | Bangalore | Karnataka | Recruiter | IGT |  |  |  |  |  |  |  |  | Enterprise Agile Coach | Enterprise Agile Coach | Coach | IC | Non-Tech |  |  |  | Global Talent Acquisition | Recruitment |
+| 2020-10-02 00:00:00 | Our approach | Arasu, Rajesh | 30 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Entry Level Tests Analyst | Entry Level Tests Analyst | Quality Engineer | IC | Non-Tech |  |  |  | Group Security | Security |
+| 2020-10-02 00:00:00 | Our approach | Arasu, Rajesh | 30 | Belavadi, Mahesh | Mahesh.Belavadi@philips.com | Senior Software Architect | I&S CTO PIC HC MGMT SIG Markets | Bangalore | Karnataka | Architect | SIG Markets |  |  |  |  |  |  |  |  | Executive Assistant | Executive Assistant | Assistant | IC | Non-Tech |  |  |  | GS Product & Security Services | GS |
+| 2020-10-02 00:00:00 | 1:1 Kala/Datta | Gv, Kalavathi | 60 | Gv, Kalavathi | kalavathi.gv@philips.com | Business Leader | I&S Chief Technology Office & Research | Bangalore | Karnataka | Leader | CTO |  |  |  |  |  |  |  |  | Executive Assistant, SW CoE | Executive Assistant | Assistant | IC | Non-Tech |  |  |  | GS Product Security CoE | GS |
+| 2020-10-02 00:00:00 | Catch up on campus panel | Vellal, Dattatreya | 30 | Chalam, Tejaswini | tejaswini.chalam@philips.com | Campus Recruitment Lead, India Subcontinent | Talent Acquisition – Campus Asia | Bangalore | Karnataka | Recruiter | SRC |  |  |  |  |  |  |  |  | Experienced Software Architect | Experienced Software Architect | Architect | IC | Non-Tech |  |  |  | Health Systems Greater China Professional Service | CDI China |
+| 2020-10-02 00:00:00 | Catch up on campus panel | Vellal, Dattatreya | 30 | Karayi, Sameer | sameer.karayi@philips.com | Critical Capabilities Director, TA | Global Digital, Q&R, R&D and Talent Intelligence | Bangalore | Karnataka | Recruiter | Genomics |  |  |  |  |  |  |  |  | Fellow Architect Chief Architect Office | Fellow Architect Chief Architect Office | Architect | IC | Non-Tech |  |  |  | HI PQMS Global | PQMS |
+| 2020-10-02 00:00:00 | Catch up on campus panel | Vellal, Dattatreya | 30 | Kalyan, Sharath | sharath.kalyan@philips.com | Manager II | I&S CTO PIC HC MGMT SIG-Markets | Bangalore | Karnataka | Manager | SIG Markets |  |  |  |  |  |  |  |  | Finance BP BGs/Innovation/Functions | Finance BP BGs | Finance | IC | Non-Tech |  |  |  | HI Q&R Post Market Surveillance | Q&R |
+| 2020-11-02 00:00:00 | .connect session - setting up IDE env | R U, Rashmi | 120 | Tanwar, Nishant | Nishant.Tanwar@philips.com | Software Engineer II | Bu MA Patient Monitoring PIC - Apps | Bangalore | Karnataka | SDE | MA PM |  |  |  |  |  |  |  |  | Genomics Head of R&D | Genomics Head of R&D | Head | Non-IC | Non-Tech |  |  |  | HI Q&R Process QA &QE | Q&R |
+| 2020-11-02 00:00:00 | .connect session - setting up IDE env | R U, Rashmi | 120 | Raj, Rohit | Rohit.Raj@philips.com | Software Engineer I | Bu MA Patient Monitoring PIC - Apps | Bangalore | Karnataka | SDE | MA PM |  |  |  |  |  |  |  |  | Global Head Strategic Capabilities & TI | Global Head Strategic Capabilities & TI | Head | Non-IC | Non-Tech |  |  |  | HR Greater China | HR |
+| 2020-11-02 00:00:00 | .connect session - setting up IDE env | R U, Rashmi | 120 | Gopal, Bhasker | bhasker.gopal@philips.com | Manager II | MA Patient Monitoring PIC Bangalore | Bangalore | Karnataka | Manager | MA |  |  |  |  |  |  |  |  | Group Leader | Group Leader | Leader | Non-IC | Non-Tech |  |  |  | HR I2M | HR |
+| 2020-11-02 00:00:00 | .connect session - setting up IDE env | R U, Rashmi | 120 | Padmanaban, Sudarsan | sudarsan.padmanaban@philips.com | Senior Software Technologist I | Bu MA Patient Monitoring PIC - Apps | Bangalore | Karnataka | Technologist | MA PM |  |  |  |  |  |  |  |  | Group Leader Digital Solutions | Group Leader Digital Solutions | Leader | Non-IC | Non-Tech |  |  |  | HS GC Professional Service Delivery | HS GC |
+| 2020-11-02 00:00:00 | Updated invitation: SIG Technical Validation Session HSDP-CP for Philips Tech... @ Tue Feb 11, 2020 10:30am - 12:30pm (CET) (dsvellal@philips.com) | w.heijstek@sig.eu | 120 | Zwanenburg, Jan | jan.zwanenburg@philips.com | Senior Architect Software | I&S HSP Clinical Platforms | Eindhoven |  | Architect | HSP |  |  |  |  |  |  |  |  | Group Leader Electronics | Group Leader Electronics | Leader | Non-IC | Non-Tech |  |  |  | I&S – CTO – Research Digital Europe | CTO |
+| 2020-11-02 00:00:00 | Code quality as a service | Vellal, Dattatreya | 30 | De Marco, Darlan Diego | darlan.marco@philips.com | Experienced Software Architect | EMR R&D DevOps | Blumenau | Santa Catarina | Architect | EMR |  |  |  |  |  |  |  |  | Group Leader SW technology | Group Leader SW technology | Leader | Non-IC | Non-Tech |  |  |  | I&S CTO CAO Architecture | CAO |
+| 2020-11-02 00:00:00 | Code quality as a service | Vellal, Dattatreya | 30 | Jaiswal, Rajendra Kumar | rajendra.kumar.jaiswal@philips.com | Sr Specialist II - DevOps | EMR R&D Bangalore | Bangalore | Karnataka | DevOps | EMR |  |  |  |  |  |  |  |  | Grouplead Software & T&I | Grouplead Software & T&I | Leader | Non-IC | Non-Tech |  |  |  | I&S CTO CDI Software Department | CDI China |
+| 2020-12-02 00:00:00 | DORA technical practices and .craft differences | Arasu, Rajesh | 30 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Head of Development | Head of Development | Head | Non-IC | Non-Tech |  |  |  | I&S CTO CDI SW CDI DI Professional Care | CDI China |
+| 2020-12-02 00:00:00 | DORA technical practices and .craft differences | Arasu, Rajesh | 30 | Belavadi, Mahesh | Mahesh.Belavadi@philips.com | Senior Software Architect | I&S CTO PIC HC MGMT SIG Markets | Bangalore | Karnataka | Architect | SIG Markets |  |  |  |  |  |  |  |  | Head of DI China & MR AD Suzhou | Head of DI China & MR AD Suzhou | Head | Non-IC | Non-Tech |  |  |  | I&S CTO CDI SW CDI testing | CDI China |
+| 13/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Head of Global Product & Security Services | Head of Global Product & Security Services | Head | Non-IC | Non-Tech |  |  |  | I&S CTO CDI SW DevOps | CDI China |
+| 13/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Prasath, Arul Patchi | ArulPatchi.Prasath@philips.com | Senior Software Technologist I | PIC US R&D 2 | Bangalore | Karnataka | Technologist | US |  |  |  |  |  |  |  |  | Head of Innovation Precision Diagnosis | Head of Innovation Precision Diagnosis | Head | Non-IC | Non-Tech |  |  |  | I&S CTO Chief Architect Office | CAO |
+| 13/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Belavadi, Mahesh | Mahesh.Belavadi@philips.com | Senior Software Architect | I&S CTO PIC HC MGMT SIG Markets | Bangalore | Karnataka | Architect | SIG Markets |  |  |  |  |  |  |  |  | Head of IP&S, Northern Asia | Head of IP&S | Head | Non-IC | Non-Tech |  |  |  | I&S CTO China Digital Innovation | CDI China |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Mirle, Kiran | kiran.mirle@philips.com | Senior Specialist II - Q&R - QA/QE | I&S CTO PIC BEQR CT | Bangalore | Karnataka | Specialist | BEQR |  |  |  |  |  |  |  |  | Head of Q&R CI | Head of Q&R CI | Head | Non-IC | Non-Tech |  |  |  | I&S CTO CoE SW Competencies | SWCOE |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Prasad, Pankaj | Pankaj.Nirmal@philips.com | Senior Specialist II | I&S CTO SW CoE PIC Project Management Office | Bangalore | Karnataka | Specialist | PIC PMO |  |  |  |  |  |  |  |  | Head of Q&R HI | Head of Q&R HI | Head | Non-IC | Non-Tech |  |  |  | I&S CTO PIC Architecture & SW practice | CAO |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Radha, S Srimathi | Srimathi.Radha@philips.com | Contingent Worker | I&S CTO SW CoE PIC Project Management Office | Bangalore | Karnataka | Contingent Worker | PIC PMO |  |  |  |  |  |  |  |  | Head of Q&R PD Venture | Head of Q&R PD Venture | Head | Non-IC | Non-Tech |  |  |  | I&S CTO PIC BEQR CT | BEQR |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Beeraiah, Sowbhagya | Sowbhagya.Beeraiah@philips.com | Contingent Worker | I&S CTO SW CoE PIC Process | Bangalore | Karnataka | Contingent Worker | PIC Process |  |  |  |  |  |  |  |  | Head of Q&R PI&C and I&S Platforms | Head of Q&R PI&C and I&S Platforms | Head | Non-IC | Non-Tech |  |  |  | I&S CTO PIC Chief Architect office | CAO |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | PVS, Karthik | Karthik.PVS@philips.com | Deployment Manager, I2M Excellence | I&S PE I2ME Deployments | Bangalore | Karnataka | Manager | I2ME |  |  |  |  |  |  |  |  | Head of Q&R, Connected Care Informatics | Head of Q&R | Head | Non-IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT Mobility COE | Mobility |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | GN, Musarrath Jabeen | musarrath.jabeen.gn@philips.com | Enterprise Agile Coach | I&S CTO SW CoE PIC Process | Bangalore | Karnataka | Coach | PIC Process |  |  |  |  |  |  |  |  | Head of QA/QE, Reliability | Head of QA | Head | Non-IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT Moblity COE | Mobility |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Karayi, Sameer | sameer.karayi@philips.com | Critical Capabilities Director, TA | Global Digital, Q&R, R&D and Talent Intelligence | Bangalore | Karnataka | Recruiter | Genomics |  |  |  |  |  |  |  |  | Head of Security | Head of Security | Head | Non-IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT NMS&RC Mobile Device Farm | Mobile Device Farm |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Periaswamy, Ramu | Ramu.Periaswamy@philips.com | Sr Manager - Talent Acquisition | India Digital, Q&R, R&D | Bangalore | Karnataka | Recruiter | IGT |  |  |  |  |  |  |  |  | Head of Software Engineering | Head of Software Engineering | Head | Non-IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT SIG Analytics | SIG Analytics |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Rajkumar, Gopikrishnan | gopi.k@philips.com | Sr Digital TA Consultant - Asia | India Digital, Q&R, R&D | Bangalore | Karnataka | Recruiter | IGT |  |  |  |  |  |  |  |  | Head of TA Critical Capabilities EMEA | Head of TA Critical Capabilities EMEA | Head | Non-IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT SIG Analytics Solutions-2 | SIG Analytics |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Badami, Nandita | nandita.badami@philips.com | Digital TA consultant Asia | India Digital, Q&R, R&D | Bangalore | Karnataka | Recruiter | IGT |  |  |  |  |  |  |  |  | Head of TA Technology and Research Services | Head of TA Technology and Research Services | Head | Non-IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT SIG Markets | SIG Markets |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Ramchandran, Prabha | prabha.ramchandran@philips.com | Digital TA consultant Asia | India Digital, Q&R, R&D | Bangalore | Karnataka | Recruiter | IGT |  |  |  |  |  |  |  |  | Head, Product Quality Software | Head | Head | Non-IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT SIG-Analytics Solutions-1 | SIG Analytics |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Choudhary, Dilip Kumar | Dilip.choudhary@philips.com | Digital TA consultant, Asia | India Digital, Q&R, R&D | Pune | Maharashtra | Recruiter | IGT |  |  |  |  |  |  |  |  | HR Business Partner | HR Business Partner | HR | IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT SIG-Markets | SIG Markets |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Antonia D'Souza, Lavina | lavina.dsouza@philips.com | Digital TA Consultant Asia | India Digital, Q&R, R&D | Pune | Maharashtra | Recruiter | IGT |  |  |  |  |  |  |  |  | HR Business Partner PIC | HR Business Partner PIC | HR | IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT SIG-Markets Avnit-3 | SIG Markets |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Singh, Komal | komal.singh@philips.com | Contingent Worker | India Digital, Q&R, R&D | Bangalore | Karnataka | Contingent Worker | IGT |  |  |  |  |  |  |  |  | HR Business Partner, DI SZ & SY | HR Business Partner | HR | IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT SIG-Markets Markets-2 | SIG Markets |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Srivastava, Shivani | shivani.srivastava@philips.com | Digital TA consultant Asia | Asia Digital and R&D | Bangalore | Karnataka | Recruiter | Asia Digital and R&D |  |  |  |  |  |  |  |  | HR Business Partner, Experience Design and HTS | HR Business Partner | HR | IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT SIG-Markets Markets-4 | SIG Markets |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Lakshmanaraj, Venkateswaran | venkateswaran.l@philips.com | Contingent Worker | Asia Digital and R&D | Bangalore | Karnataka | Contingent Worker | Asia Digital and R&D |  |  |  |  |  |  |  |  | HR Project Manager | HR Project Manager | HR | Non-IC | Non-Tech |  |  |  | I&S CTO PIC HC MGMT: Sleep & Respiratory care | SRC |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Shrivastava, Shashank | Shashank.Shrivastava@philips.com | Contingent Worker | Quality & Regulatory | Bangalore | Karnataka | Contingent Worker | Q&R |  |  |  |  |  |  |  |  | HRBP | HRBP | HR | IC | Non-Tech |  |  |  | I&S CTO PIC HC Monitoring Analytics GSC MRPC | GSC MRPC |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Prusty, Srinibas | srinibas.prusty@philips.com | Senior Specialist II - Q&R QA/QE | IGT Systems Q&R QA & QE | Bangalore | Karnataka | Specialist | IGT |  |  |  |  |  |  |  |  | I&D Lead, Povos | I&D Lead | Leader | Non-IC | Non-Tech |  |  |  | I&S CTO PIC HC Monitoring&therapeuticCare | Therapeutic Care |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Shatdarshnam, Ravichandra | Ravichandra.Shatdarshnam@philips.com | Senior Specialist I - Q&R- QA/QE | HI Q&R Process QA &QE | Bangalore | Karnataka | Specialist | Q&R |  |  |  |  |  |  |  |  | Innovation Lead | Innovation Lead | Leader | Non-IC | Non-Tech |  |  |  | I&S CTO PIC Healthcare Management | Healthcare Management |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Yatgiri, Sanjay | sanjay.yatgiri@philips.com | Senior Specialist II - Q&R - QA/QE | PIC BEQR CT | Bangalore | Karnataka | Specialist | BEQR |  |  |  |  |  |  |  |  | Intern | Intern | Intern | IC | Tech |  |  |  | I&S CTO PIC SIG Chief Architect Office 1 | CAO |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Kharvi, Sangeetha | sangeetha.kharvi@philips.com | Contingent Worker | I&S CTO PIC BEQR CT | Bangalore | Karnataka | Contingent Worker | BEQR |  |  |  |  |  |  |  |  | IPS Learning Process & System Specialist | IPS Learning Process & System Specialist | IP&S | IC | Non-Tech |  |  |  | I&S CTO PIC SIG Chief Architect Office 2 | CAO |
+| 2020-06-03 00:00:00 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Shrivastava, Shashank | Shashank.Shrivastava@philips.com | Contingent Worker | Quality & Regulatory | Bangalore | Karnataka | Contingent Worker | Q&R |  |  |  |  |  |  |  |  | IT Specialist | IT Specialist | IT | IC | Tech |  |  |  | I&S CTO PIC SIG Markets 1 | SIG Markets |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Krishnaraj, Hamsa | Hamsa.Krishnaraj@philips.com | Senior Manager II | PIC Serviceability R&D | Bangalore | Karnataka | Manager | Serviceability |  |  |  |  |  |  |  |  | Lead SW Development Engineer | Lead SW Development Engineer | SDE | IC | Tech |  |  |  | I&S CTO PIC Strategic innovation group | SIG |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Balasubramanian, Vaishnavai | vaishnavai.balasubramanian@philips.com | Project Manager I | PIC Serviceability R&D - IDM & New Service | Bangalore | Karnataka | Project Manager | Serviceability |  |  |  |  |  |  |  |  | Management Trainee | Management Trainee | Trainee | IC | Non-Tech |  |  |  | I&S CTO PIC Strategy & transformation leader | Transformation |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Chourey, Pooja | Pooja.Chourey@philips.com | Project Manager I | PIC Serviceability R&D - IDM & New Service | Bangalore | Karnataka | Project Manager | Serviceability |  |  |  |  |  |  |  |  | Manager I | Manager I | Manager | Non-IC | Non-Tech |  |  |  | I&S CTO R DH&PC SW Concepts Guild | DH&PC |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Jayaram, Pooja | pooja.jayaram@philips.com | Project Manager I | PIC Serviceability R&D - IoT For Services | Bangalore | Karnataka | Project Manager | Serviceability |  |  |  |  |  |  |  |  | Manager II | Manager II | Manager | Non-IC | Non-Tech |  |  |  | I&S CTO R Healthcare Solutions India | R Healthcare Solutions India |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Kumat, Praveen | praveen.kumat@philips.com | Project Manager I | PIC Serviceability R&D - IDM & New Service | Bangalore | Karnataka | Project Manager | Serviceability |  |  |  |  |  |  |  |  | Manager of SW Application | Manager of SW Application | Manager | Non-IC | Non-Tech |  |  |  | I&S CTO R HS: Data Science as a Service | R HS: Data science |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Battaje, Bharath | Bharath.Battaje@philips.com | Sr. Software Technologist I | PIC Serviceability R&D - IDM & New Service | Bangalore | Karnataka | Technologist | Serviceability |  |  |  |  |  |  |  |  | New Business Development Manager | New Business Development Manager | Manager | Non-IC | Non-Tech |  |  |  | I&S CTO RA Clinical Research Board | Clinical Research |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Thomas, Abey | Abey.Thomas@philips.com | Architect II | PIC Serviceability R&D - IoT For Services | Bangalore | Karnataka | Architect | Serviceability |  |  |  |  |  |  |  |  | Performance Architect | Performance Architect | Architect | IC | Tech |  |  |  | I&S CTO RC CS Connected Care & Patient Monitoring | CC |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Sabat, Arun | Arun.Sabat@philips.com | Architect II - Serviceability | PIC Serviceability R&D - IoT For Services | Bangalore | Karnataka | Architect | Serviceability |  |  |  |  |  |  |  |  | Platform Architect | Platform Architect | Architect | IC | Tech |  |  |  | I&S CTO RC Medical Imaging | Medical Imaging |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Mathew, Vineed | vineed.mathew@philips.com | BPE I2M SAFe | I&S PE I2ME Process Design | Bangalore | Karnataka | BPE | I2ME |  |  |  |  |  |  |  |  | Portfolio Manager | Portfolio Manager | Portfolio Manager | IC | Non-Tech |  |  |  | I&S CTO RC NLP and Data Analytics | NLP & Data Analyltics |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Peters, Roopa | Roopa.Peters@philips.com | Executive Assistant | PIC HC MGMT | Bangalore | Karnataka | Assistant | HC |  |  |  |  |  |  |  |  | Portfolio Manager - Operations & New Services | Portfolio Manager | Portfolio Manager | IC | Non-Tech |  |  |  | I&S CTO RC Operations | Operations |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Kondayil, Srikanth | srikanth.kondayil@philips.com | Senior Specialist II - Q&R -QA/QE | HI Q&R Process QA &QE | Bangalore | Karnataka | Specialist | Q&R |  |  |  |  |  |  |  |  | Principal Architect | Principal Architect | Architect | IC | Tech |  |  |  | I&S CTO RC Quality & Regulatory | Q&R |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Pillutla, Sapna | Sapna.Pillutla@philips.com | Senior Specialist I - Q&R - QA/QE | I&S CTO PIC BEQR CT | Bangalore | Karnataka | Specialist | BEQR |  |  |  |  |  |  |  |  | Principal Architect - CDP2 Solutions | Principal Architect | Architect | IC | Tech |  |  |  | I&S CTO Research China | China Research |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Jain, Garima | Garima.Jain@philips.com | Sr Quality Engineer | PIC BEQR Ultrasound | Bangalore | Karnataka | Quality Engineer | BEQR |  |  |  |  |  |  |  |  | Principal Architect ESA | Principal Architect ESA | Architect | IC | Tech |  |  |  | I&S CTO SW CoE PIC Process | PIC Process |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | DM, Sobi | Sobi.DM@philips.com | Software Engineer II - Q&R - QA QE | I&S CTO PIC BEQR CT | Bangalore | Karnataka | SDE | BEQR |  |  |  |  |  |  |  |  | Principal Architect Patient Monitoring | Principal Architect Patient Monitoring | Architect | IC | Tech |  |  |  | I&S CTO SW CoE PIC Project Management Office | PIC PMO |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Kaiprath, Sandhya | sandhya.kaiprath@philips.com | Senior Specialist I-Q&R QA/QE, EDI Q&R | HI Q&R Process QA &QE | Bangalore | Karnataka | Specialist | Q&R |  |  |  |  |  |  |  |  | Principal Architect, BIU DI CT/AMI R&D Imaging | Principal Architect | Architect | IC | Tech |  |  |  | I&S External Ventures | External Ventures |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Jeyarajan, Maheswararaj | Maheswararaj.J@philips.com | Sr Manager-Deployment | I&S PE Idea 2 Market Excellence | Bangalore | Karnataka | Manager | I2ME |  |  |  |  |  |  |  |  | Principal Scientist | Principal Scientist | Architect | IC | Tech |  |  |  | I&S HealthSuite Platforms | HSP |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Hariharan, Kala | kala.hariharan@philips.com | Senior Specialist I - Q&R -PQMS | Oncology Informatics Quality | Bangalore | Karnataka | Specialist | Oncology |  |  |  |  |  |  |  |  | Principal Scientist, Medical Image Analytics | Principal Scientist | Architect | IC | Tech |  |  |  | I&S HSP Clinical Platforms | HSP |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Suvarna, Sujay Kumar | sujay.kumar.suvarna@philips.com | QMS Manager | CCI Q&R | Bangalore | Karnataka | QMS Manager | Q&R |  |  |  |  |  |  |  |  | Principal Software Architect Cardiology | Principal Software Architect Cardiology | Architect | IC | Tech |  |  |  | I&S HSP Ops PO PIC Remote Services | HSP |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Gangiredla, Srinivas | srinivas.gangiredla@philips.com | Software Validation Manager  EDI Q&R | HI Q&R Process QA &QE | Bangalore | Karnataka | Manager | Q&R |  |  |  |  |  |  |  |  | Principal Software Engineer | Principal Software Engineer | Architect | IC | Tech |  |  |  | I&S HSP Program Management | HSP |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | KSHIRSAGAR, Rahul | Rahul.Kshirsagar@philips.com | Contingent Worker | CCI Q&R QAQE | Bangalore | Karnataka | Contingent Worker | Q&R |  |  |  |  |  |  |  |  | Principal Systems Architect | Principal Systems Architect | Architect | IC | Tech |  |  |  | I&S HSP R&D NL DP Development & Scrum Mastership | HSP |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Peerzada Mohamed Usman, Sharick Ahmed | sharickahmed.mohammedusman@philips.com | Quality Engineer Software | CCI EMR Q&R | Bangalore | Karnataka | Quality Engineer | EMR |  |  |  |  |  |  |  |  | Principle Architect, Illumeo Lead System Architect | Principle Architect | Architect | IC | Tech |  |  |  | I&S HSP R&D PIC Clinical Platform | HSP |
+| 14/02/2020 | SWCoE Program new initiative-i will code | SW_CoE (Functional Account) | 90 | Poonacha, Pavithra | Pavithra.Poonacha@philips.com | Senior Specialist I | PIC BEQR CDC | Bangalore | Karnataka | Specialist | BEQR |  |  |  |  |  |  |  |  | Product Manager -1 | Product Manager | Product Manager | IC | Non-Tech |  |  |  | I&S HSP R&D PIC CP ADE Reporting | HSP |
+| 14/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Product Owner I | Product Owner I | Product Owner | IC | Non-Tech |  |  |  | I&S HSP R&D PIC CP Application Dev Environment | HSP |
+| 14/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Belavadi, Mahesh | Mahesh.Belavadi@philips.com | Senior Software Architect | I&S CTO PIC HC MGMT SIG Markets | Bangalore | Karnataka | Architect | SIG Markets |  |  |  |  |  |  |  |  | Product Owner II | Product Owner II | Product Owner | IC | Non-Tech |  |  |  | I&S HSP R&D PIC CP D&I Development | HSP |
+| 14/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Narayanasamy, Saravanan | saravanan.narayanasamy@philips.com | Sr. Director | IGT-S Research & Development | Bangalore | Karnataka | Director | IGT |  |  |  |  |  |  |  |  | Professional Service Delivery Leader | Professional Service Delivery Leader | Delivery Leader | Non-IC | Non-Tech |  |  |  | I&S HSP R&D PIC CP D&I Development and IOCC | HSP |
+| 14/02/2020 | Updated invitation: SIG Technical Validation Session Tuscany Android for Phil... @ Fri Feb 14, 2020 9:30am - 11:30am (CET) (dsvellal@philips.com) | w.heijstek@sig.eu | 120 | Jena, Santanu | santanu.jena@philips.com | Sr. Software Technologist II | PIC PHDSI_Blr_Propositions_OHC | Bangalore | Karnataka | Technologist | PHDSI |  |  |  |  |  |  |  |  | Program Manager | Program Manager | Program Manager | IC | Non-Tech |  |  |  | I&S HSP R&D PIC CP Data & Infrastructure | HSP |
+| 17/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 30 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Program Manager I | Program Manager I | Program Manager | IC | Non-Tech |  |  |  | I&S HSP R&D PIC Digital Platform | HSP |
+| 17/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 30 | Balakrishnan, Sathish Kumar | sathish.balakrishnan@philips.com | Sr. Director, SW | Global MR R&D | Bangalore | Karnataka | Director | MR |  |  |  |  |  |  |  |  | Program Manager II | Program Manager II | Program Manager | IC | Non-Tech |  |  |  | I&S HSP R&D PIC DP Big Data Platform | HSP |
+| 17/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 30 | Belavadi, Mahesh | Mahesh.Belavadi@philips.com | Senior Software Architect | I&S CTO PIC HC MGMT SIG Markets | Bangalore | Karnataka | Architect | SIG Markets |  |  |  |  |  |  |  |  | Project Manager | Project Manager | Project Manager | IC | Non-Tech |  |  |  | I&S HSP R&D PIC DP Clinical Data Lake | HSP |
+| 17/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Project Manager I | Project Manager I | Project Manager | IC | Non-Tech |  |  |  | I&S HSP R&D PIC DP Development 1 | HSP |
+| 17/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Kumar S, Senthil | senthil.kumar@philips.com | Director | BIU DI CT - AMI R&D | Bangalore | Karnataka | Director | CT AMI |  |  |  |  |  |  |  |  | Project Manager I - RTE | Project Manager I | Project Manager | IC | Non-Tech |  |  |  | I&S HSP R&D PIC DP Development 2 | HSP |
+| 17/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Paul, Kunal | kunal.paul@philips.com | Senior Architect II | PIC DI CT HOST | Bangalore | Karnataka | Architect | DI CT |  |  |  |  |  |  |  |  | Project Manager II | Project Manager II | Project Manager | IC | Non-Tech |  |  |  | I&S HSP R&D PIC DP Device Cloud | HSP |
+| 17/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Belavadi, Mahesh | Mahesh.Belavadi@philips.com | Senior Software Architect | I&S CTO PIC HC MGMT SIG Markets | Bangalore | Karnataka | Architect | SIG Markets |  |  |  |  |  |  |  |  | Project Software Engineer | Project Software Engineer | SDE | IC | Tech |  |  |  | I&S HSP R&D PIC DP HealthSuite Insights | HSP |
+| 18/02/2020 | Workshop to setup development environment with tools - Java | Kumar R N, Ashok | 150 | Kumar R N, Ashok | Ashok.Kumar2@Philips.com | SW Project Manager I | PD DI IAP-SW Serviceability | Bangalore | Karnataka | Project Manager | PD |  |  |  |  |  |  |  |  | Project Sr. Manager II | Project Sr. Manager II | Project Manager | IC | Non-Tech |  |  |  | I&S HSP Research & Development | HSP |
+| 18/02/2020 | Workshop to setup development environment with tools - Java | Kumar R N, Ashok | 150 | Singal, Rahul | Rahul.Singal@philips.com | Software Engineer I | PIC DI MR Serviceability | Bangalore | Karnataka | SDE | MR |  |  |  |  |  |  |  |  | Project Support | Project Support | Project Manager | IC | Non-Tech |  |  |  | I&S PE I2ME Deployments | I2ME |
+| 18/02/2020 | Pair programming slot | Gangadharan, Nikila | 60 | Gangadharan, Nikila | nikila.gangadharan@philips.com | Senior Manager II | I&S HSP R&D PIC Clinical Platform | Bangalore | Karnataka | Manager | HSP |  |  |  |  |  |  |  |  | Q&R Director | Q&R Director | Director | Non-IC | Non-Tech |  |  |  | I&S PE I2ME Process Design | I2ME |
+| 18/02/2020 | PIC Strategy: sub-team meeting: Talent Intake | Kumar, Nataraj | 60 | Kumar, Nataraj | nataraj.kumar@philips.com | Director | PIC | Bangalore | Karnataka | Director | PIC |  |  |  |  |  |  |  |  | QMS Manager | QMS Manager | QMS Manager | Non-IC | Non-Tech |  |  |  | I&S PE Idea 2 Market Excellence | I2ME |
+| 18/02/2020 | PIC Strategy: sub-team meeting: Talent Intake | Kumar, Nataraj | 60 | Karayi, Sameer | sameer.karayi@philips.com | Critical Capabilities Director, TA | Global Digital, Q&R, R&D and Talent Intelligence | Bangalore | Karnataka | Recruiter | Genomics |  |  |  |  |  |  |  |  | Quality Assurance Process Manager | Quality Assurance Process Manager | Quality Manager | Non-IC | Non-Tech |  |  |  | I&S PE InS Electronic Systems & IoT | IOT |
+| 18/02/2020 | PIC Strategy: sub-team meeting: Talent Intake | Kumar, Nataraj | 60 | Sharma, Rashmi | Rashmi.Sharma@philips.com | Senior Manager II | PD DI Image Acqusition Platform Software | Bangalore | Karnataka | Manager | PD |  |  |  |  |  |  |  |  | Quality Engineer Software | Quality Engineer Software | Quality Engineer | IC | Non-Tech |  |  |  | I&S XD - Design Delivery | XD |
+| 18/02/2020 | PIC Strategy: sub-team meeting: Talent Intake | Kumar, Nataraj | 60 | Chalam, Tejaswini | tejaswini.chalam@philips.com | Campus Recruitment Lead, India Subcontinent | Talent Acquisition – Campus Asia | Bangalore | Karnataka | Recruiter | SRC |  |  |  |  |  |  |  |  | Quality Manager | Quality Manager | Quality Manager | Non-IC | Non-Tech |  |  |  | I2M TA DACH | TA |
+| 18/02/2020 | Discuss Open Sourcing Cerberus | Golsteijn, Bart | 30 | Golsteijn, Bart | bart.golsteijn@philips.com | Senior Architect | I&S CTO R DH&PC SW Concepts Guild | Eindhoven |  | Architect | DH&PC |  |  |  |  |  |  |  |  | R&D Director | R&D Director | Director | Non-IC | Non-Tech |  |  |  | I2M TA IND | TA |
+| 18/02/2020 | Discuss Open Sourcing Cerberus | Golsteijn, Bart | 30 | Niessen, Arnold | arnold.niessen@philips.com | Senior IP Counsel | IP Diagnostic Imaging | Eindhoven | Noord-Brabant | IP&S | Diagnostic Imaging |  |  |  |  |  |  |  |  | R&D Group Leader | R&D Group Leader | Leader | Non-IC | Non-Tech |  |  |  | I2M TA IND 1 | TA |
+| 18/02/2020 | Discuss Open Sourcing Cerberus | Golsteijn, Bart | 30 | Knoops, Jeroen | jeroen.knoops@philips.com | Senior Software Engineer | I&S CTO R DH&PC SW Concepts Guild | Eindhoven |  | SDE | DH&PC |  |  |  |  |  |  |  |  | R&D Leader | R&D Leader | Leader | Non-IC | Non-Tech |  |  |  | I2M TA IND 2 | TA |
+| 18/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Regional Learning Delivery Specialist | Regional Learning Delivery Specialist | Coach | IC | Non-Tech |  |  |  | I2M TA IND 3 | TA |
+| 18/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Bhalla, Vikas | vikas.bhalla@philips.com | Director | PD US R&D | Bangalore | Karnataka | Director | PD |  |  |  |  |  |  |  |  | Regulatory Affairs Specialist | Regulatory Affairs Specialist | Regulatory Specialist | IC | Non-Tech |  |  |  | I2M TA IND 5 | TA |
+| 18/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Kawathekar, Devdatt | devdatt.kawathekar@philips.com | Principal Architect | PIC US R&D MT | Bangalore | Karnataka | Architect | US |  |  |  |  |  |  |  |  | Release Train Engineer | Release Train Engineer | RTE | IC | Non-Tech |  |  |  | ICAP R&D Operations | ICAP |
+| 18/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Belavadi, Mahesh | Mahesh.Belavadi@philips.com | Senior Software Architect | I&S CTO PIC HC MGMT SIG Markets | Bangalore | Karnataka | Architect | SIG Markets |  |  |  |  |  |  |  |  | Release Train Engineer / ALM Product Owner | Release Train Engineer | RTE | IC | Non-Tech |  |  |  | ICAP SW Development | ICAP |
+| 19/02/2020 | Review of Crafting Quality Code - flagship Program | Nath, Bnil | 60 | Nath, Bnil | bnil.nath@philips.com | Contingent Worker | I&S CTO PIC Strategic innovation group | Bangalore | Karnataka | Contingent Worker | SIG |  |  |  |  |  |  |  |  | Research & Development Executive Assistant | Research & Development Executive Assistant | Assistant | IC | Non-Tech |  |  |  | IGT Systems Acquisition Control Software | IGT |
+| 19/02/2020 | Review of Crafting Quality Code - flagship Program | Nath, Bnil | 60 | Rebekah, Agusty | agusty.rebekah@philips.com | Regional Learning Delivery Specialist | Learning Hub Asia | Bangalore | Karnataka | Coach | Learning |  |  |  |  |  |  |  |  | Research and Development Manager | Research and Development Manager | Manager | Non-IC | Non-Tech |  |  |  | IGT Systems Imaging & IP Software | IGT |
+| 19/02/2020 | Review of Crafting Quality Code - flagship Program | Nath, Bnil | 60 | Belavadi, Mahesh | Mahesh.Belavadi@philips.com | Senior Software Architect | I&S CTO PIC HC MGMT SIG Markets | Bangalore | Karnataka | Architect | SIG Markets |  |  |  |  |  |  |  |  | Research and Development Senior Director | Research and Development Senior Director | Director | Non-IC | Non-Tech |  |  |  | IGT Systems Imaging Chain Cluster | IGT |
+| 19/02/2020 | Pair programming slot | Gangadharan, Nikila | 60 | Gangadharan, Nikila | nikila.gangadharan@philips.com | Senior Manager II | I&S HSP R&D PIC Clinical Platform | Bangalore | Karnataka | Manager | HSP |  |  |  |  |  |  |  |  | Research Designer | Research Designer | Design Engineer | IC | Tech |  |  |  | IGT Systems MoS R&D | IGT |
+| 19/02/2020 | Pair programming slot | Gangadharan, Nikila | 60 | Ahemad, Sheraj | Sheraj.Ahemad@philips.com | Contingent Worker | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Contingent Worker | HSP |  |  |  |  |  |  |  |  | Research Engineer B | Research Engineer B | SDE | IC | Tech |  |  |  | IGT Systems Q&R QA & QE | IGT |
+| 19/02/2020 | Pair Programming session with Datta- Sumit/Abhishek from Pillars Team (D&I) | Paul, Sweta | 60 | Paul, Sweta | sweta.paul@philips.com | Project Manager II | I&S HSP R&D PIC CP Data & Infrastructure | Bangalore | Karnataka | Project Manager | HSP |  |  |  |  |  |  |  |  | Research Engineer I | Research Engineer I | SDE | IC | Tech |  |  |  | IGT Systems System Design | IGT |
+| 19/02/2020 | Pair Programming session with Datta- Sumit/Abhishek from Pillars Team (D&I) | Paul, Sweta | 60 | Yadav, Abhishek Kumar | abhishek.kumar.yadav@philips.com | Software Engineer II | I&S HSP R&D PIC CP D&I Development and IOCC | Bangalore | Karnataka | SDE | HSP |  |  |  |  |  |  |  |  | Research Engineer II | Research Engineer II | SDE | IC | Tech |  |  |  | IGT_Systems MoS R&D Systems | IGT |
+| 19/02/2020 | SW CT Assessment - Internal alignment | SW_CoE (Functional Account) | 60 | Paul, Kunal | kunal.paul@philips.com | Senior Architect II | PIC DI CT HOST | Bangalore | Karnataka | Architect | DI CT |  |  |  |  |  |  |  |  | Scientist, Epidemiology and Population Health | Scientist | Scientist | IC | Tech |  |  |  | IGT-S Research & Development | IGT |
+| 19/02/2020 | SW CT Assessment - Internal alignment | SW_CoE (Functional Account) | 60 | Satapathy, Arunkumar | Arunkumar.Satapathy@philips.com | Senior Manager I | PD DI IAP CT Software | Bangalore | Karnataka | Manager | PD |  |  |  |  |  |  |  |  | Scrum Master | Scrum Master | Scrum Master | IC | Non-Tech |  |  |  | Intellectual Property & Standards | IP&S |
+| 20/02/2020 | Catch-up: Ideating on how to fast-track managers to techno-managers | Vellal, Dattatreya | 60 | Supakar, Sitangshu | sitangshu.supakar@philips.com | Director | I&S HSP Research & Development | Bangalore | Karnataka | Director | HSP |  |  |  |  |  |  |  |  | Scrum Master I | Scrum Master I | Scrum Master | IC | Non-Tech |  |  |  | IP Diagnostic Imaging | Diagnostic Imaging |
+| 20/02/2020 | Catch-up: Ideating on how to fast-track managers to techno-managers | Vellal, Dattatreya | 60 | Gangadharan, Nikila | nikila.gangadharan@philips.com | Senior Manager II | I&S HSP R&D PIC Clinical Platform | Bangalore | Karnataka | Manager | HSP |  |  |  |  |  |  |  |  | Scrum Master I - Testing | Scrum Master I | Scrum Master | IC | Non-Tech |  |  |  | IT Delivery | IT Delivery |
+| 20/02/2020 | Catch-up: Ideating on how to fast-track managers to techno-managers | Vellal, Dattatreya | 60 | Kalyan, Sharath | sharath.kalyan@philips.com | Manager II | I&S CTO PIC HC MGMT SIG-Markets | Bangalore | Karnataka | Manager | SIG Markets |  |  |  |  |  |  |  |  | Senior Architect | Senior Architect | Architect | IC | Tech |  |  |  | IT Delivery Innovations and Emerging Technologies | IT Delivery |
+| 20/02/2020 | Pair programming slot | Gangadharan, Nikila | 60 | Gangadharan, Nikila | nikila.gangadharan@philips.com | Senior Manager II | I&S HSP R&D PIC Clinical Platform | Bangalore | Karnataka | Manager | HSP |  |  |  |  |  |  |  |  | Senior Architect - I | Senior Architect | Architect | IC | Tech |  |  |  | IT Global Services | IT |
+| 20/02/2020 | Pair programming slot | Gangadharan, Nikila | 60 | Agrawal, Ashish | ashish.agrawal@philips.com | Software Technologist II | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Senior Architect - II PHM | Senior Architect | Architect | IC | Tech |  |  |  | KA Innovation Klagenfurt | KA |
+| 20/02/2020 | Pair programming slot | Gangadharan, Nikila | 60 | Kerakalamatti, Savitri | Savitri.Kerakalamatti@philips.com | Software Technologist I | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Senior Architect I | Senior Architect I | Architect | IC | Tech |  |  |  | KA Research & Development | KA |
+| 20/02/2020 | Pair Programming | Agrawal, Ashish | 30 | Agrawal, Ashish | ashish.agrawal@philips.com | Software Technologist II | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Senior Architect II | Senior Architect II | Architect | IC | Tech |  |  |  | Learning Hub Asia | Learning |
+| 20/02/2020 | Pair Programming | Agrawal, Ashish | 30 | Kerakalamatti, Savitri | Savitri.Kerakalamatti@philips.com | Software Technologist I | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Senior Architect II - I&S CTO SIG CAO | Senior Architect II | Architect | IC | Tech |  |  |  | MA DECG & iECG | MA |
+| 20/02/2020 | SWExcellence TMD : Discussion on Guardrails | R U, Rashmi | 30 | Mirle, Kiran | kiran.mirle@philips.com | Senior Specialist II - Q&R - QA/QE | I&S CTO PIC BEQR CT | Bangalore | Karnataka | Specialist | BEQR |  |  |  |  |  |  |  |  | Senior Architect Software | Senior Architect Software | Architect | IC | Tech |  |  |  | MA HW & Embedded SW | MA |
+| 20/02/2020 | SWExcellence TMD : Discussion on Guardrails | R U, Rashmi | 30 | Poonacha, Pavithra | Pavithra.Poonacha@philips.com | Senior Specialist I | PIC BEQR CDC | Bangalore | Karnataka | Specialist | BEQR |  |  |  |  |  |  |  |  | Senior Architect Solution Robustness Automation | Senior Architect Solution Robustness Automation | Architect | IC | Tech |  |  |  | MA Patient Monitoring PIC Bangalore | MA |
+| 20/02/2020 | SWExcellence TMD : Discussion on Guardrails | R U, Rashmi | 30 | Peerzada Mohamed Usman, Sharick Ahmed | sharickahmed.mohammedusman@philips.com | Quality Engineer Software | CCI EMR Q&R | Bangalore | Karnataka | Quality Engineer | EMR |  |  |  |  |  |  |  |  | Senior Director | Senior Director | Director | Non-IC | Non-Tech |  |  |  | MA Real Time Analytics | MA |
+| 20/02/2020 | SWExcellence TMD : Discussion on Guardrails | R U, Rashmi | 30 | Pillutla, Sapna | Sapna.Pillutla@philips.com | Senior Specialist I - Q&R - QA/QE | I&S CTO PIC BEQR CT | Bangalore | Karnataka | Specialist | BEQR |  |  |  |  |  |  |  |  | Senior Director IT I2M TA and IT for R&D | Senior Director IT I2M TA and IT for R&D | Director | Non-IC | Non-Tech |  |  |  | MA Solution Reliability | MA |
+| 20/02/2020 | SWExcellence TMD : Discussion on Guardrails | R U, Rashmi | 30 | KSHIRSAGAR, Rahul | Rahul.Kshirsagar@philips.com | Contingent Worker | CCI Q&R QAQE | Bangalore | Karnataka | Contingent Worker | Q&R |  |  |  |  |  |  |  |  | Senior Director R&D | Senior Director R&D | Director | Non-IC | Non-Tech |  |  |  | Market Indian Subcontinent HR | HR |
+| 20/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Senior IP Counsel | Senior IP Counsel | IP&S | IC | Non-Tech |  |  |  | MG Innovation DTN Development | MG Innovation DTN |
+| 20/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Kaiwar, Pallavi | pallavi.kaiwar@philips.com | Senior Director | PD DI R&D | Bangalore | Karnataka | Director | PD |  |  |  |  |  |  |  |  | Senior Manager - Human Resources | Senior Manager | HR | IC | Non-Tech |  |  |  | MR R&D Methods and Recon | MR |
+| 20/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Natha, Sriranga | sriranga.natha@philips.com | Senior Architect II | PD DI Image Acqusition Platform Architechture | Bangalore | Karnataka | Architect | PD |  |  |  |  |  |  |  |  | Senior Manager DXR R&D | Senior Manager DXR R&D | Manager | Non-IC | Non-Tech |  |  |  | MR R&D Methods Best | MR |
+| 20/02/2020 | Architecture and software guardrails | Arasu, Rajesh | 60 | Belavadi, Mahesh | Mahesh.Belavadi@philips.com | Senior Software Architect | I&S CTO PIC HC MGMT SIG Markets | Bangalore | Karnataka | Architect | SIG Markets |  |  |  |  |  |  |  |  | Senior Manager I | Senior Manager I | Manager | Non-IC | Non-Tech |  |  |  | MR R&D Recon Bangalore | MR |
+| 20/02/2020 | Updated invitation: SIG Technical Validation Session ctrefresh for Philips Te... @ Thu Feb 20, 2020 10:30am - 12:30pm (CET) (dsvellal@philips.com) | w.heijstek@sig.eu | 120 | Paul, Kunal | kunal.paul@philips.com | Senior Architect II | PIC DI CT HOST | Bangalore | Karnataka | Architect | DI CT |  |  |  |  |  |  |  |  | Senior Manager I - Engineering | Senior Manager I | Manager | Non-IC | Non-Tech |  |  |  | MR R&D SIV Bangalore | MR |
+| 20/02/2020 | Updated invitation: SIG Technical Validation Session PACS for Philips Technic... @ Thu Feb 20, 2020 1pm - 3pm (CET) (dsvellal@philips.com) | w.heijstek@sig.eu | 120 | Rajagopalan, Nandini | Nandini.Rajagopalan@philips.com | Software Archtiect | PIC HI RI R&D - Business Continuity | Bangalore | Karnataka | Architect | RI |  |  |  |  |  |  |  |  | Senior Manager I, CDPP Propositions Team | Senior Manager I | Manager | Non-IC | Non-Tech |  |  |  | MR R&D Software Engineering | MR |
+| 24/02/2020 | Pair Programming session with Datta - Shankar/Raghav from Minions team (D&I) | Paul, Sweta | 60 | Paul, Sweta | sweta.paul@philips.com | Project Manager II | I&S HSP R&D PIC CP Data & Infrastructure | Bangalore | Karnataka | Project Manager | HSP |  |  |  |  |  |  |  |  | Senior Manager II - Product Security | Senior Manager II | Manager | Non-IC | Non-Tech |  |  |  | MR R&D SW UWF Viewing/PatAdmin | MR |
+| 24/02/2020 | Pair Programming session with Datta - Shankar/Raghav from Minions team (D&I) | Paul, Sweta | 60 | Mirajkar, Raghavendra | Raghavendra.Mirajkar@philips.com | Software Technologist I | I&S HSP R&D PIC CP D&I Development | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Senior Manager Software & System Testing | Senior Manager Software & System Testing | Manager | Non-IC | Non-Tech |  |  |  | OHC Research & Development | OHC |
+| 24/02/2020 | architectural and software guardrails in MR software | Arasu, Rajesh | 60 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Senior Manager Technical Applications | Senior Manager Technical Applications | Manager | Non-IC | Non-Tech |  |  |  | Oncology Informatics Quality | Oncology |
+| 24/02/2020 | architectural and software guardrails in MR software | Arasu, Rajesh | 60 | Subramanian, Bharathi | bharathi.subramanian@philips.com | Architect I | PD DI IAP-SW System Workflow | Bangalore | Karnataka | Architect | PD |  |  |  |  |  |  |  |  | Senior Manager, Software Development | Senior Manager | Manager | Non-IC | Non-Tech |  |  |  | PCA R&D Bangalore | PCA |
+| 24/02/2020 | architectural and software guardrails in MR software | Arasu, Rajesh | 60 | Reddy, Chowtoori Umamaheswara | chowtoori.umamaheswara.reddy@philips.com | Architect I | PD DI IAP-SW Post Acquisition Workflow | Bangalore | Karnataka | Architect | PD |  |  |  |  |  |  |  |  | Senior Manager-Software Development | Senior Manager | Manager | Non-IC | Non-Tech |  |  |  | PD DI IAP CT Software | PD |
+| 24/02/2020 | architectural and software guardrails in MR software | Arasu, Rajesh | 60 | Belavadi, Mahesh | Mahesh.Belavadi@philips.com | Senior Software Architect | I&S CTO PIC HC MGMT SIG Markets | Bangalore | Karnataka | Architect | SIG Markets |  |  |  |  |  |  |  |  | Senior Research Designer | Senior Research Designer | Design Engineer | IC | Tech |  |  |  | PD DI IAP CT Userworkflow | PD |
+| 24/02/2020 | architectural and software guardrails in MR software | Arasu, Rajesh | 60 | Mahajan, Ajay | ajay.mahajan@philips.com | Principal Architect | PIC HI RI R&D - Management | Bangalore | Karnataka | Architect | RI |  |  |  |  |  |  |  |  | Senior Scientist | Senior Scientist | Scientist | IC | Tech |  |  |  | PD DI IAP-SW Core Services | PD |
+| 24/02/2020 | architectural and software guardrails in MR software | Arasu, Rajesh | 60 | Rao, Bharath | bharath.rao@philips.com | Principal Architect | I&S HSP Program Management | Bangalore | Karnataka | Architect | HSP |  |  |  |  |  |  |  |  | Senior Scientist, Image Analytics | Senior Scientist | Scientist | IC | Tech |  |  |  | PD DI IAP-SW Core Services-1 | PD |
+| 24/02/2020 | Pair programming slot | Gangadharan, Nikila | 60 | Gangadharan, Nikila | nikila.gangadharan@philips.com | Senior Manager II | I&S HSP R&D PIC Clinical Platform | Bangalore | Karnataka | Manager | HSP |  |  |  |  |  |  |  |  | Senior Scrum Master I | Senior Scrum Master I | Scrum Master | IC | Non-Tech |  |  |  | PD DI IAP-SW Post Acquisition Workflow | PD |
+| 24/02/2020 | Pair programming slot | Gangadharan, Nikila | 60 | Doraisamy, Vijay Venkatesh | vijay.venkatesh.doraisamy@philips.com | Senior Software Technologist I | I&S HSP R&D PIC CP ADE Reporting | Bangalore | Karnataka | Technologist | HSP |  |  |  |  |  |  |  |  | Senior Serviceability Architect | Senior Serviceability Architect | Architect | IC | Tech |  |  |  | PD DI IAP-SW Pre Acquisition Workflow | PD |
+| 25/02/2020 | .connect - ICAP- STO Pilot to Deployment | SW_CoE (Functional Account) | 150 | Biradar, Sheela | Sheela.Biradar@philips.com | Senior Manager I | EDI R&D | Bangalore | Karnataka | Manager | EDI |  |  |  |  |  |  |  |  | Senior Software Architect | Senior Software Architect | Architect | IC | Tech |  |  |  | PD DI IAP-SW Serviceability | PD |
+| 25/02/2020 | .connect - ICAP- STO Pilot to Deployment | SW_CoE (Functional Account) | 150 | Pandit, Pattabhirama | pattabhirama.pandit@philips.com | V&V Lead - PD Ventures | I&S CTO PIC HC MGMT SIG-Markets | Bangalore | Karnataka | V&V Lead | SIG Markets |  |  |  |  |  |  |  |  | Senior Software Designer | Senior Software Designer | SDE | IC | Tech |  |  |  | PD DI IAP-SW Serviceability-1 | PD |
+| 25/02/2020 | .connect - ICAP- STO Pilot to Deployment | SW_CoE (Functional Account) | 150 | Kallam, Prabhakar Reddy | prabhakar.reddy.kallam@philips.com | Sr. Software Technologist - I | I&S CTO PIC HC MGMT NMS&RC Mobile Device Farm | Bangalore | Karnataka | Technologist | Mobile Device Farm |  |  |  |  |  |  |  |  | Senior Software DevOps Engineer | Senior Software DevOps Engineer | DevOps | IC | Tech |  |  |  | PD DI IAP-SW System Workflow | PD |
+| 25/02/2020 | .connect - ICAP- STO Pilot to Deployment | SW_CoE (Functional Account) | 150 | Balakrishna, Arun | Arun.Balakrishna@philips.com | Software Technologist II | I&S CTO PIC HC MGMT NMS&RC Mobile Device Farm | Bangalore | Karnataka | Technologist | Mobile Device Farm |  |  |  |  |  |  |  |  | Senior Software Engineer | Senior Software Engineer | SDE | IC | Tech |  |  |  | PD DI IAP-SW Userworkflow 1 | PD |
+| 25/02/2020 | Updated invitation: SIG Technical Validation Session SRC for Philips Technica... @ Tue Feb 25, 2020 2pm - 4pm (CET) (dsvellal@philips.com) | w.heijstek@sig.eu | 120 | Arkalgud, Sheshkumar | sheshkumar.arkalgud@philips.com | Senior Manager, Software Development | SRC R&D Enterprise Software Applications | Murrysville | Pennsylvania | Manager | SRC |  |  |  |  |  |  |  |  | Senior Software Manager | Senior Software Manager | Manager | Non-IC | Non-Tech |  |  |  | PD DI Image Acqusition Platform Architechture | PD |
+| 25/02/2020 | Updated invitation: SIG Technical Validation Session SRC for Philips Technica... @ Tue Feb 25, 2020 2pm - 4pm (CET) (dsvellal@philips.com) | w.heijstek@sig.eu | 120 | Kunapalli, Sastry | Sastry.Kunapalli@philips.com | Project Software Engineer | SRC R&D ESA Core Cloud Applications | Murrysville | Pennsylvania | SDE | SRC |  |  |  |  |  |  |  |  | Senior Software Technologist I | Senior Software Technologist I | Technologist | IC | Tech |  |  |  | PD DI Image Acqusition Platform Software | PD |
+| 25/02/2020 | Updated invitation: SIG Technical Validation Session SRC for Philips Technica... @ Tue Feb 25, 2020 2pm - 4pm (CET) (dsvellal@philips.com) | w.heijstek@sig.eu | 120 | Fischer, Douglas | douglas.fischer@philips.com | Sr. Software Engineer | SRC R&D ESA Device Connectivity | Murrysville | Pennsylvania | SDE | Q&R |  |  |  |  |  |  |  |  | Senior Software Technologist I - Testing | Senior Software Technologist I | Technologist | IC | Tech |  |  |  | PD DI R&D | PD |
+| 25/02/2020 | Updated invitation: SIG Technical Validation Session SRC for Philips Technica... @ Tue Feb 25, 2020 2pm - 4pm (CET) (dsvellal@philips.com) | w.heijstek@sig.eu | 120 | Schmuck, Eric | Eric.Schmuck@philips.com | Project Software Engineer | SRC R&D ESA Core Cloud Applications | Murrysville | Pennsylvania | SDE | SRC |  |  |  |  |  |  |  |  | Senior Software Technologist II | Senior Software Technologist II | Technologist | IC | Tech |  |  |  | PD EDI EOI R&D and Portfolio Management | PD |
+| 25/02/2020 | Updated invitation: SIG Technical Validation Session SRC for Philips Technica... @ Tue Feb 25, 2020 2pm - 4pm (CET) (dsvellal@philips.com) | w.heijstek@sig.eu | 120 | Glunt, Scott | Scott.Glunt@philips.com | Senior Software Engineer | SRC R&D ESA Mobile Apps and Data Interoperability | Monroeville | Pennsylvania | SDE | Q&R |  |  |  |  |  |  |  |  | Senior Specialist  II- Q&R - PMS | Senior Specialist  II | Specialist | IC | Tech |  |  |  | PD EDI R&D | PD |
+| 25/02/2020 | Updated invitation: SIG Technical Validation Session SRC for Philips Technica... @ Tue Feb 25, 2020 2pm - 4pm (CET) (dsvellal@philips.com) | w.heijstek@sig.eu | 120 | Perriello, Tony | Tony.Perriello@philips.com | Senior UI Developer | SRC R&D ESA Core Cloud Applications | Murrysville | Pennsylvania | Quality Engineer | SRC |  |  |  |  |  |  |  |  | Senior Specialist I | Senior Specialist I | Specialist | IC | Tech |  |  |  | PD EDI Services and Solutions | PD |
+| 26/02/2020 | Dimension sync up: Capability | SW_CoE (Functional Account) | 60 | Kumar, Nataraj | nataraj.kumar@philips.com | Director | PIC | Bangalore | Karnataka | Director | PIC |  |  |  |  |  |  |  |  | Senior Specialist I - Q&R - QA/QE | Senior Specialist I | Specialist | IC | Tech |  |  |  | PD Innovation I2M Operations | PD |
+| 27/02/2020 | Potential Bar Raiser team | SW_CoE (Functional Account) | 50 | Karayi, Sameer | sameer.karayi@philips.com | Critical Capabilities Director, TA | Global Digital, Q&R, R&D and Talent Intelligence | Bangalore | Karnataka | Recruiter | Genomics |  |  |  |  |  |  |  |  | Senior Specialist I - Q&R -PQMS | Senior Specialist I | Specialist | IC | Tech |  |  |  | PD Innovation Interoperability & Data | PD |
+| 27/02/2020 | Potential Bar Raiser team | SW_CoE (Functional Account) | 50 | Mishra, Minatee | minatee.mishra@philips.com | Director, Offensive Security | GS Product & Security Services | Bangalore | Karnataka | Director | GS |  |  |  |  |  |  |  |  | Senior Specialist I - Q&R- QA/QE | Senior Specialist I | Specialist | IC | Tech |  |  |  | PD Interoperability & Data - Bangalore | PD |
+| 27/02/2020 | Potential Bar Raiser team | SW_CoE (Functional Account) | 50 | Gaidhani, Suyog | suyog.gaidhani@philips.com | Sr. Manager II | I&S HSP R&D PIC Digital Platform | Bangalore | Karnataka | Manager | HSP |  |  |  |  |  |  |  |  | Senior Specialist I - Verification | Senior Specialist I | Specialist | IC | Tech |  |  |  | PD PDS Business Category Oncology Informatics | PD |
+| 27/02/2020 | Potential Bar Raiser team | SW_CoE (Functional Account) | 50 | Arasu, Rajesh | rajesh.arasu@philips.com | Principal Architect | I&S CTO PIC Architecture & SW practice | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Senior Specialist I HI Q&R Process QA & QE | Senior Specialist I HI Q&R Process QA & QE | Specialist | IC | Tech |  |  |  | PD PDS Business Category Pathology | PD |
+| 27/02/2020 | Potential Bar Raiser team | SW_CoE (Functional Account) | 50 | Mohan Rao, Anasuya | anasuyamohanrao@philips.com | Senior Manager II | PIC US R&D MT | Bangalore | Karnataka | Manager | US |  |  |  |  |  |  |  |  | Senior Specialist II | Senior Specialist II | Specialist | IC | Tech |  |  |  | PD US R&D | PD |
+| 27/02/2020 | Potential Bar Raiser team | SW_CoE (Functional Account) | 50 | Gangadharan, Nikila | nikila.gangadharan@philips.com | Senior Manager II | I&S HSP R&D PIC Clinical Platform | Bangalore | Karnataka | Manager | HSP |  |  |  |  |  |  |  |  | Senior Specialist II - Q&R - QA/QE | Senior Specialist II | Specialist | IC | Tech |  |  |  | Personal Health Greater China | Personal Health China |
+| 27/02/2020 | Potential Bar Raiser team | SW_CoE (Functional Account) | 50 | Ramanathan, Karthick | karthick.ramanathan@philips.com | Senior Manager II | PD DI Image Acqusition Platform Software | Bangalore | Karnataka | Manager | PD |  |  |  |  |  |  |  |  | Senior Specialist II - Q&R QA/QE | Senior Specialist II | Specialist | IC | Tech |  |  |  | PH Digital Solutions Data & Definition | PH |
+| 27/02/2020 | Potential Bar Raiser team | SW_CoE (Functional Account) | 50 | Thakar, Prasad P | prasad.p.thakar@philips.com | Project Sr. Manager II | CC MA R&D/Product Development | Bangalore | Karnataka | Project Manager | CC |  |  |  |  |  |  |  |  | Senior Specialist II - Q&R -QA/QE | Senior Specialist II | Specialist | IC | Tech |  |  |  | Philips SW CoE Competencies | SWCOE |
+| 27/02/2020 | Potential Bar Raiser team | SW_CoE (Functional Account) | 50 | Kumar, Nataraj | nataraj.kumar@philips.com | Director | PIC | Bangalore | Karnataka | Director | PIC |  |  |  |  |  |  |  |  | Senior Specialist I-Q&R QA/QE, EDI Q&R | Senior Specialist I | Specialist | IC | Tech |  |  |  | PIC | PIC |
+| 27/02/2020 | Potential Bar Raiser team | SW_CoE (Functional Account) | 50 | Balasubramanian, Sankara Narayanan | sankara.narayanan@philips.com | Senior Architect I | PIC IGT Systems CRC Hospital Workflow | Bangalore | Karnataka | Architect | IGT |  |  |  |  |  |  |  |  | Senior Systems Architect | Senior Systems Architect | Architect | IC | Tech |  |  |  | PIC BEQR | BEQR |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Satapathy, Arunkumar | Arunkumar.Satapathy@philips.com | Senior Manager I | PD DI IAP CT Software | Bangalore | Karnataka | Manager | PD |  |  |  |  |  |  |  |  | Senior Systems Engineer | Senior Systems Engineer | SDE | IC | Tech |  |  |  | PIC BEQR CDC | BEQR |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Subbaram, Balaji | Balaji.Subbaram@philips.com | Senior Manager II | PIC DI CT HOST | Bangalore | Karnataka | Manager | DI CT |  |  |  |  |  |  |  |  | Senior Tech Specialist | Senior Tech Specialist | Specialist | IC | Tech |  |  |  | PIC BEQR CT | BEQR |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Kumar S, Senthil | senthil.kumar@philips.com | Director | BIU DI CT - AMI R&D | Bangalore | Karnataka | Director | CT AMI |  |  |  |  |  |  |  |  | Senior Tests Analyst | Senior Tests Analyst | Quality Engineer | IC | Tech |  |  |  | PIC BEQR Ultrasound | BEQR |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Lai, Hao | hao.lai@philips.com | Director, Imaging Platform | BIU DI CT - AMI R&D | Highland Heights | Ohio | Director | CT AMI |  |  |  |  |  |  |  |  | Senior UI SDE | Senior UI SDE | UI SDE | IC | Tech |  |  |  | PIC CS SF 2 | CS |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Furman, Tamar | tamar.furman@philips.com | CT/AMI Product SW Leader | CT/AMI Haifa R&D | Haifa |  | Leader | CT AMI |  |  |  |  |  |  |  |  | Serviceability Architect | Serviceability Architect | Architect | IC | Tech |  |  |  | PIC DI CT Advanced Development | DI CT |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Wang, Hertz Hz | Huaizhi.Wang@philips.com | Director of CT China R&D Software | BIU CT-AMI R&D China | Shenyang | Liaoning | Director | CT AMI |  |  |  |  |  |  |  |  | Services & Solutions Delivery CCI & EIS Leader | Services & Solutions Delivery CCI & EIS Leader | Leader | Non-IC | Non-Tech |  |  |  | PIC DI CT HOST | DI CT |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Manjeshwar, Ravindra | ravindra.manjeshwar@philips.com | Chief Scientist | BIU DI CT - AMI R&D | Highland Heights | Ohio | Scientist | CT AMI |  |  |  |  |  |  |  |  | Software Architect | Software Architect | Architect | IC | Tech |  |  |  | PIC DI CT HOST Agile Cluster 2 | DI CT |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Shivakumar, Kr | kr.shivakumar@philips.com | Fellow Architect Chief Architect Office | I&S CTO Chief Architect Office | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Software Archtiect | Software Archtiect | Architect | IC | Tech |  |  |  | PIC DI CT PMO | DI CT |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Paul, Kunal | kunal.paul@philips.com | Senior Architect II | PIC DI CT HOST | Bangalore | Karnataka | Architect | DI CT |  |  |  |  |  |  |  |  | Software Designer iXR | Software Designer iXR | Design Engineer | IC | Tech |  |  |  | PIC DI CT Rules & Abstraction | DI CT |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Mistry, Hemal | Hemal.Mistry@philips.com | Senior Manager I | PIC DI CT HOST | Bangalore | Karnataka | Manager | DI CT |  |  |  |  |  |  |  |  | Software Developement Engineer II | Software Developement Engineer II | SDE | IC | Tech |  |  |  | PIC DI CT Validation | DI CT |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Arakere, Srinivas | Srinivas.Arakere@philips.com | Project Manager II | PIC HI i4 | Bangalore | Karnataka | Project Manager | I4 |  |  |  |  |  |  |  |  | Software Development Engineer | Software Development Engineer | SDE | IC | Tech |  |  |  | PIC DI DXR | DXR |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Paul, Sweta | sweta.paul@philips.com | Project Manager II | I&S HSP R&D PIC CP Data & Infrastructure | Bangalore | Karnataka | Project Manager | HSP |  |  |  |  |  |  |  |  | Software Development Engineer I - PHM | Software Development Engineer I | SDE | IC | Tech |  |  |  | PIC DI DXR Console | DXR |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Kamat, Krishnanand | Krishnanand.Kamat@philips.com | Software Technologist II | PIC ICAP CPE | Bangalore | Karnataka | Technologist | ICAP |  |  |  |  |  |  |  |  | Software Development Engineer II | Software Development Engineer II | SDE | IC | Tech |  |  |  | PIC DI DXR Console_1 | DXR |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Natarajan, Arumugam | arumugam.natarajan@philips.com | Architect II | PD DI IAP CT Userworkflow | Bangalore | Karnataka | Architect | PD |  |  |  |  |  |  |  |  | Software DevOps Engineer | Software DevOps Engineer | DevOps | IC | Tech |  |  |  | PIC DI DXR Serviceability | DXR |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Rathore, Chandan Singh | chandan.rathore@philips.com | Senior Software Technologist II | PIC DI CT Rules & Abstraction | Bangalore | Karnataka | Technologist | DI CT |  |  |  |  |  |  |  |  | Software Engineer | Software Engineer | SDE | IC | Tech |  |  |  | PIC DI MR Serviceability | MR |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Kairanna, Sowmya | sowmya.kairanna@philips.com | Senior Software Technologist I | PD DI IAP CT Userworkflow | Bangalore | Karnataka | Technologist | PD |  |  |  |  |  |  |  |  | Software Engineer I | Software Engineer I | SDE | IC | Tech |  |  |  | PIC Digital Pathology Solutions | Digital Pathology |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Xu, Xuxiao X | Xiao.Xu@philips.com | Sr. Manager of Console Software | BIU CT-AMI R&D China Software | Shenyang | Liaoning | Manager | CT AMI |  |  |  |  |  |  |  |  | Software Engineer II | Software Engineer II | SDE | IC | Tech |  |  |  | PIC HC MGMT | HC |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Liu, Luke Kg | Kegang.Liu@philips.com | Manager of SW Application | BIU CT-AMI R&D China Software | Shenyang | Liaoning | Manager | CT AMI |  |  |  |  |  |  |  |  | Software Engineer II - DS | Software Engineer II | SDE | IC | Tech |  |  |  | PIC HI i4 | I4 |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 150 | Thimmaiah, Belliappa | Belliappa.p.t@philips.com | Software Technologist II | I2M TA IND 3 | Bangalore | Karnataka | Technologist | TA |  |  |  |  |  |  |  |  | Software Engineer II - Full Stack | Software Engineer II | SDE | IC | Tech |  |  |  | PIC HI i4 Dev | I4 |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 180 | Kumar S, Senthil | senthil.kumar@philips.com | Director | BIU DI CT - AMI R&D | Bangalore | Karnataka | Director | CT AMI |  |  |  |  |  |  |  |  | Software Engineer II - Q&R - QA QE | Software Engineer II | SDE | IC | Tech |  |  |  | PIC HI RI R&D - Business Continuity | RI |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 180 | Subbaram, Balaji | Balaji.Subbaram@philips.com | Senior Manager II | PIC DI CT HOST | Bangalore | Karnataka | Manager | DI CT |  |  |  |  |  |  |  |  | Software Engineer II - Test | Software Engineer II | SDE | IC | Tech |  |  |  | PIC HI RI R&D - Dev Ops | RI |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 180 | Satapathy, Arunkumar | Arunkumar.Satapathy@philips.com | Senior Manager I | PD DI IAP CT Software | Bangalore | Karnataka | Manager | PD |  |  |  |  |  |  |  |  | Software Engineer II - Testing | Software Engineer II | SDE | IC | Tech |  |  |  | PIC HI RI R&D - IntelliSpace Radiology | RI |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 180 | Lai, Hao | hao.lai@philips.com | Director, Imaging Platform | BIU DI CT - AMI R&D | Highland Heights | Ohio | Director | CT AMI |  |  |  |  |  |  |  |  | Software Engineer II-Full Stack | Software Engineer II | SDE | IC | Tech |  |  |  | PIC HI RI R&D - Management | RI |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 180 | Furman, Tamar | tamar.furman@philips.com | CT/AMI Product SW Leader | CT/AMI Haifa R&D | Haifa |  | Leader | CT AMI |  |  |  |  |  |  |  |  | Software Engineering I | Software Engineering I | SDE | IC | Tech |  |  |  | PIC HI RI R&D - NFT + Test Automation | RI |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 180 | Wang, Hertz Hz | Huaizhi.Wang@philips.com | Director of CT China R&D Software | BIU CT-AMI R&D China | Shenyang | Liaoning | Director | CT AMI |  |  |  |  |  |  |  |  | Software Engineering Lead CI | Software Engineering Lead CI | SDE | IC | Tech |  |  |  | PIC HI RI R&D - Solution Delivery 1 | RI |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 180 | Manjeshwar, Ravindra | ravindra.manjeshwar@philips.com | Chief Scientist | BIU DI CT - AMI R&D | Highland Heights | Ohio | Scientist | CT AMI |  |  |  |  |  |  |  |  | Software Engineering Manager | Software Engineering Manager | Manager | Non-IC | Non-Tech |  |  |  | PIC HI RI R&D - System Verification | RI |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 180 | Shivakumar, Kr | kr.shivakumar@philips.com | Fellow Architect Chief Architect Office | I&S CTO Chief Architect Office | Bangalore | Karnataka | Architect | CAO |  |  |  |  |  |  |  |  | Software Leader | Software Leader | Leader | Non-IC | Non-Tech |  |  |  | PIC HIT SCS INFRA | SCS |
+| 27/02/2020 | CT/AMI Workshop | SW_CoE (Functional Account) | 180 | Paul, Kunal | kunal.paul@philips.com | Senior Architect II | PIC DI CT HOST | Bangalore | Karnataka | Architect | DI CT |  |  |  |  |  |  |  |  | Software Quality Assurance | Software Quality Assurance | Quality Engineer | IC | Tech |  |  |  | PIC HR 1 | HR |
+
+*...and 2482 more rows.*
+
