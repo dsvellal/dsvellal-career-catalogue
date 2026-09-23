@@ -79,3 +79,11 @@ export interface PortfolioData {
     generatedBy: string;
   };
 }
+
+export type LeadershipPerspective =
+  | 'boardroom'
+  | 'architecture'
+  | 'leadership'
+  | 'governance'
+  | 'catalog';
+

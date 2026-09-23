@@ -1,7 +1,10 @@
-import { useState, useMemo, useEffect } from 'react';
-import type { PortfolioData, EvidenceCardData } from './types';
+import { useState, useMemo, useEffect, useCallback } from 'react';
+import type { PortfolioData, EvidenceCardData, LeadershipPerspective } from './types';
 import portfolioRawData from './data/executive_evidence.json';
 import { ExecutiveHero } from './components/ExecutiveHero';
+import { BoardBriefView } from './components/BoardBriefView';
+import { LeadershipOperatingSystem } from './components/LeadershipOperatingSystem';
+import { EnterpriseAIGovernance } from './components/EnterpriseAIGovernance';
 import { LeadershipStoryTimeline } from './components/LeadershipStoryTimeline';
 import { EndorsementsWall } from './components/EndorsementsWall';
 import { QueryEngine } from './components/QueryEngine';
@@ -9,11 +12,12 @@ import { EvidenceCard } from './components/EvidenceCard';
 import { TimelineStreamView } from './components/TimelineStreamView';
 import { DecisionExplorer } from './components/DecisionExplorer';
 import { DossierModal } from './components/DossierModal';
-import { Shield, Sparkles, FileText, Mail, ArrowUpRight, MessageSquareQuote, Compass } from 'lucide-react';
+import { Shield, Sparkles, FileText, Mail, ArrowUpRight, Compass, Briefcase, Cpu, Users } from 'lucide-react';
 
 const portfolioData = portfolioRawData as PortfolioData;
 
 export function App() {
+  const [activePerspective, setActivePerspective] = useState<LeadershipPerspective>('boardroom');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedArchetype, setSelectedArchetype] = useState('ALL');
   const [selectedTimeline, setSelectedTimeline] = useState('ALL');
@@ -24,6 +28,24 @@ export function App() {
     }
     return false;
   });
+
+  const handleSelectPerspective = useCallback((perspective: LeadershipPerspective) => {
+    setActivePerspective(perspective);
+    const anchorMap: Record<LeadershipPerspective, string> = {
+      boardroom: 'boardroom-brief',
+      architecture: 'decisions-section',
+      leadership: 'leadership-os',
+      governance: 'enterprise-ai-governance',
+      catalog: 'query-engine'
+    };
+    const targetId = anchorMap[perspective];
+    if (targetId) {
+      const el = document.getElementById(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, []);
 
   useEffect(() => {
     const handleUrl = () => {
@@ -111,21 +133,53 @@ export function App() {
           </div>
 
           <div className="nav-actions">
-            <a href="#leadership-story" className="btn btn-outline" style={{ fontSize: '0.825rem', padding: '0.45rem 0.85rem' }}>
-              <Compass size={14} /> Story Arc
-            </a>
-            <a href="#endorsements-section" className="btn btn-outline" style={{ fontSize: '0.825rem', padding: '0.45rem 0.85rem' }}>
-              <MessageSquareQuote size={14} /> Endorsements
-            </a>
-            <a href="#query-engine" className="btn btn-outline" style={{ fontSize: '0.825rem', padding: '0.45rem 0.85rem' }}>
-              <FileText size={14} /> Evidence Database
-            </a>
             <button
+              type="button"
+              className={`btn ${activePerspective === 'boardroom' ? 'btn-gold' : 'btn-outline'}`}
+              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
+              onClick={() => handleSelectPerspective('boardroom')}
+            >
+              <Briefcase size={13} /> 60s Brief
+            </button>
+            <button
+              type="button"
+              className={`btn ${activePerspective === 'leadership' ? 'btn-gold' : 'btn-outline'}`}
+              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
+              onClick={() => handleSelectPerspective('leadership')}
+            >
+              <Users size={13} /> Leadership OS
+            </button>
+            <button
+              type="button"
+              className={`btn ${activePerspective === 'governance' ? 'btn-gold' : 'btn-outline'}`}
+              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
+              onClick={() => handleSelectPerspective('governance')}
+            >
+              <Cpu size={13} /> Enterprise AI
+            </button>
+            <button
+              type="button"
+              className={`btn ${activePerspective === 'architecture' ? 'btn-gold' : 'btn-outline'}`}
+              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
+              onClick={() => handleSelectPerspective('architecture')}
+            >
+              <Compass size={13} /> Architecture
+            </button>
+            <button
+              type="button"
+              className={`btn ${activePerspective === 'catalog' ? 'btn-gold' : 'btn-outline'}`}
+              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
+              onClick={() => handleSelectPerspective('catalog')}
+            >
+              <FileText size={13} /> Catalog
+            </button>
+            <button
+              type="button"
               className="btn btn-gold"
-              style={{ fontSize: '0.825rem', padding: '0.45rem 1rem' }}
+              style={{ fontSize: '0.8rem', padding: '0.4rem 0.9rem' }}
               onClick={() => setIsDossierOpen(true)}
             >
-              <Sparkles size={14} /> Executive Dossier
+              <Sparkles size={13} /> Dossier
             </button>
           </div>
         </div>
@@ -136,18 +190,31 @@ export function App() {
         {/* Prologue: The Executive Thesis & Headline Metrics */}
         <ExecutiveHero
           profile={portfolioData.profile}
+          activePerspective={activePerspective}
+          onSelectPerspective={handleSelectPerspective}
           onOpenDossier={() => setIsDossierOpen(true)}
         />
 
-        {/* Chapter 01: The Leadership Trajectory Timeline */}
+        {/* Perspective 01: The 60-Second Boardroom Brief */}
+        <BoardBriefView onExplorePerspective={handleSelectPerspective} />
+
+        {/* Perspective 02: Leadership Operating System & Culture Lineage */}
+        <LeadershipOperatingSystem />
+
+        {/* Perspective 03: Enterprise AI & MedTech Regulatory Governance */}
+        <EnterpriseAIGovernance />
+
+        {/* Perspective 04: Systems Architecture & The Strategy Clash Arena */}
+        <DecisionExplorer decisions={portfolioData.decisions} />
+
+        {/* Perspective 05: 20-Year Story Arc & Endorsements Wall */}
         <LeadershipStoryTimeline />
 
-        {/* Chapter 02: Third-Party Executive & Stakeholder Endorsements */}
         {portfolioData.endorsements && portfolioData.endorsements.length > 0 && (
           <EndorsementsWall endorsements={portfolioData.endorsements} />
         )}
 
-        {/* Chapter 03: Verified Interventions & Interactive Query Engine */}
+        {/* Interactive Query Engine & Evidence Matrix */}
         <QueryEngine
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
@@ -201,9 +268,6 @@ export function App() {
             </div>
           )}
         </section>
-
-        {/* Chapter 04: Strategic Decisions Room (Judgment Under Uncertainty) */}
-        <DecisionExplorer decisions={portfolioData.decisions} />
       </main>
 
       {/* Candidate Evaluation Dossier Modal */}

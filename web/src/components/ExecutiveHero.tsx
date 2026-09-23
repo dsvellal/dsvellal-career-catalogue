@@ -1,13 +1,28 @@
 import React from 'react';
-import type { ExecutiveProfile } from '../types';
-import { Award, ShieldCheck, FileText, Sparkles, MapPin, Mail, Globe, ArrowUpRight } from 'lucide-react';
+import type { ExecutiveProfile, LeadershipPerspective } from '../types';
+import { Award, ShieldCheck, Sparkles, MapPin, Mail, Globe, ArrowUpRight, Briefcase, Cpu, Users, Layers, Compass } from 'lucide-react';
 
 interface ExecutiveHeroProps {
   profile: ExecutiveProfile;
+  activePerspective: LeadershipPerspective;
+  onSelectPerspective: (perspective: LeadershipPerspective) => void;
   onOpenDossier: () => void;
 }
 
-export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({ profile, onOpenDossier }) => {
+export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({
+  profile,
+  activePerspective,
+  onSelectPerspective,
+  onOpenDossier
+}) => {
+  const perspectives: { id: LeadershipPerspective; label: string; badge: string; icon: React.ComponentType<{ size?: number }> }[] = [
+    { id: 'boardroom', label: 'Boardroom Brief', badge: '60-Sec Scan', icon: Briefcase },
+    { id: 'architecture', label: 'Systems Architecture', badge: 'Strategy Clash', icon: Compass },
+    { id: 'leadership', label: 'Leadership OS', badge: 'Bar Raiser', icon: Users },
+    { id: 'governance', label: 'Enterprise AI & MedTech', badge: 'Zero Hallucination', icon: Cpu },
+    { id: 'catalog', label: 'Full Evidence Catalog', badge: '2,200+ Artifacts', icon: Layers }
+  ];
+
   return (
     <section className="hero-section">
       <div className="container">
@@ -43,6 +58,29 @@ export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({ profile, onOpenDos
             </svg>
             linkedin.com/in/{profile.linkedin}
           </a>
+        </div>
+
+        {/* 5-Perspective Executive Command Selector */}
+        <div className="perspective-command-container">
+          <div className="perspective-command-label">Select Executive Evaluation Lens:</div>
+          <div className="perspective-pills-row">
+            {perspectives.map((p) => {
+              const Icon = p.icon;
+              const isActive = activePerspective === p.id;
+              return (
+                <button
+                  key={p.id}
+                  type="button"
+                  className={`perspective-pill ${isActive ? 'active' : ''}`}
+                  onClick={() => onSelectPerspective(p.id)}
+                >
+                  <Icon size={16} />
+                  <span className="pill-label">{p.label}</span>
+                  <span className="pill-badge">{p.badge}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Metrics Grid */}
@@ -91,20 +129,25 @@ export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({ profile, onOpenDos
             <Sparkles size={16} />
             Generate Executive Dossier
           </button>
-          <a href="#endorsements-section" className="btn btn-outline">
-            <ShieldCheck size={16} />
-            Executive Endorsements
+          <a href="#boardroom-brief" className="btn btn-outline" onClick={() => onSelectPerspective('boardroom')}>
+            <Briefcase size={16} />
+            Boardroom Brief
           </a>
-          <a href="#query-engine" className="btn btn-outline">
-            <FileText size={16} />
-            Search Evidence Database
-          </a>
-          <a href="#decisions-section" className="btn btn-outline">
+          <a href="#decisions-section" className="btn btn-outline" onClick={() => onSelectPerspective('architecture')}>
             <Award size={16} />
-            Key Strategic Decisions
+            Strategy Clash Arena
+          </a>
+          <a href="#leadership-os" className="btn btn-outline" onClick={() => onSelectPerspective('leadership')}>
+            <Users size={16} />
+            Leadership OS
+          </a>
+          <a href="#enterprise-ai-governance" className="btn btn-outline" onClick={() => onSelectPerspective('governance')}>
+            <Cpu size={16} />
+            Enterprise AI
           </a>
         </div>
       </div>
     </section>
   );
 };
+
