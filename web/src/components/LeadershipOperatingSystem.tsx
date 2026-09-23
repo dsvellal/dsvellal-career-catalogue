@@ -1,5 +1,16 @@
 import React from 'react';
-import { Users, Target, Shield, BookOpen, CheckCircle, GraduationCap, Sparkles } from 'lucide-react';
+import {
+  Users,
+  Target,
+  Shield,
+  BookOpen,
+  CheckCircle,
+  GraduationCap,
+  Sparkles,
+  BarChart3,
+  Layers,
+  FileText
+} from 'lucide-react';
 
 export const LeadershipOperatingSystem: React.FC = () => {
   const pillars = [
@@ -98,6 +109,132 @@ export const LeadershipOperatingSystem: React.FC = () => {
             </div>
           );
         })}
+      </div>
+
+      {/* Enterprise Architectural Research and Governance Standards */}
+      <div className="os-governance-section">
+        <div className="os-governance-header">
+          <div className="os-badge" style={{ color: '#a78bfa', background: 'rgba(167, 139, 250, 0.12)', borderColor: 'rgba(167, 139, 250, 0.25)' }}>
+            <FileText size={16} />
+            <span>Enterprise Research &amp; Governance Standards</span>
+          </div>
+          <h3 className="os-governance-title">
+            Empirical Quality Audits and Architectural Reference Baselines
+          </h3>
+          <p className="os-governance-desc">
+            Rigorous engineering governance requires verifiable empirical baselines. These institutional artifacts established corporate standards for software craftsmanship and CI/CD automation across global engineering divisions.
+          </p>
+        </div>
+
+        <div className="os-governance-grid">
+          {/* Card 1: 138-Project State of Craftsmanship Audit */}
+          <div className="os-governance-card">
+            <div className="governance-card-top">
+              <div className="governance-icon-badge" style={{ color: '#38bdf8', background: 'rgba(56, 189, 248, 0.12)', borderColor: 'rgba(56, 189, 248, 0.25)' }}>
+                <BarChart3 size={22} />
+              </div>
+              <span className="governance-tag">Global Empirical Audit (2023)</span>
+            </div>
+
+            <h4 className="governance-card-title">State of Software Craftsmanship: 138-Project Empirical Audit</h4>
+            <div className="governance-card-scope">
+              <strong>Scope:</strong> Innovation Excellence (IEX) / Software Excellence audit analyzing 138 active software engineering projects covering over 80% of Philips global engineering staff.
+            </div>
+
+            <div className="governance-key-metrics">
+              <div className="gov-metric-item">
+                <span className="gov-metric-num">138</span>
+                <span className="gov-metric-lbl">Active Projects Audited</span>
+              </div>
+              <div className="gov-metric-item">
+                <span className="gov-metric-num">&gt;80%</span>
+                <span className="gov-metric-lbl">Global Developer Coverage</span>
+              </div>
+              <div className="gov-metric-item">
+                <span className="gov-metric-num">94.1%</span>
+                <span className="gov-metric-lbl">Manual Test Legacy Identified</span>
+              </div>
+              <div className="gov-metric-item">
+                <span className="gov-metric-num">6 Mo</span>
+                <span className="gov-metric-lbl">Avg Debt Payback Delay</span>
+              </div>
+            </div>
+
+            <div className="governance-content-block">
+              <div className="gov-block-label">Empirical Findings:</div>
+              <ul className="gov-bullet-list">
+                <li>Demonstrated direct correlation between unmonitored code rot, manual test dependencies, and critical regulatory CAPA failures in medical software.</li>
+                <li>Identified systemic release blockers caused by 6-month debt repayment lag across enterprise business units.</li>
+              </ul>
+            </div>
+
+            <div className="governance-content-block">
+              <div className="gov-block-label">Systemic Intervention &amp; Mandate:</div>
+              <ul className="gov-bullet-list">
+                <li>Instituted automated architectural verification gates, CodeScene behavioral debt tracking, and deterministic build pipelines prior to production release.</li>
+                <li>Shifted testing left to eliminate manual test bottlenecks and secure continuous audit readiness for medical regulatory bodies.</li>
+              </ul>
+            </div>
+
+            <div className="governance-card-footer">
+              <strong>Outcome:</strong> Delivered quantitative debt transparency to executive leadership and halted recurring regression escapes across core clinical product lines.
+            </div>
+          </div>
+
+          {/* Card 2: CAO DevOps Reference Architecture */}
+          <div className="os-governance-card">
+            <div className="governance-card-top">
+              <div className="governance-icon-badge" style={{ color: '#a78bfa', background: 'rgba(167, 139, 250, 0.12)', borderColor: 'rgba(167, 139, 250, 0.25)' }}>
+                <Layers size={22} />
+              </div>
+              <span className="governance-tag" style={{ color: '#c084fc' }}>Enterprise CAO Architecture (Nov 2020)</span>
+            </div>
+
+            <h4 className="governance-card-title">Chief Architect Office: Enterprise DevOps Reference Architecture</h4>
+            <div className="governance-card-scope">
+              <strong>Authorship:</strong> Co-authored by Datta Vellal with Fellow Architect Herwig Wens, Principal Architect Rajesh Arasu; Reviewed by Fellow Architect Klaas Wijbrans (Philips Bangalore &amp; Eindhoven).
+            </div>
+
+            <div className="governance-key-metrics">
+              <div className="gov-metric-item">
+                <span className="gov-metric-num">100%</span>
+                <span className="gov-metric-lbl">Standardized CI/CD Spec</span>
+              </div>
+              <div className="gov-metric-item">
+                <span className="gov-metric-num">Multi-Cluster</span>
+                <span className="gov-metric-lbl">Enterprise Deployment Scope</span>
+              </div>
+              <div className="gov-metric-item">
+                <span className="gov-metric-num">IEC 62304</span>
+                <span className="gov-metric-lbl">Traceable Build Provenance</span>
+              </div>
+              <div className="gov-metric-item">
+                <span className="gov-metric-num">Zero</span>
+                <span className="gov-metric-lbl">Environment Drift Variance</span>
+              </div>
+            </div>
+
+            <div className="governance-content-block">
+              <div className="gov-block-label">Default Trajectory:</div>
+              <ul className="gov-bullet-list">
+                <li>Disparate product engineering units maintained disconnected Jenkins and custom script toolchains, creating fragile releases and multi-week integration blockers.</li>
+                <li>Lack of standardized container baselines led to environment drift and regulatory verification gaps.</li>
+              </ul>
+            </div>
+
+            <div className="governance-content-block">
+              <div className="gov-block-label">Architecture Decisions &amp; Intervention:</div>
+              <ul className="gov-bullet-list">
+                <li>Codified common pipeline architectures across enterprise clusters, establishing immutable Docker container build environments.</li>
+                <li>Standardized automated static analysis, security vulnerability scanning, and binary artifact management for clinical compliance.</li>
+              </ul>
+            </div>
+
+            <div className="governance-card-footer">
+              <strong>Outcome:</strong> Unified disparate toolchains into a certified enterprise deployment pipeline, accelerating delivery velocity across multi-site medical systems.
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* University and Community Giveback Banner */}

@@ -37,6 +37,8 @@ export const DecisionExplorer: React.FC<DecisionExplorerProps> = ({ decisions })
 
   // Quick Filter Suggestion Chips
   const quickFilters = [
+    { label: 'CAO DevOps Reference', query: 'DevOps' },
+    { label: 'Craftsmanship Audit (138)', query: 'Craftsmanship' },
     { label: 'SUTRA (Graph)', query: 'SUTRA' },
     { label: 'Docker (Themis)', query: 'Docker' },
     { label: 'IEC 62304 Compliance', query: '62304' },

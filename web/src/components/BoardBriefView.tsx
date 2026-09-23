@@ -90,9 +90,14 @@ export const BoardBriefView: React.FC<BoardBriefViewProps> = ({ onExplorePerspec
           <div className="board-metric-desc">SUTRA cut regulatory validation from 40h to 10h per release</div>
         </div>
         <div className="board-metric-card">
-          <div className="board-metric-number">3 Units</div>
-          <div className="board-metric-label">Enterprise Adoption</div>
-          <div className="board-metric-desc">Scaled AI knowledge-graph platform across 3 global divisions</div>
+          <div className="board-metric-number">138 Projects</div>
+          <div className="board-metric-label">State of Craftsmanship Audit</div>
+          <div className="board-metric-desc">Benchmarked engineering maturity across 80% of Philips global software organization</div>
+        </div>
+        <div className="board-metric-card">
+          <div className="board-metric-number">CAO Author</div>
+          <div className="board-metric-label">Enterprise DevOps Reference Arch</div>
+          <div className="board-metric-desc">Co-authored Chief Architect Office CI/CD whitepaper with Philips Fellow Architects</div>
         </div>
         <div className="board-metric-card">
           <div className="board-metric-number">2 Patents</div>
