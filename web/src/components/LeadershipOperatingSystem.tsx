@@ -64,7 +64,120 @@ export const LeadershipOperatingSystem: React.FC = () => {
 
   const evaluationCohorts = [
     {
+      id: 'philips-iwillcode',
+      category: 'philips',
+      name: "Philips 'I Will Code!' Program: Engineering Enablement for Non-Coders",
+      badge: 'Capability Transformation',
+      organization: 'Philips Software Center of Excellence',
+      date: 'Jan to Oct 2020',
+      reach: '105+ Non-Coding Verification Leads & Engineers',
+      surveySubmissions: 105,
+      ratingHighlights: [
+        { label: 'Recommendation Score', value: '9.37 / 10' },
+        { label: 'Net Promoter Rate', value: '91.4%' },
+        { label: 'Verified Submissions', value: '105' },
+        { label: 'Execution Rate', value: '100%' }
+      ],
+      leadershipContext:
+        'Designed and led a multi-month engineering upskilling initiative to break the psychological barrier of coding for quality professionals and verification engineers. Taught OOP, test-first thinking, and Java from first principles.',
+      verbatimQuotes: [
+        'Overcame the fear of coding. How to write on my own, how to resolve errors. We just have to dare to start and there are people to help.',
+        'Super Datta, continue the great work. Very nicely structured and the flow and speed is optimal and great.',
+        '6-Mar class was way beyond what I expected for first class. Inspires curiosity and self confidence.'
+      ]
+    },
+    {
+      id: 'philips-swcoe-connects',
+      category: 'philips',
+      name: 'Philips SWCoE Strategic Architecture & Coaching Connects',
+      badge: 'Global Engineering Advisory',
+      organization: 'Philips Global Engineering (10 Development Centers)',
+      date: '2020 to 2022',
+      reach: '2,800+ Colleague Interactions across 22 Cities',
+      surveySubmissions: 2800,
+      ratingHighlights: [
+        { label: 'Colleague Interactions', value: '2,800+' },
+        { label: 'Inbound Pull Demand', value: '70-94%' },
+        { label: 'Departments Covered', value: '37+' },
+        { label: 'Global Cities Engaged', value: '22' }
+      ],
+      leadershipContext:
+        'Conducted strategic architectural coaching, code health assessments, and pair-programming across HealthSuite, Image Guided Therapy, Magnetic Resonance, and Ultrasound. Inbound pull requests from development teams accounted for over 75% of total sessions.',
+      verbatimQuotes: [
+        "Datta's structured problem-solving approach sets a high standard for our teams. His ability to listen with an open mind creates an environment where teams openly tackle hard problems.",
+        'Unblocked cross-team dependencies with remarkable speed and clarity.'
+      ]
+    },
+    {
+      id: 'philips-bar-raisers',
+      category: 'philips',
+      name: 'Philips SkillRaisers & Bar Raisers Interview Calibration',
+      badge: 'Hiring Bar Governance',
+      organization: 'Philips SWCoE & Talent Acquisition',
+      date: '2020 to 2024',
+      reach: '150+ Hiring Managers & Interviewers',
+      surveySubmissions: 31,
+      ratingHighlights: [
+        { label: 'Workshop Duration', value: '4 Hours' },
+        { label: 'Competence Factors', value: '5 Factors' },
+        { label: 'Objective Mandate', value: 'Zero Bias' },
+        { label: 'Multi-Site Reach', value: '4 Sites' }
+      ],
+      leadershipContext:
+        'Institutionalized Amazon-style Bar Raiser hiring discipline inside Philips. Facilitated intensive 4-hour workshops training hiring managers and technical leads on STARR behavioral evaluation, mitigating unconscious bias, and maintaining an immutable hiring bar.',
+      verbatimQuotes: [
+        'Kept the audience engaged and energetic for 4 hours. The discussion on the order of the 5 evaluation factors was enlightening.',
+        'Stimulated good conversation and sharing. Good explanation of good interviewing practices and how the interview process will include the bar raiser.',
+        "Datta's structured evaluation frameworks significantly raised the talent and interview bar across the development center."
+      ]
+    },
+    {
+      id: 'philips-quality-at-desk',
+      category: 'philips',
+      name: 'Philips Quality@Desk (Q@D): IDE-Level Architectural Verification',
+      badge: 'Shift-Left Transformation',
+      organization: 'Philips Diagnostic & Informatics Clusters',
+      date: '2020 to 2021',
+      reach: '6 Major Business Platforms (Artemis, ASP, EMR, RADAR, DAW, Catalysts)',
+      surveySubmissions: 6,
+      ratingHighlights: [
+        { label: 'Platforms Transformed', value: '6 Platforms' },
+        { label: 'Compiler Warnings', value: 'Zero Tolerance' },
+        { label: 'Mutation Testing', value: 'Pitest Gates' },
+        { label: 'Dead Code Elimination', value: '100% Clean' }
+      ],
+      leadershipContext:
+        'Shifted static analysis and architectural health from late-stage CI back to the developer desk. Guided development teams to implement compiler warning zero-tolerance, cyclomatic complexity method gating, and automated mutation testing.',
+      verbatimQuotes: [
+        'Datta went above and beyond in guiding our team to adopt automated CI pipelines with strict quality gates on cyclomatic complexity and duplicate code reduction.',
+        'His focus on data-driven quality metrics fundamentally shifted how we monitor codebase health.'
+      ]
+    },
+    {
+      id: 'philips-university',
+      category: 'philips',
+      name: 'Philips University: AI Enablement & Engineering Masterclasses',
+      badge: 'Enterprise AI Enablement',
+      organization: 'Philips University & Software Excellence PMO',
+      date: '2025 to 2026',
+      reach: '492+ Enterprise Learners Across 33 Sessions',
+      surveySubmissions: 492,
+      ratingHighlights: [
+        { label: 'Satisfaction Score', value: '8.9 / 10' },
+        { label: 'Formal Sessions', value: '33 Sessions' },
+        { label: 'Global Learners', value: '492 Enrolled' },
+        { label: '2026 AI Curriculum', value: '9 Courses' }
+      ],
+      leadershipContext:
+        "Partnered with Philips University to deliver enterprise-wide software excellence and AI masterclasses, including 'Mastering Office 365 Copilot for Efficiency and Gains' to accelerate developer productivity across corporate divisions.",
+      verbatimQuotes: [
+        'Satisfaction score from trainings: 8.9 / 10 across 33 sessions and 492 learners. Special thanks to Datta for leading this collaboration.',
+        'Delivered tangible efficiency gains and clear practical frameworks for leveraging generative AI in daily engineering workflows.'
+      ]
+    },
+    {
       id: 'amazon-senpai',
+      category: 'amazon',
       name: 'Amazon Senpai Faculty: EE Scrum & Product Ownership Masterclasses',
       badge: 'Enterprise Faculty',
       organization: 'Amazon Engineering Excellence',
@@ -87,6 +200,7 @@ export const LeadershipOperatingSystem: React.FC = () => {
     },
     {
       id: 'sit-tumkur',
+      category: 'academic',
       name: 'Siddaganga Institute of Technology: Thinking on Your Feet & Microservices',
       badge: 'Academic Masterclass',
       organization: 'SIT Tumkur',
@@ -108,6 +222,7 @@ export const LeadershipOperatingSystem: React.FC = () => {
     },
     {
       id: 'nie-mysore',
+      category: 'academic',
       name: 'The National Institute of Engineering: Tier-1 Technical Interview Mastery',
       badge: 'Hiring Bar Calibration',
       organization: 'NIE Mysore',
@@ -130,6 +245,7 @@ export const LeadershipOperatingSystem: React.FC = () => {
     },
     {
       id: 'rvce-bangalore',
+      category: 'academic',
       name: 'RV College of Engineering: SOLID Principles & Architectural Craftsmanship',
       badge: 'Software Craftsmanship',
       organization: 'RVCE Bangalore',
@@ -152,6 +268,7 @@ export const LeadershipOperatingSystem: React.FC = () => {
     },
     {
       id: 'dr-ait-bangalore',
+      category: 'academic',
       name: 'Dr. Ambedkar Institute of Technology: Technical Paper Writing & Patent IP',
       badge: 'IP Stewardship',
       organization: 'Dr. AIT Bangalore',
@@ -173,6 +290,7 @@ export const LeadershipOperatingSystem: React.FC = () => {
     },
     {
       id: 'bmsit-bangalore',
+      category: 'academic',
       name: 'BMS Institute of Technology: Growth Mindset, Ambiguity & 50 Failed Interviews',
       badge: 'Leadership Resilience',
       organization: 'BMSIT Bangalore',
@@ -194,8 +312,18 @@ export const LeadershipOperatingSystem: React.FC = () => {
     }
   ];
 
-  const [activeCohortId, setActiveCohortId] = useState<string>('amazon-senpai');
-  const activeCohort = evaluationCohorts.find((c) => c.id === activeCohortId) || evaluationCohorts[0];
+  const [selectedCategory, setSelectedCategory] = useState<'ALL' | 'PHILIPS' | 'AMAZON' | 'ACADEMIC'>('ALL');
+  const [activeCohortId, setActiveCohortId] = useState<string>('philips-iwillcode');
+
+  const filteredCohorts = evaluationCohorts.filter((c) => {
+    if (selectedCategory === 'ALL') return true;
+    if (selectedCategory === 'PHILIPS') return c.category === 'philips';
+    if (selectedCategory === 'AMAZON') return c.category === 'amazon';
+    if (selectedCategory === 'ACADEMIC') return c.category === 'academic';
+    return true;
+  });
+
+  const activeCohort = filteredCohorts.find((c) => c.id === activeCohortId) || filteredCohorts[0] || evaluationCohorts[0];
 
   return (
     <section className="leadership-os-section" id="leadership-os">
@@ -391,18 +519,23 @@ export const LeadershipOperatingSystem: React.FC = () => {
         <div className="os-eval-metrics-strip">
           <div className="eval-metric-stat">
             <span className="eval-metric-value">50+</span>
-            <span className="eval-metric-label">Keynotes &amp; Workshops Delivered</span>
-            <span className="eval-metric-sub">Across 15+ Institutions &amp; Forums</span>
+            <span className="eval-metric-label">Keynotes &amp; Masterclasses</span>
+            <span className="eval-metric-sub">15+ Institutions &amp; Global Forums</span>
           </div>
           <div className="eval-metric-stat">
-            <span className="eval-metric-value">900+</span>
+            <span className="eval-metric-value">2,800+</span>
+            <span className="eval-metric-label">Philips Internal Engagements</span>
+            <span className="eval-metric-sub">Across 22 Global Engineering Cities</span>
+          </div>
+          <div className="eval-metric-stat">
+            <span className="eval-metric-value">1,000+</span>
             <span className="eval-metric-label">Documented Survey Submissions</span>
-            <span className="eval-metric-sub">20 Verified Feedback Datasets</span>
+            <span className="eval-metric-sub">Empirical Post-Session Evaluations</span>
           </div>
           <div className="eval-metric-stat">
-            <span className="eval-metric-value">3,000+</span>
-            <span className="eval-metric-label">Engineers &amp; Students Coached</span>
-            <span className="eval-metric-sub">From Early Career to Staff Roles</span>
+            <span className="eval-metric-value">91.4%</span>
+            <span className="eval-metric-label">Net Promoters: "I Will Code!"</span>
+            <span className="eval-metric-sub">9.37 / 10 Score Across 105 Leads</span>
           </div>
           <div className="eval-metric-stat">
             <span className="eval-metric-value">4.64 / 5</span>
@@ -410,14 +543,9 @@ export const LeadershipOperatingSystem: React.FC = () => {
             <span className="eval-metric-sub">EE Scrum &amp; Product Ownership</span>
           </div>
           <div className="eval-metric-stat">
-            <span className="eval-metric-value">9.57 / 10</span>
-            <span className="eval-metric-label">Average Seminar Quality Score</span>
-            <span className="eval-metric-sub">SIT Tumkur Cohort (9.17 NPS)</span>
-          </div>
-          <div className="eval-metric-stat">
-            <span className="eval-metric-value">99.0%</span>
-            <span className="eval-metric-label">Practical Utility Rating</span>
-            <span className="eval-metric-sub">Dr. AIT Technical Paper &amp; IP Cohort</span>
+            <span className="eval-metric-value">8.9 / 10</span>
+            <span className="eval-metric-label">Philips University Satisfaction</span>
+            <span className="eval-metric-sub">33 Formal Sessions, 492 Learners</span>
           </div>
         </div>
 
@@ -429,16 +557,44 @@ export const LeadershipOperatingSystem: React.FC = () => {
               <p className="cohorts-subtext">Select an evaluation cohort to inspect verified survey ratings, leadership context, and verbatim attendee feedback.</p>
             </div>
             <span className="cohorts-count-badge">
-              <Sparkles size={13} fill="#fbbf24" color="#fbbf24" /> 6 Featured Cohorts
+              <Sparkles size={13} fill="#fbbf24" color="#fbbf24" /> {filteredCohorts.length} Cohorts Shown
             </span>
+          </div>
+
+          {/* Cohort Category Filter Tabs */}
+          <div className="cohort-category-tabs">
+            <button
+              className={`cohort-category-tab ${selectedCategory === 'ALL' ? 'active' : ''}`}
+              onClick={() => { setSelectedCategory('ALL'); setActiveCohortId(evaluationCohorts[0].id); }}
+            >
+              All Programs ({evaluationCohorts.length})
+            </button>
+            <button
+              className={`cohort-category-tab ${selectedCategory === 'PHILIPS' ? 'active' : ''}`}
+              onClick={() => { setSelectedCategory('PHILIPS'); setActiveCohortId('philips-iwillcode'); }}
+            >
+              Philips Internal Enablement (5)
+            </button>
+            <button
+              className={`cohort-category-tab ${selectedCategory === 'AMAZON' ? 'active' : ''}`}
+              onClick={() => { setSelectedCategory('AMAZON'); setActiveCohortId('amazon-senpai'); }}
+            >
+              Amazon Faculty (1)
+            </button>
+            <button
+              className={`cohort-category-tab ${selectedCategory === 'ACADEMIC' ? 'active' : ''}`}
+              onClick={() => { setSelectedCategory('ACADEMIC'); setActiveCohortId('sit-tumkur'); }}
+            >
+              Academic Talent Pipeline (5)
+            </button>
           </div>
 
           {/* Cohort Selector Pills */}
           <div className="cohort-selector-bar">
-            {evaluationCohorts.map((cohort) => (
+            {filteredCohorts.map((cohort) => (
               <button
                 key={cohort.id}
-                className={`cohort-pill-btn ${activeCohortId === cohort.id ? 'active' : ''}`}
+                className={`cohort-pill-btn ${activeCohort.id === cohort.id ? 'active' : ''}`}
                 onClick={() => setActiveCohortId(cohort.id)}
               >
                 <span className="pill-org">{cohort.organization}</span>
