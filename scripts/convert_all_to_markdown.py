@@ -214,25 +214,13 @@ def create_image_companion(file_path: Path) -> Path:
 def main():
     print(f"==> Scanning workspace: {WORKSPACE_ROOT}")
     
-    # Specific targeted directories
+    # 5-Pillar Executive Taxonomy
     target_dirs = [
-        WORKSPACE_ROOT / '2013 Exeter',
-        WORKSPACE_ROOT / '2016 Amazon',
-        WORKSPACE_ROOT / '2018 Philips',
-        WORKSPACE_ROOT / '2026_SWCoE',
-        WORKSPACE_ROOT / 'Certificates',
-        WORKSPACE_ROOT / 'Dattatreya S Vellal_s appreciation letters and certificates',
-        WORKSPACE_ROOT / 'Feedbacks',
-        WORKSPACE_ROOT / 'Givebacks',
-        WORKSPACE_ROOT / 'MarksCard',
-        WORKSPACE_ROOT / 'My Talks',
-        WORKSPACE_ROOT / 'Philips',
-        WORKSPACE_ROOT / 'Philips Office Informal Feedbacks',
-        WORKSPACE_ROOT / 'Resume',
-        WORKSPACE_ROOT / 'SWCoE_Archive',
-        WORKSPACE_ROOT / 'Students feedbacks',
-        WORKSPACE_ROOT / 'Tech Artifacts',
-        WORKSPACE_ROOT # root documents
+        WORKSPACE_ROOT / '01_Career_Eras',
+        WORKSPACE_ROOT / '02_Evidence_and_Feedback',
+        WORKSPACE_ROOT / '03_Executive_Givebacks',
+        WORKSPACE_ROOT / '04_Architecture_and_Strategy',
+        WORKSPACE_ROOT / '05_Credentials_and_Academics'
     ]
     
     stats = {'docx': 0, 'xlsx': 0, 'pdf': 0, 'pptx': 0, 'eml': 0, 'image': 0}
