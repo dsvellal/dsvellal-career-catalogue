@@ -19,10 +19,10 @@ export const BoardBriefView: React.FC<BoardBriefViewProps> = ({ onExplorePerspec
       strategicIntervention:
         'Architected an AI-indexed knowledge-graph schema that replaced relational database bottlenecks with automated semantic linkage. Directed cross-functional data ingestion and automated gap analysis.',
       businessImpact:
-        'Reduced release validation time by 75% (from 40 hours down to 10 hours per cycle). Secured enterprise adoption across 3 global business units and received formal executive commendation from Global VP Design Peter Skillman.',
+        'Reduced release validation time by 75% (from 40 hours down to 10 hours per cycle). Secured enterprise adoption across 3 global business units and received formal executive commendation from the Global VP of Design and Innovation.',
       executiveQuote: {
-        author: 'Peter Skillman',
-        role: 'Global VP Design and Innovation, Philips',
+        author: 'Global VP of Design and Innovation',
+        role: 'Executive Leadership, Design and Innovation',
         text: 'SUTRA demonstrates a meaningful step forward in how our engineering teams navigate complex systems. Datta and team built a practical, intuitive platform that solves real engineering friction.'
       },
       metrics: ['75% Validation Time Reduction', '3 Global Divisions Live', '40h to 10h per Cycle']
@@ -40,8 +40,8 @@ export const BoardBriefView: React.FC<BoardBriefViewProps> = ({ onExplorePerspec
       businessImpact:
         'Eliminated cross-site environment setup delays, enabled instant multi-environment portability, delivered milestone reviews without downtime, and maintained predictable release velocity.',
       executiveQuote: {
-        author: 'Luke Bushey',
-        role: 'Engineering Lead, Diagnostic Systems',
+        author: 'Diagnostic Systems Engineering Lead',
+        role: 'Precision Diagnosis Systems Engineering',
         text: 'Datta guided the team to containerize the application, making it OS-agnostic and fast to port to new environments. His structured approach kept stakeholders aligned and prevented work from stalling due to unresolved dependencies.'
       },
       metrics: ['100% OS-Agnostic Portability', 'Zero Setup Downtime', 'On-Time Milestone Execution']
@@ -59,8 +59,8 @@ export const BoardBriefView: React.FC<BoardBriefViewProps> = ({ onExplorePerspec
       businessImpact:
         'Eliminated batch transaction failures during critical open enrollment periods, unblocked high-priority customer deliverables, and secured multiple client commendations for production stability.',
       executiveQuote: {
-        author: 'Brett & Client Success Leadership',
-        role: 'Client Success and Account Leadership',
+        author: 'Client Delivery and Account Leadership',
+        role: 'Enterprise Delivery Leadership',
         text: 'Datta resolved critical end-to-end integration issues under high-pressure release deadlines, creating repeatable process discipline and rebuilding partner confidence.'
       },
       metrics: ['Zero Data Loss in Open Enrollment', '100% On-Time Batch Processing', 'Multi-Client Commendations']
@@ -109,6 +109,11 @@ export const BoardBriefView: React.FC<BoardBriefViewProps> = ({ onExplorePerspec
           <div className="board-metric-number">100+</div>
           <div className="board-metric-label">Engineers Bar-Raised</div>
           <div className="board-metric-desc">Amazon Bar Raiser hiring discipline and university talent incubation</div>
+        </div>
+        <div className="board-metric-card">
+          <div className="board-metric-number">1,007+</div>
+          <div className="board-metric-label">2026 AI Upskilled Engineers</div>
+          <div className="board-metric-desc">28 masterclasses delivered across PU, Elevate, and IEN (8.77 / 10 rating)</div>
         </div>
       </div>
 

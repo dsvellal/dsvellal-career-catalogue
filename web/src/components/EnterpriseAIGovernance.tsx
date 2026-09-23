@@ -22,10 +22,10 @@ export const EnterpriseAIGovernance: React.FC = () => {
     {
       id: 'guard-analyst-enablement',
       icon: UserCheck,
-      title: 'Workforce Enablement: 150+ Analysts Trained',
+      title: 'Workforce Enablement: 1,000+ Engineers & Analysts Trained',
       description:
-        'Authored and instructed practical prompt engineering curricula for 100 to 150 data analysts across North America. Ranked as top recommended technical enablement curriculum in FY 2026.',
-      verifiableMetric: '150+ Analysts Upskilled with Zero Security Breaches'
+        'Authored and delivered 28 practical AI masterclasses in 2026 across Philips University, Project Elevate, and IEN, spanning prompt engineering, IEC 62304 medical device AI compliance, and GitHub Copilot.',
+      verifiableMetric: '1,007+ Upskilled Across 28 Masterclasses (8.77 / 10 Avg)'
     }
   ];
 
@@ -69,7 +69,7 @@ export const EnterpriseAIGovernance: React.FC = () => {
             <li>Semantic knowledge graph anchoring every node to a verified engineering artifact.</li>
             <li>Automated gap analysis that validates requirements completeness in 10 hours instead of 40 hours.</li>
             <li>Immutable audit provenance with human-in-the-loop verification checkpoints.</li>
-            <li>Adopted across 3 global Philips business units with VP-level commendation.</li>
+            <li>Adopted across 3 global Philips business units with Global VP and Town Hall Impact Makers commendation.</li>
           </ul>
         </div>
       </div>
@@ -101,11 +101,11 @@ export const EnterpriseAIGovernance: React.FC = () => {
         </div>
         <div className="quote-content-col">
           <p className="quote-body">
-            &ldquo;Datta hosted sessions for 100 to 150 analysts across North America on prompt engineering and practical AI adoption.
+            &ldquo;Datta hosted sessions for analysts across North America on prompt engineering and practical AI adoption.
             His sessions were the top recommended material in the community this year.&rdquo;
           </p>
           <div className="quote-attribution">
-            <strong>Claudia Smith</strong> - Data Science and Analytics Lead, North America (WorkDay Formal Stakeholder Review)
+            <strong>Data Science and Analytics Lead, North America</strong> (Formal Stakeholder Evaluation)
           </div>
         </div>
       </div>

@@ -156,23 +156,46 @@ export const LeadershipOperatingSystem: React.FC = () => {
     {
       id: 'philips-university',
       category: 'philips',
-      name: 'Philips University: AI Enablement & Engineering Masterclasses',
-      badge: 'Enterprise AI Enablement',
-      organization: 'Philips University & Software Excellence PMO',
-      date: '2025 to 2026',
-      reach: '492+ Enterprise Learners Across 33 Sessions',
-      surveySubmissions: 492,
+      name: 'Philips University & Project Elevate: 2026 AI Masterclasses & Scaled Enablement',
+      badge: '2026 Scaled Capability',
+      organization: 'Philips University, Project Elevate & IEN',
+      date: '2026 Full-Year Cadence',
+      reach: '1,007+ Global Engineers Across 28 Masterclasses',
+      surveySubmissions: 1007,
       ratingHighlights: [
-        { label: 'Satisfaction Score', value: '8.9 / 10' },
-        { label: 'Formal Sessions', value: '33 Sessions' },
-        { label: 'Global Learners', value: '492 Enrolled' },
-        { label: '2026 AI Curriculum', value: '9 Courses' }
+        { label: '2026 Masterclasses', value: '28 Cohorts' },
+        { label: 'Engineers Upskilled', value: '1,007+ Attendees' },
+        { label: 'Avg Rating (Scored)', value: '8.77 / 10' },
+        { label: 'Perfect Scores', value: 'Multiple 10/10 NPS' }
       ],
       leadershipContext:
-        "Partnered with Philips University to deliver enterprise-wide software excellence and AI masterclasses, including 'Mastering Office 365 Copilot for Efficiency and Gains' to accelerate developer productivity across corporate divisions.",
+        'Architected and delivered 28 comprehensive masterclasses throughout 2026 across Philips University, Project Elevate, and Innovation Engineering Network (IEN). Topics included IEC 62304 Medical Device AI Compliance, Golden Traceability with AI, Context Engineering, Coding with GitHub Copilot, and Tech Debt Elimination, achieving multiple 10/10 NPS scores across NAM Analytics and IT Connect communities.',
       verbatimQuotes: [
-        'Satisfaction score from trainings: 8.9 / 10 across 33 sessions and 492 learners. Special thanks to Datta for leading this collaboration.',
-        'Delivered tangible efficiency gains and clear practical frameworks for leveraging generative AI in daily engineering workflows.'
+        'Verified satisfaction rating: 8.77 / 10 across 28 cohorts and 1,007+ learners in 2026 alone. Multiple perfect 10/10 NPS scores earned in NAM Analytics Community and IT Connect NA cohorts. - 2026 Facilitation Reporting Log',
+        'Delivered tangible efficiency gains and clear practical frameworks for leveraging generative AI in daily engineering workflows while adhering strictly to medical device standards. - Engineering Participant Survey'
+      ]
+    },
+    {
+      id: 'philips-viva-engage',
+      category: 'philips',
+      name: 'Enterprise Digital Thought Leadership & Viva Engage Community Reach',
+      badge: 'Executive & Network Influence',
+      organization: 'Global Philips Communities (PS&Q, NAM Analytics, Ultrasound R&D)',
+      date: '2024 to 2026',
+      reach: '56,000+ Enterprise Network Reach Across 5 Communities',
+      surveySubmissions: 500,
+      ratingHighlights: [
+        { label: 'Executive Commendation', value: 'Executive VP' },
+        { label: 'Town Hall Honor', value: 'Impact Makers' },
+        { label: 'Communities Active', value: '5 Divisions' },
+        { label: 'NAM NPS Rating', value: '10 / 10 NPS' }
+      ],
+      leadershipContext:
+        'Established an active digital leadership presence across enterprise Viva Engage and Yammer communities. Published \"AI On-Demand: Accelerating Requirements Compliance with Kairos\" and reusable prompt libraries for IEC 62304 and FDA Premarket Guidance. Earned executive commendation from the Executive VP & Chief Patient Safety and Quality Officer, led the Sutra team to receive the official \"Impact Makers\" Award at the IEN Global Town Hall, and featured in the XITE Special Edition on AI operational efficiency.',
+      verbatimQuotes: [
+        '\"It is great to read these details about the Innovation Engineering team expertise around Kairos. Keep leading the way! Thank you for the collaboration!\" - Executive VP and Chief Patient Safety and Quality Officer (Viva Engage)',
+        '\"A big congratulations to our Sutra team on the Impact Makers recognition at the IEN Global Town Hall! This reflects the real impact, speed, and cross-team collaboration you have demonstrated.\" - Program Leader PMO, Software Engineering Excellence',
+        '\"XITE Special Edition delivers AI-driven operational efficiency gains. We are thrilled to share the outcomes from the XITE and Sutra collaboration.\" - Senior Director of Innovation and Design Strategy'
       ]
     },
     {
@@ -455,7 +478,7 @@ export const LeadershipOperatingSystem: React.FC = () => {
 
             <h4 className="governance-card-title">Chief Architect Office: Enterprise DevOps Reference Architecture</h4>
             <div className="governance-card-scope">
-              <strong>Authorship:</strong> Co-authored by Datta Vellal with Fellow Architect Herwig Wens, Principal Architect Rajesh Arasu; Reviewed by Fellow Architect Klaas Wijbrans (Philips Bangalore &amp; Eindhoven).
+              <strong>Authorship:</strong> Co-authored by Datta Vellal with Fellow Systems Architect, Principal Systems Architect; Reviewed by Enterprise Fellow Architect (Philips Global Architecture Council).
             </div>
 
             <div className="governance-key-metrics">

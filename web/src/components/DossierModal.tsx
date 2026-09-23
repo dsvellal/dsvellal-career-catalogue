@@ -82,8 +82,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, dat
         outcome: 'Attained 100% on-time delivery on core releases, elevated talent density across 3 global divisions, and mentored 30+ senior engineers into Staff and Principal roles.'
       },
       endorsement: {
-        author: 'Brett & Client Delivery Leadership',
-        role: 'Client Success and Account Leadership',
+        author: 'Client Delivery and Account Leadership',
+        role: 'Enterprise Delivery Leadership',
         text: 'Datta resolved critical end-to-end integration issues under high-pressure release deadlines, creating repeatable process discipline and rebuilding partner confidence.'
       },
       competencies: [
@@ -128,8 +128,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, dat
         outcome: 'Generated $2.3M in direct operational savings, enabled $3.8M in new customer platform contracts, and eliminated single points of systemic failure.'
       },
       endorsement: {
-        author: 'Peter Skillman',
-        role: 'Global VP Design and Innovation, Philips',
+        author: 'Global VP of Design and Innovation',
+        role: 'Executive Leadership, Design and Innovation',
         text: 'Datta and team built a practical, intuitive platform that solves real engineering friction. His structured approach kept stakeholders aligned and demonstrated meaningful systems leadership.'
       },
       competencies: [
@@ -174,8 +174,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, dat
         outcome: 'Attained 100% OS-agnostic portability, eliminated cross-site setup downtime, and unblocked milestone reviews with predictable deployment cadence.'
       },
       endorsement: {
-        author: 'Luke Bushey',
-        role: 'Engineering Lead, Diagnostic Systems',
+        author: 'Diagnostic Systems Engineering Lead',
+        role: 'Precision Diagnosis Systems Engineering',
         text: 'Datta guided the team to containerize the application, making it OS-agnostic and fast to port to new environments. His structured approach kept stakeholders aligned and prevented work from stalling due to unresolved dependencies.'
       },
       competencies: [
@@ -220,8 +220,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, dat
         outcome: 'Compressed validation cycle time from 40 hours down to 10 hours (75% gain), secured adoption across 3 global divisions, and earned executive commendation.'
       },
       endorsement: {
-        author: 'Peter Skillman',
-        role: 'Global VP Design and Innovation, Philips',
+        author: 'Global VP of Design and Innovation',
+        role: 'Executive Leadership, Design and Innovation',
         text: 'SUTRA demonstrates a meaningful step forward in how our engineering teams navigate complex systems. Datta and team built a practical, intuitive platform that solves real engineering friction.'
       },
       competencies: [
@@ -255,7 +255,9 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, dat
         'Envisioned and architected SUTRA, transforming disconnected enterprise data into an AI-indexed knowledge graph that reduced engineering validation overhead by 75%.',
         'Architected the multi-tier Enterprise AI Governance Framework, classifying AI workloads into Tier 1 (Deterministic/Regulated), Tier 2 (Internal Product), and Tier 3 (Exploratory).',
         'Instituted zero-hallucination engineering guardrails, replacing unconstrained generative LLM outputs with semantic retrieval and deterministic schema-bound validation.',
-        'Secured adoption of AI-assisted engineering discovery across 3 global business units, receiving formal executive commendation from Global VP Design Peter Skillman.',
+        'Secured adoption of AI-assisted engineering discovery across 3 global business units, receiving formal executive commendation from the Global VP of Design and Innovation.',
+        'Delivered Sutra Release 3 in 2026, shipping automated test-scenario gap detection and generation across AV&I, SRC, and IGT-MoS, and expanding into AIOrchestration.',
+        'Secured 2 XITE Cohort 5 selections for Ultrasound Defect-Triaging and AV&I automated test generation; earned public commendation from Executive VP and Chief Patient Safety and Quality Officer on Viva Engage for Kairos ReqSpec IEC 62304 compliance acceleration.',
         'Enforced private, zero-retention model tenancy ensuring proprietary healthcare intellectual property and patient records are never leaked to external public models.'
       ],
       featuredTurnaround: {
@@ -266,8 +268,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, dat
         outcome: 'Reduced verification latency by 75%, established the enterprise standard for audit-defensible AI, and demonstrated responsible AI adoption in regulated MedTech.'
       },
       endorsement: {
-        author: 'Peter Skillman',
-        role: 'Global VP Design and Innovation, Philips',
+        author: 'Global VP of Design and Innovation',
+        role: 'Executive Leadership, Design and Innovation',
         text: 'SUTRA demonstrates a meaningful step forward in how our engineering teams navigate complex systems. Datta and team built a practical, intuitive platform that solves real engineering friction.'
       },
       competencies: [
