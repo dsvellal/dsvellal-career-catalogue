@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Users,
   Target,
@@ -61,6 +61,141 @@ export const LeadershipOperatingSystem: React.FC = () => {
     { institution: 'National Institute of Engineering (NIE)', topic: 'High-Stakes Technical Interview Mastery and Problem Deconstruction' },
     { institution: 'Siddaganga Institute of Technology (SIT)', topic: 'Microservices Architecture, Presentation Craft, and Rapid Decision-Making' }
   ];
+
+  const evaluationCohorts = [
+    {
+      id: 'amazon-senpai',
+      name: 'Amazon Senpai Faculty: EE Scrum & Product Ownership Masterclasses',
+      badge: 'Enterprise Faculty',
+      organization: 'Amazon Engineering Excellence',
+      date: '2018',
+      reach: '50+ Engineers & Technical Leaders',
+      surveySubmissions: 45,
+      ratingHighlights: [
+        { label: 'Instructor Knowledge', value: '4.64 / 5' },
+        { label: 'Classroom Experience', value: '4.57 / 5' },
+        { label: 'Presenter Score', value: '4.57 / 5' },
+        { label: 'Course Clarity', value: '4.43 / 5' }
+      ],
+      leadershipContext:
+        'Up-leveled distributed agile execution across Amazon TRMS. Deliberately excluded team managers from training so engineers felt safe to challenge team antipatterns and rebuild healthy sprint hygiene.',
+      verbatimQuotes: [
+        'I really liked the way Datta took our questions with all excitement and made us comfortable to freely engage in conversations and counter arguments.',
+        'By making sure that team managers do not attend the training with the team itself, encouraged participants to question their team practices.',
+        'Datta was very clear in communicating and provided many examples which were easy to relate.'
+      ]
+    },
+    {
+      id: 'sit-tumkur',
+      name: 'Siddaganga Institute of Technology: Thinking on Your Feet & Microservices',
+      badge: 'Academic Masterclass',
+      organization: 'SIT Tumkur',
+      date: '2019 to 2020',
+      reach: '300+ Students & Faculty',
+      surveySubmissions: 120,
+      ratingHighlights: [
+        { label: 'Seminar Quality Rating', value: '9.57 / 10' },
+        { label: 'Recommendation Score', value: '9.17 / 10' },
+        { label: 'Net Promoter Rate', value: '80.0%' },
+        { label: 'Interactive Score', value: '100%' }
+      ],
+      leadershipContext:
+        'Trained early-career engineers in poise under uncertainty, impromptu technical problem framing, and modern microservices decoupling.',
+      verbatimQuotes: [
+        'Extremely interactive and practical. The lessons on impromptu thinking and handling audience friction were eye-opening.',
+        'Transformed how I structure technical slides and convey system value under high-pressure scenarios.'
+      ]
+    },
+    {
+      id: 'nie-mysore',
+      name: 'The National Institute of Engineering: Tier-1 Technical Interview Mastery',
+      badge: 'Hiring Bar Calibration',
+      organization: 'NIE Mysore',
+      date: 'July 2017',
+      reach: '80+ Engineering Seniors',
+      surveySubmissions: 84,
+      ratingHighlights: [
+        { label: 'Presenter Effectiveness', value: '4.52 / 5' },
+        { label: 'Learning Impact Score', value: '4.14 / 5' },
+        { label: 'Content Depth', value: '3.98 / 5' },
+        { label: 'Documented Surveys', value: '84' }
+      ],
+      leadershipContext:
+        'Demystified Amazon and tier-1 tech hiring bars; coached candidates on failure recovery, algorithmic communication, and emotional resilience.',
+      verbatimQuotes: [
+        'Failure is an opinion. Never give up and keep practicing. Speaker was highly interactive and very motivating. His life story of never giving up motivated me a lot.',
+        'One of the things which interested me was to give it back to the world, whatever we learnt. Also, being continuously at the top of the game by learning and adapting continuously.',
+        'The right methodology to deal with the stress that each interviewee goes through during the interview and the right approach to answer questions.'
+      ]
+    },
+    {
+      id: 'rvce-bangalore',
+      name: 'RV College of Engineering: SOLID Principles & Architectural Craftsmanship',
+      badge: 'Software Craftsmanship',
+      organization: 'RVCE Bangalore',
+      date: 'Sept 2018 & Feb 2017',
+      reach: '120+ Computer Science Engineers',
+      surveySubmissions: 75,
+      ratingHighlights: [
+        { label: 'Top-Tier Presenter', value: '93.0%' },
+        { label: 'Content Relevance', value: '95.0%' },
+        { label: 'Intent to Adopt in Code', value: '100%' },
+        { label: '2018 Cohort Surveys', value: '57' }
+      ],
+      leadershipContext:
+        'Instilled architectural discipline early; taught students how interface segregation and dependency inversion prevent technical debt in production systems.',
+      verbatimQuotes: [
+        'He is an excellent speaker and even a better coder.',
+        'I am new to object-oriented programming. Going to follow your steps while learning and implementing.',
+        'Different programming approach techniques, insight about industry level programming, code reviewing.'
+      ]
+    },
+    {
+      id: 'dr-ait-bangalore',
+      name: 'Dr. Ambedkar Institute of Technology: Technical Paper Writing & Patent IP',
+      badge: 'IP Stewardship',
+      organization: 'Dr. AIT Bangalore',
+      date: 'March 2020 & 2013',
+      reach: '210+ Students & Researchers',
+      surveySubmissions: 98,
+      ratingHighlights: [
+        { label: 'Verified Practical Utility', value: '99.0%' },
+        { label: 'Intensive Masterclass', value: '120 Min' },
+        { label: 'Total Attendees', value: '210+' },
+        { label: 'Practical Focus', value: '100%' }
+      ],
+      leadershipContext:
+        'Taught engineering students how to identify patentable system inventions and structure peer-reviewed technical specifications.',
+      verbatimQuotes: [
+        'Clarified exactly how to structure an engineering research paper and differentiate claims for patent examination.',
+        'Gave concrete clarity on technical writing that our academic curriculum never covered.'
+      ]
+    },
+    {
+      id: 'bmsit-bangalore',
+      name: 'BMS Institute of Technology: Growth Mindset, Ambiguity & 50 Failed Interviews',
+      badge: 'Leadership Resilience',
+      organization: 'BMSIT Bangalore',
+      date: '2015 to 2018',
+      reach: '500+ Engineers & Trainees',
+      surveySubmissions: 120,
+      ratingHighlights: [
+        { label: 'Learning Breakthrough', value: '91.3%' },
+        { label: 'Rated Mind-Blowing/Engaging', value: '70.0%' },
+        { label: 'Delivered Seminars', value: '5' },
+        { label: 'Total Student Reach', value: '500+' }
+      ],
+      leadershipContext:
+        'Shared lessons from 50 failed interviews early in career to teach young engineers how to treat failure as feedback and build continuous learning habits.',
+      verbatimQuotes: [
+        'Really inspired by you sir. I learnt something new.',
+        'The transparency about early career rejections and how to bounce back completely changed my perspective on interviews.'
+      ]
+    }
+  ];
+
+  const [activeCohortId, setActiveCohortId] = useState<string>('amazon-senpai');
+  const activeCohort = evaluationCohorts.find((c) => c.id === activeCohortId) || evaluationCohorts[0];
 
   return (
     <section className="leadership-os-section" id="leadership-os">
@@ -234,6 +369,133 @@ export const LeadershipOperatingSystem: React.FC = () => {
               <strong>Outcome:</strong> Unified disparate toolchains into a certified enterprise deployment pipeline, accelerating delivery velocity across multi-site medical systems.
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Executive Masterclasses, Keynotes & 900+ Verified Evaluations */}
+      <div className="os-evaluations-section" id="executive-evaluations">
+        <div className="os-evaluations-header">
+          <div className="os-badge" style={{ color: '#f59e0b', background: 'rgba(245, 158, 11, 0.12)', borderColor: 'rgba(245, 158, 11, 0.25)' }}>
+            <GraduationCap size={16} />
+            <span>Talent Multiplier: 10+ Years Unbroken Mentorship &amp; Teaching</span>
+          </div>
+          <h3 className="os-evaluations-title">
+            Executive Masterclasses, Academic Pipelines &amp; 900+ Verified Evaluations
+          </h3>
+          <p className="os-evaluations-desc">
+            Senior leadership requires continuous talent multiplication. Over the past decade, I have conducted over 50 technical masterclasses, workshops, and keynotes across Amazon internal engineering, global industry conferences, and premier academic institutions. Every engagement is measured against rigorous empirical feedback loops.
+          </p>
+        </div>
+
+        {/* Volume & Quality Metrics Strip */}
+        <div className="os-eval-metrics-strip">
+          <div className="eval-metric-stat">
+            <span className="eval-metric-value">50+</span>
+            <span className="eval-metric-label">Keynotes &amp; Workshops Delivered</span>
+            <span className="eval-metric-sub">Across 15+ Institutions &amp; Forums</span>
+          </div>
+          <div className="eval-metric-stat">
+            <span className="eval-metric-value">900+</span>
+            <span className="eval-metric-label">Documented Survey Submissions</span>
+            <span className="eval-metric-sub">20 Verified Feedback Datasets</span>
+          </div>
+          <div className="eval-metric-stat">
+            <span className="eval-metric-value">3,000+</span>
+            <span className="eval-metric-label">Engineers &amp; Students Coached</span>
+            <span className="eval-metric-sub">From Early Career to Staff Roles</span>
+          </div>
+          <div className="eval-metric-stat">
+            <span className="eval-metric-value">4.64 / 5</span>
+            <span className="eval-metric-label">Amazon Senpai Faculty Rating</span>
+            <span className="eval-metric-sub">EE Scrum &amp; Product Ownership</span>
+          </div>
+          <div className="eval-metric-stat">
+            <span className="eval-metric-value">9.57 / 10</span>
+            <span className="eval-metric-label">Average Seminar Quality Score</span>
+            <span className="eval-metric-sub">SIT Tumkur Cohort (9.17 NPS)</span>
+          </div>
+          <div className="eval-metric-stat">
+            <span className="eval-metric-value">99.0%</span>
+            <span className="eval-metric-label">Practical Utility Rating</span>
+            <span className="eval-metric-sub">Dr. AIT Technical Paper &amp; IP Cohort</span>
+          </div>
+        </div>
+
+        {/* Interactive Cohort Explorer */}
+        <div className="os-eval-cohorts-container">
+          <div className="cohorts-intro-bar">
+            <div>
+              <h4 className="cohorts-subheading">Verified Cohort Evaluations &amp; Attendee Feedback</h4>
+              <p className="cohorts-subtext">Select an evaluation cohort to inspect verified survey ratings, leadership context, and verbatim attendee feedback.</p>
+            </div>
+            <span className="cohorts-count-badge">
+              <Sparkles size={13} fill="#fbbf24" color="#fbbf24" /> 6 Featured Cohorts
+            </span>
+          </div>
+
+          {/* Cohort Selector Pills */}
+          <div className="cohort-selector-bar">
+            {evaluationCohorts.map((cohort) => (
+              <button
+                key={cohort.id}
+                className={`cohort-pill-btn ${activeCohortId === cohort.id ? 'active' : ''}`}
+                onClick={() => setActiveCohortId(cohort.id)}
+              >
+                <span className="pill-org">{cohort.organization}</span>
+                <span className="pill-badge">{cohort.badge}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Active Cohort Detail Card */}
+          {activeCohort && (
+            <div className="cohort-detail-card">
+              <div className="cohort-detail-top">
+                <div>
+                  <div className="cohort-tag-row">
+                    <span className="cohort-badge">{activeCohort.badge}</span>
+                    <span className="cohort-meta-item">{activeCohort.organization}</span>
+                    <span className="cohort-meta-item">Timeline: {activeCohort.date}</span>
+                    <span className="cohort-meta-item">Reach: {activeCohort.reach}</span>
+                  </div>
+                  <h4 className="cohort-title">{activeCohort.name}</h4>
+                </div>
+                <div className="cohort-responses-pill">
+                  <BookOpen size={14} />
+                  <span>{activeCohort.surveySubmissions} Verified Submissions</span>
+                </div>
+              </div>
+
+              {/* Rating Highlights Grid */}
+              <div className="cohort-ratings-grid">
+                {activeCohort.ratingHighlights.map((r, rIdx) => (
+                  <div key={rIdx} className="cohort-rating-box">
+                    <div className="rating-box-val">{r.value}</div>
+                    <div className="rating-box-lbl">{r.label}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Leadership Operating Context */}
+              <div className="cohort-leadership-context">
+                <strong>Leadership Context &amp; Purpose:</strong> {activeCohort.leadershipContext}
+              </div>
+
+              {/* Verbatim Attendee Feedback */}
+              <div className="cohort-quotes-section">
+                <div className="cohort-quotes-label">
+                  Verbatim Attendee Feedback:
+                </div>
+                <div className="cohort-quotes-grid">
+                  {activeCohort.verbatimQuotes.map((q, qIdx) => (
+                    <div key={qIdx} className="cohort-quote-card">
+                      <p>"{q}"</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 

@@ -34,7 +34,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, dat
       highlights: [
         'Standardized software delivery across 7,000 developers worldwide, cutting product delivery cycles by 60% with 99.999% platform uptime.',
         'Directly mentored 30+ senior engineers into Staff and Principal leadership roles.',
-        'Overhauled engineering hiring standards alongside executive leadership, driving +18% candidate NPS and +15% manager satisfaction gains.'
+        'Overhauled engineering hiring standards alongside executive leadership, driving +18% candidate NPS and +15% manager satisfaction gains.',
+        'Delivered 50+ masterclasses and keynotes across Amazon, Philips, and top universities with 900+ verified post-session evaluations (4.64/5 Amazon Senpai rating, 9.57/10 seminar score).'
       ],
       metricOrder: ['Global Developer Reach', 'Leadership Influence', 'Direct P&L Impact', 'Validation Efficiency', 'Transaction Scale', 'Engineering Patents']
     },
