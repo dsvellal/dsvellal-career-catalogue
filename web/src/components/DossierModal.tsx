@@ -21,8 +21,6 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, dat
   });
   const [copied, setCopied] = useState(false);
 
-  if (!isOpen) return null;
-
   const lensConfigs = {
     ORG_SCALE: {
       category: 'Engineering Organization Leadership',
@@ -94,12 +92,13 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose, dat
 
   // Keep document title in sync with active evaluation lens for native Cmd+P / Print dialogs
   React.useEffect(() => {
+    if (!isOpen) return;
     const originalTitle = document.title;
     document.title = `${data.profile.name} - ${currentLens.category}`;
     return () => {
       document.title = originalTitle;
     };
-  }, [evaluationLens, currentLens.category, data.profile.name]);
+  }, [isOpen, evaluationLens, currentLens.category, data.profile.name]);
 
   const handlePrint = () => {
     const originalTitle = document.title;
@@ -138,6 +137,8 @@ Website: ${data.profile.website} | Location: ${data.profile.location}
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+
+  if (!isOpen) return null;
 
   return (
     <div className="modal-overlay" onClick={onClose}>

@@ -82,8 +82,10 @@ export interface PortfolioData {
 
 export type LeadershipPerspective =
   | 'boardroom'
-  | 'architecture'
   | 'leadership'
+  | 'architecture'
   | 'governance'
+  | 'career'
   | 'catalog';
+
 

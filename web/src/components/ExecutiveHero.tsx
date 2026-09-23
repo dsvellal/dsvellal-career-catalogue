@@ -17,10 +17,11 @@ export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({
 }) => {
   const perspectives: { id: LeadershipPerspective; label: string; badge: string; icon: React.ComponentType<{ size?: number }> }[] = [
     { id: 'boardroom', label: 'Boardroom Brief', badge: '60-Sec Scan', icon: Briefcase },
+    { id: 'leadership', label: 'Leadership OS', badge: 'Talent & 900+ Evals', icon: Users },
     { id: 'architecture', label: 'Systems Architecture', badge: 'Strategy Clash', icon: Compass },
-    { id: 'leadership', label: 'Leadership OS', badge: 'Bar Raiser', icon: Users },
     { id: 'governance', label: 'Enterprise AI & MedTech', badge: 'Zero Hallucination', icon: Cpu },
-    { id: 'catalog', label: 'Full Evidence Catalog', badge: '2,200+ Artifacts', icon: Layers }
+    { id: 'career', label: 'Career & Lineage', badge: '20-Year Arc', icon: Award },
+    { id: 'catalog', label: 'Evidence Catalog', badge: '2,200+ Artifacts', icon: Layers }
   ];
 
   return (
@@ -60,7 +61,7 @@ export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({
           </a>
         </div>
 
-        {/* 5-Perspective Executive Command Selector */}
+        {/* 6-Perspective Executive Command Selector */}
         <div className="perspective-command-container">
           <div className="perspective-command-label">Select Executive Evaluation Lens:</div>
           <div className="perspective-pills-row">
@@ -124,27 +125,27 @@ export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({
         </div>
 
         {/* Primary CTAs */}
-        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
-          <button className="btn btn-gold" onClick={onOpenDossier}>
+        <div style={{ display: 'flex', gap: '0.85rem', flexWrap: 'wrap', alignItems: 'center' }}>
+          <button type="button" className="btn btn-gold" onClick={onOpenDossier}>
             <Sparkles size={16} />
             Generate Executive Dossier
           </button>
-          <a href="#boardroom-brief" className="btn btn-outline" onClick={() => onSelectPerspective('boardroom')}>
-            <Briefcase size={16} />
-            Boardroom Brief
-          </a>
-          <a href="#decisions-section" className="btn btn-outline" onClick={() => onSelectPerspective('architecture')}>
-            <Award size={16} />
-            Strategy Clash Arena
-          </a>
-          <a href="#leadership-os" className="btn btn-outline" onClick={() => onSelectPerspective('leadership')}>
+          <button type="button" className="btn btn-outline" onClick={() => onSelectPerspective('leadership')}>
             <Users size={16} />
-            Leadership OS
-          </a>
-          <a href="#enterprise-ai-governance" className="btn btn-outline" onClick={() => onSelectPerspective('governance')}>
+            Leadership OS & Talent
+          </button>
+          <button type="button" className="btn btn-outline" onClick={() => onSelectPerspective('architecture')}>
+            <Compass size={16} />
+            Strategy Clash Arena
+          </button>
+          <button type="button" className="btn btn-outline" onClick={() => onSelectPerspective('governance')}>
             <Cpu size={16} />
             Enterprise AI
-          </a>
+          </button>
+          <button type="button" className="btn btn-outline" onClick={() => onSelectPerspective('career')}>
+            <Award size={16} />
+            Career Lineage
+          </button>
         </div>
       </div>
     </section>

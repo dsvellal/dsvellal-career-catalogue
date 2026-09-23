@@ -12,12 +12,28 @@ import { EvidenceCard } from './components/EvidenceCard';
 import { TimelineStreamView } from './components/TimelineStreamView';
 import { DecisionExplorer } from './components/DecisionExplorer';
 import { DossierModal } from './components/DossierModal';
-import { Shield, Sparkles, FileText, Mail, ArrowUpRight, Compass, Briefcase, Cpu, Users } from 'lucide-react';
+import { PerspectiveBanner } from './components/PerspectiveBanner';
+import { Shield, Sparkles, Mail, ArrowUpRight, Compass, Briefcase, Cpu, Users, Award, Layers, ChevronRight } from 'lucide-react';
 
 const portfolioData = portfolioRawData as PortfolioData;
 
 export function App() {
-  const [activePerspective, setActivePerspective] = useState<LeadershipPerspective>('boardroom');
+  const [activePerspective, setActivePerspective] = useState<LeadershipPerspective>(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash.replace('#', '').toLowerCase();
+      if (hash === 'boardroom' || hash === 'leadership' || hash === 'architecture' || hash === 'governance' || hash === 'career' || hash === 'catalog') {
+        return hash;
+      }
+      if (hash === 'boardroom-brief') return 'boardroom';
+      if (hash === 'leadership-os') return 'leadership';
+      if (hash === 'decisions-section') return 'architecture';
+      if (hash === 'enterprise-ai-governance') return 'governance';
+      if (hash === 'query-engine') return 'catalog';
+      if (hash === 'timeline-section' || hash === 'endorsements-section') return 'career';
+    }
+    return 'boardroom';
+  });
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedArchetype, setSelectedArchetype] = useState('ALL');
   const [selectedTimeline, setSelectedTimeline] = useState('ALL');
@@ -31,26 +47,18 @@ export function App() {
 
   const handleSelectPerspective = useCallback((perspective: LeadershipPerspective) => {
     setActivePerspective(perspective);
-    const anchorMap: Record<LeadershipPerspective, string> = {
-      boardroom: 'boardroom-brief',
-      architecture: 'decisions-section',
-      leadership: 'leadership-os',
-      governance: 'enterprise-ai-governance',
-      catalog: 'query-engine'
-    };
-    const targetId = anchorMap[perspective];
-    if (targetId) {
-      const el = document.getElementById(targetId);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
+    window.location.hash = perspective;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
   useEffect(() => {
     const handleUrl = () => {
       if (window.location.hash.includes('dossier') || window.location.search.includes('dossier') || window.location.search.includes('lens')) {
         setIsDossierOpen(true);
+      }
+      const rawHash = window.location.hash.replace('#', '').toLowerCase();
+      if (rawHash === 'boardroom' || rawHash === 'leadership' || rawHash === 'architecture' || rawHash === 'governance' || rawHash === 'career' || rawHash === 'catalog') {
+        setActivePerspective(rawHash);
       }
     };
     handleUrl();
@@ -114,160 +122,383 @@ export function App() {
 
   return (
     <div className="app-root">
-      {/* ReactBits-Inspired Ambient Aurora Background Glow */}
-      <div className="ambient-aurora">
-        <div className="aurora-blob aurora-1" />
-        <div className="aurora-blob aurora-2" />
-        <div className="aurora-blob aurora-3" />
-      </div>
-
-      {/* Site Header */}
+      {/* Site Header with Distinct Executive Perspective Navigation */}
       <header className="site-nav">
         <div className="container nav-wrapper">
-          <div className="nav-brand">
+          <div
+            className="nav-brand"
+            onClick={() => handleSelectPerspective('boardroom')}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 'Enter' && handleSelectPerspective('boardroom')}
+          >
             <span className="brand-badge">DSV</span>
             <div>
               <div className="brand-title">Dattatreya S Vellal</div>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Engineering Executive & Systems Turnaround Leader</div>
+              <div className="brand-subtitle">Engineering Executive & Systems Turnaround Leader</div>
             </div>
           </div>
 
-          <div className="nav-actions">
+          <nav className="nav-actions" aria-label="Executive perspectives">
+            <div className="nav-perspectives-tabs">
+              <button
+                type="button"
+                className={`nav-tab-btn ${activePerspective === 'boardroom' ? 'active' : ''}`}
+                onClick={() => handleSelectPerspective('boardroom')}
+              >
+                <Briefcase size={14} />
+                <span>60s Brief</span>
+              </button>
+              <button
+                type="button"
+                className={`nav-tab-btn ${activePerspective === 'leadership' ? 'active' : ''}`}
+                onClick={() => handleSelectPerspective('leadership')}
+              >
+                <Users size={14} />
+                <span>Leadership OS</span>
+              </button>
+              <button
+                type="button"
+                className={`nav-tab-btn ${activePerspective === 'architecture' ? 'active' : ''}`}
+                onClick={() => handleSelectPerspective('architecture')}
+              >
+                <Compass size={14} />
+                <span>Architecture</span>
+              </button>
+              <button
+                type="button"
+                className={`nav-tab-btn ${activePerspective === 'governance' ? 'active' : ''}`}
+                onClick={() => handleSelectPerspective('governance')}
+              >
+                <Cpu size={14} />
+                <span>Enterprise AI</span>
+              </button>
+              <button
+                type="button"
+                className={`nav-tab-btn ${activePerspective === 'career' ? 'active' : ''}`}
+                onClick={() => handleSelectPerspective('career')}
+              >
+                <Award size={14} />
+                <span>Career Lineage</span>
+              </button>
+              <button
+                type="button"
+                className={`nav-tab-btn ${activePerspective === 'catalog' ? 'active' : ''}`}
+                onClick={() => handleSelectPerspective('catalog')}
+              >
+                <Layers size={14} />
+                <span>Catalog</span>
+              </button>
+            </div>
+
             <button
               type="button"
-              className={`btn ${activePerspective === 'boardroom' ? 'btn-gold' : 'btn-outline'}`}
-              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
-              onClick={() => handleSelectPerspective('boardroom')}
-            >
-              <Briefcase size={13} /> 60s Brief
-            </button>
-            <button
-              type="button"
-              className={`btn ${activePerspective === 'leadership' ? 'btn-gold' : 'btn-outline'}`}
-              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
-              onClick={() => handleSelectPerspective('leadership')}
-            >
-              <Users size={13} /> Leadership OS
-            </button>
-            <button
-              type="button"
-              className={`btn ${activePerspective === 'governance' ? 'btn-gold' : 'btn-outline'}`}
-              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
-              onClick={() => handleSelectPerspective('governance')}
-            >
-              <Cpu size={13} /> Enterprise AI
-            </button>
-            <button
-              type="button"
-              className={`btn ${activePerspective === 'architecture' ? 'btn-gold' : 'btn-outline'}`}
-              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
-              onClick={() => handleSelectPerspective('architecture')}
-            >
-              <Compass size={13} /> Architecture
-            </button>
-            <button
-              type="button"
-              className={`btn ${activePerspective === 'catalog' ? 'btn-gold' : 'btn-outline'}`}
-              style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem' }}
-              onClick={() => handleSelectPerspective('catalog')}
-            >
-              <FileText size={13} /> Catalog
-            </button>
-            <button
-              type="button"
-              className="btn btn-gold"
-              style={{ fontSize: '0.8rem', padding: '0.4rem 0.9rem' }}
+              className="btn btn-dossier-nav"
               onClick={() => setIsDossierOpen(true)}
             >
-              <Sparkles size={13} /> Dossier
+              <Sparkles size={13} />
+              <span>Dossier</span>
             </button>
-          </div>
+          </nav>
         </div>
       </header>
 
-      {/* Main Narrative Flow */}
+      {/* Main Perspective Page Layouts */}
       <main>
-        {/* Prologue: The Executive Thesis & Headline Metrics */}
-        <ExecutiveHero
-          profile={portfolioData.profile}
-          activePerspective={activePerspective}
-          onSelectPerspective={handleSelectPerspective}
-          onOpenDossier={() => setIsDossierOpen(true)}
-        />
+        {/* VIEW 01: 60-SECOND BOARDROOM BRIEF */}
+        {activePerspective === 'boardroom' && (
+          <div className="perspective-page-view animate-fade-in">
+            <ExecutiveHero
+              profile={portfolioData.profile}
+              activePerspective={activePerspective}
+              onSelectPerspective={handleSelectPerspective}
+              onOpenDossier={() => setIsDossierOpen(true)}
+            />
+            <BoardBriefView onExplorePerspective={handleSelectPerspective} />
 
-        {/* Perspective 01: The 60-Second Boardroom Brief */}
-        <BoardBriefView onExplorePerspective={handleSelectPerspective} />
-
-        {/* Perspective 02: Leadership Operating System & Culture Lineage */}
-        <LeadershipOperatingSystem />
-
-        {/* Perspective 03: Enterprise AI & MedTech Regulatory Governance */}
-        <EnterpriseAIGovernance />
-
-        {/* Perspective 04: Systems Architecture & The Strategy Clash Arena */}
-        <DecisionExplorer decisions={portfolioData.decisions} />
-
-        {/* Perspective 05: 20-Year Story Arc & Endorsements Wall */}
-        <LeadershipStoryTimeline />
-
-        {portfolioData.endorsements && portfolioData.endorsements.length > 0 && (
-          <EndorsementsWall endorsements={portfolioData.endorsements} />
-        )}
-
-        {/* Interactive Query Engine & Evidence Matrix */}
-        <QueryEngine
-          searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
-          selectedTimeline={selectedTimeline}
-          onSelectTimeline={setSelectedTimeline}
-          timelineEras={timelineEras}
-          selectedArchetype={selectedArchetype}
-          onSelectArchetype={setSelectedArchetype}
-          archetypes={archetypes}
-          viewMode={viewMode}
-          onViewModeChange={setViewMode}
-          totalResults={portfolioData.evidence.length}
-          filteredResults={filteredEvidence.length}
-        />
-
-        {/* Evidence List */}
-        <section className="container" style={{ marginBottom: '5rem' }}>
-          <div className="evidence-section-header">
-            <div>
-              <h2 className="section-title">Verified Evidence and Systemic Impact</h2>
-              <p className="section-subtitle">
-                Documented outcomes and Systemic Interventions across healthcare, enterprise platform, and e-commerce scale environments.
-              </p>
-            </div>
-            <div className="results-count">
-              Showing {filteredEvidence.length} of {portfolioData.evidence.length} records
+            {/* Logical Page Bridge Card */}
+            <div className="container" style={{ marginBottom: '5rem' }}>
+              <div className="perspective-transition-card">
+                <div className="transition-info">
+                  <span className="transition-tag">Next Logical Lens</span>
+                  <h3 className="transition-title">Leadership Operating System & Talent Pipeline</h3>
+                  <p className="transition-desc">
+                    Inspect the three institutional pillars: 900+ verified masterclass evaluations, standardized architectural governance, and university talent pipeline.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  className="btn btn-gold"
+                  onClick={() => handleSelectPerspective('leadership')}
+                >
+                  Explore Leadership OS <ChevronRight size={16} />
+                </button>
+              </div>
             </div>
           </div>
+        )}
 
-          {filteredEvidence.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '4rem 1rem', background: 'var(--bg-card)', borderRadius: 'var(--radius-lg)' }}>
-              <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No evidence records match your search filters.</p>
-              <button
-                className="btn btn-outline"
-                onClick={() => {
-                  setSearchQuery('');
-                  setSelectedArchetype('ALL');
-                  setSelectedTimeline('ALL');
-                }}
-              >
-                Reset Search Filters
-              </button>
+        {/* VIEW 02: LEADERSHIP OPERATING SYSTEM */}
+        {activePerspective === 'leadership' && (
+          <div className="perspective-page-view animate-fade-in">
+            <PerspectiveBanner
+              index="02"
+              title="Leadership Operating System & Engineering Culture Lineage"
+              subtitle="Three institutional pillars driving sustained high performance across 100+ engineers: continuous capability uplift, standardized architectural governance, and university talent incubation."
+              stats={[
+                { label: 'On-Time High-Integrity Delivery', value: '100%' },
+                { label: 'Verified Masterclass Evaluations', value: '900+' },
+                { label: 'Net Quality & Relevance Score', value: '91%' },
+                { label: 'Academic Recruits Cultivated', value: '32' }
+              ]}
+              onNavigate={handleSelectPerspective}
+            />
+            <LeadershipOperatingSystem />
+
+            {/* Logical Page Bridge Card */}
+            <div className="container" style={{ marginBottom: '5rem' }}>
+              <div className="perspective-transition-card">
+                <div className="transition-info">
+                  <span className="transition-tag">Next Logical Lens</span>
+                  <h3 className="transition-title">Systems Architecture & Strategic Decision Arena</h3>
+                  <p className="transition-desc">
+                    Evaluate high-stakes architectural crossroads through explicit context, trade-offs, systemic bets, and audited empirical outcomes.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  className="btn btn-gold"
+                  onClick={() => handleSelectPerspective('architecture')}
+                >
+                  Explore Systems Architecture <ChevronRight size={16} />
+                </button>
+              </div>
             </div>
-          ) : viewMode === 'timeline' ? (
-            <TimelineStreamView evidence={filteredEvidence} />
-          ) : (
-            <div className="evidence-grid">
-              {filteredEvidence.map((card) => (
-                <EvidenceCard key={card.id} card={card} />
-              ))}
+          </div>
+        )}
+
+        {/* VIEW 03: SYSTEMS ARCHITECTURE & DECISION CLASH */}
+        {activePerspective === 'architecture' && (
+          <div className="perspective-page-view animate-fade-in">
+            <PerspectiveBanner
+              index="03"
+              title="Systems Architecture & Strategic Decision Arena"
+              subtitle="High-stakes technical forks evaluated through context, explicit trade-offs, systemic bets, and audited empirical outcomes across healthcare, cloud platform, and distributed scale."
+              stats={[
+                { label: 'Multi-Region Migration', value: 'Zero Downtime' },
+                { label: 'Peak Distributed Throughput', value: '12M Ops/Sec' },
+                { label: 'Platform Availability SLA', value: '99.99%' },
+                { label: 'Active US Patents Granted', value: '2 Patents' }
+              ]}
+              onNavigate={handleSelectPerspective}
+            />
+            <DecisionExplorer decisions={portfolioData.decisions} />
+
+            {/* Logical Page Bridge Card */}
+            <div className="container" style={{ marginBottom: '5rem' }}>
+              <div className="perspective-transition-card">
+                <div className="transition-info">
+                  <span className="transition-tag">Next Logical Lens</span>
+                  <h3 className="transition-title">Enterprise AI & Healthcare Regulatory Governance</h3>
+                  <p className="transition-desc">
+                    Examine the SUTRA knowledge-graph platform, FDA pre-market alignment, and multi-tier GenAI safe harbor validation.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  className="btn btn-gold"
+                  onClick={() => handleSelectPerspective('governance')}
+                >
+                  Explore Enterprise AI <ChevronRight size={16} />
+                </button>
+              </div>
             </div>
-          )}
-        </section>
+          </div>
+        )}
+
+        {/* VIEW 04: ENTERPRISE AI GOVERNANCE */}
+        {activePerspective === 'governance' && (
+          <div className="perspective-page-view animate-fade-in">
+            <PerspectiveBanner
+              index="04"
+              title="Enterprise AI & Healthcare Regulatory Governance"
+              subtitle="Institutional AI adoption frameworks enforcing zero-hallucination boundaries, multi-tier risk classification, FDA pre-market alignment, and HIPAA data isolation."
+              stats={[
+                { label: 'AI Traceability Platform', value: 'SUTRA' },
+                { label: 'Validation Cycle Acceleration', value: '75%' },
+                { label: 'Unverified Inferences in Prod', value: 'Zero' },
+                { label: 'FDA / HIPAA Compliance Boundaries', value: '100% Sealed' }
+              ]}
+              onNavigate={handleSelectPerspective}
+            />
+            <EnterpriseAIGovernance />
+
+            {/* Logical Page Bridge Card */}
+            <div className="container" style={{ marginBottom: '5rem' }}>
+              <div className="perspective-transition-card">
+                <div className="transition-info">
+                  <span className="transition-tag">Next Logical Lens</span>
+                  <h3 className="transition-title">Career Lineage & Executive Endorsements</h3>
+                  <p className="transition-desc">
+                    Follow a 20-year progression from Amazon distributed scale to Philips corporate turnaround, validated by VP and Director endorsements.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  className="btn btn-gold"
+                  onClick={() => handleSelectPerspective('career')}
+                >
+                  Explore Career Lineage <ChevronRight size={16} />
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* VIEW 05: CAREER LINEAGE & ENDORSEMENTS */}
+        {activePerspective === 'career' && (
+          <div className="perspective-page-view animate-fade-in">
+            <PerspectiveBanner
+              index="05"
+              title="Career Lineage & Executive Endorsements"
+              subtitle="A 20-year trajectory from distributed systems engineering at Amazon to corporate turnaround leadership, validated by Directors, Architects, and cross-functional peers."
+              stats={[
+                { label: 'Systems Engineering Lineage', value: '20+ Years' },
+                { label: 'Global VP & Director Endorsements', value: '100% Verified' },
+                { label: 'Enterprise Transformation Scope', value: 'Amazon to Philips' },
+                { label: 'Audited Peer Recommendations', value: 'Unanimous' }
+              ]}
+              onNavigate={handleSelectPerspective}
+            />
+            <LeadershipStoryTimeline />
+            {portfolioData.endorsements && portfolioData.endorsements.length > 0 && (
+              <EndorsementsWall endorsements={portfolioData.endorsements} />
+            )}
+
+            {/* Logical Page Bridge Card */}
+            <div className="container" style={{ marginBottom: '5rem' }}>
+              <div className="perspective-transition-card">
+                <div className="transition-info">
+                  <span className="transition-tag">Next Logical Lens</span>
+                  <h3 className="transition-title">Full Evidence Catalog & Systemic Impact Matrix</h3>
+                  <p className="transition-desc">
+                    Search and inspect all 2,200+ audited artifacts, patent filings, and engineering interventions.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  className="btn btn-gold"
+                  onClick={() => handleSelectPerspective('catalog')}
+                >
+                  Explore Evidence Catalog <ChevronRight size={16} />
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* VIEW 06: FULL EVIDENCE CATALOG */}
+        {activePerspective === 'catalog' && (
+          <div className="perspective-page-view animate-fade-in">
+            <PerspectiveBanner
+              index="06"
+              title="Verified Evidence Catalog & Impact Matrix"
+              subtitle="Comprehensive repository of 2,200+ engineering artifacts, patents, and interventions filterable by archetype, timeline era, and systemic impact."
+              stats={[
+                { label: 'Total Audited Artifacts', value: '2,200+' },
+                { label: 'Core Technical Archetypes', value: '6 Patterns' },
+                { label: 'Compliance Boundary Verification', value: '100% Redacted' },
+                { label: 'Timeline Eras Covered', value: '2005 to Present' }
+              ]}
+              onNavigate={handleSelectPerspective}
+            />
+
+            {/* Interactive Query Engine & Evidence Matrix */}
+            <QueryEngine
+              searchQuery={searchQuery}
+              onSearchChange={setSearchQuery}
+              selectedTimeline={selectedTimeline}
+              onSelectTimeline={setSelectedTimeline}
+              timelineEras={timelineEras}
+              selectedArchetype={selectedArchetype}
+              onSelectArchetype={setSelectedArchetype}
+              archetypes={archetypes}
+              viewMode={viewMode}
+              onViewModeChange={setViewMode}
+              totalResults={portfolioData.evidence.length}
+              filteredResults={filteredEvidence.length}
+            />
+
+            {/* Evidence List */}
+            <section className="container" style={{ marginBottom: '5rem' }}>
+              <div className="evidence-section-header">
+                <div>
+                  <h2 className="section-title">Verified Evidence and Systemic Impact</h2>
+                  <p className="section-subtitle">
+                    Documented outcomes and Systemic Interventions across healthcare, enterprise platform, and e-commerce scale environments.
+                  </p>
+                </div>
+                <div className="results-count">
+                  Showing {filteredEvidence.length} of {portfolioData.evidence.length} records
+                </div>
+              </div>
+
+              {filteredEvidence.length === 0 ? (
+                <div style={{ textAlign: 'center', padding: '4rem 1rem', background: 'var(--bg-card)', borderRadius: 'var(--radius-lg)' }}>
+                  <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No evidence records match your search filters.</p>
+                  <button
+                    type="button"
+                    className="btn btn-outline"
+                    onClick={() => {
+                      setSearchQuery('');
+                      setSelectedArchetype('ALL');
+                      setSelectedTimeline('ALL');
+                    }}
+                  >
+                    Reset Search Filters
+                  </button>
+                </div>
+              ) : viewMode === 'timeline' ? (
+                <TimelineStreamView evidence={filteredEvidence} />
+              ) : (
+                <div className="evidence-grid">
+                  {filteredEvidence.map((card) => (
+                    <EvidenceCard key={card.id} card={card} />
+                  ))}
+                </div>
+              )}
+            </section>
+
+            {/* Logical Page Bridge Card */}
+            <div className="container" style={{ marginBottom: '5rem' }}>
+              <div className="perspective-transition-card">
+                <div className="transition-info">
+                  <span className="transition-tag">Review Complete</span>
+                  <h3 className="transition-title">Return to Boardroom Executive Brief or Export Dossier</h3>
+                  <p className="transition-desc">
+                    Re-examine headline metrics and signature turnarounds or generate a formatted evaluation dossier for executive search partners.
+                  </p>
+                </div>
+                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                  <button
+                    type="button"
+                    className="btn btn-outline"
+                    onClick={() => handleSelectPerspective('boardroom')}
+                  >
+                    Return to 60s Brief
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-gold"
+                    onClick={() => setIsDossierOpen(true)}
+                  >
+                    <Sparkles size={15} /> Open Executive Dossier
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </main>
 
       {/* Candidate Evaluation Dossier Modal */}

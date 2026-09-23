@@ -1,8 +1,9 @@
 import React from 'react';
 import { Award, TrendingUp, ShieldCheck, Zap, ArrowRight, Building, CheckCircle2 } from 'lucide-react';
+import type { LeadershipPerspective } from '../types';
 
 interface BoardBriefViewProps {
-  onExplorePerspective: (perspective: 'architecture' | 'leadership' | 'governance' | 'catalog') => void;
+  onExplorePerspective: (perspective: LeadershipPerspective) => void;
 }
 
 export const BoardBriefView: React.FC<BoardBriefViewProps> = ({ onExplorePerspective }) => {
