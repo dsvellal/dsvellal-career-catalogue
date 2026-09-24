@@ -73,7 +73,7 @@ export const EvidenceCard: React.FC<EvidenceCardProps> = ({ card }) => {
 
       {/* Quantified Metric Pills */}
       <div className="card-metrics">
-        {card.metrics.map((metric, idx) => (
+        {(card.metrics || []).map((metric, idx) => (
           <span key={idx} className="metric-pill">
             <TrendingUp size={13} /> {metric}
           </span>
@@ -119,7 +119,7 @@ export const EvidenceCard: React.FC<EvidenceCardProps> = ({ card }) => {
           {card.verificationAnchor}
         </div>
         <div className="tag-list">
-          {card.competencyTags.map((tag, idx) => (
+          {(card.competencyTags || []).map((tag, idx) => (
             <span key={idx} className="competency-tag">
               #{tag}
             </span>

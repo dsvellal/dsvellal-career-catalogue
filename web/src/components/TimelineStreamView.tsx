@@ -97,7 +97,7 @@ export const TimelineStreamView: React.FC<TimelineStreamViewProps> = ({ evidence
 
               {/* Headline Metrics Grid */}
               <div className="card-metrics" style={{ marginTop: '1.25rem' }}>
-                {card.metrics.map((metric, mIdx) => (
+                {(card.metrics || []).map((metric, mIdx) => (
                   <span key={mIdx} className="metric-pill">
                     <TrendingUp size={13} /> {metric}
                   </span>
@@ -143,7 +143,7 @@ export const TimelineStreamView: React.FC<TimelineStreamViewProps> = ({ evidence
                   {card.verificationAnchor}
                 </div>
                 <div className="tag-list">
-                  {card.competencyTags.map((tag, tIdx) => (
+                  {(card.competencyTags || []).map((tag, tIdx) => (
                     <span key={tIdx} className="competency-tag">
                       #{tag}
                     </span>

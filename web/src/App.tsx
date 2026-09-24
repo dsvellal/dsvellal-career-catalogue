@@ -112,8 +112,8 @@ export function App() {
         item.intervention,
         item.observableConsequence,
         item.verificationAnchor,
-        ...item.competencyTags,
-        ...item.metrics
+        ...(item.competencyTags || []),
+        ...(item.metrics || [])
       ].join(' ').toLowerCase();
 
       return matchText.includes(q);
